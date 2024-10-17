@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: alt
       text: View on GitHub
-      link: https://github.com/Maoxie/Notes
+      link: https://github.com/maoXyzt/Notes
     - theme: brand
       text: 📋 About Me
       link: https://yangzhitao.top
