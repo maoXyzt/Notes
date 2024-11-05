@@ -7,7 +7,7 @@
 ```python
 # 5x3 未初始化的 Tensor
 x = torch.empty(5, 3)
-# x = torch.empty((5, 3))  # 也可以用这种 size 参数提供方式，下同 
+# x = torch.empty((5, 3))  # 也可以用这种 size 参数提供方式，下同
 # 5x3 随机初始化的 Tensor
 x = torch.rand(5, 3)
 # 5x3 long型全0的 Tensor
@@ -212,4 +212,3 @@ if torch.cuda.is_available():
     print(z)
     print(z.to("cpu", torch.double))       # to()还可以同时更改数据类型
 ```
-

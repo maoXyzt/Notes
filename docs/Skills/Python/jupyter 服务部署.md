@@ -1,4 +1,4 @@
-# 运行 Jupyter Notebook 远程服务
+# Jupyter 服务部署
 
 > [Running a notebook server — Jupyter Notebook 6.2.0 documentation (jupyter-notebook.readthedocs.io)](https://jupyter-notebook.readthedocs.io/en/stable/public_server.html)
 

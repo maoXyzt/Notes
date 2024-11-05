@@ -1,0 +1,8 @@
+# Handle image files
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.gif binary
+*.bmp binary
+*.tiff binary
+*.ico binary

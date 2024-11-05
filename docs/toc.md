@@ -175,6 +175,7 @@
         * [Flask app实例化和初始化](/Skills/Python/Flask/Flask%20app%E5%AE%9E%E4%BE%8B%E5%8C%96%E5%92%8C%E5%88%9D%E5%A7%8B%E5%8C%96.md)
         * [Flask源码](/Skills/Python/Flask/Flask%E6%BA%90%E7%A0%81.md)
         * [Flask源码阅读](/Skills/Python/Flask/Flask%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB.md)
+    * [jupyter 服务部署](/Skills/Python/jupyter%20%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2.md)
     * pandas
 # Table of Contents
         * [pandas按时间聚合数据的resample函数](/Skills/Python/pandas/pandas%E6%8C%89%E6%97%B6%E9%97%B4%E8%81%9A%E5%90%88%E6%95%B0%E6%8D%AE%E7%9A%84resample%E5%87%BD%E6%95%B0.md)
@@ -209,7 +210,6 @@
     * [win环境下print时的UnicodeEncodingError](/Skills/Python/win%E7%8E%AF%E5%A2%83%E4%B8%8Bprint%E6%97%B6%E7%9A%84UnicodeEncodingError.md)
     * [xlrd读取excel文件](/Skills/Python/xlrd%E8%AF%BB%E5%8F%96excel%E6%96%87%E4%BB%B6.md)
     * [用gbd调试python core dump](/Skills/Python/%E7%94%A8gbd%E8%B0%83%E8%AF%95python%20core%20dump.md)
-    * [运行jupyter notebook远程服务](/Skills/Python/%E8%BF%90%E8%A1%8Cjupyter%20notebook%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1.md)
     * [自动获取双因子登录验证码——OTP, HOTP, TOTP 基本原理](/Skills/Python/%E8%87%AA%E5%8A%A8%E8%8E%B7%E5%8F%96%E5%8F%8C%E5%9B%A0%E5%AD%90%E7%99%BB%E5%BD%95%E9%AA%8C%E8%AF%81%E7%A0%81%E2%80%94%E2%80%94OTP%2C%20HOTP%2C%20TOTP%20%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86.md)
 * Rust
 # Table of Contents

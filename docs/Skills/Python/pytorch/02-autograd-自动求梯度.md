@@ -156,7 +156,7 @@ print(x.grad)
 
 ```python
 x = torch.tensor(1.0, requires_grad=True)
-y1 = x ** 2 
+y1 = x ** 2
 with torch.no_grad():
     y2 = x ** 3
 y3 = y1 + y2
@@ -206,4 +206,3 @@ print(x.grad)
 # tensor([100.], requires_grad=True)
 # tensor([2.])
 ```
-

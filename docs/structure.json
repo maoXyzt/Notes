@@ -638,6 +638,10 @@
             ]
           },
           {
+            "text": "jupyter 服务部署",
+            "link": "/Skills/Python/jupyter%20%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2.md"
+          },
+          {
             "text": "pandas",
             "collapsed": true,
             "items": [
@@ -764,10 +768,6 @@
           {
             "text": "用gbd调试python core dump",
             "link": "/Skills/Python/%E7%94%A8gbd%E8%B0%83%E8%AF%95python%20core%20dump.md"
-          },
-          {
-            "text": "运行jupyter notebook远程服务",
-            "link": "/Skills/Python/%E8%BF%90%E8%A1%8Cjupyter%20notebook%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1.md"
           },
           {
             "text": "自动获取双因子登录验证码——OTP, HOTP, TOTP 基本原理",
