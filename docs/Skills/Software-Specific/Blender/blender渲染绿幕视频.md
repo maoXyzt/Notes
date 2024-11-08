@@ -1,4 +1,4 @@
-# Blender 抠绿幕(keying)
+# Blender 渲染绿幕视频
 
 在 Shading 界面，使用 mix shader 来制作绿幕背景。
 
@@ -13,4 +13,4 @@
 
 参考图片:
 
-![blender-keying](assets/blender-keying.png)
+![blender-render-green-screen](assets/blender-render-green-screen.png)
