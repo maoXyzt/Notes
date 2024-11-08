@@ -10,3 +10,7 @@
 6. 选择 `Keying` 节点 `Key Color` 的颜色为背景颜色（可用取色工具取色）。
 7. 将 `Keying` 输出的 `Image` 连接到 `Composite` 的 `Image`。
 8. 调整渲染参数，进行渲染。
+
+参考图片:
+
+![blender-keying](assets/blender-keying.png)
