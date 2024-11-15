@@ -228,6 +228,7 @@
         * [blender常用操作](/Skills/Software-Specific/Blender/blender%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C.md)
         * [blender常用脚本](/Skills/Software-Specific/Blender/blender%E5%B8%B8%E7%94%A8%E8%84%9A%E6%9C%AC.md)
         * [blender抠绿幕(keying)](/Skills/Software-Specific/Blender/blender%E6%8A%A0%E7%BB%BF%E5%B9%95%28keying%29.md)
+        * [blender旋转、缩放HDRI背景](/Skills/Software-Specific/Blender/blender%E6%97%8B%E8%BD%AC%E3%80%81%E7%BC%A9%E6%94%BEHDRI%E8%83%8C%E6%99%AF.md)
         * [blender渲染绿幕视频](/Skills/Software-Specific/Blender/blender%E6%B8%B2%E6%9F%93%E7%BB%BF%E5%B9%95%E8%A7%86%E9%A2%91.md)
         * [blender中各种Matrix之间的关系](/Skills/Software-Specific/Blender/blender%E4%B8%AD%E5%90%84%E7%A7%8DMatrix%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB.md)
         * [CUDA cuInit Unknown error](/Skills/Software-Specific/Blender/CUDA%20cuInit%20Unknown%20error.md)
