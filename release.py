@@ -84,8 +84,8 @@ def build_page(p: Path, root: Path) -> Optional[Page]:
 
 
 def make_toc(group: Group, level: int = 0) -> List[str]:
-    lines = ['# Table of Contents']
-    indent = INDENT * (level - 1) if level else "## "
+    lines = ['# Table of Contents'] if level == 0 else []
+    indent = INDENT * (level - 1) if level else "\n## "
     for item in group.items:
         if isinstance(item, Page):
             lines.append(f"{indent}* [{item.text}]({item.link})")
