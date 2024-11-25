@@ -25,9 +25,9 @@
     * 树
         * [树](/ABC/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91/%E6%A0%91.md)
 * 图形学
+    * [OpenGL坐标系统](/ABC/%E5%9B%BE%E5%BD%A2%E5%AD%A6/OpenGL%E5%9D%90%E6%A0%87%E7%B3%BB%E7%BB%9F.md)
     * [变换的分类](/ABC/%E5%9B%BE%E5%BD%A2%E5%AD%A6/%E5%8F%98%E6%8D%A2%E7%9A%84%E5%88%86%E7%B1%BB.md)
     * [骨骼动画原理](/ABC/%E5%9B%BE%E5%BD%A2%E5%AD%A6/%E9%AA%A8%E9%AA%BC%E5%8A%A8%E7%94%BB%E5%8E%9F%E7%90%86.md)
-    * [OpenGL坐标系统](/ABC/%E5%9B%BE%E5%BD%A2%E5%AD%A6/OpenGL%E5%9D%90%E6%A0%87%E7%B3%BB%E7%BB%9F.md)
     * [旋转的不同表示方式](/ABC/%E5%9B%BE%E5%BD%A2%E5%AD%A6/%E6%97%8B%E8%BD%AC%E7%9A%84%E4%B8%8D%E5%90%8C%E8%A1%A8%E7%A4%BA%E6%96%B9%E5%BC%8F.md)
     * 游戏引擎技术及架构
         * [01-导论](/ABC/%E5%9B%BE%E5%BD%A2%E5%AD%A6/%E6%B8%B8%E6%88%8F%E5%BC%95%E6%93%8E%E6%8A%80%E6%9C%AF%E5%8F%8A%E6%9E%B6%E6%9E%84/01-%E5%AF%BC%E8%AE%BA.md)
@@ -36,16 +36,16 @@
     * [坐标系&旋转 Conventions](/ABC/%E5%9B%BE%E5%BD%A2%E5%AD%A6/%E5%9D%90%E6%A0%87%E7%B3%BB%26%E6%97%8B%E8%BD%AC%20Conventions.md)
 
 ## * Algorithm
-* [布隆过滤器(Bloom Filter)](/Algorithm/%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8%28Bloom%20Filter%29.md)
 * LeetCode
     * [134. 加油站](/Algorithm/LeetCode/134.%20%E5%8A%A0%E6%B2%B9%E7%AB%99.md)
     * [162.寻找峰值](/Algorithm/LeetCode/162.%E5%AF%BB%E6%89%BE%E5%B3%B0%E5%80%BC.md)
     * [300. 最长上升子序列](/Algorithm/LeetCode/300.%20%E6%9C%80%E9%95%BF%E4%B8%8A%E5%8D%87%E5%AD%90%E5%BA%8F%E5%88%97.md)
     * [347.前-k-个高频元素](/Algorithm/LeetCode/347.%E5%89%8D-k-%E4%B8%AA%E9%AB%98%E9%A2%91%E5%85%83%E7%B4%A0.md)
     * [5.最长回文子串](/Algorithm/LeetCode/5.%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2.md)
+* [布隆过滤器(Bloom Filter)](/Algorithm/%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8%28Bloom%20Filter%29.md)
 * 统计学习方法
-    * [感知机](/Algorithm/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/%E6%84%9F%E7%9F%A5%E6%9C%BA.md)
     * [k近邻](/Algorithm/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/k%E8%BF%91%E9%82%BB.md)
+    * [感知机](/Algorithm/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/%E6%84%9F%E7%9F%A5%E6%9C%BA.md)
 
 ## * Engineering
 * 《代码整洁之道》
@@ -53,7 +53,6 @@
 
 ## * Skills
 * Database
-    * [查询优化经验](/Skills/Database/%E6%9F%A5%E8%AF%A2%E4%BC%98%E5%8C%96%E7%BB%8F%E9%AA%8C.md)
     * [CouchDB安装](/Skills/Database/CouchDB%E5%AE%89%E8%A3%85.md)
     * [MySQL备份与恢复](/Skills/Database/MySQL%E5%A4%87%E4%BB%BD%E4%B8%8E%E6%81%A2%E5%A4%8D.md)
     * [MySQL开启远程访问权限](/Skills/Database/MySQL%E5%BC%80%E5%90%AF%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AE%E6%9D%83%E9%99%90.md)
@@ -76,6 +75,7 @@
     * [SQL - pg - UPDATE SET FROM](/Skills/Database/SQL%20-%20pg%20-%20UPDATE%20SET%20FROM.md)
     * [SQL利用row_number()查询分组排序后的一条或多条数据](/Skills/Database/SQL%E5%88%A9%E7%94%A8row_number%28%29%E6%9F%A5%E8%AF%A2%E5%88%86%E7%BB%84%E6%8E%92%E5%BA%8F%E5%90%8E%E7%9A%84%E4%B8%80%E6%9D%A1%E6%88%96%E5%A4%9A%E6%9D%A1%E6%95%B0%E6%8D%AE.md)
     * [SQL中EXISTS和IN语句的区别](/Skills/Database/SQL%E4%B8%ADEXISTS%E5%92%8CIN%E8%AF%AD%E5%8F%A5%E7%9A%84%E5%8C%BA%E5%88%AB.md)
+    * [查询优化经验](/Skills/Database/%E6%9F%A5%E8%AF%A2%E4%BC%98%E5%8C%96%E7%BB%8F%E9%AA%8C.md)
 * Docker
     * [Docker 创建 volume](/Skills/Docker/Docker%20%E5%88%9B%E5%BB%BA%20volume.md)
     * [Docker常用命令](/Skills/Docker/Docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.md)
@@ -88,10 +88,10 @@
     * [asdf版本管理工具的安装和使用](/Skills/Elixir/asdf%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8.md)
     * [hex.pm国内镜像](/Skills/Elixir/hex.pm%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F.md)
 * Git
-    * [Git 多个账号用不同私钥登录](/Skills/Git/Git%20%E5%A4%9A%E4%B8%AA%E8%B4%A6%E5%8F%B7%E7%94%A8%E4%B8%8D%E5%90%8C%E7%A7%81%E9%92%A5%E7%99%BB%E5%BD%95.md)
     * [git error - connection closed](/Skills/Git/git%20error%20-%20connection%20closed.md)
     * [git prune, git remote prune, git fetch](/Skills/Git/git%20prune%2C%20git%20remote%20prune%2C%20git%20fetch.md)
     * [git subtree](/Skills/Git/git%20subtree.md)
+    * [Git 多个账号用不同私钥登录](/Skills/Git/Git%20%E5%A4%9A%E4%B8%AA%E8%B4%A6%E5%8F%B7%E7%94%A8%E4%B8%8D%E5%90%8C%E7%A7%81%E9%92%A5%E7%99%BB%E5%BD%95.md)
     * [global gitignore](/Skills/Git/global%20gitignore.md)
 * Go
     * [Go基本命令](/Skills/Go/Go%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4.md)
@@ -104,17 +104,15 @@
     * [k8s集群搭建](/Skills/Kubernetes/k8s%E9%9B%86%E7%BE%A4%E6%90%AD%E5%BB%BA.md)
     * [kubectl常用命令](/Skills/Kubernetes/kubectl%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.md)
 * Linux
-    * [安装chromedriver](/Skills/Linux/%E5%AE%89%E8%A3%85chromedriver.md)
     * [awscli使用指南](/Skills/Linux/awscli%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.md)
     * CentOS
+        * [CentOS 7 lvm分区扩容](/Skills/Linux/CentOS/CentOS%207%20lvm%E5%88%86%E5%8C%BA%E6%89%A9%E5%AE%B9.md)
         * [CentOS 7 安装MySQL](/Skills/Linux/CentOS/CentOS%207%20%E5%AE%89%E8%A3%85MySQL.md)
         * [CentOS 7 安装最新版本的Git](/Skills/Linux/CentOS/CentOS%207%20%E5%AE%89%E8%A3%85%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC%E7%9A%84Git.md)
         * [CentOS 7 常用工具包安装](/Skills/Linux/CentOS/CentOS%207%20%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E5%8C%85%E5%AE%89%E8%A3%85.md)
         * [CentOS 7 开启端口](/Skills/Linux/CentOS/CentOS%207%20%E5%BC%80%E5%90%AF%E7%AB%AF%E5%8F%A3.md)
-        * [CentOS 7 lvm分区扩容](/Skills/Linux/CentOS/CentOS%207%20lvm%E5%88%86%E5%8C%BA%E6%89%A9%E5%AE%B9.md)
         * [CentOS 7 升级Git版本](/Skills/Linux/CentOS/CentOS%207%20%E5%8D%87%E7%BA%A7Git%E7%89%88%E6%9C%AC.md)
         * [CentOS 配置国内源](/Skills/Linux/CentOS/CentOS%20%E9%85%8D%E7%BD%AE%E5%9B%BD%E5%86%85%E6%BA%90.md)
-    * [创建SSH密钥对并使用密钥登录](/Skills/Linux/%E5%88%9B%E5%BB%BASSH%E5%AF%86%E9%92%A5%E5%AF%B9%E5%B9%B6%E4%BD%BF%E7%94%A8%E5%AF%86%E9%92%A5%E7%99%BB%E5%BD%95.md)
     * [convmv 解决GBK 迁移到 UTF-8 ,中文文件名乱码](/Skills/Linux/convmv%20%E8%A7%A3%E5%86%B3GBK%20%E8%BF%81%E7%A7%BB%E5%88%B0%20UTF-8%20%2C%E4%B8%AD%E6%96%87%E6%96%87%E4%BB%B6%E5%90%8D%E4%B9%B1%E7%A0%81.md)
     * [Linux Shell输出重定向并后台执行](/Skills/Linux/Linux%20Shell%E8%BE%93%E5%87%BA%E9%87%8D%E5%AE%9A%E5%90%91%E5%B9%B6%E5%90%8E%E5%8F%B0%E6%89%A7%E8%A1%8C.md)
     * [Linux 实时内存监控](/Skills/Linux/Linux%20%E5%AE%9E%E6%97%B6%E5%86%85%E5%AD%98%E7%9B%91%E6%8E%A7.md)
@@ -138,10 +136,12 @@
     * [TCP&UDP端口连通性测试](/Skills/Linux/TCP%26UDP%E7%AB%AF%E5%8F%A3%E8%BF%9E%E9%80%9A%E6%80%A7%E6%B5%8B%E8%AF%95.md)
     * [vim插件管理 - vim-plug](/Skills/Linux/vim%E6%8F%92%E4%BB%B6%E7%AE%A1%E7%90%86%20-%20vim-plug.md)
     * [virtualbox硬盘扩容](/Skills/Linux/virtualbox%E7%A1%AC%E7%9B%98%E6%89%A9%E5%AE%B9.md)
+    * [zsh常用插件](/Skills/Linux/zsh%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6.md)
+    * [安装chromedriver](/Skills/Linux/%E5%AE%89%E8%A3%85chromedriver.md)
+    * [创建SSH密钥对并使用密钥登录](/Skills/Linux/%E5%88%9B%E5%BB%BASSH%E5%AF%86%E9%92%A5%E5%AF%B9%E5%B9%B6%E4%BD%BF%E7%94%A8%E5%AF%86%E9%92%A5%E7%99%BB%E5%BD%95.md)
     * [下载Google Drive共享的文件](/Skills/Linux/%E4%B8%8B%E8%BD%BDGoogle%20Drive%E5%85%B1%E4%BA%AB%E7%9A%84%E6%96%87%E4%BB%B6.md)
     * [指定gcc版本](/Skills/Linux/%E6%8C%87%E5%AE%9Agcc%E7%89%88%E6%9C%AC.md)
     * [自签名SSL证书](/Skills/Linux/%E8%87%AA%E7%AD%BE%E5%90%8DSSL%E8%AF%81%E4%B9%A6.md)
-    * [zsh常用插件](/Skills/Linux/zsh%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6.md)
 * Python
     * [alembic基本命令](/Skills/Python/alembic%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4.md)
     * [conda源设置](/Skills/Python/conda%E6%BA%90%E8%AE%BE%E7%BD%AE.md)
@@ -156,8 +156,8 @@
         * [pandas按指定顺序对MulitIndex的某一级进行排序](/Skills/Python/pandas/pandas%E6%8C%89%E6%8C%87%E5%AE%9A%E9%A1%BA%E5%BA%8F%E5%AF%B9MulitIndex%E7%9A%84%E6%9F%90%E4%B8%80%E7%BA%A7%E8%BF%9B%E8%A1%8C%E6%8E%92%E5%BA%8F.md)
         * [pandas扩充行](/Skills/Python/pandas/pandas%E6%89%A9%E5%85%85%E8%A1%8C.md)
         * [pandas如何将NaN替换为None（DataFrame.where方法）](/Skills/Python/pandas/pandas%E5%A6%82%E4%BD%95%E5%B0%86NaN%E6%9B%BF%E6%8D%A2%E4%B8%BANone%EF%BC%88DataFrame.where%E6%96%B9%E6%B3%95%EF%BC%89.md)
-        * [pandas时间处理之将时间转为月末日期](/Skills/Python/pandas/pandas%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86%E4%B9%8B%E5%B0%86%E6%97%B6%E9%97%B4%E8%BD%AC%E4%B8%BA%E6%9C%88%E6%9C%AB%E6%97%A5%E6%9C%9F.md)
         * [pandas时间处理之offsets](/Skills/Python/pandas/pandas%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86%E4%B9%8Boffsets.md)
+        * [pandas时间处理之将时间转为月末日期](/Skills/Python/pandas/pandas%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86%E4%B9%8B%E5%B0%86%E6%97%B6%E9%97%B4%E8%BD%AC%E4%B8%BA%E6%9C%88%E6%9C%AB%E6%97%A5%E6%9C%9F.md)
         * [pandas时间处理：to_datetime和时区](/Skills/Python/pandas/pandas%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86%EF%BC%9Ato_datetime%E5%92%8C%E6%97%B6%E5%8C%BA.md)
         * [pandas数据聚合：Grouper与agg](/Skills/Python/pandas/pandas%E6%95%B0%E6%8D%AE%E8%81%9A%E5%90%88%EF%BC%9AGrouper%E4%B8%8Eagg.md)
         * [pandas数据透视](/Skills/Python/pandas/pandas%E6%95%B0%E6%8D%AE%E9%80%8F%E8%A7%86.md)
@@ -198,8 +198,8 @@
         * [blender渲染绿幕视频](/Skills/Software-Specific/Blender/blender%E6%B8%B2%E6%9F%93%E7%BB%BF%E5%B9%95%E8%A7%86%E9%A2%91.md)
         * [blender中各种Matrix之间的关系](/Skills/Software-Specific/Blender/blender%E4%B8%AD%E5%90%84%E7%A7%8DMatrix%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB.md)
         * [CUDA cuInit Unknown error](/Skills/Software-Specific/Blender/CUDA%20cuInit%20Unknown%20error.md)
-        * [通过脚本安装和启用插件(add-on)](/Skills/Software-Specific/Blender/%E9%80%9A%E8%BF%87%E8%84%9A%E6%9C%AC%E5%AE%89%E8%A3%85%E5%92%8C%E5%90%AF%E7%94%A8%E6%8F%92%E4%BB%B6%28add-on%29.md)
         * [Ubuntu安装blender](/Skills/Software-Specific/Blender/Ubuntu%E5%AE%89%E8%A3%85blender.md)
+        * [通过脚本安装和启用插件(add-on)](/Skills/Software-Specific/Blender/%E9%80%9A%E8%BF%87%E8%84%9A%E6%9C%AC%E5%AE%89%E8%A3%85%E5%92%8C%E5%90%AF%E7%94%A8%E6%8F%92%E4%BB%B6%28add-on%29.md)
         * [无GUI启动blender](/Skills/Software-Specific/Blender/%E6%97%A0GUI%E5%90%AF%E5%8A%A8blender.md)
     * FBX
         * [安装FBX Python SDK](/Skills/Software-Specific/FBX/%E5%AE%89%E8%A3%85FBX%20Python%20SDK.md)
@@ -214,11 +214,11 @@
     * zotero
         * [zotero修改note templates](/Skills/Software-Specific/zotero/zotero%E4%BF%AE%E6%94%B9note%20templates.md)
 * Windows
-    * [创建自启动的Windows Service程序](/Skills/Windows/%E5%88%9B%E5%BB%BA%E8%87%AA%E5%90%AF%E5%8A%A8%E7%9A%84Windows%20Service%E7%A8%8B%E5%BA%8F.md)
     * [powershell 开启补全功能](/Skills/Windows/powershell%20%E5%BC%80%E5%90%AF%E8%A1%A5%E5%85%A8%E5%8A%9F%E8%83%BD.md)
     * [powershell 启动加速](/Skills/Windows/powershell%20%E5%90%AF%E5%8A%A8%E5%8A%A0%E9%80%9F.md)
     * [windows查找端口占用](/Skills/Windows/windows%E6%9F%A5%E6%89%BE%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8.md)
     * [windows建立软链接](/Skills/Windows/windows%E5%BB%BA%E7%AB%8B%E8%BD%AF%E9%93%BE%E6%8E%A5.md)
     * [winget 国内源](/Skills/Windows/winget%20%E5%9B%BD%E5%86%85%E6%BA%90.md)
+    * [创建自启动的Windows Service程序](/Skills/Windows/%E5%88%9B%E5%BB%BA%E8%87%AA%E5%90%AF%E5%8A%A8%E7%9A%84Windows%20Service%E7%A8%8B%E5%BA%8F.md)
     * [右键菜单添加“通过xxx打开”](/Skills/Windows/%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E6%B7%BB%E5%8A%A0%E2%80%9C%E9%80%9A%E8%BF%87xxx%E6%89%93%E5%BC%80%E2%80%9D.md)
     * [右键用windows terminal打开当前目录](/Skills/Windows/%E5%8F%B3%E9%94%AE%E7%94%A8windows%20terminal%E6%89%93%E5%BC%80%E5%BD%93%E5%89%8D%E7%9B%AE%E5%BD%95.md)

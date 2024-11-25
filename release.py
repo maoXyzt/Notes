@@ -51,7 +51,9 @@ def build_structure(root: Path) -> Group:
 
 def _get_sort_key(p: Path) -> str:
     text = p.name
-    return ''.join(lazy_pinyin(text, style=Style.TONE3)).lower()
+    # convert alphabets to uppercase to make them sorted before Chinese characters
+    text = text.upper()
+    return ''.join(lazy_pinyin(text, style=Style.TONE3))
 
 
 def build_group(d: Path, root: Path, depth: int = 0) -> Group:
