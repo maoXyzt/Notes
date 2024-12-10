@@ -227,6 +227,9 @@
 ### FBX
 * [安装FBX Python SDK](/Software-Specific/FBX/%E5%AE%89%E8%A3%85FBX%20Python%20SDK.md)
 
+### MacOS
+* [MacOS 配置定时任务](/Software-Specific/MacOS/MacOS%20%E9%85%8D%E7%BD%AE%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1.md)
+
 ### Maya
 * [maya安装numpy&scipy](/Software-Specific/Maya/maya%E5%AE%89%E8%A3%85numpy%26scipy.md)
 * [maya插件安装方法](/Software-Specific/Maya/maya%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95.md)
