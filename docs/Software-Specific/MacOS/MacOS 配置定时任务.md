@@ -69,12 +69,14 @@ plist 脚本一般存放在以下目录：
 
 ### 1.2 常用命令
 
+> [launchctl Man Page](https://ss64.com/mac/launchctl.html)
+
 ```shell
 # 加载任务, -w 选项会将plist文件中无效的key覆盖掉，建议加上
-$ launchctl load -w com.demo.plist
+$ launchctl load -w /path/to/com.demo.plist
 
 # 卸载任务
-$ launchctl unload -w com.demo.plist
+$ launchctl unload -w /path/to/com.demo.plist
 
 # 查看任务列表, 使用 grep '任务部分名字' 过滤
 $ launchctl list | grep 'com.demo'
