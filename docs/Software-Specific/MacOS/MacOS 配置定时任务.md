@@ -73,17 +73,17 @@ plist 脚本一般存放在以下目录：
 
 ```shell
 # 加载任务, -w 选项会将plist文件中无效的key覆盖掉，建议加上
-$ launchctl load -w /path/to/com.demo.plist
+$ launchctl load -w /full-path/to/com.demo.plist
 
 # 卸载任务
-$ launchctl unload -w /path/to/com.demo.plist
+$ launchctl unload -w /full-path/to/com.demo.plist
 
 # 查看任务列表, 使用 grep '任务部分名字' 过滤
 $ launchctl list | grep 'com.demo'
 
-# 立即执行一次任务
-$ launchctl start com.demo.plist
+# Manually run a known (loaded) agent/daemon, even if it is not the right time (Note: this command uses the agent's label, rather than the filename):
+launchctl start com.demo.plist
 
-# 停止任务
-$ launchctl stop com.demo.plist
+# Manually kill the process associated with a known agent/daemon, if it is running:
+launchctl stop com.demo.plist
 ```
