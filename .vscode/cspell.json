@@ -1,5 +1,8 @@
 {
     "words": [
-        "pypinyin"
+        "frontmatter",
+        "mathjax",
+        "pypinyin",
+        "vitepress"
     ]
 }
