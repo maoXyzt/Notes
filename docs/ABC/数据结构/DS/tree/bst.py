@@ -7,7 +7,7 @@
 @contact: yangzhitao@linezonedata.com
 @software: pycharm
 @time: 2019/8/12 6:15
-@desc: 
+@desc:
 """
 from .tree import BinTree
 

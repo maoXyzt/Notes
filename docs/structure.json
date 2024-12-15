@@ -90,16 +90,6 @@
         ]
       },
       {
-        "text": "Linear Algebra",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "Linear Algebra",
-            "link": "/ABC/Linear%20Algebra/Linear%20Algebra.md"
-          }
-        ]
-      },
-      {
         "text": "数据结构",
         "collapsed": true,
         "items": [

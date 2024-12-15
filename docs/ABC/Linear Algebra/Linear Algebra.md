@@ -1,3 +1,7 @@
+---
+NoteStatus: draft
+---
+
 向量
 
 - 列向量 column vector
@@ -11,5 +15,5 @@
     - 施瓦茨不等式 Schwarz inequality
       - **（证明）**三角不等式 triangle inequality
       - **（证明）**几何平均 <= 算数平均
-  
+
 - 矩阵
