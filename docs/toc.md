@@ -195,6 +195,7 @@
 * [win10系统下安装pycrypto包的方法](/Programming/Python/win10%E7%B3%BB%E7%BB%9F%E4%B8%8B%E5%AE%89%E8%A3%85pycrypto%E5%8C%85%E7%9A%84%E6%96%B9%E6%B3%95.md)
 * [win环境下print时的UnicodeEncodingError](/Programming/Python/win%E7%8E%AF%E5%A2%83%E4%B8%8Bprint%E6%97%B6%E7%9A%84UnicodeEncodingError.md)
 * [xlrd读取excel文件](/Programming/Python/xlrd%E8%AF%BB%E5%8F%96excel%E6%96%87%E4%BB%B6.md)
+* [用 Nuitka 编译 python 代码](/Programming/Python/%E7%94%A8%20Nuitka%20%E7%BC%96%E8%AF%91%20python%20%E4%BB%A3%E7%A0%81.md)
 * [用gbd调试python core dump](/Programming/Python/%E7%94%A8gbd%E8%B0%83%E8%AF%95python%20core%20dump.md)
 * [自动获取双因子登录验证码——OTP, HOTP, TOTP 基本原理](/Programming/Python/%E8%87%AA%E5%8A%A8%E8%8E%B7%E5%8F%96%E5%8F%8C%E5%9B%A0%E5%AD%90%E7%99%BB%E5%BD%95%E9%AA%8C%E8%AF%81%E7%A0%81%E2%80%94%E2%80%94OTP%2C%20HOTP%2C%20TOTP%20%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86.md)
 

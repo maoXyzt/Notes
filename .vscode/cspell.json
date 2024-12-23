@@ -2,6 +2,8 @@
     "words": [
         "frontmatter",
         "mathjax",
+        "Nuitka",
+        "onefile",
         "pypinyin",
         "vitepress"
     ]

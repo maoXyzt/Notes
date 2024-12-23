@@ -768,6 +768,10 @@
             "link": "/Programming/Python/xlrd%E8%AF%BB%E5%8F%96excel%E6%96%87%E4%BB%B6.md"
           },
           {
+            "text": "用 Nuitka 编译 python 代码",
+            "link": "/Programming/Python/%E7%94%A8%20Nuitka%20%E7%BC%96%E8%AF%91%20python%20%E4%BB%A3%E7%A0%81.md"
+          },
+          {
             "text": "用gbd调试python core dump",
             "link": "/Programming/Python/%E7%94%A8gbd%E8%B0%83%E8%AF%95python%20core%20dump.md"
           },
