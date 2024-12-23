@@ -1,6 +1,8 @@
-# obsidian-livesync
+# Obsidian 同步 - 配置 LiveSync 与自托管 CouchDB 服务器
 
 > [obsidian-livesync/docs/setup_own_server.md](https://github.com/vrtmrz/obsidian-livesync/blob/main/docs/setup_own_server.md#2-run-couchdb-initsh-for-initialise)
+
+本文介绍了如何使用 Docker 和自托管 CouchDB 服务器配置 Obsidian LiveSync 同步。步骤包括安装 Docker 和 CouchDB 服务端，配置环境变量和服务端口，以及通过 Self-hosted LiveSync 插件在 Obsidian 客户端进行设置。最终实现 Obsidian 笔记的实时同步。
 
 ## 0. 安装依赖
 

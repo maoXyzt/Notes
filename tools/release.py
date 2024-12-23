@@ -1,3 +1,17 @@
+"""
+This script generates a structured representation of markdown files in the 'docs' directory.
+It builds a hierarchical structure of groups and pages, ignoring certain files and drafts.
+The structure is saved as a JSON file and a Table of Contents (TOC) is generated in markdown format.
+
+Functions:
+- build_structure(root: Path) -> GroupInfo: Builds the directory structure starting from the root.
+- build_group(d: Path, root: Path, depth: int = 0) -> GroupInfo: Recursively builds groups for directories.
+- _get_sort_key(p: Path) -> str: Generates a sort key for sorting files and directories.
+- build_page(p: Path, root: Path) -> Optional[PageInfo]: Creates a PageInfo instance for markdown files.
+- make_toc(group: GroupInfo, level: int = 0) -> List[str]: Generates a TOC for the given group.
+- main(): Main function to execute the script.
+"""
+
 #!/usr/bin/env python3
 # _*_ coding: utf-8 _*_
 
@@ -108,8 +122,7 @@ def build_page(p: Path, root: Path) -> Optional[PageInfo]:
 
 
 def make_toc(group: GroupInfo, level: int = 0) -> List[str]:
-    """Generate Table of Contents (TOC) for a group recursively.
-    """
+    """Generate Table of Contents (TOC) for a group recursively."""
     lines = [] if level else ["# Table of Contents"]
     if level == 0:
         indent_ = "\n## "

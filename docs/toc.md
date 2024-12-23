@@ -235,7 +235,7 @@
 * [安装Neovim](/Software-Specific/Neovim/%E5%AE%89%E8%A3%85Neovim.md)
 
 ### Obsidian
-* [obsidian-livesync](/Software-Specific/Obsidian/obsidian-livesync.md)
+* [Obsidian 同步 - 配置 LiveSync 与自托管 CouchDB 服务器](/Software-Specific/Obsidian/Obsidian%20%E5%90%8C%E6%AD%A5%20-%20%E9%85%8D%E7%BD%AE%20LiveSync%20%E4%B8%8E%E8%87%AA%E6%89%98%E7%AE%A1%20CouchDB%20%E6%9C%8D%E5%8A%A1%E5%99%A8.md)
 
 ### [pyassimp安装](/Software-Specific/pyassimp%E5%AE%89%E8%A3%85.md)
 
