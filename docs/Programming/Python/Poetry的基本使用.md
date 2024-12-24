@@ -78,7 +78,7 @@ poetry init
 
 + 当前项目是一个 package
 + 可以用 `poetry publish` 命令打包和发布 package
-+ `pyproject.toml` 中 `[project]` 的 `name` 和 `version` 必须指定
++ `pyproject.toml` 中的 `name` 和 `version` 必须指定
 
 非 package 模式时，poetry 仅用来管理依赖。
 
