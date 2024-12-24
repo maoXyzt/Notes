@@ -86,7 +86,7 @@ cargo install procs
 cargo install atuin
 cargo install git-delta
 cargo install tealdeer
-cargo install exa
+cargo install eza
 cargo install bottom
 cargo install xh --locked
 
@@ -115,7 +115,7 @@ brew install procs
 brew install atuin
 brew install git-delta
 brew install tealdeer
-brew install exa
+brew install eza
 brew install bottom
 brew install xh
 ```
@@ -128,20 +128,21 @@ brew install xh
 - [`rg`](https://github.com/BurntSushi/ripgrep#installation): ripgrep，替代`grep`
 - [`dust`](https://github.com/bootandy/dust#install): 替代`du`
 - [`procs`](https://github.com/dalance/procs#cargo): 替代`ps`
-- [atuin](https://github.com/ellie/atuin/blob/main/README.md#install): shell 历史记录增强
-- [delta](https://dandavison.github.io/delta/installation.html#installation): syntax-highlighting git diff
+- [`atuin`](https://github.com/ellie/atuin/blob/main/README.md#install): shell 历史记录增强
+- [`delta`](https://dandavison.github.io/delta/installation.html#installation): syntax-highlighting git diff
 - `tldr`:
-  - (推荐) [tealdeer](https://dbrgn.github.io/tealdeer/installing.html)
-  - (无需编译) [tldr](https://github.com/tldr-pages/tldr#how-do-i-use-it):
-- [`exa`](https://the.exa.website/install/linux): a modern replacement for `ls`
+  - (推荐) [`tealdeer`](https://dbrgn.github.io/tealdeer/installing.html)
+  - (无需编译) [`tldr`](https://github.com/tldr-pages/tldr#how-do-i-use-it):
+- ~~[`exa`](https://the.exa.website/install/linux): a modern replacement for `ls`~~ It's unmaintained. Use `eza` instead.
+- [`eza`](https://github.com/eza-community/eza): a modern replacement for `ls`
 - [`bottom`](https://github.com/ClementTsang/bottom): 图形化进程、系统monitor
-- [`xh`](https://github.com/ducaale/xh): 替代 `httpie`
 
   ```bash
   # linux x64
-  wget https://github.com/ogham/exa/releases/download/v0.10.0/exa-linux-x86_64-v0.10.0.zip
-  unzip exa-linux-x86_64-v0.10.0.zip -d exa
-  sudo install -o root -g root -m 0755 exa/bin/exa /usr/local/bin/exa
+  wget -c https://github.com/eza-community/eza/releases/latest/download/eza_x86_64-unknown-linux-gnu.tar.gz -O - | tar xz
+  sudo chmod +x eza
+  sudo chown root:root eza
+  sudo mv eza /usr/local/bin/eza
   ```
 
 - [`bottom`](https://github.com/ClementTsang/bottom?ref=itsfoss.com#debianubuntu): 图形化进程、系统monitor
@@ -156,8 +157,11 @@ brew install xh
   sudo snap connect bottom:process-control
   ```
 
+- [`xh`](https://github.com/ducaale/xh): 替代 `httpie`
+
 ### 2.2 Others
 
+- ~~[`neofetch`](https://github.com/dylanaraps/neofetch): 获取并打印系统信息~~ Use `fastfetch` instead.
 - [`fastfetch`](https://github.com/fastfetch-cli/fastfetch): Fastfetch is a neofetch-like tool for fetching system information and displaying it prettily.
 
 ```bash
@@ -167,5 +171,4 @@ sudo apt-get update
 sudo apt-get install fastfetch
 ```
 
-- ~~[`neofetch`](https://github.com/dylanaraps/neofetch)~~: 获取并打印系统信息
 - [`fuck`](https://github.com/nvbn/thefuck#installation): thefuck，纠正输错的命令
