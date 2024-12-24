@@ -1,42 +1,5 @@
 # Table of Contents
 
-## ABC
-
-### Applied Social Network Analysis in Python
-* Module 1 - Why Study Networks and Basics on NetworkX
-    * [Why Study Networks and Basics on NetworkX](/ABC/Applied%20Social%20Network%20Analysis%20in%20Python/Module%201%20-%20Why%20Study%20Networks%20and%20Basics%20on%20NetworkX/Why%20Study%20Networks%20and%20Basics%20on%20NetworkX.md)
-* Module 2 - Network Connectivity
-    * [Network Connectivity](/ABC/Applied%20Social%20Network%20Analysis%20in%20Python/Module%202%20-%20Network%20Connectivity/Network%20Connectivity.md)
-* Module 3 - Influence Measures and Network Centralization
-    * [Influence Measures and Network Centralization](/ABC/Applied%20Social%20Network%20Analysis%20in%20Python/Module%203%20-%20Influence%20Measures%20and%20Network%20Centralization/Influence%20Measures%20and%20Network%20Centralization.md)
-* Module 4 - Network Evolution
-    * [Network Evolution](/ABC/Applied%20Social%20Network%20Analysis%20in%20Python/Module%204%20-%20Network%20Evolution/Network%20Evolution.md)
-* [Syllabus](/ABC/Applied%20Social%20Network%20Analysis%20in%20Python/Syllabus.md)
-
-### Deep Learning
-* 动手学深度学习-pytorch版
-    * [01-深度学习简介](/ABC/Deep%20Learning/%E5%8A%A8%E6%89%8B%E5%AD%A6%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0-pytorch%E7%89%88/01-%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AE%80%E4%BB%8B.md)
-    * [03-深度学习基础](/ABC/Deep%20Learning/%E5%8A%A8%E6%89%8B%E5%AD%A6%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0-pytorch%E7%89%88/03-%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80.md)
-    * [04-深度学习计算](/ABC/Deep%20Learning/%E5%8A%A8%E6%89%8B%E5%AD%A6%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0-pytorch%E7%89%88/04-%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%AE%A1%E7%AE%97.md)
-    * [05-卷积神经网络](/ABC/Deep%20Learning/%E5%8A%A8%E6%89%8B%E5%AD%A6%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0-pytorch%E7%89%88/05-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C.md)
-    * [06-循环神经网络](/ABC/Deep%20Learning/%E5%8A%A8%E6%89%8B%E5%AD%A6%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0-pytorch%E7%89%88/06-%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C.md)
-* [如何评价GAN网络的好坏：IS和FID](/ABC/Deep%20Learning/%E5%A6%82%E4%BD%95%E8%AF%84%E4%BB%B7GAN%E7%BD%91%E7%BB%9C%E7%9A%84%E5%A5%BD%E5%9D%8F%EF%BC%9AIS%E5%92%8CFID.md)
-
-### 数据结构
-* 树
-    * [树](/ABC/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91/%E6%A0%91.md)
-
-### 图形学
-* [OpenGL坐标系统](/ABC/%E5%9B%BE%E5%BD%A2%E5%AD%A6/OpenGL%E5%9D%90%E6%A0%87%E7%B3%BB%E7%BB%9F.md)
-* [变换的分类](/ABC/%E5%9B%BE%E5%BD%A2%E5%AD%A6/%E5%8F%98%E6%8D%A2%E7%9A%84%E5%88%86%E7%B1%BB.md)
-* [骨骼动画原理](/ABC/%E5%9B%BE%E5%BD%A2%E5%AD%A6/%E9%AA%A8%E9%AA%BC%E5%8A%A8%E7%94%BB%E5%8E%9F%E7%90%86.md)
-* [旋转的不同表示方式](/ABC/%E5%9B%BE%E5%BD%A2%E5%AD%A6/%E6%97%8B%E8%BD%AC%E7%9A%84%E4%B8%8D%E5%90%8C%E8%A1%A8%E7%A4%BA%E6%96%B9%E5%BC%8F.md)
-* 游戏引擎技术及架构
-    * [01-导论](/ABC/%E5%9B%BE%E5%BD%A2%E5%AD%A6/%E6%B8%B8%E6%88%8F%E5%BC%95%E6%93%8E%E6%8A%80%E6%9C%AF%E5%8F%8A%E6%9E%B6%E6%9E%84/01-%E5%AF%BC%E8%AE%BA.md)
-    * [04-游戏所需的三维数学](/ABC/%E5%9B%BE%E5%BD%A2%E5%AD%A6/%E6%B8%B8%E6%88%8F%E5%BC%95%E6%93%8E%E6%8A%80%E6%9C%AF%E5%8F%8A%E6%9E%B6%E6%9E%84/04-%E6%B8%B8%E6%88%8F%E6%89%80%E9%9C%80%E7%9A%84%E4%B8%89%E7%BB%B4%E6%95%B0%E5%AD%A6.md)
-    * [11-动画系统](/ABC/%E5%9B%BE%E5%BD%A2%E5%AD%A6/%E6%B8%B8%E6%88%8F%E5%BC%95%E6%93%8E%E6%8A%80%E6%9C%AF%E5%8F%8A%E6%9E%B6%E6%9E%84/11-%E5%8A%A8%E7%94%BB%E7%B3%BB%E7%BB%9F.md)
-* [坐标系&旋转 Conventions](/ABC/%E5%9B%BE%E5%BD%A2%E5%AD%A6/%E5%9D%90%E6%A0%87%E7%B3%BB%26%E6%97%8B%E8%BD%AC%20Conventions.md)
-
 ## Algorithm
 
 ### LeetCode
@@ -51,6 +14,43 @@
 ### 统计学习方法
 * [k近邻](/Algorithm/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/k%E8%BF%91%E9%82%BB.md)
 * [感知机](/Algorithm/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/%E6%84%9F%E7%9F%A5%E6%9C%BA.md)
+
+## Domain-Knowledge
+
+### Applied Social Network Analysis in Python
+* Module 1 - Why Study Networks and Basics on NetworkX
+    * [Why Study Networks and Basics on NetworkX](/Domain-Knowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%201%20-%20Why%20Study%20Networks%20and%20Basics%20on%20NetworkX/Why%20Study%20Networks%20and%20Basics%20on%20NetworkX.md)
+* Module 2 - Network Connectivity
+    * [Network Connectivity](/Domain-Knowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%202%20-%20Network%20Connectivity/Network%20Connectivity.md)
+* Module 3 - Influence Measures and Network Centralization
+    * [Influence Measures and Network Centralization](/Domain-Knowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%203%20-%20Influence%20Measures%20and%20Network%20Centralization/Influence%20Measures%20and%20Network%20Centralization.md)
+* Module 4 - Network Evolution
+    * [Network Evolution](/Domain-Knowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%204%20-%20Network%20Evolution/Network%20Evolution.md)
+* [Syllabus](/Domain-Knowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Syllabus.md)
+
+### Deep Learning
+* 动手学深度学习-pytorch版
+    * [01-深度学习简介](/Domain-Knowledge/Deep%20Learning/%E5%8A%A8%E6%89%8B%E5%AD%A6%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0-pytorch%E7%89%88/01-%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AE%80%E4%BB%8B.md)
+    * [03-深度学习基础](/Domain-Knowledge/Deep%20Learning/%E5%8A%A8%E6%89%8B%E5%AD%A6%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0-pytorch%E7%89%88/03-%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80.md)
+    * [04-深度学习计算](/Domain-Knowledge/Deep%20Learning/%E5%8A%A8%E6%89%8B%E5%AD%A6%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0-pytorch%E7%89%88/04-%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%AE%A1%E7%AE%97.md)
+    * [05-卷积神经网络](/Domain-Knowledge/Deep%20Learning/%E5%8A%A8%E6%89%8B%E5%AD%A6%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0-pytorch%E7%89%88/05-%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C.md)
+    * [06-循环神经网络](/Domain-Knowledge/Deep%20Learning/%E5%8A%A8%E6%89%8B%E5%AD%A6%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0-pytorch%E7%89%88/06-%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C.md)
+* [如何评价GAN网络的好坏：IS和FID](/Domain-Knowledge/Deep%20Learning/%E5%A6%82%E4%BD%95%E8%AF%84%E4%BB%B7GAN%E7%BD%91%E7%BB%9C%E7%9A%84%E5%A5%BD%E5%9D%8F%EF%BC%9AIS%E5%92%8CFID.md)
+
+### 数据结构
+* 树
+    * [树](/Domain-Knowledge/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91/%E6%A0%91.md)
+
+### 图形学
+* [OpenGL坐标系统](/Domain-Knowledge/%E5%9B%BE%E5%BD%A2%E5%AD%A6/OpenGL%E5%9D%90%E6%A0%87%E7%B3%BB%E7%BB%9F.md)
+* [变换的分类](/Domain-Knowledge/%E5%9B%BE%E5%BD%A2%E5%AD%A6/%E5%8F%98%E6%8D%A2%E7%9A%84%E5%88%86%E7%B1%BB.md)
+* [骨骼动画原理](/Domain-Knowledge/%E5%9B%BE%E5%BD%A2%E5%AD%A6/%E9%AA%A8%E9%AA%BC%E5%8A%A8%E7%94%BB%E5%8E%9F%E7%90%86.md)
+* [旋转的不同表示方式](/Domain-Knowledge/%E5%9B%BE%E5%BD%A2%E5%AD%A6/%E6%97%8B%E8%BD%AC%E7%9A%84%E4%B8%8D%E5%90%8C%E8%A1%A8%E7%A4%BA%E6%96%B9%E5%BC%8F.md)
+* 游戏引擎技术及架构
+    * [01-导论](/Domain-Knowledge/%E5%9B%BE%E5%BD%A2%E5%AD%A6/%E6%B8%B8%E6%88%8F%E5%BC%95%E6%93%8E%E6%8A%80%E6%9C%AF%E5%8F%8A%E6%9E%B6%E6%9E%84/01-%E5%AF%BC%E8%AE%BA.md)
+    * [04-游戏所需的三维数学](/Domain-Knowledge/%E5%9B%BE%E5%BD%A2%E5%AD%A6/%E6%B8%B8%E6%88%8F%E5%BC%95%E6%93%8E%E6%8A%80%E6%9C%AF%E5%8F%8A%E6%9E%B6%E6%9E%84/04-%E6%B8%B8%E6%88%8F%E6%89%80%E9%9C%80%E7%9A%84%E4%B8%89%E7%BB%B4%E6%95%B0%E5%AD%A6.md)
+    * [11-动画系统](/Domain-Knowledge/%E5%9B%BE%E5%BD%A2%E5%AD%A6/%E6%B8%B8%E6%88%8F%E5%BC%95%E6%93%8E%E6%8A%80%E6%9C%AF%E5%8F%8A%E6%9E%B6%E6%9E%84/11-%E5%8A%A8%E7%94%BB%E7%B3%BB%E7%BB%9F.md)
+* [坐标系&旋转 Conventions](/Domain-Knowledge/%E5%9B%BE%E5%BD%A2%E5%AD%A6/%E5%9D%90%E6%A0%87%E7%B3%BB%26%E6%97%8B%E8%BD%AC%20Conventions.md)
 
 ## Programming
 
