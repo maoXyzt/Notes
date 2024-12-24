@@ -77,3 +77,11 @@ brew update
 
 # 如果您之前永久配置了 HOMEBREW 环境变量，还需要在对应的配置文件中，将对应的 HOMEBREW 环境变量配置行删除
 ```
+
+## 卸载
+
+卸载脚本
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
+```
