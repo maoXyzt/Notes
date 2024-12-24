@@ -178,6 +178,7 @@
     * [pandas数据透视](/Programming/Python/pandas/pandas%E6%95%B0%E6%8D%AE%E9%80%8F%E8%A7%86.md)
 * [pip命令](/Programming/Python/pip%E5%91%BD%E4%BB%A4.md)
 * [pip默认源设置](/Programming/Python/pip%E9%BB%98%E8%AE%A4%E6%BA%90%E8%AE%BE%E7%BD%AE.md)
+* [Poetry的基本使用](/Programming/Python/Poetry%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8.md)
 * [python ftplib SSLEOFERROR解决方案](/Programming/Python/python%20ftplib%20SSLEOFERROR%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.md)
 * [Python3 基本数据类型](/Programming/Python/Python3%20%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.md)
 * [python脚本获取自身当前路径的正确方法](/Programming/Python/python%E8%84%9A%E6%9C%AC%E8%8E%B7%E5%8F%96%E8%87%AA%E8%BA%AB%E5%BD%93%E5%89%8D%E8%B7%AF%E5%BE%84%E7%9A%84%E6%AD%A3%E7%A1%AE%E6%96%B9%E6%B3%95.md)
