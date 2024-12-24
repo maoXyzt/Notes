@@ -204,9 +204,6 @@
 
 ## Software-Specific
 
-### Backtrader
-* [01-概念术语](/Software-Specific/Backtrader/01-%E6%A6%82%E5%BF%B5%E6%9C%AF%E8%AF%AD.md)
-
 ### Blender
 * [blender as python module](/Software-Specific/Blender/blender%20as%20python%20module.md)
 * [blender&mathutils中的欧拉角](/Software-Specific/Blender/blender%26mathutils%E4%B8%AD%E7%9A%84%E6%AC%A7%E6%8B%89%E8%A7%92.md)
