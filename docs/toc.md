@@ -223,6 +223,7 @@
 * [安装FBX Python SDK](/Software-Specific/FBX/%E5%AE%89%E8%A3%85FBX%20Python%20SDK.md)
 
 ### MacOS
+* [Homebrew](/Software-Specific/MacOS/Homebrew.md)
 * [MacOS 配置定时任务](/Software-Specific/MacOS/MacOS%20%E9%85%8D%E7%BD%AE%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1.md)
 
 ### Maya
