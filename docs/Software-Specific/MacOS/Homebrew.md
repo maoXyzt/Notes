@@ -85,3 +85,9 @@ brew update
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
 ```
+
+## FAQ
+
+### 1. `brew update` 不能升级 brew 版本
+
+回退更换的源到默认配置后，再执行 `brew update` 即可升级 brew 版本。（然后再把源更换回来）
