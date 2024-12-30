@@ -1,34 +1,34 @@
-# 在Cython中使用C++
+# 在 Cython 中使用 C++
 
 > 作者: tushushu
 >
 > 项目地址: <https://github.com/tushushu/flying-python>
 
-## 0. 如何安装Cython
+## 0. 如何安装 Cython
 
-跟大多数的Python库不同，Cython需要一个C编译器，在不同的平台上配置方法也不一样。
+跟大多数的 Python 库不同，Cython 需要一个 C 编译器，在不同的平台上配置方法也不一样。
 
-### 0.1 配置gcc
+### 0.1 配置 gcc
 
 - **windows**
-  安装MingW-w64编译器：`conda install libpython m2w64-toolchain -c msys2`
-  在Python安装路径下找到\Lib\distutils文件夹，创建distutils.cfg写入如下内容：
+  安装 MingW-w64 编译器：`conda install libpython m2w64-toolchain -c msys2`
+  在 Python 安装路径下找到\Lib\distutils 文件夹，创建 distutils.cfg 写入如下内容：
   `[build] compiler=mingw32`
 - **macOS**
-  安装XCode即可
+  安装 XCode 即可
 - **linux:**
-  gcc一般都是配置好的，如果没有就执行这条命令： `sudo apt-get install build-essential`
+  gcc 一般都是配置好的，如果没有就执行这条命令： `sudo apt-get install build-essential`
 
-### 0.2 安装cython库
+### 0.2 安装 cython 库
 
 - pip: `pip install cython`
 - conda： `conda install cython`
 
-## 1. 在Jupyter Notebook上使用C++
+## 1. 在 Jupyter Notebook 上使用 C++
 
-- 首先加载Cython扩展，使用魔术命令  ``%load_ext Cython``
-- 接下来运行Cython代码，使用魔术命令  ``%%cython --cplus``
-- 如果使用MacOS，使用魔术命令  ``%%cython --cplus --compile-args=-stdlib=libc++ --link-args=-stdlib=libc++``，详情请参考<https://stackoverflow.com/questions/57367764/cant-import-cpplist-into-cython>
+- 首先加载 Cython 扩展，使用魔术命令 `%load_ext Cython`
+- 接下来运行 Cython 代码，使用魔术命令 `%%cython --cplus`
+- 如果使用 MacOS，使用魔术命令  `%%cython --cplus --compile-args=-stdlib=libc++ --link-args=-stdlib=libc++`，详情请参考 <https://stackoverflow.com/questions/57367764/cant-import-cpplist-into-cython>
 
 ```python
 %load_ext Cython
@@ -43,33 +43,35 @@ s = b"Hello world!"
 print(s.decode("utf-8"))
 ```
 
-    Hello world!
+```text
+Hello world!
+```
 
-## 2. C++和Python类型的相互转换
+## 2. C++和 Python 类型的相互转换
 
 | Python type| C++ type | Python type |
 | ------ | ------ | ------ |
-| bytes | std::string | bytes |
-|iterable|std::vector|list|
-|iterable|std::list|list|
-|iterable|std::set|set|
-|iterable (len 2)|std::pair|tuple (len 2)|
+| bytes | std:: string | bytes |
+|iterable|std:: vector|list|
+|iterable|std:: list|list|
+|iterable|std:: set|set|
+|iterable (len 2)|std:: pair|tuple (len 2)|
 
-## 3. 使用C++ STL
+## 3. 使用 C++ STL
 
-### 3.1 使用C++ Vector
+### 3.1 使用 C++ Vector
 
-可以替代Python的List。
+可以替代 Python 的 List。
 
-1. 初始化 - 通过Python的可迭代对象进行初始化，需要声明变量的嵌套类型
-2. 遍历 - 让index自增，通过while循环进行遍历
-3. 访问 - 和Python一样使用'[]'操作符对元素进行访问
-4. 追加 - 与Python list的append方法相似，使用C++ Vector的push_back方法追加元素
+1. 初始化 - 通过 Python 的可迭代对象进行初始化，需要声明变量的嵌套类型
+2. 遍历 - 让 index 自增，通过 while 循环进行遍历
+3. 访问 - 和 Python 一样使用'[]'操作符对元素进行访问
+4. 追加 - 与 Python list 的 append 方法相似，使用 C++ Vector 的 push_back 方法追加元素
 
-最后，我们通过分别实现Python和C++版本的元素计数函数来对比性能，C++大约快240倍左右。
-注意: 为了公平起见，函数没有传入参数，而是直接访问函数体外部的变量。避免计入C++版本把Python列表转换为C++ Vector的耗时。如果计入这部分耗时，C++的版本大约快4倍左右。
+最后，我们通过分别实现 Python 和 C++版本的元素计数函数来对比性能，C++大约快 240 倍左右。
+注意: 为了公平起见，函数没有传入参数，而是直接访问函数体外部的变量。避免计入 C++版本把 Python 列表转换为 C++ Vector 的耗时。如果计入这部分耗时，C++的版本大约快 4 倍左右。
 
-```cython
+```python
 %%cython --cplus --compile-args=-stdlib=libc++ --link-args=-stdlib=libc++
 from libcpp.vector cimport vector
 # 通过Python对象初始化
@@ -89,14 +91,16 @@ vec.push_back(5)
 print("追加元素之后vec变为", vec)
 ```
 
-    开始遍历...
-     第0个位置的元素是0
-     第1个位置的元素是1
-     第2个位置的元素是2
-     第3个位置的元素是3
-     第4个位置的元素是4
+```text
+开始遍历...
+    第 0 个位置的元素是 0
+    第 1 个位置的元素是 1
+    第 2 个位置的元素是 2
+    第 3 个位置的元素是 3
+    第 4 个位置的元素是 4
 
-    追加元素之后vec变为 [0, 1, 2, 3, 4, 5]
+追加元素之后 vec 变为 [0, 1, 2, 3, 4, 5]
+```
 
 ```python
 arr = [x // 100 for x in range(1000)]
@@ -108,7 +112,9 @@ def count_py():
 print("用Python来实现，计算结果为%d!"% count_py())
 ```
 
-    用Python来实现，计算结果为100!
+```text
+用Python来实现，计算结果为100!
+```
 
 ```cython
 %%cython --cplus --compile-args=-stdlib=libc++ --link-args=-stdlib=libc++
@@ -135,7 +141,9 @@ def count_cpp():
 print("用Cython(C++)来实现，计算结果为%d!"% count_cpp())
 ```
 
-    用Cython(C++)来实现，计算结果为100!
+```text
+用Cython(C++)来实现，计算结果为100!
+```
 
 ```python
 print("对比Python版本与C++版本的性能...")
@@ -143,27 +151,29 @@ print("对比Python版本与C++版本的性能...")
 %timeit count_cpp()
 ```
 
-    对比Python版本与C++版本的性能...
-    29.9 µs ± 995 ns per loop (mean ± std. dev. of 7 runs, 10000 loops each)
-    130 ns ± 2.91 ns per loop (mean ± std. dev. of 7 runs, 10000000 loops each)
+```text
+对比Python版本与C++版本的性能...
+29.9 µs ± 995 ns per loop (mean ± std. dev. of 7 runs, 10000 loops each)
+130 ns ± 2.91 ns per loop (mean ± std. dev. of 7 runs, 10000000 loops each)
+```
 
-### 3.2 使用C++ Unordered Map
+### 3.2 使用 C++ Unordered Map
 
-可以替代Python的Dict。
+可以替代 Python 的 Dict。
 
-1. 初始化 - 通过Python的可迭代对象进行初始化，需要声明变量的嵌套类型
-2. 遍历 - 让泛型指针自增，通过while循环进行遍历
-3. 访问 - 使用deref(C++中的'*'操作符)来解引用，返回pair对象，通过.first来访问key, .second来访问Value
-4. 查找 - 使用unordered_map.count，返回1或0；或者用unordered_map.find，返回一个泛型指针，如果指针指向unordered_map.end，则表示未找到。
-5. 追加/修改 - unordered_map[key] = value。如果Key不存在，'[]'操作符会添加一个Key，并赋值为默认的Value，比如0.0。所以，除非确定不会产生错误，否则在修改Key对应的Value之前，要先判断Key是否存在。这与Python的DecaultDict有点相似。
+1. 初始化 - 通过 Python 的可迭代对象进行初始化，需要声明变量的嵌套类型
+2. 遍历 - 让泛型指针自增，通过 while 循环进行遍历
+3. 访问 - 使用 deref(C++中的'*'操作符)来解引用，返回 pair 对象，通过.first 来访问 key, .second 来访问 Value
+4. 查找 - 使用 unordered_map.count，返回 1 或 0；或者用 unordered_map.find，返回一个泛型指针，如果指针指向 unordered_map.end，则表示未找到。
+5. 追加/修改 - unordered_map [key] = value。如果 Key 不存在，'[]'操作符会添加一个 Key，并赋值为默认的 Value，比如 0.0。所以，除非确定不会产生错误，否则在修改 Key 对应的 Value 之前，要先判断 Key 是否存在。这与 Python 的 DecaultDict 有点相似。
 
-最后，我们通过分别实现Python和C++版本的map条件求和函数来对比性能，C++大约快40倍左右。
+最后，我们通过分别实现 Python 和 C++版本的 map 条件求和函数来对比性能，C++大约快 40 倍左右。
 
 ```python
 %%cython --cplus --compile-args=-stdlib=libc++ --link-args=-stdlib=libc++
 from cython.operator cimport dereference as deref, preincrement as inc
 from libcpp.unordered_map cimport unordered_map
-# 通过Python对象初始化
+# 通过 Python 对象初始化
 cdef unordered_map[int, float] mymap = {i: i/10 for i in range(10)}
 # 遍历
 cdef:
@@ -194,7 +204,7 @@ print()
 print("修改元素...")
 if mymap.count(3):
     mymap[3] += 1.0
-mymap[-2]  # Key -2不存在，会被添加一个默认值0.0
+mymap[-2]  # Key -2 不存在，会被添加一个默认值 0.0
 print("\tKey is 3, Value is %.1f" % mymap[3])
 print("\tKey is -2, Value is %.1f" % mymap[-2])
 ```
@@ -276,25 +286,25 @@ print("对比Python版本与C++版本的性能...")
 162 ns ± 6.29 ns per loop (mean ± std. dev. of 7 runs, 10000000 loops each)
 ```
 
-### 3.3 使用C++ Unordered Set
+### 3.3 使用 C++ Unordered Set
 
-可以替代Python的Set。
+可以替代 Python 的 Set。
 
-1. 初始化 - 通过Python的可迭代对象进行初始化，需要声明变量的嵌套类型
-2. 遍历 - 让泛型指针自增，通过while循环进行遍历
-3. 访问 - 使用deref(C++中的'*'操作符)来解引用
-4. 查找 - 使用unordered_set.count，返回1或0
-5. 追加 - 使用unordered_set.insert，如果元素已经存在，则元素不会被追加
-6. 交集、并集、差集 - 据我所知，unordered_set的这些操作需要开发者自己去实现，不如Python的Set用起来方便。
+1. 初始化 - 通过 Python 的可迭代对象进行初始化，需要声明变量的嵌套类型
+2. 遍历 - 让泛型指针自增，通过 while 循环进行遍历
+3. 访问 - 使用 deref(C++中的'*'操作符)来解引用
+4. 查找 - 使用 unordered_set.count，返回 1 或 0
+5. 追加 - 使用 unordered_set.insert，如果元素已经存在，则元素不会被追加
+6. 交集、并集、差集 - 据我所知，unordered_set 的这些操作需要开发者自己去实现，不如 Python 的 Set 用起来方便。
 
-最后，我们通过分别实现Python和C++版本的set求交集对比性能，C++大约**慢**20倍左右。详情可参考<https://stackoverflow.com/questions/54763112/how-to-improve-stdset-intersection-performance-in-c>
-如果只是求两个集合相同元素的数量，C++的性能大约是Python的6倍。不难推测，C++的unordered set查询很快，但是创建很慢。
+最后，我们通过分别实现 Python 和 C++版本的 set 求交集对比性能，C++大约 **慢** 20 倍左右。详情可参考 <https://stackoverflow.com/questions/54763112/how-to-improve-stdset-intersection-performance-in-c>
+如果只是求两个集合相同元素的数量，C++的性能大约是 Python 的 6 倍。不难推测，C++的 unordered set 查询很快，但是创建很慢。
 
 ```python
 %%cython --cplus --compile-args=-stdlib=libc++ --link-args=-stdlib=libc++
 from cython.operator cimport dereference as deref, preincrement as inc
 from libcpp.unordered_set cimport unordered_set
-# 通过Python对象初始化
+# 通过 Python 对象初始化
 cdef unordered_set[int] myset = {i for i in range(5)}
 # 遍历
 cdef:
@@ -453,14 +463,14 @@ print("对比Python版本与C++版本的性能...")
 
 ## 4. 传值与传引用
 
-Python的函数，如果是容器类对象(如List, Set)，传递的是引用，否则传递的是值(如int, float)，如果不希望让函数修改容器类对象，可以用deepcopy函数先拷贝一份容器的副本。
-但在C++里默认都是传值，如果需要传引用需要声明。
-以int型Vector为例，可以看到v1的值没有被pass_value修改，但被pass_reference修改了。
+Python 的函数，如果是容器类对象(如 List, Set)，传递的是引用，否则传递的是值(如 int, float)，如果不希望让函数修改容器类对象，可以用 deepcopy 函数先拷贝一份容器的副本。
+但在 C++里默认都是传值，如果需要传引用需要声明。
+以 int 型 Vector 为例，可以看到 v1 的值没有被 pass_value 修改，但被 pass_reference 修改了。
 
-- 传值使用  ``vector[int]``，pass_value函数只是传入了v1的一份拷贝，所以函数无法修改v1
-- 传引用使用  ``vector[int]&``，pass_reference传入了v1的引用，函数可以修改v1。
+- 传值使用  ``vector[int]``，pass_value 函数只是传入了 v1 的一份拷贝，所以函数无法修改 v1
+- 传引用使用  ``vector[int]&``，pass_reference 传入了 v1 的引用，函数可以修改 v1。
 
-下面的两块代码可以展示Python与C++的不同之处。
+下面的两块代码可以展示 Python 与 C++的不同之处。
 
 ```python
 from copy import deepcopy
@@ -513,7 +523,7 @@ v1的初始值是[0, 0, 0]
 
 ## 5. 数字的范围
 
-Python只有int型，而且int的范围可以认为是无限大的，只要没有超出内存限制，所以Python使用者一般不太关心数值溢出等问题。但使用C++的时候就需要谨慎，C++各个数字类型对应的范围如下：
+Python 只有 int 型，而且 int 的范围可以认为是无限大的，只要没有超出内存限制，所以 Python 使用者一般不太关心数值溢出等问题。但使用 C++的时候就需要谨慎，C++各个数字类型对应的范围如下：
 
 |Type |Typical Bit Width |Typical Range|
 | ------ | ------ | ------ |
