@@ -24,4 +24,4 @@ Python3 支持 __int__、__float__、__bool__、__complex__（复数）。
 Python3 的六个标准数据类型中：
 
 + 不可变数据：Number（数字）、String（字符串）、Tuple（元组）；
-+ 可变数据：List（列表）、Dictionary（字典）、、Sets（集合）
++ 可变数据：List（列表）、Dictionary（字典）、Sets（集合）

@@ -306,16 +306,16 @@
             "link": "/Programming/Database/SQL%20-%20pg%20-%20UPDATE%20SET%20FROM.md"
           },
           {
+            "text": "SQL查询优化经验",
+            "link": "/Programming/Database/SQL%E6%9F%A5%E8%AF%A2%E4%BC%98%E5%8C%96%E7%BB%8F%E9%AA%8C.md"
+          },
+          {
             "text": "SQL利用row_number()查询分组排序后的一条或多条数据",
             "link": "/Programming/Database/SQL%E5%88%A9%E7%94%A8row_number%28%29%E6%9F%A5%E8%AF%A2%E5%88%86%E7%BB%84%E6%8E%92%E5%BA%8F%E5%90%8E%E7%9A%84%E4%B8%80%E6%9D%A1%E6%88%96%E5%A4%9A%E6%9D%A1%E6%95%B0%E6%8D%AE.md"
           },
           {
             "text": "SQL中EXISTS和IN语句的区别",
             "link": "/Programming/Database/SQL%E4%B8%ADEXISTS%E5%92%8CIN%E8%AF%AD%E5%8F%A5%E7%9A%84%E5%8C%BA%E5%88%AB.md"
-          },
-          {
-            "text": "查询优化经验",
-            "link": "/Programming/Database/%E6%9F%A5%E8%AF%A2%E4%BC%98%E5%8C%96%E7%BB%8F%E9%AA%8C.md"
           }
         ]
       },
@@ -614,8 +614,8 @@
             "link": "/Programming/Python/alembic%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4.md"
           },
           {
-            "text": "conda源设置",
-            "link": "/Programming/Python/conda%E6%BA%90%E8%AE%BE%E7%BD%AE.md"
+            "text": "conda 换源",
+            "link": "/Programming/Python/conda%20%E6%8D%A2%E6%BA%90.md"
           },
           {
             "text": "Cython中使用C++",
@@ -686,12 +686,8 @@
             ]
           },
           {
-            "text": "pip命令",
-            "link": "/Programming/Python/pip%E5%91%BD%E4%BB%A4.md"
-          },
-          {
-            "text": "pip默认源设置",
-            "link": "/Programming/Python/pip%E9%BB%98%E8%AE%A4%E6%BA%90%E8%AE%BE%E7%BD%AE.md"
+            "text": "pip 命令换源",
+            "link": "/Programming/Python/pip%20%E5%91%BD%E4%BB%A4%E6%8D%A2%E6%BA%90.md"
           },
           {
             "text": "Poetry的基本使用",
@@ -730,10 +726,6 @@
                 "link": "/Programming/Python/pytorch/02-autograd-%E8%87%AA%E5%8A%A8%E6%B1%82%E6%A2%AF%E5%BA%A6.md"
               }
             ]
-          },
-          {
-            "text": "Redis基本操作",
-            "link": "/Programming/Python/Redis%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C.md"
           },
           {
             "text": "SQLAlchemy操作数据的方法",

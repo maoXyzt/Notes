@@ -1,3 +1,5 @@
+# 用gdb调试python core dump
+
 ## 0. 安装gdb
 
 ```bash
@@ -17,4 +19,3 @@ run file.py
 # 可以传各种参数
 run -m scripts.test --path xxx/yy/z
 ```
-

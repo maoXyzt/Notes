@@ -1,5 +1,7 @@
 # SQLAlchemy与数据库交互的方式
+
 ## 一、ORM方式(通过session)
+
 ### 1. 查
 
 利用Query对象
@@ -36,6 +38,7 @@ User.query.filter_by(...).order_by(...).all()
 + `Query.one_or_none()`返回None，一个查询结果(result对象实例)，或引发MultipleResultsFound异常
 
 result实例的方法
+
 ```python
 user1.keys()    # 返回查询结果的字段名list（有序）
 user1.id        # 根据字段名获取字段值
@@ -46,6 +49,7 @@ dict(zip(user1.keys(), user1))  # 转为键值字典
 ```
 
 ### 2. 增
+
 ```python
 user1 = User(name='tom')
 db.session.add(user1)
@@ -65,7 +69,9 @@ db.session.new
 但在被查询时会触发session的flush过程，将pending状态的记录写入数据库(状态变为persistent)。
 
 ### 3. 改
+
 直接给字段赋值或通过update({k: v, ...})
+
 ```python
 # 直接修改实例的属性
 user1.name = 'tommy'
@@ -81,6 +87,7 @@ db.session.new
 ```
 
 ### 4. 删
+
 ```python
 # 将实例放入sesssion并标记为删除的
 db.session.delete(user1)
@@ -89,7 +96,9 @@ db.session.query(User).filter(User.id==1).delete(synchronize_session='evaluate')
 
 db.session.commit()
 ```
+
 ### 5. 回滚
+
 回滚上一次commit的内容
 
 ```python
@@ -107,6 +116,7 @@ with db.engine.connect() as conn:
     conn.execute(sql)
     conn.execute(sqlalchemy.sql.text(sql), **param_dict)
 ```
+
 （另一种方式：直接用`db.engine.execute()`方法）
 
 返回ResultProxy对象实例，为对DB-API cursor的封装
@@ -114,10 +124,11 @@ with db.engine.connect() as conn:
 > [ResultProxy](http://docs.sqlalchemy.org/en/latest/core/connections.html#sqlalchemy.engine.ResultProxy)
 
  从ResultProxy对象实例获得RowProxy对象实例
+
 ```python
 .fetchall()     # 取完全部行之后，将自动释放cursor
-.fetchone()     
-.fetchmany(size=None)   
+.fetchone()
+.fetchmany(size=None)
 .first()    # 返回第一行或None，然后立即关闭结果集（调用.close())
 ```
 
@@ -169,4 +180,3 @@ with connection.begin() as trans:
     r1 = connection.execute(table1.select())
     connection.execute(table1.insert(), col1=7, col2='this is some data')
 ```
-

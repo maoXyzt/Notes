@@ -1,10 +1,10 @@
-# Python脚本中获取脚本文件自身的路径
+# Python 脚本中获取脚本文件自身的路径
 
 ## 1. 问题来源
 
-项目根目录为project，其中的scripts目录内存放有一系列脚本`a.py`,`b.py`,`c.py`等，其中脚本的运行需要import 项目中的某些模块。
+项目根目录为project，其中的scripts目录内存放有一系列脚本`a.py`,`b.py`,`c.py`等，其中脚本的运行需要 import 项目中的某些模块。
 
-```
+```text
 project
  ├─scripts
  │  ├─a.py
@@ -18,11 +18,11 @@ project
  ...
 ```
 
-为此，在import之前，需要把项目的根目录加入到脚本运行时的path中（`sys.path.append`），需要确定脚本所在目录，由此推出上一级目录的路径。
+为此，在 import 之前，需要把项目的根目录加入到脚本运行时的path中（`sys.path.append`），需要确定脚本所在目录，由此推出上一级目录的路径。
 
 ## 2. 错误写法
 
-### 写法1:
+### 2.1 错误写法1
 
 ```python
 project_base = Path(__file__).parents[1]
@@ -41,7 +41,7 @@ sys.path.append(str(project_base))
 >
 > `__file__`是相对路径，仅从相对路径获取到的父级深度不一定满足需要。
 
-### 写法2:
+### 2.2 错误写法2
 
 ```python
 project_base = Path(os.getcwd()).parents[0]
@@ -63,17 +63,17 @@ sys.path.append(str(project_base))
 正确写法是对写法1的改良：
 
 ```python
-project_base = Path(__file__).resolve().parents[1]
+project_base = Path(__file__).absolute().parents[1]
 sys.path.append(str(project_base))
+```
 
-# python早期版本没有pathlib库，利用os库的等价写法如下：
+python早期版本没有pathlib库，利用os库的等价写法如下：
+
+```python
 project_base = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(project_base)
 ```
 
-> **总结**：
->
-> 利用`Path().resovle()`或`os.path.abspath`获取绝对路径，然后再获取父级目录。
+## 4. 总结
 
-
-
+利用 `Path().absolute()` 或 `os.path.abspath` 获取绝对路径，然后再获取父级目录。

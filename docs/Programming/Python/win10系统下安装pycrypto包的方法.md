@@ -4,7 +4,7 @@
 
 在win10操作系统下，直接通过`pip install pycrypto`命令安装pycrypto包时，将有如下报错
 
-> error: Microsoft Visual C++ 14.0 is required. Get it with "Microsoft Visual C++ Build Tools": https://visualstudio.microsoft.com/downloads/
+> error: Microsoft Visual C++ 14.0 is required. Get it with "Microsoft Visual C++ Build Tools": <https://visualstudio.microsoft.com/downloads/>
 
 可以通过安装mingw来解决。
 
@@ -12,13 +12,13 @@
 
 在下述网页下载Mingw-w64并安装
 
-> http://www.mingw-w64.org/doku.php
+> <http://www.mingw-w64.org/doku.php>
 
 ## 2. 安装msys2
 
 下载msys2，里面提供了bash的一些命令程序，因为在python编译时，会有一步chmod配置目录，如果不安装msys2会有报错。
 
-> http://www.msys2.org/
+> <http://www.msys2.org/>
 
 ## 3. 配置环境变量
 
@@ -32,4 +32,3 @@ python安装目录下的`Lib\distutils`，修改`distutils.cfg`（没有，则�
 [build]
 compiler = mingw32
 ```
-

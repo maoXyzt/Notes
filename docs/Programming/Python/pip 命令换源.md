@@ -1,4 +1,4 @@
-# pip 默认源设置
+# pip 命令换源
 
 ## 0. 临时使用
 
@@ -18,9 +18,11 @@ pip config set global.index-url https://pypi.douban.com/simple/
 
 ## 2. 修改配置文件
 
+### 2.1 配置 pip 命令
+
 **Linux：**
 
-`$HOME/.config/pip/pip.conf `
+`$HOME/.config/pip/pip.conf`
 
 或者
 
@@ -53,21 +55,19 @@ index-url = https://pypi.douban.com/simple/
 trusted-host = pypi.douban.com
 ```
 
-另外, 使用setup.py安装依赖库, 还是会从默认的http://pypi.python.org下载, 解决方案如下:
+### 2.2 配置 setuptools / distutils 工具
 
-编辑 ~/.pydistutils.cfg 文件，内容如下:
+使用 `setup.py` 安装依赖库, 即使配置了 pip 命令, 还是会从默认的 <http://pypi.python.org> 下载, 解决方案如下:
+
+编辑 `~/.pydistutils.cfg` / `%APPDATA%\Python\pydistutils.cfg` 文件，内容如下:
 
 ```ini
 [easy_install]
 index_url = https://pypi.douban.com/simple
 ```
 
-### Windows 10 方法
-
-新建  文件，内容同上
-
 ## 3. Q&A
 
 Q: WARNING: The repository located at pypi.douban.com is not a trusted or secure host and is being ignored
 
-A: pip不能使用**http**类型的连接，必须使用**https**的安全连接。将源路径改为 https
+A: pip不能使用 **http** 类型的连接，必须使用 **https** 的安全连接。将源路径改为 https

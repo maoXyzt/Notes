@@ -79,9 +79,9 @@
 * [Redis基本操作](/Programming/Database/Redis%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C.md)
 * [SQL - INSERT INTO SELECT](/Programming/Database/SQL%20-%20INSERT%20INTO%20SELECT.md)
 * [SQL - pg - UPDATE SET FROM](/Programming/Database/SQL%20-%20pg%20-%20UPDATE%20SET%20FROM.md)
+* [SQL查询优化经验](/Programming/Database/SQL%E6%9F%A5%E8%AF%A2%E4%BC%98%E5%8C%96%E7%BB%8F%E9%AA%8C.md)
 * [SQL利用row_number()查询分组排序后的一条或多条数据](/Programming/Database/SQL%E5%88%A9%E7%94%A8row_number%28%29%E6%9F%A5%E8%AF%A2%E5%88%86%E7%BB%84%E6%8E%92%E5%BA%8F%E5%90%8E%E7%9A%84%E4%B8%80%E6%9D%A1%E6%88%96%E5%A4%9A%E6%9D%A1%E6%95%B0%E6%8D%AE.md)
 * [SQL中EXISTS和IN语句的区别](/Programming/Database/SQL%E4%B8%ADEXISTS%E5%92%8CIN%E8%AF%AD%E5%8F%A5%E7%9A%84%E5%8C%BA%E5%88%AB.md)
-* [查询优化经验](/Programming/Database/%E6%9F%A5%E8%AF%A2%E4%BC%98%E5%8C%96%E7%BB%8F%E9%AA%8C.md)
 
 ### Docker
 * [Docker 创建 volume](/Programming/Docker/Docker%20%E5%88%9B%E5%BB%BA%20volume.md)
@@ -159,7 +159,7 @@
 
 ### Python
 * [alembic基本命令](/Programming/Python/alembic%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4.md)
-* [conda源设置](/Programming/Python/conda%E6%BA%90%E8%AE%BE%E7%BD%AE.md)
+* [conda 换源](/Programming/Python/conda%20%E6%8D%A2%E6%BA%90.md)
 * [Cython中使用C++](/Programming/Python/Cython%E4%B8%AD%E4%BD%BF%E7%94%A8C%2B%2B.md)
 * Flask
     * [Flask app实例化和初始化](/Programming/Python/Flask/Flask%20app%E5%AE%9E%E4%BE%8B%E5%8C%96%E5%92%8C%E5%88%9D%E5%A7%8B%E5%8C%96.md)
@@ -176,8 +176,7 @@
     * [pandas时间处理：to_datetime和时区](/Programming/Python/pandas/pandas%E6%97%B6%E9%97%B4%E5%A4%84%E7%90%86%EF%BC%9Ato_datetime%E5%92%8C%E6%97%B6%E5%8C%BA.md)
     * [pandas数据聚合：Grouper与agg](/Programming/Python/pandas/pandas%E6%95%B0%E6%8D%AE%E8%81%9A%E5%90%88%EF%BC%9AGrouper%E4%B8%8Eagg.md)
     * [pandas数据透视](/Programming/Python/pandas/pandas%E6%95%B0%E6%8D%AE%E9%80%8F%E8%A7%86.md)
-* [pip命令](/Programming/Python/pip%E5%91%BD%E4%BB%A4.md)
-* [pip默认源设置](/Programming/Python/pip%E9%BB%98%E8%AE%A4%E6%BA%90%E8%AE%BE%E7%BD%AE.md)
+* [pip 命令换源](/Programming/Python/pip%20%E5%91%BD%E4%BB%A4%E6%8D%A2%E6%BA%90.md)
 * [Poetry的基本使用](/Programming/Python/Poetry%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8.md)
 * [python ftplib SSLEOFERROR解决方案](/Programming/Python/python%20ftplib%20SSLEOFERROR%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.md)
 * [Python3 基本数据类型](/Programming/Python/Python3%20%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.md)
@@ -187,7 +186,6 @@
 * pytorch
     * [01-Tensor-数据操作](/Programming/Python/pytorch/01-Tensor-%E6%95%B0%E6%8D%AE%E6%93%8D%E4%BD%9C.md)
     * [02-autograd-自动求梯度](/Programming/Python/pytorch/02-autograd-%E8%87%AA%E5%8A%A8%E6%B1%82%E6%A2%AF%E5%BA%A6.md)
-* [Redis基本操作](/Programming/Python/Redis%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C.md)
 * [SQLAlchemy操作数据的方法](/Programming/Python/SQLAlchemy%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E7%9A%84%E6%96%B9%E6%B3%95.md)
 * supervisor
     * [supervisor的安装与基本命令](/Programming/Python/supervisor/supervisor%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4.md)

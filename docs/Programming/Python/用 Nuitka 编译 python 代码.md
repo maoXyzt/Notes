@@ -173,3 +173,7 @@ python -m nuitka --macos-create-app-bundle --macos-app-icon=your-icon.icns progr
 在 Windows 平台，默认会打开一个 console 窗口。用 `--disable-console` 参数禁用。
 
 用 `--enable-console` 参数强制打开。
+
+## 3. 交叉编译 Cross Compilation
+
+> <https://github.com/Nuitka/Nuitka/issues/43#issuecomment-2100416081>

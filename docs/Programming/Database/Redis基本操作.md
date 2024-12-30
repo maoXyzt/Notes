@@ -1,10 +1,12 @@
-启动redis服务
+# Redis基本操作
+
+## 1. 启动redis服务
 
 ```bash
-redis-server /etc/redis/6379.conf	# 配置文件的路径
+redis-server /etc/redis/6379.conf # 配置文件的路径
 ```
 
-连接
+## 2. 连接redis服务
 
 ```bash
 redis-cli
@@ -12,7 +14,7 @@ redis-cli
 redis-cli -p 6380
 ```
 
-连接后
+## 3. 连接后
 
 ```bash
 # 如设置了密码，输入密码进行验证
@@ -27,9 +29,8 @@ OK
 127.0.0.1:6379[2]>
 ```
 
-退出
+## 4. 退出
 
 ```bash
 127.0.0.1:6379> exit
 ```
-
