@@ -1,5 +1,5 @@
 ---
-noteStatus: draft
+NoteStatus: draft
 ---
 
 # Gitlab CI 配置

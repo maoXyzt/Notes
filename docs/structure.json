@@ -862,16 +862,6 @@
         ]
       },
       {
-        "text": "Gitlab",
-        "collapsed": true,
-        "items": [
-          {
-            "text": "gitlab ci 配置",
-            "link": "/Software-Specific/Gitlab/gitlab%20ci%20%E9%85%8D%E7%BD%AE.md"
-          }
-        ]
-      },
-      {
         "text": "MacOS",
         "collapsed": true,
         "items": [
