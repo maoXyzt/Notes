@@ -8,8 +8,6 @@ NoteStatus: draft
 
 `parallel matrix`
 
-`artifacts`
-
 `needs` vs `dependencies`:
 
 * `dependencies`: only says which artifacts your job is going to download, as opposed to the default behavior of jobs, which is to download all artifacts of all preceding jobs.
@@ -28,3 +26,7 @@ To break it down:
 * To control which dependencies' artifacts are downloaded, without changing order of execution: use `dependencies: [job1, job2]`
 * To control order of execution and download artifacts, just use `needs: [job1, job2]`
 * To control order of execution, but avoid downloading artifacts, use `needs:artifacts:`
+
+`artifacts`
+
+如果 artifacts 用在了 release 中，那么不管 expire_in 设置多少，都会一直保留。
