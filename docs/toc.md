@@ -235,8 +235,6 @@
 ### Obsidian
 * [Obsidian 同步 - 配置 LiveSync 与自托管 CouchDB 服务器](/Software-Specific/Obsidian/Obsidian%20%E5%90%8C%E6%AD%A5%20-%20%E9%85%8D%E7%BD%AE%20LiveSync%20%E4%B8%8E%E8%87%AA%E6%89%98%E7%AE%A1%20CouchDB%20%E6%9C%8D%E5%8A%A1%E5%99%A8.md)
 
-### [pyassimp安装](/Software-Specific/pyassimp%E5%AE%89%E8%A3%85.md)
-
 ### Windows
 * [powershell 开启补全功能](/Software-Specific/Windows/powershell%20%E5%BC%80%E5%90%AF%E8%A1%A5%E5%85%A8%E5%8A%9F%E8%83%BD.md)
 * [powershell 启动加速](/Software-Specific/Windows/powershell%20%E5%90%AF%E5%8A%A8%E5%8A%A0%E9%80%9F.md)

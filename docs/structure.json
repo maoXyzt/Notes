@@ -910,10 +910,6 @@
         ]
       },
       {
-        "text": "pyassimp安装",
-        "link": "/Software-Specific/pyassimp%E5%AE%89%E8%A3%85.md"
-      },
-      {
         "text": "Windows",
         "collapsed": true,
         "items": [

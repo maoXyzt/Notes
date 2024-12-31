@@ -2,7 +2,7 @@
 
 > [PowerShell steps to fix slow startup](https://stackoverflow.com/questions/59341482/powershell-steps-to-fix-slow-startup)
 
-用**管理员权限**运行以下命令：
+用 **管理员权限** 运行以下命令：
 
 ```powershell
 $env:PATH = [Runtime.InteropServices.RuntimeEnvironment]::GetRuntimeDirectory()

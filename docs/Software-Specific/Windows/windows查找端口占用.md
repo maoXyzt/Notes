@@ -6,7 +6,7 @@
 netstat -ano | findstr "8080"
 ```
 
-## 查找进程id对应的进程
+## 查找进程 id 对应的进程
 
 ```cmd
 tasklist | findstr "8080"
@@ -18,4 +18,4 @@ tasklist | findstr "8080"
 taskkill /f /pid 1234
 ```
 
-或者通过任务管理器，切换到“进程选项卡”，在PID一列中找到对应的进程。
+或者通过任务管理器，切换到“进程选项卡”，在 PID 一列中找到对应的进程。

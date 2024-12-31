@@ -24,7 +24,7 @@ Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
 
 安装 powershell 7.3 或以上版本，默认启用 Predictive IntelliSense 特性。
 
-安装方法：通过winget安装
+安装方法：通过 winget 安装
 
 > [winget 国内源](./winget 国内源.md)
 

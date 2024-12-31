@@ -1,10 +1,14 @@
+---
+NoteStatus: draft
+---
+
 # PyAssimp 安装
 
 ## assimp 编译安装
 
 ### 下载源码
 
-release v5.2.4版本
+release v5.2.4 版本
 
 ### 编译环境
 
@@ -13,7 +17,7 @@ release v5.2.4版本
 
 ### 编译
 
-创建build目录进行编译，方便重试时清理cmake产生的文件
+创建 build 目录进行编译，方便重试时清理 cmake 产生的文件
 
 ```bash
 mkdir build && cd build
@@ -38,7 +42,7 @@ assimp version
 pip install pyasimp
 ```
 
-为了适配python3，需要做一些修改
+为了适配 python3，需要做一些修改
 
 链接库位置：
 

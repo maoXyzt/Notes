@@ -22,9 +22,9 @@
 
 ### 2. 新建菜单项
 
-在shell下新建 `项`，命名为 `Open with neovim`
+在 shell 下新建 `项`，命名为 `Open with neovim`
 
-可在右侧窗口中修改 `(默认)` 的值为<菜单显示名称>，例如：
+可在右侧窗口中修改 `(默认)` 的值为 <菜单显示名称>，例如：
 
 ```text
 通过 Neovim 打开
@@ -32,9 +32,9 @@
 
 ### 3. 设置命令
 
-在 `Open with neovim` 下新建 `项`，命名为`command`。
+在 `Open with neovim` 下新建 `项`，命名为 `command`。
 
-在右侧窗口中修改 `(默认)` 的值为<启动命令>，例如：
+在右侧窗口中修改 `(默认)` 的值为 <启动命令>，例如：
 
 ```powershell
 "C:\Program Files\Neovim\bin\nvim-qt.exe" "%1"
@@ -44,7 +44,7 @@
 
 在 `Open with neovim` 下新建 `可扩充字符串值` 项，命名为 `Icon`。
 
-在右侧窗口中修改 `(默认)` 的值为<图标或可执行文件的路径>，例如：
+在右侧窗口中修改 `(默认)` 的值为 <图标或可执行文件的路径>，例如：
 
 ```powershell
 C:\Program Files\Neovim\bin\nvim-qt.exe
@@ -58,7 +58,7 @@ C:\Program Files\Neovim\bin\nvim-qt.exe
 
 定位到 `HKEY_CLASSES_ROOT\Directory\Background\shell\` 分支，参照上述步骤执行，但是需要注意：
 
-在步骤3中，把 `%1` 改为 `%V`，例如：
+在步骤 3 中，把 `%1` 改为 `%V`，例如：
 
 ```powershell
 "C:\Program Files\Neovim\bin\nvim-qt.exe" "%V"
