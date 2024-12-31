@@ -14,7 +14,7 @@
 
 ### 使用阿里源安装
 
-用[阿里源](https://developer.aliyun.com/mirror/homebrew)安装
+用 [阿里源](https://developer.aliyun.com/mirror/homebrew) 安装
 
 ```bash
 # 从阿里云下载安装脚本并安装 Homebrew
@@ -43,7 +43,7 @@ HOMEBREW_BOTTLE_DOMAIN="https://mirrors.aliyun.com/homebrew/homebrew-bottles"
 
 配置后执行 `brew update` 更新
 
-配置tap仓库（非必需，非开发者无需配置）
+配置 tap 仓库（非必需，非开发者无需配置）
 
 ```bash
 # 绝大部分用户无需额外配置 tap 仓库

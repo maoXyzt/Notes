@@ -12,7 +12,7 @@ plist 脚本一般存放在以下目录：
 * `/Library/LaunchDaemons`: 只要系统启动了，哪怕用户不登陆系统也会被执行
 * `/Library/LaunchAgents`: 当用户登陆系统后才会被执行
 
-> 更多的plist存放目录：
+> 更多的 plist 存放目录：
 >
 > * `~/Library/LaunchAgents`: 由用户自己定义的任务项
 > * `/Library/LaunchAgents`: 由管理员为用户定义的任务项
@@ -60,7 +60,7 @@ plist 脚本一般存放在以下目录：
 支持两种方式配置执行时间：
 
 * "StartInterval": 指定脚本每间隔多长时间（单位：秒）执行一次；
-* "StartCalendarInterval": 可以指定脚本在多少分钟、小时、天、星期几、月时间上执行，类似如crontab的中的设置，包含下面的 key:
+* "StartCalendarInterval": 可以指定脚本在多少分钟、小时、天、星期几、月时间上执行，类似如 crontab 的中的设置，包含下面的 key:
   * `Minute <integer>`: The minute on which this job will be run.
   * `Hour <integer>`: The hour on which this job will be run.
   * `Day <integer>`: The day on which this job will be run.
@@ -72,7 +72,7 @@ plist 脚本一般存放在以下目录：
 > [launchctl Man Page](https://ss64.com/mac/launchctl.html)
 
 ```shell
-# 加载任务, -w 选项会将plist文件中无效的key覆盖掉，建议加上
+# 加载任务, -w 选项会将 plist 文件中无效的 key 覆盖掉，建议加上
 $ launchctl load -w /full-path/to/com.demo.plist
 
 # 卸载任务

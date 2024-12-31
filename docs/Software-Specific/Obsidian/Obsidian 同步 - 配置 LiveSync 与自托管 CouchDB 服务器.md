@@ -8,7 +8,7 @@
 
 ### 0.1 安装 Docker
 
-> [安装Docker并使用_云服务器 ECS(ECS)-阿里云帮助中心](https://help.aliyun.com/zh/ecs/use-cases/deploy-and-use-docker-on-alibaba-cloud-linux-2-instances?spm=5176.22414175.sslink.1.775b33actyjx4g)
+> [安装 Docker 并使用_云服务器 ECS(ECS)-阿里云帮助中心](https://help.aliyun.com/zh/ecs/use-cases/deploy-and-use-docker-on-alibaba-cloud-linux-2-instances?spm=5176.22414175.sslink.1.775b33actyjx4g)
 
 ```bash
 yum remove docker \
@@ -92,7 +92,7 @@ curl -s https://raw.githubusercontent.com/vrtmrz/obsidian-livesync/main/utils/co
 
 ```bash
 # Prepare environment variables.
-# export hostname=https://server-hostname.com/your-secret-words
+# export hostname = https://server-hostname.com/your-secret-words
 export hostname=http://server-hostname.com:5984
 export admin=admin
 export password=password

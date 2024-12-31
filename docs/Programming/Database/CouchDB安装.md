@@ -7,7 +7,7 @@
 
 ## 1. 安装方式：Docker container
 
-> https://github.com/vrtmrz/obsidian-livesync/blob/main/docs/setup_own_server.md#a-using-docker-container
+> <https://github.com/vrtmrz/obsidian-livesync/blob/main/docs/setup_own_server.md#a-using-docker-container>
 
 1) Prepare
 

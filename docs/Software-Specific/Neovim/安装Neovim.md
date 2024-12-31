@@ -1,4 +1,4 @@
-# 安装Neovim
+# 安装 Neovim
 
 > [Windows 10 系统下 Neovim 安装与配置 - jdhao's digital space](https://jdhao.github.io/2018/11/16/neovim_configuration_windows-zh/#fn:1)
 
@@ -10,7 +10,7 @@
 
 > [neovim/INSTALL.md](https://github.com/neovim/neovim/blob/master/INSTALL.md#install-from-download)
 
-为了确保在命令行可以使用 `nvim` 这个命令打开 Neovim，将安装路径添加到`PATH`中。
+为了确保在命令行可以使用 `nvim` 这个命令打开 Neovim，将安装路径添加到 `PATH` 中。
 
 > [install-from-package](https://github.com/neovim/neovim/wiki/Installing-Neovim#install-from-package)
 
