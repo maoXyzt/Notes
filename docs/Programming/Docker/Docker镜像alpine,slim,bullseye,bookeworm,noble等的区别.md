@@ -16,7 +16,7 @@ Choose it when you need small sized image without bloat and you are sure the alp
 
 ## 2. Slim
 
-- Both Debian and Ubuntu versions(below) have slim tagged images.
+- Both **Debian** and **Ubuntu** versions(below) have slim tagged images.
 - Image size is significantly reduced from the standard image by a process called slimification.
 - As per the docker Debian documentation, man pages, documentation files and some other extra files that are normally not necessary within containers are removed.
 - For more details about what gets removed during the “slimification” process check [here](https://github.com/debuerreotype/debuerreotype/blob/master/scripts/.slimify-excludes) and [here](https://github.com/debuerreotype/debuerreotype/blob/master/scripts/.slimify-includes).
@@ -55,32 +55,44 @@ Choose it when you want a reduced sized image from the standard image. In “sli
 
 ## 4. Ubuntu 系列
 
-## Xenial (full: Xenial Xerus)
+### Xenial
+
+Fullname: Xenial Xerus
 
 - OS: Ubuntu 16.04
 - Kernel: Linux 4.4
 
-## Bionic (full: Bionic Beaver)
+### Bionic
+
+Fullname: Bionic Beaver
 
 - OS: Ubuntu 18.04
 - Kernel: Linux 4.15
 
-## Focal (full: Focal Fossa)
+### Focal
+
+Fullname: Focal Fossa
 
 - OS: Ubuntu 20.04
 - Kernel: Linux 5.4
 
-## Jammy (full: Jammy Jellyfish)
+### Jammy
+
+Fullname: Jammy Jellyfish
 
 - OS: Ubuntu 22.04
 - Kernel: Linux 5.15
 
-## Mantic (full: Mantic Minotaur)
+### Mantic
+
+Fullname: Mantic Minotaur
 
 - OS: Ubuntu 23.10
 - Kernel: Linux 6.5
 
-## Noble (full: Noble Numbat)
+### Noble
+
+Fullname: Noble Numbat
 
 - OS: Ubuntu 24.04
 - Kernel: Linux 6.6
