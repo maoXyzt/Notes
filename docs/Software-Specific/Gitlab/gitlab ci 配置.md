@@ -11,7 +11,7 @@ NoteStatus: draft
 ## `needs` vs `dependencies`
 
 * `dependencies`: only says which artifacts your job is going to download, as opposed to the default behavior of jobs, which is to download all artifacts of all preceding jobs.
-* `needs`: is about order of execution and creating DAGs. The job will start right away once all the declared jobs complete, irrespective of what stage: is declared. needs: also implies the same effect as dependencies:.
+* `needs`: is about order of execution and creating DAGs. The job will start right away once all the declared jobs complete, irrespective of what `stage:` is declared. `needs:` also implies the same effect as `dependencies:`.
 
 If you use needs:, you don't need to also declare dependencies: (but if you do, they must be the same values). If you don't use needs: the order of job execution is controlled by the stage in which the job is declared.
 
@@ -29,7 +29,7 @@ To break it down:
 
 ## `artifacts`
 
-如果 artifacts 用在了 release 中，那么不管 expire_in 设置多少，都会一直保留。
+如果 artifacts 被用在了 release 中，那么不管 `expire_in` 设置多少，都会一直保留。
 
 ## `parallel matrix`
 
@@ -40,7 +40,7 @@ test:
     - echo "Running tests $TEST"
   parallel:
     matrix:
-      TEST: ["unit", "integration]
+      TEST: ["unit", "integration"]
 ```
 
-TEST 可以在 script 中使用。
+如此定义后，"TEST" 变量可以在 script 中使用。
