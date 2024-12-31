@@ -332,6 +332,10 @@
             "link": "/Programming/Docker/Docker%20%E9%85%8D%E7%BD%AE%E9%95%9C%E5%83%8F%E6%BA%90%28registry-mirrors%29.md"
           },
           {
+            "text": "Docker 容器 labels",
+            "link": "/Programming/Docker/Docker%20%E5%AE%B9%E5%99%A8%20labels.md"
+          },
+          {
             "text": "Docker常用命令",
             "link": "/Programming/Docker/Docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.md"
           },
