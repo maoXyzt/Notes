@@ -34,7 +34,7 @@
 %load_ext Cython
 ```
 
-```cython
+```python
 %%cython --cplus --compile-args=-stdlib=libc++ --link-args=-stdlib=libc++
 # 注意: 使用 'cimport' 而不是 'import'
 from libcpp.string cimport string
@@ -116,7 +116,7 @@ print("用Python来实现，计算结果为%d!"% count_py())
 用Python来实现，计算结果为100!
 ```
 
-```cython
+```python
 %%cython --cplus --compile-args=-stdlib=libc++ --link-args=-stdlib=libc++
 from libcpp.vector cimport vector
 

@@ -62,7 +62,7 @@ services:
 docker ps --format "table {{.ID}}\t{{.Names}}\t{{.Ports}}\t{{.Labels}}"
 ```
 
-输出示例：
+输出示例:
 
 ```text
 CONTAINER ID NAMES PORTS LABELS
@@ -75,9 +75,3 @@ bd2832c8f6fc app_1 0.0.0.0:8081->8080/tcp instance=blue
 ### 4) 实例化多服务
 
 当需要在同一主机上水平扩展服务时，可以通过更改 `.env` 文件中的变量（如 `INSTANCE_NAME` 和 `INSTANCE_PORT`）来启动另一个服务实例。标签有助于在这种情况下区分不同的服务实例，确保即使端口相同也能明确识别各服务。
-
-### 5) 展示标签信息
-
-通过调整 `docker ps` 命令的格式参数，可以包含标签信息，使得输出结果更加丰富和有用。例如，`docker ps --format "table {{.ID}}\t{{.Names}}\t{{.Ports}}\t{{.Labels}}"` 这样的命令可以让标签信息一目了然。
-
-总之，这篇文章强调了在 Docker Compose 中利用标签的重要性，特别是
