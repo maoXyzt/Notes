@@ -156,9 +156,7 @@ def main():
     #     f.write("\n".join(side_bars_list))
 
     toc_lines = make_toc(structure)
-    with (root / "toc.md").open("w+", encoding="utf8") as f:
-        f.write("\n".join(toc_lines))
-
+    (root / "toc.md").write_text("\n".join(toc_lines), encoding="utf8", newline='\n')
     print("Done")
 
 
