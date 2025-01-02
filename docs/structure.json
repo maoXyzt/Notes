@@ -768,6 +768,10 @@
             "link": "/Programming/Python/xlrd%E8%AF%BB%E5%8F%96excel%E6%96%87%E4%BB%B6.md"
           },
           {
+            "text": "不退出python进程的情况下删除.pyd文件",
+            "link": "/Programming/Python/%E4%B8%8D%E9%80%80%E5%87%BApython%E8%BF%9B%E7%A8%8B%E7%9A%84%E6%83%85%E5%86%B5%E4%B8%8B%E5%88%A0%E9%99%A4.pyd%E6%96%87%E4%BB%B6.md"
+          },
+          {
             "text": "用 Nuitka 编译 python 代码",
             "link": "/Programming/Python/%E7%94%A8%20Nuitka%20%E7%BC%96%E8%AF%91%20python%20%E4%BB%A3%E7%A0%81.md"
           },
