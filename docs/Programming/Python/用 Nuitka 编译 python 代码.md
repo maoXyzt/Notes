@@ -4,7 +4,7 @@
 
 + Windows 10
 + python 3.10
-+ nuitka==2.5.8
++ nuitka == 2.5.8
 
 ## 1. 环境配置
 
@@ -36,7 +36,7 @@ macOS 平台使用系统的 Clang 编译器。(需要安装 XCode)
 
 #### 2) Python
 
-Nuitka 目前支持 Python>=3.4 和 Python 2.6, 2.7。
+Nuitka 目前支持 Python >= 3.4 和 Python 2.6, 2.7。
 
 如果使用的并非当前活跃的 Python 版本(3.9--3.13)，查看文档检查是否有什么注意事项。[Nuitka User Manual#Python](https://nuitka.net/user-documentation/user-manual.html#python)
 
@@ -174,6 +174,18 @@ python -m nuitka --macos-create-app-bundle --macos-app-icon=your-icon.icns progr
 
 用 `--enable-console` 参数强制打开。
 
-## 3. 交叉编译 Cross Compilation
+## 3. Examples
+
+### 编译 module
+
+```bash
+# 编译单个文件
+python -m nuitka --assume-yes-for-downloads --module --output-dir=build module.py
+# 编译 module 文件夹
+cd /path/to/module_parent_folder # ! 重要。否则无法 include package
+python -m nuitka --assume-yes-for-downloads --module --output-dir=build module_folder --include-package=module_folder
+```
+
+## 4. 交叉编译
 
 > <https://github.com/Nuitka/Nuitka/issues/43#issuecomment-2100416081>
