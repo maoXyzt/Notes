@@ -62,8 +62,11 @@
 
 ### 上传
 
-1. 用 winscp 登录 pve
-2. 把 `.qcow2` 文件传到 `/tmp` 目录（也可自选其他目录）
+用 `scp` 把 `.qcow2` 文件传到 `/tmp` 目录（也可自选其他目录）
+
+```sh
+scp haos_ova-14.1.qcow2 root@<PVE_IP>:/tmp
+```
 
 ### 导入文件
 
@@ -75,7 +78,7 @@
 cd /tmp
 qm importdisk 100 haos_ova-14.1.qcow2 local-lvm
 # Outputs:
-# Successfully imported disk as 'unused0:local-lvm:vm-100-disk-0'
+# unused0: successfully imported disk 'local-lvm:vm-100-disk-0'
 ```
 
 ### 添加硬盘
