@@ -38,6 +38,7 @@
 * [如何评价GAN网络的好坏：IS和FID](/Domain-Knowledge/Deep%20Learning/%E5%A6%82%E4%BD%95%E8%AF%84%E4%BB%B7GAN%E7%BD%91%E7%BB%9C%E7%9A%84%E5%A5%BD%E5%9D%8F%EF%BC%9AIS%E5%92%8CFID.md)
 
 ### DevOps
+* [PVE 安装 homeassistant](/Domain-Knowledge/DevOps/PVE%20%E5%AE%89%E8%A3%85%20homeassistant.md)
 * [安装 PVE 系统](/Domain-Knowledge/DevOps/%E5%AE%89%E8%A3%85%20PVE%20%E7%B3%BB%E7%BB%9F.md)
 * [制作U盘启动盘](/Domain-Knowledge/DevOps/%E5%88%B6%E4%BD%9CU%E7%9B%98%E5%90%AF%E5%8A%A8%E7%9B%98.md)
 
