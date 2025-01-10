@@ -143,3 +143,7 @@ HACS（Home Assistant Community Store）是 Home Assistant 的社区插件商店
 2. 在 HACS 插件页面，选择"安装"。
 3. 启动插件。
 4. 导航到插件日志并按照其中的说明操作。
+
+重启 HA。
+
+Follow the steps on [setting up the HACS integration](https://www.hacs.xyz/docs/use/configuration/basic/#to-set-up-the-hacs-integration)
