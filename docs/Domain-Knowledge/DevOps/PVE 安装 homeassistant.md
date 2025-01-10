@@ -17,12 +17,16 @@
 选择"不使用任何介质"
 [系统]
 # 全部默认
+机型="q35"
+BIOS="OVMF (UEFI)"
+添加EFI磁盘=0
+SCSI控制器="VirtIO SCSI"
 [硬盘]
-硬盘大小(GiB)=1
-# 其实这个大小是多少无所谓，因为创建完虚拟机以后要把硬盘删掉
-# 这里也可以全部默认
+删除当前磁盘
+# 这里也可以全部默认，创建后再删除
 [CPU]
 核心=2
+类别="host"
 [内存]
 内存(MiB)=1024
 # HA 平时运行占用内存在 700MB 左右
@@ -78,25 +82,42 @@ scp haos_ova-14.1.qcow2 root@<PVE_IP>:/tmp
 cd /tmp
 qm importdisk 100 haos_ova-14.1.qcow2 local-lvm
 # Outputs:
-# unused0: successfully imported disk 'local-lvm:vm-100-disk-0'
+# unused0: successfully imported disk 'local-lvm: vm-100-disk-0'
 ```
 
 ### 添加硬盘
 
-在管理网页的左侧点击 "HA" 虚拟机，在右侧选择硬件，会发现出现一个未使用的磁盘0。
+在管理网页的左侧点击 "HA" 虚拟机，在右侧选择硬件，会发现出现一个未使用的磁盘 0，大小为 32G（可以根据需要调整）。
 
-双击未使用的磁盘0，直接点击【添加】
+双击未使用的磁盘 0，直接点击【添加】。
 
 ### 启动虚拟机
 
+"选项-> 引导顺序-> 编辑"，设置启动项, 选择 scsi0。
+
 点击右上方【启动】按钮，等待系统启动完成。
 
-访问 haos 的网页端: <http://homeassistant.local:8123/>
+启动成功后，在 Home Assistant 虚拟机的控制台（PVE 内的选项）里应该能看到它的运行信息，其中会显示出来它的 Web 端访问地址和端口。
 
-第一次启动需要安装很多东西，过程比较慢，且中间会有多次重启，耐心等待即可。
+如果你在虚拟机正常运行，Home Assistant 也启动成功之后，却在控制台里看到的并不是 Web 地址和端口号提示，
+而是一个错误提示的话，则可能是墙导致的问题，可以想办法给 Home Assistant 设置下代理（比如在路由器里先设置一个）再重启运行试试。
+
+第一次启动需要安装很多东西，过程比较慢，且中间可能会有多次重启，耐心等待即可。
 
 ## 4. 设置 haos
+
+访问 haos 的网页端: <http://homeassistant.local:8123/>
 
 首次进入，需要先设置用户信息。
 
 用设置好的用户名、密码登录。
+
+### 安装 Terminal & SSH
+
+设置-> 加载项-> 加载项商店-> 搜索 "Terminal & SSH"-> 安装
+
+（"Advanced SSH & Web Terminal" 更强大，建议安装）
+
+### 安装 HACS
+
+HACS 是 Home Assistant Community Store 的缩写，是一个 Home Assistant 社区插件商店。
