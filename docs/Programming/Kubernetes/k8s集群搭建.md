@@ -123,7 +123,7 @@ sudo sysctl --system
 >
 > Optional:
 >
-> - [给非root用户运行docker命令的权限](https://github.com/Maoxie/Notes/blob/master/docs/Skills/Docker/%E7%BB%99%E9%9D%9Eroot%E7%94%A8%E6%88%B7%E8%BF%90%E8%A1%8Cdocker%E7%9A%84%E6%9D%83%E9%99%90.md)
+> - [给非root用户运行docker命令的权限](https://github.com/maoXyzt/Notes/blob/master/docs/Programming/Docker/%E7%BB%99%E9%9D%9Eroot%E7%94%A8%E6%88%B7%E8%BF%90%E8%A1%8Cdocker%E7%9A%84%E6%9D%83%E9%99%90.md)
 
 ### 2.2 Container Runtime Interface (CRI)
 

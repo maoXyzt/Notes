@@ -17,7 +17,7 @@ export default defineConfig({
     ],
     sidebar: structure,
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/Maoxie/Notes' }
+      { icon: 'github', link: 'https://github.com/maoXyzt/Notes' }
     ],
     search: {
       provider: 'local',
@@ -31,7 +31,7 @@ export default defineConfig({
       },
     },
     editLink: {
-      pattern: 'https://github.com/Maoxie/Notes/blob/master/docs/:path',
+      pattern: 'https://github.com/maoXyzt/Notes/blob/master/docs/:path',
       text: 'View this page on GitHub'
     },
     footer: {
