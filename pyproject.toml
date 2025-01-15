@@ -1,20 +1,11 @@
-[build-system]
-requires = ["setuptools >= 61.0"]
-build-backend = "setuptools.build_meta"
-
-[tool.setuptools.packages.find]
-where = ["."]
-include = ["*"]
-exclude = []
-namespaces = false
-
 [project]
 name = "Notes"
 version = "0.1.0"
 description = "Personal notes and tools for managing notes."
 readme = "README.md"
 authors = [{ name = "maoXyzt", email = "edwardyzt@gmail.com" }]
-requires-python = ">=3.9, <3.12"
+requires-python = ">=3.10, <3.13"
+dynamic = ["dependencies"]
 license = { text = 'Apache License 2.0' }
 classifiers = [
     "Operating System :: Microsoft :: Windows",
@@ -22,44 +13,31 @@ classifiers = [
     "Operating System :: MacOS",
     "Operating System :: POSIX :: Linux",
     "Development Status :: 4 - Beta",
-    "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
     "License :: OSI Approved :: Apache Software License",
 ]
-dynamic = ["dependencies"]
+keywords = []
 
-[tool.setuptools.dynamic]
-dependencies = { file = ["requirements.txt"] }
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
 
-[tool.ruff]
-line-length = 120
-# Assume the minimum version is Python 3.9
-target-version = 'py39'
-fix = true
+[tool.poetry]
+requires-poetry = ">=2.0,<3.0"
+package-mode = false
+packages = [{ include = "scripts", from = "." }]
 
-[tool.ruff.lint]
-select = [
-    "E",   # pycodestyle
-    "F",   # Pyflakes
-    "B",   # flake8-bugbear
-    "TC",  # flake8-type-checking
-    "I",   # isort
-    "T20", # flake8-print
-    # "TID", # flake8-tidy-imports
-    # "UP", # pyupgrade
-    # "SIM",    # flake8-simplify
-]
-unfixable = [
-    "F401", # unused imports
-    "F841", # unused variables
-]
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+pypinyin = "^0.53.0"
+python-frontmatter = "^1.1.0"
+typer = "^0.15.1"
+pydantic = "^2.10.5"
+rich = "^13.9.4"
+pydantic-settings = "^2.7.1"
 
-[tool.ruff.lint.per-file-ignores]
-# `E402` (import violations)
-"__init__.py" = ["E402"]
-"examples/*" = ["E402"]
-"tests/*" = ["E402"]
-
-[tool.ruff.format]
-quote-style = "preserve"
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.9.1"
+pre-commit = "^4.0.1"

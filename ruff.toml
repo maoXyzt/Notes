@@ -1,0 +1,56 @@
+line-length = 120
+# Assume the minimum version is Python 3.10
+target-version = 'py310'
+fix = true
+exclude = ["*.pyi"]
+
+############################
+####### lint rules #######
+############################
+[lint]
+select = [
+    "E",    # pycodestyle: Error
+    "W",    # pycodestyle: Warning
+    "F",    # Pyflakes
+    "PLE",  # pylint: Error
+    "B",    # flake8-bugbear
+    "TC",   # flake8-type-checking
+    "I",    # isort
+    "T20",  # flake8-print
+    "PERF", # Perflint
+    "RUF",  # Ruff-specific rules
+    "TID",  # flake8-tidy-imports
+    "UP",   # pyupgrade
+    # "SIM",  # flake8-simplify
+]
+# `B008` (function-call-in-default-argument)
+# `B009` (get-attr-with-constant)
+# `T20` (print statements)
+ignore = ["B008", "B009", "T20"]
+unfixable = [
+    "F401", # unused imports
+    "F841", # unused variables
+]
+
+[lint.per-file-ignores]
+
+[lint.isort]
+known-third-party = []
+known-first-party = []
+
+[lint.pep8-naming]
+# Allow Pydantic's `@validator` decorator to trigger class method treatment.
+classmethod-decorators = ["classmethod", "pydantic.validator"]
+
+[lint.pycodestyle]
+ignore-overlong-task-comments = true
+
+[lint.flake8-tidy-imports.banned-api]
+# `TID251` (banned-api) configurations
+
+############################
+####### format rules #######
+############################
+[format]
+quote-style = "single"
+indent-style = "space"
