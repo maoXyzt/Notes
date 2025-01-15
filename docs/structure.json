@@ -122,6 +122,10 @@
             "link": "/Domain-Knowledge/DevOps/PVE 安装 homeassistant.md"
           },
           {
+            "text": "PVE 安装 ikuai",
+            "link": "/Domain-Knowledge/DevOps/PVE 安装 ikuai.md"
+          },
+          {
             "text": "PVE 安装 OpenWRT",
             "link": "/Domain-Knowledge/DevOps/PVE 安装 OpenWRT.md"
           },

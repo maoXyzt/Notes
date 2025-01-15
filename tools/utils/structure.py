@@ -7,6 +7,7 @@ from abc import ABCMeta
 from pathlib import Path
 from typing import Self
 
+import frontmatter
 from pydantic import BaseModel as _BaseModel
 from pydantic import Field
 from pypinyin import Style, lazy_pinyin
@@ -45,7 +46,10 @@ class PageInfo(BaseItem):
         if any(fnmatch.fnmatch(rel_p_str, pattern) for pattern in excludes):
             return
 
-        # post = frontmatter.load(p.as_posix())
+        post = frontmatter.load(filepath.as_posix())
+        if post.get('NodeStatus') == 'draft':
+            return
+
         text = filepath.stem
         if text == 'index':
             text = filepath.parent.name

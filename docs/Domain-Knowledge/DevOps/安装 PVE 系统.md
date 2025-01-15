@@ -49,8 +49,108 @@
 2. `vi /etc/hosts`
 3. `vi /etc/issue`
 
-然后 `reboot`
+然后执行 `reboot` 命令，重启 PVE。
 
 ### 如何关机
 
-`shutdown -h now`
+```sh
+shutdown -h now
+```
+
+### 更新源
+
+编辑:
+
+- `/etc/apt/sources.list.d/pve-enterprise.list`
+- `/etc/apt/sources.list.d/ceph.list`
+
+注释掉类似的行 (企业版的源，个人版会报 401 Unauthorized 错误)
+
+```sh
+# deb https://enterprise.proxmox.com/debian/pve bookworm pve-enterprise
+```
+
+更新
+
+```sh
+apt update
+apt upgrade
+```
+
+### 设置网卡
+
+> [PVE 系列之一：网口桥接或直通]<https://www.cnblogs.com/Yogile/p/17862514.html>
+
+安装 `ethtool` (我用的版本已经自带了)
+
+```sh
+apt install ethtool -y
+```
+
+网卡配置
+
+认知名 | 系统设备名 | 设备位置(bus-info) | 软路由设备名
+-----|--------|--------------|------------
+Eth0 | enp2s0 | 0000:02:00.0 | Eth0（管理口）
+Eth1 | enp3s0 | 0000:03:00.0 | Eth1
+Eth2 | enp4s0 | 0000:04:00.0 | Eth2
+Eth3 | enp5s0 | 0000:05:00.0 | Eth3
+
+#### 检查网卡
+
+```sh
+# 查看网卡信息 `ethtool -i [系统设备名]`
+ethtool -i enp2s0
+# 遍历所有网卡
+lspci | grep -i 'eth'
+```
+
+#### 检查网口和 Ethx 的对应关系
+
+在 PVE 网页端，将除 Eth3 以外的 3 个网卡设置为自动启动。
+
+**使用闪光确认**
+
+```sh
+ethtool -p [系统设备名]
+```
+
+如果显示:
+
+```sh
+Cannot identify NIC: Operation not supported
+```
+
+说明系统不支持闪光，需要用下述方法一个个试。
+
+**使用网线确认**
+
+逐个网口插入网线，执行如下命令，观察命令输出:
+
+```sh
+ethtool [系统设备名]
+```
+
+显示：
+
+- "Speed: Unknown! Duplex: Unknown! (255)" 则为未连接网线；
+- "Speed: 2500Mb/s Duplex: Full" 则为已连接网线
+
+网卡配置表格确认后，在 PVE 网页端，将除 Eth3 以外的 3 个网卡 取消 自动启动。
+
+拔掉所有除管理口以外的网线。
+
+#### 设置硬件直通
+
+编辑 grub 配置文件 `/etc/default/grub`
+
+注释掉原条目，并新增一条:
+
+```sh
+# GRUB_CMDLINE_LINUX_DEFAULT="quiet"
+GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on"
+```
+
+执行 `update-grub` 更新 grub 配置。
+
+然后重启 PVE。

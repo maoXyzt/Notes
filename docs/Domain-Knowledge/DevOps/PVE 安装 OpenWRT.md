@@ -1,3 +1,7 @@
+---
+NoteStatus: draft
+---
+
 # PVE 安装 OpenWRT
 
 基于 PVE 8.3.0
@@ -46,3 +50,5 @@ SCSI控制器="VirtIO SCSI"
 
 官方镜像: <https://archive.openwrt.org/>
 Lean大仓库: <https://github.com/coolsnowwolf/lede>
+
+编译详见
