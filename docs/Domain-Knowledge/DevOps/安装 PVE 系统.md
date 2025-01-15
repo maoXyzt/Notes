@@ -79,7 +79,7 @@ apt upgrade
 
 ### 设置网卡
 
-> [PVE 系列之一：网口桥接或直通]<https://www.cnblogs.com/Yogile/p/17862514.html>
+> [PVE 系列之一：网口桥接或直通](https://www.cnblogs.com/Yogile/p/17862514.html)
 
 安装 `ethtool` (我用的版本已经自带了)
 
