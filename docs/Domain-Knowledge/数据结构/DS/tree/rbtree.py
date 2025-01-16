@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# _*_ coding: utf-8 _*_
 
 """
 @author: yangzhitao
@@ -74,9 +73,9 @@ class RBTree:
          *     parent               parent
          *    /                       /
          *   node                   right
-         *  / \                     / \
+         *  / \\                     / \
          * ln  right   ----->     node  ry
-         *    / \                 / \
+         *    / \\                 / \
          *   ly ry               ln ly
          * 左旋做了三件事：
          * 1. 将right的左子节点ly赋给node的右子节点,并将node赋给right左子节点ly的父节点(ly非空时)
@@ -114,9 +113,9 @@ class RBTree:
          *        parent           parent
          *       /                   /
          *      node                left
-         *     /    \               / \
+         *     /    \\               / \
          *    left  ry   ----->   ln  node
-         *   / \                     / \
+         *   / \\                     / \
          * ln  rn                   rn ry
          * 右旋做了三件事：
          * 1. 将left的右子节点rn赋给node的左子节点,并将node赋给rn右子节点的父节点(left右子节点非空时)
@@ -234,7 +233,7 @@ class RBTree:
             return
 
     def add_node(self, node):
-        self.action = 'inser node {}'.format(node.val)
+        self.action = f'inser node {node.val}'
         self.insert_node(node)
         self.check_node(node)
         pass
@@ -375,7 +374,7 @@ class RBTree:
 
         node = self.get_node(val)
         if not node:
-            print("node error {}".format(val))
+            print(f"node error {val}")
             return
         # 获取真正要删除的节点
         node = self.pre_delete_node(node)

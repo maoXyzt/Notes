@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# _*_ coding: utf-8 _*_
 
 """
 @author: yangzhitao
@@ -10,8 +9,8 @@
 @desc: 
 """
 
-from enum import Enum
 import os
+from enum import Enum
 
 
 class NotSupportOperation(Exception):
@@ -70,9 +69,9 @@ class ProjectState:
     def _get_handler(self, operation):
         handler = getattr(self, operation, None)
         if not handler or not callable(handler):
-            raise NotSupportOperation("当前状态是：{}，不能进行{}操作".format(self.value, operation))
+            raise NotSupportOperation(f"当前状态是：{self.value}，不能进行{operation}操作")
         return handler
-    
+
     def handle(self, context, operation, *arg, **kwargs):
         handler = self._get_handler(operation)
         return handler(context, *arg, **kwargs)

@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding=utf-8 -*-
 
 import fnmatch
 import json
@@ -79,15 +78,19 @@ class GroupInfo(BaseItem):
         Args:
             folder (Path): The folder path to build the group from
             root (Path): The root directory path used as reference for relative paths
-            depth (int, optional): Current depth level in the folder hierarchy. Defaults to 0.
-            includes (tuple[str, ...], optional): Glob patterns for files to include. Defaults to tuple().
-            excludes (tuple[str, ...], optional): Glob patterns for files to exclude. Defaults to tuple().
+            depth (int, optional): Current depth level in the folder hierarchy.
+                Defaults to 0.
+            includes (tuple[str, ...], optional): Glob patterns for files to include.
+                Defaults to tuple().
+            excludes (tuple[str, ...], optional): Glob patterns for files to exclude.
+                Defaults to tuple().
 
         Raises:
             NotImplementedError: If the method is called on an abstract base class
 
         Returns:
-            Self: A GroupInfo instance containing the hierarchical structure of the folder
+            Self: A GroupInfo instance containing the hierarchical structure of
+                the folder
         """
         collapsed = depth > 2
         group = cls(text=folder.name, collapsed=collapsed)
@@ -99,7 +102,9 @@ class GroupInfo(BaseItem):
                 # Skip hidden files and directories
                 continue
             if p.is_dir():
-                sub_group = cls.build_group(p, root=root, depth=depth + 1, includes=includes, excludes=excludes)
+                sub_group = cls.build_group(
+                    p, root=root, depth=depth + 1, includes=includes, excludes=excludes
+                )
                 if sub_group.items:
                     if len(sub_group.items) == 1:
                         # If the sub-group contains only one item, use it as a page
@@ -108,7 +113,9 @@ class GroupInfo(BaseItem):
                     else:
                         group.items.append(sub_group)
             elif p.is_file():
-                page = PageInfo.build_page(p, root=root, includes=includes, excludes=excludes)
+                page = PageInfo.build_page(
+                    p, root=root, includes=includes, excludes=excludes
+                )
                 if page:
                     group.items.append(page)
             else:

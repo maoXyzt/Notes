@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# _*_ coding: utf-8 _*_
 
 """
 @author: yangzhitao
@@ -9,5 +8,5 @@
 @time: 2019/8/12 4:57
 @desc: 
 """
-from .tree import BinNode, BinTree
 from .bst import BST
+from .tree import BinNode, BinTree

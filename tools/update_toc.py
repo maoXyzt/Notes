@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
-# -*- coding=utf-8 -*-
 
 """
-This script generates a structured representation of markdown files in the 'docs' directory.
-It builds a hierarchical structure of groups and pages, ignoring certain files and drafts.
-The structure is saved as a JSON file and a Table of Contents (TOC) is generated in markdown format.
+This script generates a structured representation of markdown files
+in the 'docs' directory.
+
+It builds a hierarchical structure of groups and pages, ignoring certain
+files and drafts.
+
+The structure is saved as a JSON file and a Table of Contents (TOC) is
+generated in markdown format.
 """
 
 import json
@@ -28,6 +32,8 @@ class Settings(BaseSettings):
     toc_md_output: Path = DOCS_ROOT / 'toc.md'
     # TOC title
     toc_title: str = 'Table of Contents'
+    max_header_level: int = 3  # level higher than this will be formatted as list
+    min_level: int = 0  # level less than this will be ignored in TOC
 
 
 settings = Settings()
@@ -38,7 +44,10 @@ def main():
     assert DOCS_ROOT.exists()
 
     if not settings.toc_md_output.exists():
-        print(f'[bold yellow]Warning:[/bold yellow] {settings.toc_md_output} does not exist. Creating a new one...')
+        print(
+            '[bold yellow]Warning:[/bold yellow] '
+            f'{settings.toc_md_output} does not exist. Creating a new one...'
+        )
 
     # print(json.dumps(build_structure(root), indent=2, cls=MyJSONEncoder))
     root_info = build_from_root(DOCS_ROOT)
@@ -51,7 +60,11 @@ def main():
     # with (root / "_sidebar.md").open("w+", encoding="utf8") as f:
     #     f.write("\n".join(side_bars_list))
 
-    toc_lines = make_toc_content(root_info)
+    toc_lines = make_toc_content(
+        root_info,
+        min_level=settings.min_level,
+        max_header_level=settings.max_header_level,
+    )
     toc_lines = _format_toc(toc_lines)
     print('[bold]Table of Contents:[/bold]')
     print('\n'.join(toc_lines))
@@ -80,7 +93,9 @@ def build_from_root(root: Path) -> GroupInfo:
     Args:
         root: The root directory.
     """
-    root_group = GroupInfo.build_group(folder=root, root=root, includes=settings.includes, excludes=settings.excludes)
+    root_group = GroupInfo.build_group(
+        folder=root, root=root, includes=settings.includes, excludes=settings.excludes
+    )
     root_group.text = settings.toc_title
     return root_group
 
@@ -90,6 +105,7 @@ def make_toc_content(
     lines: list[str] | None = None,
     level: int = 0,
     min_level: int = 0,
+    max_header_level: int = 3,
 ) -> list[str]:
     """Generate Table of Contents (TOC) for a group recursively."""
     if lines is None:
@@ -97,11 +113,17 @@ def make_toc_content(
 
     if level >= min_level:
         if line_content := _make_line(item):
-            indent = _get_indented_prefix(level)
+            indent = _get_indented_prefix(level, max_header_level=max_header_level)
             lines.append(f'{indent} {line_content}')
     if children := getattr(item, 'items', None):
         for c in children:
-            make_toc_content(c, lines, level=level + 1)
+            make_toc_content(
+                c,
+                lines,
+                level=level + 1,
+                min_level=settings.min_level,
+                max_header_level=max_header_level,
+            )
     return lines
 
 
@@ -133,7 +155,11 @@ def _format_toc(lines: list[str]) -> list[str]:
         l1, l2 = lines[i], lines[i + 1]
         l1 = l1.strip()
         l2 = l2.strip()
-        if (l1.startswith('#') and l2.startswith('#')) or (l1.startswith('#') and l2) or (l1 and l2.startswith('#')):
+        if (
+            (l1.startswith('#') and l2.startswith('#'))
+            or (l1.startswith('#') and l2)
+            or (l1 and l2.startswith('#'))
+        ):
             print(l1[:5], '\t', l2[:5])
             insert_blank_lines_idx.append(i + 1)
     for idx in reversed(insert_blank_lines_idx):

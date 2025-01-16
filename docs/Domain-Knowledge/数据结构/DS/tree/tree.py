@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# _*_ coding: utf-8 _*_
 
 """
 @author: yangzhitao
@@ -9,8 +8,8 @@
 @time: 2019/8/12 4:58
 @desc: 
 """
-from enum import Enum
 from collections import deque
+from enum import Enum
 
 
 class RBColor(Enum):
