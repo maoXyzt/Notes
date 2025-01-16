@@ -153,4 +153,4 @@ GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on"
 
 执行 `update-grub` 更新 grub 配置。
 
-然后重启 PVE。
+然后重启 PVE。(`reboot`)
