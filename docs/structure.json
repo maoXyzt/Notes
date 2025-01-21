@@ -115,30 +115,34 @@
         "collapsed": false
       },
       {
-        "text": "DevOps",
+        "text": "PVE All-in-One 实践",
         "items": [
           {
+            "text": "PVE All-in-One 实践",
+            "link": "/Domain-Knowledge/DevOps/PVE All-in-One 实践/"
+          },
+          {
             "text": "PVE 安装 homeassistant",
-            "link": "/Domain-Knowledge/DevOps/PVE 安装 homeassistant.md"
+            "link": "/Domain-Knowledge/DevOps/PVE All-in-One 实践/PVE 安装 homeassistant.md"
           },
           {
             "text": "PVE 安装 ikuai",
-            "link": "/Domain-Knowledge/DevOps/PVE 安装 ikuai.md"
+            "link": "/Domain-Knowledge/DevOps/PVE All-in-One 实践/PVE 安装 ikuai.md"
           },
           {
             "text": "PVE 安装 OpenWRT",
-            "link": "/Domain-Knowledge/DevOps/PVE 安装 OpenWRT.md"
+            "link": "/Domain-Knowledge/DevOps/PVE All-in-One 实践/PVE 安装 OpenWRT.md"
           },
           {
             "text": "安装 PVE 系统",
-            "link": "/Domain-Knowledge/DevOps/安装 PVE 系统.md"
+            "link": "/Domain-Knowledge/DevOps/PVE All-in-One 实践/安装 PVE 系统.md"
           },
           {
             "text": "制作U盘启动盘",
-            "link": "/Domain-Knowledge/DevOps/制作U盘启动盘.md"
+            "link": "/Domain-Knowledge/DevOps/PVE All-in-One 实践/制作U盘启动盘.md"
           }
         ],
-        "collapsed": false
+        "collapsed": true
       },
       {
         "text": "Linear Algebra",
