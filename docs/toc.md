@@ -22,10 +22,14 @@
 
 ### Applied Social Network Analysis in Python
 
-* [Why Study Networks and Basics on NetworkX](/Domain-Knowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%201%20-%20Why%20Study%20Networks%20and%20Basics%20on%20NetworkX/Why%20Study%20Networks%20and%20Basics%20on%20NetworkX.md)
-* [Network Connectivity](/Domain-Knowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%202%20-%20Network%20Connectivity/Network%20Connectivity.md)
-* [Influence Measures and Network Centralization](/Domain-Knowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%203%20-%20Influence%20Measures%20and%20Network%20Centralization/Influence%20Measures%20and%20Network%20Centralization.md)
-* [Network Evolution](/Domain-Knowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%204%20-%20Network%20Evolution/Network%20Evolution.md)
+* Module 1 - Why Study Networks and Basics on NetworkX
+  * [Why Study Networks and Basics on NetworkX](/Domain-Knowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%201%20-%20Why%20Study%20Networks%20and%20Basics%20on%20NetworkX/Why%20Study%20Networks%20and%20Basics%20on%20NetworkX.md)
+* Module 2 - Network Connectivity
+  * [Network Connectivity](/Domain-Knowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%202%20-%20Network%20Connectivity/Network%20Connectivity.md)
+* Module 3 - Influence Measures and Network Centralization
+  * [Influence Measures and Network Centralization](/Domain-Knowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%203%20-%20Influence%20Measures%20and%20Network%20Centralization/Influence%20Measures%20and%20Network%20Centralization.md)
+* Module 4 - Network Evolution
+  * [Network Evolution](/Domain-Knowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%204%20-%20Network%20Evolution/Network%20Evolution.md)
 * [Syllabus](/Domain-Knowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Syllabus.md)
 
 ### Deep Learning
@@ -38,18 +42,24 @@
   * [06-循环神经网络](/Domain-Knowledge/Deep%20Learning/%E5%8A%A8%E6%89%8B%E5%AD%A6%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0-pytorch%E7%89%88/06-%E5%BE%AA%E7%8E%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C.md)
 * [如何评价GAN网络的好坏：IS和FID](/Domain-Knowledge/Deep%20Learning/%E5%A6%82%E4%BD%95%E8%AF%84%E4%BB%B7GAN%E7%BD%91%E7%BB%9C%E7%9A%84%E5%A5%BD%E5%9D%8F%EF%BC%9AIS%E5%92%8CFID.md)
 
-### PVE All-in-One 实践
+### DevOps
 
-* [PVE All-in-One 实践](/Domain-Knowledge/DevOps/PVE%20All-in-One%20%E5%AE%9E%E8%B7%B5/)
-* [PVE 安装 homeassistant](/Domain-Knowledge/DevOps/PVE%20All-in-One%20%E5%AE%9E%E8%B7%B5/PVE%20%E5%AE%89%E8%A3%85%20homeassistant.md)
-* [PVE 安装 ikuai](/Domain-Knowledge/DevOps/PVE%20All-in-One%20%E5%AE%9E%E8%B7%B5/PVE%20%E5%AE%89%E8%A3%85%20ikuai.md)
-* [PVE 安装 OpenWRT](/Domain-Knowledge/DevOps/PVE%20All-in-One%20%E5%AE%9E%E8%B7%B5/PVE%20%E5%AE%89%E8%A3%85%20OpenWRT.md)
-* [安装 PVE 系统](/Domain-Knowledge/DevOps/PVE%20All-in-One%20%E5%AE%9E%E8%B7%B5/%E5%AE%89%E8%A3%85%20PVE%20%E7%B3%BB%E7%BB%9F.md)
-* [制作U盘启动盘](/Domain-Knowledge/DevOps/PVE%20All-in-One%20%E5%AE%9E%E8%B7%B5/%E5%88%B6%E4%BD%9CU%E7%9B%98%E5%90%AF%E5%8A%A8%E7%9B%98.md)
+* PVE All-in-One 实践
+  * [PVE All-in-One 实践](/Domain-Knowledge/DevOps/PVE%20All-in-One%20%E5%AE%9E%E8%B7%B5/)
+  * [PVE 安装 homeassistant](/Domain-Knowledge/DevOps/PVE%20All-in-One%20%E5%AE%9E%E8%B7%B5/PVE%20%E5%AE%89%E8%A3%85%20homeassistant.md)
+  * [PVE 安装 ikuai](/Domain-Knowledge/DevOps/PVE%20All-in-One%20%E5%AE%9E%E8%B7%B5/PVE%20%E5%AE%89%E8%A3%85%20ikuai.md)
+  * [PVE 安装 OpenWRT](/Domain-Knowledge/DevOps/PVE%20All-in-One%20%E5%AE%9E%E8%B7%B5/PVE%20%E5%AE%89%E8%A3%85%20OpenWRT.md)
+  * [安装 PVE 系统](/Domain-Knowledge/DevOps/PVE%20All-in-One%20%E5%AE%9E%E8%B7%B5/%E5%AE%89%E8%A3%85%20PVE%20%E7%B3%BB%E7%BB%9F.md)
+  * [制作U盘启动盘](/Domain-Knowledge/DevOps/PVE%20All-in-One%20%E5%AE%9E%E8%B7%B5/%E5%88%B6%E4%BD%9CU%E7%9B%98%E5%90%AF%E5%8A%A8%E7%9B%98.md)
 
-### [Linear Algebra](/Domain-Knowledge/Linear%20Algebra/Linear%20Algebra.md)
+### Linear Algebra
 
-### [树](/Domain-Knowledge/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91/%E6%A0%91.md)
+* [Linear Algebra](/Domain-Knowledge/Linear%20Algebra/Linear%20Algebra.md)
+
+### 数据结构
+
+* 树
+  * [树](/Domain-Knowledge/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91/%E6%A0%91.md)
 
 ### 图形学
 
@@ -65,7 +75,10 @@
 
 ## Programming
 
-### [第2章 有意义的命名](/Programming/Code-Quality/%E3%80%8A%E4%BB%A3%E7%A0%81%E6%95%B4%E6%B4%81%E4%B9%8B%E9%81%93%E3%80%8B/%E7%AC%AC2%E7%AB%A0%20%E6%9C%89%E6%84%8F%E4%B9%89%E7%9A%84%E5%91%BD%E5%90%8D.md)
+### Code-Quality
+
+* 《代码整洁之道》
+  * [第2章 有意义的命名](/Programming/Code-Quality/%E3%80%8A%E4%BB%A3%E7%A0%81%E6%95%B4%E6%B4%81%E4%B9%8B%E9%81%93%E3%80%8B/%E7%AC%AC2%E7%AB%A0%20%E6%9C%89%E6%84%8F%E4%B9%89%E7%9A%84%E5%91%BD%E5%90%8D.md)
 
 ### Database
 
@@ -124,7 +137,9 @@
 * [Linux下Go环境安装](/Programming/Go/Linux%E4%B8%8BGo%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85.md)
 * [下载golang.org的包](/Programming/Go/%E4%B8%8B%E8%BD%BDgolang.org%E7%9A%84%E5%8C%85.md)
 
-### [箭头函数与普通函数的区别](/Programming/JS-TS/%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0%E4%B8%8E%E6%99%AE%E9%80%9A%E5%87%BD%E6%95%B0%E7%9A%84%E5%8C%BA%E5%88%AB.md)
+### JS-TS
+
+* [箭头函数与普通函数的区别](/Programming/JS-TS/%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0%E4%B8%8E%E6%99%AE%E9%80%9A%E5%87%BD%E6%95%B0%E7%9A%84%E5%8C%BA%E5%88%AB.md)
 
 ### Kubernetes
 
@@ -204,8 +219,10 @@
   * [01-Tensor-数据操作](/Programming/Python/pytorch/01-Tensor-%E6%95%B0%E6%8D%AE%E6%93%8D%E4%BD%9C.md)
   * [02-autograd-自动求梯度](/Programming/Python/pytorch/02-autograd-%E8%87%AA%E5%8A%A8%E6%B1%82%E6%A2%AF%E5%BA%A6.md)
 * [SQLAlchemy操作数据的方法](/Programming/Python/SQLAlchemy%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E7%9A%84%E6%96%B9%E6%B3%95.md)
-* [supervisor的安装与基本命令](/Programming/Python/supervisor/supervisor%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4.md)
-* [TensorFlow中关于pad函数的详细理解](/Programming/Python/tensorflow/TensorFlow%E4%B8%AD%E5%85%B3%E4%BA%8Epad%E5%87%BD%E6%95%B0%E7%9A%84%E8%AF%A6%E7%BB%86%E7%90%86%E8%A7%A3.md)
+* supervisor
+  * [supervisor的安装与基本命令](/Programming/Python/supervisor/supervisor%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4.md)
+* tensorflow
+  * [TensorFlow中关于pad函数的详细理解](/Programming/Python/tensorflow/TensorFlow%E4%B8%AD%E5%85%B3%E4%BA%8Epad%E5%87%BD%E6%95%B0%E7%9A%84%E8%AF%A6%E7%BB%86%E7%90%86%E8%A7%A3.md)
 * [win10系统下安装pycrypto包的方法](/Programming/Python/win10%E7%B3%BB%E7%BB%9F%E4%B8%8B%E5%AE%89%E8%A3%85pycrypto%E5%8C%85%E7%9A%84%E6%96%B9%E6%B3%95.md)
 * [win环境下print时的UnicodeEncodingError](/Programming/Python/win%E7%8E%AF%E5%A2%83%E4%B8%8Bprint%E6%97%B6%E7%9A%84UnicodeEncodingError.md)
 * [xlrd读取excel文件](/Programming/Python/xlrd%E8%AF%BB%E5%8F%96excel%E6%96%87%E4%BB%B6.md)
@@ -214,11 +231,15 @@
 * [用gbd调试python core dump](/Programming/Python/%E7%94%A8gbd%E8%B0%83%E8%AF%95python%20core%20dump.md)
 * [自动获取双因子登录验证码——OTP, HOTP, TOTP 基本原理](/Programming/Python/%E8%87%AA%E5%8A%A8%E8%8E%B7%E5%8F%96%E5%8F%8C%E5%9B%A0%E5%AD%90%E7%99%BB%E5%BD%95%E9%AA%8C%E8%AF%81%E7%A0%81%E2%80%94%E2%80%94OTP%2C%20HOTP%2C%20TOTP%20%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86.md)
 
-### [Rust 工具链 & Cargo 国内源](/Programming/Rust/Rust%20%E5%B7%A5%E5%85%B7%E9%93%BE%20%26%20Cargo%20%E5%9B%BD%E5%86%85%E6%BA%90.md)
+### Rust
+
+* [Rust 工具链 & Cargo 国内源](/Programming/Rust/Rust%20%E5%B7%A5%E5%85%B7%E9%93%BE%20%26%20Cargo%20%E5%9B%BD%E5%86%85%E6%BA%90.md)
 
 ## Software-Specific
 
-### [01-概念术语](/Software-Specific/Backtrader/01-%E6%A6%82%E5%BF%B5%E6%9C%AF%E8%AF%AD.md)
+### Backtrader
+
+* [01-概念术语](/Software-Specific/Backtrader/01-%E6%A6%82%E5%BF%B5%E6%9C%AF%E8%AF%AD.md)
 
 ### Blender
 
@@ -236,9 +257,13 @@
 * [通过脚本安装和启用插件(add-on)](/Software-Specific/Blender/%E9%80%9A%E8%BF%87%E8%84%9A%E6%9C%AC%E5%AE%89%E8%A3%85%E5%92%8C%E5%90%AF%E7%94%A8%E6%8F%92%E4%BB%B6%28add-on%29.md)
 * [无GUI启动blender](/Software-Specific/Blender/%E6%97%A0GUI%E5%90%AF%E5%8A%A8blender.md)
 
-### [安装FBX Python SDK](/Software-Specific/FBX/%E5%AE%89%E8%A3%85FBX%20Python%20SDK.md)
+### FBX
 
-### [gitlab ci 配置](/Software-Specific/Gitlab/gitlab%20ci%20%E9%85%8D%E7%BD%AE.md)
+* [安装FBX Python SDK](/Software-Specific/FBX/%E5%AE%89%E8%A3%85FBX%20Python%20SDK.md)
+
+### Gitlab
+
+* [gitlab ci 配置](/Software-Specific/Gitlab/gitlab%20ci%20%E9%85%8D%E7%BD%AE.md)
 
 ### MacOS
 
@@ -250,9 +275,13 @@
 * [maya安装numpy&scipy](/Software-Specific/Maya/maya%E5%AE%89%E8%A3%85numpy%26scipy.md)
 * [maya插件安装方法](/Software-Specific/Maya/maya%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95.md)
 
-### [安装Neovim](/Software-Specific/Neovim/%E5%AE%89%E8%A3%85Neovim.md)
+### Neovim
 
-### [Obsidian 同步 - 配置 LiveSync 与自托管 CouchDB 服务器](/Software-Specific/Obsidian/Obsidian%20%E5%90%8C%E6%AD%A5%20-%20%E9%85%8D%E7%BD%AE%20LiveSync%20%E4%B8%8E%E8%87%AA%E6%89%98%E7%AE%A1%20CouchDB%20%E6%9C%8D%E5%8A%A1%E5%99%A8.md)
+* [安装Neovim](/Software-Specific/Neovim/%E5%AE%89%E8%A3%85Neovim.md)
+
+### Obsidian
+
+* [Obsidian 同步 - 配置 LiveSync 与自托管 CouchDB 服务器](/Software-Specific/Obsidian/Obsidian%20%E5%90%8C%E6%AD%A5%20-%20%E9%85%8D%E7%BD%AE%20LiveSync%20%E4%B8%8E%E8%87%AA%E6%89%98%E7%AE%A1%20CouchDB%20%E6%9C%8D%E5%8A%A1%E5%99%A8.md)
 
 ### [pyassimp安装](/Software-Specific/pyassimp%E5%AE%89%E8%A3%85.md)
 
@@ -267,5 +296,7 @@
 * [右键菜单添加“通过xxx打开”](/Software-Specific/Windows/%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E6%B7%BB%E5%8A%A0%E2%80%9C%E9%80%9A%E8%BF%87xxx%E6%89%93%E5%BC%80%E2%80%9D.md)
 * [右键用windows terminal打开当前目录](/Software-Specific/Windows/%E5%8F%B3%E9%94%AE%E7%94%A8windows%20terminal%E6%89%93%E5%BC%80%E5%BD%93%E5%89%8D%E7%9B%AE%E5%BD%95.md)
 
-### [zotero修改note templates](/Software-Specific/zotero/zotero%E4%BF%AE%E6%94%B9note%20templates.md)
+### zotero
+
+* [zotero修改note templates](/Software-Specific/zotero/zotero%E4%BF%AE%E6%94%B9note%20templates.md)
 <!-- /TOC -->

@@ -106,12 +106,13 @@ class GroupInfo(BaseItem):
                     p, root=root, depth=depth + 1, includes=includes, excludes=excludes
                 )
                 if sub_group.items:
-                    if len(sub_group.items) == 1:
-                        # If the sub-group contains only one item, use it as a page
-                        page = sub_group.items[0]
-                        group.items.append(page)
-                    else:
-                        group.items.append(sub_group)
+                    group.items.append(sub_group)
+                    # if len(sub_group.items) == 1:
+                    #     # If the sub-group contains only one item, use it as a page
+                    #     page = sub_group.items[0]
+                    #     group.items.append(page)
+                    # else:
+                    #     group.items.append(sub_group)
             elif p.is_file():
                 page = PageInfo.build_page(
                     p, root=root, includes=includes, excludes=excludes

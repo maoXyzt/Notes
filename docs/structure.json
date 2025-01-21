@@ -56,20 +56,44 @@
         "text": "Applied Social Network Analysis in Python",
         "items": [
           {
-            "text": "Why Study Networks and Basics on NetworkX",
-            "link": "/Domain-Knowledge/Applied Social Network Analysis in Python/Module 1 - Why Study Networks and Basics on NetworkX/Why Study Networks and Basics on NetworkX.md"
+            "text": "Module 1 - Why Study Networks and Basics on NetworkX",
+            "items": [
+              {
+                "text": "Why Study Networks and Basics on NetworkX",
+                "link": "/Domain-Knowledge/Applied Social Network Analysis in Python/Module 1 - Why Study Networks and Basics on NetworkX/Why Study Networks and Basics on NetworkX.md"
+              }
+            ],
+            "collapsed": true
           },
           {
-            "text": "Network Connectivity",
-            "link": "/Domain-Knowledge/Applied Social Network Analysis in Python/Module 2 - Network Connectivity/Network Connectivity.md"
+            "text": "Module 2 - Network Connectivity",
+            "items": [
+              {
+                "text": "Network Connectivity",
+                "link": "/Domain-Knowledge/Applied Social Network Analysis in Python/Module 2 - Network Connectivity/Network Connectivity.md"
+              }
+            ],
+            "collapsed": true
           },
           {
-            "text": "Influence Measures and Network Centralization",
-            "link": "/Domain-Knowledge/Applied Social Network Analysis in Python/Module 3 - Influence Measures and Network Centralization/Influence Measures and Network Centralization.md"
+            "text": "Module 3 - Influence Measures and Network Centralization",
+            "items": [
+              {
+                "text": "Influence Measures and Network Centralization",
+                "link": "/Domain-Knowledge/Applied Social Network Analysis in Python/Module 3 - Influence Measures and Network Centralization/Influence Measures and Network Centralization.md"
+              }
+            ],
+            "collapsed": true
           },
           {
-            "text": "Network Evolution",
-            "link": "/Domain-Knowledge/Applied Social Network Analysis in Python/Module 4 - Network Evolution/Network Evolution.md"
+            "text": "Module 4 - Network Evolution",
+            "items": [
+              {
+                "text": "Network Evolution",
+                "link": "/Domain-Knowledge/Applied Social Network Analysis in Python/Module 4 - Network Evolution/Network Evolution.md"
+              }
+            ],
+            "collapsed": true
           },
           {
             "text": "Syllabus",
@@ -115,42 +139,66 @@
         "collapsed": false
       },
       {
-        "text": "PVE All-in-One 实践",
+        "text": "DevOps",
         "items": [
           {
             "text": "PVE All-in-One 实践",
-            "link": "/Domain-Knowledge/DevOps/PVE All-in-One 实践/"
-          },
-          {
-            "text": "PVE 安装 homeassistant",
-            "link": "/Domain-Knowledge/DevOps/PVE All-in-One 实践/PVE 安装 homeassistant.md"
-          },
-          {
-            "text": "PVE 安装 ikuai",
-            "link": "/Domain-Knowledge/DevOps/PVE All-in-One 实践/PVE 安装 ikuai.md"
-          },
-          {
-            "text": "PVE 安装 OpenWRT",
-            "link": "/Domain-Knowledge/DevOps/PVE All-in-One 实践/PVE 安装 OpenWRT.md"
-          },
-          {
-            "text": "安装 PVE 系统",
-            "link": "/Domain-Knowledge/DevOps/PVE All-in-One 实践/安装 PVE 系统.md"
-          },
-          {
-            "text": "制作U盘启动盘",
-            "link": "/Domain-Knowledge/DevOps/PVE All-in-One 实践/制作U盘启动盘.md"
+            "items": [
+              {
+                "text": "PVE All-in-One 实践",
+                "link": "/Domain-Knowledge/DevOps/PVE All-in-One 实践/"
+              },
+              {
+                "text": "PVE 安装 homeassistant",
+                "link": "/Domain-Knowledge/DevOps/PVE All-in-One 实践/PVE 安装 homeassistant.md"
+              },
+              {
+                "text": "PVE 安装 ikuai",
+                "link": "/Domain-Knowledge/DevOps/PVE All-in-One 实践/PVE 安装 ikuai.md"
+              },
+              {
+                "text": "PVE 安装 OpenWRT",
+                "link": "/Domain-Knowledge/DevOps/PVE All-in-One 实践/PVE 安装 OpenWRT.md"
+              },
+              {
+                "text": "安装 PVE 系统",
+                "link": "/Domain-Knowledge/DevOps/PVE All-in-One 实践/安装 PVE 系统.md"
+              },
+              {
+                "text": "制作U盘启动盘",
+                "link": "/Domain-Knowledge/DevOps/PVE All-in-One 实践/制作U盘启动盘.md"
+              }
+            ],
+            "collapsed": true
           }
         ],
-        "collapsed": true
+        "collapsed": false
       },
       {
         "text": "Linear Algebra",
-        "link": "/Domain-Knowledge/Linear Algebra/Linear Algebra.md"
+        "items": [
+          {
+            "text": "Linear Algebra",
+            "link": "/Domain-Knowledge/Linear Algebra/Linear Algebra.md"
+          }
+        ],
+        "collapsed": false
       },
       {
-        "text": "树",
-        "link": "/Domain-Knowledge/数据结构/树/树.md"
+        "text": "数据结构",
+        "items": [
+          {
+            "text": "树",
+            "items": [
+              {
+                "text": "树",
+                "link": "/Domain-Knowledge/数据结构/树/树.md"
+              }
+            ],
+            "collapsed": true
+          }
+        ],
+        "collapsed": false
       },
       {
         "text": "图形学",
@@ -203,8 +251,20 @@
     "text": "Programming",
     "items": [
       {
-        "text": "第2章 有意义的命名",
-        "link": "/Programming/Code-Quality/《代码整洁之道》/第2章 有意义的命名.md"
+        "text": "Code-Quality",
+        "items": [
+          {
+            "text": "《代码整洁之道》",
+            "items": [
+              {
+                "text": "第2章 有意义的命名",
+                "link": "/Programming/Code-Quality/《代码整洁之道》/第2章 有意义的命名.md"
+              }
+            ],
+            "collapsed": true
+          }
+        ],
+        "collapsed": false
       },
       {
         "text": "Database",
@@ -405,8 +465,14 @@
         "collapsed": false
       },
       {
-        "text": "箭头函数与普通函数的区别",
-        "link": "/Programming/JS-TS/箭头函数与普通函数的区别.md"
+        "text": "JS-TS",
+        "items": [
+          {
+            "text": "箭头函数与普通函数的区别",
+            "link": "/Programming/JS-TS/箭头函数与普通函数的区别.md"
+          }
+        ],
+        "collapsed": false
       },
       {
         "text": "Kubernetes",
@@ -714,12 +780,24 @@
             "link": "/Programming/Python/SQLAlchemy操作数据的方法.md"
           },
           {
-            "text": "supervisor的安装与基本命令",
-            "link": "/Programming/Python/supervisor/supervisor的安装与基本命令.md"
+            "text": "supervisor",
+            "items": [
+              {
+                "text": "supervisor的安装与基本命令",
+                "link": "/Programming/Python/supervisor/supervisor的安装与基本命令.md"
+              }
+            ],
+            "collapsed": true
           },
           {
-            "text": "TensorFlow中关于pad函数的详细理解",
-            "link": "/Programming/Python/tensorflow/TensorFlow中关于pad函数的详细理解.md"
+            "text": "tensorflow",
+            "items": [
+              {
+                "text": "TensorFlow中关于pad函数的详细理解",
+                "link": "/Programming/Python/tensorflow/TensorFlow中关于pad函数的详细理解.md"
+              }
+            ],
+            "collapsed": true
           },
           {
             "text": "win10系统下安装pycrypto包的方法",
@@ -753,8 +831,14 @@
         "collapsed": false
       },
       {
-        "text": "Rust 工具链 & Cargo 国内源",
-        "link": "/Programming/Rust/Rust 工具链 & Cargo 国内源.md"
+        "text": "Rust",
+        "items": [
+          {
+            "text": "Rust 工具链 & Cargo 国内源",
+            "link": "/Programming/Rust/Rust 工具链 & Cargo 国内源.md"
+          }
+        ],
+        "collapsed": false
       }
     ],
     "collapsed": false
@@ -763,8 +847,14 @@
     "text": "Software-Specific",
     "items": [
       {
-        "text": "01-概念术语",
-        "link": "/Software-Specific/Backtrader/01-概念术语.md"
+        "text": "Backtrader",
+        "items": [
+          {
+            "text": "01-概念术语",
+            "link": "/Software-Specific/Backtrader/01-概念术语.md"
+          }
+        ],
+        "collapsed": false
       },
       {
         "text": "Blender",
@@ -825,12 +915,24 @@
         "collapsed": false
       },
       {
-        "text": "安装FBX Python SDK",
-        "link": "/Software-Specific/FBX/安装FBX Python SDK.md"
+        "text": "FBX",
+        "items": [
+          {
+            "text": "安装FBX Python SDK",
+            "link": "/Software-Specific/FBX/安装FBX Python SDK.md"
+          }
+        ],
+        "collapsed": false
       },
       {
-        "text": "gitlab ci 配置",
-        "link": "/Software-Specific/Gitlab/gitlab ci 配置.md"
+        "text": "Gitlab",
+        "items": [
+          {
+            "text": "gitlab ci 配置",
+            "link": "/Software-Specific/Gitlab/gitlab ci 配置.md"
+          }
+        ],
+        "collapsed": false
       },
       {
         "text": "MacOS",
@@ -861,12 +963,24 @@
         "collapsed": false
       },
       {
-        "text": "安装Neovim",
-        "link": "/Software-Specific/Neovim/安装Neovim.md"
+        "text": "Neovim",
+        "items": [
+          {
+            "text": "安装Neovim",
+            "link": "/Software-Specific/Neovim/安装Neovim.md"
+          }
+        ],
+        "collapsed": false
       },
       {
-        "text": "Obsidian 同步 - 配置 LiveSync 与自托管 CouchDB 服务器",
-        "link": "/Software-Specific/Obsidian/Obsidian 同步 - 配置 LiveSync 与自托管 CouchDB 服务器.md"
+        "text": "Obsidian",
+        "items": [
+          {
+            "text": "Obsidian 同步 - 配置 LiveSync 与自托管 CouchDB 服务器",
+            "link": "/Software-Specific/Obsidian/Obsidian 同步 - 配置 LiveSync 与自托管 CouchDB 服务器.md"
+          }
+        ],
+        "collapsed": false
       },
       {
         "text": "pyassimp安装",
@@ -911,8 +1025,14 @@
         "collapsed": false
       },
       {
-        "text": "zotero修改note templates",
-        "link": "/Software-Specific/zotero/zotero修改note templates.md"
+        "text": "zotero",
+        "items": [
+          {
+            "text": "zotero修改note templates",
+            "link": "/Software-Specific/zotero/zotero修改note templates.md"
+          }
+        ],
+        "collapsed": false
       }
     ],
     "collapsed": false
