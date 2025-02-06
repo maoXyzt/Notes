@@ -175,9 +175,13 @@ service network restart
 
 ## 5. 推荐插件
 
-### 5.1 OpenClash
+### 5.1 SmartDNS
 
-> <https://blog.hellowood.dev/posts/openwrt-%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8-openclash/>
+在 “系统”->“软件包”中搜索 `luci-i18n-smartdns-zh-cn` 并安装。
+
+### 5.2 OpenClash
+
+> [OpenWrt 安装使用 OpenClash](https://blog.hellowood.dev/posts/openwrt-%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8-openclash/)
 
 OpenClash 是 Clash 的 OpenWrt 客户端。
 
@@ -208,3 +212,50 @@ opkg install openclash.ipk
 ```sh
 reboot
 ```
+
+首次启动需要下载内核模块，下载完成后会自动重启。
+
+#### 配置 DNS
+
+OpenClash 默认提供 7874 端口用于 DNS 查询；启动后会劫持 Dnsmasq，只保留自己作为 Dnsmasq 的上游；
+
+但是目前的版本里并没有将已配置的 DNS 转发作为 OpenClash 的上游（参考issue [启用 DNS 劫持后未将 Dnsmasq 中添加的 DNS 转发作为上游 DNS](https://github.com/vernesong/OpenClash/issues/2720)），这样会导致无法使用 SmartDNS 或其他上游 DNS，因此需要手动修改将 SmartDNS 作为 OpenClash 的上游服务器。
+
+在 "服务"->"OpenClash"->"全局设置"->"DNS设置"中，选择新增，设置自定义上游 DNS服务器为 SmartDNS。
+
+新增完成后，在该页面选择启用 “自定义上游 DNS 服务器”，这样，就可以使用 SmartDNS 作为主 DNS服务器了；如果有其他的上游，也可以同样配置。
+
+配置完成后，DNS的查询流程为 客户端 -> Dnsmasq -> OpenClash -> SmartDNS -> 上游 DNS 服务器
+
+#### 配置运行模式
+
+参考 OpenClash-常规设置，主要有 Fake-IP 和 Redir-Host 两种模式；经测试，开启了 OpenClash 使用 Redir-Host 会导致部分 UDP 流量超时，如王者荣耀/英雄联盟/吃鸡等使用 UDP 的应用超时或无法连接；使用 Fake-IP TUN 模式则可以正常使用
+
+**Fake-IP**
+
+当客户端发起请求查询 DNS 时，会先返回一个随机的保留地址，同时查询上游 DNS 服务器，如果需要代理则发送给代理服务器查询，然后再进行连接；客户端立即向Fake-IP 发起的请求会被快速响应，节约了一次本地向DNS服务器查询的时间
+
+运行模式有 TUN，增强和混合三种模式；区别在与 TUN 可以代理 UDP流量
+
+这个模式会导致客户端获取到的 DNS 查询到的结果与实际不一致，nslookup/dig等的使用会受影响
+
+**Redir-Host**
+
+当客户端发起请求时，会并发查询 DNS，等待返回结果后再尝试进行规则判定和连接，如果需要代理，会使用fallback 的 DNS 服务器再次查询；与不使用 OpenClash 相比，多了过滤，fallback 查询的时间，响应速度可能会变慢
+
+有兼容，TUN 和混合三种模式，区别在与 TUN 可以代理 UDP流量
+
+### 5.3 DDNS
+
+在 “系统”->“软件包”中搜索 luci-i18n-ddns-zh-cn 并安装。
+
+DDNS 的更新由脚本执行，因此需要安装对应域名服务商的更新脚本；如 godaddy 的脚本是 ddns-scripts-godaddy；
+官方提供的域名服务商脚本可以从 [Packagesindexnetwork—ip-addresses-and-names](https://openwrt.org/packages/index/network---ip-addresses-and-names) 查看
+
+其他域名服务商可以在 GitHub 或恩山无线论坛中查找对应的软件
+
+阿里云DDNS可在 <https://github.com/honwen/luci-app-aliddns/releases> 下载
+
+### 5.4 AdBlock
+
+luci-i18n-adblock-zh-cn
