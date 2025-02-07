@@ -132,7 +132,7 @@ qm importdisk 100 immortalwrt-23.05.4-x86-64-generic-ext4-combined-efi.qcow2 loc
 
 默认网络为 192.168.1.1, 可以编辑 `/etc/config/network` 文件改, 把 IP 改成我们能访问的地址。
 
-(192.168.50.10)
+(192.168.50.20)
 
 ```sh
 vi /etc/config/network
@@ -153,7 +153,7 @@ service network restart
 常规设置：
 
 * 协议: 静态地址
-* IPv4 地址: 192.169.50.10
+* IPv4 地址: 192.169.50.20
 * IPv4 子网掩码: 255.255.255.0
 * IPv4 网关: 192.168.50.1
 
