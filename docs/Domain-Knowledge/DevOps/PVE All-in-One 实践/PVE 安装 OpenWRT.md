@@ -165,6 +165,13 @@ service network restart
 
 完成后可以在“网络诊断”中随意ping下，ping通说明网络正常了。
 
+### 关闭 IPv6
+
+在透明代理中，IPv6 会导致 DNS 污染，因此现阶段我们先关闭 IPv6，将来再处理。
+
+1. 网络->接口，修改 lan。在 DHCP服务器->IPv6设置中，禁用所有服务并保存。
+2. 网络->DHCP/DNS，“过滤器”页面，勾选“过滤 IPv6 AAAA 记录”，保存并应用。
+
 ### (可选) 更换皮肤
 
 进入“系统”-“软件包”设置界面，先点击“更新列表”，然后搜索“argon”。
@@ -259,3 +266,11 @@ DDNS 的更新由脚本执行，因此需要安装对应域名服务商的更新
 ### 5.4 AdBlock
 
 luci-i18n-adblock-zh-cn
+
+### 5.5 (Optional) passwall
+
+luci-i18n-passwall-zh-cn
+
+### 5.6 (Optional) homeproxy
+
+luci-i18n-homeproxy-zh-cn
