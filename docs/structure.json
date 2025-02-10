@@ -149,6 +149,10 @@
                 "link": "/Domain-Knowledge/DevOps/PVE All-in-One 实践/"
               },
               {
+                "text": "OpenClash 安装和配置",
+                "link": "/Domain-Knowledge/DevOps/PVE All-in-One 实践/OpenClash 安装和配置.md"
+              },
+              {
                 "text": "PVE 安装 homeassistant",
                 "link": "/Domain-Knowledge/DevOps/PVE All-in-One 实践/PVE 安装 homeassistant.md"
               },
@@ -467,6 +471,10 @@
       {
         "text": "JS-TS",
         "items": [
+          {
+            "text": "vue3,vite配置base路径后，编译结果为空页面",
+            "link": "/Programming/JS-TS/vue3,vite配置base路径后，编译结果为空页面.md"
+          },
           {
             "text": "箭头函数与普通函数的区别",
             "link": "/Programming/JS-TS/箭头函数与普通函数的区别.md"

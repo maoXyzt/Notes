@@ -46,6 +46,7 @@
 
 * PVE All-in-One 实践
   * [PVE All-in-One 实践](/Domain-Knowledge/DevOps/PVE%20All-in-One%20%E5%AE%9E%E8%B7%B5/)
+  * [OpenClash 安装和配置](/Domain-Knowledge/DevOps/PVE%20All-in-One%20%E5%AE%9E%E8%B7%B5/OpenClash%20%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE.md)
   * [PVE 安装 homeassistant](/Domain-Knowledge/DevOps/PVE%20All-in-One%20%E5%AE%9E%E8%B7%B5/PVE%20%E5%AE%89%E8%A3%85%20homeassistant.md)
   * [PVE 安装 ikuai](/Domain-Knowledge/DevOps/PVE%20All-in-One%20%E5%AE%9E%E8%B7%B5/PVE%20%E5%AE%89%E8%A3%85%20ikuai.md)
   * [PVE 安装 OpenWRT](/Domain-Knowledge/DevOps/PVE%20All-in-One%20%E5%AE%9E%E8%B7%B5/PVE%20%E5%AE%89%E8%A3%85%20OpenWRT.md)
@@ -139,6 +140,7 @@
 
 ### JS-TS
 
+* [vue3,vite配置base路径后，编译结果为空页面](/Programming/JS-TS/vue3%2Cvite%E9%85%8D%E7%BD%AEbase%E8%B7%AF%E5%BE%84%E5%90%8E%EF%BC%8C%E7%BC%96%E8%AF%91%E7%BB%93%E6%9E%9C%E4%B8%BA%E7%A9%BA%E9%A1%B5%E9%9D%A2.md)
 * [箭头函数与普通函数的区别](/Programming/JS-TS/%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0%E4%B8%8E%E6%99%AE%E9%80%9A%E5%87%BD%E6%95%B0%E7%9A%84%E5%8C%BA%E5%88%AB.md)
 
 ### Kubernetes
