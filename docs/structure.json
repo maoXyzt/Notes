@@ -601,6 +601,10 @@
                 "link": "/Programming/Linux/nginx/nginx 代理json文件作为API response.md"
               },
               {
+                "text": "nginx 配置 examples",
+                "link": "/Programming/Linux/nginx/nginx 配置 examples.md"
+              },
+              {
                 "text": "nginx 配置常见问题",
                 "link": "/Programming/Linux/nginx/nginx 配置常见问题.md"
               },

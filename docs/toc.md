@@ -175,6 +175,7 @@
 * [Mackup 同步linux配置](/Programming/Linux/Mackup%20%E5%90%8C%E6%AD%A5linux%E9%85%8D%E7%BD%AE.md)
 * nginx
   * [nginx 代理json文件作为API response](/Programming/Linux/nginx/nginx%20%E4%BB%A3%E7%90%86json%E6%96%87%E4%BB%B6%E4%BD%9C%E4%B8%BAAPI%20response.md)
+  * [nginx 配置 examples](/Programming/Linux/nginx/nginx%20%E9%85%8D%E7%BD%AE%20examples.md)
   * [nginx 配置常见问题](/Programming/Linux/nginx/nginx%20%E9%85%8D%E7%BD%AE%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98.md)
   * [nginx 隐藏响应头的版本信息(header的server字段)](/Programming/Linux/nginx/nginx%20%E9%9A%90%E8%97%8F%E5%93%8D%E5%BA%94%E5%A4%B4%E7%9A%84%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF%28header%E7%9A%84server%E5%AD%97%E6%AE%B5%29.md)
   * [nginx 用于部署静态页面](/Programming/Linux/nginx/nginx%20%E7%94%A8%E4%BA%8E%E9%83%A8%E7%BD%B2%E9%9D%99%E6%80%81%E9%A1%B5%E9%9D%A2.md)
