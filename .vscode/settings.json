@@ -1,6 +1,6 @@
 {
     "autoDocstring.docstringFormat": "google",
-    "workbench.colorTheme": "Ayu Light Bordered",
+    "workbench.colorTheme": "Monokai Pro Light",
     "editor.formatOnSave": true,
     "[python]": {
         "editor.formatOnSave": true,
