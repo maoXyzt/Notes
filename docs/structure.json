@@ -313,20 +313,20 @@
                 "link": "/Programming/Database/PostgreSQL/PG Null值排序顺序.md"
               },
               {
-                "text": "pg把多行拼接为字符串",
-                "link": "/Programming/Database/PostgreSQL/pg把多行拼接为字符串.md"
+                "text": "PG把多行拼接为字符串",
+                "link": "/Programming/Database/PostgreSQL/PG把多行拼接为字符串.md"
               },
               {
-                "text": "pg编写触发器",
-                "link": "/Programming/Database/PostgreSQL/pg编写触发器.md"
+                "text": "PG编写触发器",
+                "link": "/Programming/Database/PostgreSQL/PG编写触发器.md"
               },
               {
-                "text": "pg断开所有连接",
-                "link": "/Programming/Database/PostgreSQL/pg断开所有连接.md"
+                "text": "PG断开所有连接",
+                "link": "/Programming/Database/PostgreSQL/PG断开所有连接.md"
               },
               {
-                "text": "pg设置自增序列值",
-                "link": "/Programming/Database/PostgreSQL/pg设置自增序列值.md"
+                "text": "PG设置自增序列值",
+                "link": "/Programming/Database/PostgreSQL/PG设置自增序列值.md"
               },
               {
                 "text": "PG实现partial unique constraint",
