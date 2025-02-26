@@ -428,8 +428,8 @@
             "link": "/Programming/Docker/Docker镜像alpine,slim,bullseye,bookeworm,noble等的区别.md"
           },
           {
-            "text": "docker配置代理",
-            "link": "/Programming/Docker/docker配置代理.md"
+            "text": "Docker配置代理",
+            "link": "/Programming/Docker/Docker配置代理.md"
           },
           {
             "text": "Docker容器中的权限控制",

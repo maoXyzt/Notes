@@ -122,3 +122,9 @@ set wan1 eth1
 ### 4.3 设置 LAN
 
 进入“网络设置”->“内外网设置”，点击 LAN1，展开“高级设置”，将 eth2 和 eth3 也勾选上。
+
+## FAQ
+
+### 1. 配置旁路由后，无线无法上网
+
+<https://blog.csdn.net/qq1337715208/article/details/122271608>
