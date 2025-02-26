@@ -18,7 +18,7 @@ sudo chown -R postgres:postgres data
 sudo chmod 700 data
 ```
 
-最后这个赋权命令是必须的，不然数据库启动回有问题的
+最后这个赋权命令是必须的，不然数据库启动会有问题的
 
 3、文件拷贝，
 
@@ -38,7 +38,7 @@ cp -rf /var/lib/pgsql/9.x/data/* /home/data
 vim /usr/lib/systemd/system/postgresql*.service
 ```
 
-修改这个文件中的
+修改这个文件中的 (在 [Service] 部分)：
 
 ```conf
 Environment=PGDATA=/var/lib/pgsql/9.4/data/
