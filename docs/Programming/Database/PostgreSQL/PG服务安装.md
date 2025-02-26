@@ -46,12 +46,14 @@ services:
       POSTGRES_DB: ${DATABASE__DB}
     volumes:
       - pg-data-volume:/var/lib/postgresql/data
+    # set shared memory limit when using docker-compose
+    shm_size: 128mb
+    # or set shared memory limit when deploy via swarm stack
     healthcheck:
       test: [ "CMD", "pg_isready", "-U", "${DATABASE__USERNAME:-postgres}", "-d", "${DATABASE__DB}" ]
       interval: 5s
       retries: 5
-    restart: unless-stopped
-
+    restart: always
 
 volumes:
   pg-data-volume:
