@@ -287,6 +287,10 @@
             "text": "MySQL",
             "items": [
               {
+                "text": "CentOS 7 安装MySQL",
+                "link": "/Programming/Database/MySQL/CentOS 7 安装MySQL.md"
+              },
+              {
                 "text": "MySQL开启远程访问权限",
                 "link": "/Programming/Database/MySQL/MySQL开启远程访问权限.md"
               },
@@ -301,8 +305,12 @@
             "text": "PostgreSQL",
             "items": [
               {
-                "text": "PG - INSERT ON CONFLICT 语法(upsert)",
-                "link": "/Programming/Database/PostgreSQL/PG - INSERT ON CONFLICT 语法(upsert).md"
+                "text": "PostgreSQL",
+                "link": "/Programming/Database/PostgreSQL/"
+              },
+              {
+                "text": "PG - INSERT ON CONFLICT (UPSERT)语法",
+                "link": "/Programming/Database/PostgreSQL/PG - INSERT ON CONFLICT (UPSERT)语法.md"
               },
               {
                 "text": "PG - UPDATE SET FROM",
@@ -541,10 +549,6 @@
               {
                 "text": "CentOS 7 lvm分区扩容",
                 "link": "/Programming/Linux/CentOS/CentOS 7 lvm分区扩容.md"
-              },
-              {
-                "text": "CentOS 7 安装MySQL",
-                "link": "/Programming/Linux/CentOS/CentOS 7 安装MySQL.md"
               },
               {
                 "text": "CentOS 7 安装最新版本的Git",

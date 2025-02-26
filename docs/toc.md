@@ -86,10 +86,12 @@
 * CouchDB
   * [CouchDB安装](/Programming/Database/CouchDB/CouchDB%E5%AE%89%E8%A3%85.md)
 * MySQL
+  * [CentOS 7 安装MySQL](/Programming/Database/MySQL/CentOS%207%20%E5%AE%89%E8%A3%85MySQL.md)
   * [MySQL开启远程访问权限](/Programming/Database/MySQL/MySQL%E5%BC%80%E5%90%AF%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AE%E6%9D%83%E9%99%90.md)
   * [MySQL数据库备份与恢复](/Programming/Database/MySQL/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%87%E4%BB%BD%E4%B8%8E%E6%81%A2%E5%A4%8D.md)
 * PostgreSQL
-  * [PG - INSERT ON CONFLICT 语法(upsert)](/Programming/Database/PostgreSQL/PG%20-%20INSERT%20ON%20CONFLICT%20%E8%AF%AD%E6%B3%95%28upsert%29.md)
+  * [PostgreSQL](/Programming/Database/PostgreSQL/)
+  * [PG - INSERT ON CONFLICT (UPSERT)语法](/Programming/Database/PostgreSQL/PG%20-%20INSERT%20ON%20CONFLICT%20%28UPSERT%29%E8%AF%AD%E6%B3%95.md)
   * [PG - UPDATE SET FROM](/Programming/Database/PostgreSQL/PG%20-%20UPDATE%20SET%20FROM.md)
   * [PG Null值排序顺序](/Programming/Database/PostgreSQL/PG%20Null%E5%80%BC%E6%8E%92%E5%BA%8F%E9%A1%BA%E5%BA%8F.md)
   * [PG把多行拼接为字符串](/Programming/Database/PostgreSQL/PG%E6%8A%8A%E5%A4%9A%E8%A1%8C%E6%8B%BC%E6%8E%A5%E4%B8%BA%E5%AD%97%E7%AC%A6%E4%B8%B2.md)
@@ -159,7 +161,6 @@
 * [awscli使用指南](/Programming/Linux/awscli%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.md)
 * CentOS
   * [CentOS 7 lvm分区扩容](/Programming/Linux/CentOS/CentOS%207%20lvm%E5%88%86%E5%8C%BA%E6%89%A9%E5%AE%B9.md)
-  * [CentOS 7 安装MySQL](/Programming/Linux/CentOS/CentOS%207%20%E5%AE%89%E8%A3%85MySQL.md)
   * [CentOS 7 安装最新版本的Git](/Programming/Linux/CentOS/CentOS%207%20%E5%AE%89%E8%A3%85%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC%E7%9A%84Git.md)
   * [CentOS 7 常用工具包安装](/Programming/Linux/CentOS/CentOS%207%20%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E5%8C%85%E5%AE%89%E8%A3%85.md)
   * [CentOS 7 开启端口](/Programming/Linux/CentOS/CentOS%207%20%E5%BC%80%E5%90%AF%E7%AB%AF%E5%8F%A3.md)
