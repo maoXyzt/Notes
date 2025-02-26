@@ -24,6 +24,44 @@ listen_addresses = '*'
 
 ## 2. 用 docker
 
+Example:
+
+```yml
+# Config the following environment variables
+# + DATABASE__PORT
+# + DATABASE__USERNAME
+# + DATABASE__PASSWORD
+# + DATABASE__DB
+
+services:
+  postgres:
+    image: postgres:16
+    ports:
+      - ${DATABASE__PORT-5432}:5432
+    environment:
+      POSTGRES_USER: ${DATABASE__USERNAME:-postgres}
+      POSTGRES_PASSWORD: ${DATABASE__PASSWORD:-postgres}
+      POSTGRES_DB: ${DATABASE__DB}
+    volumes:
+      - pg-data-volume:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD", "pg_isready", "-U", "${DATABASE__USERNAME:-postgres}", "-d", "${DATABASE__DB}" ]
+      interval: 5s
+      retries: 5
+    restart: unless-stopped
+
+
+volumes:
+  pg-data-volume:
+    name: postgres-data-volume
+    driver: local
+    driver_opts:
+      type: none
+      # path to mount PGDATA folder
+      device: ./data/pgdata
+      o: bind
+```
+
 ## 3. 测试安装
 
 ### 用 psql 测试
@@ -71,9 +109,9 @@ try:
 except (Exception, psycopg2.Error) as error :
     print ("Error while connecting to PostgreSQL", error)
 finally:
-    #closing database connection.
-        if(conn):
-            cursor.close()
-            conn.close()
-            print("PostgreSQL connection is closed")
+    # closing database connection.
+    if('conn' in locals()):
+        cursor.close()
+        conn.close()
+        print("PostgreSQL connection is closed")
 ```
