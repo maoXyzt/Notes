@@ -1,12 +1,12 @@
 # PG 数据库创建 USER、DATABASE、SCHEMA、TABLE
 
-## User
+## 1. User
 
 ```sql
 CREATE USER username WITH PASSWORD 'password';
 ```
 
-## Database
+## 2. Database
 
 ```sql
 CREATE DATABASE dbname OWNER user_name;
@@ -21,7 +21,7 @@ ALTER DATABASE dbname OWNER TO new_owner;
 GRANT all ON DATABASE dbname TO username;
 ```
 
-## Schema
+## 3. Schema
 
 ```sql
 CREATE SCHEMA schemaname;
@@ -33,7 +33,7 @@ CREATE SCHEMA schemaname;
 GRANT all ON SCHEMA schemaname TO username;
 ```
 
-## Table
+## 4. Table
 
 ```sql
 -- privileges
@@ -43,4 +43,3 @@ GRANT all ON SCHEMA schemaname TO username;
 --     TO { username | GROUP groupname | PUBLIC } [, ...] [ WITH GRANT OPTION ]
 GRANT all ON tablename TO username;
 ```
-

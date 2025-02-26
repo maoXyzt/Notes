@@ -1,6 +1,8 @@
-# 开启 PG 数据库远程访问
+# PG 数据库运行远程连接
 
-PostgreSQL安装后，默认只接受本地机器连接访问。要开启其他主机上访问PostgreSQL数据库的服务，需要配置data目录下的`pg_hba.conf`和`postgresql.conf`。
+PostgreSQL 安装后，默认只接受本地机器 (127.0.0.1) 连接访问。
+
+要开启其他主机上访问 PostgreSQL 数据库的服务，需要配置 data 目录下的 `pg_hba.conf` 和 `postgresql.conf`。
 
 默认路径参考（PG13）：
 
@@ -9,7 +11,7 @@ PostgreSQL安装后，默认只接受本地机器连接访问。要开启其他�
 
 ## 1、pg_hba.conf 配置数据库的访问权限
 
-找到 `# IPv4 local connections:`后，添加一行参数：
+找到 `# IPv4 local connections:` 后，添加一行参数：
 
 ```conf
 # TYPE  DATABASE        USER            ADDRESS                 METHOD
@@ -31,4 +33,3 @@ listen_addresses = '*'
 ```bash
 sudo systemctl restart postgresql
 ```
-

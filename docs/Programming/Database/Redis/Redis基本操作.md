@@ -1,12 +1,14 @@
-# Redis基本操作
+# Redis 基本操作
 
-## 1. 启动redis服务
+## 1. 启动 redis 服务
 
 ```bash
 redis-server /etc/redis/6379.conf # 配置文件的路径
 ```
 
-## 2. 连接redis服务
+## 2. redis-cli 命令
+
+### 2.1 连接 redis 服务
 
 ```bash
 redis-cli
@@ -14,22 +16,33 @@ redis-cli
 redis-cli -p 6380
 ```
 
-## 3. 连接后
+### 2.2 常用命令
+
+#### 验证密码
+
+如果设置了密码，通过 `auth` 命令进行验证
 
 ```bash
-# 如设置了密码，输入密码进行验证
-127.0.0.1:6379> auth password
+127.0.0.1:6379> auth your_password
 OK
-# 测试是否连通
+```
+
+#### 测试是否连通
+
+```bash
 127.0.0.1:6379> ping
 PONG
-# 切换库（默认是0号库）
+```
+
+#### 切换库（默认是 0 号库）
+
+```bash
 127.0.0.1:6379> select 2
 OK
 127.0.0.1:6379[2]>
 ```
 
-## 4. 退出
+#### 退出
 
 ```bash
 127.0.0.1:6379> exit

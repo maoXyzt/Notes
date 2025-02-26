@@ -287,12 +287,12 @@
             "text": "MySQL",
             "items": [
               {
-                "text": "MySQL备份与恢复",
-                "link": "/Programming/Database/MySQL/MySQL备份与恢复.md"
-              },
-              {
                 "text": "MySQL开启远程访问权限",
                 "link": "/Programming/Database/MySQL/MySQL开启远程访问权限.md"
+              },
+              {
+                "text": "MySQL数据库备份与恢复",
+                "link": "/Programming/Database/MySQL/MySQL数据库备份与恢复.md"
               }
             ],
             "collapsed": true
@@ -321,16 +321,16 @@
                 "link": "/Programming/Database/PostgreSQL/pg编写触发器.md"
               },
               {
-                "text": "pg关闭所有连接",
-                "link": "/Programming/Database/PostgreSQL/pg关闭所有连接.md"
-              },
-              {
-                "text": "PG利用索引实现partial unique约束",
-                "link": "/Programming/Database/PostgreSQL/PG利用索引实现partial unique约束.md"
+                "text": "pg断开所有连接",
+                "link": "/Programming/Database/PostgreSQL/pg断开所有连接.md"
               },
               {
                 "text": "pg设置自增序列值",
                 "link": "/Programming/Database/PostgreSQL/pg设置自增序列值.md"
+              },
+              {
+                "text": "PG实现partial unique constraint",
+                "link": "/Programming/Database/PostgreSQL/PG实现partial unique constraint.md"
               },
               {
                 "text": "PG数据库创建USER、DATABASE、SCHEMA、TABLE",

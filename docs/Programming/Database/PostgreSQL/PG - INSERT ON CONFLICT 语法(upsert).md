@@ -1,4 +1,4 @@
-# PostgreSQL 的 UPSERT 语法
+# PostgreSQL 的 INSERT ON CONFLICT (UPSERT) 语法
 
 版本要求：PG >= 9.5
 
@@ -13,9 +13,6 @@ CREATE TABLE customers (
   email VARCHAR NOT NULL,
   active bool NOT NULL DEFAULT TRUE
 );
--- 索引：
---    "customers_pkey" PRIMARY KEY, bree <customer_id>
---    "customers_name_key" UNIQUE CONSTRAINT, btree <name>
 
 INSERT INTO customers (NAME, email)
 VALUES
@@ -23,6 +20,11 @@ VALUES
   ('Microsoft', 'contact@microsoft.com'),
   ('Intel', 'contact@intel.com');
 ```
+
+示例表将包含如下索引:
+
++ `"customers_pkey" PRIMARY KEY, bree <customer_id>`
++ `"customers_name_key" UNIQUE CONSTRAINT, btree <name>`
 
 ### (1) 与索引冲突
 
@@ -44,7 +46,7 @@ ON CONFLICT (name)
 DO NOTHING;
 ```
 
-### (3) 冲突时update
+### (3) 冲突时 update
 
 ```sql
 INSERT INTO customers (name, email, active)
