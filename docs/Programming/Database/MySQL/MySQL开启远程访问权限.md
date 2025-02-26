@@ -15,7 +15,7 @@ firewall-cmd --list-ports
 mysql -u root -p
 ```
 
-```mysql
+```sql
 mysql> use mysql;
 Database changed
 mysql> select host, user from user;
@@ -36,13 +36,13 @@ mysql> select host, user from user;
 
 将host字段的值改为%，表示可以在任何客户端机器上以root用户登陆。
 
-```mysql
+```sql
 mysql> update user set host = '%' where user = 'root';
 ```
 
 将权限改为ALL PRIVILEGES
 
-```mysql
+```sql
 mysql> grant all privileges on *.* to root@'%' identified by "password";
 Query OK, 0 rows affected (0.00 sec)
 
@@ -76,7 +76,7 @@ ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY 'password';
 
 修改后，可以查看密码root账号的密码加密规则已经修改
 
-```mysql
+```sql
 mysql> select host,user,plugin from user;
 +-----------+------------------+-----------------------+
 | host      | user             | plugin                |

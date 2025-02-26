@@ -13,7 +13,7 @@ PostgreSQL 安装后，默认只接受本地机器 (127.0.0.1) 连接访问。
 
 找到 `# IPv4 local connections:` 后，添加一行参数：
 
-```conf
+```bash
 # TYPE  DATABASE        USER            ADDRESS                 METHOD
 
 # IPv4 local connections:

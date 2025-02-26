@@ -21,7 +21,7 @@ Git报错：
 
 在不影响默认的 github 设置下我们重新添加一个 Host ，另取一个名称，如 github-user2：
 
-```config
+```conf
 # 默认的，不需要添加
 # Host github.com
 # HostName github.com
@@ -31,18 +31,18 @@ Git报错：
 Host github-user2
 HostName github.com
 User git
-IdentityFile ~/.ssh/id_rsa2		# 私钥位置
+IdentityFile ~/.ssh/id_rsa2  # 私钥位置
 ```
 
 ## 3. 修改 GitHub SSH 仓库地址使用 Host 别名
 
 如原地址是：
 
-`git@github.com:hbxn740150254/BestoneGitHub.git` 
+`git@github.com:hbxn740150254/BestoneGitHub.git`
 
 替换后应该是：
 
-`git@github-user2:hbxn740150254/BestoneGitHub.git` 
+`git@github-user2:hbxn740150254/BestoneGitHub.git`
 或者
 `github-user2:hbxn740150254/BestoneGitHub.git`
 
@@ -67,7 +67,7 @@ Identity added: id_rsa_personal (github-personal)
 //添加默认密钥 id_rsa
 $ ssh-add id_rsa
 //密钥有密码的话就会要你提示输入 passphrase
-Enter passphrase for id_rsa: 
+Enter passphrase for id_rsa:
 //测试用密钥isa是否连接成功github
 $ ssh -T git@github.com
 Hi hbxn740150254! You 've successfully authenticated, but GitHub does not provide shell access.

@@ -28,6 +28,7 @@ mysqldump --u  b_user -h 101.3.20.33 -p'H_password'  -P3306 -d database_di up_su
 ```bash
 mysqldump --u  b_user -h 101.3.20.33 -p'H_password'  -P3306 database_di up_subjects --where=" ctime>'2017-01-01' and ctime<'2017-06-30'" > 0101_0630_up_subjects.sql
 ```
+
 4、导出数据却不导出表结构——只返回特定数据库中特定表格的数据，不返回表格结构，添加“-t”命令参数
 
 ```bash
@@ -44,14 +45,15 @@ mysqldump  --u  b_user -h 101.3.20.33 -p'H_password' -P3306 --databases test  > 
 
 1、系统命令行
 
-格式：mysql -h链接ip -P(大写)端口 -u用户名 -p密码 数据库名 < XX.sql 
+格式：mysql -h链接ip -P(大写)端口 -u用户名 -p密码 数据库名 < XX.sql
+
 ```bash
 mysql -uusername -ppassword db1 < tb1tb2.sql
 ```
 
 2、或mysql命令行
 
-```mysql
+```sql
 mysql>
 
 user db1;
@@ -64,4 +66,3 @@ source tb1_tb2.sql;
 ```bash
 mysql -u  b_user -h 101.3.20.33 -p'H_password' -P3306   < all_database.sql
 ```
-

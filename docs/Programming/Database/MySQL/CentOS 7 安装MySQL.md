@@ -92,7 +92,7 @@ shell> sudo service mysqld status
 shell> sudo systemctl status mysqld.service
 ```
 
-### MySQL服务初始化过程：
+### MySQL服务初始化过程
 
 在服务初次启动时，服务端的数据目录为空，发生以下事件：
 
@@ -113,11 +113,11 @@ shell> sudo systemctl status mysqld.service
   ```bash
   shell> mysql -uroot -p
   ```
-  
-  ```mysql
+
+  ```sql
   mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass4!';
   ```
-  
+
 ### 密码强度
 
 密码的强度与`validate_password.policy`的值有关：
@@ -136,14 +136,14 @@ shell> sudo systemctl status mysqld.service
 
 首先，修改validate_password.policy参数的值：
 
- ```mysql
+ ```sql
 mysql> set global validate_password.policy=0;
 Query OK, 0 rows affected (0.00 sec)
  ```
 
 这样，判断密码的标准就基于密码的长度了。这个由`validate_password.length`参数来决定，默认为8。
 
-```mysql
+```sql
 mysql> select @@validate_password.length;
 +----------------------------+
 | @@validate_password.length |
@@ -155,7 +155,7 @@ mysql> select @@validate_password.length;
 
 这个值有最小值限制，最小值由三个值相加计算得到的。
 
-```mysql
+```sql
 validate_password.number_count
 + validate_password.special_char_count
 + (2 * validate_password.mixed_case_count)
@@ -167,7 +167,7 @@ validate_password.number_count
 
 以上的前提是validate_password插件必须已经安装。可通过查看以下参数严重插件是否已安装，如果没有安装，则输出将为空。
 
-```mysql
+```sql
 mysql> SHOW VARIABLES LIKE 'validate_password%';
 +--------------------------------------+--------+
 | Variable_name                        | Value  |

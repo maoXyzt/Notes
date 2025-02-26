@@ -4,7 +4,7 @@
 
 修改`nginx.conf` (`/etc/nginx/nginx.conf`) 配置文件，在配置文件中http类别下面增加如下配置：
 
-```conf
+```bash
 server_tokens off;
 ```
 
