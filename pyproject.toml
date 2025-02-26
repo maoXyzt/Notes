@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Personal notes and tools for managing notes."
 readme = "README.md"
 authors = [{ name = "maoXyzt", email = "edwardyzt@gmail.com" }]
-requires-python = ">=3.10, <3.13"
+requires-python = ">=3.11, <3.13"
 dynamic = ["dependencies"]
 license = { text = 'Apache License 2.0' }
 classifiers = [
@@ -13,7 +13,6 @@ classifiers = [
     "Operating System :: MacOS",
     "Operating System :: POSIX :: Linux",
     "Development Status :: 4 - Beta",
-    "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "License :: OSI Approved :: Apache Software License",
