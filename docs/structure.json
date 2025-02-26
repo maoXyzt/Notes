@@ -274,84 +274,108 @@
         "text": "Database",
         "items": [
           {
-            "text": "CouchDB安装",
-            "link": "/Programming/Database/CouchDB安装.md"
+            "text": "CouchDB",
+            "items": [
+              {
+                "text": "CouchDB安装",
+                "link": "/Programming/Database/CouchDB/CouchDB安装.md"
+              }
+            ],
+            "collapsed": true
           },
           {
-            "text": "MySQL备份与恢复",
-            "link": "/Programming/Database/MySQL备份与恢复.md"
+            "text": "MySQL",
+            "items": [
+              {
+                "text": "MySQL备份与恢复",
+                "link": "/Programming/Database/MySQL/MySQL备份与恢复.md"
+              },
+              {
+                "text": "MySQL开启远程访问权限",
+                "link": "/Programming/Database/MySQL/MySQL开启远程访问权限.md"
+              }
+            ],
+            "collapsed": true
           },
           {
-            "text": "MySQL开启远程访问权限",
-            "link": "/Programming/Database/MySQL开启远程访问权限.md"
+            "text": "PostgreSQL",
+            "items": [
+              {
+                "text": "PG - INSERT ON CONFLICT 语法(upsert)",
+                "link": "/Programming/Database/PostgreSQL/PG - INSERT ON CONFLICT 语法(upsert).md"
+              },
+              {
+                "text": "PG - UPDATE SET FROM",
+                "link": "/Programming/Database/PostgreSQL/PG - UPDATE SET FROM.md"
+              },
+              {
+                "text": "PG Null值排序顺序",
+                "link": "/Programming/Database/PostgreSQL/PG Null值排序顺序.md"
+              },
+              {
+                "text": "pg把多行拼接为字符串",
+                "link": "/Programming/Database/PostgreSQL/pg把多行拼接为字符串.md"
+              },
+              {
+                "text": "pg编写触发器",
+                "link": "/Programming/Database/PostgreSQL/pg编写触发器.md"
+              },
+              {
+                "text": "pg关闭所有连接",
+                "link": "/Programming/Database/PostgreSQL/pg关闭所有连接.md"
+              },
+              {
+                "text": "PG利用索引实现partial unique约束",
+                "link": "/Programming/Database/PostgreSQL/PG利用索引实现partial unique约束.md"
+              },
+              {
+                "text": "pg设置自增序列值",
+                "link": "/Programming/Database/PostgreSQL/pg设置自增序列值.md"
+              },
+              {
+                "text": "PG数据库创建USER、DATABASE、SCHEMA、TABLE",
+                "link": "/Programming/Database/PostgreSQL/PG数据库创建USER、DATABASE、SCHEMA、TABLE.md"
+              },
+              {
+                "text": "PG数据库创建只读权限的用户",
+                "link": "/Programming/Database/PostgreSQL/PG数据库创建只读权限的用户.md"
+              },
+              {
+                "text": "PG数据库路径迁移",
+                "link": "/Programming/Database/PostgreSQL/PG数据库路径迁移.md"
+              },
+              {
+                "text": "PG数据库允许远程连接",
+                "link": "/Programming/Database/PostgreSQL/PG数据库允许远程连接.md"
+              },
+              {
+                "text": "PG用户管理",
+                "link": "/Programming/Database/PostgreSQL/PG用户管理.md"
+              },
+              {
+                "text": "psql常用命令",
+                "link": "/Programming/Database/PostgreSQL/psql常用命令.md"
+              }
+            ],
+            "collapsed": true
           },
           {
-            "text": "PG - INSERT ON CONFLICT 语法(upsert)",
-            "link": "/Programming/Database/PG - INSERT ON CONFLICT 语法(upsert).md"
-          },
-          {
-            "text": "PG Null值排序顺序",
-            "link": "/Programming/Database/PG Null值排序顺序.md"
-          },
-          {
-            "text": "pg把多行拼接为字符串",
-            "link": "/Programming/Database/pg把多行拼接为字符串.md"
-          },
-          {
-            "text": "pg编写触发器",
-            "link": "/Programming/Database/pg编写触发器.md"
-          },
-          {
-            "text": "pg关闭所有连接",
-            "link": "/Programming/Database/pg关闭所有连接.md"
-          },
-          {
-            "text": "PG利用索引实现partial unique约束",
-            "link": "/Programming/Database/PG利用索引实现partial unique约束.md"
-          },
-          {
-            "text": "pg设置自增序列值",
-            "link": "/Programming/Database/pg设置自增序列值.md"
-          },
-          {
-            "text": "PG数据库创建USER、DATABASE、SCHEMA、TABLE",
-            "link": "/Programming/Database/PG数据库创建USER、DATABASE、SCHEMA、TABLE.md"
-          },
-          {
-            "text": "PG数据库创建只读权限的用户",
-            "link": "/Programming/Database/PG数据库创建只读权限的用户.md"
-          },
-          {
-            "text": "PG数据库路径迁移",
-            "link": "/Programming/Database/PG数据库路径迁移.md"
-          },
-          {
-            "text": "PG数据库允许远程连接",
-            "link": "/Programming/Database/PG数据库允许远程连接.md"
-          },
-          {
-            "text": "PG用户管理",
-            "link": "/Programming/Database/PG用户管理.md"
-          },
-          {
-            "text": "psql常用命令",
-            "link": "/Programming/Database/psql常用命令.md"
-          },
-          {
-            "text": "Redis缓存雪崩、缓存穿透、缓存击穿",
-            "link": "/Programming/Database/Redis缓存雪崩、缓存穿透、缓存击穿.md"
-          },
-          {
-            "text": "Redis基本操作",
-            "link": "/Programming/Database/Redis基本操作.md"
+            "text": "Redis",
+            "items": [
+              {
+                "text": "Redis缓存雪崩、缓存穿透、缓存击穿",
+                "link": "/Programming/Database/Redis/Redis缓存雪崩、缓存穿透、缓存击穿.md"
+              },
+              {
+                "text": "Redis基本操作",
+                "link": "/Programming/Database/Redis/Redis基本操作.md"
+              }
+            ],
+            "collapsed": true
           },
           {
             "text": "SQL - INSERT INTO SELECT",
             "link": "/Programming/Database/SQL - INSERT INTO SELECT.md"
-          },
-          {
-            "text": "SQL - pg - UPDATE SET FROM",
-            "link": "/Programming/Database/SQL - pg - UPDATE SET FROM.md"
           },
           {
             "text": "SQL查询优化经验",
