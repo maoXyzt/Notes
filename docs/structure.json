@@ -372,6 +372,10 @@
         "text": "Docker",
         "items": [
           {
+            "text": "Docker 安装",
+            "link": "/Programming/Docker/Docker 安装.md"
+          },
+          {
             "text": "Docker 创建 volume",
             "link": "/Programming/Docker/Docker 创建 volume.md"
           },
