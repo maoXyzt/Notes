@@ -187,6 +187,7 @@
   * [nginx 用于部署静态页面](/Programming/Linux/nginx/nginx%20%E7%94%A8%E4%BA%8E%E9%83%A8%E7%BD%B2%E9%9D%99%E6%80%81%E9%A1%B5%E9%9D%A2.md)
 * [Node.js 安装](/Programming/Linux/Node.js%20%E5%AE%89%E8%A3%85.md)
 * [sshfs命令简易挂载远程目录](/Programming/Linux/sshfs%E5%91%BD%E4%BB%A4%E7%AE%80%E6%98%93%E6%8C%82%E8%BD%BD%E8%BF%9C%E7%A8%8B%E7%9B%AE%E5%BD%95.md)
+* [SSH配置心跳信号防止断开连接](/Programming/Linux/SSH%E9%85%8D%E7%BD%AE%E5%BF%83%E8%B7%B3%E4%BF%A1%E5%8F%B7%E9%98%B2%E6%AD%A2%E6%96%AD%E5%BC%80%E8%BF%9E%E6%8E%A5.md)
 * [TCP&UDP端口连通性测试](/Programming/Linux/TCP%26UDP%E7%AB%AF%E5%8F%A3%E8%BF%9E%E9%80%9A%E6%80%A7%E6%B5%8B%E8%AF%95.md)
 * [vim插件管理 - vim-plug](/Programming/Linux/vim%E6%8F%92%E4%BB%B6%E7%AE%A1%E7%90%86%20-%20vim-plug.md)
 * [virtualbox硬盘扩容](/Programming/Linux/virtualbox%E7%A1%AC%E7%9B%98%E6%89%A9%E5%AE%B9.md)

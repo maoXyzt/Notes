@@ -660,6 +660,10 @@
             "link": "/Programming/Linux/sshfs命令简易挂载远程目录.md"
           },
           {
+            "text": "SSH配置心跳信号防止断开连接",
+            "link": "/Programming/Linux/SSH配置心跳信号防止断开连接.md"
+          },
+          {
             "text": "TCP&UDP端口连通性测试",
             "link": "/Programming/Linux/TCP&UDP端口连通性测试.md"
           },
