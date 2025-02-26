@@ -2,13 +2,17 @@
 
 ## 服务安装与管理
 
-- [psql 常用命令](./psql常用命令.md)
-- [PG数据库路径迁移](./PG数据库路径迁移.md)
-- [PG数据库创建USER、DATABASE、SCHEMA、TABLE](./PG数据库创建USER、DATABASE、SCHEMA、TABLE.md)
-- [PG用户管理](./PG用户管理.md)
-- [PG数据库创建只读权限的用户](./PG数据库创建只读权限的用户.md)
+- [PG服务安装](./PG服务安装.md)
+- [`psql` 客户端常用命令](./psql客户端常用命令.md)
+- [PG数据库文件路径迁移](./PG数据库文件路径迁移.md)
 - [PG数据库允许远程连接](./PG数据库允许远程连接.md)
 - [PG断开所有连接](./PG断开所有连接.md)
+
+## 库元数据管理
+
+- [PG用户管理](./PG用户管理.md)
+- [PG数据库创建只读权限的用户](./PG数据库创建只读权限的用户.md)
+- [PG数据库创建USER、DATABASE、SCHEMA、TABLE](./PG数据库创建USER、DATABASE、SCHEMA、TABLE.md)
 
 ### 查询技巧
 

@@ -1,4 +1,4 @@
-# PostgreSQL 数据库路径迁移
+# PostgreSQL 数据库文件路径迁移
 
 迁移方法有两种：
 

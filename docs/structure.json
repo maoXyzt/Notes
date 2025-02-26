@@ -333,6 +333,10 @@
                 "link": "/Programming/Database/PostgreSQL/PG断开所有连接.md"
               },
               {
+                "text": "PG服务安装",
+                "link": "/Programming/Database/PostgreSQL/PG服务安装.md"
+              },
+              {
                 "text": "PG设置自增序列值",
                 "link": "/Programming/Database/PostgreSQL/PG设置自增序列值.md"
               },
@@ -349,8 +353,8 @@
                 "link": "/Programming/Database/PostgreSQL/PG数据库创建只读权限的用户.md"
               },
               {
-                "text": "PG数据库路径迁移",
-                "link": "/Programming/Database/PostgreSQL/PG数据库路径迁移.md"
+                "text": "PG数据库文件路径迁移",
+                "link": "/Programming/Database/PostgreSQL/PG数据库文件路径迁移.md"
               },
               {
                 "text": "PG数据库允许远程连接",
@@ -361,8 +365,8 @@
                 "link": "/Programming/Database/PostgreSQL/PG用户管理.md"
               },
               {
-                "text": "psql常用命令",
-                "link": "/Programming/Database/PostgreSQL/psql常用命令.md"
+                "text": "psql客户端常用命令",
+                "link": "/Programming/Database/PostgreSQL/psql客户端常用命令.md"
               }
             ],
             "collapsed": true
