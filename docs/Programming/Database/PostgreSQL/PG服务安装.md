@@ -24,6 +24,8 @@ listen_addresses = '*'
 
 ## 2. 用 docker
 
+> 参考镜像的官方说明 <https://hub.docker.com/_/postgres>
+
 Example:
 
 ```yml
