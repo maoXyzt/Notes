@@ -13,12 +13,12 @@ generated in markdown format.
 
 import json
 from pathlib import Path
-from urllib.parse import quote
 
 from pydantic_settings import BaseSettings
 from rich import print
 
 from .utils.structure import CJSONEncoder, GroupInfo, PageInfo
+from .utils.tools import custom_quote
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS_ROOT = ROOT / 'docs'
@@ -141,7 +141,7 @@ def _make_line(item: PageInfo | GroupInfo) -> str:
     if isinstance(item, GroupInfo):
         return item.text
     else:
-        return f'[{item.text}]({quote(item.link)})'
+        return f'[{item.text}]({custom_quote(item.link, safe="/")})'
 
 
 def _format_toc(lines: list[str]) -> list[str]:

@@ -1,6 +1,6 @@
 # Docker 容器 labels
 
-## 标签的作用
+## 1. 标签的作用
 
 在 `docker-compose.yml` 文件中，`labels:` 指令用于给服务、网络或卷添加元数据。
 
@@ -36,7 +36,7 @@ services:
 
 虽然标签提供了一种强大的方式来标注你的 Docker 资源，但它们对 Docker 本身如何运行这些资源没有内在的影响。标签的影响完全取决于外部系统如何解释和利用它们。
 
-## Why use labels?
+## 2. Why use labels?
 
 > [Why Use Labels in Docker Compose](https://peterbabic.dev/blog/why-use-labels-docker-compose/)
 

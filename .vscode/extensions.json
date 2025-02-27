@@ -1,5 +1,6 @@
 {
     "recommendations": [
-        "monokai.theme-monokai-pro-vscode"
+        "monokai.theme-monokai-pro-vscode",
+        "dlyz.md-link-checker"
     ]
 }
