@@ -8,8 +8,8 @@ NoteStatus: draft
 
 选择的固件为 ImmortalWrt 23.05.4
 
-> ImmortalWrt 有 rootf.tar.gz 的版本可以安装为lxc容器，
-> lxc容器直接运行在PVE内核上会比虚拟机少一点系统开销。
+> ImmortalWrt 有 rootf.tar.gz 的版本可以安装为 lxc 容器，
+> lxc 容器直接运行在 PVE 内核上会比虚拟机少一点系统开销。
 > 安装过程参考 <https://post.smzdm.com/p/a5xvwq93/>
 
 ## 0. 登录 PVE 的管理页面
@@ -26,13 +26,13 @@ NoteStatus: draft
 
 下载地址：
 
-途径1:
+途径 1:
 
 * 进入 <https://firmware-selector.immortalwrt.org/>
 * 搜索 `Generic x86/64`
 * 找到 .qcow2 格式的的 ext4-efi 固件，下载
 
-途径2:
+途径 2:
 
 1. 进入 <https://downloads.immortalwrt.org/releases/>
 2. 分别进入 {版本}, targets, x86, 64
@@ -41,8 +41,8 @@ NoteStatus: draft
 > 格式说明：
 >
 > * x86-64: CPU 架构
-> * `.qcow2`: 虚拟机支持.qcow2格式的虚拟磁盘
-> * `ext4`: 分区格式，ext4格式方便好扩容
+> * `.qcow2`: 虚拟机支持.qcow2 格式的虚拟磁盘
+> * `ext4`: 分区格式，ext4 格式方便好扩容
 > * `efi`: 意思是用 uefi 启动。
 
 > 编写本文时，下载的镜像为:
@@ -144,7 +144,7 @@ vi /etc/config/network
 service network restart
 ```
 
-之后打开浏览器输入ip地址就可以访问 ImmortalWrt。默认用户名是 "root"，密码是空。
+之后打开浏览器输入 ip 地址就可以访问 ImmortalWrt。默认用户名是 "root"，密码是空。
 
 ### 配置网关、DNS
 
@@ -157,20 +157,26 @@ service network restart
 * IPv4 子网掩码: 255.255.255.0
 * IPv4 网关: 192.168.50.1
 
-高级设置 (这里以设为阿里公共DNS为例):
+高级设置 (这里以设为阿里公共 DNS 为例):
 
 * 使用自定义的 DNS 服务器: 223.5.5.5
 
 最后保存并应用，一定要保存并应用，不然不生效。
 
-完成后可以在“网络诊断”中随意ping下，ping通说明网络正常了。
+完成后可以在“网络诊断”中随意 ping 下，ping 通说明网络正常了。
+
+### 关闭 DHCP
+
+由于我们把 ImmortalWrt 当作旁路由器使用，所以关闭 DHCP 服务。
+
+编辑“网络 -> 接口 -> lan”，在“DHCP-> 常规设置”中勾选“忽略此接口”。
 
 ### 关闭 IPv6
 
 在透明代理中，IPv6 会导致 DNS 污染，因此现阶段我们先关闭 IPv6，将来再处理。
 
-1. 网络->接口，修改 lan。在 DHCP服务器->IPv6设置中，禁用所有服务并保存。
-2. 网络->DHCP/DNS，“过滤器”页面，勾选“过滤 IPv6 AAAA 记录”，保存并应用。
+1. 网络-> 接口，修改 lan。在 DHCP 服务器-> IPv6 设置中，禁用所有服务并保存。
+2. 网络-> DHCP/DNS，“过滤器”页面，勾选“过滤 IPv6 AAAA 记录”，保存并应用。
 
 ### (可选) 更换皮肤
 
@@ -226,13 +232,13 @@ reboot
 
 OpenClash 默认提供 7874 端口用于 DNS 查询；启动后会劫持 Dnsmasq，只保留自己作为 Dnsmasq 的上游；
 
-但是目前的版本里并没有将已配置的 DNS 转发作为 OpenClash 的上游（参考issue [启用 DNS 劫持后未将 Dnsmasq 中添加的 DNS 转发作为上游 DNS](https://github.com/vernesong/OpenClash/issues/2720)），这样会导致无法使用 SmartDNS 或其他上游 DNS，因此需要手动修改将 SmartDNS 作为 OpenClash 的上游服务器。
+但是目前的版本里并没有将已配置的 DNS 转发作为 OpenClash 的上游（参考 issue [启用 DNS 劫持后未将 Dnsmasq 中添加的 DNS 转发作为上游 DNS](https://github.com/vernesong/OpenClash/issues/2720)），这样会导致无法使用 SmartDNS 或其他上游 DNS，因此需要手动修改将 SmartDNS 作为 OpenClash 的上游服务器。
 
-在 "服务"->"OpenClash"->"全局设置"->"DNS设置"中，选择新增，设置自定义上游 DNS服务器为 SmartDNS。
+在 "服务"-> "OpenClash"-> "全局设置"-> "DNS 设置" 中，选择新增，设置自定义上游 DNS 服务器为 SmartDNS。
 
-新增完成后，在该页面选择启用 “自定义上游 DNS 服务器”，这样，就可以使用 SmartDNS 作为主 DNS服务器了；如果有其他的上游，也可以同样配置。
+新增完成后，在该页面选择启用 “自定义上游 DNS 服务器”，这样，就可以使用 SmartDNS 作为主 DNS 服务器了；如果有其他的上游，也可以同样配置。
 
-配置完成后，DNS的查询流程为 客户端 -> Dnsmasq -> OpenClash -> SmartDNS -> 上游 DNS 服务器
+配置完成后，DNS 的查询流程为 客户端 -> Dnsmasq -> OpenClash -> SmartDNS -> 上游 DNS 服务器
 
 #### 配置运行模式
 
@@ -240,17 +246,17 @@ OpenClash 默认提供 7874 端口用于 DNS 查询；启动后会劫持 Dnsmasq
 
 **Fake-IP**
 
-当客户端发起请求查询 DNS 时，会先返回一个随机的保留地址，同时查询上游 DNS 服务器，如果需要代理则发送给代理服务器查询，然后再进行连接；客户端立即向Fake-IP 发起的请求会被快速响应，节约了一次本地向DNS服务器查询的时间
+当客户端发起请求查询 DNS 时，会先返回一个随机的保留地址，同时查询上游 DNS 服务器，如果需要代理则发送给代理服务器查询，然后再进行连接；客户端立即向 Fake-IP 发起的请求会被快速响应，节约了一次本地向 DNS 服务器查询的时间
 
-运行模式有 TUN，增强和混合三种模式；区别在与 TUN 可以代理 UDP流量
+运行模式有 TUN，增强和混合三种模式；区别在与 TUN 可以代理 UDP 流量
 
-这个模式会导致客户端获取到的 DNS 查询到的结果与实际不一致，nslookup/dig等的使用会受影响
+这个模式会导致客户端获取到的 DNS 查询到的结果与实际不一致，nslookup/dig 等的使用会受影响
 
 **Redir-Host**
 
-当客户端发起请求时，会并发查询 DNS，等待返回结果后再尝试进行规则判定和连接，如果需要代理，会使用fallback 的 DNS 服务器再次查询；与不使用 OpenClash 相比，多了过滤，fallback 查询的时间，响应速度可能会变慢
+当客户端发起请求时，会并发查询 DNS，等待返回结果后再尝试进行规则判定和连接，如果需要代理，会使用 fallback 的 DNS 服务器再次查询；与不使用 OpenClash 相比，多了过滤，fallback 查询的时间，响应速度可能会变慢
 
-有兼容，TUN 和混合三种模式，区别在与 TUN 可以代理 UDP流量
+有兼容，TUN 和混合三种模式，区别在与 TUN 可以代理 UDP 流量
 
 ### 5.3 DDNS
 
@@ -261,7 +267,7 @@ DDNS 的更新由脚本执行，因此需要安装对应域名服务商的更新
 
 其他域名服务商可以在 GitHub 或恩山无线论坛中查找对应的软件
 
-阿里云DDNS可在 <https://github.com/honwen/luci-app-aliddns/releases> 下载
+阿里云 DDNS 可在 <https://github.com/honwen/luci-app-aliddns/releases> 下载
 
 ### 5.4 AdBlock
 
