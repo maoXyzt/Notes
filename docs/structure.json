@@ -488,6 +488,10 @@
             "link": "/Programming/Git/Git 多个账号用不同私钥登录.md"
           },
           {
+            "text": "git 配置文件大小写敏感",
+            "link": "/Programming/Git/git 配置文件大小写敏感.md"
+          },
+          {
             "text": "global gitignore",
             "link": "/Programming/Git/global gitignore.md"
           }

@@ -139,6 +139,7 @@
 * [git prune, git remote prune, git fetch](/Programming/Git/git%20prune%2C%20git%20remote%20prune%2C%20git%20fetch.md)
 * [git subtree](/Programming/Git/git%20subtree.md)
 * [Git 多个账号用不同私钥登录](/Programming/Git/Git%20多个账号用不同私钥登录.md)
+* [git 配置文件大小写敏感](/Programming/Git/git%20配置文件大小写敏感.md)
 * [global gitignore](/Programming/Git/global%20gitignore.md)
 
 ### Go
