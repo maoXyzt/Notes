@@ -520,6 +520,10 @@
         "text": "JS-TS",
         "items": [
           {
+            "text": "Node.js 安装",
+            "link": "/Programming/JS-TS/Node.js 安装.md"
+          },
+          {
             "text": "vue3,vite配置base路径后，编译结果为空页面",
             "link": "/Programming/JS-TS/vue3,vite配置base路径后，编译结果为空页面.md"
           },
@@ -664,16 +668,22 @@
             "collapsed": true
           },
           {
-            "text": "Node.js 安装",
-            "link": "/Programming/Linux/Node.js 安装.md"
+            "text": "SSH",
+            "items": [
+              {
+                "text": "ssh开启隧道",
+                "link": "/Programming/Linux/SSH/ssh开启隧道.md"
+              },
+              {
+                "text": "SSH配置心跳信号防止断开连接",
+                "link": "/Programming/Linux/SSH/SSH配置心跳信号防止断开连接.md"
+              }
+            ],
+            "collapsed": true
           },
           {
             "text": "sshfs命令简易挂载远程目录",
             "link": "/Programming/Linux/sshfs命令简易挂载远程目录.md"
-          },
-          {
-            "text": "SSH配置心跳信号防止断开连接",
-            "link": "/Programming/Linux/SSH配置心跳信号防止断开连接.md"
           },
           {
             "text": "TCP&UDP端口连通性测试",
