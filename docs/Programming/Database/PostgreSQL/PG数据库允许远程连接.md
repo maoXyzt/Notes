@@ -24,7 +24,7 @@ host    all             all             0.0.0.0/0                trust
 
 找到 `listen_addresses` 参数后，设置
 
-```conf
+```ini
 listen_addresses = '*'
 ```
 
