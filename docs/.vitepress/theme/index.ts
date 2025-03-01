@@ -1,11 +1,11 @@
 // https://vitepress.dev/guide/custom-theme
 import { h } from 'vue'
 import type { Theme, EnhanceAppContext } from 'vitepress'
-import { inBrowser } from 'vitepress'
+import { inBrowser, useData, useRoute } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
+import giscusTalk from 'vitepress-plugin-comment-with-giscus';
 
 import './style.css'
-
 
 export default {
   extends: DefaultTheme,
@@ -30,5 +30,28 @@ export default {
         }
       }
     }
+  },
+  setup() {
+    // Get frontmatter and route
+    const { frontmatter } = useData();
+    const route = useRoute();
+    // giscus配置
+    giscusTalk({
+      repo: 'maoXyzt/Notes',
+      repoId: 'MDEwOlJlcG9zaXRvcnkxNzY0Njk3NTM=',
+      category: 'Announcements',
+      categoryId: 'DIC_kwDOCoS2-c4CndeH',
+      mapping: 'pathname',
+      inputPosition: 'bottom',
+      lang: 'zh-CN',
+      },
+      {
+        frontmatter, route
+      },
+      //默认值为true，表示已启用，此参数可以忽略；
+      //如果为false，则表示未启用
+      //您可以使用“comment:true”序言在页面上单独启用它
+      true
+    );
   }
 } satisfies Theme

@@ -524,6 +524,16 @@
             "link": "/Programming/JS-TS/Node.js 安装.md"
           },
           {
+            "text": "VitePress",
+            "items": [
+              {
+                "text": "VitePress插件",
+                "link": "/Programming/JS-TS/VitePress/VitePress插件.md"
+              }
+            ],
+            "collapsed": true
+          },
+          {
             "text": "vue3,vite配置base路径后，编译结果为空页面",
             "link": "/Programming/JS-TS/vue3,vite配置base路径后，编译结果为空页面.md"
           },

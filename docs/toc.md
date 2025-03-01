@@ -151,6 +151,8 @@
 ### JS-TS
 
 * [Node.js 安装](/Programming/JS-TS/Node.js%20安装.md)
+* VitePress
+  * [VitePress插件](/Programming/JS-TS/VitePress/VitePress插件.md)
 * [vue3,vite配置base路径后，编译结果为空页面](/Programming/JS-TS/vue3%2Cvite配置base路径后%EF%BC%8C编译结果为空页面.md)
 * [箭头函数与普通函数的区别](/Programming/JS-TS/箭头函数与普通函数的区别.md)
 
