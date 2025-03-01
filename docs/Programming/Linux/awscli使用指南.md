@@ -18,7 +18,7 @@ aws --version
 
 (1) `vim ~/.s3cfg`
 
-```conf
+```ini
 [default]
 access_key = 111
 secret_key = 222

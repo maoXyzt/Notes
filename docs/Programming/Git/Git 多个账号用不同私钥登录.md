@@ -21,7 +21,7 @@ Git报错：
 
 在不影响默认的 github 设置下我们重新添加一个 Host ，另取一个名称，如 github-user2：
 
-```conf
+```bash
 # 默认的，不需要添加
 # Host github.com
 # HostName github.com

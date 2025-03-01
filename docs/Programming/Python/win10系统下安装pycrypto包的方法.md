@@ -28,7 +28,7 @@
 
 python安装目录下的`Lib\distutils`，修改`distutils.cfg`（没有，则创建）增加
 
-```conf
+```ini
 [build]
 compiler = mingw32
 ```

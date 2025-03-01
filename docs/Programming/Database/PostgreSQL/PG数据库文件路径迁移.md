@@ -40,13 +40,13 @@ vim /usr/lib/systemd/system/postgresql*.service
 
 修改这个文件中的 (在 [Service] 部分)：
 
-```conf
+```ini
 Environment=PGDATA=/var/lib/pgsql/9.4/data/
 ```
 
 将其修改为自己的新的数据路径：
 
-```conf
+```ini
 Environment=PGDATA=/home/data/
 ```
 

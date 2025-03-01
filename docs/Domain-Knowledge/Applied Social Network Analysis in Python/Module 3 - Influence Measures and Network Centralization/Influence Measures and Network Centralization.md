@@ -40,7 +40,7 @@ $$
 
 , where N is the set of nodes in the network and dv is the degree of node v.
 
-```pyhton
+```python
 nx.degree_centrality(G)
 ```
 
@@ -54,7 +54,7 @@ $$
 \end{aligned}
 $$
 
-```pyhton
+```python
 nx.in_degree_centrality(G)
 ```
 
@@ -105,7 +105,7 @@ $$
 
 ```python
 nx.closeness_centrality(G, normalized=False)
-nx.closeness_centrality(G, normalized=True)	# default: normalized=True
+nx.closeness_centrality(G, normalized=True) # default: normalized=True
 ```
 
 # 02. Betweenness Centrality
@@ -179,7 +179,6 @@ $$
 & \sigma_{s,t}(e) = \text{the number of shortest paths between nodes s and t that pass through edge e}
 \end{aligned}
 $$
-
 
 ```python
 nx.edge_betweenness_centrality(G, normalized=True)
