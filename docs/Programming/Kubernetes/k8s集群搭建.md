@@ -104,7 +104,7 @@ sudo sysctl --system
 
 ### 1.8 配置时间同步
 
-```cron
+```bash
 # Puppet Name: ntpdate
 */30 * * * * /usr/sbin/ntpdate ntp1.xxxx.com ntp2.xxxx.com
 # Puppet Name: hwclock
