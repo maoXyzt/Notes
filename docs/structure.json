@@ -443,8 +443,20 @@
             "text": "Vue3",
             "items": [
               {
+                "text": "Vue3 UnoCSS安装和配置",
+                "link": "/Programming/Frontend/Vue3/Vue3 UnoCSS安装和配置.md"
+              },
+              {
                 "text": "Vue3,Vite配置base路径后，编译结果为空页面",
                 "link": "/Programming/Frontend/Vue3/Vue3,Vite配置base路径后，编译结果为空页面.md"
+              },
+              {
+                "text": "Vue3项目Setup",
+                "link": "/Programming/Frontend/Vue3/Vue3项目Setup.md"
+              },
+              {
+                "text": "Vue3自动按需引入组件(unplugi-vue-components)",
+                "link": "/Programming/Frontend/Vue3/Vue3自动按需引入组件(unplugi-vue-components).md"
               }
             ],
             "collapsed": true

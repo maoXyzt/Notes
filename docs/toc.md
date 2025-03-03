@@ -125,7 +125,10 @@
 * [Node.js 安装](/Programming/Frontend/Node.js%20安装.md)
 * [VitePress插件](/Programming/Frontend/VitePress插件.md)
 * Vue3
+  * [Vue3 UnoCSS安装和配置](/Programming/Frontend/Vue3/Vue3%20UnoCSS安装和配置.md)
   * [Vue3,Vite配置base路径后，编译结果为空页面](/Programming/Frontend/Vue3/Vue3%2CVite配置base路径后%EF%BC%8C编译结果为空页面.md)
+  * [Vue3项目Setup](/Programming/Frontend/Vue3/Vue3项目Setup.md)
+  * [Vue3自动按需引入组件(unplugi-vue-components)](/Programming/Frontend/Vue3/Vue3自动按需引入组件%28unplugi-vue-components%29.md)
 
 ### Git
 

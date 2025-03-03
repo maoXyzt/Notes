@@ -1,7 +1,3 @@
----
-NoteStatus: draft
----
-
 # Vue3 项目 Setup
 
 ## 1. 安装 Vue3
@@ -20,7 +16,48 @@ pnpm create vue@latest
 * 启用 ESLint
 * 启用 Prettier
 
-## 2. 配置 Prettier
+## 2 安装依赖
+
+### sass
+
+```bash
+pnpm install sass sass-loader --save-dev
+```
+
+### vue-query: 数据请求和缓存
+
+pinia 用于处理公共状态，vue-query 用于处理服务端状态
+
+[TanStack Query](https://tanstack.com/query/latest/docs/framework/vue/overview)
+
+```bash
+pnpm add @tanstack/vue-query
+```
+
+### VueUse
+
+```bash
+pnpm i @vueuse/core
+```
+
+### tiny-invariant
+
+<https://www.npmjs.com/package/tiny-invariant>
+
+```bash
+pnpm i tiny-invariant
+```
+
+### naive-ui
+
+```bash
+pnpm i -D naive-ui
+pnpm i -D vfonts  # 字体
+```
+
+## 3. 配置
+
+### 3.1 配置 Prettier
 
 配置文件 `.prettierrc.json5`
 
@@ -52,14 +89,19 @@ pnpm create vue@latest
 }
 ```
 
-## 3. 配置 ESLint
+### 3.2 配置 ESLint
 
-## 4. 配置 Pre-commit Hook
+### 3.3 配置 Pre-commit Hook
 
-## 5. 创建 `.node-version` 文件
+### 3.4 创建 `.node-version` 文件
 
 用于 [fnm](https://github.com/Schniz/fnm?tab=readme-ov-file) 管理 Node.js 版本。
 
 ```bash
 20.14.0
 ```
+
+## 4. 插件
+
+* [自动按需引入组件](./Vue3自动按需引入组件(unplugi-vue-components).md)
+* [UnoCSS](./Vue3%20UnoCSS安装和配置.md)
