@@ -133,6 +133,14 @@
 * [asdf版本管理工具的安装和使用](/Programming/Elixir/asdf版本管理工具的安装和使用.md)
 * [hex.pm国内镜像](/Programming/Elixir/hex.pm国内镜像.md)
 
+### Frontend
+
+* JS-TS
+  * [箭头函数与普通函数的区别](/Programming/Frontend/JS-TS/箭头函数与普通函数的区别.md)
+* [Node.js 安装](/Programming/Frontend/Node.js%20安装.md)
+* Vue3
+  * [Vue3,Vite配置base路径后，编译结果为空页面](/Programming/Frontend/Vue3/Vue3%2CVite配置base路径后%EF%BC%8C编译结果为空页面.md)
+
 ### Git
 
 * [git error - connection closed](/Programming/Git/git%20error%20-%20connection%20closed.md)
@@ -150,11 +158,8 @@
 
 ### JS-TS
 
-* [Node.js 安装](/Programming/JS-TS/Node.js%20安装.md)
 * VitePress
   * [VitePress插件](/Programming/JS-TS/VitePress/VitePress插件.md)
-* [vue3,vite配置base路径后，编译结果为空页面](/Programming/JS-TS/vue3%2Cvite配置base路径后%EF%BC%8C编译结果为空页面.md)
-* [箭头函数与普通函数的区别](/Programming/JS-TS/箭头函数与普通函数的区别.md)
 
 ### Kubernetes
 

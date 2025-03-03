@@ -469,6 +469,36 @@
         "collapsed": false
       },
       {
+        "text": "Frontend",
+        "items": [
+          {
+            "text": "JS-TS",
+            "items": [
+              {
+                "text": "箭头函数与普通函数的区别",
+                "link": "/Programming/Frontend/JS-TS/箭头函数与普通函数的区别.md"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "text": "Node.js 安装",
+            "link": "/Programming/Frontend/Node.js 安装.md"
+          },
+          {
+            "text": "Vue3",
+            "items": [
+              {
+                "text": "Vue3,Vite配置base路径后，编译结果为空页面",
+                "link": "/Programming/Frontend/Vue3/Vue3,Vite配置base路径后，编译结果为空页面.md"
+              }
+            ],
+            "collapsed": true
+          }
+        ],
+        "collapsed": false
+      },
+      {
         "text": "Git",
         "items": [
           {
@@ -520,10 +550,6 @@
         "text": "JS-TS",
         "items": [
           {
-            "text": "Node.js 安装",
-            "link": "/Programming/JS-TS/Node.js 安装.md"
-          },
-          {
             "text": "VitePress",
             "items": [
               {
@@ -532,14 +558,6 @@
               }
             ],
             "collapsed": true
-          },
-          {
-            "text": "vue3,vite配置base路径后，编译结果为空页面",
-            "link": "/Programming/JS-TS/vue3,vite配置base路径后，编译结果为空页面.md"
-          },
-          {
-            "text": "箭头函数与普通函数的区别",
-            "link": "/Programming/JS-TS/箭头函数与普通函数的区别.md"
           }
         ],
         "collapsed": false
