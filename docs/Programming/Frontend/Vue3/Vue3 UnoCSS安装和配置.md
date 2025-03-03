@@ -65,6 +65,31 @@ export default defineConfig({
 })
 ```
 
+#### (可选) rem-to-px
+
+如果要搭配 PostCSS 的插件 `postcss-pxtorem` 使用，可以使用 [rem-to-px](https://unocss.dev/presets/rem-to-px) 预设。
+
+> [PostCSS 配置 > 2.2 postcss-pxtorem & amfe-flexible](./Vue3%20PostCSS配置.md#2.2-postcss-pxtorem---amfe-flexible)
+
+先把 rem 单位转换为 px 单位，再通过 PostCSS 插件 `postcss-pxtorem` 转换为 rem 单位。
+
+```bash
+pnpm add -D @unocss/preset-rem-to-px
+```
+
+配置 `uno.config.ts`:
+
+```typescript
+import presetRemToPx from '@unocss/preset-rem-to-px'
+
+export default defineConfig({
+  presets: [
+    presetRemToPx(),
+    // ...
+  ],
+})
+```
+
 ### 3.2 自定义 CSS classes
 
 `uno.config.ts` 中添加 rules，支持正则表达式。
