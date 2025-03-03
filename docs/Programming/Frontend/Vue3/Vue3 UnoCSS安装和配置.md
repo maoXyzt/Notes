@@ -125,8 +125,90 @@ export default defineConfig({
 
 ## 扩展插件
 
-### transformer
+### Directives transformer
 
-支持语法 @apply, @screen 和 theme()
+<https://unocss.dev/transformers/directives>
 
+支持语法 `@apply`, `@screen` 和 `theme()`
 
+```bash
+pnpm add -D @unocss/transformer-directives
+```
+
+配置 `uno.config.ts`:
+
+```typescript
+import transformerDirectives from '@unocss/transformer-directives'
+
+export default defineConfig({
+  transformers: [transformerDirectives()],
+})
+```
+
+#### Usage
+
+`@apply`: 应用 CSS 规则。
+
+将原子化的样式名，合并成一个自定义的样式类名。
+
+```css
+.myLabel {
+  @apply color-red font-bold;
+}
+```
+
+```html
+<div class="myLabel">Hello</div>
+```
+
+`@screen`: 响应式设计。
+
+```css
+@screen sm {
+  .grid {
+    --uno: grid-cols-3;
+  }
+}
+```
+
+`theme()`: 主题变量。
+
+```css
+.btn-blue {
+  background-color: theme('colors.blue.500');
+}
+```
+
+### Variant Group transformer
+
+<https://unocss.dev/transformers/variant-group>
+
+```bash
+pnpm add -D @unocss/transformer-variant-group
+```
+
+配置 `uno.config.ts`:
+
+```typescript
+import transformerVariantGroup from '@unocss/transformer-variant-group'
+
+export default defineConfig({
+  transformers: [transformerVariantGroup()],
+})
+```
+
+#### Usage
+
+```html
+<div class="hover:(bg-blue-500 text-white) focus:(bg-blue-500 text-white)">
+  Hover me
+</div>
+```
+
+会被转换为:
+
+```html
+<div class="hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white">
+  Hover me
+</div>
+```
