@@ -28,6 +28,29 @@ pinia 用于处理公共状态，vue-query 用于处理服务端状态。
 pnpm add @tanstack/vue-query
 ```
 
+创建 `src/plugins/vue-query.ts`, 然后在 `main.ts` 调用 `setupVueQuery(app)`:
+
+```typescript
+// src/plugins/vue-query.ts
+import { VueQueryPlugin } from '@tanstack/vue-query'
+import type { VueQueryPluginOptions } from '@tanstack/vue-query'
+import type { App } from 'vue'
+
+export const setupVueQuery = (app: App) => {
+  const vueQueryPluginOptions: VueQueryPluginOptions = {
+    queryClientConfig: {
+      defaultOptions: {
+        queries: {
+          staleTime: 5000,
+          refetchOnWindowFocus: false,
+        },
+      },
+    },
+  }
+  app.use(VueQueryPlugin, vueQueryPluginOptions)
+}
+```
+
 ### 2.2 VueUse
 
 一些常用的 Vue Composition API 钩子函数。
@@ -81,30 +104,37 @@ pnpm i -D vfonts  # 字体
 
 [UnoCSS](./Vue3%20UnoCSS安装和配置.md)
 
-### 4.3 CSS 预处理器 (PostCSS)
+### 4.3 CSS 后处理器 (PostCSS)
 
 > <https://cn.vite.dev/guide/features#postcss>
 
+[PostCSS 配置](./Vue3%20PostCSS配置.md)
+
+### 4.4 webfontloader
+
+用于加载 Google 字体。
+
 ```bash
-pnpm add -D postcss-loader postcss
-# `postcss-nesting` 支持 W3C 标准的 CSS嵌套;
-# 如果希望使用 sass 风格的嵌套，则选择 `postcss-nested`
-pnpm add -D postcss-nesting
+pnpm add webfontloader
+pnpm add -D @types/webfontloader
 ```
 
-配置 `vite.config.ts` 的 css 配置项:
+创建 `src/plugins/webfontloader.ts`:
 
 ```typescript
-import postcssNesting from 'postcss-nesting'
-
-export default defineConfig({
-  css: {
-    postcss: {
-      plugins: [postcssNesting()],
+/**
+ * plugins/webfontloader.js
+ *
+ * webfontloader documentation: https://github.com/typekit/webfontloader
+ */
+export async function loadFonts() {
+  const webFontLoader = await import(/* webpackChunkName: "webfontloader" */ 'webfontloader')
+  webFontLoader.load({
+    google: {
+      families: ['Roboto:100,300,400,500,700,900&display=swap'],
     },
-  },
-  // ...
-})
+  })
+}
 ```
 
 ## 5. 项目配置

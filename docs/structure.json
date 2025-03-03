@@ -447,6 +447,14 @@
             "text": "Vue3",
             "items": [
               {
+                "text": "Vue3",
+                "link": "/Programming/Frontend/Vue3/"
+              },
+              {
+                "text": "Vue3 PostCSS配置",
+                "link": "/Programming/Frontend/Vue3/Vue3 PostCSS配置.md"
+              },
+              {
                 "text": "Vue3 UnoCSS安装和配置",
                 "link": "/Programming/Frontend/Vue3/Vue3 UnoCSS安装和配置.md"
               },

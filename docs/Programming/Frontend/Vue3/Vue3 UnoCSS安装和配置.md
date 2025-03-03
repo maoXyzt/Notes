@@ -65,7 +65,7 @@ export default defineConfig({
 })
 ```
 
-### 3.2 自定义 CSS
+### 3.2 自定义 CSS classes
 
 `uno.config.ts` 中添加 rules，支持正则表达式。
 
@@ -105,7 +105,7 @@ export default defineConfig({
 })
 ```
 
-### 3.4 集成图标
+### 3.4 集成图标 (iconify)
 
 安装所有图标 (~130MB)
 
@@ -187,7 +187,7 @@ export default defineConfig({
 })
 ```
 
-#### 1) 用法
+#### `@apply` & `@screen` & `theme()` 语法
 
 `@apply`: 应用 CSS 规则。
 
@@ -239,7 +239,7 @@ export default defineConfig({
 })
 ```
 
-#### 1) 用法
+#### 用法
 
 ```html
 <div class="hover:(bg-blue-500 text-white) focus:(bg-blue-500 text-white)">
@@ -255,9 +255,43 @@ export default defineConfig({
 </div>
 ```
 
+### 4.3 UnoCSS Reset
+
+```bash
+pnpm add @unocss/reset
+```
+
+> Usage: <https://unocss.dev/guide/style-reset#usage>
+
+使用方法: 在 `main.ts` 中引入
+
+```typescript
+// https://unocss.dev/guide/style-reset#usage
+// 以下任选其一
+// Normalize.css
+import '@unocss/reset/normalize.css'
+// sanitize.css
+import '@unocss/reset/sanitize/sanitize.css'
+import '@unocss/reset/sanitize/assets.css'
+// Eric Meyer
+import '@unocss/reset/eric-meyer.css'
+// Tailwind
+import '@unocss/reset/tailwind.css'
+```
+
 ## 5. VSCode 插件
 
 安装 `UnoCSS` 插件，支持 UnoCSS 的语法高亮和智能提示。
+
+可以在 `.vscode/extensions.json` 中添加推荐插件:
+
+```json
+{
+  "recommendations": [
+    "antfu.unocss"
+  ]
+}
+```
 
 ## 6. 写法查询
 
