@@ -1,3 +1,7 @@
+---
+NoteStatus: draft
+---
+
 # 制作 U 盘启动盘
 
 推荐使用 [Ventoy](https://www.ventoy.net/cn/index.html) 制作 U 盘启动盘。

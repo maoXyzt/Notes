@@ -42,21 +42,6 @@
   * [06-循环神经网络](/Domain-Knowledge/Deep%20Learning/动手学深度学习-pytorch版/06-循环神经网络.md)
 * [如何评价GAN网络的好坏：IS和FID](/Domain-Knowledge/Deep%20Learning/如何评价GAN网络的好坏%EF%BC%9AIS和FID.md)
 
-### DevOps
-
-* PVE All-in-One 实践
-  * [PVE All-in-One 实践](/Domain-Knowledge/DevOps/PVE%20All-in-One%20实践/)
-  * [OpenClash 安装和配置](/Domain-Knowledge/DevOps/PVE%20All-in-One%20实践/OpenClash%20安装和配置.md)
-  * [PVE 安装 homeassistant](/Domain-Knowledge/DevOps/PVE%20All-in-One%20实践/PVE%20安装%20homeassistant.md)
-  * [PVE 安装 ikuai](/Domain-Knowledge/DevOps/PVE%20All-in-One%20实践/PVE%20安装%20ikuai.md)
-  * [PVE 安装 OpenWRT](/Domain-Knowledge/DevOps/PVE%20All-in-One%20实践/PVE%20安装%20OpenWRT.md)
-  * [安装 PVE 系统](/Domain-Knowledge/DevOps/PVE%20All-in-One%20实践/安装%20PVE%20系统.md)
-  * [制作U盘启动盘](/Domain-Knowledge/DevOps/PVE%20All-in-One%20实践/制作U盘启动盘.md)
-
-### Linear Algebra
-
-* [Linear Algebra](/Domain-Knowledge/Linear%20Algebra/Linear%20Algebra.md)
-
 ### 数据结构
 
 * 树
@@ -255,10 +240,6 @@
 
 ## Software-Specific
 
-### Backtrader
-
-* [01-概念术语](/Software-Specific/Backtrader/01-概念术语.md)
-
 ### Blender
 
 * [blender as python module](/Software-Specific/Blender/blender%20as%20python%20module.md)
@@ -279,10 +260,6 @@
 
 * [安装FBX Python SDK](/Software-Specific/FBX/安装FBX%20Python%20SDK.md)
 
-### Gitlab
-
-* [gitlab ci 配置](/Software-Specific/Gitlab/gitlab%20ci%20配置.md)
-
 ### MacOS
 
 * [Homebrew](/Software-Specific/MacOS/Homebrew.md)
@@ -300,8 +277,6 @@
 ### Obsidian
 
 * [Obsidian 同步 - 配置 LiveSync 与自托管 CouchDB 服务器](/Software-Specific/Obsidian/Obsidian%20同步%20-%20配置%20LiveSync%20与自托管%20CouchDB%20服务器.md)
-
-### [pyassimp安装](/Software-Specific/pyassimp安装.md)
 
 ### Windows
 

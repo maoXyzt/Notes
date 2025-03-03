@@ -46,7 +46,7 @@ class PageInfo(BaseItem):
             return
 
         post = frontmatter.load(filepath.as_posix())
-        if post.get('NodeStatus') == 'draft':
+        if post.get('NoteStatus') == 'draft':
             return
 
         text = filepath.stem

@@ -139,56 +139,6 @@
         "collapsed": false
       },
       {
-        "text": "DevOps",
-        "items": [
-          {
-            "text": "PVE All-in-One 实践",
-            "items": [
-              {
-                "text": "PVE All-in-One 实践",
-                "link": "/Domain-Knowledge/DevOps/PVE All-in-One 实践/"
-              },
-              {
-                "text": "OpenClash 安装和配置",
-                "link": "/Domain-Knowledge/DevOps/PVE All-in-One 实践/OpenClash 安装和配置.md"
-              },
-              {
-                "text": "PVE 安装 homeassistant",
-                "link": "/Domain-Knowledge/DevOps/PVE All-in-One 实践/PVE 安装 homeassistant.md"
-              },
-              {
-                "text": "PVE 安装 ikuai",
-                "link": "/Domain-Knowledge/DevOps/PVE All-in-One 实践/PVE 安装 ikuai.md"
-              },
-              {
-                "text": "PVE 安装 OpenWRT",
-                "link": "/Domain-Knowledge/DevOps/PVE All-in-One 实践/PVE 安装 OpenWRT.md"
-              },
-              {
-                "text": "安装 PVE 系统",
-                "link": "/Domain-Knowledge/DevOps/PVE All-in-One 实践/安装 PVE 系统.md"
-              },
-              {
-                "text": "制作U盘启动盘",
-                "link": "/Domain-Knowledge/DevOps/PVE All-in-One 实践/制作U盘启动盘.md"
-              }
-            ],
-            "collapsed": true
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "text": "Linear Algebra",
-        "items": [
-          {
-            "text": "Linear Algebra",
-            "link": "/Domain-Knowledge/Linear Algebra/Linear Algebra.md"
-          }
-        ],
-        "collapsed": false
-      },
-      {
         "text": "数据结构",
         "items": [
           {
@@ -933,16 +883,6 @@
     "text": "Software-Specific",
     "items": [
       {
-        "text": "Backtrader",
-        "items": [
-          {
-            "text": "01-概念术语",
-            "link": "/Software-Specific/Backtrader/01-概念术语.md"
-          }
-        ],
-        "collapsed": false
-      },
-      {
         "text": "Blender",
         "items": [
           {
@@ -1011,16 +951,6 @@
         "collapsed": false
       },
       {
-        "text": "Gitlab",
-        "items": [
-          {
-            "text": "gitlab ci 配置",
-            "link": "/Software-Specific/Gitlab/gitlab ci 配置.md"
-          }
-        ],
-        "collapsed": false
-      },
-      {
         "text": "MacOS",
         "items": [
           {
@@ -1067,10 +997,6 @@
           }
         ],
         "collapsed": false
-      },
-      {
-        "text": "pyassimp安装",
-        "link": "/Software-Specific/pyassimp安装.md"
       },
       {
         "text": "Windows",
