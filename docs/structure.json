@@ -422,6 +422,10 @@
         "text": "Frontend",
         "items": [
           {
+            "text": "Husky-配置前端项目的git hooks",
+            "link": "/Programming/Frontend/Husky-配置前端项目的git hooks.md"
+          },
+          {
             "text": "JS-TS",
             "items": [
               {
@@ -455,8 +459,16 @@
                 "link": "/Programming/Frontend/Vue3/Vue3项目Setup.md"
               },
               {
-                "text": "Vue3自动按需引入组件(unplugi-vue-components)",
-                "link": "/Programming/Frontend/Vue3/Vue3自动按需引入组件(unplugi-vue-components).md"
+                "text": "Vue3项目Vite配置",
+                "link": "/Programming/Frontend/Vue3/Vue3项目Vite配置.md"
+              },
+              {
+                "text": "Vue3项目配置Lint&Format规则(EsLint&Prettier)",
+                "link": "/Programming/Frontend/Vue3/Vue3项目配置Lint&Format规则(EsLint&Prettier).md"
+              },
+              {
+                "text": "Vue3自动按需引入组件(unplugin-vue-components)",
+                "link": "/Programming/Frontend/Vue3/Vue3自动按需引入组件(unplugin-vue-components).md"
               }
             ],
             "collapsed": true

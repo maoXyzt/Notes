@@ -120,6 +120,7 @@
 
 ### Frontend
 
+* [Husky-配置前端项目的git hooks](/Programming/Frontend/Husky-配置前端项目的git%20hooks.md)
 * JS-TS
   * [箭头函数与普通函数的区别](/Programming/Frontend/JS-TS/箭头函数与普通函数的区别.md)
 * [Node.js 安装](/Programming/Frontend/Node.js%20安装.md)
@@ -128,7 +129,9 @@
   * [Vue3 UnoCSS安装和配置](/Programming/Frontend/Vue3/Vue3%20UnoCSS安装和配置.md)
   * [Vue3,Vite配置base路径后，编译结果为空页面](/Programming/Frontend/Vue3/Vue3%2CVite配置base路径后%EF%BC%8C编译结果为空页面.md)
   * [Vue3项目Setup](/Programming/Frontend/Vue3/Vue3项目Setup.md)
-  * [Vue3自动按需引入组件(unplugi-vue-components)](/Programming/Frontend/Vue3/Vue3自动按需引入组件%28unplugi-vue-components%29.md)
+  * [Vue3项目Vite配置](/Programming/Frontend/Vue3/Vue3项目Vite配置.md)
+  * [Vue3项目配置Lint&Format规则(EsLint&Prettier)](/Programming/Frontend/Vue3/Vue3项目配置Lint%26Format规则%28EsLint%26Prettier%29.md)
+  * [Vue3自动按需引入组件(unplugin-vue-components)](/Programming/Frontend/Vue3/Vue3自动按需引入组件%28unplugin-vue-components%29.md)
 
 ### Git
 

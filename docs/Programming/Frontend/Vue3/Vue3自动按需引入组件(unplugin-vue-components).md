@@ -1,6 +1,6 @@
 # Vue3 自动按需引入组件（unplugin-vue-components）
 
-所需依赖:
+## 安装依赖
 
 * [unplugin-auto-import](https://github.com/unplugin/unplugin-auto-import)
 * [unplugin-vue-components](https://github.com/unplugin/unplugin-vue-components)
@@ -10,9 +10,12 @@ pnpm i -D unplugin-auto-import
 pnpm i -D unplugin-vue-components
 ```
 
+## 配置
+
 配置 `vite.config.ts`:
 
 ```typescript
+// vite.config.ts
 import AutoImport from 'unplugin-auto-import/vite'
 import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 import Components from 'unplugin-vue-components/vite'

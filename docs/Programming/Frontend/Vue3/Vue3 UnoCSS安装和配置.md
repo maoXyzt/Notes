@@ -2,15 +2,15 @@
 
 <https://unocss.dev/integrations/vite>
 
-## 安装
+## 1. 安装
 
 ```bash
 pnpm add -D unocss
 ```
 
-## 初始化配置
+## 2. 初始化
 
-配置 `vite.config.ts`:
+### 配置 `vite.config.ts`
 
 ```typescript
 import UnoCSS from 'unocss/vite'
@@ -23,36 +23,49 @@ export default defineConfig({
 })
 ```
 
-创建 `uno.config.js`:
+### 创建 `uno.config.js`
 
 ```js
 import { defineConfig } from 'unocss'
-import presetIcons from '@unocss/preset-icons'
-import presetUno from '@unocss/preset-uno'
-import transformerDirectives from '@unocss/transformer-directives'
-import transformerVariantGroup from '@unocss/transformer-variant-group'
-
 
 export default defineConfig({
   // ...UnoCSS options
 })
 ```
 
-在 `main.ts` 中引入 UnoCSS:
+### 在 `main.ts` 中引入 UnoCSS
 
 ```typescript
 import 'virtual:uno.css'
 ```
 
-## VSCode 插件
+## 3. 配置
 
-安装 UnoCSS 插件，支持 UnoCSS 的语法高亮和智能提示。
+### 3.1 Presets
 
-## 写法查询
+使用预设的样式。
 
-<https://unocss.dev/interactive/>
+[Wind3 preset](https://unocss.dev/presets/wind3)
 
-## 自定义 CSS
+```bash
+pnpm add -D @unocss/preset-wind3
+```
+
+配置 `uno.config.ts`:
+
+```typescript
+// uno.config.ts
+import presetWind3 from '@unocss/preset-wind3'
+import { defineConfig } from 'unocss'
+
+export default defineConfig({
+  presets: [
+    presetWind3(),
+  ],
+})
+```
+
+### 3.2 自定义 CSS
 
 `uno.config.ts` 中添加 rules，支持正则表达式。
 
@@ -65,7 +78,7 @@ export default defineConfig({
 })
 ```
 
-## 快捷 CSS
+### 3.3 CSS shortcuts
 
 `uno.config.ts` 中添加 shortcuts，支持快捷 CSS:
 
@@ -92,20 +105,36 @@ export default defineConfig({
 })
 ```
 
-## 集成图标
+### 3.4 集成图标
+
+安装所有图标 (~130MB)
 
 ```bash
 pnpm i -D @iconify/json
 ```
 
+安装指定图标库:
+
+`pnpm add -D @iconify-json/[the-collection-you-want]`
+
+例如:
+
+```bash
+# [Tabler](https://tabler-icons.io/)
+pnpm add -D @iconify-json/tabler
+# [Material Design Icons](https://materialdesignicons.com/)
+pnpm add -D @iconify-json/material-symbols
+# [Material Symbols](https://fonts.google.com/icons)
+pnpm add -D @iconify-json/mdi
+```
+
 配置 `uno.config.ts`:
 
 ```typescript
-import { presetWind, presetIcons } from 'unocss'
+import { presetIcons } from 'unocss'
 
 export default defineConfig({
   presets: [
-    presetWind(),
     presetIcons({
       prefix: 'i-',
       extraProperties: {
@@ -117,15 +146,28 @@ export default defineConfig({
 })
 ```
 
-在该网站中查询图标：<https://icones.js.org/，复制图标名称，在使用时添加> `i-` 前缀。
+在网站中查询图标：<https://icones.js.org/>，复制图标名称，在使用时添加 `i-` 前缀。
+
+Examples:
 
 ```html
-<div class="i-material-symbols:calendar-today"></div>
+<!-- A basic anchor icon from Phosphor icons -->
+<div class="i-ph-anchor-simple-thin" />
+<!-- An orange alarm from Material Design Icons -->
+<div class="i-mdi-alarm text-orange-400" />
+<!-- A large Vue logo -->
+<div class="i-logos-vue text-3xl" />
+<!-- Sun in light mode, Moon in dark mode, from Carbon -->
+<button class="i-carbon-sun dark:i-carbon-moon" />
+<!-- Twemoji of laugh, turns to tear on hovering -->
+<div class="i-twemoji-grinning-face-with-smiling-eyes hover:i-twemoji-face-with-tears-of-joy" />
 ```
 
-## 扩展插件
+可配合 VSCode 插件 `Iconify IntelliSense` 使用，提供图标实时预览和智能提示。
 
-### Directives transformer
+## 4. 扩展插件
+
+### 4.1 Directives transformer
 
 <https://unocss.dev/transformers/directives>
 
@@ -145,7 +187,7 @@ export default defineConfig({
 })
 ```
 
-#### Usage
+#### 1) 用法
 
 `@apply`: 应用 CSS 规则。
 
@@ -179,7 +221,7 @@ export default defineConfig({
 }
 ```
 
-### Variant Group transformer
+### 4.2 Variant Group transformer
 
 <https://unocss.dev/transformers/variant-group>
 
@@ -197,7 +239,7 @@ export default defineConfig({
 })
 ```
 
-#### Usage
+#### 1) 用法
 
 ```html
 <div class="hover:(bg-blue-500 text-white) focus:(bg-blue-500 text-white)">
@@ -212,3 +254,11 @@ export default defineConfig({
   Hover me
 </div>
 ```
+
+## 5. VSCode 插件
+
+安装 `UnoCSS` 插件，支持 UnoCSS 的语法高亮和智能提示。
+
+## 6. 写法查询
+
+<https://unocss.dev/interactive/>

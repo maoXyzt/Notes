@@ -1,7 +1,5 @@
 # VitePress 插件
 
-[[toc]]
-
 ## 1. 评论区
 
 > Ref: <https://vitepress.yiov.top/plugin.html#%E8%AF%84%E8%AE%BA>
