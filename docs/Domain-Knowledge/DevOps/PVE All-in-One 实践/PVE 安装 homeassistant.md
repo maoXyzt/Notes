@@ -1,3 +1,7 @@
+---
+NoteStatus: draft
+---
+
 # PVE 安装 homeassistant
 
 基于 PVE 8.3.0

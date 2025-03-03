@@ -138,6 +138,7 @@
 * JS-TS
   * [箭头函数与普通函数的区别](/Programming/Frontend/JS-TS/箭头函数与普通函数的区别.md)
 * [Node.js 安装](/Programming/Frontend/Node.js%20安装.md)
+* [VitePress插件](/Programming/Frontend/VitePress插件.md)
 * Vue3
   * [Vue3,Vite配置base路径后，编译结果为空页面](/Programming/Frontend/Vue3/Vue3%2CVite配置base路径后%EF%BC%8C编译结果为空页面.md)
 
@@ -155,11 +156,6 @@
 * [Go基本命令](/Programming/Go/Go基本命令.md)
 * [Linux下Go环境安装](/Programming/Go/Linux下Go环境安装.md)
 * [下载golang.org的包](/Programming/Go/下载golang.org的包.md)
-
-### JS-TS
-
-* VitePress
-  * [VitePress插件](/Programming/JS-TS/VitePress/VitePress插件.md)
 
 ### Kubernetes
 

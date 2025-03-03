@@ -486,6 +486,10 @@
             "link": "/Programming/Frontend/Node.js 安装.md"
           },
           {
+            "text": "VitePress插件",
+            "link": "/Programming/Frontend/VitePress插件.md"
+          },
+          {
             "text": "Vue3",
             "items": [
               {
@@ -542,22 +546,6 @@
           {
             "text": "下载golang.org的包",
             "link": "/Programming/Go/下载golang.org的包.md"
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "text": "JS-TS",
-        "items": [
-          {
-            "text": "VitePress",
-            "items": [
-              {
-                "text": "VitePress插件",
-                "link": "/Programming/JS-TS/VitePress/VitePress插件.md"
-              }
-            ],
-            "collapsed": true
           }
         ],
         "collapsed": false
