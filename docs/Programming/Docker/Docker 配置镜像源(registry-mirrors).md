@@ -1,5 +1,7 @@
 # Docker 配置镜像源(registry mirrors)
 
+> 相关内容: [Docker 配置代理](./Docker配置代理.md)
+
 在 Docker 的配置文件 `daemon.json` 中，`registry-mirrors` 的作用是指定 Docker 守护进程（daemon）使用的镜像仓库地址，以加快 Docker 镜像的下载速度。
 通过配置 `registry-mirrors`，Docker 会优先使用配置的镜像地址进行镜像的拉取和推送操作。
 如果配置的镜像地址上没有找到 Docker Hub 的镜像，Docker 会去官方的 Docker Hub 镜像仓库进行拉取。
@@ -39,4 +41,4 @@ sudo chsrc set docker
 # 或者 sudo chsrc set dockerhub
 ```
 
-见 [Linux 开发环境 setup](../Linux/Linux%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83setup.md)。
+见 [Linux 开发环境 setup](../Linux/Linux开发环境setup.md#全平台换源工具-chsrc)。
