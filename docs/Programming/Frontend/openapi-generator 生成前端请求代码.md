@@ -193,12 +193,20 @@ export const apiConfig = new Configuration({
 然后在 `src/services/api` 目录下创建各组 API 的服务模块，例如 `src/services/api/user.ts` 文件：
 
 ```typescript
-import { userApi } from '@/lib/_client'
+/**
+ * src/services/api/user.ts
+ * Example service module for user API
+ */
+import { UserApi } from '@/lib/_client'
 import { apiConfig } from '../common'
-import type * as __types__ from 'animohub-ui-client'
+import type * as __types__ from '@/lib/_client/model'
+
+const userApi = new UserApi(apiConfig)
 
 export const getUser = async (userId: string): Promise<__types__.User> => {
-  const response = await userApi.getUser(userId, apiConfig)
+  const response = await userApi.getUser(userId)
+  // codes for handle response
+  // ...
   return response.data
 }
 ```
