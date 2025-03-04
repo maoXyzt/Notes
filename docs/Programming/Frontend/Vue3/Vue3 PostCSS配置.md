@@ -55,7 +55,7 @@ export default defineConfig({
 
 ```bash
 pnpm add postcss-pxtorem amfe-flexible
-pnpm add @types/postcss-pxtorem -D
+pnpm add -O @types/postcss-pxtorem
 ```
 
 #### 2.2.2 配置 postcss-pxtorem

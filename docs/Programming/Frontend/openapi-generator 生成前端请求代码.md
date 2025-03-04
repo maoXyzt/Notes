@@ -32,7 +32,7 @@ openapi-generator 是一个开源工具，可以根据 OpenAPI 规范生成客�
 ```
 
 * `openapi.json`: API 服务的 OpenAPI 规范文件 (FastAPI 后端会自动生成，访问服务的 `/openapi.json` 路径获得)
-* `client.config.yaml`: 生成器配置文件
+* `client.config.yml`: 生成器配置文件
 * (可选) `docker-compose.yml`: 用于配置 docker 容器的环境和启动命令，执行生成脚本; 也可直接使用 `docker run` 命令
 * `generate.sh`: 生成脚本，对生成器进行配置和调用
 * `src/lib/_client`: 生成的客户端代码输出目录, 在 `src` 目录下，方便后续使用
@@ -76,10 +76,10 @@ printf "👍️ ${_GREEN}===Generation successful!${_NC}\n"
 echo ""
 ```
 
-`client.config.yaml` 配置文件内容如下:
+`client.config.yml` 配置文件内容如下:
 
 ```yaml
-# client.config.yaml
+# client.config.yml
 # References:
 # - https://openapi-generator.tech/docs/generators/typescript-axios
 # inputSpec: /tmp/src/openapi.json
@@ -129,12 +129,12 @@ docker-compose -f codegen/docker-compose.yml run --rm openapi-generator-cli
 
 ```bash
 docker run --rm \
-    -w /tmp/src \
-    -v ./codegen:/tmp/src \
-    -v ./src/lib/_client:/tmp/dist \
-    --entrypoint bash \
-    openapitools/openapi-generator-cli:v7.12.0 \
-    generate.sh
+  -w /tmp/src \
+  -v ./codegen:/tmp/src \
+  -v ./src/lib/_client:/tmp/dist \
+  --entrypoint bash \
+  openapitools/openapi-generator-cli:v7.12.0 \
+  generate.sh
 ```
 
 生成的代码会输出到 `build/_client` 目录下。
@@ -170,4 +170,35 @@ npm run generate:client
 pnpm generate:client
 # with yarn
 yarn generate:client
+```
+
+### 4. 项目中使用生成的 API 客户端
+
+首先创建 `src/services/common.ts` 文件，添加 API 客户端的配置信息，如下：
+
+```typescript
+/**
+ * src/services/common.ts
+ * Common utilities for services
+ */
+import { Configuration } from '@/lib/_client'
+
+// Api configuration for all services
+export const apiConfig = new Configuration({
+  basePath: '',
+  // accessToken: () => '', // Optional: set access token
+})
+```
+
+然后在 `src/services/api` 目录下创建各组 API 的服务模块，例如 `src/services/api/user.ts` 文件：
+
+```typescript
+import { userApi } from '@/lib/_client'
+import { apiConfig } from '../common'
+import type * as __types__ from 'animohub-ui-client'
+
+export const getUser = async (userId: string): Promise<__types__.User> => {
+  const response = await userApi.getUser(userId, apiConfig)
+  return response.data
+}
 ```

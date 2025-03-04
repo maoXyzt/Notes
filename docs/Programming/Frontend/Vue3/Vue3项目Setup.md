@@ -116,7 +116,7 @@ pnpm i -D vfonts  # 字体
 
 ```bash
 pnpm add webfontloader
-pnpm add -D @types/webfontloader
+pnpm add -O @types/webfontloader
 ```
 
 创建 `src/plugins/webfontloader.ts`:
