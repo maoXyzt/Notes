@@ -440,6 +440,10 @@
             "link": "/Programming/Frontend/Node.js 安装.md"
           },
           {
+            "text": "openapi-generator 生成前端请求代码",
+            "link": "/Programming/Frontend/openapi-generator 生成前端请求代码.md"
+          },
+          {
             "text": "VitePress插件",
             "link": "/Programming/Frontend/VitePress插件.md"
           },

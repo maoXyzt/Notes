@@ -124,6 +124,7 @@
 * JS-TS
   * [箭头函数与普通函数的区别](/Programming/Frontend/JS-TS/箭头函数与普通函数的区别.md)
 * [Node.js 安装](/Programming/Frontend/Node.js%20安装.md)
+* [openapi-generator 生成前端请求代码](/Programming/Frontend/openapi-generator%20生成前端请求代码.md)
 * [VitePress插件](/Programming/Frontend/VitePress插件.md)
 * Vue3
   * [Vue3](/Programming/Frontend/Vue3/)
