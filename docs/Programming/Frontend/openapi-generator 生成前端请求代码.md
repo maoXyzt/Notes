@@ -9,7 +9,7 @@ openapi-generator 是一个开源工具，可以根据 OpenAPI 规范生成客�
 * 基于 docker 镜像执行工具命令:
   * 镜像: `openapitools/openapi-generator-cli:v7.12.0`
   * DockerHub 主页: [openapitools/openapi-generator-cli](https://hub.docker.com/r/openapitools/openapi-generator-cli)
-* 客户端代码代码要求：
+* 客户端代码要求：
   * 生成 TypeScript 客户端代码，使用 axios 进行请求
     * 选用生成器: [typescript-axios](https://openapi-generator.tech/docs/generators/typescript-axios)
 
