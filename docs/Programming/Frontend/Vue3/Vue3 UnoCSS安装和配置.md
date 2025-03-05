@@ -69,7 +69,7 @@ export default defineConfig({
 
 如果要搭配 PostCSS 的插件 `postcss-pxtorem` 使用，可以使用 [rem-to-px](https://unocss.dev/presets/rem-to-px) 预设。
 
-> [PostCSS 配置 > 2.2 postcss-pxtorem & amfe-flexible](./Vue3%20PostCSS配置.md#2.2-postcss-pxtorem---amfe-flexible)
+> [PostCSS 配置 > 2.2 postcss-pxtorem & amfe-flexible](./Vue3%20PostCSS配置.md#22-postcss-pxtorem--amfe-flexible)
 
 先把 rem 单位转换为 px 单位，再通过 PostCSS 插件 `postcss-pxtorem` 转换为 rem 单位。
 
@@ -304,7 +304,29 @@ import '@unocss/reset/eric-meyer.css'
 import '@unocss/reset/tailwind.css'
 ```
 
-## 5. VSCode 插件
+## 5. ESLint 规则配置
+
+> [UnoCSS ESLint Config](https://unocss.dev/integrations/eslint#eslint-config)
+
+```bash
+pnpm add -D @unocss/eslint-config
+```
+
+配置 `eslint.config.ts`:
+
+> Vue3 + TypeScript 的 ESLint 规则使用 `defineConfigWithVueTs` 作为配置函数。
+> 需要将 UnoCSS 的配置合并到其中。
+
+```typescript
+import unocss from '@unocss/eslint-config/flat'
+
+export default defineConfigWithVueTs({
+  // Other rules ...
+  unocss,
+})
+```
+
+## 6. VSCode 插件
 
 安装 `UnoCSS` 插件，支持 UnoCSS 的语法高亮和智能提示。
 
@@ -318,6 +340,6 @@ import '@unocss/reset/tailwind.css'
 }
 ```
 
-## 6. 写法查询
+## 7. 写法查询
 
 <https://unocss.dev/interactive/>
