@@ -6,6 +6,113 @@
 
 > <https://unocss.dev/interactive/>
 
+## 0. TL;DR
+
+根据本章步骤，可快速完成安装和配置。
+
+[后续章节](#1-安装)会介绍详细的插件和配置说明。
+
+### 1) 安装 unocss 和所有推荐的插件
+
+```bash
+pnpm add -D unocss \
+  @unocss/preset-wind3 \
+  @unocss/preset-rem-to-px \
+  @iconify/json \
+  @unocss/transformer-directives \
+  @unocss/transformer-variant-group \
+  @unocss/eslint-config
+pnpm add @unocss/reset
+```
+
+### 2) 配置
+
+`unocss.config.ts`
+
+```typescript
+// unocss.config.ts
+import transformerDirectives from '@unocss/transformer-directives'
+import transformerVariantGroup from '@unocss/transformer-variant-group'
+import presetWind3 from '@unocss/preset-wind3'
+import presetRemToPx from '@unocss/preset-rem-to-px'
+import { defineConfig, presetIcons } from 'unocss'
+
+export default defineConfig({
+  content: {
+    pipeline: {
+      exclude: ['node_modules', 'dist'],
+    },
+  },
+  presets: [
+    presetWind3({
+      dark: 'class',
+    }),
+    presetIcons({
+      collections: {
+        tabler: () => import('@iconify-json/tabler').then((i) => i.icons),
+        'material-symbols': () => import('@iconify-json/material-symbols').then((i) => i.icons),
+      },
+      extraProperties: {
+        display: 'inline-block',
+        'vertical-align': 'middle',
+      },
+    }),
+    presetRemToPx(),
+  ],
+  transformers: [transformerDirectives(), transformerVariantGroup()],
+  shortcuts: {
+    'wh-full': 'w-full h-full',
+    'flex-center': 'flex justify-center items-center',
+    'flex-col-center': 'flex-center flex-col',
+    'flex-x-center': 'flex justify-center',
+    'flex-y-center': 'flex items-center',
+    'i-flex-center': 'inline-flex justify-center items-center',
+    'i-flex-x-center': 'inline-flex justify-center',
+    'i-flex-y-center': 'inline-flex items-center',
+    'flex-col': 'flex flex-col',
+    'flex-col-stretch': 'flex-col items-stretch',
+    'i-flex-col': 'inline-flex flex-col',
+    'i-flex-col-stretch': 'i-flex-col items-stretch',
+    'flex-1-hidden': 'flex-1 overflow-hidden',
+    'absolute-lt': 'absolute left-0 top-0',
+    'absolute-lb': 'absolute left-0 bottom-0',
+    'absolute-rt': 'absolute right-0 top-0',
+    'absolute-rb': 'absolute right-0 bottom-0',
+    'absolute-tl': 'absolute-lt',
+    'absolute-tr': 'absolute-rt',
+    'absolute-bl': 'absolute-lb',
+    'absolute-br': 'absolute-rb',
+    'absolute-center': 'absolute-lt flex-center wh-full',
+    'fixed-lt': 'fixed left-0 top-0',
+    'fixed-lb': 'fixed left-0 bottom-0',
+    'fixed-rt': 'fixed right-0 top-0',
+    'fixed-rb': 'fixed right-0 bottom-0',
+    'fixed-tl': 'fixed-lt',
+    'fixed-tr': 'fixed-rt',
+    'fixed-bl': 'fixed-lb',
+    'fixed-br': 'fixed-rb',
+    'fixed-center': 'fixed-lt flex-center wh-full',
+    'nowrap-hidden': 'whitespace-nowrap overflow-hidden',
+    'ellipsis-text': 'nowrap-hidden text-ellipsis',
+    'transition-base': 'transition-all duration-300 ease-in-out',
+  },
+  theme: {
+    colors: {
+      primary: 'rgb(29,222,189)',
+      nprogress: 'rgb(29,222,189)',
+      dark: '#18181c',
+    },
+    fontSize: {
+      'icon-xs': '0.875rem',
+      'icon-small': '1rem',
+      icon: '1.125rem',
+      'icon-large': '1.5rem',
+      'icon-xl': '2rem',
+    },
+  },
+})
+```
+
 ## 1. 安装
 
 ```bash
@@ -29,7 +136,7 @@ export default defineConfig({
 
 ### 创建 `uno.config.ts`
 
-```js
+```typescript
 // uno.config.ts
 import { defineConfig } from 'unocss'
 
@@ -287,6 +394,10 @@ export default defineConfig({
 
 ### 4.3 UnoCSS Reset
 
+消除不同浏览器之间默认样式的差异。
+
+如果已经使用了其他框架/UI库提供的 reset 功能，或者遇到了样式冲突，则
+
 ```bash
 pnpm add @unocss/reset
 ```
@@ -335,7 +446,7 @@ export default defineConfigWithVueTs({
 
 安装 `UnoCSS` 插件，支持 UnoCSS 的语法高亮和智能提示。
 
-可以在 `.vscode/extensions.json` 中添加推荐插件:
+可以在当前项目的 `.vscode/extensions.json` 中添加推荐插件:
 
 ```json
 {
@@ -343,92 +454,4 @@ export default defineConfigWithVueTs({
     "antfu.unocss"
   ]
 }
-```
-
-## 7. Example
-
-`unocss.config.ts`
-
-```typescript
-// unocss.config.ts
-import transformerDirectives from '@unocss/transformer-directives'
-import transformerVariantGroup from '@unocss/transformer-variant-group'
-import presetWind3 from '@unocss/preset-wind3'
-import presetRemToPx from '@unocss/preset-rem-to-px'
-import { defineConfig, presetIcons } from 'unocss'
-
-export default defineConfig({
-  content: {
-    pipeline: {
-      exclude: ['node_modules', 'dist'],
-    },
-  },
-  presets: [
-    presetWind3({
-      dark: 'class',
-    }),
-    presetIcons({
-      collections: {
-        tabler: () => import('@iconify-json/tabler').then((i) => i.icons),
-        'material-symbols': () => import('@iconify-json/material-symbols').then((i) => i.icons),
-      },
-      extraProperties: {
-        display: 'inline-block',
-        'vertical-align': 'middle',
-      },
-    }),
-    presetRemToPx(),
-  ],
-  transformers: [transformerDirectives(), transformerVariantGroup()],
-  shortcuts: {
-    'wh-full': 'w-full h-full',
-    'flex-center': 'flex justify-center items-center',
-    'flex-col-center': 'flex-center flex-col',
-    'flex-x-center': 'flex justify-center',
-    'flex-y-center': 'flex items-center',
-    'i-flex-center': 'inline-flex justify-center items-center',
-    'i-flex-x-center': 'inline-flex justify-center',
-    'i-flex-y-center': 'inline-flex items-center',
-    'flex-col': 'flex flex-col',
-    'flex-col-stretch': 'flex-col items-stretch',
-    'i-flex-col': 'inline-flex flex-col',
-    'i-flex-col-stretch': 'i-flex-col items-stretch',
-    'flex-1-hidden': 'flex-1 overflow-hidden',
-    'absolute-lt': 'absolute left-0 top-0',
-    'absolute-lb': 'absolute left-0 bottom-0',
-    'absolute-rt': 'absolute right-0 top-0',
-    'absolute-rb': 'absolute right-0 bottom-0',
-    'absolute-tl': 'absolute-lt',
-    'absolute-tr': 'absolute-rt',
-    'absolute-bl': 'absolute-lb',
-    'absolute-br': 'absolute-rb',
-    'absolute-center': 'absolute-lt flex-center wh-full',
-    'fixed-lt': 'fixed left-0 top-0',
-    'fixed-lb': 'fixed left-0 bottom-0',
-    'fixed-rt': 'fixed right-0 top-0',
-    'fixed-rb': 'fixed right-0 bottom-0',
-    'fixed-tl': 'fixed-lt',
-    'fixed-tr': 'fixed-rt',
-    'fixed-bl': 'fixed-lb',
-    'fixed-br': 'fixed-rb',
-    'fixed-center': 'fixed-lt flex-center wh-full',
-    'nowrap-hidden': 'whitespace-nowrap overflow-hidden',
-    'ellipsis-text': 'nowrap-hidden text-ellipsis',
-    'transition-base': 'transition-all duration-300 ease-in-out',
-  },
-  theme: {
-    colors: {
-      primary: 'rgb(29,222,189)',
-      nprogress: 'rgb(29,222,189)',
-      dark: '#18181c',
-    },
-    fontSize: {
-      'icon-xs': '0.875rem',
-      'icon-small': '1rem',
-      icon: '1.125rem',
-      'icon-large': '1.5rem',
-      'icon-xl': '2rem',
-    },
-  },
-})
 ```
