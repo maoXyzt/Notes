@@ -6,6 +6,7 @@
         "Nuitka",
         "onefile",
         "pypinyin",
+        "unplugin",
         "vitepress"
     ]
 }
