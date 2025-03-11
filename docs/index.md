@@ -4,14 +4,14 @@ layout: home
 
 hero:
   name: "YANG's Notes"
-  text: "My notes collections."
-  tagline: Welcome
+  text: 个人技术笔记集
+  tagline: 持续不定时更新中
   actions:
     - theme: alt
-      text: View on GitHub
+      text: GitHub
       link: https://github.com/maoXyzt/Notes
     - theme: brand
-      text: 📋 About Me
+      text: 📋 关于我
       link: https://yangzhitao.top
   #   - theme: brand
   #     text: Markdown Examples
