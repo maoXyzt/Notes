@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "YANG's Notes"
   text: 个人技术笔记集
-  tagline: 持续不定时更新中
+  tagline: 持续不定时更新中 ...
   actions:
     - theme: brand
       text: 📋 关于我
@@ -21,10 +21,10 @@ hero:
   #     link: /api-examples
 
 # features:
-#   - title: Feature A
+#   - title: 后端
 #     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-#   - title: Feature B
+#   - title: 前端基础
 #     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-#   - title: Feature C
+#   - title:
 #     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
