@@ -7,12 +7,12 @@ hero:
   text: 个人技术笔记集
   tagline: 持续不定时更新中
   actions:
-    - theme: alt
-      text: GitHub
-      link: https://github.com/maoXyzt/Notes
     - theme: brand
       text: 📋 关于我
       link: https://yangzhitao.top
+    - theme: alt
+      text: GitHub 源码
+      link: https://github.com/maoXyzt/Notes
   #   - theme: brand
   #     text: Markdown Examples
   #     link: /markdown-examples
