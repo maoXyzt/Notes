@@ -4,7 +4,7 @@
 
 在线安装
 
-> https://ohmyz.sh/#install
+> <https://ohmyz.sh/#install>
 
 ```bash
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -14,9 +14,9 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 离线安装：
 
-> https://github.com/ohmyzsh/ohmyzsh/issues/9415
+> <https://github.com/ohmyzsh/ohmyzsh/issues/9415>
 
-1. 下载最新版本release (https://github.com/ohmyzsh/ohmyzsh)
+1. 下载最新版本release (<https://github.com/ohmyzsh/ohmyzsh>)
 2. 上传并解压到 `~/.oh-my-zsh`
 3. `cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc`
 
@@ -30,6 +30,7 @@ plugins = (
   zsh-autosuggestions
   zsh-syntax-highlighting
   conda-zsh-completion
+  poetry
 )
 ```
 
@@ -41,7 +42,7 @@ plugins = (
 
 命令自动补全
 
-> https://github.com/zsh-users/zsh-autosuggestions
+> <https://github.com/zsh-users/zsh-autosuggestions>
 
 ```bash
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
@@ -53,7 +54,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugi
 
 命令语法高亮插件
 
-> https://github.com/zsh-users/zsh-syntax-highlighting
+> <https://github.com/zsh-users/zsh-syntax-highlighting>
 
 ```bash
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
@@ -82,7 +83,7 @@ theme 主题名
 
 conda命令补全。
 
-> https://github.com/conda-incubator/conda-zsh-completion
+> <https://github.com/conda-incubator/conda-zsh-completion>
 
 **安装**：
 
@@ -107,11 +108,20 @@ autoload -U compinit && compinit
 > conda init zsh
 > ```
 
+### poetry
+
+> <https://python-poetry.org/docs/#oh-my-zsh>
+
+```bash
+mkdir $ZSH_CUSTOM/plugins/poetry
+poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry
+```
+
 ### autojump
 
 实现目录间快速跳转，想去哪个目录直接 j + 目录名，不用再频繁的 cd 了！
 
-> https://github.com/wting/autojump
+> <https://github.com/wting/autojump>
 
 **安装**：
 
@@ -212,11 +222,11 @@ atuin import auto
 
 ### 3.2 主题：starship
 
-> https://starship.rs/guide/#%F0%9F%9A%80-installation
+> <https://starship.rs/guide/#%F0%9F%9A%80-installation>
 
 #### (1) 安装
 
-> https://starship.rs/guide/#%F0%9F%9A%80-installation
+> <https://starship.rs/guide/#%F0%9F%9A%80-installation>
 
 建议直接用 cargo 安装
 
@@ -251,7 +261,7 @@ starship preset bracketed-segments -o ~/.config/starship.toml
 
 #### (1) 安装
 
-> https://github.com/romkatv/powerlevel10k
+> <https://github.com/romkatv/powerlevel10k>
 
 ```bash
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
