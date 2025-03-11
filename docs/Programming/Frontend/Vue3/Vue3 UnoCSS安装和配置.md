@@ -27,6 +27,14 @@ pnpm add @unocss/reset
 
 ### 2) 配置
 
+`main.ts`
+
+```typescript
+import '@unocss/reset/sanitize/sanitize.css'
+import '@unocss/reset/sanitize/assets.css'
+import 'virtual:uno.css'
+```
+
 `unocss.config.ts`
 
 ```typescript
@@ -110,6 +118,17 @@ export default defineConfig({
       'icon-xl': '2rem',
     },
   },
+})
+```
+
+`eslint.config.ts`
+
+```typescript
+import unocss from '@unocss/eslint-config/flat'
+
+export default defineConfigWithVueTs({
+  // Other rules ...
+  unocss,
 })
 ```
 
@@ -392,7 +411,7 @@ export default defineConfig({
 </div>
 ```
 
-### 4.3 UnoCSS Reset
+### 4.3 (可选) UnoCSS Reset
 
 消除不同浏览器之间默认样式的差异。
 
@@ -446,11 +465,14 @@ export default defineConfigWithVueTs({
 
 安装 `UnoCSS` 插件，支持 UnoCSS 的语法高亮和智能提示。
 
+安装 `Iconify IntelliSense` 插件，提供图标实时预览和智能提示。
+
 可以在当前项目的 `.vscode/extensions.json` 中添加推荐插件:
 
 ```json
 {
   "recommendations": [
+    "antfu.iconify",
     "antfu.unocss"
   ]
 }
