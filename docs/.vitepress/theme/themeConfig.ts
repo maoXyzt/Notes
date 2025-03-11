@@ -7,10 +7,10 @@ import structure from '../../structure.json'
 export const themeConfig: DefaultThemeType.Config = {
   // https://vitepress.dev/reference/default-theme-config
   logo: `${constants.base_url}icon.png`,
-  siteTitle: 'AnimoXtend',
+  siteTitle: "YANG's Notes",
   nav: [
-    { text: 'Home', link: '/' },
-    { text: 'Table of Contents', link: '/toc' }
+    { text: '主页', link: '/' },
+    { text: '目录', link: '/toc' }
   ],
   sidebar: structure,
   socialLinks: [
@@ -24,7 +24,21 @@ export const themeConfig: DefaultThemeType.Config = {
         if (env.frontmatter?.title)
           return md.render(`# ${env.frontmatter.title}`) + html
         return html
-      }
+      },
+      translations: {
+        button: {
+          buttonText: '搜索',
+          buttonAriaLabel: '搜索文档',
+        },
+        modal: {
+          noResultsText: '无法找到相关结果',
+          resetButtonTitle: '清除查询结果',
+          footer: {
+            selectText: '选择',
+            navigateText: '切换',
+          },
+        },
+      },
     },
   },
   editLink: {
