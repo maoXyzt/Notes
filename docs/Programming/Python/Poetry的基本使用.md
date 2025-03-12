@@ -39,14 +39,18 @@ pipx uninstall poetry
 ```bash
 # For bash
 poetry completions bash >> ~/.bash_completion
+```
+
+```bash
 # For oh-my-zsh
 mkdir $ZSH_CUSTOM/plugins/poetry
 poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry
-# then enable the plugin in ~/.zshrc
+
+# Enable the plugin in `~/.zshrc`
 # plugins(
 #   poetry
 #   ...
-#   )
+# )
 ```
 
 ## 2 - 项目管理
