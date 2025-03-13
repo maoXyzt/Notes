@@ -343,8 +343,8 @@
             "text": "SQLite",
             "items": [
               {
-                "text": "SQLite文件数据损坏修复",
-                "link": "/Programming/Database/SQLite/SQLite文件数据损坏修复.md"
+                "text": "SQLite数据库文件损坏修复",
+                "link": "/Programming/Database/SQLite/SQLite数据库文件损坏修复.md"
               }
             ],
             "collapsed": true
