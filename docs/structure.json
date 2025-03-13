@@ -340,6 +340,16 @@
             "link": "/Programming/Database/SQL - INSERT INTO SELECT.md"
           },
           {
+            "text": "SQLite",
+            "items": [
+              {
+                "text": "SQLite文件数据损坏修复",
+                "link": "/Programming/Database/SQLite/SQLite文件数据损坏修复.md"
+              }
+            ],
+            "collapsed": true
+          },
+          {
             "text": "SQL查询优化经验",
             "link": "/Programming/Database/SQL查询优化经验.md"
           },
