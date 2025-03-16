@@ -326,10 +326,6 @@
             "collapsed": true
           },
           {
-            "text": "SQL - INSERT INTO SELECT",
-            "link": "/Programming/Database/SQL - INSERT INTO SELECT.md"
-          },
-          {
             "text": "SQLite",
             "items": [
               {
@@ -340,12 +336,16 @@
             "collapsed": true
           },
           {
+            "text": "SQL查询每个分组的前N条数据",
+            "link": "/Programming/Database/SQL查询每个分组的前N条数据.md"
+          },
+          {
             "text": "SQL查询优化经验",
             "link": "/Programming/Database/SQL查询优化经验.md"
           },
           {
-            "text": "SQL利用row_number()查询分组排序后的一条或多条数据",
-            "link": "/Programming/Database/SQL利用row_number()查询分组排序后的一条或多条数据.md"
+            "text": "SQL批量从A表插入数据到B表",
+            "link": "/Programming/Database/SQL批量从A表插入数据到B表.md"
           },
           {
             "text": "SQL中EXISTS和IN语句的区别",

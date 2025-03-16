@@ -1,9 +1,7 @@
 # CouchDB 安装
 
-## 0. 安装前准备
-
-- 服务器: 阿里云 ECS (Aliyun)
-- OS: Ubuntu 22
+- 硬件环境: 阿里云 ECS 2 核 2GiB
+- OS: Alibaba Cloud Linux 3.2 64 位
 
 ## 1. 安装方式：Docker container
 

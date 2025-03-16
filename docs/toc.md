@@ -92,11 +92,11 @@
 * Redis
   * [Redis缓存雪崩、缓存穿透、缓存击穿](/Programming/Database/Redis/Redis缓存雪崩%E3%80%81缓存穿透%E3%80%81缓存击穿.md)
   * [Redis基本操作](/Programming/Database/Redis/Redis基本操作.md)
-* [SQL - INSERT INTO SELECT](/Programming/Database/SQL%20-%20INSERT%20INTO%20SELECT.md)
 * SQLite
   * [SQLite数据库文件损坏修复](/Programming/Database/SQLite/SQLite数据库文件损坏修复.md)
+* [SQL查询每个分组的前N条数据](/Programming/Database/SQL查询每个分组的前N条数据.md)
 * [SQL查询优化经验](/Programming/Database/SQL查询优化经验.md)
-* [SQL利用row_number()查询分组排序后的一条或多条数据](/Programming/Database/SQL利用row_number%28%29查询分组排序后的一条或多条数据.md)
+* [SQL批量从A表插入数据到B表](/Programming/Database/SQL批量从A表插入数据到B表.md)
 * [SQL中EXISTS和IN语句的区别](/Programming/Database/SQL中EXISTS和IN语句的区别.md)
 
 ### Docker
