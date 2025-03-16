@@ -602,8 +602,8 @@
             "collapsed": true
           },
           {
-            "text": "convmv 解决GBK 迁移到 UTF-8 ,中文文件名乱码",
-            "link": "/Programming/Linux/convmv 解决GBK 迁移到 UTF-8 ,中文文件名乱码.md"
+            "text": "convmv命令解决GBK中文文件名乱码",
+            "link": "/Programming/Linux/convmv命令解决GBK中文文件名乱码.md"
           },
           {
             "text": "Linux Shell输出重定向并后台执行",
@@ -683,19 +683,23 @@
             "text": "SSH",
             "items": [
               {
+                "text": "sshfs命令简易挂载远程目录",
+                "link": "/Programming/Linux/SSH/sshfs命令简易挂载远程目录.md"
+              },
+              {
                 "text": "ssh开启隧道",
                 "link": "/Programming/Linux/SSH/ssh开启隧道.md"
               },
               {
                 "text": "SSH配置心跳信号防止断开连接",
                 "link": "/Programming/Linux/SSH/SSH配置心跳信号防止断开连接.md"
+              },
+              {
+                "text": "创建SSH密钥对并使用密钥登录",
+                "link": "/Programming/Linux/SSH/创建SSH密钥对并使用密钥登录.md"
               }
             ],
             "collapsed": true
-          },
-          {
-            "text": "sshfs命令简易挂载远程目录",
-            "link": "/Programming/Linux/sshfs命令简易挂载远程目录.md"
           },
           {
             "text": "TCP&UDP端口连通性测试",
@@ -720,10 +724,6 @@
           {
             "text": "安装Neovim",
             "link": "/Programming/Linux/安装Neovim.md"
-          },
-          {
-            "text": "创建SSH密钥对并使用密钥登录",
-            "link": "/Programming/Linux/创建SSH密钥对并使用密钥登录.md"
           },
           {
             "text": "下载Google Drive共享的文件",

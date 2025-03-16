@@ -1,10 +1,12 @@
+# CentOS 7 安装最新版本的Git
+
 首先查看当前git版本
 
 ```bash
 git --version
 ```
 
-### Install the latest git from the IUS repository
+## Install the latest git from the IUS repository
 
 IUS is a community project that provides RPM packages for newer versions of select software for Enterprise Linux distributions. The aim of the project is to create high-quality RPM packages for Red Hat Enterprise Linux (RHEL) and CentOS.
 
@@ -14,7 +16,7 @@ sudo yum -y install  https://centos7.iuscommunity.org/ius-release.rpm
 sudo yum -y install  git2u-all
 ```
 
-### Install the latest git from source
+## Install the latest git from source
 
 Install dependency packages required
 
@@ -33,4 +35,3 @@ rm -f v${VER}.tar.gz
 cd git-*
 sudo make install
 ```
-

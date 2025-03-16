@@ -1,3 +1,5 @@
+# CentOS 7 升级 Git 版本
+
 ## 通过 IUS 源安装
 
 1、确认你的当前 Git 版本
@@ -26,6 +28,7 @@ sudo yum -y install  git2u-all
 ```bash
 git --version
 ```
+
 ## 2. 编译安装
 
 ### 2.1 安装依赖
@@ -36,7 +39,7 @@ yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel gcc pe
 
 ### 2.2 下载源码
 
-> https://mirrors.edge.kernel.org/pub/software/scm/git/
+> <https://mirrors.edge.kernel.org/pub/software/scm/git/>
 
 ```bash
 wget https://mirrors.edge.kernel.org/pub/software/scm/git/git-<version>.tar.gz

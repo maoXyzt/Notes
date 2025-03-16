@@ -1,4 +1,4 @@
-# 安装 Neovim
+# Neovim 安装与配置
 
 > [Windows 10 系统下 Neovim 安装与配置 - jdhao's digital space](https://jdhao.github.io/2018/11/16/neovim_configuration_windows-zh/#fn:1)
 
