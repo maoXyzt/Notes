@@ -51,6 +51,7 @@ def main():
 
     # print(json.dumps(build_structure(root), indent=2, cls=MyJSONEncoder))
     root_info = build_from_root(DOCS_ROOT)
+    order_group_by_num_of_children(root_info)
     with settings.structure_json_output.open('w+', encoding='utf8', newline='\n') as f:
         json.dump(root_info.items, f, indent=2, cls=CJSONEncoder, ensure_ascii=False)
 
@@ -98,6 +99,23 @@ def build_from_root(root: Path) -> GroupInfo:
     )
     root_group.text = settings.toc_title
     return root_group
+
+
+def order_group_by_num_of_children(group: GroupInfo):
+    """Recursively sort a group and its children by the number of children."""
+
+    def _sort_key(item: GroupInfo | PageInfo) -> int:
+        if isinstance(item, GroupInfo):
+            return len(item.items)
+        elif isinstance(item, PageInfo):
+            return 0
+
+    for item in group.items:
+        if isinstance(item, GroupInfo) and item.items:
+            order_group_by_num_of_children(item)
+
+    group.items.sort(key=_sort_key, reverse=True)
+    return
 
 
 def make_toc_content(
