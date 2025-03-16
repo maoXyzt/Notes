@@ -718,6 +718,10 @@
             "link": "/Programming/Linux/安装chromedriver.md"
           },
           {
+            "text": "安装Neovim",
+            "link": "/Programming/Linux/安装Neovim.md"
+          },
+          {
             "text": "创建SSH密钥对并使用密钥登录",
             "link": "/Programming/Linux/创建SSH密钥对并使用密钥登录.md"
           },
@@ -1020,16 +1024,6 @@
           {
             "text": "maya插件安装方法",
             "link": "/Software-Specific/Maya/maya插件安装方法.md"
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "text": "Neovim",
-        "items": [
-          {
-            "text": "安装Neovim",
-            "link": "/Software-Specific/Neovim/安装Neovim.md"
           }
         ],
         "collapsed": false

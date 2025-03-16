@@ -197,6 +197,7 @@
 * [virtualbox硬盘扩容](/Programming/Linux/virtualbox硬盘扩容.md)
 * [zsh常用插件](/Programming/Linux/zsh常用插件.md)
 * [安装chromedriver](/Programming/Linux/安装chromedriver.md)
+* [安装Neovim](/Programming/Linux/安装Neovim.md)
 * [创建SSH密钥对并使用密钥登录](/Programming/Linux/创建SSH密钥对并使用密钥登录.md)
 * [下载Google Drive共享的文件](/Programming/Linux/下载Google%20Drive共享的文件.md)
 * [指定gcc版本](/Programming/Linux/指定gcc版本.md)
@@ -280,10 +281,6 @@
 
 * [maya安装numpy&scipy](/Software-Specific/Maya/maya安装numpy%26scipy.md)
 * [maya插件安装方法](/Software-Specific/Maya/maya插件安装方法.md)
-
-### Neovim
-
-* [安装Neovim](/Software-Specific/Neovim/安装Neovim.md)
 
 ### Obsidian
 

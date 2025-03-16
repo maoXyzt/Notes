@@ -1,6 +1,6 @@
-# Linux 修改默认shell
+# Linux 修改默认 shell
 
-## 修改用户的默认shell
+## 修改用户的默认 shell
 
 查看所有 shell
 
@@ -35,7 +35,7 @@ zhao.wuz:x:1003:33::/home/zhao.wuz:/bin/sh
 
 这里只需要件 /bin/sh 改成 /bin/bash 即可.
 
-## 添加用户时指定Shell
+## 添加用户时指定 Shell
 
 在添加用户时可以通过以下命令指定 Shell.
 

@@ -1,10 +1,10 @@
-# vim插件管理 - vim-plug
+# vim 插件管理 - vim-plug
 
 ## vim-plug
 
-### 安装vim-plug
+### 安装 vim-plug
 
-自动安装：在`~/.vimrc`中添加以下内容（在`plug#begin()`之前）
+自动安装：在 `~/.vimrc` 中添加以下内容（在 `plug#begin()` 之前）
 
 ```bash
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -88,7 +88,7 @@ Plug 'Yggdroot/indentLine'    "缩进指示线"
 Plug 'davidhalter/jedi-vim'   "python自动补全"
 ```
 
-## 其他vim配置
+## 其他 vim 配置
 
 ```bash
 "关闭vi兼容

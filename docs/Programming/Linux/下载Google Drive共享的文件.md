@@ -13,4 +13,3 @@ wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download
 ```bash
 export http_proxy=aaa.bbb.ccc.ddd:pppp
 ```
-

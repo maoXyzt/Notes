@@ -1,4 +1,4 @@
-# 安装chromedriver
+# 安装 chromedriver
 
 ## 1. 安装最新 google chrome
 
@@ -18,7 +18,7 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
 sudo dpkg -i --force-depends google-chrome-stable_current_amd64.deb
 ```
 
-如果出现报错`Package xxxxx is not installed.`
+如果出现报错 `Package xxxxx is not installed.`
 
 执行
 
@@ -30,7 +30,7 @@ sudo apt-get install -f
 
 ## 2. 安装 xvfb
 
-这个是为了让chrome可以无界面运行。命令：
+这个是为了让 chrome 可以无界面运行。命令：
 
 ```bash
 sudo apt-get install xvfb
@@ -38,7 +38,7 @@ sudo apt-get install xvfb
 
 ## 3. 安装 chromedriver
 
-获取chromedriver的最新版本信息
+获取 chromedriver 的最新版本信息
 
 ```bash
 LATEST=$(wget -q -O - http://chromedriver.storage.googleapis.com/LATEST_RELEASE)
@@ -57,7 +57,7 @@ unzip chromedriver_linux64.zip && cd chromedriver_linux64
 chmod +x chromedriver
 ```
 
-再把它以动到usr/bin 目录下
+再把它以动到 usr/bin 目录下
 
 ```bash
 sudo mv chromedriver /usr/bin/

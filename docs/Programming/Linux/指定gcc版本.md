@@ -1,3 +1,5 @@
+# 运行命令时，指定 GCC 版本
+
 以指定cmake时的CC和CXX为例:
 
 ```bash
