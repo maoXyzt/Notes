@@ -13,11 +13,6 @@
 
 ### [布隆过滤器(Bloom Filter)](/Algorithm/布隆过滤器%28Bloom%20Filter%29.md)
 
-### 统计学习方法
-
-* [k近邻](/Algorithm/统计学习方法/k近邻.md)
-* [感知机](/Algorithm/统计学习方法/感知机.md)
-
 ## Domain-Knowledge
 
 ### Applied Social Network Analysis in Python

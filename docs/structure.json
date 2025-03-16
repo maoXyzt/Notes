@@ -31,20 +31,6 @@
       {
         "text": "布隆过滤器(Bloom Filter)",
         "link": "/Algorithm/布隆过滤器(Bloom Filter).md"
-      },
-      {
-        "text": "统计学习方法",
-        "items": [
-          {
-            "text": "k近邻",
-            "link": "/Algorithm/统计学习方法/k近邻.md"
-          },
-          {
-            "text": "感知机",
-            "link": "/Algorithm/统计学习方法/感知机.md"
-          }
-        ],
-        "collapsed": false
       }
     ],
     "collapsed": false
