@@ -179,7 +179,7 @@
 * [Linux搜索所有文件中的内容](/Programming/Linux/Linux搜索所有文件中的内容.md)
 * [Linux系统访问NAS的文件服务(samba)](/Programming/Linux/Linux系统访问NAS的文件服务%28samba%29.md)
 * [Linux下多线程下载工具 - Axel](/Programming/Linux/Linux下多线程下载工具%20-%20Axel.md)
-* [linux新建用户](/Programming/Linux/linux新建用户.md)
+* [Linux新建用户](/Programming/Linux/Linux新建用户.md)
 * [Linux修改默认shell](/Programming/Linux/Linux修改默认shell.md)
 * [Mackup 同步linux配置](/Programming/Linux/Mackup%20同步linux配置.md)
 * [Neovim安装与配置](/Programming/Linux/Neovim安装与配置.md)
