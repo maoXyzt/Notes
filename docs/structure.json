@@ -687,16 +687,6 @@
         "collapsed": false
       },
       {
-        "text": "Kubernetes",
-        "items": [
-          {
-            "text": "k8s集群搭建",
-            "link": "/Programming/Kubernetes/k8s集群搭建.md"
-          }
-        ],
-        "collapsed": false
-      },
-      {
         "text": "Rust",
         "items": [
           {
@@ -842,6 +832,16 @@
           {
             "text": "安装FBX Python SDK",
             "link": "/Applications/FBX/安装FBX Python SDK.md"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "Kubernetes",
+        "items": [
+          {
+            "text": "k8s集群搭建",
+            "link": "/Applications/Kubernetes/k8s集群搭建.md"
           }
         ],
         "collapsed": false

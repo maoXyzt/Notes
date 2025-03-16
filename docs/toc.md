@@ -208,10 +208,6 @@
 
 * [代码整洁之道-2-有意义的命名](/Programming/Code-Quality/代码整洁之道-2-有意义的命名.md)
 
-### Kubernetes
-
-* [k8s集群搭建](/Programming/Kubernetes/k8s集群搭建.md)
-
 ### Rust
 
 * [Rust 工具链 & Cargo 国内源](/Programming/Rust/Rust%20工具链%20%26%20Cargo%20国内源.md)
@@ -258,6 +254,10 @@
 ### FBX
 
 * [安装FBX Python SDK](/Applications/FBX/安装FBX%20Python%20SDK.md)
+
+### Kubernetes
+
+* [k8s集群搭建](/Applications/Kubernetes/k8s集群搭建.md)
 
 ### Obsidian
 
