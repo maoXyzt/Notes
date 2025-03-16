@@ -50,7 +50,7 @@ class PageInfo(BaseItem):
             return
 
         text = filepath.stem
-        if text == 'index':
+        if text in ['index', 'atlas']:
             text = filepath.parent.name
             link = f'/{rel_p.parent.as_posix()}/'
         else:
@@ -137,8 +137,8 @@ class CJSONEncoder(json.JSONEncoder):
 
 def _get_pinyin_sort_key(p: Path) -> str:
     text = p.name
-    # NOTE: Sort index.md first
-    if text == 'index.md':
+    # NOTE: Sort index.md/'atlas.md' first
+    if text in ['index.md', 'atlas.md']:
         return '0'
     # NOTE: Convert alphabets to uppercase
     # to make them sorted before Chinese characters
