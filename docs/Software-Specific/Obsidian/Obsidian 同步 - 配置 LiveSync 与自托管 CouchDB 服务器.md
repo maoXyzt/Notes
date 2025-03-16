@@ -4,7 +4,13 @@
 
 本文介绍了如何使用 Docker 和自托管 CouchDB 服务器配置 Obsidian LiveSync 同步。步骤包括安装 Docker 和 CouchDB 服务端，配置环境变量和服务端口，以及通过 Self-hosted LiveSync 插件在 Obsidian 客户端进行设置。最终实现 Obsidian 笔记的实时同步。
 
-## 0. 安装依赖
+## 0. 安装 CouchDB 的依赖
+
+环境:
+
+* 阿里云 ECS 2 核 2GiB, 40GiB SSD
+* 系统: Alibaba Cloud Linux 3.2104 LTS 64 位
+* 包管理工具: yum
 
 ### 0.1 安装 Docker
 
@@ -45,7 +51,7 @@ git clone --depth=1 https://github.com/vrtmrz/self-hosted-livesync-server.git
 
 配置环境变量(创建 `.env` 文件)
 
-```properties
+```ini
 COUCHDB_SERVER=localhost:5984
 COUCHDB_USER=admin
 COUCHDB_PW=password
@@ -92,7 +98,7 @@ curl -s https://raw.githubusercontent.com/vrtmrz/obsidian-livesync/main/utils/co
 
 ```bash
 # Prepare environment variables.
-# export hostname = https://server-hostname.com/your-secret-words
+# export hostname=https://server-hostname.com/your-secret-words
 export hostname=http://server-hostname.com:5984
 export admin=admin
 export password=password
@@ -112,4 +118,4 @@ deno run -A https://raw.githubusercontent.com/vrtmrz/obsidian-livesync/main/util
 2. 输入 `welcome`
 3. 选择 `yes` & `Set it up as ...` (如果是第一次同步，要用本地文件覆盖远端，则选择第二个选项)
 4. 选择 `Keep them disabled`
-5. 重启 app
+5. 重启应用 (app)
