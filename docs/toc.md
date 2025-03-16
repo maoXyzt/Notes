@@ -62,8 +62,7 @@
 
 ### Code-Quality
 
-* 《代码整洁之道》
-  * [第2章 有意义的命名](/Programming/Code-Quality/%E3%80%8A代码整洁之道%E3%80%8B/第2章%20有意义的命名.md)
+* [代码整洁之道-2-有意义的命名](/Programming/Code-Quality/代码整洁之道-2-有意义的命名.md)
 
 ### Database
 

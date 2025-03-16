@@ -204,14 +204,8 @@
         "text": "Code-Quality",
         "items": [
           {
-            "text": "《代码整洁之道》",
-            "items": [
-              {
-                "text": "第2章 有意义的命名",
-                "link": "/Programming/Code-Quality/《代码整洁之道》/第2章 有意义的命名.md"
-              }
-            ],
-            "collapsed": true
+            "text": "代码整洁之道-2-有意义的命名",
+            "link": "/Programming/Code-Quality/代码整洁之道-2-有意义的命名.md"
           }
         ],
         "collapsed": false
