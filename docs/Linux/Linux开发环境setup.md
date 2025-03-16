@@ -52,7 +52,7 @@ sudo apt-get install autoconf automake build-essential \
 
 ### Node.js
 
-> [Node.js安装](../Frontend/Node.js%20安装.md)
+> [Node.js安装](../Programming/Frontend/Node.js%20安装.md)
 
 - 利用[NVM](https://github.com/nvm-sh/nvm#installing-and-updating)安装
 - 利用[FNM](https://github.com/Schniz/fnm?tab=readme-ov-file#installation)安装
