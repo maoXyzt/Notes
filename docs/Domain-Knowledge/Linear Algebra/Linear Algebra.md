@@ -2,7 +2,9 @@
 NoteStatus: draft
 ---
 
-向量
+# Linear Algebra
+
+## 向量
 
 - 列向量 column vector
 - 向量的线性组合
@@ -16,4 +18,4 @@ NoteStatus: draft
       - **（证明）**三角不等式 triangle inequality
       - **（证明）**几何平均 <= 算数平均
 
-- 矩阵
+## 矩阵
