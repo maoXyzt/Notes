@@ -216,56 +216,56 @@
 
 * [Rust 工具链 & Cargo 国内源](/Programming/Rust/Rust%20工具链%20%26%20Cargo%20国内源.md)
 
-## Software-Specific
+## Applications
 
 ### Blender
 
-* [blender as python module](/Software-Specific/Blender/blender%20as%20python%20module.md)
-* [blender&mathutils中的欧拉角](/Software-Specific/Blender/blender%26mathutils中的欧拉角.md)
-* [blender安装python packages](/Software-Specific/Blender/blender安装python%20packages.md)
-* [blender常用操作](/Software-Specific/Blender/blender常用操作.md)
-* [blender常用脚本](/Software-Specific/Blender/blender常用脚本.md)
-* [blender抠绿幕(keying)](/Software-Specific/Blender/blender抠绿幕%28keying%29.md)
-* [blender旋转、缩放HDRI背景](/Software-Specific/Blender/blender旋转%E3%80%81缩放HDRI背景.md)
-* [blender渲染绿幕视频](/Software-Specific/Blender/blender渲染绿幕视频.md)
-* [blender中各种Matrix之间的关系](/Software-Specific/Blender/blender中各种Matrix之间的关系.md)
-* [CUDA cuInit Unknown error](/Software-Specific/Blender/CUDA%20cuInit%20Unknown%20error.md)
-* [Ubuntu安装blender](/Software-Specific/Blender/Ubuntu安装blender.md)
-* [通过脚本安装和启用插件(add-on)](/Software-Specific/Blender/通过脚本安装和启用插件%28add-on%29.md)
-* [无GUI启动blender](/Software-Specific/Blender/无GUI启动blender.md)
+* [blender as python module](/Applications/Blender/blender%20as%20python%20module.md)
+* [blender&mathutils中的欧拉角](/Applications/Blender/blender%26mathutils中的欧拉角.md)
+* [blender安装python packages](/Applications/Blender/blender安装python%20packages.md)
+* [blender常用操作](/Applications/Blender/blender常用操作.md)
+* [blender常用脚本](/Applications/Blender/blender常用脚本.md)
+* [blender抠绿幕(keying)](/Applications/Blender/blender抠绿幕%28keying%29.md)
+* [blender旋转、缩放HDRI背景](/Applications/Blender/blender旋转%E3%80%81缩放HDRI背景.md)
+* [blender渲染绿幕视频](/Applications/Blender/blender渲染绿幕视频.md)
+* [blender中各种Matrix之间的关系](/Applications/Blender/blender中各种Matrix之间的关系.md)
+* [CUDA cuInit Unknown error](/Applications/Blender/CUDA%20cuInit%20Unknown%20error.md)
+* [Ubuntu安装blender](/Applications/Blender/Ubuntu安装blender.md)
+* [通过脚本安装和启用插件(add-on)](/Applications/Blender/通过脚本安装和启用插件%28add-on%29.md)
+* [无GUI启动blender](/Applications/Blender/无GUI启动blender.md)
 
 ### Windows
 
-* [powershell 开启补全功能](/Software-Specific/Windows/powershell%20开启补全功能.md)
-* [powershell 启动加速](/Software-Specific/Windows/powershell%20启动加速.md)
-* [windows查找端口占用](/Software-Specific/Windows/windows查找端口占用.md)
-* [windows建立软链接](/Software-Specific/Windows/windows建立软链接.md)
-* [winget 国内源](/Software-Specific/Windows/winget%20国内源.md)
-* [创建自启动的Windows Service程序](/Software-Specific/Windows/创建自启动的Windows%20Service程序.md)
-* [右键菜单添加“通过xxx打开”](/Software-Specific/Windows/右键菜单添加%E2%80%9C通过xxx打开%E2%80%9D.md)
-* [右键用windows terminal打开当前目录](/Software-Specific/Windows/右键用windows%20terminal打开当前目录.md)
+* [powershell 开启补全功能](/Applications/Windows/powershell%20开启补全功能.md)
+* [powershell 启动加速](/Applications/Windows/powershell%20启动加速.md)
+* [windows查找端口占用](/Applications/Windows/windows查找端口占用.md)
+* [windows建立软链接](/Applications/Windows/windows建立软链接.md)
+* [winget 国内源](/Applications/Windows/winget%20国内源.md)
+* [创建自启动的Windows Service程序](/Applications/Windows/创建自启动的Windows%20Service程序.md)
+* [右键菜单添加“通过xxx打开”](/Applications/Windows/右键菜单添加%E2%80%9C通过xxx打开%E2%80%9D.md)
+* [右键用windows terminal打开当前目录](/Applications/Windows/右键用windows%20terminal打开当前目录.md)
 
 ### MacOS
 
-* [Homebrew的安装、换源和卸载](/Software-Specific/MacOS/Homebrew的安装%E3%80%81换源和卸载.md)
-* [MacOS 配置定时任务](/Software-Specific/MacOS/MacOS%20配置定时任务.md)
+* [Homebrew的安装、换源和卸载](/Applications/MacOS/Homebrew的安装%E3%80%81换源和卸载.md)
+* [MacOS 配置定时任务](/Applications/MacOS/MacOS%20配置定时任务.md)
 
 ### Maya
 
-* [maya安装numpy&scipy](/Software-Specific/Maya/maya安装numpy%26scipy.md)
-* [maya插件安装方法](/Software-Specific/Maya/maya插件安装方法.md)
+* [maya安装numpy&scipy](/Applications/Maya/maya安装numpy%26scipy.md)
+* [maya插件安装方法](/Applications/Maya/maya插件安装方法.md)
 
 ### FBX
 
-* [安装FBX Python SDK](/Software-Specific/FBX/安装FBX%20Python%20SDK.md)
+* [安装FBX Python SDK](/Applications/FBX/安装FBX%20Python%20SDK.md)
 
 ### Obsidian
 
-* [Obsidian 同步 - 配置 LiveSync 与自托管 CouchDB 服务器](/Software-Specific/Obsidian/Obsidian%20同步%20-%20配置%20LiveSync%20与自托管%20CouchDB%20服务器.md)
+* [Obsidian 同步 - 配置 LiveSync 与自托管 CouchDB 服务器](/Applications/Obsidian/Obsidian%20同步%20-%20配置%20LiveSync%20与自托管%20CouchDB%20服务器.md)
 
 ### zotero
 
-* [zotero修改note templates](/Software-Specific/zotero/zotero修改note%20templates.md)
+* [zotero修改note templates](/Applications/zotero/zotero修改note%20templates.md)
 
 ## Domain-Knowledge
 

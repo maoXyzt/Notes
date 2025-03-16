@@ -710,62 +710,62 @@
     "collapsed": false
   },
   {
-    "text": "Software-Specific",
+    "text": "Applications",
     "items": [
       {
         "text": "Blender",
         "items": [
           {
             "text": "blender as python module",
-            "link": "/Software-Specific/Blender/blender as python module.md"
+            "link": "/Applications/Blender/blender as python module.md"
           },
           {
             "text": "blender&mathutils中的欧拉角",
-            "link": "/Software-Specific/Blender/blender&mathutils中的欧拉角.md"
+            "link": "/Applications/Blender/blender&mathutils中的欧拉角.md"
           },
           {
             "text": "blender安装python packages",
-            "link": "/Software-Specific/Blender/blender安装python packages.md"
+            "link": "/Applications/Blender/blender安装python packages.md"
           },
           {
             "text": "blender常用操作",
-            "link": "/Software-Specific/Blender/blender常用操作.md"
+            "link": "/Applications/Blender/blender常用操作.md"
           },
           {
             "text": "blender常用脚本",
-            "link": "/Software-Specific/Blender/blender常用脚本.md"
+            "link": "/Applications/Blender/blender常用脚本.md"
           },
           {
             "text": "blender抠绿幕(keying)",
-            "link": "/Software-Specific/Blender/blender抠绿幕(keying).md"
+            "link": "/Applications/Blender/blender抠绿幕(keying).md"
           },
           {
             "text": "blender旋转、缩放HDRI背景",
-            "link": "/Software-Specific/Blender/blender旋转、缩放HDRI背景.md"
+            "link": "/Applications/Blender/blender旋转、缩放HDRI背景.md"
           },
           {
             "text": "blender渲染绿幕视频",
-            "link": "/Software-Specific/Blender/blender渲染绿幕视频.md"
+            "link": "/Applications/Blender/blender渲染绿幕视频.md"
           },
           {
             "text": "blender中各种Matrix之间的关系",
-            "link": "/Software-Specific/Blender/blender中各种Matrix之间的关系.md"
+            "link": "/Applications/Blender/blender中各种Matrix之间的关系.md"
           },
           {
             "text": "CUDA cuInit Unknown error",
-            "link": "/Software-Specific/Blender/CUDA cuInit Unknown error.md"
+            "link": "/Applications/Blender/CUDA cuInit Unknown error.md"
           },
           {
             "text": "Ubuntu安装blender",
-            "link": "/Software-Specific/Blender/Ubuntu安装blender.md"
+            "link": "/Applications/Blender/Ubuntu安装blender.md"
           },
           {
             "text": "通过脚本安装和启用插件(add-on)",
-            "link": "/Software-Specific/Blender/通过脚本安装和启用插件(add-on).md"
+            "link": "/Applications/Blender/通过脚本安装和启用插件(add-on).md"
           },
           {
             "text": "无GUI启动blender",
-            "link": "/Software-Specific/Blender/无GUI启动blender.md"
+            "link": "/Applications/Blender/无GUI启动blender.md"
           }
         ],
         "collapsed": false
@@ -775,35 +775,35 @@
         "items": [
           {
             "text": "powershell 开启补全功能",
-            "link": "/Software-Specific/Windows/powershell 开启补全功能.md"
+            "link": "/Applications/Windows/powershell 开启补全功能.md"
           },
           {
             "text": "powershell 启动加速",
-            "link": "/Software-Specific/Windows/powershell 启动加速.md"
+            "link": "/Applications/Windows/powershell 启动加速.md"
           },
           {
             "text": "windows查找端口占用",
-            "link": "/Software-Specific/Windows/windows查找端口占用.md"
+            "link": "/Applications/Windows/windows查找端口占用.md"
           },
           {
             "text": "windows建立软链接",
-            "link": "/Software-Specific/Windows/windows建立软链接.md"
+            "link": "/Applications/Windows/windows建立软链接.md"
           },
           {
             "text": "winget 国内源",
-            "link": "/Software-Specific/Windows/winget 国内源.md"
+            "link": "/Applications/Windows/winget 国内源.md"
           },
           {
             "text": "创建自启动的Windows Service程序",
-            "link": "/Software-Specific/Windows/创建自启动的Windows Service程序.md"
+            "link": "/Applications/Windows/创建自启动的Windows Service程序.md"
           },
           {
             "text": "右键菜单添加“通过xxx打开”",
-            "link": "/Software-Specific/Windows/右键菜单添加“通过xxx打开”.md"
+            "link": "/Applications/Windows/右键菜单添加“通过xxx打开”.md"
           },
           {
             "text": "右键用windows terminal打开当前目录",
-            "link": "/Software-Specific/Windows/右键用windows terminal打开当前目录.md"
+            "link": "/Applications/Windows/右键用windows terminal打开当前目录.md"
           }
         ],
         "collapsed": false
@@ -813,11 +813,11 @@
         "items": [
           {
             "text": "Homebrew的安装、换源和卸载",
-            "link": "/Software-Specific/MacOS/Homebrew的安装、换源和卸载.md"
+            "link": "/Applications/MacOS/Homebrew的安装、换源和卸载.md"
           },
           {
             "text": "MacOS 配置定时任务",
-            "link": "/Software-Specific/MacOS/MacOS 配置定时任务.md"
+            "link": "/Applications/MacOS/MacOS 配置定时任务.md"
           }
         ],
         "collapsed": false
@@ -827,11 +827,11 @@
         "items": [
           {
             "text": "maya安装numpy&scipy",
-            "link": "/Software-Specific/Maya/maya安装numpy&scipy.md"
+            "link": "/Applications/Maya/maya安装numpy&scipy.md"
           },
           {
             "text": "maya插件安装方法",
-            "link": "/Software-Specific/Maya/maya插件安装方法.md"
+            "link": "/Applications/Maya/maya插件安装方法.md"
           }
         ],
         "collapsed": false
@@ -841,7 +841,7 @@
         "items": [
           {
             "text": "安装FBX Python SDK",
-            "link": "/Software-Specific/FBX/安装FBX Python SDK.md"
+            "link": "/Applications/FBX/安装FBX Python SDK.md"
           }
         ],
         "collapsed": false
@@ -851,7 +851,7 @@
         "items": [
           {
             "text": "Obsidian 同步 - 配置 LiveSync 与自托管 CouchDB 服务器",
-            "link": "/Software-Specific/Obsidian/Obsidian 同步 - 配置 LiveSync 与自托管 CouchDB 服务器.md"
+            "link": "/Applications/Obsidian/Obsidian 同步 - 配置 LiveSync 与自托管 CouchDB 服务器.md"
           }
         ],
         "collapsed": false
@@ -861,7 +861,7 @@
         "items": [
           {
             "text": "zotero修改note templates",
-            "link": "/Software-Specific/zotero/zotero修改note templates.md"
+            "link": "/Applications/zotero/zotero修改note templates.md"
           }
         ],
         "collapsed": false
