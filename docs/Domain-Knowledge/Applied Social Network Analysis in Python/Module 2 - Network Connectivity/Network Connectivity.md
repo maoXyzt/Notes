@@ -6,9 +6,7 @@ Measuring the degree to which nodes in a network tend to "cluster" or form trian
 
 ### Triadic Closure
 
-The tendency for people who share connections in a social network to become connected. 
-
-
+The tendency for people who share connections in a social network to become connected.
 
 ### Local Clustering Coefficient
 
@@ -87,7 +85,7 @@ nx.shortest_path(G, 'A', 'H')
 nx.shortest_path_length(G, 'A', 'H')
 ```
 
-### Finding the distance from node A to every other node.
+### Finding the distance from node A to every other node
 
 Breadth-First Search
 

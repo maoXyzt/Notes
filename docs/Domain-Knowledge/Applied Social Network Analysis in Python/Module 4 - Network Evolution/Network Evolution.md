@@ -41,8 +41,6 @@ nx.barabasi_albert_graph(n, m)
 # returns a network with n nodes. Each new node attches to m existing nodes according to the Preferential Attachment Model.
 ```
 
-
-
 # 02. Small World Networks
 
 Real social networks appear to have **small shortest paths** between nodes and **high clustering coefficient**.
@@ -88,8 +86,6 @@ nx.connected_watts_strogatz_graph(n, k, p, t)
 nx.newman_watts_strogatz_graph(n, k, p)
 # runs a model simalar to the small world model, but rather than rewiring edges, new edges are added with probability p.
 ```
-
-
 
 # 03. Link Prediction
 
