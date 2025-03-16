@@ -1,6 +1,6 @@
 # git prune, git remote prune, git fetch --prune 三者异同
 
-> https://blog.csdn.net/sgs595595/article/details/72480346
+> <https://blog.csdn.net/sgs595595/article/details/72480346>
 
 ## 远程分支的3种状态
 
@@ -8,10 +8,11 @@
 - 本地版本库（.git）中的远程快照
 - 和远程分支建立联系的本地分支
 
-## git prune 
-https://git-scm.com/docs/git-prune
+## git prune
 
-Prune all unreachable objects from the object database 
+<https://git-scm.com/docs/git-prune>
+
+Prune all unreachable objects from the object database
 unreachable objects 指的是.git\objects中没有被使用的hash文件
 
 ```bash
@@ -26,8 +27,9 @@ song@test MINGW64 /d/Git/Temp (master)
 $ git prune -n
 ```
 
-## git remote prune origin 
-https://git-scm.com/docs/git-remote
+## git remote prune origin
+
+<https://git-scm.com/docs/git-remote>
 
 Deletes all stale remote-tracking branches under .
 会清理掉状态2中的远程库已被删除的远程分支，本地库仍存在的 stale remote-tracking branches
@@ -74,8 +76,9 @@ $ git branch -a -v
   remotes/origin/master 3902953  add readme.md
 ```
 
-## git fetch –(2 -)prune 
-https://git-scm.com/docs/git-fetch
+## git fetch –(2 -)prune
+
+<https://git-scm.com/docs/git-fetch>
 
 Before fetching, remove any remote-tracking references that no longer exist on the remote
 同git remote prune

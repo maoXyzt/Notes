@@ -8,9 +8,9 @@ firewall-cmd --zone=public --add-port=8080/tcp --permanent
 
 参数含义：
 
-- zone #作用域
-- add-port=80/tcp  #添加端口，格式为：端口/通讯协议
-- permanent  #永久生效，没有此参数重启后失效
+- `--zone`: 作用域
+- `add-port`: 添加端口，格式为：<端口>/<通讯协议>
+- `permanent`: 永久生效，没有此参数则重启后失效
 
 ## 2. 重启防火墙
 
@@ -50,9 +50,9 @@ netstat -lntp
 检查端口被哪个进程占用
 
 ```bash
-# 方法1
+# 方法 1
 netstat -lnp|grep 8080
-# 方法2
+# 方法 2
 lsof -i :8080
 ```
 
@@ -62,9 +62,8 @@ lsof -i :8080
 firewall-cmd --zone= public--remove-port=80/tcp --permanent
 ```
 
-测试端口（DOS中）
+测试端口（DOS 中）
 
-```powershell
+```bash
 telnet xxx.xxx.xxx.xxx:pppp
 ```
-

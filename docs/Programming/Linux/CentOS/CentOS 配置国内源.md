@@ -6,7 +6,7 @@
 mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
 ```
 
-## 2、下载新的CentOS-Base.repo 到/etc/yum.repos.d/
+## 2、下载新的 CentOS-Base.repo 到/etc/yum.repos.d/
 
 网易源
 

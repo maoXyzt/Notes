@@ -63,6 +63,8 @@
 
 ### Code-Quality
 
+* Design Pattern
+  * [状态模式](/Programming/Code-Quality/Design%20Pattern/状态模式.md)
 * 《代码整洁之道》
   * [第2章 有意义的命名](/Programming/Code-Quality/%E3%80%8A代码整洁之道%E3%80%8B/第2章%20有意义的命名.md)
 
@@ -144,7 +146,7 @@
 * [git prune, git remote prune, git fetch](/Programming/Git/git%20prune%2C%20git%20remote%20prune%2C%20git%20fetch.md)
 * [git subtree](/Programming/Git/git%20subtree.md)
 * [Git 多个账号用不同私钥登录](/Programming/Git/Git%20多个账号用不同私钥登录.md)
-* [git 配置文件大小写敏感](/Programming/Git/git%20配置文件大小写敏感.md)
+* [git 配置对文件名大小写敏感](/Programming/Git/git%20配置对文件名大小写敏感.md)
 * [global gitignore](/Programming/Git/global%20gitignore.md)
 
 ### Go
@@ -155,9 +157,7 @@
 
 ### Kubernetes
 
-* [k8s runtime endpoints](/Programming/Kubernetes/k8s%20runtime%20endpoints.md)
 * [k8s集群搭建](/Programming/Kubernetes/k8s集群搭建.md)
-* [kubectl常用命令](/Programming/Kubernetes/kubectl常用命令.md)
 
 ### Linux
 
@@ -166,7 +166,7 @@
   * [CentOS 7 lvm分区扩容](/Programming/Linux/CentOS/CentOS%207%20lvm分区扩容.md)
   * [CentOS 7 安装最新版本的Git](/Programming/Linux/CentOS/CentOS%207%20安装最新版本的Git.md)
   * [CentOS 7 常用工具包安装](/Programming/Linux/CentOS/CentOS%207%20常用工具包安装.md)
-  * [CentOS 7 开启端口](/Programming/Linux/CentOS/CentOS%207%20开启端口.md)
+  * [CentOS 7 开放端口](/Programming/Linux/CentOS/CentOS%207%20开放端口.md)
   * [CentOS 7 升级Git版本](/Programming/Linux/CentOS/CentOS%207%20升级Git版本.md)
   * [CentOS 配置国内源](/Programming/Linux/CentOS/CentOS%20配置国内源.md)
 * [convmv命令解决GBK中文文件名乱码](/Programming/Linux/convmv命令解决GBK中文文件名乱码.md)
@@ -182,6 +182,7 @@
 * [linux新建用户](/Programming/Linux/linux新建用户.md)
 * [Linux修改默认shell](/Programming/Linux/Linux修改默认shell.md)
 * [Mackup 同步linux配置](/Programming/Linux/Mackup%20同步linux配置.md)
+* [Neovim安装与配置](/Programming/Linux/Neovim安装与配置.md)
 * nginx
   * [nginx 代理json文件作为API response](/Programming/Linux/nginx/nginx%20代理json文件作为API%20response.md)
   * [nginx 配置 examples](/Programming/Linux/nginx/nginx%20配置%20examples.md)
@@ -198,7 +199,6 @@
 * [virtualbox硬盘扩容](/Programming/Linux/virtualbox硬盘扩容.md)
 * [zsh常用插件](/Programming/Linux/zsh常用插件.md)
 * [安装chromedriver](/Programming/Linux/安装chromedriver.md)
-* [安装Neovim](/Programming/Linux/安装Neovim.md)
 * [下载Google Drive共享的文件](/Programming/Linux/下载Google%20Drive共享的文件.md)
 * [指定gcc版本](/Programming/Linux/指定gcc版本.md)
 * [自签名SSL证书](/Programming/Linux/自签名SSL证书.md)

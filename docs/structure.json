@@ -208,6 +208,16 @@
         "text": "Code-Quality",
         "items": [
           {
+            "text": "Design Pattern",
+            "items": [
+              {
+                "text": "状态模式",
+                "link": "/Programming/Code-Quality/Design Pattern/状态模式.md"
+              }
+            ],
+            "collapsed": true
+          },
+          {
             "text": "《代码整洁之道》",
             "items": [
               {
@@ -518,8 +528,8 @@
             "link": "/Programming/Git/Git 多个账号用不同私钥登录.md"
           },
           {
-            "text": "git 配置文件大小写敏感",
-            "link": "/Programming/Git/git 配置文件大小写敏感.md"
+            "text": "git 配置对文件名大小写敏感",
+            "link": "/Programming/Git/git 配置对文件名大小写敏感.md"
           },
           {
             "text": "global gitignore",
@@ -550,16 +560,8 @@
         "text": "Kubernetes",
         "items": [
           {
-            "text": "k8s runtime endpoints",
-            "link": "/Programming/Kubernetes/k8s runtime endpoints.md"
-          },
-          {
             "text": "k8s集群搭建",
             "link": "/Programming/Kubernetes/k8s集群搭建.md"
-          },
-          {
-            "text": "kubectl常用命令",
-            "link": "/Programming/Kubernetes/kubectl常用命令.md"
           }
         ],
         "collapsed": false
@@ -587,8 +589,8 @@
                 "link": "/Programming/Linux/CentOS/CentOS 7 常用工具包安装.md"
               },
               {
-                "text": "CentOS 7 开启端口",
-                "link": "/Programming/Linux/CentOS/CentOS 7 开启端口.md"
+                "text": "CentOS 7 开放端口",
+                "link": "/Programming/Linux/CentOS/CentOS 7 开放端口.md"
               },
               {
                 "text": "CentOS 7 升级Git版本",
@@ -652,6 +654,10 @@
           {
             "text": "Mackup 同步linux配置",
             "link": "/Programming/Linux/Mackup 同步linux配置.md"
+          },
+          {
+            "text": "Neovim安装与配置",
+            "link": "/Programming/Linux/Neovim安装与配置.md"
           },
           {
             "text": "nginx",
@@ -720,10 +726,6 @@
           {
             "text": "安装chromedriver",
             "link": "/Programming/Linux/安装chromedriver.md"
-          },
-          {
-            "text": "安装Neovim",
-            "link": "/Programming/Linux/安装Neovim.md"
           },
           {
             "text": "下载Google Drive共享的文件",

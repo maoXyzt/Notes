@@ -1,6 +1,6 @@
 # k8s 集群搭建
 
-通过 kubeadm 搭建集群
+通过 `kubeadm` 搭建集群
 
 > [Creating a cluster with kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/)
 
@@ -8,13 +8,13 @@
 
 - 支持 deb/rpm 的 Linux 系统（如，Ubuntu 和 CentOS），本文以 Ubuntu 为例
 - 2GiB 内存
-- 2个CPU核
+- 2 个 CPU 核
 - 机器之间网络相互连通
 
 目标：
 
-- 搭建一个单control-plane的k8s集群
-- 在集群上搭建一个Pod network，使Pods之间可以相互通信
+- 搭建一个单 control-plane 的 k8s 集群
+- 在集群上搭建一个 Pod network，使 Pods 之间可以相互通信
 
 ## 1 前置要求
 
@@ -66,15 +66,15 @@ sudo systemctl disable firewalld
 `hostnamectl set-hostname <hostname>`
 
 ```bash
-# 在机器0上
+# 在机器 0 上
 sudo hostnamectl set-hostname k8s-master
-# 在机器1上
+# 在机器 1 上
 sudo hostnamectl set-hostname k8s-node1
-# 在机器2上
+# 在机器 2 上
 sudo hostnamectl set-hostname k8s-node2
 ```
 
-在master节点上添加hosts
+在 master 节点上添加 hosts
 
 ```bash
 sudo cat >> /etc/hosts << EOF
@@ -123,7 +123,7 @@ sudo sysctl --system
 >
 > Optional:
 >
-> - [给非root用户运行docker命令的权限](https://github.com/maoXyzt/Notes/blob/master/docs/Programming/Docker/%E7%BB%99%E9%9D%9Eroot%E7%94%A8%E6%88%B7%E8%BF%90%E8%A1%8Cdocker%E7%9A%84%E6%9D%83%E9%99%90.md)
+> - [给非 root 用户运行 docker 命令的权限](https://github.com/maoXyzt/Notes/blob/master/docs/Programming/Docker/%E7%BB%99%E9%9D%9Eroot%E7%94%A8%E6%88%B7%E8%BF%90%E8%A1%8Cdocker%E7%9A%84%E6%9D%83%E9%99%90.md)
 
 ### 2.2 Container Runtime Interface (CRI)
 
@@ -224,7 +224,7 @@ sudo apt-get update
 sudo apt-get install -y apt-transport-https ca-certificates curl
 
 # Download the Google Cloud public signing key:
-sudo mkdir -p /etc/apt/keyrings     # Ubuntu 22.04之前版本无 keyrings 目录，需要创建
+sudo mkdir -p /etc/apt/keyrings     # Ubuntu 22.04 之前版本无 keyrings 目录，需要创建
 sudo curl -fsSLo /etc/apt/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
 
 # Add the Kubernetes apt repository:
@@ -244,7 +244,7 @@ sudo apt-mark hold kubelet kubeadm kubectl
 
 #### 4.1.1 配置 container runtime 的 cgroup driver
 
-配置使用systemd
+配置使用 systemd
 
 ```bash
 sudo cat > /etc/docker/daemon.json << EOF
@@ -268,7 +268,7 @@ sudo systemctl status docker
 
 > [Configuring a cgroup driver | Kubernetes](https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/configure-cgroup-driver/#configuring-the-kubelet-cgroup-driver)
 
-编辑`KubeletConfiguration`的`cgroupDriver`选项，将其值设置为`systemd`。
+编辑 `KubeletConfiguration` 的 `cgroupDriver` 选项，将其值设置为 `systemd`。
 
 ```yaml
 apiVersion: kubelet.config.k8s.io/v1beta1
@@ -294,14 +294,14 @@ sudo kubeadm config images pull --config kubeadm-config.yaml
 
 ### 4.3 初始化 control-plane 节点
 
-control-plane 节点是 Kubernetes 集群中的主节点，负责管理集群。在它上面会运行 control plane 组件，如 [etcd](https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/) (集群数据库) 和 [API Server](https://kubernetes.io/docs/concepts/overview/components/#kube-apiserver) (`kube-apiserver`, `kubectl`命令行工具的后端)。
+control-plane 节点是 Kubernetes 集群中的主节点，负责管理集群。在它上面会运行 control plane 组件，如 [etcd](https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/) (集群数据库) 和 [API Server](https://kubernetes.io/docs/concepts/overview/components/#kube-apiserver) (`kube-apiserver`, `kubectl` 命令行工具的后端)。
 
 可以通过执行 `kubeadm init <args>` 命令初始化 control-plane 节点。
 
 - 有关 `kubeadm init` 参数的更多信息，请参见 [kubeadm reference guide](https://kubernetes.io/docs/reference/setup-tools/kubeadm/)。
-  1. (Recommended) 如果希望将 control-plane 升级为高可用，应指定 `--control-plane-endpoint` 为所有 control-plane 节点设置共享 endpoint（可以是负载均衡器的DNS名称或IP地址）。
+  1. (Recommended) 如果希望将 control-plane 升级为高可用，应指定 `--control-plane-endpoint` 为所有 control-plane 节点设置共享 endpoint（可以是负载均衡器的 DNS 名称或 IP 地址）。
   2. 选择一个 Pod 网络插件，并验证是否需要为 kubeadm init 传递参数。(`--pod-network-cidr`)
-  3. (Optional) kubeadm会自动检查使用的 container runtime。通过 `--cri-socket` 参数可配置 （如，cri-dockerd 的 socket 为 `unix:///var/run/cri-dockerd.sock`）。
+  3. (Optional) kubeadm 会自动检查使用的 container runtime。通过 `--cri-socket` 参数可配置 （如，cri-dockerd 的 socket 为 `unix:///var/run/cri-dockerd.sock`）。
   4. (Optional) kubeadm 使用与默认网关关联的网络接口来设置此 control-plane 节点 API server 的广播地址。 要使用其他网络接口，请设置 `--apiserver-advertise-address=<ip-address>` 参数。
 - 要使用配置文件配置 `kubeadm init` 命令， 请参见 [Using kubeadm init with a configuration file](https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-init/#config-file)。支持以下配置类型
 
@@ -327,7 +327,7 @@ kind: JoinConfiguration
   - `kubectl edit`
 - 要再次运行 `kubeadm init`，你必须首先卸载集群 [tear down the cluster](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/#tear-down)。
   - 移除节点
-  - 清理control plane
+  - 清理 control plane
 
 执行：
 
@@ -373,7 +373,7 @@ kubeadm join <control-plane-host>:<control-plane-port> --token <token> --discove
 >
 > 执行子命令 `init`、`join` 和 `upgrade` 将导致 kubeadm 将 `KubeletConfiguration` 作为一个文件写入 `/var/lib/kubelet/config.yaml` 并将其传递给本地节点 kubelet。
 
-根据`kubeadm init`输出的提示信息，在master节点上执行如下命令（可使非root用户可以运行 kubectl）：
+根据 `kubeadm init` 输出的提示信息，在 master 节点上执行如下命令（可使非 root 用户可以运行 kubectl）：
 
 ```bash
 mkdir -p $HOME/.kube
@@ -385,20 +385,20 @@ mkdir -p $HOME/.kube
 
 你必须部署一个基于 Pod 网络插件的 容器网络接口 (CNI)，以便你的 Pod 可以相互通信。 在安装网络之前，集群 DNS (CoreDNS) 将不会启动。
 
-每个集群只能安装一个 Pod 网络(在master节点安装)。
+每个集群只能安装一个 Pod 网络(在 master 节点安装)。
 
 这里使用 calico 作为网络插件，安装方法如下：
 
 > [Quickstart for Calico on Kubernetes | Calico Documentation](https://docs.tigera.io/calico/latest/getting-started/kubernetes/quickstart#how-to)
 
 ```bash
-# 在k8s中安装calico
+# 在 k8s 中安装 calico
 kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.25.1/manifests/tigera-operator.yaml
 kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.25.1/manifests/custom-resources.yaml
 
-# 确认 calico 是否安装成功（直到所有容器状态都变为Running）
+# 确认 calico 是否安装成功（直到所有容器状态都变为 Running）
 watch kubectl get pods -n calico-system
-# 或(-w可以实时变化):
+# 或(-w 可以实时变化):
 # kubectl get pods --all-namespaces -w
 ```
 
@@ -428,19 +428,19 @@ kubectl get nodes -o wide
 
 ## 6. 加入节点
 
-1. 切换到root用户 `sudo su -`
-2. 安装container runtime 和 CRI
+1. 切换到 root 用户 `sudo su -`
+2. 安装 container runtime 和 CRI
 3. 安装 kubeadm、kubelet 和 kubectl
-4. 执行 `kubeadm join` 命令（已由`kubeadm init`给出）
+4. 执行 `kubeadm join` 命令（已由 `kubeadm init` 给出）
 
 ```bash
 kubeadm join <control-plane-host>:<control-plane-port> --token <token> --discovery-token-ca-cert-hash sha256:<hash>
 ```
 
-由于节点安装了 cri-dockerd，所以`kubeadm join`还需要额外指定 --cri-socket=unix:///var/run/cri-dockerd.sock
+由于节点安装了 cri-dockerd，所以 `kubeadm join` 还需要额外指定 --cri-socket = unix:///var/run/cri-dockerd.sock
 
-> - \<token\>: 用于节点之间的相互身份验证，24h后自动失效。可以使用 `kubeadm token` 命令列出，创建和删除。请参阅 [kubeadm reference guide](https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-token/)
-> - \<hash\>: 通过以下命令可得到`--discovery-token-ca-cert-hash`的值：
+> - \< token \>: 用于节点之间的相互身份验证，24h 后自动失效。可以使用 `kubeadm token` 命令列出，创建和删除。请参阅 [kubeadm reference guide](https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-token/)
+> - \< hash \>: 通过以下命令可得到 `--discovery-token-ca-cert-hash` 的值：
 >
 > ```bash
 > openssl x509 -pubkey -in /etc/kubernetes/pki/ca.crt | openssl rsa -pubin -outform der 2>/dev/null | \
@@ -449,7 +449,7 @@ kubeadm join <control-plane-host>:<control-plane-port> --token <token> --discove
 
 ## 7. 最终检查
 
-在master节点上执行如下命令：
+在 master 节点上执行如下命令：
 
 - 查看节点状态
 
@@ -472,7 +472,7 @@ kubectl get cs
 # NAME                 STATUS    MESSAGE                         ERROR
 # controller-manager   Healthy   ok
 # scheduler            Healthy   ok
-# etcd-0               Healthy   {"health":"true","reason":""}
+# etcd-0               Healthy   {"health": "true", "reason": ""}
 ```
 
 ```bash
@@ -480,8 +480,9 @@ kubectl cluster-info
 
 # 输出如下类似内容：
 # Kubernetes control plane is running at https://192.168.225.129:6443
-# CoreDNS is running at https://192.168.225.129:6443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+# CoreDNS is running at https://192.168.225.129:6443/api/v1/namespaces/kube-system/services/kube-dns: dns/proxy
 #
+
 # To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
 ```
 

@@ -1,3 +1,7 @@
+---
+NoteStatus: draft
+---
+
 # k8s runtime endpoints
 
 | Runtime | Endpoint |
