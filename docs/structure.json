@@ -1,183 +1,179 @@
 [
   {
-    "text": "Programming",
+    "text": "Linux",
     "items": [
       {
-        "text": "Linux",
+        "text": "CentOS",
         "items": [
           {
-            "text": "CentOS",
-            "items": [
-              {
-                "text": "CentOS 7 lvm分区扩容",
-                "link": "/Programming/Linux/CentOS/CentOS 7 lvm分区扩容.md"
-              },
-              {
-                "text": "CentOS 7 安装最新版本的Git",
-                "link": "/Programming/Linux/CentOS/CentOS 7 安装最新版本的Git.md"
-              },
-              {
-                "text": "CentOS 7 常用工具包安装",
-                "link": "/Programming/Linux/CentOS/CentOS 7 常用工具包安装.md"
-              },
-              {
-                "text": "CentOS 7 开放端口",
-                "link": "/Programming/Linux/CentOS/CentOS 7 开放端口.md"
-              },
-              {
-                "text": "CentOS 7 升级Git版本",
-                "link": "/Programming/Linux/CentOS/CentOS 7 升级Git版本.md"
-              },
-              {
-                "text": "CentOS 配置国内源",
-                "link": "/Programming/Linux/CentOS/CentOS 配置国内源.md"
-              }
-            ],
-            "collapsed": true
+            "text": "CentOS 7 lvm分区扩容",
+            "link": "/Linux/CentOS/CentOS 7 lvm分区扩容.md"
           },
           {
-            "text": "nginx",
-            "items": [
-              {
-                "text": "nginx 代理json文件作为API response",
-                "link": "/Programming/Linux/nginx/nginx 代理json文件作为API response.md"
-              },
-              {
-                "text": "nginx 配置 examples",
-                "link": "/Programming/Linux/nginx/nginx 配置 examples.md"
-              },
-              {
-                "text": "nginx 配置常见问题",
-                "link": "/Programming/Linux/nginx/nginx 配置常见问题.md"
-              },
-              {
-                "text": "nginx 隐藏响应头的版本信息(header的server字段)",
-                "link": "/Programming/Linux/nginx/nginx 隐藏响应头的版本信息(header的server字段).md"
-              },
-              {
-                "text": "nginx 用于部署静态页面",
-                "link": "/Programming/Linux/nginx/nginx 用于部署静态页面.md"
-              }
-            ],
-            "collapsed": true
+            "text": "CentOS 7 安装升级Git版本",
+            "link": "/Linux/CentOS/CentOS 7 安装升级Git版本.md"
           },
           {
-            "text": "SSH",
-            "items": [
-              {
-                "text": "sshfs命令简易挂载远程目录",
-                "link": "/Programming/Linux/SSH/sshfs命令简易挂载远程目录.md"
-              },
-              {
-                "text": "ssh开启隧道",
-                "link": "/Programming/Linux/SSH/ssh开启隧道.md"
-              },
-              {
-                "text": "SSH配置心跳信号防止断开连接",
-                "link": "/Programming/Linux/SSH/SSH配置心跳信号防止断开连接.md"
-              },
-              {
-                "text": "创建SSH密钥对并使用密钥登录",
-                "link": "/Programming/Linux/SSH/创建SSH密钥对并使用密钥登录.md"
-              }
-            ],
-            "collapsed": true
+            "text": "CentOS 7 常用工具包安装",
+            "link": "/Linux/CentOS/CentOS 7 常用工具包安装.md"
           },
           {
-            "text": "awscli使用指南",
-            "link": "/Programming/Linux/awscli使用指南.md"
+            "text": "CentOS 7 开放端口",
+            "link": "/Linux/CentOS/CentOS 7 开放端口.md"
           },
           {
-            "text": "convmv命令解决GBK中文文件名乱码",
-            "link": "/Programming/Linux/convmv命令解决GBK中文文件名乱码.md"
-          },
-          {
-            "text": "Linux Shell输出重定向并后台执行",
-            "link": "/Programming/Linux/Linux Shell输出重定向并后台执行.md"
-          },
-          {
-            "text": "Linux 实时内存监控",
-            "link": "/Programming/Linux/Linux 实时内存监控.md"
-          },
-          {
-            "text": "Linux传输超大文件",
-            "link": "/Programming/Linux/Linux传输超大文件.md"
-          },
-          {
-            "text": "Linux环境变量设置env, set, export",
-            "link": "/Programming/Linux/Linux环境变量设置env, set, export.md"
-          },
-          {
-            "text": "Linux开发环境setup",
-            "link": "/Programming/Linux/Linux开发环境setup.md"
-          },
-          {
-            "text": "Linux批量杀死进程",
-            "link": "/Programming/Linux/Linux批量杀死进程.md"
-          },
-          {
-            "text": "Linux搜索所有文件中的内容",
-            "link": "/Programming/Linux/Linux搜索所有文件中的内容.md"
-          },
-          {
-            "text": "Linux系统访问NAS的文件服务(samba)",
-            "link": "/Programming/Linux/Linux系统访问NAS的文件服务(samba).md"
-          },
-          {
-            "text": "Linux下多线程下载工具 - Axel",
-            "link": "/Programming/Linux/Linux下多线程下载工具 - Axel.md"
-          },
-          {
-            "text": "Linux新建用户",
-            "link": "/Programming/Linux/Linux新建用户.md"
-          },
-          {
-            "text": "Linux修改默认shell",
-            "link": "/Programming/Linux/Linux修改默认shell.md"
-          },
-          {
-            "text": "Mackup 同步linux配置",
-            "link": "/Programming/Linux/Mackup 同步linux配置.md"
-          },
-          {
-            "text": "Neovim安装与配置",
-            "link": "/Programming/Linux/Neovim安装与配置.md"
-          },
-          {
-            "text": "TCP&UDP端口连通性测试",
-            "link": "/Programming/Linux/TCP&UDP端口连通性测试.md"
-          },
-          {
-            "text": "vim插件管理 - vim-plug",
-            "link": "/Programming/Linux/vim插件管理 - vim-plug.md"
-          },
-          {
-            "text": "virtualbox硬盘扩容",
-            "link": "/Programming/Linux/virtualbox硬盘扩容.md"
-          },
-          {
-            "text": "zsh常用插件",
-            "link": "/Programming/Linux/zsh常用插件.md"
-          },
-          {
-            "text": "安装chromedriver",
-            "link": "/Programming/Linux/安装chromedriver.md"
-          },
-          {
-            "text": "下载Google Drive共享的文件",
-            "link": "/Programming/Linux/下载Google Drive共享的文件.md"
-          },
-          {
-            "text": "指定gcc版本",
-            "link": "/Programming/Linux/指定gcc版本.md"
-          },
-          {
-            "text": "自签名SSL证书",
-            "link": "/Programming/Linux/自签名SSL证书.md"
+            "text": "CentOS 配置国内源",
+            "link": "/Linux/CentOS/CentOS 配置国内源.md"
           }
         ],
         "collapsed": false
       },
+      {
+        "text": "nginx",
+        "items": [
+          {
+            "text": "nginx 代理json文件作为API response",
+            "link": "/Linux/nginx/nginx 代理json文件作为API response.md"
+          },
+          {
+            "text": "nginx 配置 examples",
+            "link": "/Linux/nginx/nginx 配置 examples.md"
+          },
+          {
+            "text": "nginx 配置常见问题",
+            "link": "/Linux/nginx/nginx 配置常见问题.md"
+          },
+          {
+            "text": "nginx 隐藏响应头的版本信息(header的server字段)",
+            "link": "/Linux/nginx/nginx 隐藏响应头的版本信息(header的server字段).md"
+          },
+          {
+            "text": "nginx 用于部署静态页面",
+            "link": "/Linux/nginx/nginx 用于部署静态页面.md"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "SSH",
+        "items": [
+          {
+            "text": "sshfs命令简易挂载远程目录",
+            "link": "/Linux/SSH/sshfs命令简易挂载远程目录.md"
+          },
+          {
+            "text": "ssh开启隧道",
+            "link": "/Linux/SSH/ssh开启隧道.md"
+          },
+          {
+            "text": "SSH配置心跳信号防止断开连接",
+            "link": "/Linux/SSH/SSH配置心跳信号防止断开连接.md"
+          },
+          {
+            "text": "创建SSH密钥对并使用密钥登录",
+            "link": "/Linux/SSH/创建SSH密钥对并使用密钥登录.md"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "awscli使用指南",
+        "link": "/Linux/awscli使用指南.md"
+      },
+      {
+        "text": "convmv命令解决GBK中文文件名乱码",
+        "link": "/Linux/convmv命令解决GBK中文文件名乱码.md"
+      },
+      {
+        "text": "Linux Shell输出重定向并后台执行",
+        "link": "/Linux/Linux Shell输出重定向并后台执行.md"
+      },
+      {
+        "text": "Linux 实时内存监控",
+        "link": "/Linux/Linux 实时内存监控.md"
+      },
+      {
+        "text": "Linux传输超大文件",
+        "link": "/Linux/Linux传输超大文件.md"
+      },
+      {
+        "text": "Linux环境变量设置env, set, export",
+        "link": "/Linux/Linux环境变量设置env, set, export.md"
+      },
+      {
+        "text": "Linux开发环境setup",
+        "link": "/Linux/Linux开发环境setup.md"
+      },
+      {
+        "text": "Linux批量杀死进程",
+        "link": "/Linux/Linux批量杀死进程.md"
+      },
+      {
+        "text": "Linux搜索所有文件中的内容",
+        "link": "/Linux/Linux搜索所有文件中的内容.md"
+      },
+      {
+        "text": "Linux系统访问NAS的文件服务(samba)",
+        "link": "/Linux/Linux系统访问NAS的文件服务(samba).md"
+      },
+      {
+        "text": "Linux下多线程下载工具 - Axel",
+        "link": "/Linux/Linux下多线程下载工具 - Axel.md"
+      },
+      {
+        "text": "Linux新建用户",
+        "link": "/Linux/Linux新建用户.md"
+      },
+      {
+        "text": "Linux修改默认shell",
+        "link": "/Linux/Linux修改默认shell.md"
+      },
+      {
+        "text": "Mackup 同步linux配置",
+        "link": "/Linux/Mackup 同步linux配置.md"
+      },
+      {
+        "text": "Neovim安装与配置",
+        "link": "/Linux/Neovim安装与配置.md"
+      },
+      {
+        "text": "TCP&UDP端口连通性测试",
+        "link": "/Linux/TCP&UDP端口连通性测试.md"
+      },
+      {
+        "text": "vim插件管理 - vim-plug",
+        "link": "/Linux/vim插件管理 - vim-plug.md"
+      },
+      {
+        "text": "virtualbox硬盘扩容",
+        "link": "/Linux/virtualbox硬盘扩容.md"
+      },
+      {
+        "text": "zsh常用插件",
+        "link": "/Linux/zsh常用插件.md"
+      },
+      {
+        "text": "安装chromedriver",
+        "link": "/Linux/安装chromedriver.md"
+      },
+      {
+        "text": "下载Google Drive共享的文件",
+        "link": "/Linux/下载Google Drive共享的文件.md"
+      },
+      {
+        "text": "指定gcc版本",
+        "link": "/Linux/指定gcc版本.md"
+      },
+      {
+        "text": "自签名SSL证书",
+        "link": "/Linux/自签名SSL证书.md"
+      }
+    ],
+    "collapsed": false
+  },
+  {
+    "text": "Programming",
+    "items": [
       {
         "text": "Python",
         "items": [

@@ -1,51 +1,78 @@
 <!-- TOC -->
 # Table of Contents
 
+## Linux
+
+### CentOS
+
+* [CentOS 7 lvm分区扩容](/Linux/CentOS/CentOS%207%20lvm分区扩容.md)
+* [CentOS 7 安装升级Git版本](/Linux/CentOS/CentOS%207%20安装升级Git版本.md)
+* [CentOS 7 常用工具包安装](/Linux/CentOS/CentOS%207%20常用工具包安装.md)
+* [CentOS 7 开放端口](/Linux/CentOS/CentOS%207%20开放端口.md)
+* [CentOS 配置国内源](/Linux/CentOS/CentOS%20配置国内源.md)
+
+### nginx
+
+* [nginx 代理json文件作为API response](/Linux/nginx/nginx%20代理json文件作为API%20response.md)
+* [nginx 配置 examples](/Linux/nginx/nginx%20配置%20examples.md)
+* [nginx 配置常见问题](/Linux/nginx/nginx%20配置常见问题.md)
+* [nginx 隐藏响应头的版本信息(header的server字段)](/Linux/nginx/nginx%20隐藏响应头的版本信息%28header的server字段%29.md)
+* [nginx 用于部署静态页面](/Linux/nginx/nginx%20用于部署静态页面.md)
+
+### SSH
+
+* [sshfs命令简易挂载远程目录](/Linux/SSH/sshfs命令简易挂载远程目录.md)
+* [ssh开启隧道](/Linux/SSH/ssh开启隧道.md)
+* [SSH配置心跳信号防止断开连接](/Linux/SSH/SSH配置心跳信号防止断开连接.md)
+* [创建SSH密钥对并使用密钥登录](/Linux/SSH/创建SSH密钥对并使用密钥登录.md)
+
+### [awscli使用指南](/Linux/awscli使用指南.md)
+
+### [convmv命令解决GBK中文文件名乱码](/Linux/convmv命令解决GBK中文文件名乱码.md)
+
+### [Linux Shell输出重定向并后台执行](/Linux/Linux%20Shell输出重定向并后台执行.md)
+
+### [Linux 实时内存监控](/Linux/Linux%20实时内存监控.md)
+
+### [Linux传输超大文件](/Linux/Linux传输超大文件.md)
+
+### [Linux环境变量设置env, set, export](/Linux/Linux环境变量设置env%2C%20set%2C%20export.md)
+
+### [Linux开发环境setup](/Linux/Linux开发环境setup.md)
+
+### [Linux批量杀死进程](/Linux/Linux批量杀死进程.md)
+
+### [Linux搜索所有文件中的内容](/Linux/Linux搜索所有文件中的内容.md)
+
+### [Linux系统访问NAS的文件服务(samba)](/Linux/Linux系统访问NAS的文件服务%28samba%29.md)
+
+### [Linux下多线程下载工具 - Axel](/Linux/Linux下多线程下载工具%20-%20Axel.md)
+
+### [Linux新建用户](/Linux/Linux新建用户.md)
+
+### [Linux修改默认shell](/Linux/Linux修改默认shell.md)
+
+### [Mackup 同步linux配置](/Linux/Mackup%20同步linux配置.md)
+
+### [Neovim安装与配置](/Linux/Neovim安装与配置.md)
+
+### [TCP&UDP端口连通性测试](/Linux/TCP%26UDP端口连通性测试.md)
+
+### [vim插件管理 - vim-plug](/Linux/vim插件管理%20-%20vim-plug.md)
+
+### [virtualbox硬盘扩容](/Linux/virtualbox硬盘扩容.md)
+
+### [zsh常用插件](/Linux/zsh常用插件.md)
+
+### [安装chromedriver](/Linux/安装chromedriver.md)
+
+### [下载Google Drive共享的文件](/Linux/下载Google%20Drive共享的文件.md)
+
+### [指定gcc版本](/Linux/指定gcc版本.md)
+
+### [自签名SSL证书](/Linux/自签名SSL证书.md)
+
 ## Programming
-
-### Linux
-
-* CentOS
-  * [CentOS 7 lvm分区扩容](/Programming/Linux/CentOS/CentOS%207%20lvm分区扩容.md)
-  * [CentOS 7 安装最新版本的Git](/Programming/Linux/CentOS/CentOS%207%20安装最新版本的Git.md)
-  * [CentOS 7 常用工具包安装](/Programming/Linux/CentOS/CentOS%207%20常用工具包安装.md)
-  * [CentOS 7 开放端口](/Programming/Linux/CentOS/CentOS%207%20开放端口.md)
-  * [CentOS 7 升级Git版本](/Programming/Linux/CentOS/CentOS%207%20升级Git版本.md)
-  * [CentOS 配置国内源](/Programming/Linux/CentOS/CentOS%20配置国内源.md)
-* nginx
-  * [nginx 代理json文件作为API response](/Programming/Linux/nginx/nginx%20代理json文件作为API%20response.md)
-  * [nginx 配置 examples](/Programming/Linux/nginx/nginx%20配置%20examples.md)
-  * [nginx 配置常见问题](/Programming/Linux/nginx/nginx%20配置常见问题.md)
-  * [nginx 隐藏响应头的版本信息(header的server字段)](/Programming/Linux/nginx/nginx%20隐藏响应头的版本信息%28header的server字段%29.md)
-  * [nginx 用于部署静态页面](/Programming/Linux/nginx/nginx%20用于部署静态页面.md)
-* SSH
-  * [sshfs命令简易挂载远程目录](/Programming/Linux/SSH/sshfs命令简易挂载远程目录.md)
-  * [ssh开启隧道](/Programming/Linux/SSH/ssh开启隧道.md)
-  * [SSH配置心跳信号防止断开连接](/Programming/Linux/SSH/SSH配置心跳信号防止断开连接.md)
-  * [创建SSH密钥对并使用密钥登录](/Programming/Linux/SSH/创建SSH密钥对并使用密钥登录.md)
-* [awscli使用指南](/Programming/Linux/awscli使用指南.md)
-* [convmv命令解决GBK中文文件名乱码](/Programming/Linux/convmv命令解决GBK中文文件名乱码.md)
-* [Linux Shell输出重定向并后台执行](/Programming/Linux/Linux%20Shell输出重定向并后台执行.md)
-* [Linux 实时内存监控](/Programming/Linux/Linux%20实时内存监控.md)
-* [Linux传输超大文件](/Programming/Linux/Linux传输超大文件.md)
-* [Linux环境变量设置env, set, export](/Programming/Linux/Linux环境变量设置env%2C%20set%2C%20export.md)
-* [Linux开发环境setup](/Programming/Linux/Linux开发环境setup.md)
-* [Linux批量杀死进程](/Programming/Linux/Linux批量杀死进程.md)
-* [Linux搜索所有文件中的内容](/Programming/Linux/Linux搜索所有文件中的内容.md)
-* [Linux系统访问NAS的文件服务(samba)](/Programming/Linux/Linux系统访问NAS的文件服务%28samba%29.md)
-* [Linux下多线程下载工具 - Axel](/Programming/Linux/Linux下多线程下载工具%20-%20Axel.md)
-* [Linux新建用户](/Programming/Linux/Linux新建用户.md)
-* [Linux修改默认shell](/Programming/Linux/Linux修改默认shell.md)
-* [Mackup 同步linux配置](/Programming/Linux/Mackup%20同步linux配置.md)
-* [Neovim安装与配置](/Programming/Linux/Neovim安装与配置.md)
-* [TCP&UDP端口连通性测试](/Programming/Linux/TCP%26UDP端口连通性测试.md)
-* [vim插件管理 - vim-plug](/Programming/Linux/vim插件管理%20-%20vim-plug.md)
-* [virtualbox硬盘扩容](/Programming/Linux/virtualbox硬盘扩容.md)
-* [zsh常用插件](/Programming/Linux/zsh常用插件.md)
-* [安装chromedriver](/Programming/Linux/安装chromedriver.md)
-* [下载Google Drive共享的文件](/Programming/Linux/下载Google%20Drive共享的文件.md)
-* [指定gcc版本](/Programming/Linux/指定gcc版本.md)
-* [自签名SSL证书](/Programming/Linux/自签名SSL证书.md)
 
 ### Python
 
