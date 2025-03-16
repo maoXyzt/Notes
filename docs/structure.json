@@ -139,6 +139,16 @@
         "collapsed": false
       },
       {
+        "text": "Design Pattern",
+        "items": [
+          {
+            "text": "状态模式",
+            "link": "/Domain-Knowledge/Design Pattern/状态模式.md"
+          }
+        ],
+        "collapsed": false
+      },
+      {
         "text": "数据结构",
         "items": [
           {
@@ -207,16 +217,6 @@
       {
         "text": "Code-Quality",
         "items": [
-          {
-            "text": "Design Pattern",
-            "items": [
-              {
-                "text": "状态模式",
-                "link": "/Programming/Code-Quality/Design Pattern/状态模式.md"
-              }
-            ],
-            "collapsed": true
-          },
           {
             "text": "《代码整洁之道》",
             "items": [

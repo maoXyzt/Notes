@@ -42,6 +42,10 @@
   * [06-循环神经网络](/Domain-Knowledge/Deep%20Learning/动手学深度学习-pytorch版/06-循环神经网络.md)
 * [如何评价GAN网络的好坏：IS和FID](/Domain-Knowledge/Deep%20Learning/如何评价GAN网络的好坏%EF%BC%9AIS和FID.md)
 
+### Design Pattern
+
+* [状态模式](/Domain-Knowledge/Design%20Pattern/状态模式.md)
+
 ### 数据结构
 
 * 树
@@ -63,8 +67,6 @@
 
 ### Code-Quality
 
-* Design Pattern
-  * [状态模式](/Programming/Code-Quality/Design%20Pattern/状态模式.md)
 * 《代码整洁之道》
   * [第2章 有意义的命名](/Programming/Code-Quality/%E3%80%8A代码整洁之道%E3%80%8B/第2章%20有意义的命名.md)
 
