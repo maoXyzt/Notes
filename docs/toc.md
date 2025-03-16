@@ -274,7 +274,7 @@
 
 ### MacOS
 
-* [Homebrew](/Software-Specific/MacOS/Homebrew.md)
+* [Homebrew的安装、换源和卸载](/Software-Specific/MacOS/Homebrew的安装%E3%80%81换源和卸载.md)
 * [MacOS 配置定时任务](/Software-Specific/MacOS/MacOS%20配置定时任务.md)
 
 ### Maya

@@ -1,18 +1,18 @@
-# Homebrew
+# Homebrew 的安装、换源和卸载
 
-## 安装
+## 1. 安装
 
-### 命令行安装
+### 1.1 命令行安装
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-### 使用 .pkg 文件安装
+### 1.2 使用 .pkg 文件安装
 
 在 [Release](https://github.com/Homebrew/brew/releases) 页面下载
 
-### 使用阿里源安装
+### 1.3 使用阿里源安装
 
 用 [阿里源](https://developer.aliyun.com/mirror/homebrew) 安装
 
@@ -23,7 +23,7 @@ git clone https://mirrors.aliyun.com/homebrew/install.git brew-install
 rm -rf brew-install
 ```
 
-### 配置阿里源
+## 2. 配置阿里源
 
 配置 repo 使用阿里源
 
@@ -78,7 +78,7 @@ brew update
 # 如果您之前永久配置了 HOMEBREW 环境变量，还需要在对应的配置文件中，将对应的 HOMEBREW 环境变量配置行删除
 ```
 
-## 卸载
+## 3. 卸载
 
 卸载脚本
 
@@ -86,8 +86,8 @@ brew update
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
 ```
 
-## FAQ
+## 4. FAQ
 
-### 1. `brew update` 不能升级 brew 版本
+### 1) `brew update` 不能升级 brew 版本
 
 回退更换的源到默认配置后，再执行 `brew update` 即可升级 brew 版本。（然后再把源更换回来）

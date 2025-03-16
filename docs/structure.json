@@ -1006,8 +1006,8 @@
         "text": "MacOS",
         "items": [
           {
-            "text": "Homebrew",
-            "link": "/Software-Specific/MacOS/Homebrew.md"
+            "text": "Homebrew的安装、换源和卸载",
+            "link": "/Software-Specific/MacOS/Homebrew的安装、换源和卸载.md"
           },
           {
             "text": "MacOS 配置定时任务",
