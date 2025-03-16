@@ -25,52 +25,29 @@
 * [ssh开启隧道](/Linux/SSH/ssh开启隧道.md)
 * [SSH配置心跳信号防止断开连接](/Linux/SSH/SSH配置心跳信号防止断开连接.md)
 * [创建SSH密钥对并使用密钥登录](/Linux/SSH/创建SSH密钥对并使用密钥登录.md)
-
-### [awscli使用指南](/Linux/awscli使用指南.md)
-
-### [convmv命令解决GBK中文文件名乱码](/Linux/convmv命令解决GBK中文文件名乱码.md)
-
-### [Linux Shell输出重定向并后台执行](/Linux/Linux%20Shell输出重定向并后台执行.md)
-
-### [Linux 实时内存监控](/Linux/Linux%20实时内存监控.md)
-
-### [Linux传输超大文件](/Linux/Linux传输超大文件.md)
-
-### [Linux环境变量设置env, set, export](/Linux/Linux环境变量设置env%2C%20set%2C%20export.md)
-
-### [Linux开发环境setup](/Linux/Linux开发环境setup.md)
-
-### [Linux批量杀死进程](/Linux/Linux批量杀死进程.md)
-
-### [Linux搜索所有文件中的内容](/Linux/Linux搜索所有文件中的内容.md)
-
-### [Linux系统访问NAS的文件服务(samba)](/Linux/Linux系统访问NAS的文件服务%28samba%29.md)
-
-### [Linux下多线程下载工具 - Axel](/Linux/Linux下多线程下载工具%20-%20Axel.md)
-
-### [Linux新建用户](/Linux/Linux新建用户.md)
-
-### [Linux修改默认shell](/Linux/Linux修改默认shell.md)
-
-### [Mackup 同步linux配置](/Linux/Mackup%20同步linux配置.md)
-
-### [Neovim安装与配置](/Linux/Neovim安装与配置.md)
-
-### [TCP&UDP端口连通性测试](/Linux/TCP%26UDP端口连通性测试.md)
-
-### [vim插件管理 - vim-plug](/Linux/vim插件管理%20-%20vim-plug.md)
-
-### [virtualbox硬盘扩容](/Linux/virtualbox硬盘扩容.md)
-
-### [zsh常用插件](/Linux/zsh常用插件.md)
-
-### [安装chromedriver](/Linux/安装chromedriver.md)
-
-### [下载Google Drive共享的文件](/Linux/下载Google%20Drive共享的文件.md)
-
-### [指定gcc版本](/Linux/指定gcc版本.md)
-
-### [自签名SSL证书](/Linux/自签名SSL证书.md)
+* [awscli使用指南](/Linux/awscli使用指南.md)
+* [convmv命令解决GBK中文文件名乱码](/Linux/convmv命令解决GBK中文文件名乱码.md)
+* [Linux Shell输出重定向并后台执行](/Linux/Linux%20Shell输出重定向并后台执行.md)
+* [Linux 实时内存监控](/Linux/Linux%20实时内存监控.md)
+* [Linux传输超大文件](/Linux/Linux传输超大文件.md)
+* [Linux环境变量设置env, set, export](/Linux/Linux环境变量设置env%2C%20set%2C%20export.md)
+* [Linux开发环境setup](/Linux/Linux开发环境setup.md)
+* [Linux批量杀死进程](/Linux/Linux批量杀死进程.md)
+* [Linux搜索所有文件中的内容](/Linux/Linux搜索所有文件中的内容.md)
+* [Linux系统访问NAS的文件服务(samba)](/Linux/Linux系统访问NAS的文件服务%28samba%29.md)
+* [Linux下多线程下载工具 - Axel](/Linux/Linux下多线程下载工具%20-%20Axel.md)
+* [Linux新建用户](/Linux/Linux新建用户.md)
+* [Linux修改默认shell](/Linux/Linux修改默认shell.md)
+* [Mackup 同步linux配置](/Linux/Mackup%20同步linux配置.md)
+* [Neovim安装与配置](/Linux/Neovim安装与配置.md)
+* [TCP&UDP端口连通性测试](/Linux/TCP%26UDP端口连通性测试.md)
+* [vim插件管理 - vim-plug](/Linux/vim插件管理%20-%20vim-plug.md)
+* [virtualbox硬盘扩容](/Linux/virtualbox硬盘扩容.md)
+* [zsh常用插件](/Linux/zsh常用插件.md)
+* [安装chromedriver](/Linux/安装chromedriver.md)
+* [下载Google Drive共享的文件](/Linux/下载Google%20Drive共享的文件.md)
+* [指定gcc版本](/Linux/指定gcc版本.md)
+* [自签名SSL证书](/Linux/自签名SSL证书.md)
 
 ## Programming
 
@@ -321,6 +298,5 @@
 * [300. 最长上升子序列](/Algorithm/LeetCode/300.%20最长上升子序列.md)
 * [347.前-k-个高频元素](/Algorithm/LeetCode/347.前-k-个高频元素.md)
 * [5.最长回文子串](/Algorithm/LeetCode/5.最长回文子串.md)
-
-### [布隆过滤器(Bloom Filter)](/Algorithm/布隆过滤器%28Bloom%20Filter%29.md)
+* [布隆过滤器(Bloom Filter)](/Algorithm/布隆过滤器%28Bloom%20Filter%29.md)
 <!-- /TOC -->

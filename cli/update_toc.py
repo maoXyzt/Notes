@@ -131,7 +131,11 @@ def make_toc_content(
 
     if level >= min_level:
         if line_content := _make_line(item):
-            indent = _get_indented_prefix(level, max_header_level=max_header_level)
+            indent = _get_indented_prefix(
+                level,
+                max_header_level=max_header_level,
+                has_children=bool(getattr(item, 'items', None)),
+            )
             lines.append(f'{indent} {line_content}')
     if children := getattr(item, 'items', None):
         for c in children:
@@ -145,10 +149,17 @@ def make_toc_content(
     return lines
 
 
-def _get_indented_prefix(level: int, max_header_level: int = 3) -> str:
+def _get_indented_prefix(
+    level: int,
+    max_header_level: int = 3,
+    has_children: bool = False,
+) -> str:
     if level < max_header_level:
-        # should be formatted as header
-        return '#' * (level + 1)
+        if has_children:
+            # should be formatted as header
+            return '#' * (level + 1)
+        else:
+            return '*'
     else:
         # should be formatted as list
         return ' ' * settings.indent_size * (level - max_header_level) + '*'
