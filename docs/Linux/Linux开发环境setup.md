@@ -48,11 +48,11 @@ sudo apt-get install autoconf automake build-essential \
 ### zsh
 
 - 安装 [zsh](https://www.zsh.org/)
-- [oh-my-zsh](https://github.com/maoXyzt/Notes/blob/master/docs/Programming/Linux/zsh%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6.md)
+- [oh-my-zsh](./zsh常用插件.md)
 
 ### Node.js
 
-> [Node.js安装](../Programming/Frontend/Node.js%20安装.md)
+> [Node.js安装](../编程开发-Programming/Frontend/Node.js%20安装.md)
 
 - 利用[NVM](https://github.com/nvm-sh/nvm#installing-and-updating)安装
 - 利用[FNM](https://github.com/Schniz/fnm?tab=readme-ov-file#installation)安装
@@ -60,7 +60,7 @@ sudo apt-get install autoconf automake build-essential \
 
 ### Mackup: 配置备份/同步
 
-- [Instruction](https://github.com/maoXyzt/Notes/blob/master/docs/Programming/Linux/Mackup%20%E5%90%8C%E6%AD%A5linux%E9%85%8D%E7%BD%AE.md)
+- [Instruction](./Mackup%20同步linux配置.md)
 
 ### neovim
 
@@ -139,9 +139,8 @@ brew install xh
 - [`atuin`](https://github.com/ellie/atuin/blob/main/README.md#install): shell 历史记录增强
 - [`delta`](https://dandavison.github.io/delta/installation.html#installation): syntax-highlighting git diff
 - `tldr`:
-  - (推荐) [`tealdeer`](https://dbrgn.github.io/tealdeer/installing.html)
+  - (推荐) [`tealdeer`](https://github.com/tealdeer-rs/tealdeer?tab=readme-ov-file#docs-installing-usage-configuration)
   - (无需编译) [`tldr`](https://github.com/tldr-pages/tldr#how-do-i-use-it):
-- ~~[`exa`](https://the.exa.website/install/linux): a modern replacement for `ls`~~ It's unmaintained. Use `eza` instead.
 - [`eza`](https://github.com/eza-community/eza): a modern replacement for `ls`
 - [`bottom`](https://github.com/ClementTsang/bottom): 图形化进程、系统monitor
 

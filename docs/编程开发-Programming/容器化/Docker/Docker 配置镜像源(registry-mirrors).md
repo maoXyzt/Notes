@@ -41,4 +41,4 @@ sudo chsrc set docker
 # 或者 sudo chsrc set dockerhub
 ```
 
-见 [Linux 开发环境 setup](../../Linux/Linux开发环境setup.md#全平台换源工具-chsrc)。
+见 [Linux 开发环境 setup](../../../Linux/Linux开发环境setup.md#全平台换源工具-chsrc)
