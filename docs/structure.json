@@ -1013,6 +1013,16 @@
         "collapsed": false
       },
       {
+        "text": "LLM",
+        "items": [
+          {
+            "text": "Prompting Vision Language Models",
+            "link": "/Domain-Knowledge/LLM/Prompting Vision Language Models.md"
+          }
+        ],
+        "collapsed": false
+      },
+      {
         "text": "数据结构",
         "items": [
           {
