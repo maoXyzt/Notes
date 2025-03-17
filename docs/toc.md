@@ -1,6 +1,8 @@
-<!-- TOC -->
-# Table of Contents
+# 内容目录
 
+[[toc]]
+
+<!-- TOC -->
 ## Linux
 
 ### CentOS

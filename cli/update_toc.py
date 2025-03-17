@@ -66,6 +66,7 @@ def main():
         min_level=settings.min_level,
         max_header_level=settings.max_header_level,
     )
+    toc_lines = toc_lines[1:]  # remove the root title
     toc_lines = _format_toc(toc_lines)
     print('[bold]Table of Contents:[/bold]')
     print('\n'.join(toc_lines))
