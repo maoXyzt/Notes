@@ -20,8 +20,8 @@ NoteStatus: draft
 
 使用 [ImmortalWrt](https://github.com/immortalwrt/immortalwrt) 固件。
 
-> * Default login address: <http://192.168.1.1> or <http://immortalwrt.lan>
-> * username: root
+> * Default login address: `http://192.168.1.1` or `http://immortalwrt.lan`
+> * username: "root"
 > * password: none
 
 下载地址：
@@ -30,7 +30,7 @@ NoteStatus: draft
 
 * 进入 <https://firmware-selector.immortalwrt.org/>
 * 搜索 `Generic x86/64`
-* 找到 .qcow2 格式的的 ext4-efi 固件，下载
+* 找到 `.qcow2` 格式的的 ext4-efi 固件，下载
 
 途径 2:
 

@@ -109,7 +109,7 @@ qm importdisk 100 haos_ova-14.1.qcow2 local-lvm
 
 ## 4. 设置 haos
 
-访问 haos 的网页端: <http://homeassistant.local:8123/>
+访问 haos 的网页端: `http://homeassistant.local:8124/`
 
 首次进入需要设置用户信息。
 

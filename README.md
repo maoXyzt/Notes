@@ -7,9 +7,7 @@ Powered by [vitepress](https://vitepress.vuejs.org/).
 ## Setup
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
+poetry install
 ```
 
 ## Development
@@ -32,4 +30,12 @@ pnpm docs:build
 
 ```bash
 pnpm docs:preview
+```
+
+### 3) Commit 前
+
+更新文档目录: `docs/toc.md` 文件和 `docs/structure.json` 文件
+
+```bash
+python -m cli.update_toc
 ```
