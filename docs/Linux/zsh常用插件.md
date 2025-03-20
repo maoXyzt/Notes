@@ -218,13 +218,17 @@ atuin import auto
 
 建议使用 Nerd Fonts 系列字体，否则无法显示大部分icon。
 
-> [ryanoasis/nerd-fonts: Iconic font aggregator, collection, & patcher. 3,600+ icons, 50+ patched fonts: Hack, Source Code Pro, more. Glyph collections: Font Awesome, Material Design Icons, Octicons, & more (github.com)](https://github.com/ryanoasis/nerd-fonts)
+推荐字体：
+
+* [NERD FONTS](https://github.com/ryanoasis/nerd-fonts)
+* [Maple Mono](https://github.com/subframe7536/maple-font)
+  * 建议选 MapleMono-NF-CN 这个版本，支持 Nerd Fonts 和中文等宽显示
 
 ### 3.2 主题：starship
 
 > <https://starship.rs/guide/#%F0%9F%9A%80-installation>
 
-#### (1) 安装
+#### 3.2.1 安装
 
 > <https://starship.rs/guide/#%F0%9F%9A%80-installation>
 
@@ -234,7 +238,7 @@ atuin import auto
 cargo install starship --locked
 ```
 
-#### (2) 配置
+#### 3.2.2 配置
 
 在 `.zshrc` 文件**末尾**加入如下内容
 
@@ -259,7 +263,7 @@ starship preset bracketed-segments -o ~/.config/starship.toml
 
 ### 3.3 主题：Powerlevel10k
 
-#### (1) 安装
+#### 3.3.1 安装
 
 > <https://github.com/romkatv/powerlevel10k>
 
@@ -275,7 +279,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 ZSH_THEME="powerlevel10k/powerlevel10k"
 ```
 
-#### (3) 配置
+#### 3.3.2 配置
 
 配置向导（configuration wizard）
 
