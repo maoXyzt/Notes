@@ -653,6 +653,10 @@
                 "link": "/编程开发-Programming/容器化/Docker/Docker 容器 labels.md"
               },
               {
+                "text": "Docker 容器权限设置--cap-add,--cap-drop,--privileges",
+                "link": "/编程开发-Programming/容器化/Docker/Docker 容器权限设置--cap-add,--cap-drop,--privileges.md"
+              },
+              {
                 "text": "Docker常用命令",
                 "link": "/编程开发-Programming/容器化/Docker/Docker常用命令.md"
               },
@@ -665,8 +669,8 @@
                 "link": "/编程开发-Programming/容器化/Docker/Docker配置代理.md"
               },
               {
-                "text": "Docker容器中的权限控制",
-                "link": "/编程开发-Programming/容器化/Docker/Docker容器中的权限控制.md"
+                "text": "Docker容器中的用户权限控制",
+                "link": "/编程开发-Programming/容器化/Docker/Docker容器中的用户权限控制.md"
               },
               {
                 "text": "给非root用户运行docker的权限",

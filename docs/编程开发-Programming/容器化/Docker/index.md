@@ -15,7 +15,8 @@
 
 - [Docker 容器 labels](./Docker%20容器%20labels.md)
 - [给非root用户运行docker的权限](./给非root用户运行docker的权限.md)
-- [Docker 容器中的权限控制](./Docker容器中的权限控制.md)
+- [Docker 容器权限设置: --cap-add, --cap-drop, --privileges](./Docker%20容器权限设置--cap-add,--cap-drop,--privileges.md)
+- [Docker 容器中的用户权限控制](./Docker容器中的用户权限控制.md)
 
 ## 关于 docker 的基础概念
 
