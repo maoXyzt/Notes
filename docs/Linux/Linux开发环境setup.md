@@ -1,20 +1,22 @@
 # Linux 开发环境 setup
 
-## (1) Recommend
+以 Ubuntu/Debian 系统为例，部分命令给出了 MacOS 版本。其他发行版请自行替换命令。
 
-### 配置apt镜像
+## 1 - 推荐
 
-#### 全平台换源工具 `chsrc`
+### 1.1 配置apt镜像
+
+#### 1.1.1 全平台换源工具 `chsrc`
 
 > [chsrc](https://github.com/RubyMetric/chsrc?tab=readme-ov-file#-%E5%AE%89%E8%A3%85)
 
 ```bash
 # 使用维护团队测试的最快镜像站
-# target: ubuntu, debian, rocky ...
+# <target>: ubuntu, debian, rocky ...
 chsrc set <target> first
 ```
 
-#### 手动换源
+#### 1.1.2 手动换源
 
 ```bash
 sudo apt install ca-certificates
@@ -23,7 +25,7 @@ sudo cp /etc/apt/sources.list /etc/apt/sources.list.backup
 
 > [配置apt镜像](https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/)
 
-### Dependencies
+### 1.2 依赖库&工具
 
 ```bash
 # Ubuntu
@@ -33,50 +35,54 @@ sudo apt-get install autoconf automake build-essential \
   libharfbuzz-dev libjansson-dev liblzma-dev libmp3lame-dev libogg-dev libopus-dev \
   libsamplerate-dev libspeex-dev libtheora-dev libtool libtool-bin libvorbis-dev \
   libx264-dev libxml2-dev m4 make nasm patch pkg-config tar yasm zlib1g-dev \
-  python3 python3-pip python3-dev python3-setuptools zip
+  python3 python3-pip python3-dev python3-setuptools zip curl wget
 ```
 
-### Miniconda
-
-- [Linux Installers](https://docs.conda.io/en/latest/miniconda.html#linux-installers)
-
-### git 升级版本
+### 1.4 升级 Git 版本
 
 - [install](https://git-scm.com/download/linux)
 - [build from source](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-### zsh
+### 1.5 zsh
 
 - 安装 [zsh](https://www.zsh.org/)
-- [oh-my-zsh](./zsh常用插件.md)
+- 安装和配置 [oh-my-zsh](./zsh常用插件.md)
 
-### Node.js
-
-> [Node.js安装](../编程开发-Programming/Frontend/Node.js%20安装.md)
-
-- 利用[NVM](https://github.com/nvm-sh/nvm#installing-and-updating)安装
-- 利用[FNM](https://github.com/Schniz/fnm?tab=readme-ov-file#installation)安装
-- 直接安装[Download | node.js](https://nodejs.org/en/download/)
-
-### Mackup: 配置备份/同步
+### 1.6 Mackup: 配置备份/同步
 
 - [Instruction](./Mackup%20同步linux配置.md)
 
-### neovim
-
-- [Installing-Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim#ubuntu)
-
-### 配置全局 gitignore
+### 1.7 配置全局 gitignore
 
 - 配置方法: [global gitignore](https://github.com/maoXyzt/Notes/blob/master/docs/Programming/Git/global%20gitignore.md)
 
-## (2) CLI tools
+## 2 - 可选依赖
 
-### 2.1 Rust CLI tools
+根据个人开发需求，选择性安装。
 
-**digest:**
+### 2.1 Miniconda
 
-Linux:
+- [Linux Installers](https://docs.conda.io/en/latest/miniconda.html#linux-installers)
+
+### 2.2 Node.js
+
+> [Node.js安装](../编程开发-Programming/Frontend/Node.js%20安装.md)
+
+选择其中一种安装方式：
+
+- 利用 [NVM](https://github.com/nvm-sh/nvm#installing-and-updating) 安装
+- 利用 [FNM](https://github.com/Schniz/fnm?tab=readme-ov-file#installation) 安装
+- 直接安装: [Node.js Download](https://nodejs.org/en/download/)
+
+### 2.3 neovim
+
+- [Installing-Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim#ubuntu)
+
+## 3 - 命令行工具
+
+### 3.1 Rust 命令行工具
+
+#### 3.1.1 Linux 用户安装
 
 ```bash
 if ! [[ command -v rustup &> /dev/null ]]; then
@@ -107,7 +113,7 @@ export CARGO_INSTALL_ROOT=
 atuin import auto
 ```
 
-macos
+#### 3.1.2 MacOS 用户安装
 
 ```bash
 if ! [[ command -v rustup &> /dev/null ]]; then
@@ -128,7 +134,7 @@ brew install bottom
 brew install xh
 ```
 
-**list:**
+#### 3.1.2 工具说明
 
 - [rust](https://www.rust-lang.org/tools/install): 方便编译安装其他命令行工具
 - [`fd`](https://github.com/sharkdp/fd#on-ubuntu): 替代`find`
@@ -138,9 +144,9 @@ brew install xh
 - [`procs`](https://github.com/dalance/procs#cargo): 替代`ps`
 - [`atuin`](https://github.com/ellie/atuin/blob/main/README.md#install): shell 历史记录增强
 - [`delta`](https://dandavison.github.io/delta/installation.html#installation): syntax-highlighting git diff
-- `tldr`:
+- `tldr`: 查阅命令的简单用法
   - (推荐) [`tealdeer`](https://github.com/tealdeer-rs/tealdeer?tab=readme-ov-file#docs-installing-usage-configuration)
-  - (无需编译) [`tldr`](https://github.com/tldr-pages/tldr#how-do-i-use-it):
+  - (无需编译) [`tldr`](https://github.com/tldr-pages/tldr#how-do-i-use-it)
 - [`eza`](https://github.com/eza-community/eza): a modern replacement for `ls`
 - [`bottom`](https://github.com/ClementTsang/bottom): 图形化进程、系统monitor
 
@@ -166,10 +172,11 @@ brew install xh
 
 - [`xh`](https://github.com/ducaale/xh): 替代 `httpie`
 
-### 2.2 Others
+### 3.2 其他
 
-- ~~[`neofetch`](https://github.com/dylanaraps/neofetch): 获取并打印系统信息~~ Use `fastfetch` instead.
-- [`fastfetch`](https://github.com/fastfetch-cli/fastfetch): Fastfetch is a neofetch-like tool for fetching system information and displaying it prettily.
+### 3.2.1 fastfetch: 获取并打印系统信息
+
+> [Fastfetch](https://github.com/fastfetch-cli/fastfetch): Fastfetch is a [Neofetch](https://github.com/dylanaraps/neofetch)-like tool for fetching system information and displaying it prettily.
 
 ```bash
 # for Ubuntu only
@@ -178,4 +185,18 @@ sudo apt-get update
 sudo apt-get install fastfetch
 ```
 
-- [`fuck`](https://github.com/nvbn/thefuck#installation): thefuck，纠正输错的命令
+### 3.2.2 thefuck: 快速纠正输错的命令
+
+> [thefuck](https://github.com/nvbn/thefuck#installation)
+
+Linux 用户:
+
+```bash
+pip3 install thefuck --user
+```
+
+MacOS 用户:
+
+```bash
+brew install thefuck
+```
