@@ -8,6 +8,30 @@
 --privileged                     # Give extended privileges to this container # default false
 ```
 
+## 示例
+
+docker run 命令中使用示例：
+
+```bash
+# 细粒度权限控制
+docker run --cap-add NET_ADMIN --cap-add NET_RAW myimage
+docker run --cap-drop SETUID --cap-drop SETGID myimage
+# 添加所有权限
+docker run --privileged myimage
+```
+
+在 docker-compose.yml 中使用示例：
+
+```yaml
+services:
+  myservice:
+    image: myimage
+    securityContext:
+      privileged: true  # 添加所有权限
+      capabilities:     # 细粒度权限控制
+        add: ["NET_ADMIN", "NET_RAW"]
+        drop: []        # 关闭不必要的权限
+
 Linux Capabilities 是 Linux 内核提供的一种安全机制，用于细粒度控制进程的权限。
 
 > [Linux Capabilities 简介](https://www.cnblogs.com/sparkdev/p/11417781.html)
