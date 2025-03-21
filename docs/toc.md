@@ -195,6 +195,60 @@
 
 * [代码整洁之道-2-有意义的命名](/编程开发-Programming/代码质量-CodeQuality/代码整洁之道-2-有意义的命名.md)
 
+## 领域知识-DomainKnowledge
+
+### 图形学
+
+* 游戏引擎技术及架构
+  * [01-导论](/领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/01-导论.md)
+  * [04-游戏所需的三维数学](/领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/04-游戏所需的三维数学.md)
+  * [11-动画系统](/领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/11-动画系统.md)
+* [OpenGL坐标系统](/领域知识-DomainKnowledge/图形学/OpenGL坐标系统.md)
+* [变换的分类](/领域知识-DomainKnowledge/图形学/变换的分类.md)
+* [骨骼动画原理](/领域知识-DomainKnowledge/图形学/骨骼动画原理.md)
+* [旋转的不同表示方式](/领域知识-DomainKnowledge/图形学/旋转的不同表示方式.md)
+* [坐标系&旋转 Conventions](/领域知识-DomainKnowledge/图形学/坐标系%26旋转%20Conventions.md)
+
+### Applied Social Network Analysis in Python
+
+* Module 1 - Why Study Networks and Basics on NetworkX
+  * [Why Study Networks and Basics on NetworkX](/领域知识-DomainKnowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%201%20-%20Why%20Study%20Networks%20and%20Basics%20on%20NetworkX/Why%20Study%20Networks%20and%20Basics%20on%20NetworkX.md)
+* Module 2 - Network Connectivity
+  * [Network Connectivity](/领域知识-DomainKnowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%202%20-%20Network%20Connectivity/Network%20Connectivity.md)
+* Module 3 - Influence Measures and Network Centralization
+  * [Influence Measures and Network Centralization](/领域知识-DomainKnowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%203%20-%20Influence%20Measures%20and%20Network%20Centralization/Influence%20Measures%20and%20Network%20Centralization.md)
+* Module 4 - Network Evolution
+  * [Network Evolution](/领域知识-DomainKnowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%204%20-%20Network%20Evolution/Network%20Evolution.md)
+* [Syllabus](/领域知识-DomainKnowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Syllabus.md)
+
+### Deep Learning
+
+* 动手学深度学习-pytorch版
+  * [01-深度学习简介](/领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/01-深度学习简介.md)
+  * [03-深度学习基础](/领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/03-深度学习基础.md)
+  * [04-深度学习计算](/领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/04-深度学习计算.md)
+  * [05-卷积神经网络](/领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/05-卷积神经网络.md)
+  * [06-循环神经网络](/领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/06-循环神经网络.md)
+* [如何评价GAN网络的好坏：IS和FID](/领域知识-DomainKnowledge/Deep%20Learning/如何评价GAN网络的好坏%EF%BC%9AIS和FID.md)
+
+### Design Pattern
+
+* [状态模式](/领域知识-DomainKnowledge/Design%20Pattern/状态模式.md)
+
+### LLM
+
+* [Prompting Vision Language Models](/领域知识-DomainKnowledge/LLM/Prompting%20Vision%20Language%20Models.md)
+
+### 个人服务搭建
+
+* NAS
+  * [Wallos个人订阅服务管理工具](/领域知识-DomainKnowledge/个人服务搭建/NAS/Wallos个人订阅服务管理工具.md)
+
+### 数据结构
+
+* 树
+  * [树](/领域知识-DomainKnowledge/数据结构/树/树.md)
+
 ## 软件工具应用-Applications
 
 ### Blender
@@ -245,55 +299,6 @@
 ### zotero
 
 * [zotero修改note templates](/软件工具应用-Applications/zotero/zotero修改note%20templates.md)
-
-## 领域知识-DomainKnowledge
-
-### 图形学
-
-* 游戏引擎技术及架构
-  * [01-导论](/领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/01-导论.md)
-  * [04-游戏所需的三维数学](/领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/04-游戏所需的三维数学.md)
-  * [11-动画系统](/领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/11-动画系统.md)
-* [OpenGL坐标系统](/领域知识-DomainKnowledge/图形学/OpenGL坐标系统.md)
-* [变换的分类](/领域知识-DomainKnowledge/图形学/变换的分类.md)
-* [骨骼动画原理](/领域知识-DomainKnowledge/图形学/骨骼动画原理.md)
-* [旋转的不同表示方式](/领域知识-DomainKnowledge/图形学/旋转的不同表示方式.md)
-* [坐标系&旋转 Conventions](/领域知识-DomainKnowledge/图形学/坐标系%26旋转%20Conventions.md)
-
-### Applied Social Network Analysis in Python
-
-* Module 1 - Why Study Networks and Basics on NetworkX
-  * [Why Study Networks and Basics on NetworkX](/领域知识-DomainKnowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%201%20-%20Why%20Study%20Networks%20and%20Basics%20on%20NetworkX/Why%20Study%20Networks%20and%20Basics%20on%20NetworkX.md)
-* Module 2 - Network Connectivity
-  * [Network Connectivity](/领域知识-DomainKnowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%202%20-%20Network%20Connectivity/Network%20Connectivity.md)
-* Module 3 - Influence Measures and Network Centralization
-  * [Influence Measures and Network Centralization](/领域知识-DomainKnowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%203%20-%20Influence%20Measures%20and%20Network%20Centralization/Influence%20Measures%20and%20Network%20Centralization.md)
-* Module 4 - Network Evolution
-  * [Network Evolution](/领域知识-DomainKnowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%204%20-%20Network%20Evolution/Network%20Evolution.md)
-* [Syllabus](/领域知识-DomainKnowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Syllabus.md)
-
-### Deep Learning
-
-* 动手学深度学习-pytorch版
-  * [01-深度学习简介](/领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/01-深度学习简介.md)
-  * [03-深度学习基础](/领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/03-深度学习基础.md)
-  * [04-深度学习计算](/领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/04-深度学习计算.md)
-  * [05-卷积神经网络](/领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/05-卷积神经网络.md)
-  * [06-循环神经网络](/领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/06-循环神经网络.md)
-* [如何评价GAN网络的好坏：IS和FID](/领域知识-DomainKnowledge/Deep%20Learning/如何评价GAN网络的好坏%EF%BC%9AIS和FID.md)
-
-### Design Pattern
-
-* [状态模式](/领域知识-DomainKnowledge/Design%20Pattern/状态模式.md)
-
-### LLM
-
-* [Prompting Vision Language Models](/领域知识-DomainKnowledge/LLM/Prompting%20Vision%20Language%20Models.md)
-
-### 数据结构
-
-* 树
-  * [树](/领域知识-DomainKnowledge/数据结构/树/树.md)
 
 ## 算法-Algorithm
 

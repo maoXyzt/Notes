@@ -720,166 +720,6 @@
     "collapsed": false
   },
   {
-    "text": "软件工具应用-Applications",
-    "items": [
-      {
-        "text": "Blender",
-        "items": [
-          {
-            "text": "blender as python module",
-            "link": "/软件工具应用-Applications/Blender/blender as python module.md"
-          },
-          {
-            "text": "blender&mathutils中的欧拉角",
-            "link": "/软件工具应用-Applications/Blender/blender&mathutils中的欧拉角.md"
-          },
-          {
-            "text": "blender安装python packages",
-            "link": "/软件工具应用-Applications/Blender/blender安装python packages.md"
-          },
-          {
-            "text": "blender常用操作",
-            "link": "/软件工具应用-Applications/Blender/blender常用操作.md"
-          },
-          {
-            "text": "blender常用脚本",
-            "link": "/软件工具应用-Applications/Blender/blender常用脚本.md"
-          },
-          {
-            "text": "blender抠绿幕(keying)",
-            "link": "/软件工具应用-Applications/Blender/blender抠绿幕(keying).md"
-          },
-          {
-            "text": "blender旋转、缩放HDRI背景",
-            "link": "/软件工具应用-Applications/Blender/blender旋转、缩放HDRI背景.md"
-          },
-          {
-            "text": "blender渲染绿幕视频",
-            "link": "/软件工具应用-Applications/Blender/blender渲染绿幕视频.md"
-          },
-          {
-            "text": "blender中各种Matrix之间的关系",
-            "link": "/软件工具应用-Applications/Blender/blender中各种Matrix之间的关系.md"
-          },
-          {
-            "text": "CUDA cuInit Unknown error",
-            "link": "/软件工具应用-Applications/Blender/CUDA cuInit Unknown error.md"
-          },
-          {
-            "text": "Ubuntu安装blender",
-            "link": "/软件工具应用-Applications/Blender/Ubuntu安装blender.md"
-          },
-          {
-            "text": "通过脚本安装和启用插件(add-on)",
-            "link": "/软件工具应用-Applications/Blender/通过脚本安装和启用插件(add-on).md"
-          },
-          {
-            "text": "无GUI启动blender",
-            "link": "/软件工具应用-Applications/Blender/无GUI启动blender.md"
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "text": "Windows",
-        "items": [
-          {
-            "text": "powershell 开启补全功能",
-            "link": "/软件工具应用-Applications/Windows/powershell 开启补全功能.md"
-          },
-          {
-            "text": "powershell 启动加速",
-            "link": "/软件工具应用-Applications/Windows/powershell 启动加速.md"
-          },
-          {
-            "text": "windows查找端口占用",
-            "link": "/软件工具应用-Applications/Windows/windows查找端口占用.md"
-          },
-          {
-            "text": "windows建立软链接",
-            "link": "/软件工具应用-Applications/Windows/windows建立软链接.md"
-          },
-          {
-            "text": "winget 国内源",
-            "link": "/软件工具应用-Applications/Windows/winget 国内源.md"
-          },
-          {
-            "text": "创建自启动的Windows Service程序",
-            "link": "/软件工具应用-Applications/Windows/创建自启动的Windows Service程序.md"
-          },
-          {
-            "text": "右键菜单添加“通过xxx打开”",
-            "link": "/软件工具应用-Applications/Windows/右键菜单添加“通过xxx打开”.md"
-          },
-          {
-            "text": "右键用windows terminal打开当前目录",
-            "link": "/软件工具应用-Applications/Windows/右键用windows terminal打开当前目录.md"
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "text": "MacOS",
-        "items": [
-          {
-            "text": "Homebrew的安装、换源和卸载",
-            "link": "/软件工具应用-Applications/MacOS/Homebrew的安装、换源和卸载.md"
-          },
-          {
-            "text": "MacOS 配置定时任务",
-            "link": "/软件工具应用-Applications/MacOS/MacOS 配置定时任务.md"
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "text": "Maya",
-        "items": [
-          {
-            "text": "maya安装numpy&scipy",
-            "link": "/软件工具应用-Applications/Maya/maya安装numpy&scipy.md"
-          },
-          {
-            "text": "maya插件安装方法",
-            "link": "/软件工具应用-Applications/Maya/maya插件安装方法.md"
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "text": "FBX",
-        "items": [
-          {
-            "text": "安装FBX Python SDK",
-            "link": "/软件工具应用-Applications/FBX/安装FBX Python SDK.md"
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "text": "Obsidian",
-        "items": [
-          {
-            "text": "Obsidian 同步 - 配置 LiveSync 与自托管 CouchDB 服务器",
-            "link": "/软件工具应用-Applications/Obsidian/Obsidian 同步 - 配置 LiveSync 与自托管 CouchDB 服务器.md"
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "text": "zotero",
-        "items": [
-          {
-            "text": "zotero修改note templates",
-            "link": "/软件工具应用-Applications/zotero/zotero修改note templates.md"
-          }
-        ],
-        "collapsed": false
-      }
-    ],
-    "collapsed": false
-  },
-  {
     "text": "领域知识-DomainKnowledge",
     "items": [
       {
@@ -1033,6 +873,22 @@
         "collapsed": false
       },
       {
+        "text": "个人服务搭建",
+        "items": [
+          {
+            "text": "NAS",
+            "items": [
+              {
+                "text": "Wallos个人订阅服务管理工具",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/Wallos个人订阅服务管理工具.md"
+              }
+            ],
+            "collapsed": true
+          }
+        ],
+        "collapsed": false
+      },
+      {
         "text": "数据结构",
         "items": [
           {
@@ -1044,6 +900,166 @@
               }
             ],
             "collapsed": true
+          }
+        ],
+        "collapsed": false
+      }
+    ],
+    "collapsed": false
+  },
+  {
+    "text": "软件工具应用-Applications",
+    "items": [
+      {
+        "text": "Blender",
+        "items": [
+          {
+            "text": "blender as python module",
+            "link": "/软件工具应用-Applications/Blender/blender as python module.md"
+          },
+          {
+            "text": "blender&mathutils中的欧拉角",
+            "link": "/软件工具应用-Applications/Blender/blender&mathutils中的欧拉角.md"
+          },
+          {
+            "text": "blender安装python packages",
+            "link": "/软件工具应用-Applications/Blender/blender安装python packages.md"
+          },
+          {
+            "text": "blender常用操作",
+            "link": "/软件工具应用-Applications/Blender/blender常用操作.md"
+          },
+          {
+            "text": "blender常用脚本",
+            "link": "/软件工具应用-Applications/Blender/blender常用脚本.md"
+          },
+          {
+            "text": "blender抠绿幕(keying)",
+            "link": "/软件工具应用-Applications/Blender/blender抠绿幕(keying).md"
+          },
+          {
+            "text": "blender旋转、缩放HDRI背景",
+            "link": "/软件工具应用-Applications/Blender/blender旋转、缩放HDRI背景.md"
+          },
+          {
+            "text": "blender渲染绿幕视频",
+            "link": "/软件工具应用-Applications/Blender/blender渲染绿幕视频.md"
+          },
+          {
+            "text": "blender中各种Matrix之间的关系",
+            "link": "/软件工具应用-Applications/Blender/blender中各种Matrix之间的关系.md"
+          },
+          {
+            "text": "CUDA cuInit Unknown error",
+            "link": "/软件工具应用-Applications/Blender/CUDA cuInit Unknown error.md"
+          },
+          {
+            "text": "Ubuntu安装blender",
+            "link": "/软件工具应用-Applications/Blender/Ubuntu安装blender.md"
+          },
+          {
+            "text": "通过脚本安装和启用插件(add-on)",
+            "link": "/软件工具应用-Applications/Blender/通过脚本安装和启用插件(add-on).md"
+          },
+          {
+            "text": "无GUI启动blender",
+            "link": "/软件工具应用-Applications/Blender/无GUI启动blender.md"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "Windows",
+        "items": [
+          {
+            "text": "powershell 开启补全功能",
+            "link": "/软件工具应用-Applications/Windows/powershell 开启补全功能.md"
+          },
+          {
+            "text": "powershell 启动加速",
+            "link": "/软件工具应用-Applications/Windows/powershell 启动加速.md"
+          },
+          {
+            "text": "windows查找端口占用",
+            "link": "/软件工具应用-Applications/Windows/windows查找端口占用.md"
+          },
+          {
+            "text": "windows建立软链接",
+            "link": "/软件工具应用-Applications/Windows/windows建立软链接.md"
+          },
+          {
+            "text": "winget 国内源",
+            "link": "/软件工具应用-Applications/Windows/winget 国内源.md"
+          },
+          {
+            "text": "创建自启动的Windows Service程序",
+            "link": "/软件工具应用-Applications/Windows/创建自启动的Windows Service程序.md"
+          },
+          {
+            "text": "右键菜单添加“通过xxx打开”",
+            "link": "/软件工具应用-Applications/Windows/右键菜单添加“通过xxx打开”.md"
+          },
+          {
+            "text": "右键用windows terminal打开当前目录",
+            "link": "/软件工具应用-Applications/Windows/右键用windows terminal打开当前目录.md"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "MacOS",
+        "items": [
+          {
+            "text": "Homebrew的安装、换源和卸载",
+            "link": "/软件工具应用-Applications/MacOS/Homebrew的安装、换源和卸载.md"
+          },
+          {
+            "text": "MacOS 配置定时任务",
+            "link": "/软件工具应用-Applications/MacOS/MacOS 配置定时任务.md"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "Maya",
+        "items": [
+          {
+            "text": "maya安装numpy&scipy",
+            "link": "/软件工具应用-Applications/Maya/maya安装numpy&scipy.md"
+          },
+          {
+            "text": "maya插件安装方法",
+            "link": "/软件工具应用-Applications/Maya/maya插件安装方法.md"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "FBX",
+        "items": [
+          {
+            "text": "安装FBX Python SDK",
+            "link": "/软件工具应用-Applications/FBX/安装FBX Python SDK.md"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "Obsidian",
+        "items": [
+          {
+            "text": "Obsidian 同步 - 配置 LiveSync 与自托管 CouchDB 服务器",
+            "link": "/软件工具应用-Applications/Obsidian/Obsidian 同步 - 配置 LiveSync 与自托管 CouchDB 服务器.md"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "zotero",
+        "items": [
+          {
+            "text": "zotero修改note templates",
+            "link": "/软件工具应用-Applications/zotero/zotero修改note templates.md"
           }
         ],
         "collapsed": false
