@@ -31,6 +31,9 @@ services:
       capabilities:     # 细粒度权限控制
         add: ["NET_ADMIN", "NET_RAW"]
         drop: []        # 关闭不必要的权限
+```
+
+## 关于 Linux Capabilities
 
 Linux Capabilities 是 Linux 内核提供的一种安全机制，用于细粒度控制进程的权限。
 
