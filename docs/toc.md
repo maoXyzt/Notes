@@ -242,6 +242,7 @@
 ### 个人服务搭建
 
 * NAS
+  * [homeassistant添加网络存储并开启备份](/领域知识-DomainKnowledge/个人服务搭建/NAS/homeassistant添加网络存储并开启备份.md)
   * [Wallos个人订阅服务管理工具](/领域知识-DomainKnowledge/个人服务搭建/NAS/Wallos个人订阅服务管理工具.md)
 
 ### 数据结构
