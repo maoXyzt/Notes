@@ -53,6 +53,12 @@
 
 🆓 [Geek Uninstaller](https://geekuninstaller.com/): 软件卸载工具
 
+🆓 [AutoRuns](https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns): 系统启动项管理工具
+
+🆓🔓 [CapsLock Indicator](https://cli.jonaskohl.de/): 在当前屏幕上显示 Caps Lock、Num Lock、Scroll Lock 的状态
+
+🆓 [SpaceSniffer](http://www.uderzo.it/main_products/space_sniffer/): 磁盘空间占用可视化工具
+
 ## 其他
 
 🆓🔓💻 [PicGo](https://github.com/Molunerfinn/PicGo): 开源图床工具
