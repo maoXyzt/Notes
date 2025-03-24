@@ -720,6 +720,44 @@
     "collapsed": false
   },
   {
+    "text": "Windows",
+    "items": [
+      {
+        "text": "powershell 开启补全功能",
+        "link": "/Windows/powershell 开启补全功能.md"
+      },
+      {
+        "text": "powershell 启动加速",
+        "link": "/Windows/powershell 启动加速.md"
+      },
+      {
+        "text": "windows查找端口占用",
+        "link": "/Windows/windows查找端口占用.md"
+      },
+      {
+        "text": "windows建立软链接",
+        "link": "/Windows/windows建立软链接.md"
+      },
+      {
+        "text": "winget 国内源",
+        "link": "/Windows/winget 国内源.md"
+      },
+      {
+        "text": "创建自启动的Windows Service程序",
+        "link": "/Windows/创建自启动的Windows Service程序.md"
+      },
+      {
+        "text": "右键菜单添加“通过xxx打开”",
+        "link": "/Windows/右键菜单添加“通过xxx打开”.md"
+      },
+      {
+        "text": "右键用windows terminal打开当前目录",
+        "link": "/Windows/右键用windows terminal打开当前目录.md"
+      }
+    ],
+    "collapsed": false
+  },
+  {
     "text": "领域知识-DomainKnowledge",
     "items": [
       {
@@ -968,44 +1006,6 @@
           {
             "text": "无GUI启动blender",
             "link": "/软件工具应用-Applications/Blender/无GUI启动blender.md"
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "text": "Windows",
-        "items": [
-          {
-            "text": "powershell 开启补全功能",
-            "link": "/软件工具应用-Applications/Windows/powershell 开启补全功能.md"
-          },
-          {
-            "text": "powershell 启动加速",
-            "link": "/软件工具应用-Applications/Windows/powershell 启动加速.md"
-          },
-          {
-            "text": "windows查找端口占用",
-            "link": "/软件工具应用-Applications/Windows/windows查找端口占用.md"
-          },
-          {
-            "text": "windows建立软链接",
-            "link": "/软件工具应用-Applications/Windows/windows建立软链接.md"
-          },
-          {
-            "text": "winget 国内源",
-            "link": "/软件工具应用-Applications/Windows/winget 国内源.md"
-          },
-          {
-            "text": "创建自启动的Windows Service程序",
-            "link": "/软件工具应用-Applications/Windows/创建自启动的Windows Service程序.md"
-          },
-          {
-            "text": "右键菜单添加“通过xxx打开”",
-            "link": "/软件工具应用-Applications/Windows/右键菜单添加“通过xxx打开”.md"
-          },
-          {
-            "text": "右键用windows terminal打开当前目录",
-            "link": "/软件工具应用-Applications/Windows/右键用windows terminal打开当前目录.md"
           }
         ],
         "collapsed": false

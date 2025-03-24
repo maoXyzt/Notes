@@ -195,6 +195,17 @@
 
 * [代码整洁之道-2-有意义的命名](/编程开发-Programming/代码质量-CodeQuality/代码整洁之道-2-有意义的命名.md)
 
+## Windows
+
+* [powershell 开启补全功能](/Windows/powershell%20开启补全功能.md)
+* [powershell 启动加速](/Windows/powershell%20启动加速.md)
+* [windows查找端口占用](/Windows/windows查找端口占用.md)
+* [windows建立软链接](/Windows/windows建立软链接.md)
+* [winget 国内源](/Windows/winget%20国内源.md)
+* [创建自启动的Windows Service程序](/Windows/创建自启动的Windows%20Service程序.md)
+* [右键菜单添加“通过xxx打开”](/Windows/右键菜单添加%E2%80%9C通过xxx打开%E2%80%9D.md)
+* [右键用windows terminal打开当前目录](/Windows/右键用windows%20terminal打开当前目录.md)
+
 ## 领域知识-DomainKnowledge
 
 ### 图形学
@@ -267,17 +278,6 @@
 * [Ubuntu安装blender](/软件工具应用-Applications/Blender/Ubuntu安装blender.md)
 * [通过脚本安装和启用插件(add-on)](/软件工具应用-Applications/Blender/通过脚本安装和启用插件%28add-on%29.md)
 * [无GUI启动blender](/软件工具应用-Applications/Blender/无GUI启动blender.md)
-
-### Windows
-
-* [powershell 开启补全功能](/软件工具应用-Applications/Windows/powershell%20开启补全功能.md)
-* [powershell 启动加速](/软件工具应用-Applications/Windows/powershell%20启动加速.md)
-* [windows查找端口占用](/软件工具应用-Applications/Windows/windows查找端口占用.md)
-* [windows建立软链接](/软件工具应用-Applications/Windows/windows建立软链接.md)
-* [winget 国内源](/软件工具应用-Applications/Windows/winget%20国内源.md)
-* [创建自启动的Windows Service程序](/软件工具应用-Applications/Windows/创建自启动的Windows%20Service程序.md)
-* [右键菜单添加“通过xxx打开”](/软件工具应用-Applications/Windows/右键菜单添加%E2%80%9C通过xxx打开%E2%80%9D.md)
-* [右键用windows terminal打开当前目录](/软件工具应用-Applications/Windows/右键用windows%20terminal打开当前目录.md)
 
 ### MacOS
 
