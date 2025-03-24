@@ -121,7 +121,7 @@ poetry install --no-root
 poetry update
 ```
 
-### 4 - 虚拟环境
+## 4 - 虚拟环境
 
 默认情况下，poetry 会创建虚拟环境到 `{cache-dir}/virtualenvs` 目录下。
 
@@ -141,7 +141,7 @@ poetry update
   + 一行命令激活: `source $(poetry env info --path)/bin/activate`
 + 通过 `deactivate` 命令退出虚拟环境
 
-### 5 - 运行脚本与命令
+## 5 - 运行脚本与命令
 
 ```bash
 poetry run python my-script.py
@@ -150,3 +150,75 @@ poetry run ruff check .
 ```
 
 如果使用并激活了其他虚拟环境，则不需要使用 `poetry run` 命令，直接使用 `python my-script.py` 即可。
+
+## 6 - 与 pre-commit 集成
+
+poetry 提供了如下 pre-commit hooks:
+
+### 6.1 poetry-check
+
+`poetry-check` hook 执行 `poetry check` 命令，确保 poetry 配置不会以损坏的状态提交。
+
+### 6.2 poetry-lock
+
+`poetry-lock` hook 执行 `poetry lock` 命令，确保 `poetry.lock` 文件是最新的。
+
+### 6.3 poetry-export
+
+`poetry-export` hook 执行 `poetry export` 命令，将依赖项导出到指定文件中。
+
+#### 6.3.1 安装插件
+
+"poetry>=2.0"版本默认不含 export 命令，需要安装插件 [Poetry Plugin: Export](https://github.com/python-poetry/poetry-plugin-export)。
+
+安装方式:
+
+```toml
+# pyproject.toml
+# requires poetry >= 2.0
+[tool.poetry.requires-plugins]
+poetry-plugin-export = ">=1.8"
+```
+
+命令行安装:
+
+```bash
+poetry self add poetry-plugin-export
+# 如果 poetry 是通过 pipx 安装的
+pipx inject poetry poetry-plugin-export
+# 如果 poetry 是通过 pip 安装的
+pip install poetry-plugin-export
+```
+
+#### 6.3.2 配置参数
+
+默认使用如下参数（以 `requirements.txt` 格式输出到控制台）：
+
+```yaml
+# .pre-commit-config.yaml
+hooks:
+- id: poetry-export
+  args: ["-f", "requirements.txt"]
+```
+
+可以通过 `args` 参数指定其他参数，如:
+
+```yaml
+# .pre-commit-config.yaml
+hooks:
+- id: poetry-export
+  args: ["--with", "dev", "-f", "requirements.txt", "-o", "requirements.txt"]
+  verbose: true
+```
+
+`verbose: true`: 同时将文件输出到控制台。
+
++ `--format` (`-f`): 导出格式 (默认: `requirements.txt`)。 目前只支持 `constraints.txt` 和 `requirements.txt` 格式。
++ `--output` (`-o`): 输出文件 (默认: 输出到 stdout)。
++ `--with`: 包含可选和非可选的依赖组。默认情况下，仅包含主要依赖项。
++ `--only`: 仅包含指定的依赖组。可以通过这种方式排除主要组。
++ `--extras` (`-E`): 包含指定的额外依赖项。
++ `--all-extras`: 包含所有额外依赖项。
++ `--all-groups`: 包含所有依赖组。
++ `--without-hashes`: 排除导出文件中的哈希。
++ `--with-credentials`: 包含额外索引的凭据。
