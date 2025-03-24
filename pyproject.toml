@@ -19,14 +19,17 @@ classifiers = [
 ]
 keywords = []
 
+[project.scripts]
+update-toc = "cli:update_toc.main"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 requires-poetry = ">=2.0,<3.0"
-package-mode = false
-packages = [{ include = "scripts", from = "." }]
+# package-mode = false
+packages = [{ include = "cli", from = "." }]
 
 [tool.poetry.dependencies]
 python = ">=3.11,<3.13"
@@ -38,5 +41,5 @@ rich = "^13.9.4"
 pydantic-settings = "^2.7.1"
 
 [tool.poetry.group.dev.dependencies]
-ruff = "^0.9.1"
-pre-commit = "^4.0.1"
+ruff = "^0.11.2"
+pre-commit = "^4.1.0"

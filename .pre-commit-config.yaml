@@ -1,0 +1,18 @@
+repos:
+- repo: https://github.com/astral-sh/ruff-pre-commit
+  # Ruff version.
+  rev: v0.11.2
+  hooks:
+    # Run the linter.
+    - id: ruff
+      args: [ --fix ]
+    # Run the formatter.
+    - id: ruff-format
+- repo: local
+  hooks:
+    - id: update-toc
+      name: Update TOC
+      entry: poetry run update-toc
+      language: system
+      files: ^cli/.*\.py$
+      pass_filenames: false

@@ -37,5 +37,5 @@ pnpm docs:preview
 更新文档目录: `docs/toc.md` 文件和 `docs/structure.json` 文件
 
 ```bash
-python -m cli.update_toc
+poetry run update-toc
 ```
