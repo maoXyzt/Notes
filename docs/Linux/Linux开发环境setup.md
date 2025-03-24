@@ -54,7 +54,7 @@ sudo apt-get install autoconf automake build-essential \
 
 ### 1.7 配置全局 gitignore
 
-- 配置方法: [global gitignore](https://github.com/maoXyzt/Notes/blob/master/docs/Programming/Git/global%20gitignore.md)
+- 配置方法: [global gitignore](../编程开发-Programming/Git/global%20gitignore.md)
 
 ## 2 - 可选依赖
 
