@@ -55,13 +55,13 @@ poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry
 
 ## 2 - 项目管理
 
-### 创建项目
+### 2.1 创建项目
 
 ```bash
 poetry new my-project
 ```
 
-### Python 版本管理
+### 2.2 Python 版本管理
 
 在 `pyproject.toml` 中指定 Python 版本 (支持的最小版本为 3.7.0):
 
@@ -70,13 +70,13 @@ poetry new my-project
 python = "^3.7.0"
 ```
 
-### 在已有项目中初始化 poetry
+### 2.3 在已有项目中初始化 poetry
 
 ```bash
 poetry init
 ```
 
-### 运行模式
+### 2.4 运行模式
 
 默认为 package 模式。
 
@@ -93,26 +93,36 @@ package-mode = false
 
 ## 3 - 依赖管理
 
-### 在 `pyproject.toml` 中指定依赖
+### 3.1 在 `pyproject.toml` 中指定依赖
 
 ```bash
 [tool.poetry.dependencies]
 pendulum = "^2.1"
 ```
 
-### 命令添加依赖
+### 3.2 命令添加依赖
 
 ```bash
 poetry add pendulum
+# 安装 dev 依赖
+poetry add --group=dev typer
 ```
 
-### 安装依赖
+### 3.3 安装依赖
 
 ```bash
 # package 模式 (默认) 时，会以 editable (-e) 模式安装当前项目
 poetry install
-# 仅安装依赖
+# 仅安装依赖，不安装当前项目
 poetry install --no-root
+# 安装 dev 依赖
+poetry install --with dev
+```
+
+更新 `poetry.lock` 文件:
+
+```bash
+poetry lock
 ```
 
 升级依赖 (会无视 `poetry.lock` 文件):
@@ -169,9 +179,11 @@ poetry 提供了如下 pre-commit hooks:
 
 #### 6.3.1 安装插件
 
-"poetry>=2.0"版本默认不含 export 命令，需要安装插件 [Poetry Plugin: Export](https://github.com/python-poetry/poetry-plugin-export)。
+"poetry>=2.0" 版本默认不含 export 命令，需要安装插件 [Poetry Plugin: Export](https://github.com/python-poetry/poetry-plugin-export)。
 
-安装方式:
+在以下两种方式中选择一种安装插件。
+
+通过 `pyproject.toml` 安装插件:
 
 ```toml
 # pyproject.toml
@@ -180,13 +192,13 @@ poetry 提供了如下 pre-commit hooks:
 poetry-plugin-export = ">=1.8"
 ```
 
-命令行安装:
+通过命令行安装插件:
 
 ```bash
 poetry self add poetry-plugin-export
-# 如果 poetry 是通过 pipx 安装的
+# 如果 poetry 是通过 pipx 安装的:
 pipx inject poetry poetry-plugin-export
-# 如果 poetry 是通过 pip 安装的
+# 如果 poetry 是通过 pip 安装的:
 pip install poetry-plugin-export
 ```
 
