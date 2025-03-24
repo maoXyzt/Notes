@@ -19,6 +19,7 @@
         "unplugin",
         "vitepress",
         "Wallos",
-        "winget"
+        "winget",
+        "zotero"
     ]
 }
