@@ -1,3 +1,5 @@
+# Ubuntu 安装blender
+
 ## snap安装
 
 ```bash
@@ -21,7 +23,7 @@ sudo ppa-purge ppa:thomas-schiex/blender
 
 ## 编译安装
 
->  [Building Blender/Linux/Ubuntu - Blender Developer Wiki](https://wiki.blender.org/wiki/Building_Blender/Linux/Ubuntu)
+> [Building Blender/Linux/Ubuntu - Blender Developer Wiki](https://wiki.blender.org/wiki/Building_Blender/Linux/Ubuntu)
 
 ### Install Packages
 
@@ -93,4 +95,3 @@ sudo apt install nvidia-cuda-dev
 ```bash
 CC=gcc-9 CPP=g++-9 CXX=g++-9 LD=g++-9
 ```
-

@@ -10,7 +10,7 @@
             "link": "/Linux/CentOS/CentOS 7 lvm分区扩容.md"
           },
           {
-            "text": "CentOS 7 安装升级Git版本",
+            "text": "CentOS 7 安装/升级 Git 版本",
             "link": "/Linux/CentOS/CentOS 7 安装升级Git版本.md"
           },
           {
@@ -18,7 +18,7 @@
             "link": "/Linux/CentOS/CentOS 7 常用工具包安装.md"
           },
           {
-            "text": "CentOS 7 开放端口",
+            "text": "CentOS 7 防火墙开放端口",
             "link": "/Linux/CentOS/CentOS 7 开放端口.md"
           },
           {
@@ -44,7 +44,7 @@
             "link": "/Linux/nginx/nginx 配置常见问题.md"
           },
           {
-            "text": "nginx 隐藏响应头的版本信息(header的server字段)",
+            "text": "nginx 隐藏响应头中的版本信息",
             "link": "/Linux/nginx/nginx 隐藏响应头的版本信息(header的server字段).md"
           },
           {
@@ -58,34 +58,34 @@
         "text": "SSH",
         "items": [
           {
-            "text": "sshfs命令简易挂载远程目录",
+            "text": "使用 `sshfs` 命令简易挂载远程目录",
             "link": "/Linux/SSH/sshfs命令简易挂载远程目录.md"
           },
           {
-            "text": "ssh开启隧道",
+            "text": "SSH 开启隧道",
             "link": "/Linux/SSH/ssh开启隧道.md"
           },
           {
-            "text": "SSH配置心跳信号防止断开连接",
+            "text": "SSH 配置心跳信号防止断开连接",
             "link": "/Linux/SSH/SSH配置心跳信号防止断开连接.md"
           },
           {
-            "text": "创建SSH密钥对并使用密钥登录",
+            "text": "创建 SSH 密钥对并使用密钥登录",
             "link": "/Linux/SSH/创建SSH密钥对并使用密钥登录.md"
           }
         ],
         "collapsed": false
       },
       {
-        "text": "awscli使用指南",
+        "text": "awscli 使用指南",
         "link": "/Linux/awscli使用指南.md"
       },
       {
-        "text": "convmv命令解决GBK中文文件名乱码",
+        "text": "convmv 命令解决 GBK 中文文件名乱码",
         "link": "/Linux/convmv命令解决GBK中文文件名乱码.md"
       },
       {
-        "text": "Linux Shell输出重定向并后台执行",
+        "text": "Linux Shell 输出重定向并后台执行",
         "link": "/Linux/Linux Shell输出重定向并后台执行.md"
       },
       {
@@ -93,80 +93,126 @@
         "link": "/Linux/Linux 实时内存监控.md"
       },
       {
-        "text": "Linux传输超大文件",
+        "text": "Linux 传输超大文件",
         "link": "/Linux/Linux传输超大文件.md"
       },
       {
-        "text": "Linux环境变量设置env, set, export",
+        "text": "Linux 环境变量设置：env, set, export",
         "link": "/Linux/Linux环境变量设置env, set, export.md"
       },
       {
-        "text": "Linux开发环境setup",
+        "text": "Linux 开发环境 setup",
         "link": "/Linux/Linux开发环境setup.md"
       },
       {
-        "text": "Linux批量杀死进程",
+        "text": "Linux 批量杀死进程",
         "link": "/Linux/Linux批量杀死进程.md"
       },
       {
-        "text": "Linux搜索所有文件中的内容",
+        "text": "Linux 搜索所有文件中的内容",
         "link": "/Linux/Linux搜索所有文件中的内容.md"
       },
       {
-        "text": "Linux系统访问NAS的文件服务(samba)",
+        "text": "Linux 系统访问 NAS 的文件服务(samba)",
         "link": "/Linux/Linux系统访问NAS的文件服务(samba).md"
       },
       {
-        "text": "Linux下多线程下载工具 - Axel",
+        "text": "Linux 下多线程下载工具 - Axel",
         "link": "/Linux/Linux下多线程下载工具 - Axel.md"
       },
       {
-        "text": "Linux新建用户",
+        "text": "Linux 新建用户",
         "link": "/Linux/Linux新建用户.md"
       },
       {
-        "text": "Linux修改默认shell",
+        "text": "Linux 修改默认 shell",
         "link": "/Linux/Linux修改默认shell.md"
       },
       {
-        "text": "Mackup 同步linux配置",
+        "text": "Mackup 同步 linux 配置",
         "link": "/Linux/Mackup 同步linux配置.md"
       },
       {
-        "text": "Neovim安装与配置",
+        "text": "Neovim 安装与配置",
         "link": "/Linux/Neovim安装与配置.md"
       },
       {
-        "text": "TCP&UDP端口连通性测试",
+        "text": "TCP & UDP 端口连通性测试",
         "link": "/Linux/TCP&UDP端口连通性测试.md"
       },
       {
-        "text": "vim插件管理 - vim-plug",
+        "text": "vim 插件管理 - vim-plug",
         "link": "/Linux/vim插件管理 - vim-plug.md"
       },
       {
-        "text": "virtualbox硬盘扩容",
+        "text": "virtualbox 硬盘扩容",
         "link": "/Linux/virtualbox硬盘扩容.md"
       },
       {
-        "text": "zsh常用插件",
+        "text": "ZSH 常用插件",
         "link": "/Linux/zsh常用插件.md"
       },
       {
-        "text": "安装chromedriver",
+        "text": "安装 chromedriver",
         "link": "/Linux/安装chromedriver.md"
       },
       {
-        "text": "下载Google Drive共享的文件",
+        "text": "下载 Google Drive 共享的文件",
         "link": "/Linux/下载Google Drive共享的文件.md"
       },
       {
-        "text": "指定gcc版本",
+        "text": "运行命令时，指定 GCC 版本",
         "link": "/Linux/指定gcc版本.md"
       },
       {
-        "text": "自签名SSL证书",
+        "text": "使用 OpenSSL 生成自签名 SSL 证书",
         "link": "/Linux/自签名SSL证书.md"
+      }
+    ],
+    "collapsed": false
+  },
+  {
+    "text": "Windows",
+    "items": [
+      {
+        "text": "Windows",
+        "link": "/Windows/"
+      },
+      {
+        "text": "powershell 开启补全功能",
+        "link": "/Windows/powershell 开启补全功能.md"
+      },
+      {
+        "text": "powershell 加速启动",
+        "link": "/Windows/powershell 启动加速.md"
+      },
+      {
+        "text": "Windows 平台好用的软件推荐",
+        "link": "/Windows/windows 平台好用的软件推荐.md"
+      },
+      {
+        "text": "windows 查找端口占用",
+        "link": "/Windows/windows查找端口占用.md"
+      },
+      {
+        "text": "windows 建立软链接",
+        "link": "/Windows/windows建立软链接.md"
+      },
+      {
+        "text": "winget 国内源",
+        "link": "/Windows/winget 国内源.md"
+      },
+      {
+        "text": "创建自启动的 Windows Service 程序",
+        "link": "/Windows/创建自启动的Windows Service程序.md"
+      },
+      {
+        "text": "右键菜单添加 “通过 xxx 打开”",
+        "link": "/Windows/右键菜单添加“通过xxx打开”.md"
+      },
+      {
+        "text": "右键用 windows terminal 打开当前目录",
+        "link": "/Windows/右键用windows terminal打开当前目录.md"
       }
     ],
     "collapsed": false
@@ -181,40 +227,36 @@
             "text": "pandas",
             "items": [
               {
-                "text": "pandas按时间聚合数据的resample函数",
+                "text": "pandas 按时间聚合数据: resample 方法",
                 "link": "/编程开发-Programming/Python/pandas/pandas按时间聚合数据的resample函数.md"
               },
               {
-                "text": "pandas按指定顺序对MulitIndex的某一级进行排序",
+                "text": "pandas 按指定顺序对 MultiIndex 的某一级进行排序: reindex 方法",
                 "link": "/编程开发-Programming/Python/pandas/pandas按指定顺序对MulitIndex的某一级进行排序.md"
               },
               {
-                "text": "pandas扩充行",
+                "text": "pandas 扩充行",
                 "link": "/编程开发-Programming/Python/pandas/pandas扩充行.md"
               },
               {
-                "text": "pandas如何将NaN替换为None（DataFrame.where方法）",
-                "link": "/编程开发-Programming/Python/pandas/pandas如何将NaN替换为None（DataFrame.where方法）.md"
+                "text": "pandas 如何将 NaN 替换为 None: where 和 mask 方法",
+                "link": "/编程开发-Programming/Python/pandas/pandas如何将NaN替换为None.md"
               },
               {
-                "text": "pandas时间处理之offsets",
+                "text": "pandas 时间处理：offsets",
                 "link": "/编程开发-Programming/Python/pandas/pandas时间处理之offsets.md"
               },
               {
-                "text": "pandas时间处理之将时间转为月末日期",
+                "text": "pandas时间处理：将时间转为月末日期",
                 "link": "/编程开发-Programming/Python/pandas/pandas时间处理之将时间转为月末日期.md"
               },
               {
-                "text": "pandas时间处理：to_datetime和时区",
+                "text": "pandas 时间处理：to_datetime 和时区",
                 "link": "/编程开发-Programming/Python/pandas/pandas时间处理：to_datetime和时区.md"
               },
               {
-                "text": "pandas数据聚合：Grouper与agg",
+                "text": "pandas 数据聚合：Grouper 与 agg",
                 "link": "/编程开发-Programming/Python/pandas/pandas数据聚合：Grouper与agg.md"
-              },
-              {
-                "text": "pandas数据透视",
-                "link": "/编程开发-Programming/Python/pandas/pandas数据透视.md"
               }
             ],
             "collapsed": true
@@ -223,16 +265,20 @@
             "text": "Flask",
             "items": [
               {
-                "text": "Flask app实例化和初始化",
+                "text": "Flask",
+                "link": "/编程开发-Programming/Python/Flask/"
+              },
+              {
+                "text": "Flask app 的实例化和初始化",
                 "link": "/编程开发-Programming/Python/Flask/Flask app实例化和初始化.md"
               },
               {
-                "text": "Flask源码",
-                "link": "/编程开发-Programming/Python/Flask/Flask源码.md"
+                "text": "Flask 的蓝图(Blueprint)原理",
+                "link": "/编程开发-Programming/Python/Flask/Flask的蓝图Blueprint原理.md"
               },
               {
-                "text": "Flask源码阅读",
-                "link": "/编程开发-Programming/Python/Flask/Flask源码阅读.md"
+                "text": "Flask 扩展的初始化",
+                "link": "/编程开发-Programming/Python/Flask/Flask扩展的初始化.md"
               }
             ],
             "collapsed": true
@@ -241,11 +287,11 @@
             "text": "pytorch",
             "items": [
               {
-                "text": "01-Tensor-数据操作",
+                "text": "Tensor 数据操作",
                 "link": "/编程开发-Programming/Python/pytorch/01-Tensor-数据操作.md"
               },
               {
-                "text": "02-autograd-自动求梯度",
+                "text": "autograd 自动求梯度",
                 "link": "/编程开发-Programming/Python/pytorch/02-autograd-自动求梯度.md"
               }
             ],
@@ -255,7 +301,7 @@
             "text": "supervisor",
             "items": [
               {
-                "text": "supervisor的安装与基本命令",
+                "text": "supervisor 的安装与基本命令",
                 "link": "/编程开发-Programming/Python/supervisor/supervisor的安装与基本命令.md"
               }
             ],
@@ -265,14 +311,14 @@
             "text": "tensorflow",
             "items": [
               {
-                "text": "TensorFlow中关于pad函数的详细理解",
+                "text": "Tensorflow 中关于 pad 函数的详细理解",
                 "link": "/编程开发-Programming/Python/tensorflow/TensorFlow中关于pad函数的详细理解.md"
               }
             ],
             "collapsed": true
           },
           {
-            "text": "alembic基本命令",
+            "text": "alembic 基本命令",
             "link": "/编程开发-Programming/Python/alembic基本命令.md"
           },
           {
@@ -280,11 +326,11 @@
             "link": "/编程开发-Programming/Python/conda 换源.md"
           },
           {
-            "text": "Cython中使用C++",
+            "text": "在 Cython 中使用 C++",
             "link": "/编程开发-Programming/Python/Cython中使用C++.md"
           },
           {
-            "text": "jupyter 服务部署",
+            "text": "Jupyter 服务部署",
             "link": "/编程开发-Programming/Python/jupyter 服务部署.md"
           },
           {
@@ -292,11 +338,11 @@
             "link": "/编程开发-Programming/Python/pip 命令换源.md"
           },
           {
-            "text": "Poetry的基本使用",
+            "text": "Poetry 的基本使用",
             "link": "/编程开发-Programming/Python/Poetry的基本使用.md"
           },
           {
-            "text": "python ftplib SSLEOFERROR解决方案",
+            "text": "python ftplib SSLEOFERROR 解决方案",
             "link": "/编程开发-Programming/Python/python ftplib SSLEOFERROR解决方案.md"
           },
           {
@@ -304,35 +350,35 @@
             "link": "/编程开发-Programming/Python/Python3 基本数据类型.md"
           },
           {
-            "text": "python脚本获取自身当前路径的正确方法",
+            "text": "Python 脚本中获取脚本文件自身的路径",
             "link": "/编程开发-Programming/Python/python脚本获取自身当前路径的正确方法.md"
           },
           {
-            "text": "python通过ssh连接数据库",
+            "text": "python 通过 ssh 连接数据库",
             "link": "/编程开发-Programming/Python/python通过ssh连接数据库.md"
           },
           {
-            "text": "python字符串编码",
+            "text": "python 字符串编码",
             "link": "/编程开发-Programming/Python/python字符串编码.md"
           },
           {
-            "text": "SQLAlchemy操作数据的方法",
+            "text": "SQLAlchemy 与数据库交互的方式",
             "link": "/编程开发-Programming/Python/SQLAlchemy操作数据的方法.md"
           },
           {
-            "text": "win10系统下安装pycrypto包的方法",
+            "text": "win10 系统下安装 pycrypto 包的方法",
             "link": "/编程开发-Programming/Python/win10系统下安装pycrypto包的方法.md"
           },
           {
-            "text": "win环境下print时的UnicodeEncodingError",
+            "text": "win 环境下 print 时的 UnicodeEncodingError",
             "link": "/编程开发-Programming/Python/win环境下print时的UnicodeEncodingError.md"
           },
           {
-            "text": "xlrd读取excel文件",
+            "text": "Python 用 xlrd 读取 Excel 文件",
             "link": "/编程开发-Programming/Python/xlrd读取excel文件.md"
           },
           {
-            "text": "不退出python进程的情况下删除.pyd文件",
+            "text": "不退出 python 进程的情况下删除 .pyd 文件",
             "link": "/编程开发-Programming/Python/不退出python进程的情况下删除.pyd文件.md"
           },
           {
@@ -340,11 +386,11 @@
             "link": "/编程开发-Programming/Python/用 Nuitka 编译 python 代码.md"
           },
           {
-            "text": "用gbd调试python core dump",
+            "text": "用 gdb 调试 python core dump",
             "link": "/编程开发-Programming/Python/用gbd调试python core dump.md"
           },
           {
-            "text": "自动获取双因子登录验证码——OTP, HOTP, TOTP 基本原理",
+            "text": "自动获取双因子登录验证码: OTP, HOTP, TOTP 基本原理",
             "link": "/编程开发-Programming/Python/自动获取双因子登录验证码——OTP, HOTP, TOTP 基本原理.md"
           }
         ],
@@ -361,7 +407,7 @@
                 "link": "/编程开发-Programming/Database/PostgreSQL/"
               },
               {
-                "text": "PG - INSERT ON CONFLICT (UPSERT)语法",
+                "text": "PostgreSQL 的 INSERT ON CONFLICT (UPSERT) 语法",
                 "link": "/编程开发-Programming/Database/PostgreSQL/PG - INSERT ON CONFLICT (UPSERT)语法.md"
               },
               {
@@ -369,35 +415,35 @@
                 "link": "/编程开发-Programming/Database/PostgreSQL/PG - UPDATE SET FROM.md"
               },
               {
-                "text": "PG Null值排序顺序",
+                "text": "PG Null 值排序顺序",
                 "link": "/编程开发-Programming/Database/PostgreSQL/PG Null值排序顺序.md"
               },
               {
-                "text": "PG把多行拼接为字符串",
+                "text": "PostgreSQL 把多行拼接为字符串",
                 "link": "/编程开发-Programming/Database/PostgreSQL/PG把多行拼接为字符串.md"
               },
               {
-                "text": "PG编写触发器",
+                "text": "PostgreSQL 编写触发器",
                 "link": "/编程开发-Programming/Database/PostgreSQL/PG编写触发器.md"
               },
               {
-                "text": "PG断开所有连接",
+                "text": "PG 断开所有连接",
                 "link": "/编程开发-Programming/Database/PostgreSQL/PG断开所有连接.md"
               },
               {
-                "text": "PG服务安装",
+                "text": "PostgreSQL 服务安装",
                 "link": "/编程开发-Programming/Database/PostgreSQL/PG服务安装.md"
               },
               {
-                "text": "PG设置自增序列值",
+                "text": "PG 设置自增序列值",
                 "link": "/编程开发-Programming/Database/PostgreSQL/PG设置自增序列值.md"
               },
               {
-                "text": "PG实现partial unique constraint",
+                "text": "PostgreSQL 实现 Partial Unique Constraint",
                 "link": "/编程开发-Programming/Database/PostgreSQL/PG实现partial unique constraint.md"
               },
               {
-                "text": "PG数据库创建USER、DATABASE、SCHEMA、TABLE",
+                "text": "PG 数据库创建 USER、DATABASE、SCHEMA、TABLE",
                 "link": "/编程开发-Programming/Database/PostgreSQL/PG数据库创建USER、DATABASE、SCHEMA、TABLE.md"
               },
               {
@@ -405,19 +451,19 @@
                 "link": "/编程开发-Programming/Database/PostgreSQL/PG数据库创建只读权限的用户.md"
               },
               {
-                "text": "PG数据库文件路径迁移",
+                "text": "PostgreSQL 数据库文件路径迁移",
                 "link": "/编程开发-Programming/Database/PostgreSQL/PG数据库文件路径迁移.md"
               },
               {
-                "text": "PG数据库允许远程连接",
+                "text": "PG 数据库运行远程连接",
                 "link": "/编程开发-Programming/Database/PostgreSQL/PG数据库允许远程连接.md"
               },
               {
-                "text": "PG用户管理",
+                "text": "PostgresSQL 用户管理",
                 "link": "/编程开发-Programming/Database/PostgreSQL/PG用户管理.md"
               },
               {
-                "text": "psql客户端常用命令",
+                "text": "`psql` 客户端常用命令",
                 "link": "/编程开发-Programming/Database/PostgreSQL/psql客户端常用命令.md"
               }
             ],
@@ -445,11 +491,11 @@
             "text": "Redis",
             "items": [
               {
-                "text": "Redis缓存雪崩、缓存穿透、缓存击穿",
+                "text": "Redis 缓存雪崩、缓存穿透、缓存击穿",
                 "link": "/编程开发-Programming/Database/Redis/Redis缓存雪崩、缓存穿透、缓存击穿.md"
               },
               {
-                "text": "Redis基本操作",
+                "text": "Redis 基本操作",
                 "link": "/编程开发-Programming/Database/Redis/Redis基本操作.md"
               }
             ],
@@ -459,7 +505,7 @@
             "text": "CouchDB",
             "items": [
               {
-                "text": "CouchDB安装",
+                "text": "CouchDB 安装",
                 "link": "/编程开发-Programming/Database/CouchDB/CouchDB安装.md"
               }
             ],
@@ -469,26 +515,26 @@
             "text": "SQLite",
             "items": [
               {
-                "text": "SQLite数据库文件损坏修复",
+                "text": "SQLite 数据库文件损坏修复",
                 "link": "/编程开发-Programming/Database/SQLite/SQLite数据库文件损坏修复.md"
               }
             ],
             "collapsed": true
           },
           {
-            "text": "SQL查询每个分组的前N条数据",
+            "text": "SQL 查询每个分组的前 N 条数据",
             "link": "/编程开发-Programming/Database/SQL查询每个分组的前N条数据.md"
           },
           {
-            "text": "SQL查询优化经验",
+            "text": "SQL 查询优化经验",
             "link": "/编程开发-Programming/Database/SQL查询优化经验.md"
           },
           {
-            "text": "SQL批量从A表插入数据到B表",
+            "text": "SQL 批量从 A 表插入数据到 B 表",
             "link": "/编程开发-Programming/Database/SQL批量从A表插入数据到B表.md"
           },
           {
-            "text": "SQL中EXISTS和IN语句的区别",
+            "text": "SQL 中 EXISTS 和 IN 语句的区别",
             "link": "/编程开发-Programming/Database/SQL中EXISTS和IN语句的区别.md"
           }
         ],
@@ -505,31 +551,31 @@
                 "link": "/编程开发-Programming/Frontend/Vue3/"
               },
               {
-                "text": "Vue3 PostCSS配置",
+                "text": "Vue3 PostCSS 配置",
                 "link": "/编程开发-Programming/Frontend/Vue3/Vue3 PostCSS配置.md"
               },
               {
-                "text": "Vue3 UnoCSS安装和配置",
+                "text": "Vue3 UnoCSS 安装和配置",
                 "link": "/编程开发-Programming/Frontend/Vue3/Vue3 UnoCSS安装和配置.md"
               },
               {
-                "text": "Vue3,Vite配置base路径后，编译结果为空页面",
+                "text": "Vue3, Vite 配置 base 路径后，编译结果为空页面",
                 "link": "/编程开发-Programming/Frontend/Vue3/Vue3,Vite配置base路径后，编译结果为空页面.md"
               },
               {
-                "text": "Vue3项目Setup",
+                "text": "Vue3 项目 Setup",
                 "link": "/编程开发-Programming/Frontend/Vue3/Vue3项目Setup.md"
               },
               {
-                "text": "Vue3项目Vite配置",
+                "text": "Vue3 项目 Vite 配置",
                 "link": "/编程开发-Programming/Frontend/Vue3/Vue3项目Vite配置.md"
               },
               {
-                "text": "Vue3项目配置Lint&Format规则(EsLint&Prettier)",
+                "text": "Vue3 项目配置 Lint & Format 规则 (EsLint & Prettier)",
                 "link": "/编程开发-Programming/Frontend/Vue3/Vue3项目配置Lint&Format规则(EsLint&Prettier).md"
               },
               {
-                "text": "Vue3自动按需引入组件(unplugin-vue-components)",
+                "text": "Vue3 自动按需引入组件（unplugin-vue-components）",
                 "link": "/编程开发-Programming/Frontend/Vue3/Vue3自动按需引入组件(unplugin-vue-components).md"
               }
             ],
@@ -546,11 +592,11 @@
             "collapsed": true
           },
           {
-            "text": "Husky-配置前端项目的git hooks",
+            "text": "Husky: 配置前端项目的 git hooks",
             "link": "/编程开发-Programming/Frontend/Husky-配置前端项目的git hooks.md"
           },
           {
-            "text": "Node.js 安装",
+            "text": "安装 Node.js",
             "link": "/编程开发-Programming/Frontend/Node.js 安装.md"
           },
           {
@@ -558,7 +604,7 @@
             "link": "/编程开发-Programming/Frontend/openapi-generator 生成前端请求代码.md"
           },
           {
-            "text": "VitePress插件",
+            "text": "VitePress 插件",
             "link": "/编程开发-Programming/Frontend/VitePress插件.md"
           }
         ],
@@ -568,15 +614,15 @@
         "text": "Git",
         "items": [
           {
-            "text": "git error - connection closed",
+            "text": "git Error: Connection closed by 20.205.243.166 port 22",
             "link": "/编程开发-Programming/Git/git error - connection closed.md"
           },
           {
-            "text": "git prune, git remote prune, git fetch",
+            "text": "git prune, git remote prune, git fetch --prune 三者异同",
             "link": "/编程开发-Programming/Git/git prune, git remote prune, git fetch.md"
           },
           {
-            "text": "git subtree",
+            "text": "使用 Git Subtree 同步子项目",
             "link": "/编程开发-Programming/Git/git subtree.md"
           },
           {
@@ -584,11 +630,11 @@
             "link": "/编程开发-Programming/Git/Git 多个账号用不同私钥登录.md"
           },
           {
-            "text": "git 配置对文件名大小写敏感",
+            "text": "Git 配置文件大小写写敏感",
             "link": "/编程开发-Programming/Git/git 配置对文件名大小写敏感.md"
           },
           {
-            "text": "global gitignore",
+            "text": "Global gitignore",
             "link": "/编程开发-Programming/Git/global gitignore.md"
           }
         ],
@@ -598,15 +644,15 @@
         "text": "Go",
         "items": [
           {
-            "text": "Go基本命令",
-            "link": "/编程开发-Programming/Go/Go基本命令.md"
+            "text": "Go语言编译与工具",
+            "link": "/编程开发-Programming/Go/Go语言编译与工具.md"
           },
           {
-            "text": "Linux下Go环境安装",
+            "text": "Linux下安装Go环境",
             "link": "/编程开发-Programming/Go/Linux下Go环境安装.md"
           },
           {
-            "text": "下载golang.org的包",
+            "text": "如何下载 golang.org 的包",
             "link": "/编程开发-Programming/Go/下载golang.org的包.md"
           }
         ],
@@ -645,7 +691,7 @@
                 "link": "/编程开发-Programming/容器化/Docker/Docker 创建 volume.md"
               },
               {
-                "text": "Docker 配置镜像源(registry-mirrors)",
+                "text": "Docker 配置镜像源(registry mirrors)",
                 "link": "/编程开发-Programming/容器化/Docker/Docker 配置镜像源(registry-mirrors).md"
               },
               {
@@ -653,31 +699,31 @@
                 "link": "/编程开发-Programming/容器化/Docker/Docker 容器 labels.md"
               },
               {
-                "text": "Docker 容器权限设置--cap-add,--cap-drop,--privileges",
+                "text": "Docker 容器权限设置 --cap-add, --cap-drop, --privileges",
                 "link": "/编程开发-Programming/容器化/Docker/Docker 容器权限设置--cap-add,--cap-drop,--privileges.md"
               },
               {
-                "text": "Docker常用命令",
+                "text": "docker 常用命令",
                 "link": "/编程开发-Programming/容器化/Docker/Docker常用命令.md"
               },
               {
-                "text": "Docker镜像alpine,slim,bullseye,bookeworm,noble等的区别",
+                "text": "Docker 镜像 alpine, slim, bullseye, bookeworm, noble 等的区别",
                 "link": "/编程开发-Programming/容器化/Docker/Docker镜像alpine,slim,bullseye,bookeworm,noble等的区别.md"
               },
               {
-                "text": "Docker配置代理",
+                "text": "Docker 配置代理",
                 "link": "/编程开发-Programming/容器化/Docker/Docker配置代理.md"
               },
               {
-                "text": "Docker容器中的用户权限控制",
+                "text": "Docker 容器中的权限控制",
                 "link": "/编程开发-Programming/容器化/Docker/Docker容器中的用户权限控制.md"
               },
               {
-                "text": "给非root用户运行docker的权限",
+                "text": "给非 root 用户运行 docker 命令的权限",
                 "link": "/编程开发-Programming/容器化/Docker/给非root用户运行docker的权限.md"
               },
               {
-                "text": "理解Docker的CPU使用率",
+                "text": "理解 Docker 的 CPU 使用率",
                 "link": "/编程开发-Programming/容器化/Docker/理解Docker的CPU使用率.md"
               }
             ],
@@ -687,7 +733,7 @@
             "text": "Kubernetes",
             "items": [
               {
-                "text": "k8s集群搭建",
+                "text": "k8s 集群搭建",
                 "link": "/编程开发-Programming/容器化/Kubernetes/k8s集群搭建.md"
               }
             ],
@@ -710,49 +756,11 @@
         "text": "代码质量-CodeQuality",
         "items": [
           {
-            "text": "代码整洁之道-2-有意义的命名",
+            "text": "代码整洁之道 第 2 章 有意义的命名",
             "link": "/编程开发-Programming/代码质量-CodeQuality/代码整洁之道-2-有意义的命名.md"
           }
         ],
         "collapsed": false
-      }
-    ],
-    "collapsed": false
-  },
-  {
-    "text": "Windows",
-    "items": [
-      {
-        "text": "powershell 开启补全功能",
-        "link": "/Windows/powershell 开启补全功能.md"
-      },
-      {
-        "text": "powershell 启动加速",
-        "link": "/Windows/powershell 启动加速.md"
-      },
-      {
-        "text": "windows查找端口占用",
-        "link": "/Windows/windows查找端口占用.md"
-      },
-      {
-        "text": "windows建立软链接",
-        "link": "/Windows/windows建立软链接.md"
-      },
-      {
-        "text": "winget 国内源",
-        "link": "/Windows/winget 国内源.md"
-      },
-      {
-        "text": "创建自启动的Windows Service程序",
-        "link": "/Windows/创建自启动的Windows Service程序.md"
-      },
-      {
-        "text": "右键菜单添加“通过xxx打开”",
-        "link": "/Windows/右键菜单添加“通过xxx打开”.md"
-      },
-      {
-        "text": "右键用windows terminal打开当前目录",
-        "link": "/Windows/右键用windows terminal打开当前目录.md"
       }
     ],
     "collapsed": false
@@ -767,22 +775,22 @@
             "text": "游戏引擎技术及架构",
             "items": [
               {
-                "text": "01-导论",
+                "text": "第一章 导论",
                 "link": "/领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/01-导论.md"
               },
               {
-                "text": "04-游戏所需的三维数学",
+                "text": "第四章 游戏所需的三维数学",
                 "link": "/领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/04-游戏所需的三维数学.md"
               },
               {
-                "text": "11-动画系统",
+                "text": "第11章 动画系统",
                 "link": "/领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/11-动画系统.md"
               }
             ],
             "collapsed": true
           },
           {
-            "text": "OpenGL坐标系统",
+            "text": "OpenGL 坐标系统",
             "link": "/领域知识-DomainKnowledge/图形学/OpenGL坐标系统.md"
           },
           {
@@ -794,11 +802,11 @@
             "link": "/领域知识-DomainKnowledge/图形学/骨骼动画原理.md"
           },
           {
-            "text": "旋转的不同表示方式",
+            "text": "旋转的 4 种表示方式",
             "link": "/领域知识-DomainKnowledge/图形学/旋转的不同表示方式.md"
           },
           {
-            "text": "坐标系&旋转 Conventions",
+            "text": "常用软件的坐标系和旋转 Conventions",
             "link": "/领域知识-DomainKnowledge/图形学/坐标系&旋转 Conventions.md"
           }
         ],
@@ -811,7 +819,7 @@
             "text": "Module 1 - Why Study Networks and Basics on NetworkX",
             "items": [
               {
-                "text": "Why Study Networks and Basics on NetworkX",
+                "text": "01. Networks: Definition and Why We Study Them",
                 "link": "/领域知识-DomainKnowledge/Applied Social Network Analysis in Python/Module 1 - Why Study Networks and Basics on NetworkX/Why Study Networks and Basics on NetworkX.md"
               }
             ],
@@ -821,7 +829,7 @@
             "text": "Module 2 - Network Connectivity",
             "items": [
               {
-                "text": "Network Connectivity",
+                "text": "01. Clustering Coefficient",
                 "link": "/领域知识-DomainKnowledge/Applied Social Network Analysis in Python/Module 2 - Network Connectivity/Network Connectivity.md"
               }
             ],
@@ -831,7 +839,7 @@
             "text": "Module 3 - Influence Measures and Network Centralization",
             "items": [
               {
-                "text": "Influence Measures and Network Centralization",
+                "text": "01. Degree and Closeness Centrality",
                 "link": "/领域知识-DomainKnowledge/Applied Social Network Analysis in Python/Module 3 - Influence Measures and Network Centralization/Influence Measures and Network Centralization.md"
               }
             ],
@@ -841,14 +849,14 @@
             "text": "Module 4 - Network Evolution",
             "items": [
               {
-                "text": "Network Evolution",
+                "text": "01. Preferential Attachment Model",
                 "link": "/领域知识-DomainKnowledge/Applied Social Network Analysis in Python/Module 4 - Network Evolution/Network Evolution.md"
               }
             ],
             "collapsed": true
           },
           {
-            "text": "Syllabus",
+            "text": "Course Syllabus",
             "link": "/领域知识-DomainKnowledge/Applied Social Network Analysis in Python/Syllabus.md"
           }
         ],
@@ -861,31 +869,65 @@
             "text": "动手学深度学习-pytorch版",
             "items": [
               {
-                "text": "01-深度学习简介",
+                "text": "1. 深度学习简介",
                 "link": "/领域知识-DomainKnowledge/Deep Learning/动手学深度学习-pytorch版/01-深度学习简介.md"
               },
               {
-                "text": "03-深度学习基础",
+                "text": "3. 深度学习基础",
                 "link": "/领域知识-DomainKnowledge/Deep Learning/动手学深度学习-pytorch版/03-深度学习基础.md"
               },
               {
-                "text": "04-深度学习计算",
+                "text": "4. 深度学习计算",
                 "link": "/领域知识-DomainKnowledge/Deep Learning/动手学深度学习-pytorch版/04-深度学习计算.md"
               },
               {
-                "text": "05-卷积神经网络",
+                "text": "5. 卷积神经网络",
                 "link": "/领域知识-DomainKnowledge/Deep Learning/动手学深度学习-pytorch版/05-卷积神经网络.md"
               },
               {
-                "text": "06-循环神经网络",
+                "text": "6. 循环神经网络",
                 "link": "/领域知识-DomainKnowledge/Deep Learning/动手学深度学习-pytorch版/06-循环神经网络.md"
               }
             ],
             "collapsed": true
           },
           {
-            "text": "如何评价GAN网络的好坏：IS和FID",
+            "text": "GAN模型的评价指标",
             "link": "/领域知识-DomainKnowledge/Deep Learning/如何评价GAN网络的好坏：IS和FID.md"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "个人服务搭建",
+        "items": [
+          {
+            "text": "NAS",
+            "items": [
+              {
+                "text": "NAS",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/"
+              },
+              {
+                "text": "Home Assistant 系统备份到 NAS",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/homeassistant系统备份到NAS.md"
+              },
+              {
+                "text": "Wallos: 个人订阅服务管理工具",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/Wallos个人订阅服务管理工具.md"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "text": "PVE All-in-One 实践",
+            "items": [
+              {
+                "text": "PVE 系统备份到 NAS(smb)",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/PVE All-in-One 实践/PVE 系统备份备份到NAS(smb).md"
+              }
+            ],
+            "collapsed": true
           }
         ],
         "collapsed": false
@@ -906,26 +948,6 @@
           {
             "text": "Prompting Vision Language Models",
             "link": "/领域知识-DomainKnowledge/LLM/Prompting Vision Language Models.md"
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "text": "个人服务搭建",
-        "items": [
-          {
-            "text": "NAS",
-            "items": [
-              {
-                "text": "homeassistant添加网络存储并开启备份",
-                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/homeassistant添加网络存储并开启备份.md"
-              },
-              {
-                "text": "Wallos个人订阅服务管理工具",
-                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/Wallos个人订阅服务管理工具.md"
-              }
-            ],
-            "collapsed": true
           }
         ],
         "collapsed": false
@@ -956,11 +978,11 @@
         "text": "Blender",
         "items": [
           {
-            "text": "blender as python module",
+            "text": "Blender as Python module",
             "link": "/软件工具应用-Applications/Blender/blender as python module.md"
           },
           {
-            "text": "blender&mathutils中的欧拉角",
+            "text": "Blender 和 mathutils 中的欧拉角",
             "link": "/软件工具应用-Applications/Blender/blender&mathutils中的欧拉角.md"
           },
           {
@@ -972,23 +994,23 @@
             "link": "/软件工具应用-Applications/Blender/blender常用操作.md"
           },
           {
-            "text": "blender常用脚本",
+            "text": "Blender 常用脚本",
             "link": "/软件工具应用-Applications/Blender/blender常用脚本.md"
           },
           {
-            "text": "blender抠绿幕(keying)",
+            "text": "Blender 抠绿幕(keying)",
             "link": "/软件工具应用-Applications/Blender/blender抠绿幕(keying).md"
           },
           {
-            "text": "blender旋转、缩放HDRI背景",
+            "text": "Blender 旋转、缩放HDRI背景",
             "link": "/软件工具应用-Applications/Blender/blender旋转、缩放HDRI背景.md"
           },
           {
-            "text": "blender渲染绿幕视频",
+            "text": "Blender 渲染绿幕视频",
             "link": "/软件工具应用-Applications/Blender/blender渲染绿幕视频.md"
           },
           {
-            "text": "blender中各种Matrix之间的关系",
+            "text": "Blender中各种Matrix之间的关系",
             "link": "/软件工具应用-Applications/Blender/blender中各种Matrix之间的关系.md"
           },
           {
@@ -996,11 +1018,11 @@
             "link": "/软件工具应用-Applications/Blender/CUDA cuInit Unknown error.md"
           },
           {
-            "text": "Ubuntu安装blender",
+            "text": "Ubuntu 安装blender",
             "link": "/软件工具应用-Applications/Blender/Ubuntu安装blender.md"
           },
           {
-            "text": "通过脚本安装和启用插件(add-on)",
+            "text": "通过脚本安装和启用blender插件(add-on)",
             "link": "/软件工具应用-Applications/Blender/通过脚本安装和启用插件(add-on).md"
           },
           {
@@ -1014,7 +1036,7 @@
         "text": "MacOS",
         "items": [
           {
-            "text": "Homebrew的安装、换源和卸载",
+            "text": "Homebrew 的安装、换源和卸载",
             "link": "/软件工具应用-Applications/MacOS/Homebrew的安装、换源和卸载.md"
           },
           {
@@ -1028,11 +1050,11 @@
         "text": "Maya",
         "items": [
           {
-            "text": "maya安装numpy&scipy",
+            "text": "maya 安装 numpy & scipy",
             "link": "/软件工具应用-Applications/Maya/maya安装numpy&scipy.md"
           },
           {
-            "text": "maya插件安装方法",
+            "text": "Maya 插件安装方法",
             "link": "/软件工具应用-Applications/Maya/maya插件安装方法.md"
           }
         ],
@@ -1042,7 +1064,7 @@
         "text": "FBX",
         "items": [
           {
-            "text": "安装FBX Python SDK",
+            "text": "安装 FBX Python SDK",
             "link": "/软件工具应用-Applications/FBX/安装FBX Python SDK.md"
           }
         ],
@@ -1062,7 +1084,7 @@
         "text": "zotero",
         "items": [
           {
-            "text": "zotero修改note templates",
+            "text": "zotero 修改 note templates",
             "link": "/软件工具应用-Applications/zotero/zotero修改note templates.md"
           }
         ],
@@ -1078,30 +1100,30 @@
         "text": "LeetCode",
         "items": [
           {
-            "text": "134. 加油站",
+            "text": "LeetCode 134. 加油站",
             "link": "/算法-Algorithm/LeetCode/134. 加油站.md"
           },
           {
-            "text": "162.寻找峰值",
+            "text": "LeetCode 162. 寻找峰值",
             "link": "/算法-Algorithm/LeetCode/162.寻找峰值.md"
           },
           {
-            "text": "300. 最长上升子序列",
+            "text": "LeetCode 300. 最长上升子序列",
             "link": "/算法-Algorithm/LeetCode/300. 最长上升子序列.md"
           },
           {
-            "text": "347.前-k-个高频元素",
+            "text": "LeetCode 347.前 K 个高频元素",
             "link": "/算法-Algorithm/LeetCode/347.前-k-个高频元素.md"
           },
           {
-            "text": "5.最长回文子串",
+            "text": "LeetCode 5. 最长回文子串",
             "link": "/算法-Algorithm/LeetCode/5.最长回文子串.md"
           }
         ],
         "collapsed": false
       },
       {
-        "text": "布隆过滤器(Bloom Filter)",
+        "text": "详解布隆过滤器(Bloom Filter)的原理，使用场景和注意事项",
         "link": "/算法-Algorithm/布隆过滤器(Bloom Filter).md"
       }
     ],

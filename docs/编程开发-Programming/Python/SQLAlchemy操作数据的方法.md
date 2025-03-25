@@ -1,10 +1,10 @@
-# SQLAlchemy与数据库交互的方式
+# SQLAlchemy 与数据库交互的方式
 
-## 一、ORM方式(通过session)
+## 一、ORM 方式(通过 session)
 
 ### 1. 查
 
-利用Query对象
+利用 Query 对象
 
 > [Tutorial](http://docs.sqlalchemy.org/en/latest/orm/tutorial.html)
 
@@ -31,16 +31,16 @@ session.query(user_mapper)
 User.query.filter_by(...).order_by(...).all()
 ```
 
-+ `session.query(...)`返回Query对象实例
-+ `Query.all()`返回Query对象的查询结果(result对象实例)列表
-+ `Query.first()`返回一个查询结果(result对象实例)或None
-+ `Query.one()`返回一个查询结果(result对象实例)或引发NoResultFound异常
-+ `Query.one_or_none()`返回None，一个查询结果(result对象实例)，或引发MultipleResultsFound异常
++ `session.query(...)` 返回 Query 对象实例
++ `Query.all()` 返回 Query 对象的查询结果(result 对象实例)列表
++ `Query.first()` 返回一个查询结果(result 对象实例)或 None
++ `Query.one()` 返回一个查询结果(result 对象实例)或引发 NoResultFound 异常
++ `Query.one_or_none()` 返回 None，一个查询结果(result 对象实例)，或引发 MultipleResultsFound 异常
 
-result实例的方法
+result 实例的方法
 
 ```python
-user1.keys()    # 返回查询结果的字段名list（有序）
+user1.keys()    # 返回查询结果的字段名 list（有序）
 user1.id        # 根据字段名获取字段值
 user1[2]        # 按字段下标取值
 for val in user1:
@@ -58,24 +58,24 @@ db.session.add_all([user1, user2, user3, ...])
 db.session.commit()
 ```
 
-在seesion.add()之后，新增的记录不会立即插入数据库，其状态为pending。
->关于object的状态，见[Quickie Intro to Object States](http://docs.sqlalchemy.org/en/latest/orm/session_state_management.html#session-object-states)
+在 seesion.add()之后，新增的记录不会立即插入数据库，其状态为 pending。
+>关于 object 的状态，见 [Quickie Intro to Object States](http://docs.sqlalchemy.org/en/latest/orm/session_state_management.html#session-object-states)
 
 ```python
 # 可查询当前新增（未提交）的记录
 db.session.new
 ```
 
-但在被查询时会触发session的flush过程，将pending状态的记录写入数据库(状态变为persistent)。
+但在被查询时会触发 session 的 flush 过程，将 pending 状态的记录写入数据库(状态变为 persistent)。
 
 ### 3. 改
 
-直接给字段赋值或通过update({k: v, ...})
+直接给字段赋值或通过 update({k: v, ...})
 
 ```python
 # 直接修改实例的属性
 user1.name = 'tommy'
-# 利用Query的update函数
+# 利用 Query 的 update 函数
 session.query(...).filter(...).update({k: v, ...})
 
 db.session.commit()
@@ -89,7 +89,7 @@ db.session.new
 ### 4. 删
 
 ```python
-# 将实例放入sesssion并标记为删除的
+# 将实例放入 sesssion 并标记为删除的
 db.session.delete(user1)
 # 删除符合筛选条件的记录。返回符合筛选条件的记录数量
 db.session.query(User).filter(User.id==1).delete(synchronize_session='evaluate')
@@ -99,17 +99,17 @@ db.session.commit()
 
 ### 5. 回滚
 
-回滚上一次commit的内容
+回滚上一次 commit 的内容
 
 ```python
 session.rollback()
 ```
 
-## 二、执行原生sql语句的方式
+## 二、执行原生 sql 语句的方式
 
 ### 1. 基本操作
 
-通过`Engine`生成的[Connection](http://docs.sqlalchemy.org/en/latest/core/connections.html)对象的`execute()`方法，执行原生的sql语句：
+通过 `Engine` 生成的 [Connection](http://docs.sqlalchemy.org/en/latest/core/connections.html) 对象的 `execute()` 方法，执行原生的 sql 语句：
 
 ```python
 with db.engine.connect() as conn:
@@ -117,30 +117,27 @@ with db.engine.connect() as conn:
     conn.execute(sqlalchemy.sql.text(sql), **param_dict)
 ```
 
-（另一种方式：直接用`db.engine.execute()`方法）
+（另一种方式：直接用 `db.engine.execute()` 方法）
 
-返回ResultProxy对象实例，为对DB-API cursor的封装
+返回 ResultProxy 对象实例，为对 DB-API cursor 的封装
 
 > [ResultProxy](http://docs.sqlalchemy.org/en/latest/core/connections.html#sqlalchemy.engine.ResultProxy)
 
- 从ResultProxy对象实例获得RowProxy对象实例
+ 从 ResultProxy 对象实例获得 RowProxy 对象实例
 
 ```python
-.fetchall()     # 取完全部行之后，将自动释放cursor
+.fetchall()     # 取完全部行之后，将自动释放 cursor
 .fetchone()
 .fetchmany(size=None)
-.first()    # 返回第一行或None，然后立即关闭结果集（调用.close())
+.first()    # 返回第一行或 None，然后立即关闭结果集（调用.close())
 ```
 
-从RowProxy对象实例获取column值的方法
+从 RowProxy 对象实例获取 column 值的方法
 
 ```python
 row = fetchone()
-
 col1 = row[0]    # access via integer position
-
 col2 = row['col2']   # access via name
-
 col3 = row[mytable.c.mycol] # access via Column object.
 ```
 
@@ -155,7 +152,7 @@ for row in results_proxy:
 
 ### 2. 事务
 
-`Connetion.begin()`返回一个`Transaction`对象
+`Connetion.begin()` 返回一个 `Transaction` 对象
 
 ```python
 connection = engine.connect()
@@ -169,7 +166,7 @@ except:
     raise
 ```
 
-可以使用with语法来管理事务：
+可以使用 with 语法来管理事务：
 
 ```python
 with engine.begin() as connection:

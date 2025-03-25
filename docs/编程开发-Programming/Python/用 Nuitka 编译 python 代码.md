@@ -6,16 +6,16 @@
 + python 3.10
 + nuitka == 2.5.8
 
-## 1. 环境配置
+## 1 - 环境配置
 
-### Requirements
+### 1.1 Requirements
 
 + C Compiler
 + python
 + Operating System
 + Architecture
 
-#### 1) C 编译器
+#### 1.1.1 C 编译器
 
 nuitka 打包需要支持 C11 的 C 环境。
 
@@ -34,7 +34,7 @@ macOS 平台使用系统的 Clang 编译器。(需要安装 XCode)
 
 > 更多平台支持，参考 [Nuitka User Manual#C Compiler](https://nuitka.net/user-documentation/user-manual.html#c-compiler)
 
-#### 2) Python
+#### 1.1.2 Python
 
 Nuitka 目前支持 Python >= 3.4 和 Python 2.6, 2.7。
 
@@ -58,7 +58,7 @@ pip install nuitka==2.5.8
   + 不支持通过 Microsoft Store 安装的 Python。
   + 不支持 macOS pyenv。建议使用 Homebrew 版本。
 
-#### 3) 操作系统
+#### 1.1.3 操作系统
 
 Nuitka 支持的操作系统: Android, Linux, FreeBSD, NetBSD, OpenBSD, macOS, Windows (32bits/64 bits/ARM)。
 
@@ -66,13 +66,13 @@ Nuitka 支持的操作系统: Android, Linux, FreeBSD, NetBSD, OpenBSD, macOS, W
 
 确保 Python 版本与 C 编译器的架构一致，否则将会出现晦涩难懂的错误信息。
 
-#### 4) 架构
+#### 1.1.4 架构
 
 Nuitka 支持的架构: x86, x86_64 (AMD64), ARM。
 
 其他架构也可以使用，通常 **Debian** 或 **RHEL** 支持的架构都可以使用。
 
-### 安装
+### 1.2 安装
 
 > [Nuitka Downloads](https://nuitka.net/doc/download.html)
 
@@ -80,13 +80,13 @@ Nuitka 支持的架构: x86, x86_64 (AMD64), ARM。
 pip install nuitka==2.5.8
 ```
 
-## 2. 编译
+## 2 - 编译
 
 ```shell
 python -m nuitka
 ```
 
-### 编译选项 Options
+### 2.1 编译选项 Options
 
 可以在文件开头添加如下注释，指定编译选项
 
@@ -104,7 +104,7 @@ python -m nuitka
 
 支持预设变量展开，参照 [Nuitka User Manual#Nuitka Project Options](https://nuitka.net/user-documentation/user-manual.html#nuitka-project-options)
 
-#### 1) 数据文件
+#### 2.1.1 数据文件
 
 (1) 通过 `--include-package-data=package_name` 参数指定 package 需要包含的数据文件。
 
@@ -139,7 +139,7 @@ Examples:
 
 需要先用上述方法包括数据文件，然后用 `--include-onefile-external-data` 指定 onefile 旁的路径。
 
-#### 2) Tweaks
+#### 2.1.2 Tweaks
 
 (1) Icons
 
@@ -160,23 +160,23 @@ python -m nuitka --macos-create-app-bundle --macos-app-icon=your-icon.png progra
 python -m nuitka --macos-create-app-bundle --macos-app-icon=your-icon.icns program.py
 ```
 
-#### 3) MacOS Entitlements
+#### 2.1.3 MacOS Entitlements
 
 <https://nuitka.net/user-documentation/user-manual.html#macos-entitlements>
 
-#### 4) Windows UAC Configuration
+#### 2.1.4 Windows UAC Configuration
 
 <https://nuitka.net/user-documentation/user-manual.html#windows-uac-configuration>
 
-#### 5) Console Window
+#### 2.1.5 Console Window
 
 在 Windows 平台，默认会打开一个 console 窗口。用 `--disable-console` 参数禁用。
 
 用 `--enable-console` 参数强制打开。
 
-## 3. Examples
+## 3 - Examples
 
-### 编译 module
+### 3.1 编译 module
 
 ```bash
 # 编译单个文件
@@ -186,6 +186,6 @@ cd /path/to/module_parent_folder # ! 重要。否则无法 include package
 python -m nuitka --assume-yes-for-downloads --module --output-dir=build module_folder --include-package=module_folder
 ```
 
-## 4. 交叉编译
+## 4 - 交叉编译
 
 > <https://github.com/Nuitka/Nuitka/issues/43#issuecomment-2100416081>

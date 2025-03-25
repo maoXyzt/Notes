@@ -1,6 +1,6 @@
 # win 环境下 print 时的 UnicodeEncodingError
 
-在一些特殊环境下，比如在 windows 环境下，使用 python print时，可能会遇到 `UnicodeEncodingError` 的错误。
+在一些特殊环境下，比如在 windows 环境下，使用 python print 时，可能会遇到 `UnicodeEncodingError` 的错误。
 
 这是因为，python3 的字符串是 unicode 字符串，未经过编码。
 而该环境下，stdin/stdout/stderr 的默认编码不是 utf-8，打印前调用 `str.encode()` 对字符串进行编码时，编码失败。
@@ -12,7 +12,7 @@
 
 Python3 支持环境变量 `PYTHONIOENCODING`。
 
-```
+```bash
 export PYTHONIOENCODING=${encodingname}:${errorhandler}
 ```
 

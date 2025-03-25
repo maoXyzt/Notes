@@ -1,4 +1,4 @@
-# go 如何下载 golang.org 的包
+# 如何下载 golang.org 的包
 >
 > 作者：ppmoon
 > 链接：<https://www.jianshu.com/p/096c5c253f75>

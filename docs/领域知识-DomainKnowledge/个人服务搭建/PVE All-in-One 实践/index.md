@@ -16,3 +16,7 @@ NoteStatus: draft
     * 旁路由应用:
       * [OpenClash 安装和配置](./OpenClash%20安装和配置.md)
 3. HA 智能家居: [PVE安装homeassistant](./PVE%20安装%20homeassistant.md)
+
+## 3. 其他
+
+* [PVE 系统备份到 NAS(smb)](./PVE%20系统备份备份到NAS(smb).md)

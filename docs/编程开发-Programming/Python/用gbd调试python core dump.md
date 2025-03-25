@@ -1,18 +1,18 @@
-# 用gdb调试python core dump
+# 用 gdb 调试 python core dump
 
-## 0. 安装gdb
+## 1 - 安装 gdb
 
 ```bash
 sudo apt install gdb
 ```
 
-## 1. 启动gdb
+## 2 - 启动 gdb
 
 ```bash
 gdb python
 ```
 
-## 2. 运行调试程序
+## 3 - 运行调试程序
 
 ```bash
 run file.py

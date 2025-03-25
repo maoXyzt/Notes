@@ -11,6 +11,8 @@ from pydantic import BaseModel as _BaseModel
 from pydantic import Field
 from pypinyin import Style, lazy_pinyin
 
+from .tools import extract_h1_titles
+
 
 class BaseItem(_BaseModel, metaclass=ABCMeta):
     text: str
@@ -54,6 +56,8 @@ class PageInfo(BaseItem):
             text = filepath.parent.name
             link = f'/{rel_p.parent.as_posix()}/'
         else:
+            if h1 := extract_h1_titles(filepath):
+                text = h1[0]
             link = f'/{rel_p.as_posix()}'
         return cls(text=text, link=link)
 

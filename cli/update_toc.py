@@ -171,7 +171,7 @@ def _make_line(item: PageInfo | GroupInfo) -> str:
     if isinstance(item, GroupInfo):
         return item.text
     else:
-        return f'[{item.text}]({custom_quote(item.link, safe="/")})'
+        return f'[{item.text}](.{custom_quote(item.link, safe="/")})'
 
 
 def _format_toc(lines: list[str]) -> list[str]:

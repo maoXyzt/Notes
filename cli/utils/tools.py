@@ -1,4 +1,6 @@
+import re
 import urllib.parse
+from pathlib import Path
 
 
 def custom_quote(url, safe='/'):
@@ -17,3 +19,16 @@ def custom_quote(url, safe='/'):
             quoted_url = quoted_url.replace(urllib.parse.quote(char), char)
 
     return quoted_url
+
+
+md_h1_pattern = re.compile(r'^#\s+(.*)$')
+
+
+def extract_h1_titles(file_path: Path) -> list[str]:
+    h1_titles = []
+    with file_path.open('r', encoding='utf-8') as file:
+        for line in file:
+            match = md_h1_pattern.match(line)
+            if match:
+                h1_titles.append(match.group(1))
+    return h1_titles

@@ -1,15 +1,8 @@
-flask扩展的初始化
-```python
-db.init_db(app)
-# 注册到app.extensions中
-app.extension['sqlalchemy'] = _SQLAlchemyState(self)
-```
+# Flask 的蓝图(Blueprint)原理
 
-Flask的蓝图
+## 1 - 实例化一个蓝图
 
-实例化一个蓝图
-
-flask/blueprints.py::Blueprint()
+`flask/blueprints.py::Blueprint()`
 
 ```python
 # main = Blueprint('main', __name__)
@@ -24,24 +17,25 @@ class Blueprint(_PackageBoundObject):
         _PackageBoundObject.__init__(self, import_name, template_folder,
                                      root_path=root_path)
         self.name = name  # 蓝图的名称
-        self.url_prefix = url_prefix  # url前缀
+        self.url_prefix = url_prefix  # url 前缀
         self.subdomain = subdomain  # 子域名。subdomain.SERVER_NAME
         self.static_folder = static_folder
         self.static_url_path = static_url_path
-        self.deferred_functions = []  # 用于注册url规则的一组函数
-                        # 在添加url规则时会调用用self.record()或self.record_once()添加
+        self.deferred_functions = []  # 用于注册 url 规则的一组函数
+                        # 在添加 url 规则时会调用用 self.record()或 self.record_once()添加
         if url_defaults is None:
             url_defaults = {}  # 调用视图函数的默认参数
         self.url_values_defaults = url_defaults
+
 # 蓝图的基类
 class _PackageBoundObject(object):
     def __init__(self, import_name, template_folder=None, root_path=None):
-        # 包或模块的名称，实例化时通常传入的参数为__name__，
+        # 包或模块的名称，实例化时通常传入的参数为 __name__，
         self.import_name = import_name
-        # 
+        #
         self.template_folder = template_folder
-        # root_path: app的根路径
-        # 如果没有指定root_path，就会根据包或模块的名称来获取根路径
+        # root_path: app 的根路径
+        # 如果没有指定 root_path，就会根据包或模块的名称来获取根路径
         if root_path is None:
             root_path = get_root_path(self.import_name)
         self.root_path = root_path
@@ -50,9 +44,9 @@ class _PackageBoundObject(object):
         self._static_url_path = None
 ```
 
-在蓝图中添加url路由规则
+## 2 - 在蓝图中添加 url 路由规则
 
-flask/blueprints.py::Blueprint().add_url_rule()
+`flask/blueprints.py::Blueprint().add_url_rule()`
 
 ```python
 class Blueprint(_PackageBoundObject):
@@ -60,19 +54,21 @@ class Blueprint(_PackageBoundObject):
         if endpoint:
             assert '.' not in endpoint, "Blueprint endpoints should not contain dots"
         # 生成了一个闭包，参数都是添加路由规则的时候传进来的参数。
-        # # 这个闭包被添加到self.deferred_functions列表中。
-        # # 在Blueprint().register()中可以看到如何调用。
+        # # 这个闭包被添加到 self.deferred_functions 列表中。
+        # # 在 Blueprint().register()中可以看到如何调用。
         self.record(lambda s:
             s.add_url_rule(rule, endpoint, view_func, **options))
 ```
 
-将蓝图注册到app上
+## 3 - 将蓝图注册到 app 上
 
-app.py::Flask().register_blueprint()
+### 3.1 Flask.register_blueprint
+
+`app.py::Flask().register_blueprint()`
 
 ```python
 class Flask(_PackageBoundObject):
-    def register_blueprint(self, blueprint, **options):  # 注意options将一直向下传递
+    def register_blueprint(self, blueprint, **options):  # 注意 options 将一直向下传递
         first_registration = False
         # 检查蓝图的命名冲突
         if blueprint.name in self.blueprints:
@@ -88,100 +84,106 @@ class Flask(_PackageBoundObject):
         blueprint.register(self, options, first_registration)  # 注册蓝图
 ```
 
-blueprints.py::Blueprint().register()
+### 3.2 Blueprint.register
+
+`blueprints.py::Blueprint().register()`
 
 ```python
 class Blueprint(_PackageBoundObject):
     def register(self, app, options, first_registration=False):
         self._got_registered_once = True  # 标记该蓝图为已注册
-        # 初始化蓝图的状态，一个BlueprintSetupState()类的实例
+        # 初始化蓝图的状态，一个 BlueprintSetupState()类的实例
         state = self.make_setup_state(app, options, first_registration)
         if self.has_static_folder:
-            # 注册静态目录的url到endpoint 'static'上
+            # 注册静态目录的 url 到 endpoint 'static'上
             state.add_url_rule(self.static_url_path + '/<path:filename>',
                                view_func=self.send_static_file,
                                endpoint='static')
 
         for deferred in self.deferred_functions:
-            deferred(state)  # 真正将url规则注册到app上的地方
-                             # 调用state.add_url_rule()，参数是注册路由时的参数
+            deferred(state)  # 真正将 url 规则注册到 app 上的地方
+                             # 调用 state.add_url_rule()，参数是注册路由时的参数
 ```
 
-BlueprintSetupState类——临时储存蓝图状态，
+### 3.3 BlueprintSetupState 类
 
-blueprints.py::BlueprintSetupState().\_\_init__()
+`BlueprintSetupState` 类: 临时储存蓝图状态
+
+`blueprints.py::BlueprintSetupState().__init__()`
 
 ```python
 class BlueprintSetupState(object):
     def __init__(self, blueprint, app, options, first_registration):
         self.app = app
         self.blueprint = blueprint
-        # 在这里处理注册蓝图时提供的选项options
-        # # 以下三个选项会覆盖Blueprint初始化时的选项。
-        # # 其余参数会储存，但从self.add_url_rule()可以看出，其余参数实际上没被用到。
-        # # 因此，用app.register_blueprint()注册蓝图时,
+        # 在这里处理注册蓝图时提供的选项 options
+        # # 以下三个选项会覆盖 Blueprint 初始化时的选项。
+        # # 其余参数会储存，但从 self.add_url_rule()可以看出，其余参数实际上没被用到。
+        # # 因此，用 app.register_blueprint()注册蓝图时,
         # # 除了命名了的参数以外，也就只有下面的三个参数是有效的。 <- 文档没写的东西
         self.options = options
 
-        self.first_registration = first_registration  # `first_registion`的用途
-        # `subdomain` -> 默认为蓝图的subdomain（蓝图的subdomain默认为None）
+        self.first_registration = first_registration  # `first_registion` 的用途
+        # `subdomain` -> 默认为蓝图的 subdomain（蓝图的 subdomain 默认为 None）
         # # 即优先级顺序：注册蓝图时给定 > 蓝图实例化时给定的
-        # # 但是在self.add_url_rule(）中可以看到，注册url时给定的值有限级更高。
+        # # 但是在 self.add_url_rule(）中可以看到，注册 url 时给定的值有限级更高。
         subdomain = self.options.get('subdomain')
         if subdomain is None:
             subdomain = self.blueprint.subdomain
         self.subdomain = subdomain
-        # `url_prefix` -> 默认为蓝图的url_prefix（蓝图的url_prefix默认为None）
+        # `url_prefix` -> 默认为蓝图的 url_prefix（蓝图的 url_prefix 默认为 None）
         url_prefix = self.options.get('url_prefix')
         if url_prefix is None:
             url_prefix = self.blueprint.url_prefix
         self.url_prefix = url_prefix
-        # `url_defaults` -> 默认为蓝图的url_defaults（蓝图的url_defaults默认为None）
+        # `url_defaults` -> 默认为蓝图的 url_defaults（蓝图的 url_defaults 默认为 None）
         self.url_defaults = dict(self.blueprint.url_values_defaults)
         self.url_defaults.update(self.options.get('url_defaults', ()))
-    
-    # 真正将蓝图的url规则注册到app上的函数
+
+    # 真正将蓝图的 url 规则注册到 app 上的函数
     def add_url_rule(self, rule, endpoint=None, view_func=None, **options):
-        # 给url添加蓝图的前缀`url_prefix`
+        # 给 url 添加蓝图的前缀 `url_prefix`
         if self.url_prefix:
             rule = self.url_prefix + rule
-        # 设置子域名`subdomain`选项，注册url规则时有指定，就用指定的值,
-        # # 否则用BlueprintSetupState初始化的值（注册蓝图时的 > 蓝图实例化时的）
+        # 设置子域名 `subdomain` 选项，注册 url 规则时有指定，就用指定的值,
+        # # 否则用 BlueprintSetupState 初始化的值（注册蓝图时的 > 蓝图实例化时的）
         options.setdefault('subdomain', self.subdomain)
-        # 未指定endpoint时，从视图函数获取endpoint（即使用视图函数的__name__）
-        # # 如果无视图函数，则必须指定endpoint
+        # 未指定 endpoint 时，从视图函数获取 endpoint（即使用视图函数的 __name__）
+        # # 如果无视图函数，则必须指定 endpoint
         if endpoint is None:
             endpoint = _endpoint_from_view_func(view_func)
-        defaults = self.url_defaults  # 调用视图函数的默认参数字典`url_defaults`
-        if 'defaults' in options:  # 添加url规则时的defaults参数<-实际是Rule()使用的参数
-                                   # `defaults`参数值为一个字典(可以用**解引用)
-                                   # 作用跟实例化蓝图和注册蓝图时的url_defaults一样，
+        defaults = self.url_defaults  # 调用视图函数的默认参数字典 `url_defaults`
+        if 'defaults' in options:  # 添加 url 规则时的 defaults 参数 <-实际是 Rule()使用的参数
+                                   # `defaults` 参数值为一个字典(可以用**解引用)
+                                   # 作用跟实例化蓝图和注册蓝图时的 url_defaults 一样，
                                    # 优先级更高。
-            defaults = dict(defaults, **options.pop('defaults')) # 更新defaults的值
-        # 最终还是要调用Flask()实例的add_url_rule方法来添加路由规则
-        # # endpoint名带上了蓝图名作为前缀
-        # # 文档没写defaults=defaults这个参数
+            defaults = dict(defaults, **options.pop('defaults')) # 更新 defaults 的值
+        # 最终还是要调用 Flask()实例的 add_url_rule 方法来添加路由规则
+        # # endpoint 名带上了蓝图名作为前缀
+        # # 文档没写 defaults = defaults 这个参数
         self.app.add_url_rule(rule, '%s.%s' % (self.blueprint.name, endpoint),
                               view_func, defaults=defaults, **options)
 ```
 
-再看Flask()实例中是怎么添加路由规则的
+### 3.4 - Flask.add_url_rule
 
-flask/app.py::Flask().add_url_rule()
+`Flask()` 实例中是怎么添加路由规则的
+
+`flask/app.py::Flask().add_url_rule()`
 
 ```python
 class Flask(_PackageBoundObject):
-    @setupmethod  # <- 在debug模式下，如果被装饰的函数在app初始化之后调用，将发出警告
+    @setupmethod  # <- 在 debug 模式下，如果被装饰的函数在 app 初始化之后调用，将发出警告
     def add_url_rule(self, rule, endpoint=None, view_func=None, **options):
-        # 给定endpoint，或为视图函数的__name__
+        # 给定 endpoint，或为视图函数的 __name__
         if endpoint is None:
             endpoint = _endpoint_from_view_func(view_func)
         options['endpoint'] = endpoint
-        # 添加路由规则时可以指定methods参数，即路由规则支持的HTTP方法
-        # # 如果没有指定，则使用视图函数的methods属性的值（元组或列表）
-        # # 如果视图函数也没有methods属性或methods值为空，则默认支持为'GET'方法
-        # # 根据flask的文档，还将隐式添加支持'HEAD'方法。
-        methods = options.pop('methods', None) 
+        # 添加路由规则时可以指定 methods 参数，即路由规则支持的 HTTP 方法
+        # # 如果没有指定，则使用视图函数的 methods 属性的值（元组或列表）
+        # # 如果视图函数也没有 methods 属性或 methods 值为空，则默认支持为'GET'方法
+        # # 根据 flask 的文档，还将隐式添加支持'HEAD'方法。
+        methods = options.pop('methods', None)
         if methods is None:
             methods = getattr(view_func, 'methods', None) or ('GET',)
         if isinstance(methods, string_types):
@@ -189,12 +191,12 @@ class Flask(_PackageBoundObject):
                             'for example: @app.route(..., methods=["POST"])')
         methods = set(item.upper() for item in methods)
 
-        # 表示必须支持的HTTP方法，这些方法会被添加到methods中
+        # 表示必须支持的 HTTP 方法，这些方法会被添加到 methods 中
         # # 取值来自视图函数，或为空集
         required_methods = set(getattr(view_func, 'required_methods', ()))
 
-        # provide_automatic_options表示是否需要使用内置的对OPTION方法的支持
-        # # 未提供参数值时，根据视图函数是否支持OPTIONS方法来确定参数的取值
+        # provide_automatic_options 表示是否需要使用内置的对 OPTION 方法的支持
+        # # 未提供参数值时，根据视图函数是否支持 OPTIONS 方法来确定参数的取值
         provide_automatic_options = getattr(view_func,
             'provide_automatic_options', None)
         if provide_automatic_options is None:
@@ -204,18 +206,18 @@ class Flask(_PackageBoundObject):
             else:
                 provide_automatic_options = False
 
-        # 将required_methods添加到methods中
+        # 将 required_methods 添加到 methods 中
         methods |= required_methods
-        
-        # 创建路由规则，是一个url_rule_class类的实例
-        # # url_rule_class类默认就是werkzeug.routing.Rule类（不能设为其他类，除非改源码）
+
+        # 创建路由规则，是一个 url_rule_class 类的实例
+        # # url_rule_class 类默认就是 werkzeug.routing.Rule 类（不能设为其他类，除非改源码）
         rule = self.url_rule_class(rule, methods=methods, **options)
         rule.provide_automatic_options = provide_automatic_options
 
-        # app.url_map是werkzeug.routing.Map类的一个实例
+        # app.url_map 是 werkzeug.routing.Map 类的一个实例
         self.url_map.add(rule)
-        # 将视图函数添加到app.view_funtions字典中，键为endpoint参数值
-        # # 禁止不相同的视图函数用相同的endpoint
+        # 将视图函数添加到 app.view_funtions 字典中，键为 endpoint 参数值
+        # # 禁止不相同的视图函数用相同的 endpoint
         if view_func is not None:
             old_func = self.view_functions.get(endpoint)
             if old_func is not None and old_func != view_func:
@@ -223,6 +225,8 @@ class Flask(_PackageBoundObject):
                                      'existing endpoint function: %s' % endpoint)
             self.view_functions[endpoint] = view_func
 ```
+
+### 3.5 - 路由 Rule 类
 
 ```python
 @implements_to_string
@@ -373,6 +377,3 @@ class Rule(RuleFactory):
             self.arguments = set()
         self._trace = self._converters = self._regex = self._weights = None
 ```
-
-
-

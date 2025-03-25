@@ -1,4 +1,4 @@
-# CentOS7 常用工具包安装
+# CentOS 7 常用工具包安装
 
 ## CentOS 常用工具包
 

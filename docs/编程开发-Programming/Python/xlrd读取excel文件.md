@@ -1,10 +1,10 @@
-# Python用xlrd读取Excel文件
+# Python 用 xlrd 读取 Excel 文件
 
 ```python
 file_path = r"ABC.xlsx"
 # 打开文件
 book = xlrd.open_workbook(file_path)
-# 选择sheet
+# 选择 sheet
 sheet = book.sheets()[0]
 
 # 获取行列总数

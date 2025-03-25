@@ -9,27 +9,27 @@ exclude = ["*.pyi", 'docs/*']
 ############################
 [lint]
 select = [
-    "E",    # pycodestyle: Error
-    "W",    # pycodestyle: Warning
-    "F",    # Pyflakes
-    "PLE",  # pylint: Error
-    "B",    # flake8-bugbear
-    "TC",   # flake8-type-checking
-    "I",    # isort
-    "T20",  # flake8-print
-    "PERF", # Perflint
-    "RUF",  # Ruff-specific rules
-    "TID",  # flake8-tidy-imports
-    "UP",   # pyupgrade
-    # "SIM",  # flake8-simplify
+  "E",    # pycodestyle: Error
+  "W",    # pycodestyle: Warning
+  "F",    # Pyflakes
+  "PLE",  # pylint: Error
+  "B",    # flake8-bugbear
+  "TC",   # flake8-type-checking
+  "I",    # isort
+  "T20",  # flake8-print
+  "PERF", # Perflint
+  "RUF",  # Ruff-specific rules
+  "TID",  # flake8-tidy-imports
+  "UP",   # pyupgrade
+  # "SIM",  # flake8-simplify
 ]
 # `B008` (function-call-in-default-argument)
 # `B009` (get-attr-with-constant)
 # `T20` (print statements)
-ignore = ["B008", "B009", "T20", "RUF002"]
+ignore = ["B008", "B009", "T20", "RUF002", "RUF003"]
 unfixable = [
-    "F401", # unused imports
-    "F841", # unused variables
+  "F401", # unused imports
+  "F841", # unused variables
 ]
 
 [lint.per-file-ignores]
