@@ -8,6 +8,7 @@ Powered by [vitepress](https://vitepress.vuejs.org/).
 
 ```bash
 poetry install
+pre-commit install
 ```
 
 ## Development
