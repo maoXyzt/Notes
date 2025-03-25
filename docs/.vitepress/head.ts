@@ -10,7 +10,7 @@ export const head: HeadConfig[] = [
     window._hmt = window._hmt || [];
     (function() {
       var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?91e91f9b5d7694a3c392c2e570906a78";
+      hm.src = "https://hm.baidu.com/hm.js?ad18a979cb8cc952f14855d6738bee8e";
       var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(hm, s);
     })();
