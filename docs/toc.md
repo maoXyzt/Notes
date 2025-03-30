@@ -234,6 +234,17 @@
   * [01. Preferential Attachment Model](./领域知识-DomainKnowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%204%20-%20Network%20Evolution/Network%20Evolution.md)
 * [Course Syllabus](./领域知识-DomainKnowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Syllabus.md)
 
+### 个人服务搭建
+
+* NAS
+  * [NAS](./领域知识-DomainKnowledge/个人服务搭建/NAS/)
+  * [Home Assistant 系统备份到 NAS](./领域知识-DomainKnowledge/个人服务搭建/NAS/homeassistant系统备份到NAS.md)
+  * [Wallos: 个人订阅服务管理工具](./领域知识-DomainKnowledge/个人服务搭建/NAS/Wallos个人订阅服务管理工具.md)
+* HomeAssistant
+  * [Aqara 设备通过 Matter 接入 HomeAssistant](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/Aqara设备通过Matter接入HomeAssistant.md)
+* PVE All-in-One 实践
+  * [PVE 系统备份到 NAS(smb)](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20系统备份备份到NAS%28smb%29.md)
+
 ### Deep Learning
 
 * 动手学深度学习-pytorch版
@@ -243,15 +254,6 @@
   * [5. 卷积神经网络](./领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/05-卷积神经网络.md)
   * [6. 循环神经网络](./领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/06-循环神经网络.md)
 * [GAN模型的评价指标](./领域知识-DomainKnowledge/Deep%20Learning/如何评价GAN网络的好坏%EF%BC%9AIS和FID.md)
-
-### 个人服务搭建
-
-* NAS
-  * [NAS](./领域知识-DomainKnowledge/个人服务搭建/NAS/)
-  * [Home Assistant 系统备份到 NAS](./领域知识-DomainKnowledge/个人服务搭建/NAS/homeassistant系统备份到NAS.md)
-  * [Wallos: 个人订阅服务管理工具](./领域知识-DomainKnowledge/个人服务搭建/NAS/Wallos个人订阅服务管理工具.md)
-* PVE All-in-One 实践
-  * [PVE 系统备份到 NAS(smb)](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20系统备份备份到NAS%28smb%29.md)
 
 ### Design Pattern
 
