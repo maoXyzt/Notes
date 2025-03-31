@@ -144,6 +144,16 @@
 * [SQL 批量从 A 表插入数据到 B 表](./编程开发-Programming/Database/SQL批量从A表插入数据到B表.md)
 * [SQL 中 EXISTS 和 IN 语句的区别](./编程开发-Programming/Database/SQL中EXISTS和IN语句的区别.md)
 
+### Git
+
+* [git Error: Connection closed by 20.205.243.166 port 22](./编程开发-Programming/Git/git%20error%20-%20connection%20closed.md)
+* [git prune, git remote prune, git fetch --prune 三者异同](./编程开发-Programming/Git/git%20prune%2C%20git%20remote%20prune%2C%20git%20fetch.md)
+* [使用 Git Subtree 同步子项目](./编程开发-Programming/Git/git%20subtree.md)
+* [Git 多个账号用不同私钥登录](./编程开发-Programming/Git/Git%20多个账号用不同私钥登录.md)
+* [Git 配置文件大小写写敏感](./编程开发-Programming/Git/git%20配置对文件名大小写敏感.md)
+* [Git 上传大文件 (> 25MB): Git LFS](./编程开发-Programming/Git/git上传大文件%28gt25MB%29-git%20lts.md)
+* [Global gitignore](./编程开发-Programming/Git/global%20gitignore.md)
+
 ### Frontend
 
 * Vue3
@@ -161,15 +171,6 @@
 * [安装 Node.js](./编程开发-Programming/Frontend/Node.js%20安装.md)
 * [openapi-generator 生成前端请求代码](./编程开发-Programming/Frontend/openapi-generator%20生成前端请求代码.md)
 * [VitePress 插件](./编程开发-Programming/Frontend/VitePress插件.md)
-
-### Git
-
-* [git Error: Connection closed by 20.205.243.166 port 22](./编程开发-Programming/Git/git%20error%20-%20connection%20closed.md)
-* [git prune, git remote prune, git fetch --prune 三者异同](./编程开发-Programming/Git/git%20prune%2C%20git%20remote%20prune%2C%20git%20fetch.md)
-* [使用 Git Subtree 同步子项目](./编程开发-Programming/Git/git%20subtree.md)
-* [Git 多个账号用不同私钥登录](./编程开发-Programming/Git/Git%20多个账号用不同私钥登录.md)
-* [Git 配置文件大小写写敏感](./编程开发-Programming/Git/git%20配置对文件名大小写敏感.md)
-* [Global gitignore](./编程开发-Programming/Git/global%20gitignore.md)
 
 ### Go
 
@@ -303,6 +304,10 @@
 ### Obsidian
 
 * [Obsidian 同步 - 配置 LiveSync 与自托管 CouchDB 服务器](./软件工具应用-Applications/Obsidian/Obsidian%20同步%20-%20配置%20LiveSync%20与自托管%20CouchDB%20服务器.md)
+
+### Rime
+
+* [Rime 输入法配置语言模型: 万象拼音模型](./软件工具应用-Applications/Rime/rime配置语言模型.md)
 
 ### zotero
 

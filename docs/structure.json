@@ -541,6 +541,40 @@
         "collapsed": false
       },
       {
+        "text": "Git",
+        "items": [
+          {
+            "text": "git Error: Connection closed by 20.205.243.166 port 22",
+            "link": "/编程开发-Programming/Git/git error - connection closed.md"
+          },
+          {
+            "text": "git prune, git remote prune, git fetch --prune 三者异同",
+            "link": "/编程开发-Programming/Git/git prune, git remote prune, git fetch.md"
+          },
+          {
+            "text": "使用 Git Subtree 同步子项目",
+            "link": "/编程开发-Programming/Git/git subtree.md"
+          },
+          {
+            "text": "Git 多个账号用不同私钥登录",
+            "link": "/编程开发-Programming/Git/Git 多个账号用不同私钥登录.md"
+          },
+          {
+            "text": "Git 配置文件大小写写敏感",
+            "link": "/编程开发-Programming/Git/git 配置对文件名大小写敏感.md"
+          },
+          {
+            "text": "Git 上传大文件 (> 25MB): Git LFS",
+            "link": "/编程开发-Programming/Git/git上传大文件(gt25MB)-git lts.md"
+          },
+          {
+            "text": "Global gitignore",
+            "link": "/编程开发-Programming/Git/global gitignore.md"
+          }
+        ],
+        "collapsed": false
+      },
+      {
         "text": "Frontend",
         "items": [
           {
@@ -606,36 +640,6 @@
           {
             "text": "VitePress 插件",
             "link": "/编程开发-Programming/Frontend/VitePress插件.md"
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "text": "Git",
-        "items": [
-          {
-            "text": "git Error: Connection closed by 20.205.243.166 port 22",
-            "link": "/编程开发-Programming/Git/git error - connection closed.md"
-          },
-          {
-            "text": "git prune, git remote prune, git fetch --prune 三者异同",
-            "link": "/编程开发-Programming/Git/git prune, git remote prune, git fetch.md"
-          },
-          {
-            "text": "使用 Git Subtree 同步子项目",
-            "link": "/编程开发-Programming/Git/git subtree.md"
-          },
-          {
-            "text": "Git 多个账号用不同私钥登录",
-            "link": "/编程开发-Programming/Git/Git 多个账号用不同私钥登录.md"
-          },
-          {
-            "text": "Git 配置文件大小写写敏感",
-            "link": "/编程开发-Programming/Git/git 配置对文件名大小写敏感.md"
-          },
-          {
-            "text": "Global gitignore",
-            "link": "/编程开发-Programming/Git/global gitignore.md"
           }
         ],
         "collapsed": false
@@ -1086,6 +1090,16 @@
           {
             "text": "Obsidian 同步 - 配置 LiveSync 与自托管 CouchDB 服务器",
             "link": "/软件工具应用-Applications/Obsidian/Obsidian 同步 - 配置 LiveSync 与自托管 CouchDB 服务器.md"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "Rime",
+        "items": [
+          {
+            "text": "Rime 输入法配置语言模型: 万象拼音模型",
+            "link": "/软件工具应用-Applications/Rime/rime配置语言模型.md"
           }
         ],
         "collapsed": false
