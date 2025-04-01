@@ -2,19 +2,19 @@
 
 ## 查找端口占用
 
-```cmd
+```bash
 netstat -ano | findstr "8080"
 ```
 
 ## 查找进程 id 对应的进程
 
-```cmd
+```bash
 tasklist | findstr "8080"
 ```
 
 ## 关闭进程
 
-```cmd
+```bash
 taskkill /f /pid 1234
 ```
 

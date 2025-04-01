@@ -14,7 +14,7 @@
 
 ## 2. Windows 工具
 
-- [winget 更换国内源](./winget%20国内源.md)
+- [winget 更换国内源](./winget更换国内源.md)
 
 ## 3. Windows 高级配置
 

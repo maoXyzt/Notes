@@ -1,8 +1,8 @@
-# windows 建立软链接
+# windows 创建软链接
 
 Example：
 
-```bat
+```bash
 # 建立d:\develop链接目录，指向远程的目标服务器上的e盘的对应目录
 mklink /d d:\develop \\138.20.1.141\e$\develop
 ```
