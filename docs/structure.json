@@ -197,12 +197,12 @@
         "link": "/Windows/windows查找端口占用.md"
       },
       {
-        "text": "windows 建立软链接",
+        "text": "windows 创建软链接",
         "link": "/Windows/windows建立软链接.md"
       },
       {
-        "text": "winget 国内源",
-        "link": "/Windows/winget 国内源.md"
+        "text": "winget 更换国内源",
+        "link": "/Windows/winget更换国内源.md"
       },
       {
         "text": "创建自启动的 Windows Service 程序",
