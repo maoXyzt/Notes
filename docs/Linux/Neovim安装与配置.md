@@ -2,9 +2,9 @@
 
 > [Windows 10 系统下 Neovim 安装与配置 - jdhao's digital space](https://jdhao.github.io/2018/11/16/neovim_configuration_windows-zh/#fn:1)
 
-## 安装
+## 1 - 安装
 
-### 安装 Neovim
+### 1.1 安装 Neovim
 
 根据指示，下载安装包:
 
@@ -14,7 +14,7 @@
 
 > [install-from-package](https://github.com/neovim/neovim/wiki/Installing-Neovim#install-from-package)
 
-### 安装 `vim-plug`
+### 1.2 安装 `vim-plug`
 
 > [junegunn/vim-plug](https://github.com/junegunn/vim-plug#neovim)
 
@@ -23,7 +23,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
 
-### 安装 `python3-provider` 和 `nodejs-provider`
+### 1.3 安装 `python3-provider` 和 `nodejs-provider`
 
 ```bash
 pip3 install --user --upgrade neovim
@@ -36,7 +36,7 @@ npm install -g neovim
 :checkhealth
 ```
 
-## 配置
+## 2 - 配置
 
 Neovim 使用了和 Vim 不同的配置文件名称以及配置文件存放位置。
 根据 Neovim 官方文档，Neovim 的配置文件应该命名为 `init.vim`，并且应该放在 ~/AppData/Local/nvim 目录下。
@@ -45,7 +45,7 @@ Neovim 使用了和 Vim 不同的配置文件名称以及配置文件存放位�
 
 参考配置文件:
 
-```vim
+```vimscript
 call plug#begin('~/.config/nvim/plugged')
   " surround
   Plug 'tpope/vim-surround'
@@ -175,7 +175,7 @@ if exists("g:neovide")
 endif
 ```
 
-## 安装桌面端
+## 3 - 安装桌面端
 
 推荐使用 Neovide 作为 Neovim 的桌面端，它是一个基于 Rust 编写的 Neovim 桌面端，可以在 Windows、Linux 和 MacOS 上运行。
 

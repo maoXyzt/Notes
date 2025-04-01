@@ -15,12 +15,8 @@
         "link": "/Linux/Linux Shell输出重定向并后台执行.md"
       },
       {
-        "text": "Linux 实时内存监控",
+        "text": "Linux 实时内存监控: top, vmstat, free",
         "link": "/Linux/Linux 实时内存监控.md"
-      },
-      {
-        "text": "Linux 传输超大文件",
-        "link": "/Linux/Linux传输超大文件.md"
       },
       {
         "text": "Linux 环境变量设置：env, set, export",
@@ -31,11 +27,15 @@
         "link": "/Linux/Linux开发环境setup.md"
       },
       {
+        "text": "Linux 快速传输大文件: nc 命令",
+        "link": "/Linux/Linux快速传输大文件-nc.md"
+      },
+      {
         "text": "Linux 批量杀死进程",
         "link": "/Linux/Linux批量杀死进程.md"
       },
       {
-        "text": "Linux 搜索所有文件中的内容",
+        "text": "Linux 搜索所有文件中的内容: grep, riggrep",
         "link": "/Linux/Linux搜索所有文件中的内容.md"
       },
       {
@@ -44,7 +44,7 @@
       },
       {
         "text": "Linux 下多线程下载工具 - Axel",
-        "link": "/Linux/Linux下多线程下载工具 - Axel.md"
+        "link": "/Linux/Linux下多线程下载工具-Axel.md"
       },
       {
         "text": "Linux 新建用户",
@@ -67,7 +67,7 @@
         "link": "/Linux/TCP&UDP端口连通性测试.md"
       },
       {
-        "text": "vim 插件管理 - vim-plug",
+        "text": "vim 插件管理: vim-plug",
         "link": "/Linux/vim插件管理 - vim-plug.md"
       },
       {

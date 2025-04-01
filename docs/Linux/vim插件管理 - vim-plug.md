@@ -1,8 +1,8 @@
-# vim 插件管理 - vim-plug
+# vim 插件管理: vim-plug
 
-## vim-plug
+## 1 - vim-plug
 
-### 安装 vim-plug
+### 1.1 安装 vim-plug
 
 自动安装：在 `~/.vimrc` 中添加以下内容（在 `plug#begin()` 之前）
 
@@ -16,7 +16,7 @@ endif
 
 Note that `--sync` flag is used to block the execution until the installer finishes.
 
-### 添加插件
+### 1.2 添加插件
 
 Example:
 
@@ -60,17 +60,16 @@ Plug '~/my-prototype-plugin'
 call plug#end()
 ```
 
-### 安装插件
+### 1.3 安装插件
 
-`:PlugInstall`
+进入 vim，使用如下命令:
 
-`:PlugUpdate`
+* `:PlugInstall`: Install plugins
+* `:PlugUpdate`: Update plugins
+* `:PlugClean[!]`: Remove unlisted plugins (bang version will clean without prompt)
+* `:PlugUpgrade`: Upgrade vim-plug itself
 
-`:PlugClean[!]`：Remove unlisted plugins (bang version will clean without prompt)
-
-`:PlugUpgrade`: Upgrade vim-plug itself
-
-## 推荐插件
+## 2 - 推荐插件
 
 ```bash
 "主题"
@@ -88,7 +87,7 @@ Plug 'Yggdroot/indentLine'    "缩进指示线"
 Plug 'davidhalter/jedi-vim'   "python自动补全"
 ```
 
-## 其他 vim 配置
+## 3 - 其他 vim 配置
 
 ```bash
 "关闭vi兼容
