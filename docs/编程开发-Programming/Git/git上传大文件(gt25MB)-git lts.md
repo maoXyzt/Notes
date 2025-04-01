@@ -6,6 +6,10 @@ Git Large File Storage (LFS) 是一个 Git 扩展，用于管理大文件和二�
 
 > Git LFS 官方网站：<https://git-lfs.com>
 
+***注意：*** GitHub LFS 的免费额度为 **每月 1GB 存储和 1GB 带宽**，超过后需要付费。
+
+> [About storage and bandwidth usage](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-storage-and-bandwidth-usage)
+
 ## 1 - 安装 Git LFS
 
 > GitHub 的 Git LFS 安装指南: <https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage>
