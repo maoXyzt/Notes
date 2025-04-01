@@ -26,7 +26,7 @@ Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
 
 安装方法：通过 winget 安装
 
-> [winget 更换国内源](./winget%20国内源.md)
+> [winget 更换国内源](./winget更换国内源.md)
 >
 > ```powershell
 > winget search powershell
