@@ -12,6 +12,7 @@ generated in markdown format.
 """
 
 import json
+import math
 from pathlib import Path
 
 from pydantic_settings import BaseSettings
@@ -52,6 +53,7 @@ def main():
     # print(json.dumps(build_structure(root), indent=2, cls=MyJSONEncoder))
     root_info = build_from_root(DOCS_ROOT)
     order_group_by_num_of_children(root_info)
+    root_info.prefix_title_index(max_header_level=settings.max_header_level - 1)
     with settings.structure_json_output.open('w+', encoding='utf8', newline='\n') as f:
         json.dump(root_info.items, f, indent=2, cls=CJSONEncoder, ensure_ascii=False)
 
@@ -102,14 +104,14 @@ def build_from_root(root: Path) -> GroupInfo:
     return root_group
 
 
-def order_group_by_num_of_children(group: GroupInfo):
+def order_group_by_num_of_children(group: GroupInfo, add_title_index: bool = True):
     """Recursively sort a group and its children by the number of children."""
 
-    def _sort_key(item: GroupInfo | PageInfo) -> int:
+    def _sort_key(item: GroupInfo | PageInfo):
         if isinstance(item, GroupInfo):
             return len(item.items)
         elif isinstance(item, PageInfo):
-            return 0
+            return math.inf
 
     for item in group.items:
         if isinstance(item, GroupInfo) and item.items:
@@ -137,10 +139,7 @@ def make_toc_content(
                 max_header_level=max_header_level,
                 has_children=bool(getattr(item, 'items', None)),
             )
-            if indent.strip():
-                lines.append(f'{indent} {line_content}')
-            else:
-                lines.append(f'\n{line_content}')
+            lines.append(f'{indent} {line_content}')
     if children := getattr(item, 'items', None):
         for c in children:
             make_toc_content(
@@ -163,7 +162,7 @@ def _get_indented_prefix(
             # should be formatted as header
             return '#' * (level + 1)
         else:
-            return '\n'
+            return '*'
     else:
         # should be formatted as list
         return ' ' * settings.indent_size * (level - max_header_level) + '*'

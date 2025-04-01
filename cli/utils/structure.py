@@ -127,6 +127,34 @@ class GroupInfo(BaseItem):
                 raise NotImplementedError(f'Unsupported file type: {p.as_posix()}')
         return group
 
+    def prefix_title_index(
+        self,
+        index: int = 1,
+        level: int = 1,
+        max_header_level: int = 3,
+    ) -> None:
+        """Add title index to the group."""
+        if level > max_header_level:
+            return
+        group_items = (x for x in self.items if isinstance(x, GroupInfo) and x.items)
+        for i, item in enumerate(group_items, start=1):
+            match level:
+                case 1:
+                    prefix = f'{i} -'
+                case 2:
+                    prefix = f'{index}.{i}'
+                case 3:
+                    prefix = f'({i})'
+                case _:
+                    prefix = ''
+            item.text = f'{prefix} {item.text}'
+            item.prefix_title_index(
+                index=i,
+                level=level + 1,
+                max_header_level=max_header_level,
+            )
+        return
+
 
 class CJSONEncoder(json.JSONEncoder):
     def default(self, o):

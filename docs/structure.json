@@ -1,81 +1,7 @@
 [
   {
-    "text": "Linux",
+    "text": "1 - Linux",
     "items": [
-      {
-        "text": "CentOS",
-        "items": [
-          {
-            "text": "CentOS 7 lvm分区扩容",
-            "link": "/Linux/CentOS/CentOS 7 lvm分区扩容.md"
-          },
-          {
-            "text": "CentOS 7 安装/升级 Git 版本",
-            "link": "/Linux/CentOS/CentOS 7 安装升级Git版本.md"
-          },
-          {
-            "text": "CentOS 7 常用工具包安装",
-            "link": "/Linux/CentOS/CentOS 7 常用工具包安装.md"
-          },
-          {
-            "text": "CentOS 7 防火墙开放端口",
-            "link": "/Linux/CentOS/CentOS 7 开放端口.md"
-          },
-          {
-            "text": "CentOS 配置国内源",
-            "link": "/Linux/CentOS/CentOS 配置国内源.md"
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "text": "nginx",
-        "items": [
-          {
-            "text": "nginx 代理json文件作为API response",
-            "link": "/Linux/nginx/nginx 代理json文件作为API response.md"
-          },
-          {
-            "text": "nginx 配置 examples",
-            "link": "/Linux/nginx/nginx 配置 examples.md"
-          },
-          {
-            "text": "nginx 配置常见问题",
-            "link": "/Linux/nginx/nginx 配置常见问题.md"
-          },
-          {
-            "text": "nginx 隐藏响应头中的版本信息",
-            "link": "/Linux/nginx/nginx 隐藏响应头的版本信息(header的server字段).md"
-          },
-          {
-            "text": "nginx 用于部署静态页面",
-            "link": "/Linux/nginx/nginx 用于部署静态页面.md"
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "text": "SSH",
-        "items": [
-          {
-            "text": "使用 `sshfs` 命令简易挂载远程目录",
-            "link": "/Linux/SSH/sshfs命令简易挂载远程目录.md"
-          },
-          {
-            "text": "SSH 开启隧道",
-            "link": "/Linux/SSH/ssh开启隧道.md"
-          },
-          {
-            "text": "SSH 配置心跳信号防止断开连接",
-            "link": "/Linux/SSH/SSH配置心跳信号防止断开连接.md"
-          },
-          {
-            "text": "创建 SSH 密钥对并使用密钥登录",
-            "link": "/Linux/SSH/创建SSH密钥对并使用密钥登录.md"
-          }
-        ],
-        "collapsed": false
-      },
       {
         "text": "awscli 使用指南",
         "link": "/Linux/awscli使用指南.md"
@@ -167,12 +93,86 @@
       {
         "text": "使用 OpenSSL 生成自签名 SSL 证书",
         "link": "/Linux/自签名SSL证书.md"
+      },
+      {
+        "text": "1.1 CentOS",
+        "items": [
+          {
+            "text": "CentOS 7 lvm分区扩容",
+            "link": "/Linux/CentOS/CentOS 7 lvm分区扩容.md"
+          },
+          {
+            "text": "CentOS 7 安装/升级 Git 版本",
+            "link": "/Linux/CentOS/CentOS 7 安装升级Git版本.md"
+          },
+          {
+            "text": "CentOS 7 常用工具包安装",
+            "link": "/Linux/CentOS/CentOS 7 常用工具包安装.md"
+          },
+          {
+            "text": "CentOS 7 防火墙开放端口",
+            "link": "/Linux/CentOS/CentOS 7 开放端口.md"
+          },
+          {
+            "text": "CentOS 配置国内源",
+            "link": "/Linux/CentOS/CentOS 配置国内源.md"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "1.2 nginx",
+        "items": [
+          {
+            "text": "nginx 代理json文件作为API response",
+            "link": "/Linux/nginx/nginx 代理json文件作为API response.md"
+          },
+          {
+            "text": "nginx 配置 examples",
+            "link": "/Linux/nginx/nginx 配置 examples.md"
+          },
+          {
+            "text": "nginx 配置常见问题",
+            "link": "/Linux/nginx/nginx 配置常见问题.md"
+          },
+          {
+            "text": "nginx 隐藏响应头中的版本信息",
+            "link": "/Linux/nginx/nginx 隐藏响应头的版本信息(header的server字段).md"
+          },
+          {
+            "text": "nginx 用于部署静态页面",
+            "link": "/Linux/nginx/nginx 用于部署静态页面.md"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "1.3 SSH",
+        "items": [
+          {
+            "text": "使用 `sshfs` 命令简易挂载远程目录",
+            "link": "/Linux/SSH/sshfs命令简易挂载远程目录.md"
+          },
+          {
+            "text": "SSH 开启隧道",
+            "link": "/Linux/SSH/ssh开启隧道.md"
+          },
+          {
+            "text": "SSH 配置心跳信号防止断开连接",
+            "link": "/Linux/SSH/SSH配置心跳信号防止断开连接.md"
+          },
+          {
+            "text": "创建 SSH 密钥对并使用密钥登录",
+            "link": "/Linux/SSH/创建SSH密钥对并使用密钥登录.md"
+          }
+        ],
+        "collapsed": false
       }
     ],
     "collapsed": false
   },
   {
-    "text": "Windows",
+    "text": "2 - Windows",
     "items": [
       {
         "text": "Windows",
@@ -218,11 +218,87 @@
     "collapsed": false
   },
   {
-    "text": "编程开发-Programming",
+    "text": "3 - 编程开发-Programming",
     "items": [
       {
-        "text": "Python",
+        "text": "3.1 Python",
         "items": [
+          {
+            "text": "alembic 基本命令",
+            "link": "/编程开发-Programming/Python/alembic基本命令.md"
+          },
+          {
+            "text": "conda 换源",
+            "link": "/编程开发-Programming/Python/conda 换源.md"
+          },
+          {
+            "text": "在 Cython 中使用 C++",
+            "link": "/编程开发-Programming/Python/Cython中使用C++.md"
+          },
+          {
+            "text": "Jupyter 服务部署",
+            "link": "/编程开发-Programming/Python/jupyter 服务部署.md"
+          },
+          {
+            "text": "pip 命令换源",
+            "link": "/编程开发-Programming/Python/pip 命令换源.md"
+          },
+          {
+            "text": "Poetry 的基本使用",
+            "link": "/编程开发-Programming/Python/Poetry的基本使用.md"
+          },
+          {
+            "text": "python ftplib SSLEOFERROR 解决方案",
+            "link": "/编程开发-Programming/Python/python ftplib SSLEOFERROR解决方案.md"
+          },
+          {
+            "text": "Python3 基本数据类型",
+            "link": "/编程开发-Programming/Python/Python3 基本数据类型.md"
+          },
+          {
+            "text": "Python 脚本中获取脚本文件自身的路径",
+            "link": "/编程开发-Programming/Python/python脚本获取自身当前路径的正确方法.md"
+          },
+          {
+            "text": "python 通过 ssh 连接数据库",
+            "link": "/编程开发-Programming/Python/python通过ssh连接数据库.md"
+          },
+          {
+            "text": "python 字符串编码",
+            "link": "/编程开发-Programming/Python/python字符串编码.md"
+          },
+          {
+            "text": "SQLAlchemy 与数据库交互的方式",
+            "link": "/编程开发-Programming/Python/SQLAlchemy操作数据的方法.md"
+          },
+          {
+            "text": "win10 系统下安装 pycrypto 包的方法",
+            "link": "/编程开发-Programming/Python/win10系统下安装pycrypto包的方法.md"
+          },
+          {
+            "text": "win 环境下 print 时的 UnicodeEncodingError",
+            "link": "/编程开发-Programming/Python/win环境下print时的UnicodeEncodingError.md"
+          },
+          {
+            "text": "Python 用 xlrd 读取 Excel 文件",
+            "link": "/编程开发-Programming/Python/xlrd读取excel文件.md"
+          },
+          {
+            "text": "不退出 python 进程的情况下删除 .pyd 文件",
+            "link": "/编程开发-Programming/Python/不退出python进程的情况下删除.pyd文件.md"
+          },
+          {
+            "text": "用 Nuitka 编译 python 代码",
+            "link": "/编程开发-Programming/Python/用 Nuitka 编译 python 代码.md"
+          },
+          {
+            "text": "用 gdb 调试 python core dump",
+            "link": "/编程开发-Programming/Python/用gbd调试python core dump.md"
+          },
+          {
+            "text": "自动获取双因子登录验证码: OTP, HOTP, TOTP 基本原理",
+            "link": "/编程开发-Programming/Python/自动获取双因子登录验证码——OTP, HOTP, TOTP 基本原理.md"
+          },
           {
             "text": "pandas",
             "items": [
@@ -316,89 +392,29 @@
               }
             ],
             "collapsed": true
-          },
-          {
-            "text": "alembic 基本命令",
-            "link": "/编程开发-Programming/Python/alembic基本命令.md"
-          },
-          {
-            "text": "conda 换源",
-            "link": "/编程开发-Programming/Python/conda 换源.md"
-          },
-          {
-            "text": "在 Cython 中使用 C++",
-            "link": "/编程开发-Programming/Python/Cython中使用C++.md"
-          },
-          {
-            "text": "Jupyter 服务部署",
-            "link": "/编程开发-Programming/Python/jupyter 服务部署.md"
-          },
-          {
-            "text": "pip 命令换源",
-            "link": "/编程开发-Programming/Python/pip 命令换源.md"
-          },
-          {
-            "text": "Poetry 的基本使用",
-            "link": "/编程开发-Programming/Python/Poetry的基本使用.md"
-          },
-          {
-            "text": "python ftplib SSLEOFERROR 解决方案",
-            "link": "/编程开发-Programming/Python/python ftplib SSLEOFERROR解决方案.md"
-          },
-          {
-            "text": "Python3 基本数据类型",
-            "link": "/编程开发-Programming/Python/Python3 基本数据类型.md"
-          },
-          {
-            "text": "Python 脚本中获取脚本文件自身的路径",
-            "link": "/编程开发-Programming/Python/python脚本获取自身当前路径的正确方法.md"
-          },
-          {
-            "text": "python 通过 ssh 连接数据库",
-            "link": "/编程开发-Programming/Python/python通过ssh连接数据库.md"
-          },
-          {
-            "text": "python 字符串编码",
-            "link": "/编程开发-Programming/Python/python字符串编码.md"
-          },
-          {
-            "text": "SQLAlchemy 与数据库交互的方式",
-            "link": "/编程开发-Programming/Python/SQLAlchemy操作数据的方法.md"
-          },
-          {
-            "text": "win10 系统下安装 pycrypto 包的方法",
-            "link": "/编程开发-Programming/Python/win10系统下安装pycrypto包的方法.md"
-          },
-          {
-            "text": "win 环境下 print 时的 UnicodeEncodingError",
-            "link": "/编程开发-Programming/Python/win环境下print时的UnicodeEncodingError.md"
-          },
-          {
-            "text": "Python 用 xlrd 读取 Excel 文件",
-            "link": "/编程开发-Programming/Python/xlrd读取excel文件.md"
-          },
-          {
-            "text": "不退出 python 进程的情况下删除 .pyd 文件",
-            "link": "/编程开发-Programming/Python/不退出python进程的情况下删除.pyd文件.md"
-          },
-          {
-            "text": "用 Nuitka 编译 python 代码",
-            "link": "/编程开发-Programming/Python/用 Nuitka 编译 python 代码.md"
-          },
-          {
-            "text": "用 gdb 调试 python core dump",
-            "link": "/编程开发-Programming/Python/用gbd调试python core dump.md"
-          },
-          {
-            "text": "自动获取双因子登录验证码: OTP, HOTP, TOTP 基本原理",
-            "link": "/编程开发-Programming/Python/自动获取双因子登录验证码——OTP, HOTP, TOTP 基本原理.md"
           }
         ],
         "collapsed": false
       },
       {
-        "text": "Database",
+        "text": "3.2 Database",
         "items": [
+          {
+            "text": "SQL 查询每个分组的前 N 条数据",
+            "link": "/编程开发-Programming/Database/SQL查询每个分组的前N条数据.md"
+          },
+          {
+            "text": "SQL 查询优化经验",
+            "link": "/编程开发-Programming/Database/SQL查询优化经验.md"
+          },
+          {
+            "text": "SQL 批量从 A 表插入数据到 B 表",
+            "link": "/编程开发-Programming/Database/SQL批量从A表插入数据到B表.md"
+          },
+          {
+            "text": "SQL 中 EXISTS 和 IN 语句的区别",
+            "link": "/编程开发-Programming/Database/SQL中EXISTS和IN语句的区别.md"
+          },
           {
             "text": "PostgreSQL",
             "items": [
@@ -520,28 +536,12 @@
               }
             ],
             "collapsed": true
-          },
-          {
-            "text": "SQL 查询每个分组的前 N 条数据",
-            "link": "/编程开发-Programming/Database/SQL查询每个分组的前N条数据.md"
-          },
-          {
-            "text": "SQL 查询优化经验",
-            "link": "/编程开发-Programming/Database/SQL查询优化经验.md"
-          },
-          {
-            "text": "SQL 批量从 A 表插入数据到 B 表",
-            "link": "/编程开发-Programming/Database/SQL批量从A表插入数据到B表.md"
-          },
-          {
-            "text": "SQL 中 EXISTS 和 IN 语句的区别",
-            "link": "/编程开发-Programming/Database/SQL中EXISTS和IN语句的区别.md"
           }
         ],
         "collapsed": false
       },
       {
-        "text": "Git",
+        "text": "3.3 Git",
         "items": [
           {
             "text": "git Error: Connection closed by 20.205.243.166 port 22",
@@ -575,8 +575,24 @@
         "collapsed": false
       },
       {
-        "text": "Frontend",
+        "text": "3.4 Frontend",
         "items": [
+          {
+            "text": "Husky: 配置前端项目的 git hooks",
+            "link": "/编程开发-Programming/Frontend/Husky-配置前端项目的git hooks.md"
+          },
+          {
+            "text": "安装 Node.js",
+            "link": "/编程开发-Programming/Frontend/Node.js 安装.md"
+          },
+          {
+            "text": "openapi-generator 生成前端请求代码",
+            "link": "/编程开发-Programming/Frontend/openapi-generator 生成前端请求代码.md"
+          },
+          {
+            "text": "VitePress 插件",
+            "link": "/编程开发-Programming/Frontend/VitePress插件.md"
+          },
           {
             "text": "Vue3",
             "items": [
@@ -624,28 +640,12 @@
               }
             ],
             "collapsed": true
-          },
-          {
-            "text": "Husky: 配置前端项目的 git hooks",
-            "link": "/编程开发-Programming/Frontend/Husky-配置前端项目的git hooks.md"
-          },
-          {
-            "text": "安装 Node.js",
-            "link": "/编程开发-Programming/Frontend/Node.js 安装.md"
-          },
-          {
-            "text": "openapi-generator 生成前端请求代码",
-            "link": "/编程开发-Programming/Frontend/openapi-generator 生成前端请求代码.md"
-          },
-          {
-            "text": "VitePress 插件",
-            "link": "/编程开发-Programming/Frontend/VitePress插件.md"
           }
         ],
         "collapsed": false
       },
       {
-        "text": "Go",
+        "text": "3.5 Go",
         "items": [
           {
             "text": "Go语言编译与工具",
@@ -663,7 +663,7 @@
         "collapsed": false
       },
       {
-        "text": "Elixir",
+        "text": "3.6 Elixir",
         "items": [
           {
             "text": "asdf版本管理工具的安装和使用",
@@ -677,7 +677,7 @@
         "collapsed": false
       },
       {
-        "text": "容器化",
+        "text": "3.7 容器化",
         "items": [
           {
             "text": "Docker",
@@ -747,7 +747,7 @@
         "collapsed": false
       },
       {
-        "text": "Rust",
+        "text": "3.8 Rust",
         "items": [
           {
             "text": "Rust 工具链 & Cargo 国内源",
@@ -757,7 +757,7 @@
         "collapsed": false
       },
       {
-        "text": "代码质量-CodeQuality",
+        "text": "3.9 代码质量-CodeQuality",
         "items": [
           {
             "text": "代码整洁之道 第 2 章 有意义的命名",
@@ -770,29 +770,11 @@
     "collapsed": false
   },
   {
-    "text": "领域知识-DomainKnowledge",
+    "text": "4 - 领域知识-DomainKnowledge",
     "items": [
       {
-        "text": "图形学",
+        "text": "4.1 图形学",
         "items": [
-          {
-            "text": "游戏引擎技术及架构",
-            "items": [
-              {
-                "text": "第一章 导论",
-                "link": "/领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/01-导论.md"
-              },
-              {
-                "text": "第四章 游戏所需的三维数学",
-                "link": "/领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/04-游戏所需的三维数学.md"
-              },
-              {
-                "text": "第11章 动画系统",
-                "link": "/领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/11-动画系统.md"
-              }
-            ],
-            "collapsed": true
-          },
           {
             "text": "OpenGL 坐标系统",
             "link": "/领域知识-DomainKnowledge/图形学/OpenGL坐标系统.md"
@@ -812,13 +794,35 @@
           {
             "text": "常用软件的坐标系和旋转 Conventions",
             "link": "/领域知识-DomainKnowledge/图形学/坐标系&旋转 Conventions.md"
+          },
+          {
+            "text": "游戏引擎技术及架构",
+            "items": [
+              {
+                "text": "第一章 导论",
+                "link": "/领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/01-导论.md"
+              },
+              {
+                "text": "第四章 游戏所需的三维数学",
+                "link": "/领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/04-游戏所需的三维数学.md"
+              },
+              {
+                "text": "第11章 动画系统",
+                "link": "/领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/11-动画系统.md"
+              }
+            ],
+            "collapsed": true
           }
         ],
         "collapsed": false
       },
       {
-        "text": "Applied Social Network Analysis in Python",
+        "text": "4.2 Applied Social Network Analysis in Python",
         "items": [
+          {
+            "text": "Course Syllabus",
+            "link": "/领域知识-DomainKnowledge/Applied Social Network Analysis in Python/Syllabus.md"
+          },
           {
             "text": "Module 1 - Why Study Networks and Basics on NetworkX",
             "items": [
@@ -858,16 +862,12 @@
               }
             ],
             "collapsed": true
-          },
-          {
-            "text": "Course Syllabus",
-            "link": "/领域知识-DomainKnowledge/Applied Social Network Analysis in Python/Syllabus.md"
           }
         ],
         "collapsed": false
       },
       {
-        "text": "个人服务搭建",
+        "text": "4.3 个人服务搭建",
         "items": [
           {
             "text": "NAS",
@@ -911,8 +911,12 @@
         "collapsed": false
       },
       {
-        "text": "Deep Learning",
+        "text": "4.4 Deep Learning",
         "items": [
+          {
+            "text": "GAN模型的评价指标",
+            "link": "/领域知识-DomainKnowledge/Deep Learning/如何评价GAN网络的好坏：IS和FID.md"
+          },
           {
             "text": "动手学深度学习-pytorch版",
             "items": [
@@ -938,16 +942,12 @@
               }
             ],
             "collapsed": true
-          },
-          {
-            "text": "GAN模型的评价指标",
-            "link": "/领域知识-DomainKnowledge/Deep Learning/如何评价GAN网络的好坏：IS和FID.md"
           }
         ],
         "collapsed": false
       },
       {
-        "text": "Design Pattern",
+        "text": "4.5 Design Pattern",
         "items": [
           {
             "text": "状态模式",
@@ -957,7 +957,7 @@
         "collapsed": false
       },
       {
-        "text": "LLM",
+        "text": "4.6 LLM",
         "items": [
           {
             "text": "Prompting Vision Language Models",
@@ -967,7 +967,7 @@
         "collapsed": false
       },
       {
-        "text": "数据结构",
+        "text": "4.7 数据结构",
         "items": [
           {
             "text": "树",
@@ -986,10 +986,10 @@
     "collapsed": false
   },
   {
-    "text": "软件工具应用-Applications",
+    "text": "5 - 软件工具应用-Applications",
     "items": [
       {
-        "text": "Blender",
+        "text": "5.1 Blender",
         "items": [
           {
             "text": "Blender 和 mathutils 中的欧拉角",
@@ -1043,7 +1043,7 @@
         "collapsed": false
       },
       {
-        "text": "MacOS",
+        "text": "5.2 MacOS",
         "items": [
           {
             "text": "Homebrew 的安装、换源和卸载",
@@ -1057,7 +1057,7 @@
         "collapsed": false
       },
       {
-        "text": "Maya",
+        "text": "5.3 Maya",
         "items": [
           {
             "text": "maya 安装 numpy & scipy",
@@ -1071,7 +1071,7 @@
         "collapsed": false
       },
       {
-        "text": "FBX",
+        "text": "5.4 FBX",
         "items": [
           {
             "text": "安装 FBX Python SDK",
@@ -1081,7 +1081,7 @@
         "collapsed": false
       },
       {
-        "text": "Obsidian",
+        "text": "5.5 Obsidian",
         "items": [
           {
             "text": "Obsidian 同步 - 配置 LiveSync 与自托管 CouchDB 服务器",
@@ -1091,7 +1091,7 @@
         "collapsed": false
       },
       {
-        "text": "Rime",
+        "text": "5.6 Rime",
         "items": [
           {
             "text": "Rime 输入法配置语言模型: 万象拼音模型",
@@ -1101,7 +1101,7 @@
         "collapsed": false
       },
       {
-        "text": "zotero",
+        "text": "5.7 zotero",
         "items": [
           {
             "text": "zotero 修改 note templates",
@@ -1114,10 +1114,14 @@
     "collapsed": false
   },
   {
-    "text": "算法-Algorithm",
+    "text": "6 - 算法-Algorithm",
     "items": [
       {
-        "text": "LeetCode",
+        "text": "详解布隆过滤器(Bloom Filter)的原理，使用场景和注意事项",
+        "link": "/算法-Algorithm/布隆过滤器(Bloom Filter).md"
+      },
+      {
+        "text": "6.1 LeetCode",
         "items": [
           {
             "text": "LeetCode 134. 加油站",
@@ -1141,10 +1145,6 @@
           }
         ],
         "collapsed": false
-      },
-      {
-        "text": "详解布隆过滤器(Bloom Filter)的原理，使用场景和注意事项",
-        "link": "/算法-Algorithm/布隆过滤器(Bloom Filter).md"
       }
     ],
     "collapsed": false
