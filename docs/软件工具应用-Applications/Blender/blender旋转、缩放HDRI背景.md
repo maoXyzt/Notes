@@ -1,4 +1,4 @@
-# Blender 旋转、缩放HDRI背景
+# Blender 旋转、缩放 HDRI 背景
 
 Scaling a HDRI requires the same node setup as rotating a HDRI in Blender:
 

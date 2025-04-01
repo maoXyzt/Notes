@@ -14,3 +14,9 @@ print(eul.order)
 ```
 
 `scipy.spatial.transform.Rotation` 无默认欧拉角顺序，外旋使用小写字母 `{'x', 'y', 'z'}`，内旋使用大写字母 `{'X', 'Y', 'Z'}`。
+
+```bash
+r = R.from_euler('x', 90, degrees=True)
+print("Outer R:", r.as_euler('xyz', degrees=True))
+print("Inner R:", r.as_euler('XYZ', degrees=True))
+```

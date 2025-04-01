@@ -992,19 +992,15 @@
         "text": "Blender",
         "items": [
           {
-            "text": "Blender as Python module",
-            "link": "/软件工具应用-Applications/Blender/blender as python module.md"
-          },
-          {
             "text": "Blender 和 mathutils 中的欧拉角",
             "link": "/软件工具应用-Applications/Blender/blender&mathutils中的欧拉角.md"
           },
           {
-            "text": "blender安装python packages",
+            "text": "blender 安装 python packages",
             "link": "/软件工具应用-Applications/Blender/blender安装python packages.md"
           },
           {
-            "text": "blender常用操作",
+            "text": "Blender 常用操作",
             "link": "/软件工具应用-Applications/Blender/blender常用操作.md"
           },
           {
@@ -1016,7 +1012,7 @@
             "link": "/软件工具应用-Applications/Blender/blender抠绿幕(keying).md"
           },
           {
-            "text": "Blender 旋转、缩放HDRI背景",
+            "text": "Blender 旋转、缩放 HDRI 背景",
             "link": "/软件工具应用-Applications/Blender/blender旋转、缩放HDRI背景.md"
           },
           {
@@ -1032,15 +1028,15 @@
             "link": "/软件工具应用-Applications/Blender/CUDA cuInit Unknown error.md"
           },
           {
-            "text": "Ubuntu 安装blender",
+            "text": "Ubuntu 安装 blender",
             "link": "/软件工具应用-Applications/Blender/Ubuntu安装blender.md"
           },
           {
-            "text": "通过脚本安装和启用blender插件(add-on)",
+            "text": "通过脚本安装和启用 blender 插件(add-on)",
             "link": "/软件工具应用-Applications/Blender/通过脚本安装和启用插件(add-on).md"
           },
           {
-            "text": "无GUI启动blender",
+            "text": "headless 方式启动 blender (无 GUI)",
             "link": "/软件工具应用-Applications/Blender/无GUI启动blender.md"
           }
         ],

@@ -273,19 +273,18 @@
 
 ### Blender
 
-* [Blender as Python module](./软件工具应用-Applications/Blender/blender%20as%20python%20module.md)
 * [Blender 和 mathutils 中的欧拉角](./软件工具应用-Applications/Blender/blender%26mathutils中的欧拉角.md)
-* [blender安装python packages](./软件工具应用-Applications/Blender/blender安装python%20packages.md)
-* [blender常用操作](./软件工具应用-Applications/Blender/blender常用操作.md)
+* [blender 安装 python packages](./软件工具应用-Applications/Blender/blender安装python%20packages.md)
+* [Blender 常用操作](./软件工具应用-Applications/Blender/blender常用操作.md)
 * [Blender 常用脚本](./软件工具应用-Applications/Blender/blender常用脚本.md)
 * [Blender 抠绿幕(keying)](./软件工具应用-Applications/Blender/blender抠绿幕%28keying%29.md)
-* [Blender 旋转、缩放HDRI背景](./软件工具应用-Applications/Blender/blender旋转%E3%80%81缩放HDRI背景.md)
+* [Blender 旋转、缩放 HDRI 背景](./软件工具应用-Applications/Blender/blender旋转%E3%80%81缩放HDRI背景.md)
 * [Blender 渲染绿幕视频](./软件工具应用-Applications/Blender/blender渲染绿幕视频.md)
 * [Blender中各种Matrix之间的关系](./软件工具应用-Applications/Blender/blender中各种Matrix之间的关系.md)
 * [CUDA cuInit Unknown error](./软件工具应用-Applications/Blender/CUDA%20cuInit%20Unknown%20error.md)
-* [Ubuntu 安装blender](./软件工具应用-Applications/Blender/Ubuntu安装blender.md)
-* [通过脚本安装和启用blender插件(add-on)](./软件工具应用-Applications/Blender/通过脚本安装和启用插件%28add-on%29.md)
-* [无GUI启动blender](./软件工具应用-Applications/Blender/无GUI启动blender.md)
+* [Ubuntu 安装 blender](./软件工具应用-Applications/Blender/Ubuntu安装blender.md)
+* [通过脚本安装和启用 blender 插件(add-on)](./软件工具应用-Applications/Blender/通过脚本安装和启用插件%28add-on%29.md)
+* [headless 方式启动 blender (无 GUI)](./软件工具应用-Applications/Blender/无GUI启动blender.md)
 
 ### MacOS
 

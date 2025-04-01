@@ -1,6 +1,6 @@
 # MacOS 配置定时任务
 
-在 MacOS 上可以使用 `crontab` 或者 `launchd` 配置定时任务。 但其中的 `crontab` 已不推荐使用。
+在 MacOS 上可以使用 ~~`crontab`~~ 或者 `launchd` 配置定时任务。但其中的 `crontab` 已不推荐使用。
 
 ## 1. 使用 `launchd` 配置定时任务
 
