@@ -137,7 +137,10 @@ def make_toc_content(
                 max_header_level=max_header_level,
                 has_children=bool(getattr(item, 'items', None)),
             )
-            lines.append(f'{indent} {line_content}')
+            if indent:
+                lines.append(f'{indent} {line_content}')
+            else:
+                lines.append(line_content)
     if children := getattr(item, 'items', None):
         for c in children:
             make_toc_content(
@@ -160,7 +163,7 @@ def _get_indented_prefix(
             # should be formatted as header
             return '#' * (level + 1)
         else:
-            return '*'
+            return ''
     else:
         # should be formatted as list
         return ' ' * settings.indent_size * (level - max_header_level) + '*'
