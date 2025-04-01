@@ -18,7 +18,7 @@
 * [Linux 下多线程下载工具 - Axel](./Linux/Linux下多线程下载工具%20-%20Axel.md)
 * [Linux 新建用户](./Linux/Linux新建用户.md)
 * [Linux 修改默认 shell](./Linux/Linux修改默认shell.md)
-* [Mackup 同步 linux 配置](./Linux/Mackup%20同步linux配置.md)
+* [同步 Linux/MacOS 配置: Mackup](./Linux/Mackup%20同步linux%2Cmacos配置.md)
 * [Neovim 安装与配置](./Linux/Neovim安装与配置.md)
 * [TCP & UDP 端口连通性测试](./Linux/TCP%26UDP端口连通性测试.md)
 * [vim 插件管理 - vim-plug](./Linux/vim插件管理%20-%20vim-plug.md)

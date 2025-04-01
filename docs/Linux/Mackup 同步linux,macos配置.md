@@ -1,4 +1,4 @@
-# Mackup 同步 linux 配置
+# 同步 Linux/MacOS 配置: Mackup
 
 Mackup 是一个命令行工具，用于备份和恢复应用程序的配置文件。
 
@@ -158,7 +158,7 @@ Supported applications:
 
 ## 4. Tips
 
-### (1) `.mackup.cfg` 也可以被同步
+### 4.1 `.mackup.cfg` 也可以被同步
 
 在新平台上初始化时，先手动将 `.mackup.cfg` 复制到 `~/.mackup.cfg` 再执行 `mackup restore`。
 
@@ -166,7 +166,7 @@ Supported applications:
 cp ~/dotfiles/Mackup/.mackup.cfg ~/
 ```
 
-### (2) 移除一个已同步应用
+### 4.2 移除一个已同步应用
 
 1. 先 `mackup uninstall`
 2. 然后修改 `~/mackup.cfg`
