@@ -52,7 +52,7 @@ sudo apt-get install autoconf automake build-essential \
 
 ### 1.6 Mackup: 配置备份/同步
 
-- [Instruction](./Mackup%20同步linux配置.md)
+- [Instruction](./Mackup%20同步linux,macos配置.md)
 
 ### 1.7 配置全局 gitignore
 
