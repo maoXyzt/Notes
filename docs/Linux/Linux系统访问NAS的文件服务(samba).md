@@ -1,6 +1,6 @@
-# Linux 系统访问 NAS 的文件服务(samba)
+# Linux 系统访问 NAS 的 SMB 文件服务
 
-适用于 samba 文件服务。
+适用于 SMB(samba) 文件服务。
 
 > 假设文件服务的 IP 地址为 `10.4.5.66`，帐号为 `username_1`，密码为 `password_1`。
 >
@@ -8,15 +8,15 @@
 >
 > - 在 mac 系统下，直接输入 `smb://10.4.5.66`。
 
-## 安装 smbclient
+## 1 - 安装 smbclient
 
 ```bash
 sudo apt-get install smbclient
 ```
 
-## 常用命令
+## 2 - 常用命令
 
-### 1. 查看所有共享目录
+### 2.1 查看所有共享目录
 
 ```bash
 smbclient -L 10.4.5.66 -U username_1
@@ -26,7 +26,7 @@ smbclient -L 10.4.5.66 -U username_1
 
 **当 SMB version 高于 SMB1 时，需要指定 `-m smb3`（见 Q1）**。
 
-```
+```plaintext
 Domain=[ELSE_WORLDS] OS=[] Server=[]
 
         Sharename       Type      Comment
@@ -45,7 +45,7 @@ Domain=[ELSE_WORLDS] OS=[] Server=[]
         ---------            -------
 ```
 
-### 2. 连接共享目录
+### 2.2 连接共享目录
 
 ```bash
 smbclient //10.4.5.66/share -U username_1
@@ -57,7 +57,7 @@ smbclient //10.4.5.66/share -U username_1
 
 **当 SMB version 高于 SMB1 时，需要指定 `-m smb3`（见 Q1）**。
 
-### 3. 文件操作
+### 2.3 文件操作
 
 | 命令                     | 说明                                                         |
 | ------------------------ | ------------------------------------------------------------ |
@@ -74,7 +74,7 @@ smbclient //10.4.5.66/share -U username_1
 | `put file1 [file2]`      | 向服务器上传一个文件 file1，传到服务器上改名为 file2           |
 | `mput file1 file2 filen` | 向服务器上传多个文件                                         |
 
-### 4. 临时挂载
+### 2.4 临时挂载
 
 ```bash
 sudo mount -t cifs -o username=username_1,password=password_1,file_mode=<filemode>,dir_mode=<dirmode>,gid=<ownerGroupID>,uid=<ownerID>,soft //10.4.5.27/share /home/yangzhitao/mnt/nas
@@ -93,7 +93,7 @@ soft: soft mount. 默认为 hard mount，连接永不超时，无法中断。
 > - The NFS retry threshold is met
 > - The nfstimeout value is reached
 
-### 5. 开机自动挂载
+### 2.5 开机自动挂载
 
 编辑 `/etc/fstab`
 
@@ -101,7 +101,7 @@ soft: soft mount. 默认为 hard mount，连接永不超时，无法中断。
 //10.4.5.66/share /path/of/mnt/point cifs user=username_1,password=password_1 0 0
 ```
 
-## Q&A
+## 3 - Q&A
 
 Q1: `smbclient` 命令出现错误 `NT_STATUS_INVALID_NETWORK_RESPONSE`：
 

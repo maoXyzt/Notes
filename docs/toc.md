@@ -14,7 +14,7 @@
 * [Linux 开发环境 setup](./Linux/Linux开发环境setup.md)
 * [Linux 批量杀死进程](./Linux/Linux批量杀死进程.md)
 * [Linux 搜索所有文件中的内容](./Linux/Linux搜索所有文件中的内容.md)
-* [Linux 系统访问 NAS 的文件服务(samba)](./Linux/Linux系统访问NAS的文件服务%28samba%29.md)
+* [Linux 系统访问 NAS 的 SMB 文件服务](./Linux/Linux系统访问NAS的文件服务%28samba%29.md)
 * [Linux 下多线程下载工具 - Axel](./Linux/Linux下多线程下载工具%20-%20Axel.md)
 * [Linux 新建用户](./Linux/Linux新建用户.md)
 * [Linux 修改默认 shell](./Linux/Linux修改默认shell.md)

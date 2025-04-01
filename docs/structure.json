@@ -39,7 +39,7 @@
         "link": "/Linux/Linux搜索所有文件中的内容.md"
       },
       {
-        "text": "Linux 系统访问 NAS 的文件服务(samba)",
+        "text": "Linux 系统访问 NAS 的 SMB 文件服务",
         "link": "/Linux/Linux系统访问NAS的文件服务(samba).md"
       },
       {
