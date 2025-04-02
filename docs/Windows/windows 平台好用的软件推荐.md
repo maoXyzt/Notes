@@ -1,64 +1,70 @@
 # Windows 平台好用的软件推荐
 
+[[toc]]
+
+---
+
+⭐: 个人推荐
 🆓: 免费软件
 🔓: 开源软件
-💲: 收费软件
-💻: 跨平台(有 Mac 或 Linux 版本)
+💰: 收费软件
+🐧: 支持 Linux
+🍎: 支持 MacOS
 
-## 图片 & 视频
+## 1 - 图片 & 视频
 
-🆓 [FastStone Image Viewer](https://www.faststone.org/FSViewerDetail.htm): 看图工具，具备图片浏览和基本的编辑功能
-
-🆓🔓💻 [GIMP (GNU Image Manipulation Program)](https://www.gimp.org/): 开源的图像编辑软件
-
-🆓🔓 [Olive](https://www.olivevideoeditor.org/): 开源的视频编辑软件
+⭐🆓 [FastStone Image Viewer](https://www.faststone.org/FSViewerDetail.htm): 看图工具，具备图片浏览和基本的编辑功能
 
 🆓 [PotPlayer](https://potplayer.daum.net/): 视频播放器
 
-🆓🔓💻 [OBS](https://obsproject.com/): 开源的录屏和直播软件
+🆓🔓🐧🍎 [OBS](https://obsproject.com/): 开源的录屏和直播软件
 
 🆓🔓 [ScreenToGif](https://www.screentogif.com/): 开源的录屏(录制为 GIF 格式)和 GIF 制作软件
 
-## 文档 & 笔记
+🆓🔓🐧🍎 [GIMP (GNU Image Manipulation Program)](https://www.gimp.org/): 开源的图像编辑软件
 
-🆓💻 [Zotero](https://www.zotero.org/): 文献管理工具
+🆓🔓 [Olive](https://www.olivevideoeditor.org/): 开源的视频编辑软件
 
-🆓💻 [Obsidian](https://obsidian.md/): 双链笔记软件
+## 2 - 文档 & 笔记
 
-## 开发工具
+🆓🐧🍎 [Zotero](https://www.zotero.org/): 文献管理工具
 
-🆓💻 [Visual Studio Code](https://code.visualstudio.com/): 开源的代码编辑器
+🆓🐧🍎 [Obsidian](https://obsidian.md/): 双链笔记软件
 
-💲💻 [CURSOR](https://www.cursor.com/): AI 代码编辑器
+## 3 - 开发者工具
 
-💲💻 [windsurf](https://codeium.com/windsurf): AI 代码编辑器
+🆓🐧🍎 [Visual Studio Code](https://code.visualstudio.com/): 开源的代码编辑器
 
-🆓💻 [DBeaver](https://dbeaver.io/): 数据库管理工具
+💰🐧🍎 [CURSOR](https://www.cursor.com/): AI 代码编辑器
 
-🆓🔓💻 [massCode](https://masscode.io/): 开源的代码片段管理工具
+💰🐧🍎 [windsurf](https://codeium.com/windsurf): AI 代码编辑器
 
-🆓💻 [Apifox](https://apifox.com/): 在线接口文档管理、测试工具
+🆓🐧🍎 [DBeaver](https://dbeaver.io/): 数据库管理工具
 
-## 输入法
+🆓🔓🐧🍎 [massCode](https://masscode.io/): 开源的代码片段管理工具
 
-🆓💻 [小狼毫](https://rime.im/): 开源的输入法框架 Rime 的 Windows 版
+🆓🐧🍎 [Apifox](https://apifox.com/): 在线接口文档管理、测试工具
 
-## 系统工具
+## 4 - 输入法
 
-🆓🔓💻 [7-Zip](https://www.7-zip.org/): 开源的压缩工具
+⭐🆓🐧🍎 [小狼毫](https://rime.im/): 开源的输入法框架 Rime 的 Windows 版
 
-🆓🔓 [PowerToys](https://github.com/microsoft/PowerToys): Windows 工具集
+## 5 - 系统工具
 
-🆓 [Everything](https://www.voidtools.com/zh-cn/): 快速搜索文件
+🆓🔓🐧🍎 [7-Zip](https://www.7-zip.org/): 开源的压缩/解压工具
+
+⭐🆓🔓 [PowerToys](https://github.com/microsoft/PowerToys): Windows 工具集，很多实用工具
+
+⭐🆓 [Everything](https://www.voidtools.com/zh-cn/): 快速搜索文件
 
 🆓 [Geek Uninstaller](https://geekuninstaller.com/): 软件卸载工具
 
-🆓 [AutoRuns](https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns): 系统启动项管理工具
+🆓 [AutoRuns](https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns): 管理系统启动项
 
-🆓🔓 [CapsLock Indicator](https://cli.jonaskohl.de/): 在当前屏幕上显示 Caps Lock、Num Lock、Scroll Lock 的状态
+🆓🔓 [CapsLock Indicator](https://cli.jonaskohl.de/): 在当前屏幕上显示 Caps Lock、Num Lock、Scroll Lock 的状态。（如果使用的键盘没有指示灯的话，这个软件会很实用。）
 
-🆓 [SpaceSniffer](http://www.uderzo.it/main_products/space_sniffer/): 磁盘空间占用可视化工具
+🆓 [SpaceSniffer](http://www.uderzo.it/main_products/space_sniffer/): 可视化磁盘空间占用情况
 
-## 其他
+## 6 - 其他
 
-🆓🔓💻 [PicGo](https://github.com/Molunerfinn/PicGo): 开源图床工具
+🆓🔓🐧🍎 [PicGo](https://github.com/Molunerfinn/PicGo): 开源图床工具

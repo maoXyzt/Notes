@@ -1,4 +1,4 @@
-# 同步 Linux/MacOS 配置: Mackup
+# Linux/MacOS 配置同步: Mackup
 
 Mackup 是一个命令行工具，用于备份和恢复应用程序的配置文件。
 

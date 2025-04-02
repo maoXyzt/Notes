@@ -18,7 +18,7 @@
 * [Linux 下多线程下载工具 - Axel](./Linux/Linux下多线程下载工具-Axel.md)
 * [Linux 新建用户](./Linux/Linux新建用户.md)
 * [Linux 修改默认 shell](./Linux/Linux修改默认shell.md)
-* [同步 Linux/MacOS 配置: Mackup](./Linux/Mackup%20同步linux%2Cmacos配置.md)
+* [Linux/MacOS 配置同步: Mackup](./Linux/Mackup%20同步linux%2Cmacos配置.md)
 * [TCP & UDP 端口连通性测试](./Linux/TCP%26UDP端口连通性测试.md)
 * [wget 下载 Google Drive 共享的文件](./Linux/wget下载Google%20Drive共享的文件.md)
 * [ZSH 常用插件](./Linux/zsh常用插件.md)
