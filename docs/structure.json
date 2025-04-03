@@ -772,14 +772,230 @@
     "collapsed": false
   },
   {
-    "text": "4 - 软件工具应用-Applications",
+    "text": "4 - 领域知识-DomainKnowledge",
+    "items": [
+      {
+        "text": "4.1 图形学",
+        "items": [
+          {
+            "text": "OpenGL 坐标系统",
+            "link": "/领域知识-DomainKnowledge/图形学/OpenGL坐标系统.md"
+          },
+          {
+            "text": "变换的分类",
+            "link": "/领域知识-DomainKnowledge/图形学/变换的分类.md"
+          },
+          {
+            "text": "骨骼动画原理",
+            "link": "/领域知识-DomainKnowledge/图形学/骨骼动画原理.md"
+          },
+          {
+            "text": "旋转的 4 种表示方式",
+            "link": "/领域知识-DomainKnowledge/图形学/旋转的不同表示方式.md"
+          },
+          {
+            "text": "常用软件的坐标系和旋转 Conventions",
+            "link": "/领域知识-DomainKnowledge/图形学/坐标系&旋转 Conventions.md"
+          },
+          {
+            "text": "游戏引擎技术及架构",
+            "items": [
+              {
+                "text": "第一章 导论",
+                "link": "/领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/01-导论.md"
+              },
+              {
+                "text": "第四章 游戏所需的三维数学",
+                "link": "/领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/04-游戏所需的三维数学.md"
+              },
+              {
+                "text": "第11章 动画系统",
+                "link": "/领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/11-动画系统.md"
+              }
+            ],
+            "collapsed": true
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "4.2 Applied Social Network Analysis in Python",
+        "items": [
+          {
+            "text": "Course Syllabus",
+            "link": "/领域知识-DomainKnowledge/Applied Social Network Analysis in Python/Syllabus.md"
+          },
+          {
+            "text": "Module 1 - Why Study Networks and Basics on NetworkX",
+            "items": [
+              {
+                "text": "01. Networks: Definition and Why We Study Them",
+                "link": "/领域知识-DomainKnowledge/Applied Social Network Analysis in Python/Module 1 - Why Study Networks and Basics on NetworkX/Why Study Networks and Basics on NetworkX.md"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "text": "Module 2 - Network Connectivity",
+            "items": [
+              {
+                "text": "01. Clustering Coefficient",
+                "link": "/领域知识-DomainKnowledge/Applied Social Network Analysis in Python/Module 2 - Network Connectivity/Network Connectivity.md"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "text": "Module 3 - Influence Measures and Network Centralization",
+            "items": [
+              {
+                "text": "01. Degree and Closeness Centrality",
+                "link": "/领域知识-DomainKnowledge/Applied Social Network Analysis in Python/Module 3 - Influence Measures and Network Centralization/Influence Measures and Network Centralization.md"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "text": "Module 4 - Network Evolution",
+            "items": [
+              {
+                "text": "01. Preferential Attachment Model",
+                "link": "/领域知识-DomainKnowledge/Applied Social Network Analysis in Python/Module 4 - Network Evolution/Network Evolution.md"
+              }
+            ],
+            "collapsed": true
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "4.3 个人服务搭建",
+        "items": [
+          {
+            "text": "NAS",
+            "items": [
+              {
+                "text": "NAS",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/"
+              },
+              {
+                "text": "Home Assistant 系统备份到 NAS",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/homeassistant系统备份到NAS.md"
+              },
+              {
+                "text": "Wallos: 个人订阅服务管理工具",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/Wallos个人订阅服务管理工具.md"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "text": "HomeAssistant",
+            "items": [
+              {
+                "text": "Aqara 设备通过 Matter 接入 HomeAssistant",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/Aqara设备通过Matter接入HomeAssistant.md"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "text": "PVE All-in-One 实践",
+            "items": [
+              {
+                "text": "PVE 系统备份到 NAS(smb)",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/PVE All-in-One 实践/PVE 系统备份备份到NAS(smb).md"
+              }
+            ],
+            "collapsed": true
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "4.4 Deep Learning",
+        "items": [
+          {
+            "text": "GAN模型的评价指标",
+            "link": "/领域知识-DomainKnowledge/Deep Learning/如何评价GAN网络的好坏：IS和FID.md"
+          },
+          {
+            "text": "动手学深度学习-pytorch版",
+            "items": [
+              {
+                "text": "1. 深度学习简介",
+                "link": "/领域知识-DomainKnowledge/Deep Learning/动手学深度学习-pytorch版/01-深度学习简介.md"
+              },
+              {
+                "text": "3. 深度学习基础",
+                "link": "/领域知识-DomainKnowledge/Deep Learning/动手学深度学习-pytorch版/03-深度学习基础.md"
+              },
+              {
+                "text": "4. 深度学习计算",
+                "link": "/领域知识-DomainKnowledge/Deep Learning/动手学深度学习-pytorch版/04-深度学习计算.md"
+              },
+              {
+                "text": "5. 卷积神经网络",
+                "link": "/领域知识-DomainKnowledge/Deep Learning/动手学深度学习-pytorch版/05-卷积神经网络.md"
+              },
+              {
+                "text": "6. 循环神经网络",
+                "link": "/领域知识-DomainKnowledge/Deep Learning/动手学深度学习-pytorch版/06-循环神经网络.md"
+              }
+            ],
+            "collapsed": true
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "4.5 Design Pattern",
+        "items": [
+          {
+            "text": "状态模式",
+            "link": "/领域知识-DomainKnowledge/Design Pattern/状态模式.md"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "4.6 LLM",
+        "items": [
+          {
+            "text": "Prompting Vision Language Models",
+            "link": "/领域知识-DomainKnowledge/LLM/Prompting Vision Language Models.md"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "4.7 数据结构",
+        "items": [
+          {
+            "text": "树",
+            "items": [
+              {
+                "text": "树",
+                "link": "/领域知识-DomainKnowledge/数据结构/树/树.md"
+              }
+            ],
+            "collapsed": true
+          }
+        ],
+        "collapsed": false
+      }
+    ],
+    "collapsed": false
+  },
+  {
+    "text": "5 - 软件工具应用-Applications",
     "items": [
       {
         "text": "virtualbox 硬盘扩容",
         "link": "/软件工具应用-Applications/virtualbox硬盘扩容.md"
       },
       {
-        "text": "4.1 Blender",
+        "text": "5.1 Blender",
         "items": [
           {
             "text": "Blender 和 mathutils 中的欧拉角",
@@ -833,21 +1049,7 @@
         "collapsed": false
       },
       {
-        "text": "4.2 MacOS",
-        "items": [
-          {
-            "text": "Homebrew 的安装、换源和卸载",
-            "link": "/软件工具应用-Applications/MacOS/Homebrew的安装、换源和卸载.md"
-          },
-          {
-            "text": "MacOS 配置定时任务",
-            "link": "/软件工具应用-Applications/MacOS/MacOS 配置定时任务.md"
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "text": "4.3 Maya",
+        "text": "5.2 Maya",
         "items": [
           {
             "text": "maya 安装 numpy & scipy",
@@ -861,7 +1063,7 @@
         "collapsed": false
       },
       {
-        "text": "4.4 FBX",
+        "text": "5.3 FBX",
         "items": [
           {
             "text": "安装 FBX Python SDK",
@@ -871,7 +1073,7 @@
         "collapsed": false
       },
       {
-        "text": "4.5 Obsidian",
+        "text": "5.4 Obsidian",
         "items": [
           {
             "text": "Obsidian 同步 - 配置 LiveSync 与自托管 CouchDB 服务器",
@@ -881,7 +1083,7 @@
         "collapsed": false
       },
       {
-        "text": "4.6 Rime",
+        "text": "5.5 Rime",
         "items": [
           {
             "text": "Rime 输入法配置语言模型: 万象拼音模型",
@@ -891,7 +1093,7 @@
         "collapsed": false
       },
       {
-        "text": "4.7 zotero",
+        "text": "5.6 zotero",
         "items": [
           {
             "text": "zotero 修改 note templates",
@@ -904,230 +1106,28 @@
     "collapsed": false
   },
   {
-    "text": "5 - 领域知识-DomainKnowledge",
+    "text": "6 - MacOS",
     "items": [
       {
-        "text": "5.1 图形学",
-        "items": [
-          {
-            "text": "OpenGL 坐标系统",
-            "link": "/领域知识-DomainKnowledge/图形学/OpenGL坐标系统.md"
-          },
-          {
-            "text": "变换的分类",
-            "link": "/领域知识-DomainKnowledge/图形学/变换的分类.md"
-          },
-          {
-            "text": "骨骼动画原理",
-            "link": "/领域知识-DomainKnowledge/图形学/骨骼动画原理.md"
-          },
-          {
-            "text": "旋转的 4 种表示方式",
-            "link": "/领域知识-DomainKnowledge/图形学/旋转的不同表示方式.md"
-          },
-          {
-            "text": "常用软件的坐标系和旋转 Conventions",
-            "link": "/领域知识-DomainKnowledge/图形学/坐标系&旋转 Conventions.md"
-          },
-          {
-            "text": "游戏引擎技术及架构",
-            "items": [
-              {
-                "text": "第一章 导论",
-                "link": "/领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/01-导论.md"
-              },
-              {
-                "text": "第四章 游戏所需的三维数学",
-                "link": "/领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/04-游戏所需的三维数学.md"
-              },
-              {
-                "text": "第11章 动画系统",
-                "link": "/领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/11-动画系统.md"
-              }
-            ],
-            "collapsed": true
-          }
-        ],
-        "collapsed": false
+        "text": "Homebrew 的安装、换源和卸载",
+        "link": "/MacOS/Homebrew的安装、换源和卸载.md"
       },
       {
-        "text": "5.2 Applied Social Network Analysis in Python",
-        "items": [
-          {
-            "text": "Course Syllabus",
-            "link": "/领域知识-DomainKnowledge/Applied Social Network Analysis in Python/Syllabus.md"
-          },
-          {
-            "text": "Module 1 - Why Study Networks and Basics on NetworkX",
-            "items": [
-              {
-                "text": "01. Networks: Definition and Why We Study Them",
-                "link": "/领域知识-DomainKnowledge/Applied Social Network Analysis in Python/Module 1 - Why Study Networks and Basics on NetworkX/Why Study Networks and Basics on NetworkX.md"
-              }
-            ],
-            "collapsed": true
-          },
-          {
-            "text": "Module 2 - Network Connectivity",
-            "items": [
-              {
-                "text": "01. Clustering Coefficient",
-                "link": "/领域知识-DomainKnowledge/Applied Social Network Analysis in Python/Module 2 - Network Connectivity/Network Connectivity.md"
-              }
-            ],
-            "collapsed": true
-          },
-          {
-            "text": "Module 3 - Influence Measures and Network Centralization",
-            "items": [
-              {
-                "text": "01. Degree and Closeness Centrality",
-                "link": "/领域知识-DomainKnowledge/Applied Social Network Analysis in Python/Module 3 - Influence Measures and Network Centralization/Influence Measures and Network Centralization.md"
-              }
-            ],
-            "collapsed": true
-          },
-          {
-            "text": "Module 4 - Network Evolution",
-            "items": [
-              {
-                "text": "01. Preferential Attachment Model",
-                "link": "/领域知识-DomainKnowledge/Applied Social Network Analysis in Python/Module 4 - Network Evolution/Network Evolution.md"
-              }
-            ],
-            "collapsed": true
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "text": "5.3 个人服务搭建",
-        "items": [
-          {
-            "text": "NAS",
-            "items": [
-              {
-                "text": "NAS",
-                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/"
-              },
-              {
-                "text": "Home Assistant 系统备份到 NAS",
-                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/homeassistant系统备份到NAS.md"
-              },
-              {
-                "text": "Wallos: 个人订阅服务管理工具",
-                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/Wallos个人订阅服务管理工具.md"
-              }
-            ],
-            "collapsed": true
-          },
-          {
-            "text": "HomeAssistant",
-            "items": [
-              {
-                "text": "Aqara 设备通过 Matter 接入 HomeAssistant",
-                "link": "/领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/Aqara设备通过Matter接入HomeAssistant.md"
-              }
-            ],
-            "collapsed": true
-          },
-          {
-            "text": "PVE All-in-One 实践",
-            "items": [
-              {
-                "text": "PVE 系统备份到 NAS(smb)",
-                "link": "/领域知识-DomainKnowledge/个人服务搭建/PVE All-in-One 实践/PVE 系统备份备份到NAS(smb).md"
-              }
-            ],
-            "collapsed": true
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "text": "5.4 Deep Learning",
-        "items": [
-          {
-            "text": "GAN模型的评价指标",
-            "link": "/领域知识-DomainKnowledge/Deep Learning/如何评价GAN网络的好坏：IS和FID.md"
-          },
-          {
-            "text": "动手学深度学习-pytorch版",
-            "items": [
-              {
-                "text": "1. 深度学习简介",
-                "link": "/领域知识-DomainKnowledge/Deep Learning/动手学深度学习-pytorch版/01-深度学习简介.md"
-              },
-              {
-                "text": "3. 深度学习基础",
-                "link": "/领域知识-DomainKnowledge/Deep Learning/动手学深度学习-pytorch版/03-深度学习基础.md"
-              },
-              {
-                "text": "4. 深度学习计算",
-                "link": "/领域知识-DomainKnowledge/Deep Learning/动手学深度学习-pytorch版/04-深度学习计算.md"
-              },
-              {
-                "text": "5. 卷积神经网络",
-                "link": "/领域知识-DomainKnowledge/Deep Learning/动手学深度学习-pytorch版/05-卷积神经网络.md"
-              },
-              {
-                "text": "6. 循环神经网络",
-                "link": "/领域知识-DomainKnowledge/Deep Learning/动手学深度学习-pytorch版/06-循环神经网络.md"
-              }
-            ],
-            "collapsed": true
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "text": "5.5 Design Pattern",
-        "items": [
-          {
-            "text": "状态模式",
-            "link": "/领域知识-DomainKnowledge/Design Pattern/状态模式.md"
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "text": "5.6 LLM",
-        "items": [
-          {
-            "text": "Prompting Vision Language Models",
-            "link": "/领域知识-DomainKnowledge/LLM/Prompting Vision Language Models.md"
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "text": "5.7 数据结构",
-        "items": [
-          {
-            "text": "树",
-            "items": [
-              {
-                "text": "树",
-                "link": "/领域知识-DomainKnowledge/数据结构/树/树.md"
-              }
-            ],
-            "collapsed": true
-          }
-        ],
-        "collapsed": false
+        "text": "MacOS 配置定时任务",
+        "link": "/MacOS/MacOS 配置定时任务.md"
       }
     ],
     "collapsed": false
   },
   {
-    "text": "6 - 算法-Algorithm",
+    "text": "7 - 算法-Algorithm",
     "items": [
       {
         "text": "详解布隆过滤器(Bloom Filter)的原理，使用场景和注意事项",
         "link": "/算法-Algorithm/布隆过滤器(Bloom Filter).md"
       },
       {
-        "text": "6.1 LeetCode",
+        "text": "7.1 LeetCode",
         "items": [
           {
             "text": "LeetCode 134. 加油站",
