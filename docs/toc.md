@@ -3,73 +3,9 @@
 [[toc]]
 
 <!-- TOC -->
-## 1 - Linux
+## 1 - 编程开发-Programming
 
-* [awscli 使用指南](./Linux/awscli使用指南.md)
-* [convmv 命令解决 GBK 中文文件名乱码](./Linux/convmv命令解决GBK中文文件名乱码.md)
-* [Linux Shell 输出重定向并后台执行](./Linux/Linux%20Shell输出重定向并后台执行.md)
-* [Linux 实时内存监控: top, vmstat, free](./Linux/Linux%20实时内存监控-top%2Cvmstat%2Cfree.md)
-* [Linux 环境变量设置：env, set, export](./Linux/Linux环境变量设置-env%2C%20set%2C%20export.md)
-* [Linux 开发环境 setup](./Linux/Linux开发环境setup.md)
-* [Linux 快速传输大文件: nc 命令](./Linux/Linux快速传输大文件-nc.md)
-* [Linux 批量杀死进程](./Linux/Linux批量杀死进程.md)
-* [Linux 搜索所有文件中的内容: grep, riggrep](./Linux/Linux搜索所有文件中的内容-grep%2Criggrep.md)
-* [Linux 系统访问 NAS 的 SMB 文件服务](./Linux/Linux系统访问NAS的文件服务%28samba%29.md)
-* [Linux 下多线程下载工具 - Axel](./Linux/Linux下多线程下载工具-Axel.md)
-* [Linux 新建用户](./Linux/Linux新建用户.md)
-* [Linux 修改默认 shell](./Linux/Linux修改默认shell.md)
-* [Linux/MacOS 配置同步: Mackup](./Linux/Mackup%20同步linux%2Cmacos配置.md)
-* [TCP & UDP 端口连通性测试](./Linux/TCP%26UDP端口连通性测试.md)
-* [wget 下载 Google Drive 共享的文件](./Linux/wget下载Google%20Drive共享的文件.md)
-* [ZSH 常用插件](./Linux/zsh常用插件.md)
-* [安装 chromedriver](./Linux/安装chromedriver.md)
-* [运行命令时，指定 GCC 版本](./Linux/指定命令的gcc版本.md)
-* [使用 OpenSSL 生成自签名 SSL 证书](./Linux/自签名SSL证书-openssl.md)
-
-### 1.1 CentOS
-
-* [CentOS 7 lvm分区扩容](./Linux/CentOS/CentOS%207%20lvm分区扩容.md)
-* [CentOS 7 安装/升级 Git 版本](./Linux/CentOS/CentOS%207%20安装升级Git版本.md)
-* [CentOS 7 常用工具包安装](./Linux/CentOS/CentOS%207%20常用工具包安装.md)
-* [CentOS 7 防火墙开放端口](./Linux/CentOS/CentOS%207%20开放端口.md)
-* [CentOS 配置国内源](./Linux/CentOS/CentOS%20配置国内源.md)
-
-### 1.2 nginx
-
-* [nginx 代理json文件作为API response](./Linux/nginx/nginx%20代理json文件作为API%20response.md)
-* [nginx 配置 examples](./Linux/nginx/nginx%20配置%20examples.md)
-* [nginx 配置常见问题](./Linux/nginx/nginx%20配置常见问题.md)
-* [nginx 隐藏响应头中的版本信息](./Linux/nginx/nginx%20隐藏响应头的版本信息%28header的server字段%29.md)
-* [nginx 用于部署静态页面](./Linux/nginx/nginx%20用于部署静态页面.md)
-
-### 1.3 SSH
-
-* [使用 `sshfs` 命令简易挂载远程目录](./Linux/SSH/sshfs命令简易挂载远程目录.md)
-* [SSH 开启隧道](./Linux/SSH/ssh开启隧道.md)
-* [SSH 配置心跳信号防止断开连接](./Linux/SSH/SSH配置心跳信号防止断开连接.md)
-* [创建 SSH 密钥对并使用密钥登录](./Linux/SSH/创建SSH密钥对并使用密钥登录.md)
-
-### 1.4 Vim
-
-* [Neovim 安装与配置](./Linux/Vim/Neovim安装与配置.md)
-* [vim 插件管理: vim-plug](./Linux/Vim/vim插件管理%20-%20vim-plug.md)
-
-## 2 - Windows
-
-* [Windows](./Windows/)
-* [powershell 开启补全功能](./Windows/powershell%20开启补全功能.md)
-* [powershell 加速启动](./Windows/powershell%20启动加速.md)
-* [Windows 平台好用的软件推荐](./Windows/windows%20平台好用的软件推荐.md)
-* [windows 查找端口占用](./Windows/windows查找端口占用.md)
-* [windows 创建软链接](./Windows/windows建立软链接.md)
-* [winget 更换国内源](./Windows/winget更换国内源.md)
-* [创建自启动的 Windows Service 程序](./Windows/创建自启动的Windows%20Service程序.md)
-* [右键菜单添加 “通过 xxx 打开”](./Windows/右键菜单添加%E2%80%9C通过xxx打开%E2%80%9D.md)
-* [右键用 windows terminal 打开当前目录](./Windows/右键用windows%20terminal打开当前目录.md)
-
-## 3 - 编程开发-Programming
-
-### 3.1 Python
+### 1.1 Python
 
 * [alembic 基本命令](./编程开发-Programming/Python/alembic基本命令.md)
 * [conda 换源](./编程开发-Programming/Python/conda%20换源.md)
@@ -112,7 +48,7 @@
 * tensorflow
   * [Tensorflow 中关于 pad 函数的详细理解](./编程开发-Programming/Python/tensorflow/TensorFlow中关于pad函数的详细理解.md)
 
-### 3.2 Database
+### 1.2 Database
 
 * [SQL 查询每个分组的前 N 条数据](./编程开发-Programming/Database/SQL查询每个分组的前N条数据.md)
 * [SQL 查询优化经验](./编程开发-Programming/Database/SQL查询优化经验.md)
@@ -147,17 +83,7 @@
 * SQLite
   * [SQLite 数据库文件损坏修复](./编程开发-Programming/Database/SQLite/SQLite数据库文件损坏修复.md)
 
-### 3.3 Git
-
-* [git Error: Connection closed by 20.205.243.166 port 22](./编程开发-Programming/Git/git%20error%20-%20connection%20closed.md)
-* [git prune, git remote prune, git fetch --prune 三者异同](./编程开发-Programming/Git/git%20prune%2C%20git%20remote%20prune%2C%20git%20fetch.md)
-* [使用 Git Subtree 同步子项目](./编程开发-Programming/Git/git%20subtree.md)
-* [Git 多个账号用不同私钥登录](./编程开发-Programming/Git/Git%20多个账号用不同私钥登录.md)
-* [Git 配置文件大小写写敏感](./编程开发-Programming/Git/git%20配置对文件名大小写敏感.md)
-* [Git 上传大文件 (> 25MB): Git LFS](./编程开发-Programming/Git/git上传大文件%28gt25MB%29-git%20lts.md)
-* [Global gitignore](./编程开发-Programming/Git/global%20gitignore.md)
-
-### 3.4 Frontend
+### 1.3 Frontend
 
 * [Husky: 配置前端项目的 git hooks](./编程开发-Programming/Frontend/Husky-配置前端项目的git%20hooks.md)
 * [安装 Node.js](./编程开发-Programming/Frontend/Node.js%20安装.md)
@@ -175,18 +101,7 @@
 * JS-TS
   * [箭头函数与普通函数的区别](./编程开发-Programming/Frontend/JS-TS/箭头函数与普通函数的区别.md)
 
-### 3.5 Go
-
-* [Go语言编译与工具](./编程开发-Programming/Go/Go语言编译与工具.md)
-* [Linux下安装Go环境](./编程开发-Programming/Go/Linux下Go环境安装.md)
-* [如何下载 golang.org 的包](./编程开发-Programming/Go/下载golang.org的包.md)
-
-### 3.6 Elixir
-
-* [asdf版本管理工具的安装和使用](./编程开发-Programming/Elixir/asdf版本管理工具的安装和使用.md)
-* [hex.pm国内镜像](./编程开发-Programming/Elixir/hex.pm国内镜像.md)
-
-### 3.7 容器化
+### 1.4 容器化
 
 * Docker
   * [Docker](./编程开发-Programming/容器化/Docker/)
@@ -204,13 +119,146 @@
 * Kubernetes
   * [k8s 集群搭建](./编程开发-Programming/容器化/Kubernetes/k8s集群搭建.md)
 
-### 3.8 Rust
+### 1.5 Git
 
-* [Rust 工具链 & Cargo 国内源](./编程开发-Programming/Rust/Rust%20工具链%20%26%20Cargo%20国内源.md)
+* [git Error: Connection closed by 20.205.243.166 port 22](./编程开发-Programming/Git/git%20error%20-%20connection%20closed.md)
+* [git prune, git remote prune, git fetch --prune 三者异同](./编程开发-Programming/Git/git%20prune%2C%20git%20remote%20prune%2C%20git%20fetch.md)
+* [使用 Git Subtree 同步子项目](./编程开发-Programming/Git/git%20subtree.md)
+* [Git 多个账号用不同私钥登录](./编程开发-Programming/Git/Git%20多个账号用不同私钥登录.md)
+* [Git 配置文件大小写写敏感](./编程开发-Programming/Git/git%20配置对文件名大小写敏感.md)
+* [Git 上传大文件 (> 25MB): Git LFS](./编程开发-Programming/Git/git上传大文件%28gt25MB%29-git%20lts.md)
+* [Global gitignore](./编程开发-Programming/Git/global%20gitignore.md)
 
-### 3.9 代码质量-CodeQuality
+### 1.6 Go
+
+* [Go语言编译与工具](./编程开发-Programming/Go/Go语言编译与工具.md)
+* [Linux下安装Go环境](./编程开发-Programming/Go/Linux下Go环境安装.md)
+* [如何下载 golang.org 的包](./编程开发-Programming/Go/下载golang.org的包.md)
+
+### 1.7 Elixir
+
+* [asdf版本管理工具的安装和使用](./编程开发-Programming/Elixir/asdf版本管理工具的安装和使用.md)
+* [hex.pm国内镜像](./编程开发-Programming/Elixir/hex.pm国内镜像.md)
+
+### 1.8 Rust
+
+* [Rust 工具链 & Cargo 国内源](./编程开发-Programming/Rust/Rust工具链%26Cargo国内源.md)
+* [Rust 项目结构](./编程开发-Programming/Rust/Rust项目结构.md)
+
+### 1.9 代码质量-CodeQuality
 
 * [代码整洁之道 第 2 章 有意义的命名](./编程开发-Programming/代码质量-CodeQuality/代码整洁之道-2-有意义的命名.md)
+
+## 2 - Linux
+
+* [awscli 使用指南](./Linux/awscli使用指南.md)
+* [convmv 命令解决 GBK 中文文件名乱码](./Linux/convmv命令解决GBK中文文件名乱码.md)
+* [Linux Shell 输出重定向并后台执行](./Linux/Linux%20Shell输出重定向并后台执行.md)
+* [Linux 实时内存监控: top, vmstat, free](./Linux/Linux%20实时内存监控-top%2Cvmstat%2Cfree.md)
+* [Linux 环境变量设置：env, set, export](./Linux/Linux环境变量设置-env%2C%20set%2C%20export.md)
+* [Linux 开发环境 setup](./Linux/Linux开发环境setup.md)
+* [Linux 快速传输大文件: nc 命令](./Linux/Linux快速传输大文件-nc.md)
+* [Linux 批量杀死进程](./Linux/Linux批量杀死进程.md)
+* [Linux 搜索所有文件中的内容: grep, riggrep](./Linux/Linux搜索所有文件中的内容-grep%2Criggrep.md)
+* [Linux 系统访问 NAS 的 SMB 文件服务](./Linux/Linux系统访问NAS的文件服务%28samba%29.md)
+* [Linux 下多线程下载工具 - Axel](./Linux/Linux下多线程下载工具-Axel.md)
+* [Linux 新建用户](./Linux/Linux新建用户.md)
+* [Linux 修改默认 shell](./Linux/Linux修改默认shell.md)
+* [Linux/MacOS 配置同步: Mackup](./Linux/Mackup%20同步linux%2Cmacos配置.md)
+* [TCP & UDP 端口连通性测试](./Linux/TCP%26UDP端口连通性测试.md)
+* [wget 下载 Google Drive 共享的文件](./Linux/wget下载Google%20Drive共享的文件.md)
+* [ZSH 常用插件](./Linux/zsh常用插件.md)
+* [安装 chromedriver](./Linux/安装chromedriver.md)
+* [运行命令时，指定 GCC 版本](./Linux/指定命令的gcc版本.md)
+* [使用 OpenSSL 生成自签名 SSL 证书](./Linux/自签名SSL证书-openssl.md)
+
+### 2.1 CentOS
+
+* [CentOS 7 lvm分区扩容](./Linux/CentOS/CentOS%207%20lvm分区扩容.md)
+* [CentOS 7 安装/升级 Git 版本](./Linux/CentOS/CentOS%207%20安装升级Git版本.md)
+* [CentOS 7 常用工具包安装](./Linux/CentOS/CentOS%207%20常用工具包安装.md)
+* [CentOS 7 防火墙开放端口](./Linux/CentOS/CentOS%207%20开放端口.md)
+* [CentOS 配置国内源](./Linux/CentOS/CentOS%20配置国内源.md)
+
+### 2.2 nginx
+
+* [nginx 代理json文件作为API response](./Linux/nginx/nginx%20代理json文件作为API%20response.md)
+* [nginx 配置 examples](./Linux/nginx/nginx%20配置%20examples.md)
+* [nginx 配置常见问题](./Linux/nginx/nginx%20配置常见问题.md)
+* [nginx 隐藏响应头中的版本信息](./Linux/nginx/nginx%20隐藏响应头的版本信息%28header的server字段%29.md)
+* [nginx 用于部署静态页面](./Linux/nginx/nginx%20用于部署静态页面.md)
+
+### 2.3 SSH
+
+* [使用 `sshfs` 命令简易挂载远程目录](./Linux/SSH/sshfs命令简易挂载远程目录.md)
+* [SSH 开启隧道](./Linux/SSH/ssh开启隧道.md)
+* [SSH 配置心跳信号防止断开连接](./Linux/SSH/SSH配置心跳信号防止断开连接.md)
+* [创建 SSH 密钥对并使用密钥登录](./Linux/SSH/创建SSH密钥对并使用密钥登录.md)
+
+### 2.4 Vim
+
+* [Neovim 安装与配置](./Linux/Vim/Neovim安装与配置.md)
+* [vim 插件管理: vim-plug](./Linux/Vim/vim插件管理%20-%20vim-plug.md)
+
+## 3 - 领域知识-DomainKnowledge
+
+### 3.1 图形学
+
+* [OpenGL 坐标系统](./领域知识-DomainKnowledge/图形学/OpenGL坐标系统.md)
+* [变换的分类](./领域知识-DomainKnowledge/图形学/变换的分类.md)
+* [骨骼动画原理](./领域知识-DomainKnowledge/图形学/骨骼动画原理.md)
+* [旋转的 4 种表示方式](./领域知识-DomainKnowledge/图形学/旋转的不同表示方式.md)
+* [常用软件的坐标系和旋转 Conventions](./领域知识-DomainKnowledge/图形学/坐标系%26旋转%20Conventions.md)
+* 游戏引擎技术及架构
+  * [第一章 导论](./领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/01-导论.md)
+  * [第四章 游戏所需的三维数学](./领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/04-游戏所需的三维数学.md)
+  * [第11章 动画系统](./领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/11-动画系统.md)
+
+### 3.2 Deep Learning
+
+* [GAN模型的评价指标](./领域知识-DomainKnowledge/Deep%20Learning/如何评价GAN网络的好坏%EF%BC%9AIS和FID.md)
+* 动手学深度学习-pytorch版
+  * [1. 深度学习简介](./领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/01-深度学习简介.md)
+  * [3. 深度学习基础](./领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/03-深度学习基础.md)
+  * [4. 深度学习计算](./领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/04-深度学习计算.md)
+  * [5. 卷积神经网络](./领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/05-卷积神经网络.md)
+  * [6. 循环神经网络](./领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/06-循环神经网络.md)
+
+### 3.3 Applied Social Network Analysis in Python
+
+* [Course Syllabus](./领域知识-DomainKnowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Syllabus.md)
+* Module 1 - Why Study Networks and Basics on NetworkX
+  * [01. Networks: Definition and Why We Study Them](./领域知识-DomainKnowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%201%20-%20Why%20Study%20Networks%20and%20Basics%20on%20NetworkX/Why%20Study%20Networks%20and%20Basics%20on%20NetworkX.md)
+* Module 2 - Network Connectivity
+  * [01. Clustering Coefficient](./领域知识-DomainKnowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%202%20-%20Network%20Connectivity/Network%20Connectivity.md)
+* Module 3 - Influence Measures and Network Centralization
+  * [01. Degree and Closeness Centrality](./领域知识-DomainKnowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%203%20-%20Influence%20Measures%20and%20Network%20Centralization/Influence%20Measures%20and%20Network%20Centralization.md)
+* Module 4 - Network Evolution
+  * [01. Preferential Attachment Model](./领域知识-DomainKnowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%204%20-%20Network%20Evolution/Network%20Evolution.md)
+
+### 3.4 个人服务搭建
+
+* NAS
+  * [NAS](./领域知识-DomainKnowledge/个人服务搭建/NAS/)
+  * [Home Assistant 系统备份到 NAS](./领域知识-DomainKnowledge/个人服务搭建/NAS/homeassistant系统备份到NAS.md)
+  * [Wallos: 个人订阅服务管理工具](./领域知识-DomainKnowledge/个人服务搭建/NAS/Wallos个人订阅服务管理工具.md)
+* HomeAssistant
+  * [Aqara 设备通过 Matter 接入 HomeAssistant](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/Aqara设备通过Matter接入HomeAssistant.md)
+* PVE All-in-One 实践
+  * [PVE 系统备份到 NAS(smb)](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20系统备份备份到NAS%28smb%29.md)
+
+### 3.5 Design Pattern
+
+* [状态模式](./领域知识-DomainKnowledge/Design%20Pattern/状态模式.md)
+
+### 3.6 LLM
+
+* [Prompting Vision Language Models](./领域知识-DomainKnowledge/LLM/Prompting%20Vision%20Language%20Models.md)
+
+### 3.7 数据结构
+
+* 树
+  * [树](./领域知识-DomainKnowledge/数据结构/树/树.md)
 
 ## 4 - 软件工具应用-Applications
 
@@ -257,65 +305,18 @@
 
 * [zotero 修改 note templates](./软件工具应用-Applications/zotero/zotero修改note%20templates.md)
 
-## 5 - 领域知识-DomainKnowledge
+## 5 - Windows
 
-### 5.1 图形学
-
-* [OpenGL 坐标系统](./领域知识-DomainKnowledge/图形学/OpenGL坐标系统.md)
-* [变换的分类](./领域知识-DomainKnowledge/图形学/变换的分类.md)
-* [骨骼动画原理](./领域知识-DomainKnowledge/图形学/骨骼动画原理.md)
-* [旋转的 4 种表示方式](./领域知识-DomainKnowledge/图形学/旋转的不同表示方式.md)
-* [常用软件的坐标系和旋转 Conventions](./领域知识-DomainKnowledge/图形学/坐标系%26旋转%20Conventions.md)
-* 游戏引擎技术及架构
-  * [第一章 导论](./领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/01-导论.md)
-  * [第四章 游戏所需的三维数学](./领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/04-游戏所需的三维数学.md)
-  * [第11章 动画系统](./领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/11-动画系统.md)
-
-### 5.2 Applied Social Network Analysis in Python
-
-* [Course Syllabus](./领域知识-DomainKnowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Syllabus.md)
-* Module 1 - Why Study Networks and Basics on NetworkX
-  * [01. Networks: Definition and Why We Study Them](./领域知识-DomainKnowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%201%20-%20Why%20Study%20Networks%20and%20Basics%20on%20NetworkX/Why%20Study%20Networks%20and%20Basics%20on%20NetworkX.md)
-* Module 2 - Network Connectivity
-  * [01. Clustering Coefficient](./领域知识-DomainKnowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%202%20-%20Network%20Connectivity/Network%20Connectivity.md)
-* Module 3 - Influence Measures and Network Centralization
-  * [01. Degree and Closeness Centrality](./领域知识-DomainKnowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%203%20-%20Influence%20Measures%20and%20Network%20Centralization/Influence%20Measures%20and%20Network%20Centralization.md)
-* Module 4 - Network Evolution
-  * [01. Preferential Attachment Model](./领域知识-DomainKnowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%204%20-%20Network%20Evolution/Network%20Evolution.md)
-
-### 5.3 个人服务搭建
-
-* NAS
-  * [NAS](./领域知识-DomainKnowledge/个人服务搭建/NAS/)
-  * [Home Assistant 系统备份到 NAS](./领域知识-DomainKnowledge/个人服务搭建/NAS/homeassistant系统备份到NAS.md)
-  * [Wallos: 个人订阅服务管理工具](./领域知识-DomainKnowledge/个人服务搭建/NAS/Wallos个人订阅服务管理工具.md)
-* HomeAssistant
-  * [Aqara 设备通过 Matter 接入 HomeAssistant](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/Aqara设备通过Matter接入HomeAssistant.md)
-* PVE All-in-One 实践
-  * [PVE 系统备份到 NAS(smb)](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20系统备份备份到NAS%28smb%29.md)
-
-### 5.4 Deep Learning
-
-* [GAN模型的评价指标](./领域知识-DomainKnowledge/Deep%20Learning/如何评价GAN网络的好坏%EF%BC%9AIS和FID.md)
-* 动手学深度学习-pytorch版
-  * [1. 深度学习简介](./领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/01-深度学习简介.md)
-  * [3. 深度学习基础](./领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/03-深度学习基础.md)
-  * [4. 深度学习计算](./领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/04-深度学习计算.md)
-  * [5. 卷积神经网络](./领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/05-卷积神经网络.md)
-  * [6. 循环神经网络](./领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/06-循环神经网络.md)
-
-### 5.5 Design Pattern
-
-* [状态模式](./领域知识-DomainKnowledge/Design%20Pattern/状态模式.md)
-
-### 5.6 LLM
-
-* [Prompting Vision Language Models](./领域知识-DomainKnowledge/LLM/Prompting%20Vision%20Language%20Models.md)
-
-### 5.7 数据结构
-
-* 树
-  * [树](./领域知识-DomainKnowledge/数据结构/树/树.md)
+* [Windows](./Windows/)
+* [powershell 开启补全功能](./Windows/powershell%20开启补全功能.md)
+* [powershell 加速启动](./Windows/powershell%20启动加速.md)
+* [Windows 平台好用的软件推荐](./Windows/windows%20平台好用的软件推荐.md)
+* [windows 查找端口占用](./Windows/windows查找端口占用.md)
+* [windows 创建软链接](./Windows/windows建立软链接.md)
+* [winget 更换国内源](./Windows/winget更换国内源.md)
+* [创建自启动的 Windows Service 程序](./Windows/创建自启动的Windows%20Service程序.md)
+* [右键菜单添加 “通过 xxx 打开”](./Windows/右键菜单添加%E2%80%9C通过xxx打开%E2%80%9D.md)
+* [右键用 windows terminal 打开当前目录](./Windows/右键用windows%20terminal打开当前目录.md)
 
 ## 6 - 算法-Algorithm
 

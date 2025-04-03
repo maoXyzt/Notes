@@ -16,6 +16,7 @@
         "pipx",
         "procs",
         "pypinyin",
+        "rlib",
         "rustup",
         "thefuck",
         "unplugin",

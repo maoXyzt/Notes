@@ -107,9 +107,15 @@ def build_from_root(root: Path) -> GroupInfo:
 def order_group_by_num_of_children(group: GroupInfo, add_title_index: bool = True):
     """Recursively sort a group and its children by the number of children."""
 
+    def sum_items(item: GroupInfo | PageInfo) -> int:
+        if isinstance(item, GroupInfo):
+            return sum([sum_items(child) for child in item.items])
+        elif isinstance(item, PageInfo):
+            return 1
+
     def _sort_key(item: GroupInfo | PageInfo):
         if isinstance(item, GroupInfo):
-            return len(item.items)
+            return sum_items(item)
         elif isinstance(item, PageInfo):
             return math.inf
 
