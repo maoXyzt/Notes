@@ -48,6 +48,7 @@ locale -a
 ```bash
 sudo apt install language-pack-zh-hans
 # 如果需要繁体中文，安装: language-pack-zh-hant
+# 建议同时也安装英文语言包: language-pack-en
 ```
 
 再次执行 `locale -a` 命令，可以看到系统现在支持 "zh_CN.utf8" 编码。
