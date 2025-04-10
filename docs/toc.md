@@ -18,7 +18,6 @@
 * [Python 脚本中获取脚本文件自身的路径](./编程开发-Programming/Python/python脚本获取自身当前路径的正确方法.md)
 * [python 通过 ssh 连接数据库](./编程开发-Programming/Python/python通过ssh连接数据库.md)
 * [python 字符串编码](./编程开发-Programming/Python/python字符串编码.md)
-* [SQLAlchemy 与数据库交互的方式](./编程开发-Programming/Python/SQLAlchemy操作数据的方法.md)
 * [win10 系统下安装 pycrypto 包的方法](./编程开发-Programming/Python/win10系统下安装pycrypto包的方法.md)
 * [win 环境下 print 时的 UnicodeEncodingError](./编程开发-Programming/Python/win环境下print时的UnicodeEncodingError.md)
 * [Python 用 xlrd 读取 Excel 文件](./编程开发-Programming/Python/xlrd读取excel文件.md)
@@ -43,6 +42,9 @@
 * pytorch
   * [Tensor 数据操作](./编程开发-Programming/Python/pytorch/01-Tensor-数据操作.md)
   * [autograd 自动求梯度](./编程开发-Programming/Python/pytorch/02-autograd-自动求梯度.md)
+* SQLAlchemy
+  * [SQLAlchemy 与数据库交互的方式](./编程开发-Programming/Python/SQLAlchemy/SQLAlchemy操作数据的方法.md)
+  * [SQLAlchemy 查询对象转为 SQL 语句](./编程开发-Programming/Python/SQLAlchemy/SQLAlchemy查询对象转为SQL语句.md)
 * supervisor
   * [supervisor 的安装与基本命令](./编程开发-Programming/Python/supervisor/supervisor的安装与基本命令.md)
 * tensorflow

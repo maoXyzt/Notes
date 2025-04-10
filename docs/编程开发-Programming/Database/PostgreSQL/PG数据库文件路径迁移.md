@@ -38,7 +38,7 @@ cp -rf /var/lib/pgsql/9.x/data/* /home/data
 vim /usr/lib/systemd/system/postgresql*.service
 ```
 
-修改这个文件中的 (在 [Service] 部分)：
+修改这个文件中的 (在 `[Service]` 部分)：
 
 ```ini
 Environment=PGDATA=/var/lib/pgsql/9.4/data/

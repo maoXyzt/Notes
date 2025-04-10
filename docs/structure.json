@@ -50,10 +50,6 @@
             "link": "/编程开发-Programming/Python/python字符串编码.md"
           },
           {
-            "text": "SQLAlchemy 与数据库交互的方式",
-            "link": "/编程开发-Programming/Python/SQLAlchemy操作数据的方法.md"
-          },
-          {
             "text": "win10 系统下安装 pycrypto 包的方法",
             "link": "/编程开发-Programming/Python/win10系统下安装pycrypto包的方法.md"
           },
@@ -151,6 +147,20 @@
               {
                 "text": "autograd 自动求梯度",
                 "link": "/编程开发-Programming/Python/pytorch/02-autograd-自动求梯度.md"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "text": "SQLAlchemy",
+            "items": [
+              {
+                "text": "SQLAlchemy 与数据库交互的方式",
+                "link": "/编程开发-Programming/Python/SQLAlchemy/SQLAlchemy操作数据的方法.md"
+              },
+              {
+                "text": "SQLAlchemy 查询对象转为 SQL 语句",
+                "link": "/编程开发-Programming/Python/SQLAlchemy/SQLAlchemy查询对象转为SQL语句.md"
               }
             ],
             "collapsed": true
