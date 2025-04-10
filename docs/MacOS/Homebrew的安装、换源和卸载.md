@@ -52,8 +52,6 @@ brew tap -v --custom-remote --force-auto-update homebrew/core https://mirrors.al
 brew tap -v --custom-remote --force-auto-update homebrew/cask https://mirrors.aliyun.com/homebrew/homebrew-cask.git
 
 # 其他 tap 仓库按需配置即可
-brew tap -v --custom-remote --force-auto-update homebrew/cask-fonts https://mirrors.aliyun.com/homebrew/homebrew-cask-fonts.git
-brew tap -v --custom-remote --force-auto-update homebrew/cask-versions https://mirrors.aliyun.com/homebrew/homebrew-cask-versions.git
 brew tap -v --custom-remote --force-auto-update homebrew/command-not-found https://mirrors.aliyun.com/homebrew/homebrew-command-not-found.git
 brew tap -v --custom-remote --force-auto-update homebrew/services https://mirrors.aliyun.com/homebrew/homebrew-services.git
 ```

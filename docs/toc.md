@@ -318,11 +318,56 @@
 * [右键菜单添加 “通过 xxx 打开”](./Windows/右键菜单添加%E2%80%9C通过xxx打开%E2%80%9D.md)
 * [右键用 windows terminal 打开当前目录](./Windows/右键用windows%20terminal打开当前目录.md)
 
-## 6 - 算法-Algorithm
+## 5 - 软件工具应用-Applications
+
+* [virtualbox 硬盘扩容](./软件工具应用-Applications/virtualbox硬盘扩容.md)
+
+### 5.1 Blender
+
+* [Blender 和 mathutils 中的欧拉角](./软件工具应用-Applications/Blender/blender%26mathutils中的欧拉角.md)
+* [blender 安装 python packages](./软件工具应用-Applications/Blender/blender安装python%20packages.md)
+* [Blender 常用操作](./软件工具应用-Applications/Blender/blender常用操作.md)
+* [Blender 常用脚本](./软件工具应用-Applications/Blender/blender常用脚本.md)
+* [Blender 抠绿幕(keying)](./软件工具应用-Applications/Blender/blender抠绿幕%28keying%29.md)
+* [Blender 旋转、缩放 HDRI 背景](./软件工具应用-Applications/Blender/blender旋转%E3%80%81缩放HDRI背景.md)
+* [Blender 渲染绿幕视频](./软件工具应用-Applications/Blender/blender渲染绿幕视频.md)
+* [Blender中各种Matrix之间的关系](./软件工具应用-Applications/Blender/blender中各种Matrix之间的关系.md)
+* [CUDA cuInit Unknown error](./软件工具应用-Applications/Blender/CUDA%20cuInit%20Unknown%20error.md)
+* [Ubuntu 安装 blender](./软件工具应用-Applications/Blender/Ubuntu安装blender.md)
+* [通过脚本安装和启用 blender 插件(add-on)](./软件工具应用-Applications/Blender/通过脚本安装和启用插件%28add-on%29.md)
+* [headless 方式启动 blender (无 GUI)](./软件工具应用-Applications/Blender/无GUI启动blender.md)
+
+### 5.2 Maya
+
+* [maya 安装 numpy & scipy](./软件工具应用-Applications/Maya/maya安装numpy%26scipy.md)
+* [Maya 插件安装方法](./软件工具应用-Applications/Maya/maya插件安装方法.md)
+
+### 5.3 FBX
+
+* [安装 FBX Python SDK](./软件工具应用-Applications/FBX/安装FBX%20Python%20SDK.md)
+
+### 5.4 Obsidian
+
+* [Obsidian 同步 - 配置 LiveSync 与自托管 CouchDB 服务器](./软件工具应用-Applications/Obsidian/Obsidian%20同步%20-%20配置%20LiveSync%20与自托管%20CouchDB%20服务器.md)
+
+### 5.5 Rime
+
+* [Rime 输入法配置语言模型: 万象拼音模型](./软件工具应用-Applications/Rime/rime配置语言模型.md)
+
+### 5.6 zotero
+
+* [zotero 修改 note templates](./软件工具应用-Applications/zotero/zotero修改note%20templates.md)
+
+## 6 - MacOS
+
+* [Homebrew 的安装、换源和卸载](./MacOS/Homebrew的安装%E3%80%81换源和卸载.md)
+* [MacOS 配置定时任务](./MacOS/MacOS%20配置定时任务.md)
+
+## 7 - 算法-Algorithm
 
 * [详解布隆过滤器(Bloom Filter)的原理，使用场景和注意事项](./算法-Algorithm/布隆过滤器%28Bloom%20Filter%29.md)
 
-### 6.1 LeetCode
+### 7.1 LeetCode
 
 * [LeetCode 134. 加油站](./算法-Algorithm/LeetCode/134.%20加油站.md)
 * [LeetCode 162. 寻找峰值](./算法-Algorithm/LeetCode/162.寻找峰值.md)
