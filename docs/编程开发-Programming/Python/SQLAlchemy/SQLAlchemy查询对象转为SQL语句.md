@@ -10,4 +10,4 @@ statement = query.statement
 print(statement.compile(compile_kwargs={"literal_binds": True}))
 ```
 
-`literal_binds` 参数用于将 SQL 语句中的变量替换为实际值。
+`"literal_binds": True`: 将 SQL 语句中的变量替换为实际值。
