@@ -163,7 +163,7 @@
 * [Linux 搜索所有文件中的内容: grep, riggrep](./Linux/Linux搜索所有文件中的内容-grep%2Criggrep.md)
 * [Linux 系统访问 NAS 的 SMB 文件服务](./Linux/Linux系统访问NAS的文件服务%28samba%29.md)
 * [Linux 下多线程下载工具 - Axel](./Linux/Linux下多线程下载工具-Axel.md)
-* [Linux 新建用户](./Linux/Linux新建用户.md)
+* [Linux 新建用户，赋予 sudo 权限，并允许 ssh 连接](./Linux/Linux新建用户%2Csudo权限%2Cssh连接权限.md)
 * [Linux 修改默认 shell](./Linux/Linux修改默认shell.md)
 * [Linux/MacOS 配置同步: Mackup](./Linux/Mackup%20同步linux%2Cmacos配置.md)
 * [TCP & UDP 端口连通性测试](./Linux/TCP%26UDP端口连通性测试.md)

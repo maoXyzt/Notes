@@ -607,8 +607,8 @@
         "link": "/Linux/Linux下多线程下载工具-Axel.md"
       },
       {
-        "text": "Linux 新建用户",
-        "link": "/Linux/Linux新建用户.md"
+        "text": "Linux 新建用户，赋予 sudo 权限，并允许 ssh 连接",
+        "link": "/Linux/Linux新建用户,sudo权限,ssh连接权限.md"
       },
       {
         "text": "Linux 修改默认 shell",
