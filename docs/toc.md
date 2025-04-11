@@ -154,6 +154,7 @@
 ## 2 - Linux
 
 * [awscli 使用指南](./Linux/awscli使用指南.md)
+* [Bash 脚本中获得脚本文件当前路径](./Linux/Bash脚本中获得脚本文件当前路径.md)
 * [convmv 命令解决 GBK 中文文件名乱码](./Linux/convmv命令解决GBK中文文件名乱码.md)
 * [Linux Shell 输出重定向并后台执行](./Linux/Linux%20Shell输出重定向并后台执行.md)
 * [Linux 实时内存监控: top, vmstat, free](./Linux/Linux%20实时内存监控-top%2Cvmstat%2Cfree.md)

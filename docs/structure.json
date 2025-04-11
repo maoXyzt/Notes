@@ -573,6 +573,10 @@
         "link": "/Linux/awscli使用指南.md"
       },
       {
+        "text": "Bash 脚本中获得脚本文件当前路径",
+        "link": "/Linux/Bash脚本中获得脚本文件当前路径.md"
+      },
+      {
         "text": "convmv 命令解决 GBK 中文文件名乱码",
         "link": "/Linux/convmv命令解决GBK中文文件名乱码.md"
       },
