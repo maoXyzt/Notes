@@ -4,42 +4,25 @@ version = "0.1.0"
 description = "Personal notes and tools for managing notes."
 readme = "README.md"
 authors = [{ name = "maoXyzt", email = "edwardyzt@gmail.com" }]
-requires-python = ">=3.11, <3.13"
-dynamic = ["dependencies"]
+requires-python = ">=3.11"
 license = { text = 'Apache License 2.0' }
-classifiers = [
-    "Operating System :: Microsoft :: Windows",
-    "Operating System :: Unix",
-    "Operating System :: MacOS",
-    "Operating System :: POSIX :: Linux",
-    "Development Status :: 4 - Beta",
-    "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3.12",
-    "License :: OSI Approved :: Apache Software License",
+dependencies = [
+  "pydantic>=2.11.3",
+  "pydantic-settings>=2.8.1",
+  "pypinyin>=0.54.0",
+  "python-frontmatter>=1.1.0",
+  "rich>=14.0.0",
+  "typer>=0.15.2",
 ]
-keywords = []
 
 [project.scripts]
 update-toc = "cli:update_toc.main"
 
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+[tool.uv]
+package = false
+dev-dependencies = ["pre-commit>=4.2.0", "ruff>=0.11.5"]
 
-[tool.poetry]
-requires-poetry = ">=2.0,<3.0"
-# package-mode = false
-packages = [{ include = "cli", from = "." }]
-
-[tool.poetry.dependencies]
-python = ">=3.11,<3.13"
-pypinyin = "^0.53.0"
-python-frontmatter = "^1.1.0"
-typer = "^0.15.1"
-pydantic = "^2.10.5"
-rich = "^13.9.4"
-pydantic-settings = "^2.7.1"
-
-[tool.poetry.group.dev.dependencies]
-ruff = "^0.11.2"
-pre-commit = "^4.1.0"
+[[tool.uv.index]]
+name = "tsinghua"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true
