@@ -147,6 +147,10 @@
               {
                 "text": "autograd 自动求梯度",
                 "link": "/编程开发-Programming/Python/pytorch/02-autograd-自动求梯度.md"
+              },
+              {
+                "text": "torch.jit.script 与 torch.jit.trace",
+                "link": "/编程开发-Programming/Python/pytorch/torch.jit.script与torch.jit.trace.md"
               }
             ],
             "collapsed": true

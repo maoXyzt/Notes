@@ -42,6 +42,7 @@
 * pytorch
   * [Tensor 数据操作](./编程开发-Programming/Python/pytorch/01-Tensor-数据操作.md)
   * [autograd 自动求梯度](./编程开发-Programming/Python/pytorch/02-autograd-自动求梯度.md)
+  * [torch.jit.script 与 torch.jit.trace](./编程开发-Programming/Python/pytorch/torch.jit.script与torch.jit.trace.md)
 * SQLAlchemy
   * [SQLAlchemy 与数据库交互的方式](./编程开发-Programming/Python/SQLAlchemy/SQLAlchemy操作数据的方法.md)
   * [SQLAlchemy 查询对象转为 SQL 语句](./编程开发-Programming/Python/SQLAlchemy/SQLAlchemy查询对象转为SQL语句.md)

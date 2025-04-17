@@ -215,3 +215,25 @@ export default [
   },
 ]
 ```
+
+### (可选) @unocss/eslint-config
+
+UnoCSS 代码风格检查插件。
+
+> [Vue UnoCSS安装和配置](./Vue3%20UnoCSS安装和配置.md)
+> [UnoCSS ESLint Config](https://unocss.dev/integrations/eslint#eslint-config)
+
+安装:
+
+```bash
+pnpm add -D @unocss/eslint-config
+```
+
+```typescript
+import unocss from '@unocss/eslint-config/flat'
+
+export default [
+  // Other rules ...
+  unocss,
+]
+```
