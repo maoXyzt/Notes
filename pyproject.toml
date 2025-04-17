@@ -5,7 +5,7 @@ description = "Personal notes and tools for managing notes."
 readme = "README.md"
 authors = [{ name = "maoXyzt", email = "edwardyzt@gmail.com" }]
 requires-python = ">=3.11"
-license = { text = 'Apache License 2.0' }
+license = "Apache-2.0" # https://spdx.org/licenses/
 dependencies = [
   "pydantic>=2.11.3",
   "pydantic-settings>=2.8.1",
@@ -16,13 +16,19 @@ dependencies = [
 ]
 
 [project.scripts]
-update-toc = "cli:update_toc.main"
+update-toc = "cli.update_toc:main"
 
-[tool.uv]
-package = false
-dev-dependencies = ["pre-commit>=4.2.0", "ruff>=0.11.5"]
+[dependency-groups]
+dev = ["pre-commit>=4.2.0", "ruff>=0.11.5"]
 
 [[tool.uv.index]]
 name = "tsinghua"
 url = "https://pypi.tuna.tsinghua.edu.cn/simple"
 default = true
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["cli"]
