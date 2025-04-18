@@ -1,4 +1,10 @@
-# pip 命令换源
+# pip 命令换源 (含 PyTorch 源)
+
+> 相关话题: [Conda 换源](./conda%20换源.md)
+
+* 豆瓣源: <https://pypi.douban.com/simple/>
+* 清华源: <https://pypi.tuna.tsinghua.edu.cn/simple>
+* 阿里源: <https://mirrors.aliyun.com/pypi/simple/>
 
 ## 1 - 一次性临时使用
 
@@ -66,7 +72,23 @@ trusted-host = pypi.douban.com
 index_url = https://pypi.douban.com/simple
 ```
 
-## 4. Q&A
+## 4. 使用国内镜像加速安装 PyTorch
+
+* 阿里Pytorch源: <https://mirrors.aliyun.com/pytorch-wheels/>
+* 上海交通大学Pytorch源: <https://mirror.sjtu.edu.cn/pytorch-wheels/>
+
+使用方法: 把官方的 PyTorch 源 (<https://download.pytorch.org/whl/cu118>) 替换为国内源
+
+```bash
+# 用阿里云的源
+pip3 install torch==2.4.1 torchvision torchaudio -f https://mirrors.aliyun.com/pytorch-wheels/cu121
+# 用上海交通大学的源
+pip3 install torch==2.4.1 torchvision torchaudio -f https://mirror.sjtu.edu.cn/pytorch-wheels/cu121
+# 或者
+pip3 install torch==2.4.1 torchvision torchaudio -f https://mirror.sjtu.edu.cn/pytorch-wheels/torch_stable.html
+```
+
+## 5. Q&A
 
 Q1: WARNING: The repository located at pypi.douban.com is not a trusted or secure host and is being ignored
 
