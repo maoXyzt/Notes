@@ -49,11 +49,18 @@ root        12     7  0 03:30 ?        00:00:00 ps -fA
 docker run --init -it --rm ubuntu:16.04 /bin/bash
 ```
 
-### 3.2 显示指定 entrypoint
-
-在 Dockerfile 中指定
+### 3.2 Dockerfile 中显示指定 entrypoint
 
 ```dockerfile
 ENTRYPOINT ["/usr/local/bin/tini", "--"]
 CMD ["your", "command", "here"]
+```
+
+### 3.3 docker-compose.yml 中显示指定 init
+
+```yaml
+services:
+  app:
+    image: my-app:latest
+    init: true
 ```

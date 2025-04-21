@@ -12,7 +12,7 @@ repos:
   hooks:
     - id: update-toc
       name: Update TOC
-      entry: poetry run update-toc
+      entry: uv run update-toc
       language: system
       files: ^cli/.*\.py$
       pass_filenames: false

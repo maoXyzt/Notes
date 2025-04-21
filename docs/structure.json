@@ -347,10 +347,6 @@
                 "link": "/编程开发-Programming/容器化/Docker/"
               },
               {
-                "text": "docker 容器的 init 进程 (Tini)",
-                "link": "/编程开发-Programming/容器化/Docker/docker run --init参数.md"
-              },
-              {
                 "text": "Docker 安装",
                 "link": "/编程开发-Programming/容器化/Docker/Docker 安装.md"
               },
@@ -381,6 +377,10 @@
               {
                 "text": "Docker 配置代理",
                 "link": "/编程开发-Programming/容器化/Docker/Docker配置代理.md"
+              },
+              {
+                "text": "docker 容器的 init 进程 (Tini)",
+                "link": "/编程开发-Programming/容器化/Docker/Docker容器的init进程(Tini).md"
               },
               {
                 "text": "Docker 容器中的权限控制",
