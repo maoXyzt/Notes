@@ -11,7 +11,7 @@
 * [conda 换源](./编程开发-Programming/Python/conda%20换源.md)
 * [在 Cython 中使用 C++](./编程开发-Programming/Python/Cython中使用C%2B%2B.md)
 * [Jupyter 服务部署](./编程开发-Programming/Python/jupyter%20服务部署.md)
-* [pip 命令换源](./编程开发-Programming/Python/pip%20命令换源.md)
+* [pip 命令换源 (含 PyTorch 源)](./编程开发-Programming/Python/pip%20命令换源.md)
 * [Poetry 的基本使用](./编程开发-Programming/Python/Poetry的基本使用.md)
 * [python ftplib SSLEOFERROR 解决方案](./编程开发-Programming/Python/python%20ftplib%20SSLEOFERROR解决方案.md)
 * [Python3 基本数据类型](./编程开发-Programming/Python/Python3%20基本数据类型.md)
@@ -301,7 +301,11 @@
 
 * [Rime 输入法配置语言模型: 万象拼音模型](./软件工具应用-Applications/Rime/rime配置语言模型.md)
 
-### 4.6 zotero
+### 4.6 VSCode
+
+* [VSCode 的文件嵌套 (FileNesting) 功能](./软件工具应用-Applications/VSCode/vscode的文件嵌套功能.md)
+
+### 4.7 zotero
 
 * [zotero 修改 note templates](./软件工具应用-Applications/zotero/zotero修改note%20templates.md)
 

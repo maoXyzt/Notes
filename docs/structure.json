@@ -22,7 +22,7 @@
             "link": "/编程开发-Programming/Python/jupyter 服务部署.md"
           },
           {
-            "text": "pip 命令换源",
+            "text": "pip 命令换源 (含 PyTorch 源)",
             "link": "/编程开发-Programming/Python/pip 命令换源.md"
           },
           {
@@ -1073,7 +1073,17 @@
         "collapsed": false
       },
       {
-        "text": "4.6 zotero",
+        "text": "4.6 VSCode",
+        "items": [
+          {
+            "text": "VSCode 的文件嵌套 (FileNesting) 功能",
+            "link": "/软件工具应用-Applications/VSCode/vscode的文件嵌套功能.md"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "4.7 zotero",
         "items": [
           {
             "text": "zotero 修改 note templates",
