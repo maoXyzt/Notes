@@ -337,7 +337,81 @@
         "collapsed": false
       },
       {
-        "text": "1.3 Frontend",
+        "text": "1.3 容器化",
+        "items": [
+          {
+            "text": "Docker",
+            "items": [
+              {
+                "text": "Docker",
+                "link": "/编程开发-Programming/容器化/Docker/"
+              },
+              {
+                "text": "docker 容器的 init 进程 (Tini)",
+                "link": "/编程开发-Programming/容器化/Docker/docker run --init参数.md"
+              },
+              {
+                "text": "Docker 安装",
+                "link": "/编程开发-Programming/容器化/Docker/Docker 安装.md"
+              },
+              {
+                "text": "Docker 创建 volume",
+                "link": "/编程开发-Programming/容器化/Docker/Docker 创建 volume.md"
+              },
+              {
+                "text": "Docker 配置镜像源(registry mirrors)",
+                "link": "/编程开发-Programming/容器化/Docker/Docker 配置镜像源(registry-mirrors).md"
+              },
+              {
+                "text": "Docker 容器 labels",
+                "link": "/编程开发-Programming/容器化/Docker/Docker 容器 labels.md"
+              },
+              {
+                "text": "Docker 容器权限设置 --cap-add, --cap-drop, --privileges",
+                "link": "/编程开发-Programming/容器化/Docker/Docker 容器权限设置--cap-add,--cap-drop,--privileges.md"
+              },
+              {
+                "text": "docker 常用命令",
+                "link": "/编程开发-Programming/容器化/Docker/Docker常用命令.md"
+              },
+              {
+                "text": "Docker 镜像 alpine, slim, bullseye, bookeworm, noble 等的区别",
+                "link": "/编程开发-Programming/容器化/Docker/Docker镜像alpine,slim,bullseye,bookeworm,noble等的区别.md"
+              },
+              {
+                "text": "Docker 配置代理",
+                "link": "/编程开发-Programming/容器化/Docker/Docker配置代理.md"
+              },
+              {
+                "text": "Docker 容器中的权限控制",
+                "link": "/编程开发-Programming/容器化/Docker/Docker容器中的用户权限控制.md"
+              },
+              {
+                "text": "给非 root 用户运行 docker 命令的权限",
+                "link": "/编程开发-Programming/容器化/Docker/给非root用户运行docker的权限.md"
+              },
+              {
+                "text": "理解 Docker 的 CPU 使用率",
+                "link": "/编程开发-Programming/容器化/Docker/理解Docker的CPU使用率.md"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "text": "Kubernetes",
+            "items": [
+              {
+                "text": "k8s 集群搭建",
+                "link": "/编程开发-Programming/容器化/Kubernetes/k8s集群搭建.md"
+              }
+            ],
+            "collapsed": true
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "1.4 Frontend",
         "items": [
           {
             "text": "Husky: 配置前端项目的 git hooks",
@@ -399,76 +473,6 @@
               {
                 "text": "箭头函数与普通函数的区别",
                 "link": "/编程开发-Programming/Frontend/JS-TS/箭头函数与普通函数的区别.md"
-              }
-            ],
-            "collapsed": true
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "text": "1.4 容器化",
-        "items": [
-          {
-            "text": "Docker",
-            "items": [
-              {
-                "text": "Docker",
-                "link": "/编程开发-Programming/容器化/Docker/"
-              },
-              {
-                "text": "Docker 安装",
-                "link": "/编程开发-Programming/容器化/Docker/Docker 安装.md"
-              },
-              {
-                "text": "Docker 创建 volume",
-                "link": "/编程开发-Programming/容器化/Docker/Docker 创建 volume.md"
-              },
-              {
-                "text": "Docker 配置镜像源(registry mirrors)",
-                "link": "/编程开发-Programming/容器化/Docker/Docker 配置镜像源(registry-mirrors).md"
-              },
-              {
-                "text": "Docker 容器 labels",
-                "link": "/编程开发-Programming/容器化/Docker/Docker 容器 labels.md"
-              },
-              {
-                "text": "Docker 容器权限设置 --cap-add, --cap-drop, --privileges",
-                "link": "/编程开发-Programming/容器化/Docker/Docker 容器权限设置--cap-add,--cap-drop,--privileges.md"
-              },
-              {
-                "text": "docker 常用命令",
-                "link": "/编程开发-Programming/容器化/Docker/Docker常用命令.md"
-              },
-              {
-                "text": "Docker 镜像 alpine, slim, bullseye, bookeworm, noble 等的区别",
-                "link": "/编程开发-Programming/容器化/Docker/Docker镜像alpine,slim,bullseye,bookeworm,noble等的区别.md"
-              },
-              {
-                "text": "Docker 配置代理",
-                "link": "/编程开发-Programming/容器化/Docker/Docker配置代理.md"
-              },
-              {
-                "text": "Docker 容器中的权限控制",
-                "link": "/编程开发-Programming/容器化/Docker/Docker容器中的用户权限控制.md"
-              },
-              {
-                "text": "给非 root 用户运行 docker 命令的权限",
-                "link": "/编程开发-Programming/容器化/Docker/给非root用户运行docker的权限.md"
-              },
-              {
-                "text": "理解 Docker 的 CPU 使用率",
-                "link": "/编程开发-Programming/容器化/Docker/理解Docker的CPU使用率.md"
-              }
-            ],
-            "collapsed": true
-          },
-          {
-            "text": "Kubernetes",
-            "items": [
-              {
-                "text": "k8s 集群搭建",
-                "link": "/编程开发-Programming/容器化/Kubernetes/k8s集群搭建.md"
               }
             ],
             "collapsed": true

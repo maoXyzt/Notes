@@ -86,7 +86,26 @@
 * SQLite
   * [SQLite 数据库文件损坏修复](./编程开发-Programming/Database/SQLite/SQLite数据库文件损坏修复.md)
 
-### 1.3 Frontend
+### 1.3 容器化
+
+* Docker
+  * [Docker](./编程开发-Programming/容器化/Docker/)
+  * [docker 容器的 init 进程 (Tini)](./编程开发-Programming/容器化/Docker/docker%20run%20--init参数.md)
+  * [Docker 安装](./编程开发-Programming/容器化/Docker/Docker%20安装.md)
+  * [Docker 创建 volume](./编程开发-Programming/容器化/Docker/Docker%20创建%20volume.md)
+  * [Docker 配置镜像源(registry mirrors)](./编程开发-Programming/容器化/Docker/Docker%20配置镜像源%28registry-mirrors%29.md)
+  * [Docker 容器 labels](./编程开发-Programming/容器化/Docker/Docker%20容器%20labels.md)
+  * [Docker 容器权限设置 --cap-add, --cap-drop, --privileges](./编程开发-Programming/容器化/Docker/Docker%20容器权限设置--cap-add%2C--cap-drop%2C--privileges.md)
+  * [docker 常用命令](./编程开发-Programming/容器化/Docker/Docker常用命令.md)
+  * [Docker 镜像 alpine, slim, bullseye, bookeworm, noble 等的区别](./编程开发-Programming/容器化/Docker/Docker镜像alpine%2Cslim%2Cbullseye%2Cbookeworm%2Cnoble等的区别.md)
+  * [Docker 配置代理](./编程开发-Programming/容器化/Docker/Docker配置代理.md)
+  * [Docker 容器中的权限控制](./编程开发-Programming/容器化/Docker/Docker容器中的用户权限控制.md)
+  * [给非 root 用户运行 docker 命令的权限](./编程开发-Programming/容器化/Docker/给非root用户运行docker的权限.md)
+  * [理解 Docker 的 CPU 使用率](./编程开发-Programming/容器化/Docker/理解Docker的CPU使用率.md)
+* Kubernetes
+  * [k8s 集群搭建](./编程开发-Programming/容器化/Kubernetes/k8s集群搭建.md)
+
+### 1.4 Frontend
 
 * [Husky: 配置前端项目的 git hooks](./编程开发-Programming/Frontend/Husky-配置前端项目的git%20hooks.md)
 * [安装 Node.js](./编程开发-Programming/Frontend/Node.js%20安装.md)
@@ -103,24 +122,6 @@
   * [Vue3 自动按需引入组件（unplugin-vue-components）](./编程开发-Programming/Frontend/Vue3/Vue3自动按需引入组件%28unplugin-vue-components%29.md)
 * JS-TS
   * [箭头函数与普通函数的区别](./编程开发-Programming/Frontend/JS-TS/箭头函数与普通函数的区别.md)
-
-### 1.4 容器化
-
-* Docker
-  * [Docker](./编程开发-Programming/容器化/Docker/)
-  * [Docker 安装](./编程开发-Programming/容器化/Docker/Docker%20安装.md)
-  * [Docker 创建 volume](./编程开发-Programming/容器化/Docker/Docker%20创建%20volume.md)
-  * [Docker 配置镜像源(registry mirrors)](./编程开发-Programming/容器化/Docker/Docker%20配置镜像源%28registry-mirrors%29.md)
-  * [Docker 容器 labels](./编程开发-Programming/容器化/Docker/Docker%20容器%20labels.md)
-  * [Docker 容器权限设置 --cap-add, --cap-drop, --privileges](./编程开发-Programming/容器化/Docker/Docker%20容器权限设置--cap-add%2C--cap-drop%2C--privileges.md)
-  * [docker 常用命令](./编程开发-Programming/容器化/Docker/Docker常用命令.md)
-  * [Docker 镜像 alpine, slim, bullseye, bookeworm, noble 等的区别](./编程开发-Programming/容器化/Docker/Docker镜像alpine%2Cslim%2Cbullseye%2Cbookeworm%2Cnoble等的区别.md)
-  * [Docker 配置代理](./编程开发-Programming/容器化/Docker/Docker配置代理.md)
-  * [Docker 容器中的权限控制](./编程开发-Programming/容器化/Docker/Docker容器中的用户权限控制.md)
-  * [给非 root 用户运行 docker 命令的权限](./编程开发-Programming/容器化/Docker/给非root用户运行docker的权限.md)
-  * [理解 Docker 的 CPU 使用率](./编程开发-Programming/容器化/Docker/理解Docker的CPU使用率.md)
-* Kubernetes
-  * [k8s 集群搭建](./编程开发-Programming/容器化/Kubernetes/k8s集群搭建.md)
 
 ### 1.5 Git
 
