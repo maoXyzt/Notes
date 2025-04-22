@@ -1127,6 +1127,10 @@
         "link": "/Windows/windows建立软链接.md"
       },
       {
+        "text": "Windows 平台使用 nushell 终端",
+        "link": "/Windows/windows平台使用nushell终端.md"
+      },
+      {
         "text": "winget 更换国内源",
         "link": "/Windows/winget更换国内源.md"
       },

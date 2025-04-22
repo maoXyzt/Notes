@@ -226,8 +226,6 @@ atuin import auto
 
 ### 3.2 主题：starship
 
-> <https://starship.rs/guide/#%F0%9F%9A%80-installation>
-
 #### 3.2.1 安装
 
 > <https://starship.rs/guide/#%F0%9F%9A%80-installation>

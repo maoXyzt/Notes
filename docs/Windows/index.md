@@ -21,3 +21,7 @@
 - [创建自启动的 Windows Service 程序](./创建自启动的Windows%20Service程序.md)
 - [右键菜单添加“通过 xxx 打开”](./右键菜单添加“通过xxx打开”.md)
   - [右键用 Windows Terminal 打开当前目录](./右键用windows%20terminal打开当前目录.md)
+
+## 4. 折腾记录
+
+- [Windows 平台使用 nushell 终端](./windows平台使用nushell终端.md)
