@@ -126,3 +126,53 @@ source ~/.local/share/atuin/init.nu
 ```
 
 重启 nushell 后生效。
+
+#### (2) 命令行文件管理器: yazi
+
+> [yazi](https://yazi-rs.github.io/)
+
+在 Windows 平台上，yazi 依赖于 Git 的 `file(1)` 实现： `file.exe`。
+
+> file.exe 可能在如下位置之一:
+>
+> * 通过 [official installer](https://git-scm.com/download/win) 安装的 Git: `C:\Program Files\Git\usr\bin\file.exe`
+> * 通过 [scoop](https://scoop.sh/) 安装的 Git: `C:\Users\<Username>\scoop\apps\git\current\usr\bin\file.exe`
+
+安装 Git，并在 `config.nu` 中配置 `YAZI_FILE_ONE` 环境变量指向 `file.exe` 的路径：
+
+```bash
+export-env { $env.YAZI_FILE_ONE = 'C:/Program Files/Git/usr/bin/file.exe' }
+```
+
+安装 yazi 和可选依赖:
+
+```bash
+winget install sxyazi.yazi
+# Install the optional dependencies (recommended):
+winget install Gyan.FFmpeg 7zip.7zip jqlang.jq sharkdp.fd BurntSushi.ripgrep.MSVC junegunn.fzf ajeetdsouza.zoxide ImageMagick.ImageMagick
+```
+
+配置 nushell 的 `config.nu` 文件:
+
+```bash
+#--------------------
+# yazi
+#--------------------
+def --env y [...args] {
+  let tmp = (mktemp -t "yazi-cwd.XXXXXX")
+  yazi ...$args --cwd-file $tmp
+  let cwd = (open $tmp)
+  if $cwd != "" and $cwd != $env.PWD {
+    cd $cwd
+  }
+  rm -fp $tmp
+}
+```
+
+安装完成后，输入 `y` 即可启动 yazi。
+
+* 按 `q` 键退出 yazi，并切换当前目录到 yazi 的目录;
+* 按 `Q` 键退出 yazi，并回到进入 yazi 前的目录;
+* 按 `F1` 或 `~` 键打开帮助菜单;
+
+其他快捷键参见 [Keybindings](https://yazi-rs.github.io/docs/quick-start#keybindings)
