@@ -130,7 +130,7 @@
 * [使用 Git Subtree 同步子项目](./编程开发-Programming/Git/git%20subtree.md)
 * [Git 多个账号用不同私钥登录](./编程开发-Programming/Git/Git%20多个账号用不同私钥登录.md)
 * [Git 配置文件大小写写敏感](./编程开发-Programming/Git/git%20配置对文件名大小写敏感.md)
-* [Git 上传大文件 (> 25MB): Git LFS](./编程开发-Programming/Git/git上传大文件%28gt25MB%29-git%20lts.md)
+* [Git 上传大文件 (> 25MB): Git LFS](./编程开发-Programming/Git/git上传大文件%28gt25MB%29-Git%20LFS.md)
 * [Global gitignore](./编程开发-Programming/Git/global%20gitignore.md)
 
 ### 1.6 Go
