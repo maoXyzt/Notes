@@ -24,7 +24,9 @@ Git Large File Storage (LFS) 是一个 Git 扩展，用于管理大文件和二�
 
 > 在 Linux 平台上，也可以参考该链接，用包管理器安装 (支持 apt/deb 和 rpm/yum)：
 >
-> <https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage>
+> 方法1: [Installing on Linux using packagecloud](https://github.com/git-lfs/git-lfs/blob/main/INSTALLING.md)
+>
+> 方法2: [Installing Git Large File Storage](https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage)
 
 ## 2 - 使用方法
 

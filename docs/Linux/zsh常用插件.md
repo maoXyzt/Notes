@@ -1,5 +1,15 @@
 # ZSH 常用插件
 
+> Commit message: docs: add comprehensive guide for ZSH plugins and themes
+>
+> This commit adds a detailed guide covering:
+>
+> - Installation methods for Oh-My-ZSH (online and offline)
+> - Plugin management and configuration
+> - Popular plugins like zsh-autosuggestions, zsh-syntax-highlighting, extract, etc.
+> - Theme recommendations including starship and Powerlevel10k
+> - Font recommendations for proper icon display
+
 安装 Oh-My-ZSH
 
 在线安装
@@ -108,15 +118,6 @@ autoload -U compinit && compinit
 > conda init zsh
 > ```
 
-### poetry
-
-> <https://python-poetry.org/docs/#oh-my-zsh>
-
-```bash
-mkdir $ZSH_CUSTOM/plugins/poetry
-poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry
-```
-
 ### autojump
 
 实现目录间快速跳转，想去哪个目录直接 j + 目录名，不用再频繁的 cd 了！
@@ -202,7 +203,7 @@ z -x 不要的路径
 ### atuin: shell 历史记录增强
 
 > [atuin](https://github.com/ellie/atuin)
-> 
+>
 > [Installation | Atuin Docs](https://docs.atuin.sh/guide/installation/)
 
 ```bash
@@ -213,6 +214,15 @@ curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
 atuin import auto
 ```
 
+### poetry
+
+> <https://python-poetry.org/docs/#oh-my-zsh>
+
+```bash
+mkdir $ZSH_CUSTOM/plugins/poetry
+poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry
+```
+
 ## 3. 推荐主题
 
 ### 3.1 字体
@@ -221,9 +231,9 @@ atuin import auto
 
 推荐字体：
 
-* [NERD FONTS](https://github.com/ryanoasis/nerd-fonts)
-* [Maple Mono](https://github.com/subframe7536/maple-font)
-  * 建议选 MapleMono-NF-CN 这个版本，支持 Nerd Fonts 和中文等宽显示
+- [NERD FONTS](https://github.com/ryanoasis/nerd-fonts)
+- [Maple Mono](https://github.com/subframe7536/maple-font)
+  - 建议选 MapleMono-NF-CN 这个版本，支持 Nerd Fonts 和中文等宽显示
 
 ### 3.2 主题：starship
 
