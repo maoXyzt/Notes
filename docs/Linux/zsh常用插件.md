@@ -202,10 +202,11 @@ z -x 不要的路径
 ### atuin: shell 历史记录增强
 
 > [atuin](https://github.com/ellie/atuin)
+> 
 > [Installation | Atuin Docs](https://docs.atuin.sh/guide/installation/)
 
 ```bash
-bash <(curl https://raw.githubusercontent.com/ellie/atuin/main/install.sh)
+curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
 # 或者编译安装
 # cargo install atuin
 
