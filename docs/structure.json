@@ -355,6 +355,10 @@
                 "link": "/编程开发-Programming/容器化/Docker/Docker 创建 volume.md"
               },
               {
+                "text": "Docker 登录 ghcr.io",
+                "link": "/编程开发-Programming/容器化/Docker/Docker 登录ghcr.io.md"
+              },
+              {
                 "text": "Docker 配置镜像源(registry mirrors)",
                 "link": "/编程开发-Programming/容器化/Docker/Docker 配置镜像源(registry-mirrors).md"
               },

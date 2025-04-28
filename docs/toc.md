@@ -92,6 +92,7 @@
   * [Docker](./编程开发-Programming/容器化/Docker/)
   * [Docker 安装](./编程开发-Programming/容器化/Docker/Docker%20安装.md)
   * [Docker 创建 volume](./编程开发-Programming/容器化/Docker/Docker%20创建%20volume.md)
+  * [Docker 登录 ghcr.io](./编程开发-Programming/容器化/Docker/Docker%20登录ghcr.io.md)
   * [Docker 配置镜像源(registry mirrors)](./编程开发-Programming/容器化/Docker/Docker%20配置镜像源%28registry-mirrors%29.md)
   * [Docker 容器 labels](./编程开发-Programming/容器化/Docker/Docker%20容器%20labels.md)
   * [Docker 容器权限设置 --cap-add, --cap-drop, --privileges](./编程开发-Programming/容器化/Docker/Docker%20容器权限设置--cap-add%2C--cap-drop%2C--privileges.md)
