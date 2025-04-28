@@ -16,6 +16,8 @@ Token 需要的权限有:
 - `read:packages` 权限，用于访问包
 - `write:packages` 权限，用于推送包
 
+生成后，记录下 token，后续登录需要使用。
+
 ## 登录
 
 ```bash
