@@ -3,7 +3,7 @@ import urllib.parse
 from pathlib import Path
 
 
-def custom_quote(url, safe='/'):
+def custom_quote(url: str, safe: str = '/') -> str:
     """Like urllib.parse.quote, but allows for Chinese characters."""
     # 定义不需要编码的字符，除了默认的'/'外，还可以添加其他字符
     # 注意：这里我们特意不将中文字符加入到safe中，因为我们想保留它们

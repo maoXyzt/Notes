@@ -40,7 +40,7 @@ class Settings(BaseSettings):
 settings = Settings()
 
 
-def main():
+def main() -> None:
     """Analyse the directory structure and generate `toc.md` and `structure.json`."""
     assert DOCS_ROOT.exists()
 
@@ -104,7 +104,9 @@ def build_from_root(root: Path) -> GroupInfo:
     return root_group
 
 
-def order_group_by_num_of_children(group: GroupInfo, add_title_index: bool = True):
+def order_group_by_num_of_children(
+    group: GroupInfo, add_title_index: bool = True
+) -> None:
     """Recursively sort a group and its children by the number of children."""
 
     def sum_items(item: GroupInfo | PageInfo) -> int:
