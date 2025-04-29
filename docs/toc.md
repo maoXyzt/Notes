@@ -315,6 +315,7 @@
 * [Windows](./Windows/)
 * [powershell 开启补全功能](./Windows/powershell%20开启补全功能.md)
 * [powershell 加速启动](./Windows/powershell%20启动加速.md)
+* [Windows 平台常用路径缩写](./Windows/windows%20平台常用路径缩写.md)
 * [Windows 平台好用的软件推荐](./Windows/windows%20平台好用的软件推荐.md)
 * [windows 查找端口占用](./Windows/windows查找端口占用.md)
 * [windows 创建软链接](./Windows/windows建立软链接.md)
