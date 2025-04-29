@@ -6,6 +6,7 @@
 
 - [建立软链接](./windows建立软链接.md)
 - [查找端口占用](./windows查找端口占用.md)
+- [Windows 平台常用路径缩写](./windows%20平台常用路径缩写.md)
 
 ### 1.2 PowerShell 技巧
 
