@@ -22,6 +22,7 @@
 * [win 环境下 print 时的 UnicodeEncodingError](./编程开发-Programming/Python/win环境下print时的UnicodeEncodingError.md)
 * [Python 用 xlrd 读取 Excel 文件](./编程开发-Programming/Python/xlrd读取excel文件.md)
 * [不退出 python 进程的情况下删除 .pyd 文件](./编程开发-Programming/Python/不退出python进程的情况下删除.pyd文件.md)
+* [配置 Pyright](./编程开发-Programming/Python/配置Pyright.md)
 * [用 Nuitka 编译 python 代码](./编程开发-Programming/Python/用%20Nuitka%20编译%20python%20代码.md)
 * [用 gdb 调试 python core dump](./编程开发-Programming/Python/用gbd调试python%20core%20dump.md)
 * [自动获取双因子登录验证码: OTP, HOTP, TOTP 基本原理](./编程开发-Programming/Python/自动获取双因子登录验证码%E2%80%94%E2%80%94OTP%2C%20HOTP%2C%20TOTP%20基本原理.md)

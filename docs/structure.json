@@ -66,6 +66,10 @@
             "link": "/编程开发-Programming/Python/不退出python进程的情况下删除.pyd文件.md"
           },
           {
+            "text": "配置 Pyright",
+            "link": "/编程开发-Programming/Python/配置Pyright.md"
+          },
+          {
             "text": "用 Nuitka 编译 python 代码",
             "link": "/编程开发-Programming/Python/用 Nuitka 编译 python 代码.md"
           },
