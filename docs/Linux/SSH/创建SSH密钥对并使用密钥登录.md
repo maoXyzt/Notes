@@ -2,7 +2,7 @@
 
 ## 1 - 使用 ssh-keygen 命令生成密钥对
 
-执行 `ssh-keygen` 命令，获取私钥证书 `id_rsa` 和公钥证书 `id_rsa.pub`
+执行 `ssh-keygen` 命令，获取私钥证书和公钥证书:
 
 ```bash
 # 使用 Ed25519 算法生成密钥对, 要求 OpenSSH 6.5 及以上版本(2014 年)
@@ -10,12 +10,13 @@ ssh-keygen -t ed25519 -b 256 -C "example@qq.com"
 # 如果 OpenSSH 版本低于 6.5, 也可使用 rsa 算法生成 2048 位密钥对 (默认) ：
 # ssh-keygen -C "example@qq.com"
 
-Generating public/private rsa key pair.
-Enter file in which to save the key (/root/.ssh/id_rsa):
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (~/.ssh/id_ed25519):
 Enter passphrase (empty for no passphrase):   # <- 直接输入回车(设置访问密钥需要的短文密码，一般不设置)
 Enter same passphrase again:                  # <- 直接输入回车
-Your identification has been saved in /root/.ssh/id_rsa.
-Your public key has been saved in /root/.ssh/id_rsa.pub.
+Your identification has been saved in ~/.ssh/id_ed25519.
+Your public key has been saved in ~/.ssh/id_ed25519.pub.
+# 如果使用 rsa 算法生成密钥对, 则文件名分别为 `id_rsa` 和 `id_rsa.pub`
 ```
 
 `ssh-keygen` 参数说明:
@@ -162,9 +163,9 @@ debug1: Offering public key: /home/user/.ssh/id_ed25519
 
 确保目标服务器的 `~/.ssh/authorized_keys` 文件中包含你希望使用的公钥 (例如 id_ed25519.pub 的内容) 。
 
-## 4 - 注意事项
+## 5 - 注意事项
 
-### 4.1 权限问题
+### 5.1 权限问题
 
 确保 `~/.ssh` 目录权限为 `700` (`chmod 700 ~/.ssh`) 。
 私钥文件 (如 id_rsa、id_ed25519) 权限应为 `600` (`chmod 600 ~/.ssh/id_rsa`) 。
