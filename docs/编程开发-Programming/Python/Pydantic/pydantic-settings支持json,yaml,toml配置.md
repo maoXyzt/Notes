@@ -49,7 +49,9 @@ Pydantic 提供如下的配置源:
 
 > <https://docs.pydantic.dev/2.11/concepts/pydantic_settings/?query=toml#adding-sources>
 
-### 如何动态选择配置文件?
+## 2 - 问题
+
+### 2.1 如何动态选择配置文件?
 
 `TomlConfigSettingsSource` 等 settings source 类支持传入配置文件列表，支持多个配置文件。
 
