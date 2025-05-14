@@ -160,6 +160,20 @@
             "collapsed": true
           },
           {
+            "text": "Pydantic",
+            "items": [
+              {
+                "text": "pydantic-settings 支持 json, yaml, toml 配置",
+                "link": "/编程开发-Programming/Python/Pydantic/pydantic-settings支持json,yaml,toml配置.md"
+              },
+              {
+                "text": "用 Pydantic Settings 解析命令行参数",
+                "link": "/编程开发-Programming/Python/Pydantic/用pydantic-settings解析命令行参数.md"
+              }
+            ],
+            "collapsed": true
+          },
+          {
             "text": "SQLAlchemy",
             "items": [
               {
@@ -169,16 +183,6 @@
               {
                 "text": "SQLAlchemy 查询对象转为 SQL 语句",
                 "link": "/编程开发-Programming/Python/SQLAlchemy/SQLAlchemy查询对象转为SQL语句.md"
-              }
-            ],
-            "collapsed": true
-          },
-          {
-            "text": "Pydantic",
-            "items": [
-              {
-                "text": "用 Pydantic Settings 解析命令行参数",
-                "link": "/编程开发-Programming/Python/Pydantic/用pydantic-settings解析命令行参数.md"
               }
             ],
             "collapsed": true

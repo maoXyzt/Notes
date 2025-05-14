@@ -44,11 +44,12 @@
   * [Tensor 数据操作](./编程开发-Programming/Python/pytorch/01-Tensor-数据操作.md)
   * [autograd 自动求梯度](./编程开发-Programming/Python/pytorch/02-autograd-自动求梯度.md)
   * [torch.jit.script 与 torch.jit.trace](./编程开发-Programming/Python/pytorch/torch.jit.script与torch.jit.trace.md)
+* Pydantic
+  * [pydantic-settings 支持 json, yaml, toml 配置](./编程开发-Programming/Python/Pydantic/pydantic-settings支持json%2Cyaml%2Ctoml配置.md)
+  * [用 Pydantic Settings 解析命令行参数](./编程开发-Programming/Python/Pydantic/用pydantic-settings解析命令行参数.md)
 * SQLAlchemy
   * [SQLAlchemy 与数据库交互的方式](./编程开发-Programming/Python/SQLAlchemy/SQLAlchemy操作数据的方法.md)
   * [SQLAlchemy 查询对象转为 SQL 语句](./编程开发-Programming/Python/SQLAlchemy/SQLAlchemy查询对象转为SQL语句.md)
-* Pydantic
-  * [用 Pydantic Settings 解析命令行参数](./编程开发-Programming/Python/Pydantic/用pydantic-settings解析命令行参数.md)
 * supervisor
   * [supervisor 的安装与基本命令](./编程开发-Programming/Python/supervisor/supervisor的安装与基本命令.md)
 * tensorflow
