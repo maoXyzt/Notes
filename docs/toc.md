@@ -47,6 +47,8 @@
 * SQLAlchemy
   * [SQLAlchemy 与数据库交互的方式](./编程开发-Programming/Python/SQLAlchemy/SQLAlchemy操作数据的方法.md)
   * [SQLAlchemy 查询对象转为 SQL 语句](./编程开发-Programming/Python/SQLAlchemy/SQLAlchemy查询对象转为SQL语句.md)
+* Pydantic
+  * [用 Pydantic Settings 解析命令行参数](./编程开发-Programming/Python/Pydantic/用pydantic-settings解析命令行参数.md)
 * supervisor
   * [supervisor 的安装与基本命令](./编程开发-Programming/Python/supervisor/supervisor的安装与基本命令.md)
 * tensorflow
