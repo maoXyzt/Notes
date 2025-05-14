@@ -53,7 +53,9 @@ Pydantic 提供如下的配置源:
 
 `TomlConfigSettingsSource` 等 settings source 类支持传入配置文件列表，支持多个配置文件。
 
-可以用全局变量、环境变量等方式动态改变配置文件列表。
+根据 [Issue #259](https://github.com/pydantic/pydantic-settings/issues/259), 暂时不能很优雅地动态改变配置文件列表。
+
+不过还是可以用全局变量、环境变量等方式实现。
 
 Example 1: 使用全局变量
 
