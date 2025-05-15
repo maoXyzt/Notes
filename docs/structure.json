@@ -857,7 +857,55 @@
         "collapsed": false
       },
       {
-        "text": "3.3 Applied Social Network Analysis in Python",
+        "text": "3.3 个人服务搭建",
+        "items": [
+          {
+            "text": "NAS",
+            "items": [
+              {
+                "text": "NAS",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/"
+              },
+              {
+                "text": "Home Assistant 系统备份到 NAS",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/homeassistant系统备份到NAS.md"
+              },
+              {
+                "text": "Nginx Proxy Manager 服务部署",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/Nginx Proxy Manager部署.md"
+              },
+              {
+                "text": "Wallos: 个人订阅服务管理工具",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/Wallos个人订阅服务管理工具.md"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "text": "HomeAssistant",
+            "items": [
+              {
+                "text": "Aqara 设备通过 Matter 接入 HomeAssistant",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/Aqara设备通过Matter接入HomeAssistant.md"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "text": "PVE All-in-One 实践",
+            "items": [
+              {
+                "text": "PVE 系统备份到 NAS(smb)",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/PVE All-in-One 实践/PVE 系统备份备份到NAS(smb).md"
+              }
+            ],
+            "collapsed": true
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "3.4 Applied Social Network Analysis in Python",
         "items": [
           {
             "text": "Course Syllabus",
@@ -899,50 +947,6 @@
               {
                 "text": "01. Preferential Attachment Model",
                 "link": "/领域知识-DomainKnowledge/Applied Social Network Analysis in Python/Module 4 - Network Evolution/Network Evolution.md"
-              }
-            ],
-            "collapsed": true
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "text": "3.4 个人服务搭建",
-        "items": [
-          {
-            "text": "NAS",
-            "items": [
-              {
-                "text": "NAS",
-                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/"
-              },
-              {
-                "text": "Home Assistant 系统备份到 NAS",
-                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/homeassistant系统备份到NAS.md"
-              },
-              {
-                "text": "Wallos: 个人订阅服务管理工具",
-                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/Wallos个人订阅服务管理工具.md"
-              }
-            ],
-            "collapsed": true
-          },
-          {
-            "text": "HomeAssistant",
-            "items": [
-              {
-                "text": "Aqara 设备通过 Matter 接入 HomeAssistant",
-                "link": "/领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/Aqara设备通过Matter接入HomeAssistant.md"
-              }
-            ],
-            "collapsed": true
-          },
-          {
-            "text": "PVE All-in-One 实践",
-            "items": [
-              {
-                "text": "PVE 系统备份到 NAS(smb)",
-                "link": "/领域知识-DomainKnowledge/个人服务搭建/PVE All-in-One 实践/PVE 系统备份备份到NAS(smb).md"
               }
             ],
             "collapsed": true
