@@ -1,0 +1,5 @@
+Commit messages must follow the "Conventional Commits" specification and be in 中文. For example:
+
+```plaintext
+docs: 添加 Nginx Proxy Manager 部署文档
+```
