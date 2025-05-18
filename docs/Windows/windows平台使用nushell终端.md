@@ -66,6 +66,8 @@ alias gfa = git fetch --all --prune
 alias gl = git pull
 
 alias gp = git push
+
+alias gst = git status
 ```
 
 ## 2 - 扩展插件
@@ -176,3 +178,96 @@ def --env y [...args] {
 * 按 `F1` 或 `~` 键打开帮助菜单;
 
 其他快捷键参见 [Keybindings](https://yazi-rs.github.io/docs/quick-start#keybindings)
+
+## 3 - 配置文件示例
+
+打开配置文件并(用 VSCode)编辑: `code $nu.config-path`
+
+```bash
+# config.nu
+#
+# Installed by:
+# version = "0.103.0"
+#
+# This file is used to override default Nushell settings, define
+# (or import) custom commands, or run any other startup tasks.
+# See https://www.nushell.sh/book/configuration.html
+#
+# This file is loaded after env.nu and before login.nu
+#
+# You can open this file in your default editor using:
+# config nu
+#
+# See `help config nu` for more options
+#
+# You can remove these comments if you want or leave
+# them for future reference.
+
+#--------------------
+# Default editor
+#--------------------
+export-env { $env.config.buffer_editor = "code" }
+
+#--------------------
+# Aliases
+#--------------------
+
+alias ll = ls -a
+alias la = ls -a
+
+# Git alias
+
+alias g = git
+alias ga = git add
+alias gaa = git add --all
+
+alias gc = git commit -v
+alias gc! = git commit -v --amend
+alias gcn! = git commit -v --no-edit --amend
+alias gca = git commit -v -a
+
+alias gcb = git checkout -b
+
+alias gd = git diff
+alias gds = git diff --staged
+
+alias gf = git fetch
+alias gfa = git fetch --all --prune
+
+alias gl = git pull
+
+alias gp = git push
+
+alias gst = git status
+
+#--------------------
+# Rust mirrors
+#--------------------
+export-env { $env.RUSTUP_UPDATE_ROOT = 'https://mirrors.aliyun.com/rustup/rustup' }
+export-env { $env.RUSTUP_DIST_SERVER = 'https://mirrors.aliyun.com/rustup' }
+
+#--------------------
+# atuin
+#--------------------
+source ~/.local/share/atuin/init.nu
+
+#--------------------
+# yazi
+#--------------------
+export-env { $env.YAZI_FILE_ONE = 'C:/Program Files/Git/usr/bin/file.exe' }
+def --env y [...args] {
+  let tmp = (mktemp -t "yazi-cwd.XXXXXX")
+  yazi ...$args --cwd-file $tmp
+  let cwd = (open $tmp)
+  if $cwd != "" and $cwd != $env.PWD {
+    cd $cwd
+  }
+  rm -fp $tmp
+}
+
+#--------------------
+# starship
+#--------------------
+mkdir ($nu.data-dir | path join "vendor/autoload")
+starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
+```

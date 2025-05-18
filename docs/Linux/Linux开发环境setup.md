@@ -92,8 +92,6 @@ if ! [[ command -v rustup &> /dev/null ]]; then
 fi
 rustup update stable
 
-export CARGO_INSTALL_ROOT=$HOME/_cargo_install_temp/
-
 cargo install fd-find
 cargo install --locked bat
 cargo install ripgrep
@@ -105,12 +103,6 @@ cargo install tealdeer
 cargo install eza
 cargo install bottom
 cargo install xh --locked
-
-sudo chown root:root $CARGO_INSTALL_ROOT/bin/*
-sudo chmod 755 $CARGO_INSTALL_ROOT/bin/*
-sudo mv $CARGO_INSTALL_ROOT/bin/* /usr/local/bin/
-
-export CARGO_INSTALL_ROOT=
 
 atuin import auto
 ```
@@ -134,6 +126,8 @@ brew install tealdeer
 brew install eza
 brew install bottom
 brew install xh
+
+atuin import auto
 ```
 
 #### 3.1.2 工具说明
@@ -201,4 +195,26 @@ MacOS 用户:
 
 ```bash
 brew install thefuck
+```
+
+### 3.2.3 Yazi: 命令行文件管理器
+
+> [yazi: Blazing fast terminal file manager](https://github.com/sxyazi/yazi)
+>
+> [Installation | Yazi](https://yazi-rs.github.io/docs/installation/)
+
+### 3.2.4 sttr: 字符串转换工具
+
+> [sttr: cross-platform, cli app to perform various operations on string](https://github.com/abhimanyu003/sttr?tab=readme-ov-file#battery-installation)
+
+Linux:
+
+```bash
+curl -sfL https://raw.githubusercontent.com/abhimanyu003/sttr/main/install.sh | sh
+```
+
+MacOS:
+
+```bash
+brew install abhimanyu003/sttr/sttr
 ```

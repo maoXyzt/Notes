@@ -1,6 +1,7 @@
 {
-    "recommendations": [
-        "monokai.theme-monokai-pro-vscode",
-        "dlyz.md-link-checker"
-    ]
+  "recommendations": [
+    "monokai.theme-monokai-pro-vscode",
+    "dlyz.md-link-checker",
+    "detachhead.basedpyright"
+  ]
 }

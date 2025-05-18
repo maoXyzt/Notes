@@ -22,6 +22,7 @@
 * [win 环境下 print 时的 UnicodeEncodingError](./编程开发-Programming/Python/win环境下print时的UnicodeEncodingError.md)
 * [Python 用 xlrd 读取 Excel 文件](./编程开发-Programming/Python/xlrd读取excel文件.md)
 * [不退出 python 进程的情况下删除 .pyd 文件](./编程开发-Programming/Python/不退出python进程的情况下删除.pyd文件.md)
+* [配置 Pyright](./编程开发-Programming/Python/配置Pyright.md)
 * [用 Nuitka 编译 python 代码](./编程开发-Programming/Python/用%20Nuitka%20编译%20python%20代码.md)
 * [用 gdb 调试 python core dump](./编程开发-Programming/Python/用gbd调试python%20core%20dump.md)
 * [自动获取双因子登录验证码: OTP, HOTP, TOTP 基本原理](./编程开发-Programming/Python/自动获取双因子登录验证码%E2%80%94%E2%80%94OTP%2C%20HOTP%2C%20TOTP%20基本原理.md)
@@ -43,6 +44,9 @@
   * [Tensor 数据操作](./编程开发-Programming/Python/pytorch/01-Tensor-数据操作.md)
   * [autograd 自动求梯度](./编程开发-Programming/Python/pytorch/02-autograd-自动求梯度.md)
   * [torch.jit.script 与 torch.jit.trace](./编程开发-Programming/Python/pytorch/torch.jit.script与torch.jit.trace.md)
+* Pydantic
+  * [pydantic-settings 支持 json, yaml, toml 配置](./编程开发-Programming/Python/Pydantic/pydantic-settings支持json%2Cyaml%2Ctoml配置.md)
+  * [用 Pydantic Settings 解析命令行参数](./编程开发-Programming/Python/Pydantic/用pydantic-settings解析命令行参数.md)
 * SQLAlchemy
   * [SQLAlchemy 与数据库交互的方式](./编程开发-Programming/Python/SQLAlchemy/SQLAlchemy操作数据的方法.md)
   * [SQLAlchemy 查询对象转为 SQL 语句](./编程开发-Programming/Python/SQLAlchemy/SQLAlchemy查询对象转为SQL语句.md)
@@ -231,7 +235,19 @@
   * [5. 卷积神经网络](./领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/05-卷积神经网络.md)
   * [6. 循环神经网络](./领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/06-循环神经网络.md)
 
-### 3.3 Applied Social Network Analysis in Python
+### 3.3 个人服务搭建
+
+* NAS
+  * [NAS](./领域知识-DomainKnowledge/个人服务搭建/NAS/)
+  * [Home Assistant 系统备份到 NAS](./领域知识-DomainKnowledge/个人服务搭建/NAS/homeassistant系统备份到NAS.md)
+  * [Nginx Proxy Manager 服务部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/Nginx%20Proxy%20Manager部署.md)
+  * [Wallos: 个人订阅服务管理工具](./领域知识-DomainKnowledge/个人服务搭建/NAS/Wallos个人订阅服务管理工具.md)
+* HomeAssistant
+  * [Aqara 设备通过 Matter 接入 HomeAssistant](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/Aqara设备通过Matter接入HomeAssistant.md)
+* PVE All-in-One 实践
+  * [PVE 系统备份到 NAS(smb)](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20系统备份备份到NAS%28smb%29.md)
+
+### 3.4 Applied Social Network Analysis in Python
 
 * [Course Syllabus](./领域知识-DomainKnowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Syllabus.md)
 * Module 1 - Why Study Networks and Basics on NetworkX
@@ -242,17 +258,6 @@
   * [01. Degree and Closeness Centrality](./领域知识-DomainKnowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%203%20-%20Influence%20Measures%20and%20Network%20Centralization/Influence%20Measures%20and%20Network%20Centralization.md)
 * Module 4 - Network Evolution
   * [01. Preferential Attachment Model](./领域知识-DomainKnowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%204%20-%20Network%20Evolution/Network%20Evolution.md)
-
-### 3.4 个人服务搭建
-
-* NAS
-  * [NAS](./领域知识-DomainKnowledge/个人服务搭建/NAS/)
-  * [Home Assistant 系统备份到 NAS](./领域知识-DomainKnowledge/个人服务搭建/NAS/homeassistant系统备份到NAS.md)
-  * [Wallos: 个人订阅服务管理工具](./领域知识-DomainKnowledge/个人服务搭建/NAS/Wallos个人订阅服务管理工具.md)
-* HomeAssistant
-  * [Aqara 设备通过 Matter 接入 HomeAssistant](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/Aqara设备通过Matter接入HomeAssistant.md)
-* PVE All-in-One 实践
-  * [PVE 系统备份到 NAS(smb)](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20系统备份备份到NAS%28smb%29.md)
 
 ### 3.5 Design Pattern
 
@@ -316,6 +321,7 @@
 * [Windows](./Windows/)
 * [powershell 开启补全功能](./Windows/powershell%20开启补全功能.md)
 * [powershell 加速启动](./Windows/powershell%20启动加速.md)
+* [Windows 平台常用路径缩写](./Windows/windows%20平台常用路径缩写.md)
 * [Windows 平台好用的软件推荐](./Windows/windows%20平台好用的软件推荐.md)
 * [windows 查找端口占用](./Windows/windows查找端口占用.md)
 * [windows 创建软链接](./Windows/windows建立软链接.md)

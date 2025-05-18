@@ -40,14 +40,14 @@ class Settings(BaseSettings):
 settings = Settings()
 
 
-def main():
+def main() -> None:
     """Analyse the directory structure and generate `toc.md` and `structure.json`."""
     assert DOCS_ROOT.exists()
 
     if not settings.toc_md_output.exists():
         print(
             '[bold yellow]Warning:[/bold yellow] '
-            f'{settings.toc_md_output} does not exist. Creating a new one...'
+            + f'{settings.toc_md_output} does not exist. Creating a new one...'
         )
 
     # print(json.dumps(build_structure(root), indent=2, cls=MyJSONEncoder))
@@ -104,19 +104,22 @@ def build_from_root(root: Path) -> GroupInfo:
     return root_group
 
 
-def order_group_by_num_of_children(group: GroupInfo, add_title_index: bool = True):
+def order_group_by_num_of_children(
+    group: GroupInfo,
+    add_title_index: bool = True,
+) -> None:
     """Recursively sort a group and its children by the number of children."""
 
     def sum_items(item: GroupInfo | PageInfo) -> int:
         if isinstance(item, GroupInfo):
             return sum([sum_items(child) for child in item.items])
-        elif isinstance(item, PageInfo):
+        else:
             return 1
 
     def _sort_key(item: GroupInfo | PageInfo):
         if isinstance(item, GroupInfo):
             return sum_items(item)
-        elif isinstance(item, PageInfo):
+        else:
             return math.inf
 
     for item in group.items:
@@ -146,8 +149,8 @@ def make_toc_content(
                 has_children=bool(getattr(item, 'items', None)),
             )
             lines.append(f'{indent} {line_content}')
-    if children := getattr(item, 'items', None):
-        for c in children:
+    if isinstance(item, GroupInfo):
+        for c in item.items:
             make_toc_content(
                 c,
                 lines,
@@ -188,7 +191,7 @@ def _format_toc(lines: list[str]) -> list[str]:
     Rules:
     - Insert a blank line between headers and contents.
     """
-    insert_blank_lines_idx = []
+    insert_blank_lines_idx: list[int] = []
     for i in range(len(lines) - 1):
         l1, l2 = lines[i], lines[i + 1]
         l1 = l1.strip()

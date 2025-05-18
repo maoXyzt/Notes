@@ -4,7 +4,7 @@ import fnmatch
 import json
 from abc import ABCMeta
 from pathlib import Path
-from typing import Self
+from typing import Any, Self
 
 import frontmatter
 from pydantic import BaseModel as _BaseModel
@@ -157,7 +157,7 @@ class GroupInfo(BaseItem):
 
 
 class CJSONEncoder(json.JSONEncoder):
-    def default(self, o):
+    def default(self, o) -> Any:
         # if isinstance(o, list | tuple | set):
         #     return [self.default(x) for x in o]
         if hasattr(o, 'model_dump'):

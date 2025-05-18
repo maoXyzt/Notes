@@ -7,19 +7,19 @@ authors = [{ name = "maoXyzt", email = "edwardyzt@gmail.com" }]
 requires-python = ">=3.11"
 license = "Apache-2.0" # https://spdx.org/licenses/
 dependencies = [
-  "pydantic>=2.11.3",
-  "pydantic-settings>=2.8.1",
+  "pydantic>=2.11.4",
+  "pydantic-settings>=2.9.1",
   "pypinyin>=0.54.0",
   "python-frontmatter>=1.1.0",
   "rich>=14.0.0",
-  "typer>=0.15.2",
+  "typer>=0.15.3",
 ]
 
 [project.scripts]
 update-toc = "cli.update_toc:main"
 
 [dependency-groups]
-dev = ["pre-commit>=4.2.0", "ruff>=0.11.5"]
+dev = ["pre-commit>=4.2.0", "ruff>=0.11.8"]
 
 [[tool.uv.index]]
 name = "tsinghua"

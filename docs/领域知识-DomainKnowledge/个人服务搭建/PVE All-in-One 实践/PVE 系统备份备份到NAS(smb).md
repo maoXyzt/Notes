@@ -45,7 +45,7 @@
   * 保留每周(Keep Weekly)：4 (保留 4 份每周的最后一次备份，与之前项不重复)
   * 保留每月(Keep Monthly)：6 (保留 6 份每月的最后一次备份，与之前项不重复)
 
-> 关于保留规则可以参考文档: <https://pve-7hcm7fpg.kooldns.cn/pve-docs/chapter-vzdump.html#vzdump_retention>
+> 关于保留规则可以参考文档: <https://pve.proxmox.com/pve-docs/chapter-vzdump.html#vzdump_retention>
 
 ![创建备份作业](./.assets/pve-创建备份作业.png)
 

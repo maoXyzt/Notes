@@ -66,6 +66,10 @@
             "link": "/编程开发-Programming/Python/不退出python进程的情况下删除.pyd文件.md"
           },
           {
+            "text": "配置 Pyright",
+            "link": "/编程开发-Programming/Python/配置Pyright.md"
+          },
+          {
             "text": "用 Nuitka 编译 python 代码",
             "link": "/编程开发-Programming/Python/用 Nuitka 编译 python 代码.md"
           },
@@ -151,6 +155,20 @@
               {
                 "text": "torch.jit.script 与 torch.jit.trace",
                 "link": "/编程开发-Programming/Python/pytorch/torch.jit.script与torch.jit.trace.md"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "text": "Pydantic",
+            "items": [
+              {
+                "text": "pydantic-settings 支持 json, yaml, toml 配置",
+                "link": "/编程开发-Programming/Python/Pydantic/pydantic-settings支持json,yaml,toml配置.md"
+              },
+              {
+                "text": "用 Pydantic Settings 解析命令行参数",
+                "link": "/编程开发-Programming/Python/Pydantic/用pydantic-settings解析命令行参数.md"
               }
             ],
             "collapsed": true
@@ -843,7 +861,55 @@
         "collapsed": false
       },
       {
-        "text": "3.3 Applied Social Network Analysis in Python",
+        "text": "3.3 个人服务搭建",
+        "items": [
+          {
+            "text": "NAS",
+            "items": [
+              {
+                "text": "NAS",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/"
+              },
+              {
+                "text": "Home Assistant 系统备份到 NAS",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/homeassistant系统备份到NAS.md"
+              },
+              {
+                "text": "Nginx Proxy Manager 服务部署",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/Nginx Proxy Manager部署.md"
+              },
+              {
+                "text": "Wallos: 个人订阅服务管理工具",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/Wallos个人订阅服务管理工具.md"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "text": "HomeAssistant",
+            "items": [
+              {
+                "text": "Aqara 设备通过 Matter 接入 HomeAssistant",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/Aqara设备通过Matter接入HomeAssistant.md"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "text": "PVE All-in-One 实践",
+            "items": [
+              {
+                "text": "PVE 系统备份到 NAS(smb)",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/PVE All-in-One 实践/PVE 系统备份备份到NAS(smb).md"
+              }
+            ],
+            "collapsed": true
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "3.4 Applied Social Network Analysis in Python",
         "items": [
           {
             "text": "Course Syllabus",
@@ -885,50 +951,6 @@
               {
                 "text": "01. Preferential Attachment Model",
                 "link": "/领域知识-DomainKnowledge/Applied Social Network Analysis in Python/Module 4 - Network Evolution/Network Evolution.md"
-              }
-            ],
-            "collapsed": true
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "text": "3.4 个人服务搭建",
-        "items": [
-          {
-            "text": "NAS",
-            "items": [
-              {
-                "text": "NAS",
-                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/"
-              },
-              {
-                "text": "Home Assistant 系统备份到 NAS",
-                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/homeassistant系统备份到NAS.md"
-              },
-              {
-                "text": "Wallos: 个人订阅服务管理工具",
-                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/Wallos个人订阅服务管理工具.md"
-              }
-            ],
-            "collapsed": true
-          },
-          {
-            "text": "HomeAssistant",
-            "items": [
-              {
-                "text": "Aqara 设备通过 Matter 接入 HomeAssistant",
-                "link": "/领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/Aqara设备通过Matter接入HomeAssistant.md"
-              }
-            ],
-            "collapsed": true
-          },
-          {
-            "text": "PVE All-in-One 实践",
-            "items": [
-              {
-                "text": "PVE 系统备份到 NAS(smb)",
-                "link": "/领域知识-DomainKnowledge/个人服务搭建/PVE All-in-One 实践/PVE 系统备份备份到NAS(smb).md"
               }
             ],
             "collapsed": true
@@ -1117,6 +1139,10 @@
       {
         "text": "powershell 加速启动",
         "link": "/Windows/powershell 启动加速.md"
+      },
+      {
+        "text": "Windows 平台常用路径缩写",
+        "link": "/Windows/windows 平台常用路径缩写.md"
       },
       {
         "text": "Windows 平台好用的软件推荐",
