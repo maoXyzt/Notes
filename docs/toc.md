@@ -325,6 +325,7 @@
 * [Windows 平台好用的软件推荐](./Windows/windows%20平台好用的软件推荐.md)
 * [windows 查找端口占用](./Windows/windows查找端口占用.md)
 * [windows 创建软链接](./Windows/windows建立软链接.md)
+* [Windows 平台常用路径缩写](./Windows/windows平台常用路径缩写.md)
 * [Windows 平台使用 nushell 终端](./Windows/windows平台使用nushell终端.md)
 * [winget 更换国内源](./Windows/winget更换国内源.md)
 * [创建自启动的 Windows Service 程序](./Windows/创建自启动的Windows%20Service程序.md)

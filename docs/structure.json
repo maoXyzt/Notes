@@ -1157,6 +1157,10 @@
         "link": "/Windows/windows建立软链接.md"
       },
       {
+        "text": "Windows 平台常用路径缩写",
+        "link": "/Windows/windows平台常用路径缩写.md"
+      },
+      {
         "text": "Windows 平台使用 nushell 终端",
         "link": "/Windows/windows平台使用nushell终端.md"
       },
