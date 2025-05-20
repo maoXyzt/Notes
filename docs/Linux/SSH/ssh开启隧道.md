@@ -8,7 +8,7 @@ ssh -g -N -L <local_port>:<remote_host_2>:<remote_port_2> <user>@<remote_host_1>
 
 执行后，本机的 `<local_port>` 端口就会被映射到 `<remote_host_2>:<remote_port_2>`。
 
-其他 host 也可以通过访问本机的 `<local_port>` 来访问 `<remote_host_3>:<remote_port_2>`。
+其他 host 也可以通过访问本机的 `<local_port>` 来访问 `<remote_host_2>:<remote_port_2>`。
 
 ## 参数说明
 
