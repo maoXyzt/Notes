@@ -93,7 +93,7 @@ fi
 rustup update stable
 
 cargo install fd-find
-cargo install --locked bat
+cargo install bat --locked
 cargo install ripgrep
 cargo install du-dust
 cargo install procs
@@ -103,6 +103,7 @@ cargo install tealdeer
 cargo install eza
 cargo install bottom
 cargo install xh --locked
+cargo install zoxide --locked
 
 atuin import auto
 ```
@@ -126,6 +127,7 @@ brew install tealdeer
 brew install eza
 brew install bottom
 brew install xh
+brew install zoxide
 
 atuin import auto
 ```
@@ -144,7 +146,6 @@ atuin import auto
   - (推荐) [`tealdeer`](https://github.com/tealdeer-rs/tealdeer?tab=readme-ov-file#docs-installing-usage-configuration)
   - (无需编译) [`tldr`](https://github.com/tldr-pages/tldr#how-do-i-use-it)
 - [`eza`](https://github.com/eza-community/eza): a modern replacement for `ls`
-- [`bottom`](https://github.com/ClementTsang/bottom): 图形化进程、系统monitor
 
   ```bash
   # linux x64
@@ -167,6 +168,8 @@ atuin import auto
   ```
 
 - [`xh`](https://github.com/ducaale/xh): 替代 `httpie`
+- [`zoxide`](https://github.com/ajeetdsouza/zoxide): 替代 `autojump|z`, 基于目录访问频率进行智能匹配
+  - [zsh常用插件 | zoxide](./zsh常用插件.md#zoxide)
 
 ### 3.2 其他
 

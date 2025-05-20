@@ -118,7 +118,44 @@ autoload -U compinit && compinit
 > conda init zsh
 > ```
 
-### autojump
+### zoxide
+
+zoxide 是一款高效的目录跳转工具，基于目录访问频率进行智能匹配，极大提升工作效率。
+
+> <https://github.com/ajeetdsouza/zoxide>
+
+**安装**：
+
+```bash
+cargo install zoxide --locked
+# 或者 MacOS 使用 brew 安装
+brew install zoxide
+```
+
+**启用**：
+
+```bash
+eval "$(zoxide init zsh)"
+```
+
+**使用方法**：
+
+```bash
+z foo              # cd into highest ranked directory matching foo
+z foo bar          # cd into highest ranked directory matching foo and bar
+z foo /            # cd into a subdirectory starting with foo
+
+z ~/foo            # z also works like a regular cd command
+z foo/             # cd into relative path
+z ..               # cd one level up
+z -                # cd into previous directory
+
+zi foo             # cd with interactive selection (using fzf)
+
+z foo<SPACE><TAB>  # show interactive completions (zoxide v0.8.0+, bash 4.4+/fish/zsh only)
+```
+
+### ~~autojump~~(已用 zoxide 代替)
 
 实现目录间快速跳转，想去哪个目录直接 j + 目录名，不用再频繁的 cd 了！
 
@@ -166,7 +203,7 @@ j -s
 j --purge
 ```
 
-### z
+### ~~z~~(已用 zoxide 代替)
 
 内置插件。类似 autojump 。提供一个`z`命令，在常用目录之间跳转。
 
