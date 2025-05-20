@@ -155,6 +155,12 @@ zi foo             # cd with interactive selection (using fzf)
 z foo<SPACE><TAB>  # show interactive completions (zoxide v0.8.0+, bash 4.4+/fish/zsh only)
 ```
 
+> `zi` 依赖 `fzf`，需要先安装 `fzf`
+>
+> ```bash
+> brew install fzf
+> ```
+
 ### ~~autojump~~(已用 zoxide 代替)
 
 实现目录间快速跳转，想去哪个目录直接 j + 目录名，不用再频繁的 cd 了！

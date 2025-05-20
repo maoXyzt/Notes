@@ -127,7 +127,7 @@ brew install tealdeer
 brew install eza
 brew install bottom
 brew install xh
-brew install zoxide
+brew install zoxide fzf
 
 atuin import auto
 ```
