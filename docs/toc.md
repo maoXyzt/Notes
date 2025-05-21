@@ -196,20 +196,18 @@
 * [CentOS 7 防火墙开放端口](./Linux/CentOS/CentOS%207%20开放端口.md)
 * [CentOS 配置国内源](./Linux/CentOS/CentOS%20配置国内源.md)
 
-### 2.2 nginx
-
-* [nginx 代理json文件作为API response](./Linux/nginx/nginx%20代理json文件作为API%20response.md)
-* [nginx 配置 examples](./Linux/nginx/nginx%20配置%20examples.md)
-* [nginx 配置常见问题](./Linux/nginx/nginx%20配置常见问题.md)
-* [nginx 隐藏响应头中的版本信息](./Linux/nginx/nginx%20隐藏响应头的版本信息%28header的server字段%29.md)
-* [nginx 用于部署静态页面](./Linux/nginx/nginx%20用于部署静态页面.md)
-
-### 2.3 SSH
+### 2.2 SSH
 
 * [使用 `sshfs` 命令简易挂载远程目录](./Linux/SSH/sshfs命令简易挂载远程目录.md)
 * [SSH 开启隧道](./Linux/SSH/ssh开启隧道.md)
 * [SSH 配置心跳信号防止断开连接](./Linux/SSH/SSH配置心跳信号防止断开连接.md)
 * [创建 SSH 密钥对并使用密钥登录](./Linux/SSH/创建SSH密钥对并使用密钥登录.md)
+
+### 2.3 nginx
+
+* [nginx 配置示例](./Linux/nginx/nginx%20配置%20examples.md)
+* [nginx 配置常见问题](./Linux/nginx/nginx%20配置常见问题.md)
+* [nginx 隐藏响应 headers 中的版本信息](./Linux/nginx/nginx%20隐藏响应头的版本信息.md)
 
 ### 2.4 Vim
 
@@ -351,6 +349,7 @@
 
 ## 7 - MacOS
 
+* [MacOS](./MacOS/)
 * [Homebrew 的安装、换源和卸载](./MacOS/Homebrew的安装%E3%80%81换源和卸载.md)
 * [MacOS 配置定时任务](./MacOS/MacOS%20配置定时任务.md)
 <!-- /TOC -->

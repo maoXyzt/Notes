@@ -733,33 +733,7 @@
         "collapsed": false
       },
       {
-        "text": "2.2 nginx",
-        "items": [
-          {
-            "text": "nginx 代理json文件作为API response",
-            "link": "/Linux/nginx/nginx 代理json文件作为API response.md"
-          },
-          {
-            "text": "nginx 配置 examples",
-            "link": "/Linux/nginx/nginx 配置 examples.md"
-          },
-          {
-            "text": "nginx 配置常见问题",
-            "link": "/Linux/nginx/nginx 配置常见问题.md"
-          },
-          {
-            "text": "nginx 隐藏响应头中的版本信息",
-            "link": "/Linux/nginx/nginx 隐藏响应头的版本信息(header的server字段).md"
-          },
-          {
-            "text": "nginx 用于部署静态页面",
-            "link": "/Linux/nginx/nginx 用于部署静态页面.md"
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "text": "2.3 SSH",
+        "text": "2.2 SSH",
         "items": [
           {
             "text": "使用 `sshfs` 命令简易挂载远程目录",
@@ -776,6 +750,24 @@
           {
             "text": "创建 SSH 密钥对并使用密钥登录",
             "link": "/Linux/SSH/创建SSH密钥对并使用密钥登录.md"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "2.3 nginx",
+        "items": [
+          {
+            "text": "nginx 配置示例",
+            "link": "/Linux/nginx/nginx 配置 examples.md"
+          },
+          {
+            "text": "nginx 配置常见问题",
+            "link": "/Linux/nginx/nginx 配置常见问题.md"
+          },
+          {
+            "text": "nginx 隐藏响应 headers 中的版本信息",
+            "link": "/Linux/nginx/nginx 隐藏响应头的版本信息.md"
           }
         ],
         "collapsed": false
@@ -1242,6 +1234,10 @@
   {
     "text": "7 - MacOS",
     "items": [
+      {
+        "text": "MacOS",
+        "link": "/MacOS/"
+      },
       {
         "text": "Homebrew 的安装、换源和卸载",
         "link": "/MacOS/Homebrew的安装、换源和卸载.md"
