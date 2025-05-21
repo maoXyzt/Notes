@@ -90,7 +90,27 @@
 * SQLite
   * [SQLite 数据库文件损坏修复](./编程开发-Programming/Database/SQLite/SQLite数据库文件损坏修复.md)
 
-### 1.3 容器化
+### 1.3 Frontend
+
+* [Frontend](./编程开发-Programming/Frontend/)
+* [Husky: 配置前端项目的 git hooks](./编程开发-Programming/Frontend/Husky-配置前端项目的git%20hooks.md)
+* [安装 Node.js](./编程开发-Programming/Frontend/Node.js%20安装.md)
+* [openapi-generator 生成前端请求代码](./编程开发-Programming/Frontend/openapi-generator%20生成前端请求代码.md)
+* [VitePress 插件](./编程开发-Programming/Frontend/VitePress插件.md)
+* Vue3
+  * [Vue3](./编程开发-Programming/Frontend/Vue3/)
+  * [Vue3 PostCSS 配置](./编程开发-Programming/Frontend/Vue3/Vue3%20PostCSS配置.md)
+  * [Vue3 UnoCSS 安装和配置](./编程开发-Programming/Frontend/Vue3/Vue3%20UnoCSS安装和配置.md)
+  * [Vue3, Vite 配置 base 路径后，编译结果为空页面](./编程开发-Programming/Frontend/Vue3/Vue3%2CVite配置base路径后%EF%BC%8C编译结果为空页面.md)
+  * [Vue3 项目 Setup](./编程开发-Programming/Frontend/Vue3/Vue3项目Setup.md)
+  * [Vue3 项目 Vite 配置](./编程开发-Programming/Frontend/Vue3/Vue3项目Vite配置.md)
+  * [Vue3 项目配置 Lint & Format 规则 (EsLint & Prettier)](./编程开发-Programming/Frontend/Vue3/Vue3项目配置Lint%26Format规则%28EsLint%26Prettier%29.md)
+  * [Vue3 自动按需引入组件（unplugin-vue-components）](./编程开发-Programming/Frontend/Vue3/Vue3自动按需引入组件%28unplugin-vue-components%29.md)
+* JS-TS
+  * [JS-TS](./编程开发-Programming/Frontend/JS-TS/)
+  * [箭头函数与普通函数的区别](./编程开发-Programming/Frontend/JS-TS/箭头函数与普通函数的区别.md)
+
+### 1.4 容器化
 
 * Docker
   * [Docker](./编程开发-Programming/容器化/Docker/)
@@ -109,24 +129,6 @@
   * [理解 Docker 的 CPU 使用率](./编程开发-Programming/容器化/Docker/理解Docker的CPU使用率.md)
 * Kubernetes
   * [k8s 集群搭建](./编程开发-Programming/容器化/Kubernetes/k8s集群搭建.md)
-
-### 1.4 Frontend
-
-* [Husky: 配置前端项目的 git hooks](./编程开发-Programming/Frontend/Husky-配置前端项目的git%20hooks.md)
-* [安装 Node.js](./编程开发-Programming/Frontend/Node.js%20安装.md)
-* [openapi-generator 生成前端请求代码](./编程开发-Programming/Frontend/openapi-generator%20生成前端请求代码.md)
-* [VitePress 插件](./编程开发-Programming/Frontend/VitePress插件.md)
-* Vue3
-  * [Vue3](./编程开发-Programming/Frontend/Vue3/)
-  * [Vue3 PostCSS 配置](./编程开发-Programming/Frontend/Vue3/Vue3%20PostCSS配置.md)
-  * [Vue3 UnoCSS 安装和配置](./编程开发-Programming/Frontend/Vue3/Vue3%20UnoCSS安装和配置.md)
-  * [Vue3, Vite 配置 base 路径后，编译结果为空页面](./编程开发-Programming/Frontend/Vue3/Vue3%2CVite配置base路径后%EF%BC%8C编译结果为空页面.md)
-  * [Vue3 项目 Setup](./编程开发-Programming/Frontend/Vue3/Vue3项目Setup.md)
-  * [Vue3 项目 Vite 配置](./编程开发-Programming/Frontend/Vue3/Vue3项目Vite配置.md)
-  * [Vue3 项目配置 Lint & Format 规则 (EsLint & Prettier)](./编程开发-Programming/Frontend/Vue3/Vue3项目配置Lint%26Format规则%28EsLint%26Prettier%29.md)
-  * [Vue3 自动按需引入组件（unplugin-vue-components）](./编程开发-Programming/Frontend/Vue3/Vue3自动按需引入组件%28unplugin-vue-components%29.md)
-* JS-TS
-  * [箭头函数与普通函数的区别](./编程开发-Programming/Frontend/JS-TS/箭头函数与普通函数的区别.md)
 
 ### 1.5 Git
 
