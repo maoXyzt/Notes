@@ -5,7 +5,7 @@
 执行 `ssh-keygen` 命令，获取私钥证书和公钥证书:
 
 ```bash
-# 使用 Ed25519 算法生成密钥对, 要求 OpenSSH 6.5 及以上版本(2014 年)
+# 使用 Ed25519 算法生成密钥对, 要求 OpenSSH 6.5 (2014 年发布)及以上版本
 ssh-keygen -t ed25519 -b 256 -C "example@qq.com"
 # 如果 OpenSSH 版本低于 6.5, 也可使用 rsa 算法生成 2048 位密钥对 (默认) ：
 # ssh-keygen -C "example@qq.com"

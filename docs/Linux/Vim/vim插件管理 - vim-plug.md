@@ -2,6 +2,8 @@
 
 ## 1 - vim-plug
 
+> [junegunn/vim-plug](https://github.com/junegunn/vim-plug)
+
 ### 1.1 安装 vim-plug
 
 自动安装：在 `~/.vimrc` 中添加以下内容（在 `plug#begin()` 之前）
@@ -89,39 +91,4 @@ Plug 'davidhalter/jedi-vim'   "python自动补全"
 
 ## 3 - 其他 vim 配置
 
-```bash
-"关闭vi兼容
-set nocompatible
-
-"map <leader> key
-let mapleader=","
-
-"显示行号
-set number
-"将换行自动缩进设置成4个空格
-set shiftwidth=4
-"表示一个tab键相当于4个空格键
-set tabstop=4
-set softtabstop=4
-set expandtab
-set hlsearch
-"把当前行的对齐格式应用到下一行
-set autoindent
-" 隐藏滚动条"
-set guioptions-=r
-set guioptions-=L
-set guioptions-=b
-"开启语法高亮"
-syntax on
-syntax enable
-"solarized主题设置在终端下的设置"
-set background=dark
-colorscheme solarized
-"设置不折行"
-set nowrap
-"显示匹配的括号"
-set showmatch
-"文件编码"
-set fenc=utf-8
-set encoding=utf-8
-```
+参考: [vim 配置](./vim配置.md)

@@ -736,6 +736,10 @@
         "text": "2.2 SSH",
         "items": [
           {
+            "text": "SSH",
+            "link": "/Linux/SSH/"
+          },
+          {
             "text": "使用 `sshfs` 命令简易挂载远程目录",
             "link": "/Linux/SSH/sshfs命令简易挂载远程目录.md"
           },
@@ -755,7 +759,33 @@
         "collapsed": false
       },
       {
-        "text": "2.3 nginx",
+        "text": "2.3 Vim",
+        "items": [
+          {
+            "text": "Vim",
+            "link": "/Linux/Vim/"
+          },
+          {
+            "text": "Neovim 安装与配置",
+            "link": "/Linux/Vim/Neovim安装与配置.md"
+          },
+          {
+            "text": "vim 插件管理: vim-plug",
+            "link": "/Linux/Vim/vim插件管理 - vim-plug.md"
+          },
+          {
+            "text": "VIM 的 FileType Plugins 配置",
+            "link": "/Linux/Vim/vim的filetype plugins配置.md"
+          },
+          {
+            "text": "Vim 配置",
+            "link": "/Linux/Vim/vim配置.md"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "2.4 nginx",
         "items": [
           {
             "text": "nginx 配置示例",
@@ -768,20 +798,6 @@
           {
             "text": "nginx 隐藏响应 headers 中的版本信息",
             "link": "/Linux/nginx/nginx 隐藏响应头的版本信息.md"
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "text": "2.4 Vim",
-        "items": [
-          {
-            "text": "Neovim 安装与配置",
-            "link": "/Linux/Vim/Neovim安装与配置.md"
-          },
-          {
-            "text": "vim 插件管理: vim-plug",
-            "link": "/Linux/Vim/vim插件管理 - vim-plug.md"
           }
         ],
         "collapsed": false

@@ -198,21 +198,25 @@
 
 ### 2.2 SSH
 
+* [SSH](./Linux/SSH/)
 * [使用 `sshfs` 命令简易挂载远程目录](./Linux/SSH/sshfs命令简易挂载远程目录.md)
 * [SSH 开启隧道](./Linux/SSH/ssh开启隧道.md)
 * [SSH 配置心跳信号防止断开连接](./Linux/SSH/SSH配置心跳信号防止断开连接.md)
 * [创建 SSH 密钥对并使用密钥登录](./Linux/SSH/创建SSH密钥对并使用密钥登录.md)
 
-### 2.3 nginx
+### 2.3 Vim
+
+* [Vim](./Linux/Vim/)
+* [Neovim 安装与配置](./Linux/Vim/Neovim安装与配置.md)
+* [vim 插件管理: vim-plug](./Linux/Vim/vim插件管理%20-%20vim-plug.md)
+* [VIM 的 FileType Plugins 配置](./Linux/Vim/vim的filetype%20plugins配置.md)
+* [Vim 配置](./Linux/Vim/vim配置.md)
+
+### 2.4 nginx
 
 * [nginx 配置示例](./Linux/nginx/nginx%20配置%20examples.md)
 * [nginx 配置常见问题](./Linux/nginx/nginx%20配置常见问题.md)
 * [nginx 隐藏响应 headers 中的版本信息](./Linux/nginx/nginx%20隐藏响应头的版本信息.md)
-
-### 2.4 Vim
-
-* [Neovim 安装与配置](./Linux/Vim/Neovim安装与配置.md)
-* [vim 插件管理: vim-plug](./Linux/Vim/vim插件管理%20-%20vim-plug.md)
 
 ## 3 - 领域知识-DomainKnowledge
 
