@@ -214,6 +214,10 @@
         "text": "1.2 Database",
         "items": [
           {
+            "text": "Database",
+            "link": "/编程开发-Programming/Database/"
+          },
+          {
             "text": "SQL 查询每个分组的前 N 条数据",
             "link": "/编程开发-Programming/Database/SQL查询每个分组的前N条数据.md"
           },
@@ -303,6 +307,10 @@
             "text": "MySQL",
             "items": [
               {
+                "text": "MySQL",
+                "link": "/编程开发-Programming/Database/MySQL/"
+              },
+              {
                 "text": "CentOS 7 安装MySQL",
                 "link": "/编程开发-Programming/Database/MySQL/CentOS 7 安装MySQL.md"
               },
@@ -320,6 +328,10 @@
           {
             "text": "Redis",
             "items": [
+              {
+                "text": "Redis",
+                "link": "/编程开发-Programming/Database/Redis/"
+              },
               {
                 "text": "Redis 缓存雪崩、缓存穿透、缓存击穿",
                 "link": "/编程开发-Programming/Database/Redis/Redis缓存雪崩、缓存穿透、缓存击穿.md"
