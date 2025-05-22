@@ -179,6 +179,44 @@ def --env y [...args] {
 
 其他快捷键参见 [Keybindings](https://yazi-rs.github.io/docs/quick-start#keybindings)
 
+### (3) 目录跳转: zoxide
+
+> [zoxide](https://github.com/ajeetdsouza/zoxide)
+
+安装 zoxide:
+
+```bash
+winget install ajeetdsouza.zoxide
+```
+
+先编辑 `env.nu` 文件(`$nu.env-path`)，在文件末尾加入:
+
+```bash
+zoxide init nushell | save -f ~/.zoxide.nu
+```
+
+然后配置 nushell 的 `config.nu` 文件，在文件末尾加入:
+
+```bash
+source ~/.zoxide.nu
+```
+
+(可选) 安装 `fzf` 以支持补全和交互式选择:
+
+```bash
+winget install fzf
+```
+
+使用方法:
+
+```bash
+z foo              # cd into highest ranked directory matching foo
+z foo bar          # cd into highest ranked directory matching foo and bar
+z foo /            # cd into a subdirectory starting with foo
+
+zi foo             # cd with interactive selection (using fzf)
+```
+
 ## 3 - 配置文件示例
 
 打开配置文件并(用 VSCode)编辑: `code $nu.config-path`
