@@ -88,10 +88,11 @@
   * [Redis](./编程开发-Programming/Database/Redis/)
   * [Redis 缓存雪崩、缓存穿透、缓存击穿](./编程开发-Programming/Database/Redis/Redis缓存雪崩%E3%80%81缓存穿透%E3%80%81缓存击穿.md)
   * [Redis 基本操作](./编程开发-Programming/Database/Redis/Redis基本操作.md)
+* SQLite
+  * [SQLite 命令行客户端 LiteCLI](./编程开发-Programming/Database/SQLite/SQLite命令行客户端litecli.md)
+  * [SQLite 数据库文件损坏修复](./编程开发-Programming/Database/SQLite/SQLite数据库文件损坏修复.md)
 * CouchDB
   * [CouchDB 安装](./编程开发-Programming/Database/CouchDB/CouchDB安装.md)
-* SQLite
-  * [SQLite 数据库文件损坏修复](./编程开发-Programming/Database/SQLite/SQLite数据库文件损坏修复.md)
 
 ### 1.3 Frontend
 

@@ -344,21 +344,25 @@
             "collapsed": true
           },
           {
-            "text": "CouchDB",
+            "text": "SQLite",
             "items": [
               {
-                "text": "CouchDB 安装",
-                "link": "/编程开发-Programming/Database/CouchDB/CouchDB安装.md"
+                "text": "SQLite 命令行客户端 LiteCLI",
+                "link": "/编程开发-Programming/Database/SQLite/SQLite命令行客户端litecli.md"
+              },
+              {
+                "text": "SQLite 数据库文件损坏修复",
+                "link": "/编程开发-Programming/Database/SQLite/SQLite数据库文件损坏修复.md"
               }
             ],
             "collapsed": true
           },
           {
-            "text": "SQLite",
+            "text": "CouchDB",
             "items": [
               {
-                "text": "SQLite 数据库文件损坏修复",
-                "link": "/编程开发-Programming/Database/SQLite/SQLite数据库文件损坏修复.md"
+                "text": "CouchDB 安装",
+                "link": "/编程开发-Programming/Database/CouchDB/CouchDB安装.md"
               }
             ],
             "collapsed": true
