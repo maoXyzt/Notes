@@ -8,33 +8,45 @@
 aws --version
 ```
 
-### 安装
+### 1.1 安装
 
-略。
+参考官方文档: <https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions>
 
-建议 `python>=3.7`
-
-### 配置
-
-(1) `vim ~/.s3cfg`
-
-```ini
-[default]
-access_key = 111
-secret_key = 222
-host_base = http://10.5.41.12:7480
-host_bucket = http://10.5.41.12:7480/%(bucket)
+```bash
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+# 如果 /usr/local/bin 不在 PATH 中，需要加入到 PATH
 ```
 
-(2) `aws configure`
+### 1.2 配置
 
-输入 access_key 和 secret_key
+配置 awscli 的默认配置:
+
+```bash
+aws configure
+# 输入：
+# AWS Access Key ID [None]: ************
+# AWS Secret Access Key [None]: *********************************
+# Default region name [None]: default
+# Default output format [None]:
+```
+
+配置内容会写入 `~/.aws/credentials` 和 `~/.aws/config` 文件中。
+
+配置默认 endpoint:
+
+> [Configure endpoints using environment variables](https://docs.aws.amazon.com/sdkref/latest/guide/feature-ss-endpoints.html#ss-endpoints-envar)
+
+```bash
+export AWS_ENDPOINT_URL=http://localhost:4567
+```
 
 ## 2. 操作
 
 ### 查询
 
-*有时需要加上 `--endpoint-url=http://endpoint.url.com` 来指定要访问的服务器*
+*如有需要，可以手动指定 `--endpoint-url=http://endpoint.url.com` 来指定要访问的服务器*
 
 ```bash
 # 列出所有 bucket
