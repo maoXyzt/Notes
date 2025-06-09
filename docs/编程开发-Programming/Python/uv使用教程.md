@@ -110,10 +110,12 @@ PATH 参数:
 OPTIONS 部分有用的选项:
 
 - `--python`: 指定 Python 版本。例如: `--python=3.12`
+- `--app`: 未指定 `--lib` 时默认启用。创建一个 application 项目
+- `--lib`: 创建一个 library 项目 (此类项目专用于作为 package 被其他项目引用)
+- `--package`: 如果 `--lib` 或者 `--build-backend` 已被指定, 则自动包含此选项。当与 `--app` 一起使用时，会创建一个 packaged application 项目。
+- `--script`: 创建一个 script。它是一个单独的脚本文件，符合 [PEP 723](https://peps.python.org/pep-0723/) 标准。它的依赖会被安装到当前 python 的依赖中。
 - `--bare`: 只创建 `pyproject.toml` 文件
 - `--build-backend`: 指定 build backend。常用值: `--build-backend=hatchling`
-- `--lib`: 创建一个 library 项目 (此类项目专用于作为 package 被其他项目引用)
-- `--script`: 创建一个 script。它是一个单独的脚本文件，符合 [PEP 723](https://peps.python.org/pep-0723/) 标准。它的依赖会被安装到当前 python 的依赖中。
 - `-v`: 显示详细信息
 
 Examples:
@@ -125,6 +127,82 @@ uv init --lib mylib --build-backend=hatchling
 uv init --script myscript.py
 # 创建一个项目
 uv init myproject --build-backend=hatchling --python=3.12
+```
+
+## 3 - 一些概念
+
+### 3.1 - 项目类型: application vs library
+
+#### 3.1.1 - Applications
+
+[applications](https://docs.astral.sh/uv/concepts/projects/init/#applications) 适用于 web 服务、脚本、CLI 等项目
+
+可以被执行。
+
+这是 `uv init` 默认创建的项目类型。
+
+初始项目结构：
+
+```bash
+example-app/
+├── .git/
+├── .gitignore
+├── .python-version
+├── README.md
+├── main.py
+└── pyproject.toml
+```
+
+可以用 `uv run main.py` 运行项目。
+
+#### 3.1.2 - Packaged applications
+
+可被构建为 python package 的 application。
+
+[Packaged applications](https://docs.astral.sh/uv/concepts/projects/init/#packaged-applications)
+
+用 `uv init --package` 创建。
+
+初始项目结构:
+
+```bash
+example-pkg/
+├── .git/
+├── .gitignore
+├── .python-version
+├── README.md
+├── pyproject.toml
+└── src/
+    └── example_pkg
+        └── __init__.py
+```
+
+在 `pyproject.toml` 中：
+
+- 包含 `[build-system]` 部分，因此项目会被安装到当前环境中(`uv sync` 时)。
+- 包含 `[project-scripts]` 部分，定义了项目运行的入口，可用 `uv run <script-name>` 执行。
+
+#### 3.1.3 - Libraries
+
+[libraries](https://docs.astral.sh/uv/concepts/projects/init/#libraries) 是 Python 库，可构建为 python package 被其他项目引用。
+
+用 `uv init --lib` 创建。
+
+初始项目结构：
+
+> A `py.typed` marker is included to indicate to consumers that types can be read from the library
+
+```bash
+example-lib/
+├── .git/
+├── .gitignore
+├── .python-version
+├── README.md
+├── pyproject.toml
+└── src/
+    └── example_lib
+        ├── py.typed
+        └── __init__.py
 ```
 
 ## 3 - Example
