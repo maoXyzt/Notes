@@ -174,7 +174,8 @@ atuin import auto
 
 - [`xh`](https://github.com/ducaale/xh): 替代 `httpie`
 - [`zoxide`](https://github.com/ajeetdsouza/zoxide): 替代 `autojump|z`, 基于目录访问频率进行智能匹配
-  - [zsh常用插件 | zoxide](./zsh常用插件.md#zoxide)
+
+> [zsh常用插件 | zoxide](./zsh常用插件.md#zoxide)
 
 ### 3.2 其他
 
