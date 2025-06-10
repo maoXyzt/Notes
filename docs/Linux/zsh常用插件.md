@@ -127,9 +127,11 @@ zoxide 是一款高效的目录跳转工具，基于目录访问频率进行智�
 **安装**：
 
 ```bash
-cargo install zoxide --locked
+curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
+# 或者使用 cargo 安装
+# cargo install zoxide --locked
 # 或者 MacOS 使用 brew 安装
-brew install zoxide
+# brew install zoxide
 ```
 
 **启用**：
