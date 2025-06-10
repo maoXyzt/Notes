@@ -62,7 +62,17 @@ sudo apt-get install autoconf automake build-essential \
 
 根据个人开发需求，选择性安装。
 
-### 2.1 Miniconda
+### 2.1 Python
+
+#### 2.1.1 uv
+
+> [uv](https://docs.astral.sh/uv/getting-started/installation/)
+
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+#### 2.1.2 Miniconda
 
 - [Linux Installers](https://docs.conda.io/en/latest/miniconda.html#linux-installers)
 
