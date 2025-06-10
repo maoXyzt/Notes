@@ -255,6 +255,8 @@ z -x 不要的路径
 curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
 # 或者编译安装
 # cargo install atuin
+# 或者使用 brew 安装
+# brew install atuin
 
 atuin import auto
 ```

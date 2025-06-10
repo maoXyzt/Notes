@@ -102,38 +102,41 @@ cargo install bat --locked
 cargo install ripgrep
 cargo install du-dust
 cargo install procs
-cargo install atuin
 cargo install git-delta
 cargo install tealdeer
 cargo install eza
 cargo install bottom
 cargo install xh --locked
 cargo install zoxide --locked
+```
 
-atuin import auto
+One-liner:
+
+```bash
+cargo install --locked bat xh zoxide
+cargo install fd-find ripgrep du-dust procs atuin git-delta tealdeer eza bottom
 ```
 
 #### 3.1.2 MacOS 用户安装
 
 ```bash
-if ! [[ command -v rustup &> /dev/null ]]; then
-    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-fi
-rustup update stable
-
 brew install fd
 brew install bat
 brew install ripgrep
 brew install dust
 brew install procs
-brew install atuin
 brew install git-delta
 brew install tealdeer
 brew install eza
 brew install bottom
 brew install xh
 brew install zoxide fzf
+```
 
+One-liner:
+
+```bash
+brew install fd bat ripgrep dust procs atuin git-delta tealdeer eza bottom xh zoxide fzf
 atuin import auto
 ```
 
@@ -179,7 +182,21 @@ atuin import auto
 
 ### 3.2 其他
 
-### 3.2.1 zellij: 终端复用
+### 3.2.1 atuin: shell 历史记录增强
+
+> [atuin: shell 历史记录增强 | ZSH常用插件](./zsh常用插件.md#atuin-shell-历史记录增强)
+
+```bash
+curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
+# 或者编译安装
+# cargo install atuin
+# 或者使用 brew 安装
+# brew install atuin
+
+atuin import auto
+```
+
+### 3.2.2 zellij: 终端复用
 
 > [zellij](https://github.com/zellij-org/zellij): 终端复用工具，比 tmux 好用
 
@@ -189,18 +206,20 @@ atuin import auto
 cargo install --locked zellij
 ```
 
-### 3.2.2 fastfetch: 获取并打印系统信息
+### 3.2.3 fastfetch: 获取并打印系统信息
 
 > [Fastfetch](https://github.com/fastfetch-cli/fastfetch): Fastfetch is a [Neofetch](https://github.com/dylanaraps/neofetch)-like tool for fetching system information and displaying it prettily.
 
 ```bash
 # for Ubuntu only
+# 如果 `add-apt-repository` 命令不存在，需要先安装 `software-properties-common`:
+# sudo apt install -y software-properties-common
 sudo add-apt-repository ppa:zhangsongcui3371/fastfetch
 sudo apt-get update
 sudo apt-get install fastfetch
 ```
 
-### 3.2.3 thefuck: 快速纠正输错的命令
+### 3.2.4 thefuck: 快速纠正输错的命令
 
 > [thefuck](https://github.com/nvbn/thefuck#installation)
 
@@ -216,13 +235,13 @@ MacOS 用户:
 brew install thefuck
 ```
 
-### 3.2.4 Yazi: 命令行文件管理器
+### 3.2.5 Yazi: 命令行文件管理器
 
 > [yazi: Blazing fast terminal file manager](https://github.com/sxyazi/yazi)
 >
 > [Installation | Yazi](https://yazi-rs.github.io/docs/installation/)
 
-### 3.2.5 sttr: 字符串转换工具
+### 3.2.6 sttr: 字符串转换工具
 
 > [sttr: cross-platform, cli app to perform various operations on string](https://github.com/abhimanyu003/sttr?tab=readme-ov-file#battery-installation)
 
