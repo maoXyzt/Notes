@@ -218,7 +218,17 @@ sudo apt-get update
 sudo apt-get install fastfetch
 ```
 
-### 3.2.4 thefuck: 快速纠正输错的命令
+### 3.2.4 navi: 命令行 cheatsheet 工具
+
+> [navi](https://github.com/denisidoro/navi): 命令行 cheatsheet 工具
+
+```bash
+cargo install --locked navi
+# 或者使用 brew 安装
+brew install navi
+```
+
+### 3.2.5 thefuck: 快速纠正输错的命令
 
 > [thefuck](https://github.com/nvbn/thefuck#installation)
 
@@ -234,13 +244,13 @@ MacOS 用户:
 brew install thefuck
 ```
 
-### 3.2.5 Yazi: 命令行文件管理器
+### 3.2.6 Yazi: 命令行文件管理器
 
 > [yazi: Blazing fast terminal file manager](https://github.com/sxyazi/yazi)
 >
 > [Installation | Yazi](https://yazi-rs.github.io/docs/installation/)
 
-### 3.2.6 sttr: 字符串转换工具
+### 3.2.7 sttr: 字符串转换工具
 
 > [sttr: cross-platform, cli app to perform various operations on string](https://github.com/abhimanyu003/sttr?tab=readme-ov-file#battery-installation)
 
