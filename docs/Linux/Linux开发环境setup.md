@@ -72,8 +72,13 @@ sudo apt-get install autoconf automake build-essential \
 
 选择其中一种安装方式：
 
+- 利用 [FNM](https://github.com/Schniz/fnm?tab=readme-ov-file#installation) 安装(推荐)
+
+  ```bash
+  curl -fsSL https://fnm.vercel.app/install | bash
+  ```
+
 - 利用 [NVM](https://github.com/nvm-sh/nvm#installing-and-updating) 安装
-- 利用 [FNM](https://github.com/Schniz/fnm?tab=readme-ov-file#installation) 安装
 - 直接安装: [Node.js Download](https://nodejs.org/en/download/)
 
 ### 2.3 neovim
@@ -173,7 +178,17 @@ atuin import auto
 
 ### 3.2 其他
 
-### 3.2.1 fastfetch: 获取并打印系统信息
+### 3.2.1 zellij: 终端复用
+
+> [zellij](https://github.com/zellij-org/zellij): 终端复用工具，比 tmux 好用
+
+安装:
+
+```bash
+cargo install --locked zellij
+```
+
+### 3.2.2 fastfetch: 获取并打印系统信息
 
 > [Fastfetch](https://github.com/fastfetch-cli/fastfetch): Fastfetch is a [Neofetch](https://github.com/dylanaraps/neofetch)-like tool for fetching system information and displaying it prettily.
 
@@ -184,7 +199,7 @@ sudo apt-get update
 sudo apt-get install fastfetch
 ```
 
-### 3.2.2 thefuck: 快速纠正输错的命令
+### 3.2.3 thefuck: 快速纠正输错的命令
 
 > [thefuck](https://github.com/nvbn/thefuck#installation)
 
@@ -200,13 +215,13 @@ MacOS 用户:
 brew install thefuck
 ```
 
-### 3.2.3 Yazi: 命令行文件管理器
+### 3.2.4 Yazi: 命令行文件管理器
 
 > [yazi: Blazing fast terminal file manager](https://github.com/sxyazi/yazi)
 >
 > [Installation | Yazi](https://yazi-rs.github.io/docs/installation/)
 
-### 3.2.4 sttr: 字符串转换工具
+### 3.2.5 sttr: 字符串转换工具
 
 > [sttr: cross-platform, cli app to perform various operations on string](https://github.com/abhimanyu003/sttr?tab=readme-ov-file#battery-installation)
 
