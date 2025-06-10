@@ -284,10 +284,12 @@ poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry
 
 > <https://starship.rs/guide/#%F0%9F%9A%80-installation>
 
-建议直接用 cargo 安装
+安装:
 
 ```bash
-cargo install starship --locked
+curl -sS https://starship.rs/install.sh | sh
+# 或者使用 cargo 安装
+# cargo install starship --locked
 ```
 
 #### 3.2.2 配置
