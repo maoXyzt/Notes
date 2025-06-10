@@ -86,6 +86,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
   ```bash
   curl -fsSL https://fnm.vercel.app/install | bash
+  fnm install --lts && fnm default 22   # 假设 LTS 版本为 22
   ```
 
 - 利用 [NVM](https://github.com/nvm-sh/nvm#installing-and-updating) 安装
