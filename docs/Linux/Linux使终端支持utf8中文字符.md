@@ -55,22 +55,48 @@ sudo apt install language-pack-zh-hans
 
 ## 3 - 设置系统编码
 
-设置系统编码:
+(1) 设置系统编码:
+
+配置为中文:
 
 ```bash
 sudo locale-gen zh_CN.UTF-8
 ```
 
-编辑 `/etc/default/locale` 文件，添加:
+或者配置为英文:
+
+```bash
+sudo locale-gen en_US.UTF-8
+```
+
+(2) 编辑 `/etc/default/locale` 文件，添加:
+
+配置为中文:
 
 ```bash
 LANG=zh_CN.UTF-8
 LC_ALL=zh_CN.UTF-8
 ```
 
-应用新的配置:
+或者配置为英文:
+
+```bash
+LANG=en_US.UTF-8
+LC_ALL=en_US.UTF-8
+```
+
+(3) 应用新的配置:
+
+配置为中文:
 
 ```bash
 sudo locale-gen --purge
 sudo update-locale LANG=zh_CN.UTF-8 LC_ALL=zh_CN.UTF-8
+```
+
+配置为英文:
+
+```bash
+sudo locale-gen --purge
+sudo update-locale LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8
 ```
