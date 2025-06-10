@@ -4,6 +4,7 @@
         "atuin",
         "chsrc",
         "CJSON",
+        "executemany",
         "fastfetch",
         "frontmatter",
         "homeassistant",
