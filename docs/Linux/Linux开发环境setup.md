@@ -137,7 +137,6 @@ One-liner:
 
 ```bash
 brew install fd bat ripgrep dust procs atuin git-delta tealdeer eza bottom xh zoxide fzf
-atuin import auto
 ```
 
 #### 3.1.2 工具说明
