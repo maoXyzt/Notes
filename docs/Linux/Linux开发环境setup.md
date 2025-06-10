@@ -6,7 +6,7 @@
 
 ## 1 - 推荐
 
-### 1.1 配置apt镜像
+### 1.1 配置 apt 镜像
 
 #### 1.1.1 全平台换源工具 `chsrc`
 
@@ -25,7 +25,7 @@ sudo apt install ca-certificates
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.backup
 ```
 
-> [配置apt镜像](https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/)
+> [配置 apt 镜像](https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/)
 
 ### 1.2 依赖库&工具
 
@@ -68,7 +68,7 @@ sudo apt-get install autoconf automake build-essential \
 
 ### 2.2 Node.js
 
-> [Node.js安装](../编程开发-Programming/Frontend/Node.js%20安装.md)
+> [Node.js 安装](../编程开发-Programming/Frontend/Node.js%20安装.md)
 
 选择其中一种安装方式：
 
@@ -142,11 +142,11 @@ brew install fd bat ripgrep dust procs atuin git-delta tealdeer eza bottom xh zo
 #### 3.1.2 工具说明
 
 - [rust](https://www.rust-lang.org/tools/install): 方便编译安装其他命令行工具
-- [`fd`](https://github.com/sharkdp/fd#on-ubuntu): 替代`find`
-- [`bat`](https://github.com/sharkdp/bat#from-source): 替代`cat`
-- [`rg`](https://github.com/BurntSushi/ripgrep#installation): ripgrep，替代`grep`
-- [`dust`](https://github.com/bootandy/dust#install): 替代`du`
-- [`procs`](https://github.com/dalance/procs#cargo): 替代`ps`
+- [`fd`](https://github.com/sharkdp/fd#on-ubuntu): 替代 `find`
+- [`bat`](https://github.com/sharkdp/bat#from-source): 替代 `cat`
+- [`rg`](https://github.com/BurntSushi/ripgrep#installation): ripgrep，替代 `grep`
+- [`dust`](https://github.com/bootandy/dust#install): 替代 `du`
+- [`procs`](https://github.com/dalance/procs#cargo): 替代 `ps`
 - [`atuin`](https://github.com/ellie/atuin/blob/main/README.md#install): shell 历史记录增强
 - [`delta`](https://dandavison.github.io/delta/installation.html#installation): syntax-highlighting git diff
 - `tldr`: 查阅命令的简单用法
@@ -162,7 +162,7 @@ brew install fd bat ripgrep dust procs atuin git-delta tealdeer eza bottom xh zo
   sudo mv eza /usr/local/bin/eza
   ```
 
-- [`bottom`](https://github.com/ClementTsang/bottom?ref=itsfoss.com#debianubuntu): 图形化进程、系统monitor
+- [`bottom`](https://github.com/ClementTsang/bottom?ref=itsfoss.com#debianubuntu): 图形化进程、系统 monitor
 
   ```bash
   # via snap
@@ -177,13 +177,13 @@ brew install fd bat ripgrep dust procs atuin git-delta tealdeer eza bottom xh zo
 - [`xh`](https://github.com/ducaale/xh): 替代 `httpie`
 - [`zoxide`](https://github.com/ajeetdsouza/zoxide): 替代 `autojump|z`, 基于目录访问频率进行智能匹配
 
-> [zsh常用插件 | zoxide](./zsh常用插件.md#zoxide)
+> [zsh 常用插件 | zoxide](./zsh常用插件.md#zoxide)
 
 ### 3.2 其他
 
 ### 3.2.1 atuin: shell 历史记录增强
 
-> [atuin: shell 历史记录增强 | ZSH常用插件](./zsh常用插件.md#atuin-shell-历史记录增强)
+> [atuin: shell 历史记录增强 | ZSH 常用插件](./zsh常用插件.md#atuin-shell-历史记录增强)
 
 ```bash
 curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
@@ -249,6 +249,26 @@ brew install thefuck
 > [yazi: Blazing fast terminal file manager](https://github.com/sxyazi/yazi)
 >
 > [Installation | Yazi](https://yazi-rs.github.io/docs/installation/)
+
+Linux (apt):
+
+```bash
+# 安装依赖
+# sudo apt install ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick # 其中 fd-find, ripgrep, zoxide 在前面步骤已经安装了
+sudo apt install ffmpeg 7zip jq poppler-utils imagemagick
+# 如果找不到 7zip，把上述命令中的 7zip 换成 p7zip-full:
+# sudo apt install ffmpeg p7zip-full jq poppler-utils imagemagick
+# 之后用 cargo 安装（也可以去 Release 页面下载）
+cargo install --locked yazi-fm yazi-cli
+```
+
+MacOS 使用 brew 安装:
+
+```bash
+# brew install yazi ffmpeg sevenzip jq poppler fd ripgrep fzf zoxide resvg imagemagick font-symbols-only-nerd-font
+# 其中 fd, ripgrep, zoxide 在前面步骤已经安装了
+brew install yazi ffmpeg sevenzip jq poppler fzf resvg imagemagick font-symbols-only-nerd-font
+```
 
 ### 3.2.7 sttr: 字符串转换工具
 
