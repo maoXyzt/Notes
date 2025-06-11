@@ -125,7 +125,7 @@ One-liner:
 
 ```bash
 cargo install --locked bat xh zoxide
-cargo install fd-find ripgrep du-dust procs atuin git-delta tealdeer eza bottom
+cargo install fd-find ripgrep du-dust procs git-delta tealdeer eza bottom
 ```
 
 #### 3.1.2 MacOS 用户安装
@@ -147,7 +147,7 @@ brew install zoxide fzf
 One-liner:
 
 ```bash
-brew install fd bat ripgrep dust procs atuin git-delta tealdeer eza bottom xh zoxide fzf
+brew install fd bat ripgrep dust procs git-delta tealdeer eza bottom xh zoxide fzf
 ```
 
 #### 3.1.2 工具说明
