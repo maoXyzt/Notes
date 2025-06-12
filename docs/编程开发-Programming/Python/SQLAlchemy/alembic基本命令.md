@@ -1,6 +1,36 @@
 # alembic 基本命令
 
-## 1 - 生成迁移脚本
+[alembic](https://github.com/sqlalchemy/alembic) 是 SQLAlchemy 的迁移工具。
+
+## 1 - 安装与初始化
+
+```bash
+pip install alembic
+```
+
+初始化迁移目录
+
+```bash
+alembic init alembic
+```
+
+目录结构类似:
+
+```bash
+yourproject/
+    alembic.ini
+    pyproject.toml
+    alembic/
+        env.py
+        README
+        script.py.mako
+        versions/
+            3512b954651e_add_account.py
+            2b1ae634e5cd_add_order_id.py
+            3adcc9a56557_rename_username_field.py
+```
+
+## 2 - 生成迁移脚本
 
 迁移脚本在 `alembic/versions` 目录下，每个脚本对应一个版本。
 
@@ -10,9 +40,9 @@
 alembic revision --autogenerate -m 'create_user_table'
 ```
 
-## 2 - 根据迁移脚本，更新数据库
+## 3 - 根据迁移脚本，更新数据库
 
-### 2.1 执行数据库更新命令
+### 3.1 执行数据库更新命令
 
 * `$VERSION_STR`: 可以在 `alembic/versions` 目录下找到。
 
@@ -21,7 +51,7 @@ alembic upgrade $VERSION_STR
 alembic upgrade head    # 更新到最新版
 ```
 
-### 2.2 生成数据库更新 SQL 文件
+### 3.2 生成数据库更新 SQL 文件
 
 生成数据库更新文件(SQL)，用于离线
 
@@ -35,16 +65,16 @@ alembic upgrade $TGT_VERSION --sql > migration.sql
 alembic upgrade $SRC_VERSION:$TGT_VERSION --sql > migration.sql
 ```
 
-## 3 - 其他操作
+## 4 - 其他操作
 
-### 3.1 降级
+### 4.1 降级
 
 ```bash
 alembic downgrade head  # 到最初版
 alembic downgrade <版本号>
 ```
 
-### 3.2 查看版本历史
+### 4.2 查看版本历史
 
 ```bash
 alembic history

@@ -7,7 +7,6 @@
 
 ### 1.1 Python
 
-* [alembic 基本命令](./编程开发-Programming/Python/alembic基本命令.md)
 * [conda 换源](./编程开发-Programming/Python/conda%20换源.md)
 * [在 Cython 中使用 C++](./编程开发-Programming/Python/Cython中使用C%2B%2B.md)
 * [Jupyter 服务部署](./编程开发-Programming/Python/jupyter%20服务部署.md)
@@ -40,14 +39,15 @@
   * [Flask app 的实例化和初始化](./编程开发-Programming/Python/Flask/Flask%20app实例化和初始化.md)
   * [Flask 的蓝图(Blueprint)原理](./编程开发-Programming/Python/Flask/Flask的蓝图Blueprint原理.md)
   * [Flask 扩展的初始化](./编程开发-Programming/Python/Flask/Flask扩展的初始化.md)
+* SQLAlchemy
+  * [alembic 基本命令](./编程开发-Programming/Python/SQLAlchemy/alembic基本命令.md)
+  * [SQLAlchemy 2.0 基础增删改查](./编程开发-Programming/Python/SQLAlchemy/SQLAlchemy2基础增删改查.md)
+  * [SQLAlchemy 与数据库交互的方式](./编程开发-Programming/Python/SQLAlchemy/SQLAlchemy操作数据的方法.md)
+  * [SQLAlchemy 查询对象转为 SQL 语句](./编程开发-Programming/Python/SQLAlchemy/SQLAlchemy查询对象转为SQL语句.md)
 * pytorch
   * [Tensor 数据操作](./编程开发-Programming/Python/pytorch/01-Tensor-数据操作.md)
   * [autograd 自动求梯度](./编程开发-Programming/Python/pytorch/02-autograd-自动求梯度.md)
   * [torch.jit.script 与 torch.jit.trace](./编程开发-Programming/Python/pytorch/torch.jit.script与torch.jit.trace.md)
-* SQLAlchemy
-  * [SQLAlchemy 2.0 基础增删改查](./编程开发-Programming/Python/SQLAlchemy/SQLAlchemy2基础增删改查.md)
-  * [SQLAlchemy 与数据库交互的方式](./编程开发-Programming/Python/SQLAlchemy/SQLAlchemy操作数据的方法.md)
-  * [SQLAlchemy 查询对象转为 SQL 语句](./编程开发-Programming/Python/SQLAlchemy/SQLAlchemy查询对象转为SQL语句.md)
 * Pydantic
   * [pydantic-settings 支持 json, yaml, toml 配置](./编程开发-Programming/Python/Pydantic/pydantic-settings支持json%2Cyaml%2Ctoml配置.md)
   * [用 Pydantic Settings 解析命令行参数](./编程开发-Programming/Python/Pydantic/用pydantic-settings解析命令行参数.md)

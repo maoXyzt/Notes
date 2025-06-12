@@ -6,10 +6,6 @@
         "text": "1.1 Python",
         "items": [
           {
-            "text": "alembic 基本命令",
-            "link": "/编程开发-Programming/Python/alembic基本命令.md"
-          },
-          {
             "text": "conda 换源",
             "link": "/编程开发-Programming/Python/conda 换源.md"
           },
@@ -142,6 +138,28 @@
             "collapsed": true
           },
           {
+            "text": "SQLAlchemy",
+            "items": [
+              {
+                "text": "alembic 基本命令",
+                "link": "/编程开发-Programming/Python/SQLAlchemy/alembic基本命令.md"
+              },
+              {
+                "text": "SQLAlchemy 2.0 基础增删改查",
+                "link": "/编程开发-Programming/Python/SQLAlchemy/SQLAlchemy2基础增删改查.md"
+              },
+              {
+                "text": "SQLAlchemy 与数据库交互的方式",
+                "link": "/编程开发-Programming/Python/SQLAlchemy/SQLAlchemy操作数据的方法.md"
+              },
+              {
+                "text": "SQLAlchemy 查询对象转为 SQL 语句",
+                "link": "/编程开发-Programming/Python/SQLAlchemy/SQLAlchemy查询对象转为SQL语句.md"
+              }
+            ],
+            "collapsed": true
+          },
+          {
             "text": "pytorch",
             "items": [
               {
@@ -155,24 +173,6 @@
               {
                 "text": "torch.jit.script 与 torch.jit.trace",
                 "link": "/编程开发-Programming/Python/pytorch/torch.jit.script与torch.jit.trace.md"
-              }
-            ],
-            "collapsed": true
-          },
-          {
-            "text": "SQLAlchemy",
-            "items": [
-              {
-                "text": "SQLAlchemy 2.0 基础增删改查",
-                "link": "/编程开发-Programming/Python/SQLAlchemy/SQLAlchemy2基础增删改查.md"
-              },
-              {
-                "text": "SQLAlchemy 与数据库交互的方式",
-                "link": "/编程开发-Programming/Python/SQLAlchemy/SQLAlchemy操作数据的方法.md"
-              },
-              {
-                "text": "SQLAlchemy 查询对象转为 SQL 语句",
-                "link": "/编程开发-Programming/Python/SQLAlchemy/SQLAlchemy查询对象转为SQL语句.md"
               }
             ],
             "collapsed": true
