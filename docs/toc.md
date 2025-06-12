@@ -40,7 +40,7 @@
   * [Flask 的蓝图(Blueprint)原理](./编程开发-Programming/Python/Flask/Flask的蓝图Blueprint原理.md)
   * [Flask 扩展的初始化](./编程开发-Programming/Python/Flask/Flask扩展的初始化.md)
 * SQLAlchemy
-  * [alembic 基本命令](./编程开发-Programming/Python/SQLAlchemy/alembic基本命令.md)
+  * [alembic 基本命令](./编程开发-Programming/Python/SQLAlchemy/alembic基本使用.md)
   * [SQLAlchemy 2.0 基础增删改查](./编程开发-Programming/Python/SQLAlchemy/SQLAlchemy2基础增删改查.md)
   * [SQLAlchemy 与数据库交互的方式](./编程开发-Programming/Python/SQLAlchemy/SQLAlchemy操作数据的方法.md)
   * [SQLAlchemy 查询对象转为 SQL 语句](./编程开发-Programming/Python/SQLAlchemy/SQLAlchemy查询对象转为SQL语句.md)
