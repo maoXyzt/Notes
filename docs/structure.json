@@ -141,7 +141,7 @@
             "text": "SQLAlchemy",
             "items": [
               {
-                "text": "alembic 基本命令",
+                "text": "alembic 基本使用",
                 "link": "/编程开发-Programming/Python/SQLAlchemy/alembic基本使用.md"
               },
               {
