@@ -861,43 +861,7 @@
         "collapsed": false
       },
       {
-        "text": "3.2 Deep Learning",
-        "items": [
-          {
-            "text": "GAN模型的评价指标",
-            "link": "/领域知识-DomainKnowledge/Deep Learning/如何评价GAN网络的好坏：IS和FID.md"
-          },
-          {
-            "text": "动手学深度学习-pytorch版",
-            "items": [
-              {
-                "text": "1. 深度学习简介",
-                "link": "/领域知识-DomainKnowledge/Deep Learning/动手学深度学习-pytorch版/01-深度学习简介.md"
-              },
-              {
-                "text": "3. 深度学习基础",
-                "link": "/领域知识-DomainKnowledge/Deep Learning/动手学深度学习-pytorch版/03-深度学习基础.md"
-              },
-              {
-                "text": "4. 深度学习计算",
-                "link": "/领域知识-DomainKnowledge/Deep Learning/动手学深度学习-pytorch版/04-深度学习计算.md"
-              },
-              {
-                "text": "5. 卷积神经网络",
-                "link": "/领域知识-DomainKnowledge/Deep Learning/动手学深度学习-pytorch版/05-卷积神经网络.md"
-              },
-              {
-                "text": "6. 循环神经网络",
-                "link": "/领域知识-DomainKnowledge/Deep Learning/动手学深度学习-pytorch版/06-循环神经网络.md"
-              }
-            ],
-            "collapsed": true
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "text": "3.3 个人服务搭建",
+        "text": "3.2 个人服务搭建",
         "items": [
           {
             "text": "NAS",
@@ -927,6 +891,10 @@
               {
                 "text": "Aqara 设备通过 Matter 接入 HomeAssistant",
                 "link": "/领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/Aqara设备通过Matter接入HomeAssistant.md"
+              },
+              {
+                "text": "小爱同学控制 HomeAssistant",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/小爱同学控制HomeAssistant.md"
               }
             ],
             "collapsed": true
@@ -937,6 +905,42 @@
               {
                 "text": "PVE 系统备份到 NAS(smb)",
                 "link": "/领域知识-DomainKnowledge/个人服务搭建/PVE All-in-One 实践/PVE 系统备份备份到NAS(smb).md"
+              }
+            ],
+            "collapsed": true
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "3.3 Deep Learning",
+        "items": [
+          {
+            "text": "GAN模型的评价指标",
+            "link": "/领域知识-DomainKnowledge/Deep Learning/如何评价GAN网络的好坏：IS和FID.md"
+          },
+          {
+            "text": "动手学深度学习-pytorch版",
+            "items": [
+              {
+                "text": "1. 深度学习简介",
+                "link": "/领域知识-DomainKnowledge/Deep Learning/动手学深度学习-pytorch版/01-深度学习简介.md"
+              },
+              {
+                "text": "3. 深度学习基础",
+                "link": "/领域知识-DomainKnowledge/Deep Learning/动手学深度学习-pytorch版/03-深度学习基础.md"
+              },
+              {
+                "text": "4. 深度学习计算",
+                "link": "/领域知识-DomainKnowledge/Deep Learning/动手学深度学习-pytorch版/04-深度学习计算.md"
+              },
+              {
+                "text": "5. 卷积神经网络",
+                "link": "/领域知识-DomainKnowledge/Deep Learning/动手学深度学习-pytorch版/05-卷积神经网络.md"
+              },
+              {
+                "text": "6. 循环神经网络",
+                "link": "/领域知识-DomainKnowledge/Deep Learning/动手学深度学习-pytorch版/06-循环神经网络.md"
               }
             ],
             "collapsed": true

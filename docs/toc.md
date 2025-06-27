@@ -40,7 +40,7 @@
   * [Flask 的蓝图(Blueprint)原理](./编程开发-Programming/Python/Flask/Flask的蓝图Blueprint原理.md)
   * [Flask 扩展的初始化](./编程开发-Programming/Python/Flask/Flask扩展的初始化.md)
 * SQLAlchemy
-  * [alembic 基本命令](./编程开发-Programming/Python/SQLAlchemy/alembic基本使用.md)
+  * [alembic 基本使用](./编程开发-Programming/Python/SQLAlchemy/alembic基本使用.md)
   * [SQLAlchemy 2.0 基础增删改查](./编程开发-Programming/Python/SQLAlchemy/SQLAlchemy2基础增删改查.md)
   * [SQLAlchemy 与数据库交互的方式](./编程开发-Programming/Python/SQLAlchemy/SQLAlchemy操作数据的方法.md)
   * [SQLAlchemy 查询对象转为 SQL 语句](./编程开发-Programming/Python/SQLAlchemy/SQLAlchemy查询对象转为SQL语句.md)
@@ -234,17 +234,7 @@
   * [第四章 游戏所需的三维数学](./领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/04-游戏所需的三维数学.md)
   * [第11章 动画系统](./领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/11-动画系统.md)
 
-### 3.2 Deep Learning
-
-* [GAN模型的评价指标](./领域知识-DomainKnowledge/Deep%20Learning/如何评价GAN网络的好坏%EF%BC%9AIS和FID.md)
-* 动手学深度学习-pytorch版
-  * [1. 深度学习简介](./领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/01-深度学习简介.md)
-  * [3. 深度学习基础](./领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/03-深度学习基础.md)
-  * [4. 深度学习计算](./领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/04-深度学习计算.md)
-  * [5. 卷积神经网络](./领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/05-卷积神经网络.md)
-  * [6. 循环神经网络](./领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/06-循环神经网络.md)
-
-### 3.3 个人服务搭建
+### 3.2 个人服务搭建
 
 * NAS
   * [NAS](./领域知识-DomainKnowledge/个人服务搭建/NAS/)
@@ -253,8 +243,19 @@
   * [Wallos: 个人订阅服务管理工具](./领域知识-DomainKnowledge/个人服务搭建/NAS/Wallos个人订阅服务管理工具.md)
 * HomeAssistant
   * [Aqara 设备通过 Matter 接入 HomeAssistant](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/Aqara设备通过Matter接入HomeAssistant.md)
+  * [小爱同学控制 HomeAssistant](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/小爱同学控制HomeAssistant.md)
 * PVE All-in-One 实践
   * [PVE 系统备份到 NAS(smb)](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20系统备份备份到NAS%28smb%29.md)
+
+### 3.3 Deep Learning
+
+* [GAN模型的评价指标](./领域知识-DomainKnowledge/Deep%20Learning/如何评价GAN网络的好坏%EF%BC%9AIS和FID.md)
+* 动手学深度学习-pytorch版
+  * [1. 深度学习简介](./领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/01-深度学习简介.md)
+  * [3. 深度学习基础](./领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/03-深度学习基础.md)
+  * [4. 深度学习计算](./领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/04-深度学习计算.md)
+  * [5. 卷积神经网络](./领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/05-卷积神经网络.md)
+  * [6. 循环神经网络](./领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/06-循环神经网络.md)
 
 ### 3.4 Applied Social Network Analysis in Python
 
