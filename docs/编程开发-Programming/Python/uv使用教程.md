@@ -110,8 +110,8 @@ PATH 参数:
 OPTIONS 部分有用的选项:
 
 - `--python`: 指定 Python 版本。例如: `--python=3.12`
-- `--app`: 未指定 `--lib` 时默认启用。创建一个 application 项目
-- `--lib`: 创建一个 library 项目 (此类项目专用于作为 package 被其他项目引用)
+- `--app`/`--application`: 未指定 `--lib` 时默认启用。创建一个 application 项目
+- `--lib`/`--library`: 创建一个 library 项目 (此类项目专用于作为 package 被其他项目引用)
 - `--package`: 如果 `--lib` 或者 `--build-backend` 已被指定, 则自动包含此选项。当与 `--app` 一起使用时，会创建一个 packaged application 项目。
 - `--script`: 创建一个 script。它是一个单独的脚本文件，符合 [PEP 723](https://peps.python.org/pep-0723/) 标准。它的依赖会被安装到当前 python 的依赖中。
 - `--bare`: 只创建 `pyproject.toml` 文件
@@ -129,11 +129,65 @@ uv init --script myscript.py
 uv init myproject --build-backend=hatchling --python=3.12
 ```
 
-## 3 - 一些概念
+### 2.1.1 - 创建 application 项目
 
-### 3.1 - 项目类型: application vs library
+推荐使用 `--package` 选项，使得代码可被构建为 package 的 application 项目。
 
-#### 3.1.1 - Applications
+```bash
+uv init --package [PATH]
+```
+
+#### 2.1.2 - 创建 library 项目
+
+```bash
+uv init --lib [PATH]
+```
+
+## 3 - 脚本管理 (PEP 723)
+
+### 3.1 - 创建 script
+
+创建一个符合 [PEP 723](https://peps.python.org/pep-0723/) 标准的 script。
+
+```bash
+# 指定 python 版本
+uv init --script example.py --python 3.12
+```
+
+### 3.2 - 脚本依赖
+
+添加 inline 脚本依赖
+
+```bash
+uv add --script example.py 'requests<3' 'rich'
+```
+
+### 3.3 - 运行脚本
+
+运行脚本:
+
+```bash
+uv run example.py
+```
+
+指定依赖:
+
+```bash
+uv run --with rich example.py
+uv run --with 'rich>12,<13' example.py
+```
+
+## 4 - Example
+
+可从 airflow 项目的 `pyproject.toml` 文件学习大型项目的 uv 配置:
+
+<https://github.com/apache/airflow/blob/main/pyproject.toml>
+
+## 5 - 扩展阅读: 一些概念
+
+### 5.1 - 项目类型: application vs library
+
+#### 5.1.1 - Applications
 
 [applications](https://docs.astral.sh/uv/concepts/projects/init/#applications) 适用于 web 服务、脚本、CLI 等项目
 
@@ -155,7 +209,7 @@ example-app/
 
 可以用 `uv run main.py` 运行项目。
 
-#### 3.1.2 - Packaged applications
+#### 5.1.2 - Packaged applications
 
 可被构建为 python package 的 application。
 
@@ -182,7 +236,7 @@ example-pkg/
 - 包含 `[build-system]` 部分，因此项目会被安装到当前环境中(`uv sync` 时)。
 - 包含 `[project-scripts]` 部分，定义了项目运行的入口，可用 `uv run <script-name>` 执行。
 
-#### 3.1.3 - Libraries
+#### 5.1.3 - Libraries
 
 [libraries](https://docs.astral.sh/uv/concepts/projects/init/#libraries) 是 Python 库，可构建为 python package 被其他项目引用。
 
@@ -204,9 +258,3 @@ example-lib/
         ├── py.typed
         └── __init__.py
 ```
-
-## 3 - Example
-
-可从 airflow 项目的 `pyproject.toml` 文件学习大型项目的 uv 配置:
-
-<https://github.com/apache/airflow/blob/main/pyproject.toml>
