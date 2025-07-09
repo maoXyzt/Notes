@@ -5,7 +5,7 @@ requires-python = ">=3.11"
 [[package]]
 name = "annotated-types"
 version = "0.7.0"
-source = { registry = "http://mirrors.aliyun.com/pypi/simple" }
+source = { registry = "http://mirrors.aliyun.com/pypi/simple/" }
 sdist = { url = "http://mirrors.aliyun.com/pypi/packages/ee/67/531ea369ba64dcff5ec9c3402f9f51bf748cec26dde048a2f973a4eea7f5/annotated_types-0.7.0.tar.gz", hash = "sha256:aff07c09a53a08bc8cfccb9c85b05f1aa9a2a6f23728d790723543408344ce89" }
 wheels = [
     { url = "http://mirrors.aliyun.com/pypi/packages/78/b6/6307fbef88d9b5ee7421e68d78a9f162e0da4900bc5f5793f6d3d0e34fb8/annotated_types-0.7.0-py3-none-any.whl", hash = "sha256:1f02e8b43a8fbbc3f3e0d4f0f4bfc8131bcb4eebe8849b8e5c773f3a1c582a53" },
@@ -14,7 +14,7 @@ wheels = [
 [[package]]
 name = "cfgv"
 version = "3.4.0"
-source = { registry = "http://mirrors.aliyun.com/pypi/simple" }
+source = { registry = "http://mirrors.aliyun.com/pypi/simple/" }
 sdist = { url = "http://mirrors.aliyun.com/pypi/packages/11/74/539e56497d9bd1d484fd863dd69cbbfa653cd2aa27abfe35653494d85e94/cfgv-3.4.0.tar.gz", hash = "sha256:e52591d4c5f5dead8e0f673fb16db7949d2cfb3f7da4582893288f0ded8fe560" }
 wheels = [
     { url = "http://mirrors.aliyun.com/pypi/packages/c5/55/51844dd50c4fc7a33b653bfaba4c2456f06955289ca770a5dbd5fd267374/cfgv-3.4.0-py2.py3-none-any.whl", hash = "sha256:b7265b1f29fd3316bfcd2b330d63d024f2bfd8bcb8b0272f8e19a504856c48f9" },
@@ -23,7 +23,7 @@ wheels = [
 [[package]]
 name = "click"
 version = "8.1.8"
-source = { registry = "http://mirrors.aliyun.com/pypi/simple" }
+source = { registry = "http://mirrors.aliyun.com/pypi/simple/" }
 dependencies = [
     { name = "colorama", marker = "sys_platform == 'win32'" },
 ]
@@ -35,7 +35,7 @@ wheels = [
 [[package]]
 name = "colorama"
 version = "0.4.6"
-source = { registry = "http://mirrors.aliyun.com/pypi/simple" }
+source = { registry = "http://mirrors.aliyun.com/pypi/simple/" }
 sdist = { url = "http://mirrors.aliyun.com/pypi/packages/d8/53/6f443c9a4a8358a93a6792e2acffb9d9d5cb0a5cfd8802644b7b1c9a02e4/colorama-0.4.6.tar.gz", hash = "sha256:08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44" }
 wheels = [
     { url = "http://mirrors.aliyun.com/pypi/packages/d1/d6/3965ed04c63042e047cb6a3e6ed1a63a35087b6a609aa3a15ed8ac56c221/colorama-0.4.6-py2.py3-none-any.whl", hash = "sha256:4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6" },
@@ -44,7 +44,7 @@ wheels = [
 [[package]]
 name = "distlib"
 version = "0.3.9"
-source = { registry = "http://mirrors.aliyun.com/pypi/simple" }
+source = { registry = "http://mirrors.aliyun.com/pypi/simple/" }
 sdist = { url = "http://mirrors.aliyun.com/pypi/packages/0d/dd/1bec4c5ddb504ca60fc29472f3d27e8d4da1257a854e1d96742f15c1d02d/distlib-0.3.9.tar.gz", hash = "sha256:a60f20dea646b8a33f3e7772f74dc0b2d0772d2837ee1342a00645c81edf9403" }
 wheels = [
     { url = "http://mirrors.aliyun.com/pypi/packages/91/a1/cf2472db20f7ce4a6be1253a81cfdf85ad9c7885ffbed7047fb72c24cf87/distlib-0.3.9-py2.py3-none-any.whl", hash = "sha256:47f8c22fd27c27e25a65601af709b38e4f0a45ea4fc2e710f65755fa8caaaf87" },
@@ -53,7 +53,7 @@ wheels = [
 [[package]]
 name = "filelock"
 version = "3.18.0"
-source = { registry = "http://mirrors.aliyun.com/pypi/simple" }
+source = { registry = "http://mirrors.aliyun.com/pypi/simple/" }
 sdist = { url = "http://mirrors.aliyun.com/pypi/packages/0a/10/c23352565a6544bdc5353e0b15fc1c563352101f30e24bf500207a54df9a/filelock-3.18.0.tar.gz", hash = "sha256:adbc88eabb99d2fec8c9c1b229b171f18afa655400173ddc653d5d01501fb9f2" }
 wheels = [
     { url = "http://mirrors.aliyun.com/pypi/packages/4d/36/2a115987e2d8c300a974597416d9de88f2444426de9571f4b59b2cca3acc/filelock-3.18.0-py3-none-any.whl", hash = "sha256:c401f4f8377c4464e6db25fff06205fd89bdd83b65eb0488ed1b160f780e21de" },
@@ -62,7 +62,7 @@ wheels = [
 [[package]]
 name = "identify"
 version = "2.6.9"
-source = { registry = "http://mirrors.aliyun.com/pypi/simple" }
+source = { registry = "http://mirrors.aliyun.com/pypi/simple/" }
 sdist = { url = "http://mirrors.aliyun.com/pypi/packages/9b/98/a71ab060daec766acc30fb47dfca219d03de34a70d616a79a38c6066c5bf/identify-2.6.9.tar.gz", hash = "sha256:d40dfe3142a1421d8518e3d3985ef5ac42890683e32306ad614a29490abeb6bf" }
 wheels = [
     { url = "http://mirrors.aliyun.com/pypi/packages/07/ce/0845144ed1f0e25db5e7a79c2354c1da4b5ce392b8966449d5db8dca18f1/identify-2.6.9-py2.py3-none-any.whl", hash = "sha256:c98b4322da415a8e5a70ff6e51fbc2d2932c015532d77e9f8537b4ba7813b150" },
@@ -71,7 +71,7 @@ wheels = [
 [[package]]
 name = "markdown-it-py"
 version = "3.0.0"
-source = { registry = "http://mirrors.aliyun.com/pypi/simple" }
+source = { registry = "http://mirrors.aliyun.com/pypi/simple/" }
 dependencies = [
     { name = "mdurl" },
 ]
@@ -83,7 +83,7 @@ wheels = [
 [[package]]
 name = "mdurl"
 version = "0.1.2"
-source = { registry = "http://mirrors.aliyun.com/pypi/simple" }
+source = { registry = "http://mirrors.aliyun.com/pypi/simple/" }
 sdist = { url = "http://mirrors.aliyun.com/pypi/packages/d6/54/cfe61301667036ec958cb99bd3efefba235e65cdeb9c84d24a8293ba1d90/mdurl-0.1.2.tar.gz", hash = "sha256:bb413d29f5eea38f31dd4754dd7377d4465116fb207585f97bf925588687c1ba" }
 wheels = [
     { url = "http://mirrors.aliyun.com/pypi/packages/b3/38/89ba8ad64ae25be8de66a6d463314cf1eb366222074cfda9ee839c56a4b4/mdurl-0.1.2-py3-none-any.whl", hash = "sha256:84008a41e51615a49fc9966191ff91509e3c40b939176e643fd50a5c2196b8f8" },
@@ -92,7 +92,7 @@ wheels = [
 [[package]]
 name = "nodeenv"
 version = "1.9.1"
-source = { registry = "http://mirrors.aliyun.com/pypi/simple" }
+source = { registry = "http://mirrors.aliyun.com/pypi/simple/" }
 sdist = { url = "http://mirrors.aliyun.com/pypi/packages/43/16/fc88b08840de0e0a72a2f9d8c6bae36be573e475a6326ae854bcc549fc45/nodeenv-1.9.1.tar.gz", hash = "sha256:6ec12890a2dab7946721edbfbcd91f3319c6ccc9aec47be7c7e6b7011ee6645f" }
 wheels = [
     { url = "http://mirrors.aliyun.com/pypi/packages/d2/1d/1b658dbd2b9fa9c4c9f32accbfc0205d532c8c6194dc0f2a4c0428e7128a/nodeenv-1.9.1-py2.py3-none-any.whl", hash = "sha256:ba11c9782d29c27c70ffbdda2d7415098754709be8a7056d79a737cd901155c9" },
@@ -136,7 +136,7 @@ dev = [
 [[package]]
 name = "platformdirs"
 version = "4.3.7"
-source = { registry = "http://mirrors.aliyun.com/pypi/simple" }
+source = { registry = "http://mirrors.aliyun.com/pypi/simple/" }
 sdist = { url = "http://mirrors.aliyun.com/pypi/packages/b6/2d/7d512a3913d60623e7eb945c6d1b4f0bddf1d0b7ada5225274c87e5b53d1/platformdirs-4.3.7.tar.gz", hash = "sha256:eb437d586b6a0986388f0d6f74aa0cde27b48d0e3d66843640bfb6bdcdb6e351" }
 wheels = [
     { url = "http://mirrors.aliyun.com/pypi/packages/6d/45/59578566b3275b8fd9157885918fcd0c4d74162928a5310926887b856a51/platformdirs-4.3.7-py3-none-any.whl", hash = "sha256:a03875334331946f13c549dbd8f4bac7a13a50a895a0eb1e8c6a8ace80d40a94" },
@@ -145,7 +145,7 @@ wheels = [
 [[package]]
 name = "pre-commit"
 version = "4.2.0"
-source = { registry = "http://mirrors.aliyun.com/pypi/simple" }
+source = { registry = "http://mirrors.aliyun.com/pypi/simple/" }
 dependencies = [
     { name = "cfgv" },
     { name = "identify" },
@@ -161,7 +161,7 @@ wheels = [
 [[package]]
 name = "pydantic"
 version = "2.11.4"
-source = { registry = "http://mirrors.aliyun.com/pypi/simple" }
+source = { registry = "http://mirrors.aliyun.com/pypi/simple/" }
 dependencies = [
     { name = "annotated-types" },
     { name = "pydantic-core" },
@@ -176,7 +176,7 @@ wheels = [
 [[package]]
 name = "pydantic-core"
 version = "2.33.2"
-source = { registry = "http://mirrors.aliyun.com/pypi/simple" }
+source = { registry = "http://mirrors.aliyun.com/pypi/simple/" }
 dependencies = [
     { name = "typing-extensions" },
 ]
@@ -241,7 +241,7 @@ wheels = [
 [[package]]
 name = "pydantic-settings"
 version = "2.9.1"
-source = { registry = "http://mirrors.aliyun.com/pypi/simple" }
+source = { registry = "http://mirrors.aliyun.com/pypi/simple/" }
 dependencies = [
     { name = "pydantic" },
     { name = "python-dotenv" },
@@ -255,7 +255,7 @@ wheels = [
 [[package]]
 name = "pygments"
 version = "2.19.1"
-source = { registry = "http://mirrors.aliyun.com/pypi/simple" }
+source = { registry = "http://mirrors.aliyun.com/pypi/simple/" }
 sdist = { url = "http://mirrors.aliyun.com/pypi/packages/7c/2d/c3338d48ea6cc0feb8446d8e6937e1408088a72a39937982cc6111d17f84/pygments-2.19.1.tar.gz", hash = "sha256:61c16d2a8576dc0649d9f39e089b5f02bcd27fba10d8fb4dcc28173f7a45151f" }
 wheels = [
     { url = "http://mirrors.aliyun.com/pypi/packages/8a/0b/9fcc47d19c48b59121088dd6da2488a49d5f72dacf8262e2790a1d2c7d15/pygments-2.19.1-py3-none-any.whl", hash = "sha256:9ea1544ad55cecf4b8242fab6dd35a93bbce657034b0611ee383099054ab6d8c" },
@@ -264,7 +264,7 @@ wheels = [
 [[package]]
 name = "pypinyin"
 version = "0.54.0"
-source = { registry = "http://mirrors.aliyun.com/pypi/simple" }
+source = { registry = "http://mirrors.aliyun.com/pypi/simple/" }
 sdist = { url = "http://mirrors.aliyun.com/pypi/packages/c9/7f/81cb5416ddacfeccca8eeedcd3543a72b093b26d9c4ca7bde8beea733e4e/pypinyin-0.54.0.tar.gz", hash = "sha256:9ab0d07ff51d191529e22134a60e109d0526d80b7a80afa73da4c89521610958" }
 wheels = [
     { url = "http://mirrors.aliyun.com/pypi/packages/b6/ec/2c04ac863e7a85bb68b0b655cec2f19853d51d305ce3d785848db6037b8d/pypinyin-0.54.0-py2.py3-none-any.whl", hash = "sha256:5f776f19b9fd922e4121a114810b22048d90e6e8037fb1c07f4c40f987ae6e7a" },
@@ -273,7 +273,7 @@ wheels = [
 [[package]]
 name = "python-dotenv"
 version = "1.1.0"
-source = { registry = "http://mirrors.aliyun.com/pypi/simple" }
+source = { registry = "http://mirrors.aliyun.com/pypi/simple/" }
 sdist = { url = "http://mirrors.aliyun.com/pypi/packages/88/2c/7bb1416c5620485aa793f2de31d3df393d3686aa8a8506d11e10e13c5baf/python_dotenv-1.1.0.tar.gz", hash = "sha256:41f90bc6f5f177fb41f53e87666db362025010eb28f60a01c9143bfa33a2b2d5" }
 wheels = [
     { url = "http://mirrors.aliyun.com/pypi/packages/1e/18/98a99ad95133c6a6e2005fe89faedf294a748bd5dc803008059409ac9b1e/python_dotenv-1.1.0-py3-none-any.whl", hash = "sha256:d7c01d9e2293916c18baf562d95698754b0dbbb5e74d457c45d4f6561fb9d55d" },
@@ -282,7 +282,7 @@ wheels = [
 [[package]]
 name = "python-frontmatter"
 version = "1.1.0"
-source = { registry = "http://mirrors.aliyun.com/pypi/simple" }
+source = { registry = "http://mirrors.aliyun.com/pypi/simple/" }
 dependencies = [
     { name = "pyyaml" },
 ]
@@ -294,7 +294,7 @@ wheels = [
 [[package]]
 name = "pyyaml"
 version = "6.0.2"
-source = { registry = "http://mirrors.aliyun.com/pypi/simple" }
+source = { registry = "http://mirrors.aliyun.com/pypi/simple/" }
 sdist = { url = "http://mirrors.aliyun.com/pypi/packages/54/ed/79a089b6be93607fa5cdaedf301d7dfb23af5f25c398d5ead2525b063e17/pyyaml-6.0.2.tar.gz", hash = "sha256:d584d9ec91ad65861cc08d42e834324ef890a082e591037abe114850ff7bbc3e" }
 wheels = [
     { url = "http://mirrors.aliyun.com/pypi/packages/f8/aa/7af4e81f7acba21a4c6be026da38fd2b872ca46226673c89a758ebdc4fd2/PyYAML-6.0.2-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:cc1c1159b3d456576af7a3e4d1ba7e6924cb39de8f67111c735f6fc832082774" },
@@ -329,7 +329,7 @@ wheels = [
 [[package]]
 name = "rich"
 version = "14.0.0"
-source = { registry = "http://mirrors.aliyun.com/pypi/simple" }
+source = { registry = "http://mirrors.aliyun.com/pypi/simple/" }
 dependencies = [
     { name = "markdown-it-py" },
     { name = "pygments" },
@@ -342,7 +342,7 @@ wheels = [
 [[package]]
 name = "ruff"
 version = "0.11.8"
-source = { registry = "http://mirrors.aliyun.com/pypi/simple" }
+source = { registry = "http://mirrors.aliyun.com/pypi/simple/" }
 sdist = { url = "http://mirrors.aliyun.com/pypi/packages/52/f6/adcf73711f31c9f5393862b4281c875a462d9f639f4ccdf69dc368311c20/ruff-0.11.8.tar.gz", hash = "sha256:6d742d10626f9004b781f4558154bb226620a7242080e11caeffab1a40e99df8" }
 wheels = [
     { url = "http://mirrors.aliyun.com/pypi/packages/9f/60/c6aa9062fa518a9f86cb0b85248245cddcd892a125ca00441df77d79ef88/ruff-0.11.8-py3-none-linux_armv6l.whl", hash = "sha256:896a37516c594805e34020c4a7546c8f8a234b679a7716a3f08197f38913e1a3" },
@@ -367,7 +367,7 @@ wheels = [
 [[package]]
 name = "shellingham"
 version = "1.5.4"
-source = { registry = "http://mirrors.aliyun.com/pypi/simple" }
+source = { registry = "http://mirrors.aliyun.com/pypi/simple/" }
 sdist = { url = "http://mirrors.aliyun.com/pypi/packages/58/15/8b3609fd3830ef7b27b655beb4b4e9c62313a4e8da8c676e142cc210d58e/shellingham-1.5.4.tar.gz", hash = "sha256:8dbca0739d487e5bd35ab3ca4b36e11c4078f3a234bfce294b0a0291363404de" }
 wheels = [
     { url = "http://mirrors.aliyun.com/pypi/packages/e0/f9/0595336914c5619e5f28a1fb793285925a8cd4b432c9da0a987836c7f822/shellingham-1.5.4-py2.py3-none-any.whl", hash = "sha256:7ecfff8f2fd72616f7481040475a65b2bf8af90a56c89140852d1120324e8686" },
@@ -376,7 +376,7 @@ wheels = [
 [[package]]
 name = "typer"
 version = "0.15.3"
-source = { registry = "http://mirrors.aliyun.com/pypi/simple" }
+source = { registry = "http://mirrors.aliyun.com/pypi/simple/" }
 dependencies = [
     { name = "click" },
     { name = "rich" },
@@ -391,7 +391,7 @@ wheels = [
 [[package]]
 name = "typing-extensions"
 version = "4.13.2"
-source = { registry = "http://mirrors.aliyun.com/pypi/simple" }
+source = { registry = "http://mirrors.aliyun.com/pypi/simple/" }
 sdist = { url = "http://mirrors.aliyun.com/pypi/packages/f6/37/23083fcd6e35492953e8d2aaaa68b860eb422b34627b13f2ce3eb6106061/typing_extensions-4.13.2.tar.gz", hash = "sha256:e6c81219bd689f51865d9e372991c540bda33a0379d5573cddb9a3a23f7caaef" }
 wheels = [
     { url = "http://mirrors.aliyun.com/pypi/packages/8b/54/b1ae86c0973cc6f0210b53d508ca3641fb6d0c56823f288d108bc7ab3cc8/typing_extensions-4.13.2-py3-none-any.whl", hash = "sha256:a439e7c04b49fec3e5d3e2beaa21755cadbbdc391694e28ccdd36ca4a1408f8c" },
@@ -400,7 +400,7 @@ wheels = [
 [[package]]
 name = "typing-inspection"
 version = "0.4.0"
-source = { registry = "http://mirrors.aliyun.com/pypi/simple" }
+source = { registry = "http://mirrors.aliyun.com/pypi/simple/" }
 dependencies = [
     { name = "typing-extensions" },
 ]
@@ -412,7 +412,7 @@ wheels = [
 [[package]]
 name = "virtualenv"
 version = "20.30.0"
-source = { registry = "http://mirrors.aliyun.com/pypi/simple" }
+source = { registry = "http://mirrors.aliyun.com/pypi/simple/" }
 dependencies = [
     { name = "distlib" },
     { name = "filelock" },
