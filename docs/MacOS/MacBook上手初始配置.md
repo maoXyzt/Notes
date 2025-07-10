@@ -35,9 +35,11 @@ NoteStatus: draft
 
 ## 字体
 
-Maple Mono
+Maple Mono: 下载 NF CN hinted 版本（字体名: Maple Mono NF CN）
 
 ## 软件
+
+Homebrew: [Homebrew的安装、换源和卸载](./Homebrew的安装、换源和卸载.md)
 
 iTerm2:
 
@@ -48,5 +50,3 @@ Bartender: 管理菜单栏图标
 BitWarden
 
 Edge 浏览器
-
-homebrew: [Homebrew的安装、换源和卸载](./Homebrew的安装、换源和卸载.md)
