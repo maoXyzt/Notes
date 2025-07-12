@@ -39,14 +39,32 @@ Maple Mono: 下载 NF CN hinted 版本（字体名: Maple Mono NF CN）
 
 ## 软件
 
-Homebrew: [Homebrew的安装、换源和卸载](./Homebrew的安装、换源和卸载.md)
+Edge 浏览器
+
+Alfred
 
 iTerm2:
 
-Alfred
+Homebrew: [Homebrew的安装、换源和卸载](./Homebrew的安装、换源和卸载.md)
 
 Bartender: 管理菜单栏图标
 
 BitWarden
 
-Edge 浏览器
+Tencent Lemon: 清理垃圾文件
+
+Rime 输入法
+
+One Switch: 快捷切换功能
+
+Snipaste: 截图工具
+
+Kawa: Input Method 快捷键管理
+
+AutoSwitchInput Lite: 切换输入法
+
+Aldente: 电池管理
+
+iStat Menus: 系统监控
+
+Magnet: 窗口管理
