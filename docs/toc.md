@@ -51,6 +51,8 @@
 * Pydantic
   * [pydantic-settings 支持 json, yaml, toml 配置](./编程开发-Programming/Python/Pydantic/pydantic-settings支持json%2Cyaml%2Ctoml配置.md)
   * [用 Pydantic Settings 解析命令行参数](./编程开发-Programming/Python/Pydantic/用pydantic-settings解析命令行参数.md)
+* Polars
+  * [Python Polars 常用操作](./编程开发-Programming/Python/Polars/python%20polars常用操作.md)
 * supervisor
   * [supervisor 的安装与基本命令](./编程开发-Programming/Python/supervisor/supervisor的安装与基本命令.md)
 * tensorflow

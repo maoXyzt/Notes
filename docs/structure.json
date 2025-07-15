@@ -192,6 +192,16 @@
             "collapsed": true
           },
           {
+            "text": "Polars",
+            "items": [
+              {
+                "text": "Python Polars 常用操作",
+                "link": "/编程开发-Programming/Python/Polars/python polars常用操作.md"
+              }
+            ],
+            "collapsed": true
+          },
+          {
             "text": "supervisor",
             "items": [
               {
