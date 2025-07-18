@@ -1,6 +1,6 @@
 # Python Polars 常用操作
 
-## lazy 模式
+## 1 - lazy 模式
 
 lazy 模式读取数据:
 
@@ -20,27 +20,27 @@ lazy = df.lazy()
 lazy.sink_parquet(parquet_file_path)
 ```
 
-## LazyFrame 的常用操作
+## 2 - LazyFrame 的常用操作
 
-### 数据过滤
+### 2.1 数据过滤
 
 ```python
 lazy.filter(pl.col("column_name") == "value")
 ```
 
-### 数据列选择
+### 2.2 数据列选择
 
 ```python
 lazy.select(["column_name1", "column_name2"])
 ```
 
-### 获取符合条件的数据总行数
+### 2.3 获取符合条件的数据总行数
 
 ```python
 lazy.filter(pl.col("column_name") == "value").select(pl.count()).collect().item()
 ```
 
-### 新增、替换列
+### 2.4 新增、替换列
 
 根据已有列生成新列:
 
@@ -60,7 +60,7 @@ lazy.with_columns(
 )
 ```
 
-### 条件赋值
+### 2.5 条件赋值
 
 ```python
 lazy.with_columns(
@@ -71,7 +71,7 @@ lazy.with_columns(
 )
 ```
 
-### 查询 Schema
+### 2.6 查询 Schema
 
 ```python
 schema = lazy.collect_schema()

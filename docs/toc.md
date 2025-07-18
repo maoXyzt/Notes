@@ -51,6 +51,8 @@
 * Pydantic
   * [pydantic-settings 支持 json, yaml, toml 配置](./编程开发-Programming/Python/Pydantic/pydantic-settings支持json%2Cyaml%2Ctoml配置.md)
   * [用 Pydantic Settings 解析命令行参数](./编程开发-Programming/Python/Pydantic/用pydantic-settings解析命令行参数.md)
+* Polars
+  * [Python Polars 常用操作](./编程开发-Programming/Python/Polars/python%20polars常用操作.md)
 * supervisor
   * [supervisor 的安装与基本命令](./编程开发-Programming/Python/supervisor/supervisor的安装与基本命令.md)
 * tensorflow
@@ -222,7 +224,21 @@
 
 ## 3 - 领域知识-DomainKnowledge
 
-### 3.1 图形学
+### 3.1 个人服务搭建
+
+* NAS
+  * [NAS](./领域知识-DomainKnowledge/个人服务搭建/NAS/)
+  * [Home Assistant 系统备份到 NAS](./领域知识-DomainKnowledge/个人服务搭建/NAS/homeassistant系统备份到NAS.md)
+  * [Nginx Proxy Manager 服务部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/Nginx%20Proxy%20Manager部署.md)
+  * [Wallos: 个人订阅服务管理工具](./领域知识-DomainKnowledge/个人服务搭建/NAS/Wallos个人订阅服务管理工具.md)
+* HomeAssistant
+  * [Aqara 设备通过 Matter 接入 HomeAssistant](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/Aqara设备通过Matter接入HomeAssistant.md)
+  * [使用 Node-RED 配置智能设备的自动化规则](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/使用Node-Red配置规则.md)
+  * [小爱同学控制 HomeAssistant](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/小爱同学控制HomeAssistant.md)
+* PVE All-in-One 实践
+  * [PVE 系统备份到 NAS(smb)](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20系统备份备份到NAS%28smb%29.md)
+
+### 3.2 图形学
 
 * [OpenGL 坐标系统](./领域知识-DomainKnowledge/图形学/OpenGL坐标系统.md)
 * [变换的分类](./领域知识-DomainKnowledge/图形学/变换的分类.md)
@@ -233,19 +249,6 @@
   * [第一章 导论](./领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/01-导论.md)
   * [第四章 游戏所需的三维数学](./领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/04-游戏所需的三维数学.md)
   * [第11章 动画系统](./领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/11-动画系统.md)
-
-### 3.2 个人服务搭建
-
-* NAS
-  * [NAS](./领域知识-DomainKnowledge/个人服务搭建/NAS/)
-  * [Home Assistant 系统备份到 NAS](./领域知识-DomainKnowledge/个人服务搭建/NAS/homeassistant系统备份到NAS.md)
-  * [Nginx Proxy Manager 服务部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/Nginx%20Proxy%20Manager部署.md)
-  * [Wallos: 个人订阅服务管理工具](./领域知识-DomainKnowledge/个人服务搭建/NAS/Wallos个人订阅服务管理工具.md)
-* HomeAssistant
-  * [Aqara 设备通过 Matter 接入 HomeAssistant](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/Aqara设备通过Matter接入HomeAssistant.md)
-  * [小爱同学控制 HomeAssistant](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/小爱同学控制HomeAssistant.md)
-* PVE All-in-One 实践
-  * [PVE 系统备份到 NAS(smb)](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20系统备份备份到NAS%28smb%29.md)
 
 ### 3.3 Deep Learning
 
