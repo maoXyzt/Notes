@@ -44,17 +44,21 @@ export default defineConfig({
 })
 ```
 
-### 2.2 postcss-pxtorem & amfe-flexible
+### 2.2 `postcss-pxtorem`, `amfe-flexible`, `autoprefixer`
 
 * `postcss-pxtorem`: 将 px 单位转换为 rem 单位
 * `amfe-flexible`：根据设备宽度，修改根元素 html 的大小，以适配不一样终端。配置可伸缩布局方案，主要是将 1rem 设为 viewWidth/10。
 
-通过这两个插件配合，实现适配移动端
+通过这两个插件配合，实现适配移动端。
+
+* `autoprefixer` 插件：自动添加浏览器前缀，免于手动添加
+
+> 因为 css 中有一些属性还没有确定下来，标准规范还没有发布，许多浏览器支持的程度也不同，而且每个浏览器厂商同一个样式支持的写法也不同，所以要加前缀来达到各个浏览器兼容。将来统一了规范就不用写前缀了。
 
 #### 2.2.1 安装
 
 ```bash
-pnpm add postcss-pxtorem amfe-flexible
+pnpm add postcss-pxtorem amfe-flexible autoprefixer
 pnpm add -O @types/postcss-pxtorem
 ```
 
@@ -70,7 +74,7 @@ export default defineConfig({
     postcss: {
       plugins: [
         postcssPxtorem({
-          rootValue: 37.5, // 换算基数，默认值 16
+          rootValue: 37.5, // 换算基数，默认值 16。 UI设计稿宽度 / 10
           unitPrecision: 3, // 允许REM单位增长到的十进制数字，小数点后保留的位数。
           propList: ['*'],
           // 可以用正则表达式排除某些文件夹的方法，例如 /(node_module)/
@@ -99,4 +103,23 @@ export default defineConfig({
 
 ```typescript
 import 'amfe-flexible'
+```
+
+#### 2.2.4 Autoprefixer
+
+```typescript
+import autoprefixer from 'autoprefixer'
+
+export default defineConfig({
+  css: {
+    postcss: {
+      plugins: [
+        // ...
+        autoprefixer,
+        // ...
+      ],
+    },
+  },
+  // ...
+})
 ```
