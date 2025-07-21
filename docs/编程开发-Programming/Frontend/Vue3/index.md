@@ -19,3 +19,5 @@
 ## 3. 问题解决
 
 [Vue3 项目, Vite 配置 base 路径后, 编译结果为空页面](./Vue3%2CVite配置base路径后，编译结果为空页面.md)
+
+[Vue3 集成 highlight.js 实现代码渲染](./Vue3集成highlight.js实现代码渲染.md)

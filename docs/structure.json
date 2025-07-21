@@ -427,6 +427,10 @@
                 "link": "/编程开发-Programming/Frontend/Vue3/Vue3,Vite配置base路径后，编译结果为空页面.md"
               },
               {
+                "text": "Vue3 集成 highlight.js 实现代码渲染",
+                "link": "/编程开发-Programming/Frontend/Vue3/Vue3集成highlight.js实现代码渲染.md"
+              },
+              {
                 "text": "Vue3 项目 Setup",
                 "link": "/编程开发-Programming/Frontend/Vue3/Vue3项目Setup.md"
               },
