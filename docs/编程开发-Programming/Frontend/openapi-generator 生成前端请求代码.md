@@ -228,6 +228,12 @@ pnpm add -D @openapitools/openapi-generator-cli
 }
 ```
 
+执行生成命令：
+
+```bash
+pnpm run generate:client
+```
+
 ## 3. 项目中使用生成的 API 客户端
 
 首先创建 `src/services/common.ts` 文件，添加 API 客户端的配置信息，如下：
