@@ -44,25 +44,54 @@ export default defineConfig({
 })
 ```
 
-### 2.2 `postcss-pxtorem`, `amfe-flexible`, `autoprefixer`
+### 2.2 `autoprefixer`
+
+* `autoprefixer` 插件：自动添加浏览器前缀，免于手动添加
+
+> 因为 css 中有一些属性还没有确定下来，标准规范还没有发布，许多浏览器支持的程度也不同，而且每个浏览器厂商同一个样式支持的写法也不同，所以要加前缀来达到各个浏览器兼容。将来统一了规范就不用写前缀了。
+
+#### 2.2.1 Autoprefixer 安装和配置
+
+安装:
+
+```bash
+pnpm add -D autoprefixer
+```
+
+配置:
+
+```typescript
+import autoprefixer from 'autoprefixer'
+
+export default defineConfig({
+  css: {
+    postcss: {
+      plugins: [
+        // ...
+        autoprefixer,
+        // ...
+      ],
+    },
+  },
+  // ...
+})
+```
+
+### 2.3 `postcss-pxtorem`, `amfe-flexible`
 
 * `postcss-pxtorem`: 将 px 单位转换为 rem 单位
 * `amfe-flexible`：根据设备宽度，修改根元素 html 的大小，以适配不一样终端。配置可伸缩布局方案，主要是将 1rem 设为 viewWidth/10。
 
 通过这两个插件配合，实现适配移动端。
 
-* `autoprefixer` 插件：自动添加浏览器前缀，免于手动添加
-
-> 因为 css 中有一些属性还没有确定下来，标准规范还没有发布，许多浏览器支持的程度也不同，而且每个浏览器厂商同一个样式支持的写法也不同，所以要加前缀来达到各个浏览器兼容。将来统一了规范就不用写前缀了。
-
-#### 2.2.1 安装
+#### 2.3.1 安装
 
 ```bash
-pnpm add postcss-pxtorem amfe-flexible autoprefixer
+pnpm add postcss-pxtorem amfe-flexible
 pnpm add -O @types/postcss-pxtorem
 ```
 
-#### 2.2.2 配置 postcss-pxtorem
+#### 2.3.2 配置 postcss-pxtorem
 
 配置 `vite.config.ts` 的 css 配置项:
 
@@ -97,29 +126,10 @@ export default defineConfig({
 
 假设设计稿为 375px，即 rootValue 设为 37.5，意味着每个 rem 单位对应设计稿中的 37.5px
 
-#### 2.2.3 引入 `amfe-flexible`
+#### 2.3.3 引入 `amfe-flexible`
 
 在 `src/main.ts` 中引入 `amfe-flexible` 文件：
 
 ```typescript
 import 'amfe-flexible'
-```
-
-#### 2.2.4 Autoprefixer
-
-```typescript
-import autoprefixer from 'autoprefixer'
-
-export default defineConfig({
-  css: {
-    postcss: {
-      plugins: [
-        // ...
-        autoprefixer,
-        // ...
-      ],
-    },
-  },
-  // ...
-})
 ```
