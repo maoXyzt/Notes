@@ -27,6 +27,8 @@
 
 ## 2 - 文档 & 笔记
 
+🆓🔓🐧🍎 [MarkText](https://github.com/marktext/marktext): 开源的 Markdown 编辑器
+
 🆓🐧🍎 [Zotero](https://www.zotero.org/): 文献管理工具
 
 🆓🐧🍎 [Obsidian](https://obsidian.md/): 双链笔记软件
