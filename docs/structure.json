@@ -1059,6 +1059,10 @@
     "text": "4 - 软件工具应用-Applications",
     "items": [
       {
+        "text": "Alacritty 配置",
+        "link": "/软件工具应用-Applications/alacritty配置.md"
+      },
+      {
         "text": "virtualbox 硬盘扩容",
         "link": "/软件工具应用-Applications/virtualbox硬盘扩容.md"
       },

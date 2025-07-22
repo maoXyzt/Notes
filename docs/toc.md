@@ -288,6 +288,7 @@
 
 ## 4 - 软件工具应用-Applications
 
+* [Alacritty 配置](./软件工具应用-Applications/alacritty配置.md)
 * [virtualbox 硬盘扩容](./软件工具应用-Applications/virtualbox硬盘扩容.md)
 
 ### 4.1 Blender
