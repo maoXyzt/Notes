@@ -46,3 +46,12 @@ bindings = [
 # 鼠标中键粘贴
 bindings = [{ mouse = "Middle", action = "Paste" }]
 ```
+
+## 问题
+
+### 1. 无法响应鼠标点击
+
+解决方案: <https://github.com/alacritty/alacritty/issues/1663#issuecomment-1917418514>
+
+1. Go to <https://github.com/wez/wezterm/tree/main/assets/windows/conhost> and download `OpenConsole.exe` and `conpty.dll`
+2. Put these files into your alacritty program directory (e.g. `c:\Program Files\Alacritty\`)
