@@ -28,23 +28,21 @@ size = 12.0
 # Windows 上默认是 PowerShell, 此处改为了 [Nu Shell](../Windows/windows平台使用nushell终端.md)
 shell = { program = 'C:\Users\<your-username>\AppData\Local\Programs\nu\bin\nu.exe' }
 
+[selection]
+save_to_clipboard = true # 复制选中的文本到系统剪贴板; 否则只在终端内使用
+
 [keyboard]
 # 默认快捷键: <https://alacritty.org/config-alacritty-bindings.html>
 bindings = [
-  # 针对 Windows 平台，配置使用 Alt + C/V 或者 Insert 和 Shift + Insert 进行复制粘贴
+  # 针对 Windows 平台，配置使用 Control/Shift + Insert 进行复制粘贴
   # 默认的 Ctrl + Shift + C/V 也可以使用
-  { key = "C", mods = "Alt", action = "Copy" },
-  { key = "V", mods = "Alt", action = "Paste" },
-  { key = "Insert", action = "Copy" },
-  { key = "Insert", mods = "Shift", action = "Paste" },   # 默认操作为 PasteSelection，只对 Linux 有效
-  # 创建 Tab 和窗口
-  { key = "T", mods = "Control", action = "CreateNewTab" },            # 只在 MacOS 上有效
+  { key = "Insert", mods = "Control", action = "Copy" },
+  { key = "Insert", mods = "Shift", action = "Paste" },   # 默认操作为 PasteSelection, 不从系统剪贴板粘贴
+  # 创建窗口
   { key = "T", mods = "Control | Shift", action = "CreateNewWindow" },
 ]
 
 [mouse]
-bindings = [
-  # 鼠标右键粘贴
-  { mouse = "Right", action = "Paste" }
-]
+# 鼠标中键粘贴
+bindings = [{ mouse = "Middle", action = "Paste" }]
 ```
