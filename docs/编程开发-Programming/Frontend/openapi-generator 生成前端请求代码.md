@@ -10,11 +10,13 @@ openapi-generator 是一个开源工具，可以根据 OpenAPI 规范生成客�
 2. 基于 Docker 镜像运行
 3. 基于本地安装的 JDK 运行
 
-## 0. 推荐用法
+## 0. TL;DR; 推荐用法
 
 1. 按照 [1.1](#11-非-docker-方式) 添加 `openapitools.yaml` 配置
 2. 按照 [2.1.1](#211-使用-uvx-命令) 配置 `package.json` 的 scripts 命令
-3. 执行 `npm run generate:client` 生成客户端代码
+3. 按照 [3](#3-获取-openapijson-文件的辅助脚本) 配置更新 OPENAPI 规范文件的辅助脚本
+4. 执行 `npm run client:update-spec` 拉取 `codegen/openapi.json` 文件
+5. 执行 `npm run generate:client` 生成客户端代码
 
 ## 1. 任务配置
 
@@ -305,6 +307,18 @@ yarn add -D @openapitools/openapi-generator-cli
 - `update.ps1`: 更新 `openapi.json` 文件的 PowerShell 脚本
 - `update.sh`: 更新 `openapi.json` 文件的 Bash 脚本
 
+再配置 `package.json` 的 scripts 命令：
+
+```json
+{
+  "scripts": {
+    "client:update-spec": "node codegen/run-update.js"
+  }
+}
+```
+
+通过 `.env` 文件或环境变量配置 `OPENAPI_SPEC_URL`，执行 `npm run client:update-spec` 即可拉取 `codegen/openapi.json` 文件。
+
 ### 3.1 `run-update.js`
 
 `run-update.js` 脚本内容如下：
@@ -393,7 +407,7 @@ if [[ $? -ne 0 ]]; then
 fi
 ```
 
-## 3. Example: 项目中使用生成的 API 客户端
+## 4. Example: 项目中使用生成的 API 客户端
 
 首先创建 `src/services/common.ts` 文件，添加 API 客户端的配置信息，如下：
 
