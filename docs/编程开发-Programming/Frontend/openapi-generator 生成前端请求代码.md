@@ -10,6 +10,12 @@ openapi-generator 是一个开源工具，可以根据 OpenAPI 规范生成客�
 2. 基于 Docker 镜像运行
 3. 基于本地安装的 JDK 运行
 
+## 0. 推荐用法
+
+1. 按照 [1.1](#11-非-docker-方式) 添加 `openapitools.yaml` 配置
+2. 按照 [2.1.1](#211-使用-uvx-命令) 配置 `package.json` 的 scripts 命令
+3. 执行 `npm run generate:client` 生成客户端代码
+
 ## 1. 任务配置
 
 ### 1.1 非 Docker 方式
@@ -289,6 +295,102 @@ yarn add -D @openapitools/openapi-generator-cli
     "generate:client": "openapi-generator-cli generate"
   }
 }
+```
+
+## 3. 获取 `openapi.json` 文件的辅助脚本
+
+可以把如下脚本放到 `codegen/` 目录下：
+
+- `run-update.js`: 根据平台调用 `update.ps1` 或 `update.sh` 脚本
+- `update.ps1`: 更新 `openapi.json` 文件的 PowerShell 脚本
+- `update.sh`: 更新 `openapi.json` 文件的 Bash 脚本
+
+### 3.1 `run-update.js`
+
+`run-update.js` 脚本内容如下：
+
+```javascript
+// run-update.js
+import { execSync } from 'child_process';
+import os from 'os';
+
+if (os.platform() === 'win32') {
+  execSync('powershell -File codegen/update.ps1');
+} else {
+  execSync('bash codegen/update.sh');
+}
+```
+
+### 3.2 `update.ps1`
+
+`update.ps1` 脚本内容如下：
+
+```powershell
+# Get the directory of the current script
+$SCRIPT_DIR = Split-Path -Parent $MyInvocation.MyCommand.Path
+$PRJ_ROOT_DIR = Split-Path -Parent $SCRIPT_DIR
+
+# Try to load .env file if it exists
+$DOT_ENV_FILE = Join-Path $PRJ_ROOT_DIR ".env"
+if (Test-Path $DOT_ENV_FILE) {
+    Get-Content $DOT_ENV_FILE | ForEach-Object {
+        if ($_ -match '^([^=]+)=(.*)$') {
+            $name = $matches[1]
+            $value = $matches[2]
+            Set-Item -Path "env:$name" -Value $value
+        }
+    }
+}
+
+# Set default values if environment variables are not set
+if (-not $env:OPENAPI_SPEC_URL) {
+    $env:OPENAPI_SPEC_URL = "http://api.cubicraft.zoe.sensetime.com/api/v1/openapi.json"
+}
+if (-not $env:OUTPUT_FILE) {
+    $env:OUTPUT_FILE = Join-Path $SCRIPT_DIR "openapi.json"
+}
+
+Write-Host "OPENAPI_SPEC_URL: $env:OPENAPI_SPEC_URL"
+Write-Host "OUTPUT_FILE: $env:OUTPUT_FILE"
+
+try {
+    Invoke-WebRequest -Uri $env:OPENAPI_SPEC_URL -OutFile $env:OUTPUT_FILE
+} catch {
+    Write-Error "Error: Failed to download OpenAPI spec"
+    exit 1
+}
+```
+
+### 3.3 `update.sh`
+
+`update.sh` 脚本内容如下：
+
+```bash
+#!/usr/bin/env bash
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PRJ_ROOT_DIR="$(dirname "${SCRIPT_DIR}")"
+
+DOT_ENV_FILE="${PRJ_ROOT_DIR}/.env"
+if [[ -f "$DOT_ENV_FILE" ]]; then
+  source "$DOT_ENV_FILE"
+fi
+
+if [[ -z "$OPENAPI_SPEC_URL" ]]; then
+  OPENAPI_SPEC_URL="http://api.cubicraft.zoe.sensetime.com/api/v1/openapi.json"
+fi
+if [[ -z "$OUTPUT_FILE" ]]; then
+  OUTPUT_FILE="$SCRIPT_DIR/openapi.json"
+fi
+
+echo -e "OPENAPI_SPEC_URL: $OPENAPI_SPEC_URL"
+echo -e "OUTPUT_FILE: $OUTPUT_FILE"
+
+curl -o "$OUTPUT_FILE" $OPENAPI_SPEC_URL
+
+if [[ $? -ne 0 ]]; then
+  echo "Error: Failed to download OpenAPI spec"
+  exit 1
+fi
 ```
 
 ## 3. Example: 项目中使用生成的 API 客户端
