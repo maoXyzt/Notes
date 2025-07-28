@@ -4,46 +4,100 @@ openapi-generator 是一个开源工具，可以根据 OpenAPI 规范生成客�
 
 > [OpenAPITools/openapi-generator-cli](https://github.com/OpenAPITools/openapi-generator-cli)
 
-## 1. 基于 Docker 镜像来执行
+由于运行 `openapi-generator-cli` 需要依赖 Java 环境，因此可通过以下方式使用 `openapi-generator-cli`:
 
-## 1.1 环境
+1. (推荐) 基于 Python 和 jdk4py
+2. 基于 Docker 镜像运行
+3. 基于本地安装的 JDK 运行
 
-需要安装 Docker，用于执行生成器命令。
+## 1. 任务配置
 
-* 基于 docker 镜像执行工具命令:
-  * 镜像: `openapitools/openapi-generator-cli:v7.12.0`
-  * DockerHub 主页: [openapitools/openapi-generator-cli](https://hub.docker.com/r/openapitools/openapi-generator-cli)
-* 客户端代码要求：
-  * 生成 TypeScript 客户端代码，使用 axios 进行请求
-    * 选用生成器: [typescript-axios](https://openapi-generator.tech/docs/generators/typescript-axios)
-
-## 1.2 使用
-
-### 1.2.1 文件目录结构
+### 1.1 非 Docker 方式
 
 准备如下项目目录结构：
 
 ```text
 .
-├── codegen
-│   ├── client.config.yaml
-│   ├── docker-compose.yml
-│   ├── generate.sh
+├── codegen/
 │   └── openapi.json
-└── src
-    └── lib
-        └── _client/
+├── src/
+│   └── lib/
+│       └── _client/
+├── openapitools.yaml
+└── package.json
 ```
 
-* `openapi.json`: API 服务的 OpenAPI 规范文件 (FastAPI 后端会自动生成，访问服务的 `/openapi.json` 路径获得)
-* `client.config.yml`: 生成器配置文件
-* (可选) `docker-compose.yml`: 用于配置 docker 容器的环境和启动命令，执行生成脚本; 也可直接使用 `docker run` 命令
-* `generate.sh`: 生成脚本，对生成器进行配置和调用
-* `src/lib/_client`: 生成的客户端代码输出目录, 在 `src` 目录下，方便后续使用
+编写配置文件 `openapitools.yaml` 内容如下：
 
-### 1.2.2 配置文件
+```yaml
+# openapitools.yaml
+# References:
+# - https://openapi-generator.tech/docs/generators/typescript-axios
+inputSpec: codegen/openapi.json
+outputDir: src/lib/_client
+generatorName: typescript-axios
+apiPackage: api
+modelPackage: model
+additionalProperties:
+  withSeparateModelsAndApi: on
+  npmVersion: 20.17.0
+  supportsES6: on
+# typeMappings: Date=string
+validateSpec: off
+```
 
-`generate.sh` 脚本内容如下：
+注意其中配置项:
+
+- `inputSpec`: 指定 OpenAPI 规范文件路径; 也可使用 `-i` 参数指定。
+  - 一些后端框架可以自动生成，例如 [FastAPI](https://fastapi.tiangolo.com/features/#automatic-docs) 后端服务可通过 `/openapi.json` 路径获得。
+- `outputDir`: 指定生成的客户端代码输出目录; 也可使用 `-o` 参数指定。
+  - 这里指定输出目录为 `src/lib/_client`, 建议把该目录排除在 `prettier` & `eslint` 的检查范围之外。
+- `generatorName`: 指定生成器名称
+  - 这里选用 [typescript-axios](https://openapi-generator.tech/docs/generators/typescript-axios) 生成器，生成 TypeScript 客户端代码，使用 axios 进行请求
+- `additionalProperties`:
+  - `npmVersion`: 指定 npm 版本；这里使用 `nodejs 20.17.0` 版本
+  - `supportsES6`: 指定是否支持 ES6
+
+当执行 `openapi-generator-cli` 命令时，会加载工作目录的 `openapitools.yaml`, 或手动指定 `-c <path/to/config>`。
+
+### 1.2 Docker 方式
+
+利用镜像 `openapitools/openapi-generator-cli:v7.14.0` 来执行生成器命令。
+
+镜像主页: [openapitools/openapi-generator-cli](https://hub.docker.com/r/openapitools/openapi-generator-cli)
+
+准备如下项目目录结构：
+
+```text
+.
+├── codegen/
+│   ├── docker-compose.yml
+│   ├── generate.sh
+│   ├── openapi.json
+│   └── openapitools.yaml
+├── src/
+│   └── lib/
+│       └── _client/
+└── package.json
+```
+
+`docker-compose.yml` 配置文件内容如下：
+
+```yaml
+# docker-compose.yml
+services:
+  openapi-generator-cli:
+    image: openapitools/openapi-generator-cli:v7.14.0
+    working_dir: /tmp/src
+    entrypoint: ['bash']
+    command: ['./generate.sh']
+    volumes:
+      - .:/tmp/src # For reading OpenAPI spec
+      - ../src/lib/_client:/tmp/dist # For saving generated client
+      # - ./mocks:/tmp/mocks # For saving generated mock server
+```
+
+`generate.sh` 是 docker 容器中执行的脚本，内容如下：
 
 ```bash
 #!/bin/bash
@@ -59,7 +113,7 @@ echo "======================================================"
 echo "    Generating API code from OpenAPI specification    "
 echo "======================================================"
 printf "${_NC}"
-# echo "⚙️ Working directory: $(pwd)"
+# echo " ⚙️ Working directory: $(pwd)"
 
 export INPUT_FILE="./openapi.json"
 export CONFIG_FILE="./client.config.yaml"
@@ -80,10 +134,12 @@ printf "👍️ ${_GREEN}===Generation successful!${_NC}\n"
 echo ""
 ```
 
-`client.config.yml` 配置文件内容如下:
+配置文件 `openapitools.yaml` 内容如下:
+
+(其中省略了 `inputSpec` 和 `outputDir`, 在 `generate.sh` 中通过 `-i` 和 `-o` 参数直接指定)：
 
 ```yaml
-# client.config.yml
+# openapitools.yaml
 # References:
 # - https://openapi-generator.tech/docs/generators/typescript-axios
 # inputSpec: /tmp/src/openapi.json
@@ -99,37 +155,94 @@ additionalProperties:
 validateSpec: off
 ```
 
-### 1.3. 生成代码
+## 2. 运行
 
-#### 1.3.1 使用 docker compose 方式执行
+### 2.1 基于 Python 和 jdk4py 来执行
 
-配置 `docker-compose.yml` 文件内容如下：
+#### 2.1.1 使用 `uvx` 命令
 
-```yaml
-# docker-compose.yml
-services:
-  openapi-generator-cli:
-    image: openapitools/openapi-generator-cli:v7.12.0
-    working_dir: /tmp/src
-    entrypoint: ['bash']
-    command: ['./generate.sh']
-    volumes:
-      - .:/tmp/src # For reading OpenAPI spec
-      - ../src/lib/_client:/tmp/dist # For saving generated client
-      # - ./mocks:/tmp/mocks # For saving generated mock server
+推荐使用 `uvx` 命令 (依赖 [uv](https://docs.astral.sh/uv/)) 直接执行，不用操心当前的 Python 环境。更适合写到 `package.json` 的 scripts 中。
+
+```bash
+uvx "openapi-generator-cli[jdk4py]==7.14.0" generate -c openapitools.yaml
 ```
 
-利用 `docker-compose.yml` 配置文件，执行如下命令，生成客户端代码：
+可以配置到 `package.json` 的 scripts 中：
+
+```json
+{
+  "scripts": {
+    "generate:client": "uvx 'openapi-generator-cli[jdk4py]==7.14.0' generate -c openapitools.yaml"
+  }
+}
+```
+
+然后可以执行 `npm run generate:client` 来生成客户端代码：
+
+```bash
+# with npm
+npm run generate:client
+# with pnpm
+pnpm generate:client
+# with yarn
+yarn generate:client
+```
+
+#### 2.1.2 不使用 `uvx` 命令
+
+如果不希望安装和使用 `uvx` 命令，则需要先安装依赖到当前的 Python 环境，然后在命令行中运行：
+
+```bash
+pip install "openapi-generator-cli[jdk4py]==7.14.0"
+openapi-generator-cli generate -c openapitools.yaml
+```
+
+配置到 `package.json` 的 scripts 中：
+
+```json
+{
+  "scripts": {
+    "generate:client": "openapi-generator-cli generate -c openapitools.yaml"
+  }
+}
+```
+
+同样可以执行 `npm run generate:client` 来生成客户端代码，但需要确保执行前处于正确的 Python 环境：
+
+```bash
+# with npm
+npm run generate:client
+# with pnpm
+pnpm generate:client
+# with yarn
+yarn generate:client
+```
+
+## 2.2 基于 Docker 镜像来执行
+
+需要安装 Docker。
+
+### 2.2.1 通过 `docker-compose` 命令执行
 
 ```bash
 docker-compose -f codegen/docker-compose.yml run --rm openapi-generator-cli
 ```
 
-生成的代码会输出到 `src/lib/_client` 目录下。
+配置到 `package.json` 的 scripts 中：
 
-#### 1.3.2 使用 docker run 方式执行
+```json
+{
+  "scripts": {
+    "generate:client": "docker-compose -f codegen/docker-compose.yml run --rm openapi-generator-cli"
+  }
+}
+```
 
-也可以直接用 `docker run` 命令执行：
+执行 `npm run generate:client` 即可生成客户端代码（略）
+
+### 2.2.2 直接通过 `docker run` 命令执行
+
+直接通过 `docker run` 命令执行：
 
 ```bash
 docker run --rm \
@@ -141,21 +254,7 @@ docker run --rm \
   generate.sh
 ```
 
-生成的代码会输出到 `build/_client` 目录下。
-
-#### 1.3.3 使用 npm scripts 方式执行
-
-可以配置 [3.1](#31-使用-docker-compose-方式执行) 或 [3.2](#32-使用-docker-run-方式执行) 的执行命令到 `package.json` 的 scripts 中，方便执行：
-
-```json
-{
-  "scripts": {
-    "generate:client": "docker-compose -f codegen/docker-compose.yml run --rm openapi-generator-cli"
-  }
-}
-```
-
-或:
+配置到 `package.json` 的 scripts 中：
 
 ```json
 {
@@ -165,57 +264,21 @@ docker run --rm \
 }
 ```
 
-执行 `npm run generate:client` 即可生成客户端代码:
+执行 `npm run generate:client` 即可生成客户端代码（略）
+
+## 2.3 基于本地 Java 环境来执行
+
+需要本地已经安装了 JDK 环境。
+
+安装 `@openapitools/openapi-generator-cli` 依赖：
 
 ```bash
 # with npm
-npm run generate:client
+npm install -D @openapitools/openapi-generator-cli
 # with pnpm
-pnpm generate:client
-# with yarn
-yarn generate:client
-```
-
-## 2. 基于本地 Java 环境来执行
-
-### 2.1 安装
-
-```bash
 pnpm add -D @openapitools/openapi-generator-cli
-```
-
-### 2.2 使用
-
-配置 `openapitools.json` 文件内容如下：
-
-```json
-{
-  "$schema": "node_modules/@openapitools/openapi-generator-cli/config.schema.json",
-  "spaces": 2,
-  "generator-cli": {
-    "version": "7.12.0", // or the current latest version ;)
-    "storageDir": "~/my/custom/storage/dir", // optional
-    "generators": { // optional
-      "v2.0": { // any name you like (just printed to the console log or reference it using --generator-key)
-        "generatorName": "typescript-angular",
-        "output": "#{cwd}/output/v2.0/#{ext}/#{name}",
-        "glob": "examples/v2.0/{json,yaml}/*.{json,yaml}",
-        "additionalProperties": {
-          "ngVersion": "6.1.7",
-          "npmName": "restClient",
-          "supportsES6": "true",
-          "npmVersion": "6.9.0",
-          "withInterfaces": true
-        }
-      },
-      "v3.0": { // any name you like (just printed to the console log or reference it using --generator-key)
-        "generatorName": "typescript-fetch",
-        "output": "#{cwd}/output/v3.0/#{ext}/#{name}",
-        "glob": "examples/v3.0/petstore.{json,yaml}"
-      }
-    }
-  }
-}
+# with yarn
+yarn add -D @openapitools/openapi-generator-cli
 ```
 
 在 `package.json` 中添加脚本命令：
@@ -228,13 +291,7 @@ pnpm add -D @openapitools/openapi-generator-cli
 }
 ```
 
-执行生成命令：
-
-```bash
-pnpm run generate:client
-```
-
-## 3. 项目中使用生成的 API 客户端
+## 3. Example: 项目中使用生成的 API 客户端
 
 首先创建 `src/services/common.ts` 文件，添加 API 客户端的配置信息，如下：
 
