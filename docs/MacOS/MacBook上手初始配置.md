@@ -37,6 +37,8 @@ NoteStatus: draft
 
 设置 - 键盘 - 键盘快捷键 - 功能键: 开启 “将 F1, F2 等键为标准功能键”
 
+关闭“长按按键出现变音符号”功能: 终端运行 `defaults write -g ApplePressAndHoldEnabled -bool false`
+
 ## 字体
 
 Maple Mono: 下载 NF CN hinted 版本（字体名: Maple Mono NF CN）
@@ -57,9 +59,19 @@ Maple Mono: 下载 NF CN hinted 版本（字体名: Maple Mono NF CN）
 
 * Kawa: Input Method 快捷键管理 <https://github.com/hatashiro/kawa>
 
-* AutoSwitchInput Lite: 切换输入法
-
 * AlDente: 电池管理
+* Keka: 解压缩
+
+* CheatSheet: 快捷键提示
+* Apparency:
+
+* IINA: 视频播放器
+
+App Store 软件:
+
+* 超级右键 Lite: 右键菜单增强
+* AutoSwitchInput Lite: 自动切换输入法
+* NTFS Disk by Omi NTFS: NTFS 格式读写
 
 收费软件:
 
@@ -68,3 +80,7 @@ Maple Mono: 下载 NF CN hinted 版本（字体名: Maple Mono NF CN）
 * iStat Menus: 系统监控
 * Magnet: 窗口管理
 * One Switch: 快捷切换功能
+
+## 命令行工具
+
+参考: [Linux开发环境setup](../Linux/Linux开发环境setup.md)
