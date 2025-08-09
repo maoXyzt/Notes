@@ -109,6 +109,7 @@
   * [Vue3 PostCSS 配置](./编程开发-Programming/Frontend/Vue3/Vue3%20PostCSS配置.md)
   * [Vue3 UnoCSS 安装和配置](./编程开发-Programming/Frontend/Vue3/Vue3%20UnoCSS安装和配置.md)
   * [Vue3, Vite 配置 base 路径后，编译结果为空页面](./编程开发-Programming/Frontend/Vue3/Vue3%2CVite配置base路径后%EF%BC%8C编译结果为空页面.md)
+  * [Vue3 集成 highlight.js 实现代码渲染](./编程开发-Programming/Frontend/Vue3/Vue3集成highlight.js实现代码渲染.md)
   * [Vue3 项目 Setup](./编程开发-Programming/Frontend/Vue3/Vue3项目Setup.md)
   * [Vue3 项目 Vite 配置](./编程开发-Programming/Frontend/Vue3/Vue3项目Vite配置.md)
   * [Vue3 项目配置 Lint & Format 规则 (EsLint & Prettier)](./编程开发-Programming/Frontend/Vue3/Vue3项目配置Lint%26Format规则%28EsLint%26Prettier%29.md)
@@ -287,6 +288,7 @@
 
 ## 4 - 软件工具应用-Applications
 
+* [Alacritty 配置](./软件工具应用-Applications/alacritty配置.md)
 * [virtualbox 硬盘扩容](./软件工具应用-Applications/virtualbox硬盘扩容.md)
 
 ### 4.1 Blender

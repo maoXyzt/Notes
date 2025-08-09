@@ -427,6 +427,10 @@
                 "link": "/编程开发-Programming/Frontend/Vue3/Vue3,Vite配置base路径后，编译结果为空页面.md"
               },
               {
+                "text": "Vue3 集成 highlight.js 实现代码渲染",
+                "link": "/编程开发-Programming/Frontend/Vue3/Vue3集成highlight.js实现代码渲染.md"
+              },
+              {
                 "text": "Vue3 项目 Setup",
                 "link": "/编程开发-Programming/Frontend/Vue3/Vue3项目Setup.md"
               },
@@ -1054,6 +1058,10 @@
   {
     "text": "4 - 软件工具应用-Applications",
     "items": [
+      {
+        "text": "Alacritty 配置",
+        "link": "/软件工具应用-Applications/alacritty配置.md"
+      },
       {
         "text": "virtualbox 硬盘扩容",
         "link": "/软件工具应用-Applications/virtualbox硬盘扩容.md"
