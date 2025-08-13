@@ -9,3 +9,4 @@
 
 - [sshfs 命令简易挂载远程目录](./sshfs命令简易挂载远程目录.md)
 - [SSH 开启隧道](./ssh开启隧道.md)
+- [使用 autossh 自动重连 SSH](./使用autossh自动重连ssh.md)

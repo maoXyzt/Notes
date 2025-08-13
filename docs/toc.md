@@ -110,6 +110,7 @@
   * [Vue3 UnoCSS 安装和配置](./编程开发-Programming/Frontend/Vue3/Vue3%20UnoCSS安装和配置.md)
   * [Vue3, Vite 配置 base 路径后，编译结果为空页面](./编程开发-Programming/Frontend/Vue3/Vue3%2CVite配置base路径后%EF%BC%8C编译结果为空页面.md)
   * [Vue3 集成 highlight.js 实现代码渲染](./编程开发-Programming/Frontend/Vue3/Vue3集成highlight.js实现代码渲染.md)
+  * [Vue3 配置使用图标和本地 SVG](./编程开发-Programming/Frontend/Vue3/Vue3使用SVG图标.md)
   * [Vue3 项目 Setup](./编程开发-Programming/Frontend/Vue3/Vue3项目Setup.md)
   * [Vue3 项目 Vite 配置](./编程开发-Programming/Frontend/Vue3/Vue3项目Vite配置.md)
   * [Vue3 项目配置 Lint & Format 规则 (EsLint & Prettier)](./编程开发-Programming/Frontend/Vue3/Vue3项目配置Lint%26Format规则%28EsLint%26Prettier%29.md)
@@ -193,21 +194,22 @@
 * [运行命令时，指定 GCC 版本](./Linux/指定命令的gcc版本.md)
 * [使用 OpenSSL 生成自签名 SSL 证书](./Linux/自签名SSL证书-openssl.md)
 
-### 2.1 CentOS
-
-* [CentOS 7 lvm分区扩容](./Linux/CentOS/CentOS%207%20lvm分区扩容.md)
-* [CentOS 7 安装/升级 Git 版本](./Linux/CentOS/CentOS%207%20安装升级Git版本.md)
-* [CentOS 7 常用工具包安装](./Linux/CentOS/CentOS%207%20常用工具包安装.md)
-* [CentOS 7 防火墙开放端口](./Linux/CentOS/CentOS%207%20开放端口.md)
-* [CentOS 配置国内源](./Linux/CentOS/CentOS%20配置国内源.md)
-
-### 2.2 SSH
+### 2.1 SSH
 
 * [SSH](./Linux/SSH/)
 * [使用 `sshfs` 命令简易挂载远程目录](./Linux/SSH/sshfs命令简易挂载远程目录.md)
 * [SSH 开启隧道](./Linux/SSH/ssh开启隧道.md)
 * [SSH 配置心跳信号防止断开连接](./Linux/SSH/SSH配置心跳信号防止断开连接.md)
 * [创建 SSH 密钥对并使用密钥登录](./Linux/SSH/创建SSH密钥对并使用密钥登录.md)
+* [使用 autossh 自动重连 SSH](./Linux/SSH/使用autossh自动重连ssh.md)
+
+### 2.2 CentOS
+
+* [CentOS 7 lvm分区扩容](./Linux/CentOS/CentOS%207%20lvm分区扩容.md)
+* [CentOS 7 安装/升级 Git 版本](./Linux/CentOS/CentOS%207%20安装升级Git版本.md)
+* [CentOS 7 常用工具包安装](./Linux/CentOS/CentOS%207%20常用工具包安装.md)
+* [CentOS 7 防火墙开放端口](./Linux/CentOS/CentOS%207%20开放端口.md)
+* [CentOS 配置国内源](./Linux/CentOS/CentOS%20配置国内源.md)
 
 ### 2.3 Vim
 

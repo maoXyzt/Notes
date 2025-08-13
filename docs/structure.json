@@ -431,6 +431,10 @@
                 "link": "/编程开发-Programming/Frontend/Vue3/Vue3集成highlight.js实现代码渲染.md"
               },
               {
+                "text": "Vue3 配置使用图标和本地 SVG",
+                "link": "/编程开发-Programming/Frontend/Vue3/Vue3使用SVG图标.md"
+              },
+              {
                 "text": "Vue3 项目 Setup",
                 "link": "/编程开发-Programming/Frontend/Vue3/Vue3项目Setup.md"
               },
@@ -729,33 +733,7 @@
         "link": "/Linux/自签名SSL证书-openssl.md"
       },
       {
-        "text": "2.1 CentOS",
-        "items": [
-          {
-            "text": "CentOS 7 lvm分区扩容",
-            "link": "/Linux/CentOS/CentOS 7 lvm分区扩容.md"
-          },
-          {
-            "text": "CentOS 7 安装/升级 Git 版本",
-            "link": "/Linux/CentOS/CentOS 7 安装升级Git版本.md"
-          },
-          {
-            "text": "CentOS 7 常用工具包安装",
-            "link": "/Linux/CentOS/CentOS 7 常用工具包安装.md"
-          },
-          {
-            "text": "CentOS 7 防火墙开放端口",
-            "link": "/Linux/CentOS/CentOS 7 开放端口.md"
-          },
-          {
-            "text": "CentOS 配置国内源",
-            "link": "/Linux/CentOS/CentOS 配置国内源.md"
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "text": "2.2 SSH",
+        "text": "2.1 SSH",
         "items": [
           {
             "text": "SSH",
@@ -776,6 +754,36 @@
           {
             "text": "创建 SSH 密钥对并使用密钥登录",
             "link": "/Linux/SSH/创建SSH密钥对并使用密钥登录.md"
+          },
+          {
+            "text": "使用 autossh 自动重连 SSH",
+            "link": "/Linux/SSH/使用autossh自动重连ssh.md"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "2.2 CentOS",
+        "items": [
+          {
+            "text": "CentOS 7 lvm分区扩容",
+            "link": "/Linux/CentOS/CentOS 7 lvm分区扩容.md"
+          },
+          {
+            "text": "CentOS 7 安装/升级 Git 版本",
+            "link": "/Linux/CentOS/CentOS 7 安装升级Git版本.md"
+          },
+          {
+            "text": "CentOS 7 常用工具包安装",
+            "link": "/Linux/CentOS/CentOS 7 常用工具包安装.md"
+          },
+          {
+            "text": "CentOS 7 防火墙开放端口",
+            "link": "/Linux/CentOS/CentOS 7 开放端口.md"
+          },
+          {
+            "text": "CentOS 配置国内源",
+            "link": "/Linux/CentOS/CentOS 配置国内源.md"
           }
         ],
         "collapsed": false
