@@ -2,16 +2,19 @@
 
 需要安装如下依赖
 
-* vite-plugin-svg-icons: 支持 SVG 图标
-* unplugin-icons: 图标按需引入
-* @vicons/ionicons4
-* @iconify/vue
-* @unocss/preset-icons
+* `vite-plugin-svg-icons`: 支持 SVG 图标
+* `unplugin-icons`: 图标按需引入
+* `@vicons/ionicons5`: 封装了 [Ionicons v5](https://ionic.io/ionicons/) 图标的 Vue 组件库
+  * 属于 [xicons](https://www.xicons.org/#/) 项目的一部分: <https://github.com/07akioni/xicons?tab=readme-ov-file#icon-packages>
+* `@iconify/vue`
+* `@unocss/preset-icons`
 
 ```bash
-npm install @vicons/ionicons4 unplugin-icons vite-plugin-svg-icons
-npm install -D @iconify/vue @unocss/preset-icons
+npm install unplugin-icons vite-plugin-svg-icons
+npm install -D @vicons/ionicons5 @iconify/vue @unocss/preset-icons
 ```
+
+## 配置
 
 `vite.config.ts`: 配置如下插件
 
@@ -65,4 +68,44 @@ export default defineConfig({
   ],
   // ...
 })
+```
+
+## 使用
+
+* svg 图标
+
+```html
+<IconLocalFitScreen class="text-40px c-#adbad3 hover-c-#fff"></IconLocalFitScreen>
+```
+
+* `@vicons/ionicons5`
+
+```html
+<Icon-material-symbols:play-circle-outline-rounded
+  class="text-40px c-#adbad3 hover-c-#fff"
+/>
+<Icon-material-symbols:pause-circle-outline-rounded
+  class="text-40px c-#adbad3 hover-c-#fff"
+/>
+```
+
+* `iconify/vue`
+
+```html
+<Icon icon="mdi-light:home" />
+```
+
+* `@unocss/preset-icons`
+
+```html
+<!-- A basic anchor icon from Phosphor icons -->
+<div class="i-ph-anchor-simple-thin" />
+<!-- An orange alarm from Material Design Icons -->
+<div class="i-mdi-alarm text-orange-400" />
+<!-- A large Vue logo -->
+<div class="i-logos-vue text-3xl" />
+<!-- Sun in light mode, Moon in dark mode, from Carbon -->
+<button class="i-carbon-sun dark:i-carbon-moon" />
+<!-- Twemoji of laugh, turns to tear on hovering -->
+<div class="i-twemoji-grinning-face-with-smiling-eyes hover:i-twemoji-face-with-tears-of-joy" />
 ```

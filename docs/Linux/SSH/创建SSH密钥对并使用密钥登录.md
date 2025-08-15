@@ -9,6 +9,7 @@
 ssh-keygen -t ed25519 -b 256 -C "example@qq.com"
 # 如果 OpenSSH 版本低于 6.5, 也可使用 rsa 算法生成 2048 位密钥对 (默认) ：
 # ssh-keygen -C "example@qq.com"
+# ssh-keygen -t rsa -b 2048 -C "example@qq.com"
 
 Generating public/private ed25519 key pair.
 Enter file in which to save the key (~/.ssh/id_ed25519):
