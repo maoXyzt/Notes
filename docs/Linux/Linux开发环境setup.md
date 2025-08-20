@@ -296,3 +296,38 @@ MacOS:
 ```bash
 brew install abhimanyu003/sttr/sttr
 ```
+
+### 3.2.8 trzsz
+
+`trzsz` 与 `rz` 和 `sz` 类似，是一个跨平台的终端文件传输工具，支持在终端中快速传输文件。需要客户端与服务端都支持。
+
+服务端有 Go / Python / JS 版本，推荐安装 [Go 版本](https://trzsz.github.io/cn/go)。
+
+安装:
+
+```bash
+# Ubuntu
+sudo apt update && sudo apt install software-properties-common
+sudo add-apt-repository ppa:trzsz/ppa && sudo apt update
+
+sudo apt install trzsz
+```
+
+在本地 PC / Mac 上安装 [tssh](https://github.com/trzsz/trzsz-ssh/tree/main?tab=readme-ov-file#trzsz-ssh--tssh----an-openssh-client-alternative) 作为客户端:
+
+```bash
+# MacOS
+brew update
+brew install trzsz-ssh
+# Windows
+winget install tssh
+```
+
+用 tssh 代替 ssh 命令登录到目标服务器后:
+
+```bash
+# 下载文件
+tsz /path/to/file
+# 上传文件
+trz /directory/for/upload/
+```
