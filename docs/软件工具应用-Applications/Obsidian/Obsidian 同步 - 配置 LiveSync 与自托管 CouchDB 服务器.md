@@ -57,11 +57,13 @@ COUCHDB_USER=admin
 COUCHDB_PW=password
 ```
 
-修改 `docker-compose.yml` 和 `config/init.ini` 文件中的 `e=_`:
+修改 `docker-compose.yml` 和 `config/local.ini` 文件中的 `e=_`:
 
 ```bash
+# 替换 `docker-compose.yml` 中的 "e=_"
 sed -i 's/e=_/your-secret-words/' docker-compose.yml
-sed -i 's/e=_/your-secret-words/' config/init.ini
+# 替换 `config/local.ini` 中的 "e=_"
+sed -i 's/e=_/your-secret-words/' config/local.ini
 ```
 
 CouchDB 将可通过该 URI 访问: `https://server-hostname.com/your-secret-words`

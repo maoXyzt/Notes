@@ -323,7 +323,7 @@ brew install trzsz-ssh
 winget install tssh
 ```
 
-用 tssh 代替 ssh 命令登录到目标服务器后:
+用 `tssh` 代替 `ssh` 命令登录到目标服务器后，就可以使用 `trz` 和 `tsz` 命令进行文件传输了:
 
 ```bash
 # 下载文件
