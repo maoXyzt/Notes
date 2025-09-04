@@ -308,18 +308,20 @@
 * [通过脚本安装和启用 blender 插件(add-on)](./软件工具应用-Applications/Blender/通过脚本安装和启用插件%28add-on%29.md)
 * [headless 方式启动 blender (无 GUI)](./软件工具应用-Applications/Blender/无GUI启动blender.md)
 
-### 4.2 Maya
+### 4.2 Obsidian
+
+* [Obsidian](./软件工具应用-Applications/Obsidian/)
+* [Obsidian 插件推荐](./软件工具应用-Applications/Obsidian/Obsidain插件推荐.md)
+* [Obsidian 同步 - 配置 LiveSync 与自托管 CouchDB 服务器](./软件工具应用-Applications/Obsidian/Obsidian%20同步%20-%20配置%20LiveSync%20与自托管%20CouchDB%20服务器.md)
+
+### 4.3 Maya
 
 * [maya 安装 numpy & scipy](./软件工具应用-Applications/Maya/maya安装numpy%26scipy.md)
 * [Maya 插件安装方法](./软件工具应用-Applications/Maya/maya插件安装方法.md)
 
-### 4.3 FBX
+### 4.4 FBX
 
 * [安装 FBX Python SDK](./软件工具应用-Applications/FBX/安装FBX%20Python%20SDK.md)
-
-### 4.4 Obsidian
-
-* [Obsidian 同步 - 配置 LiveSync 与自托管 CouchDB 服务器](./软件工具应用-Applications/Obsidian/Obsidian%20同步%20-%20配置%20LiveSync%20与自托管%20CouchDB%20服务器.md)
 
 ### 4.5 Rime
 
