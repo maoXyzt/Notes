@@ -75,6 +75,7 @@ modified: 2025-09-11T15:39:00.000+0800
 + [Metadata Menu](https://github.com/mdelobelle/metadatamenu)
 + [Natural Language Dates](https://github.com/argenos/nldates-obsidian)
 + [Open vault in VS Code](https://github.com/NomarCub/obsidian-open-vscode)
++ [Outliner](https://github.com/vslinko/obsidian-outliner)
 + [Paste URL into selection](https://github.com/denolehov/obsidian-url-into-selection)
 + [QuickAdd](https://github.com/chhoumann/quickadd)
 + [Recent Files](https://github.com/tgrosinger/recent-files-obsidian)

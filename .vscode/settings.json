@@ -1,9 +1,14 @@
 {
-    "autoDocstring.docstringFormat": "google",
-    "workbench.colorTheme": "Monokai",
+  "autoDocstring.docstringFormat": "google",
+  "workbench.colorTheme": "Monokai",
+  "editor.formatOnSave": true,
+  "[python]": {
     "editor.formatOnSave": true,
-    "[python]": {
-        "editor.formatOnSave": true,
-        "editor.defaultFormatter": "charliermarsh.ruff"
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    {
+      "text": "Following the Conventional Commits specification (约定式提交规范), the message part should be in 中文"
     }
+  ],
 }
