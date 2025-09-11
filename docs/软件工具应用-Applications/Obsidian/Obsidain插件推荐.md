@@ -5,53 +5,7 @@ modified: 2025-09-11T15:39:00.000+0800
 
 # Obsidian 插件推荐
 
-⭐: 强烈推荐安装
-👍: 提升使用体验，建议安装
-🉑: 按需安装
-
-## 1 - 功能性增强
-
-+ ⭐ Dataview: 实现强大的数据查询和展示功能
-+ ⭐ Templater: 高级模板
-+ ⭐ Tasks: 任务管理
-+ ⭐ Calendar: 显示日历，点击日期可创建/打开对应日期的 daily note
-+ ⭐ QuickAdd: 快速创建/插入内容，支持 Template, Capture, Macro
-+ ⭐ Tag Wrangler: 在 Tags View (核心插件) 中，添加 tag 的右键菜单，实现 tag 重命名、搜索、创建 Tag Page 等功能
-+ 🉑 Copilot: 接入 LLM API，使用 AI 助手
-+ 👍 Self-hosted LiveSync: 同步 Obsidian 笔记到自托管 CouchDB 服务器 (见 [Obsidian 同步 - 配置 LiveSync 与自托管 CouchDB 服务器](./Obsidian%20同步%20-%20配置%20LiveSync%20与自托管%20CouchDB%20服务器.md))
-+ 👍 Commander: 配置一些快捷指令，可以放置在 TitleBar, Page Header, File Menu, Ribbons, Context Menu, Status Bar 等位置
-+ 🉑 Settings Search: 在设置中搜索设置项
-+ 🉑 Export to Anki: 支持创建 Anki 卡片，并导出到 Anki
-+ 🉑 Openvault in VS Code: 在 VS Code 中打开当前 vault
-+ 👍 Fuzzy Chinese Pinyin: 提供中文拼音搜索的功能，支持繁体、双拼、模糊音
-+ 🉑 Keyboard Analyzer: 分析按键和快捷指令的使用频率，帮助优化快捷指令设置
-
-## 2 - Markdown 编辑增强
-
-+ 👍 Advanced Tables: 增强表格编辑功能
-+ 👍 Outliner: 增强列表编辑功能，类似 Workflowy 和 Roam Research
-+ 👍 Editing Toolbar: 提供一个编辑工具栏
-+ ⭐ Linter: markdown 格式化
-+ ⭐ Natural Language Dates: 解析日期，转为 daily note 的双链链接
-+ 🉑 Paste URL into selection: 粘贴 URL 时，自动将选中的文字转为链接
-+ 🉑 Meta Bind: 在笔记中插入输入控件、显示控件、按钮等元素，可把值绑定到笔记的 frontmatter 元数据中
-+ 👍 Metadata Menu: 管理 frontmatter 元数据，增强元数据的编辑功能
-+ ⭐ Copy Block Link: 复制选中块的引用链接，可粘贴到别的笔记中实现内容引用
-+ 🉑 Sort & Permute lines: 对选中行进行排序、随机打乱等操作
-
-## 3 - UI 增强和个性化
-
-+ 🉑 Homepage: 使得 Obsidian 启动时打开指定 homepage (note, canvas, base 或 workspace)
-+ 👍 Style Settings: 自定义样式。很多主题和插件都支持用它来调整样式
-+ 👍 Iconize: 设置目录、文件的自定义图标
-+ 🉑 Hider: 隐藏 Obsidian UI 的一些元素
-+ 🉑 Recent Files: 显示最近打开的文件列表
-+ 🉑 File Explorer Note Count: 在文件资源管理器中显示每个文件夹中的笔记数量
-+ 👍 Floating TOC: 鼠标悬停时，显示笔记的内容
-+ 👍 Better Search Views: 增强搜索结果的显示
-+ 🉑 Influx: 在笔记中显示该笔记的反向链接
-
-## Appendix - 插件一览
+## 1 - 插件一览
 
 + [Advanced Tables](https://github.com/tgrosinger/advanced-tables-obsidian)
 + [Better Search Views](https://github.com/ivan-lednev/better-search-views)
@@ -86,3 +40,51 @@ modified: 2025-09-11T15:39:00.000+0800
 + [Tag Wrangler](https://github.com/pjeby/tag-wrangler)
 + [Tasks](https://github.com/obsidian-tasks-group/obsidian-tasks)
 + [Templater](https://github.com/SilentVoid13/Templater)
+
+## 2 - 分类推荐
+
+⭐: 强烈推荐安装
+👍: 提升使用体验，建议安装
+🉑: 按需安装
+
+## 2.1 功能性增强
+
++ ⭐ Dataview: 实现强大的数据查询和展示功能
++ ⭐ Templater: 高级模板
++ ⭐ Tasks: 任务管理
++ ⭐ Calendar: 显示日历，点击日期可创建/打开对应日期的 daily note
++ ⭐ QuickAdd: 快速创建/插入内容，支持 Template, Capture, Macro
++ ⭐ Tag Wrangler: 在 Tags View (核心插件) 中，添加 tag 的右键菜单，实现 tag 重命名、搜索、创建 Tag Page 等功能
++ 🉑 Copilot: 接入 LLM API，使用 AI 助手
++ 👍 Self-hosted LiveSync: 同步 Obsidian 笔记到自托管 CouchDB 服务器 (见 [Obsidian 同步 - 配置 LiveSync 与自托管 CouchDB 服务器](./Obsidian%20同步%20-%20配置%20LiveSync%20与自托管%20CouchDB%20服务器.md))
++ 👍 Commander: 配置一些快捷指令，可以放置在 TitleBar, Page Header, File Menu, Ribbons, Context Menu, Status Bar 等位置
++ 🉑 Settings Search: 在设置中搜索设置项
++ 🉑 Export to Anki: 支持创建 Anki 卡片，并导出到 Anki
++ 🉑 Openvault in VS Code: 在 VS Code 中打开当前 vault
++ 👍 Fuzzy Chinese Pinyin: 提供中文拼音搜索的功能，支持繁体、双拼、模糊音
++ 🉑 Keyboard Analyzer: 分析按键和快捷指令的使用频率，帮助优化快捷指令设置
+
+## 2.2 Markdown 编辑增强
+
++ 👍 Advanced Tables: 增强表格编辑功能
++ 👍 Outliner: 增强列表编辑功能，类似 Workflowy 和 Roam Research
++ 👍 Editing Toolbar: 提供一个编辑工具栏
++ ⭐ Linter: markdown 格式化
++ ⭐ Natural Language Dates: 解析日期，转为 daily note 的双链链接
++ 🉑 Paste URL into selection: 粘贴 URL 时，自动将选中的文字转为链接
++ 🉑 Meta Bind: 在笔记中插入输入控件、显示控件、按钮等元素，可把值绑定到笔记的 frontmatter 元数据中
++ 👍 Metadata Menu: 管理 frontmatter 元数据，增强元数据的编辑功能
++ ⭐ Copy Block Link: 复制选中块的引用链接，可粘贴到别的笔记中实现内容引用
++ 🉑 Sort & Permute lines: 对选中行进行排序、随机打乱等操作
+
+## 2.3 UI 增强和个性化
+
++ 🉑 Homepage: 使得 Obsidian 启动时打开指定 homepage (note, canvas, base 或 workspace)
++ 👍 Style Settings: 自定义样式。很多主题和插件都支持用它来调整样式
++ 👍 Iconize: 设置目录、文件的自定义图标
++ 🉑 Hider: 隐藏 Obsidian UI 的一些元素
++ 🉑 Recent Files: 显示最近打开的文件列表
++ 🉑 File Explorer Note Count: 在文件资源管理器中显示每个文件夹中的笔记数量
++ 👍 Floating TOC: 鼠标悬停时，显示笔记的内容
++ 👍 Better Search Views: 增强搜索结果的显示
++ 🉑 Influx: 在笔记中显示该笔记的反向链接
