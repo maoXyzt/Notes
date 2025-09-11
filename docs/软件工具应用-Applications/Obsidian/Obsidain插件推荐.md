@@ -1,3 +1,8 @@
+---
+created: 2025-09-11T15:39:00.000+0800
+modified: 2025-09-11T15:39:00.000+0800
+---
+
 # Obsidian 插件推荐
 
 ⭐: 强烈推荐安装
@@ -45,3 +50,38 @@
 + 👍 Floating TOC: 鼠标悬停时，显示笔记的内容
 + 👍 Better Search Views: 增强搜索结果的显示
 + 🉑 Influx: 在笔记中显示该笔记的反向链接
+
+## Appendix - 插件一览
+
++ [Advanced Tables](https://github.com/tgrosinger/advanced-tables-obsidian)
++ [Better Search Views](https://github.com/ivan-lednev/better-search-views)
++ [Calendar](https://github.com/liamcain/obsidian-calendar-plugin)
++ [Commander](https://github.com/phibr0/obsidian-commander)
++ [Copilot](https://github.com/logancyang/obsidian-copilot)
++ [Copy Block Link](https://github.com/mgmeyers/obsidian-copy-block-link)
++ [Dataview](https://github.com/blacksmithgu/obsidian-dataview)
++ [Editing Toolbar](https://github.com/cumany/obsidian-editing-toolbar)
++ [Export to Anki](https://github.com/Pseudonium/Obsidian_to_Anki)
++ [File Explorer Note Count](https://github.com/ozntel/file-explorer-note-count)
++ [Floating TOC](https://github.com/PKM-er/obsidian-floating-toc-plugin)
++ [Fuzzy Chinese Pinyin](https://github.com/lazyloong/obsidian-fuzzy-chinese)
++ [Hider](https://github.com/kepano/obsidian-hider)
++ [Homepage](https://github.com/mirnovov/obsidian-homepage)
++ [Iconize](https://github.com/FlorianWoelki/obsidian-iconize)
++ [Influx](https://github.com/jensmtg/influx)
++ [Keyboard Analyzer](https://github.com/cogscides/obsidian-keyboard-analyzer)
++ [Linter](https://github.com/platers/obsidian-linter)
++ [Meta Bind](https://github.com/mProjectsCode/obsidian-meta-bind-plugin)
++ [Metadata Menu](https://github.com/mdelobelle/metadatamenu)
++ [Natural Language Dates](https://github.com/argenos/nldates-obsidian)
++ [Open vault in VS Code](https://github.com/NomarCub/obsidian-open-vscode)
++ [Paste URL into selection](https://github.com/denolehov/obsidian-url-into-selection)
++ [QuickAdd](https://github.com/chhoumann/quickadd)
++ [Recent Files](https://github.com/tgrosinger/recent-files-obsidian)
++ [Self-hosted LiveSync](https://github.com/vrtmrz/obsidian-livesync)
++ [Settings Search](https://github.com/javalent/settings-search)
++ [Sort & Permute lines](https://github.com/Vinzent03/obsidian-sort-and-permute-lines)
++ [Style Settings](https://github.com/mgmeyers/obsidian-style-settings)
++ [Tag Wrangler](https://github.com/pjeby/tag-wrangler)
++ [Tasks](https://github.com/obsidian-tasks-group/obsidian-tasks)
++ [Templater](https://github.com/SilentVoid13/Templater)
