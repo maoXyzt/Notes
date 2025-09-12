@@ -1031,17 +1031,7 @@
         "collapsed": false
       },
       {
-        "text": "3.6 LLM",
-        "items": [
-          {
-            "text": "Prompting Vision Language Models",
-            "link": "/领域知识-DomainKnowledge/LLM/Prompting Vision Language Models.md"
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "text": "3.7 数据结构",
+        "text": "3.6 数据结构",
         "items": [
           {
             "text": "树",

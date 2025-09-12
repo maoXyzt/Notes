@@ -278,11 +278,7 @@
 
 * [状态模式](./领域知识-DomainKnowledge/Design%20Pattern/状态模式.md)
 
-### 3.6 LLM
-
-* [Prompting Vision Language Models](./领域知识-DomainKnowledge/LLM/Prompting%20Vision%20Language%20Models.md)
-
-### 3.7 数据结构
+### 3.6 数据结构
 
 * 树
   * [树](./领域知识-DomainKnowledge/数据结构/树/树.md)
