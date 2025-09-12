@@ -5,7 +5,7 @@ indent_size = 4
 trim_trailing_whitespace = true
 end_of_line = lf
 
-[*.md]
+[*.{md,markdown}]
 indent_size = 2
 insert_final_newline = true
 
@@ -19,9 +19,6 @@ indent_size = 2
 [*.py]
 indent_size = 4
 insert_final_newline = true
-
-[poetry.lock]
-indent_size = 4
 
 [*.{toml,yaml,yml}]
 indent_size = 2
