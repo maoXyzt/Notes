@@ -839,63 +839,7 @@
     "text": "3 - 领域知识-DomainKnowledge",
     "items": [
       {
-        "text": "3.1 个人服务搭建",
-        "items": [
-          {
-            "text": "NAS",
-            "items": [
-              {
-                "text": "NAS",
-                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/"
-              },
-              {
-                "text": "Home Assistant 系统备份到 NAS",
-                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/homeassistant系统备份到NAS.md"
-              },
-              {
-                "text": "Nginx Proxy Manager 服务部署",
-                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/Nginx Proxy Manager部署.md"
-              },
-              {
-                "text": "Wallos: 个人订阅服务管理工具",
-                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/Wallos个人订阅服务管理工具.md"
-              }
-            ],
-            "collapsed": true
-          },
-          {
-            "text": "HomeAssistant",
-            "items": [
-              {
-                "text": "Aqara 设备通过 Matter 接入 HomeAssistant",
-                "link": "/领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/Aqara设备通过Matter接入HomeAssistant.md"
-              },
-              {
-                "text": "使用 Node-RED 配置智能设备的自动化规则",
-                "link": "/领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/使用Node-Red配置规则.md"
-              },
-              {
-                "text": "小爱同学控制 HomeAssistant",
-                "link": "/领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/小爱同学控制HomeAssistant.md"
-              }
-            ],
-            "collapsed": true
-          },
-          {
-            "text": "PVE All-in-One 实践",
-            "items": [
-              {
-                "text": "PVE 系统备份到 NAS(smb)",
-                "link": "/领域知识-DomainKnowledge/个人服务搭建/PVE All-in-One 实践/PVE 系统备份备份到NAS(smb).md"
-              }
-            ],
-            "collapsed": true
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "text": "3.2 图形学",
+        "text": "3.1 图形学",
         "items": [
           {
             "text": "OpenGL 坐标系统",
@@ -931,6 +875,58 @@
               {
                 "text": "第11章 动画系统",
                 "link": "/领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/11-动画系统.md"
+              }
+            ],
+            "collapsed": true
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "3.2 个人服务搭建",
+        "items": [
+          {
+            "text": "HomeAssistant",
+            "items": [
+              {
+                "text": "HomeAssistant",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/"
+              },
+              {
+                "text": "Aqara 设备通过 Matter 接入 HomeAssistant",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/Aqara设备通过Matter接入HomeAssistant.md"
+              },
+              {
+                "text": "Home Assistant 系统备份到 NAS",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/homeassistant系统备份到NAS.md"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "text": "NAS",
+            "items": [
+              {
+                "text": "NAS",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/"
+              },
+              {
+                "text": "Nginx Proxy Manager 服务部署",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/Nginx Proxy Manager部署.md"
+              },
+              {
+                "text": "Wallos: 个人订阅服务管理工具",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/Wallos个人订阅服务管理工具.md"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "text": "PVE All-in-One 实践",
+            "items": [
+              {
+                "text": "PVE 系统备份到 NAS(smb)",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/PVE All-in-One 实践/PVE 系统备份备份到NAS(smb).md"
               }
             ],
             "collapsed": true

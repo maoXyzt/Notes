@@ -1,3 +1,7 @@
+---
+NoteStatus: draft
+---
+
 # 小爱同学控制 HomeAssistant
 
 利用 [巴法云](https://cloud.bemfa.com/) 的 HomeAssistant 插件，可以通过小爱同学控制 HomeAssistant 设备。
