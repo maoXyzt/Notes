@@ -15,6 +15,7 @@ modified: 2025-09-12T17:06:00.000+0800
 
 Sun-panel 是一款轻量简洁的个人导航面板服务。
 
+> [Sun-panel 官方文档](https://doc.sun-panel.top/zh_cn/)
 > [Sun-panel 项目仓库](https://github.com/hslr-s/sun-panel)
 
 > 2025-09-12: 开源最新版本为 1.3.0, 闭源最新版本为 1.7.0
@@ -53,19 +54,17 @@ services:
 
 进入 NAS 的管理界面，打开 Docker，在 "项目" 中点击 "创建"。
 
-1. 项目名称：nginx-proxy-manager
-2. 存放路径(可自选): `共享文件夹/docker/nginx-proxy-manager/`
+1. 项目名称：sun-panel
+2. 存放路径(可自选): `共享文件夹/docker/sun-panel/`
 3. Compose 配置: 将上述 `docker-compose.yml` 的内容导入或复制到此目录下
 4. 启动项目: 点击 “立即部署”
-
-![创建项目](./.assets/nginx-proxy-manager-NAS-创建项目.png)
 
 #### (2) 在 Linux Server 上部署
 
 如果是在服务器上部署，可以通过 SSH 登录到服务器:
 
 1. 进入服务器，选择一个合适的目录存放项目文件，比如 `~/docker`
-2. 创建项目目录 `mkdir nginx-proxy-manager`
+2. 创建项目目录 `mkdir sun-panel`
 3. 在目录中创建 `docker-compose.yml` 文件，在其中写入上述配置内容
 4. 执行以下命令启动服务：
 
@@ -92,6 +91,6 @@ docker-compose up -d
 - 内网地址
 - 分组
 
-点击 “保存” 即可在首页展示新添加的项目。
+点击 “保存” 即可在首页展示已添加的项目。
 
 访问时，可以切换使用公网地址或内网地址访问。

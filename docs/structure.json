@@ -849,6 +849,10 @@
                 "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/"
               },
               {
+                "text": "IPTV-API 电视直播源工具部署",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/IPTV-API电视直播源工具部署.md"
+              },
+              {
                 "text": "Nginx Proxy Manager 服务部署",
                 "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/Nginx Proxy Manager部署.md"
               },
