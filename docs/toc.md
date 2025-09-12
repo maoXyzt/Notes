@@ -227,7 +227,21 @@
 
 ## 3 - 领域知识-DomainKnowledge
 
-### 3.1 图形学
+### 3.1 个人服务搭建
+
+* NAS
+  * [NAS](./领域知识-DomainKnowledge/个人服务搭建/NAS/)
+  * [Nginx Proxy Manager 服务部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/Nginx%20Proxy%20Manager部署.md)
+  * [Sun-panel 个人导航面板部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/Sun-panel个人导航面板部署.md)
+  * [Wallos: 个人订阅服务管理工具](./领域知识-DomainKnowledge/个人服务搭建/NAS/Wallos个人订阅服务管理工具.md)
+* HomeAssistant
+  * [HomeAssistant](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/)
+  * [Aqara 设备通过 Matter 接入 HomeAssistant](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/Aqara设备通过Matter接入HomeAssistant.md)
+  * [Home Assistant 系统备份到 NAS](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/homeassistant系统备份到NAS.md)
+* PVE All-in-One 实践
+  * [PVE 系统备份到 NAS(smb)](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20系统备份备份到NAS%28smb%29.md)
+
+### 3.2 图形学
 
 * [OpenGL 坐标系统](./领域知识-DomainKnowledge/图形学/OpenGL坐标系统.md)
 * [变换的分类](./领域知识-DomainKnowledge/图形学/变换的分类.md)
@@ -238,19 +252,6 @@
   * [第一章 导论](./领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/01-导论.md)
   * [第四章 游戏所需的三维数学](./领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/04-游戏所需的三维数学.md)
   * [第11章 动画系统](./领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/11-动画系统.md)
-
-### 3.2 个人服务搭建
-
-* HomeAssistant
-  * [HomeAssistant](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/)
-  * [Aqara 设备通过 Matter 接入 HomeAssistant](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/Aqara设备通过Matter接入HomeAssistant.md)
-  * [Home Assistant 系统备份到 NAS](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/homeassistant系统备份到NAS.md)
-* NAS
-  * [NAS](./领域知识-DomainKnowledge/个人服务搭建/NAS/)
-  * [Nginx Proxy Manager 服务部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/Nginx%20Proxy%20Manager部署.md)
-  * [Wallos: 个人订阅服务管理工具](./领域知识-DomainKnowledge/个人服务搭建/NAS/Wallos个人订阅服务管理工具.md)
-* PVE All-in-One 实践
-  * [PVE 系统备份到 NAS(smb)](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20系统备份备份到NAS%28smb%29.md)
 
 ### 3.3 Deep Learning
 
