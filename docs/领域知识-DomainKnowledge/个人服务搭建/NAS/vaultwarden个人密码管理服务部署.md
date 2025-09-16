@@ -47,7 +47,7 @@ services:
 
 项目的挂载路径:
 
-- `./vw-data:/data`: 保存的用户数据存放在 `./vw-data` 目录下
+- `./vw-data:/data`: 保存的用户数据存放在 `./vw-data` 目录下。容器内路径为 `/data`，可以通过 `DATA_FOLDER` 环境变量修改。
 
 > ! 由于用户密码数据比较重要，建议对存储目录进行定期备份。
 
@@ -108,7 +108,7 @@ docker-compose up -d
 
 重启服务。此后，管理页面将在 `/admin` 子路径中可用。
 
-在管理页面首次保存设置时，将自动在 DATA_FOLDER 文件夹中生成 `config.json` 文件。该文件中的值优先于环境变量值。
+在管理页面首次保存设置时，将自动在 `DATA_FOLDER` 文件夹中生成 `config.json` 文件。该文件中的值优先于环境变量值。
 
 #### 3.4 配置网址
 
@@ -147,3 +147,69 @@ docker-compose up -d
 在 vaultwarden 的 “工具 -> 导入数据” 中，选择文件格式和文件，点击【导入数据】按钮。
 
 ![vaultwarden 导入数据](./.assets/vaultwarden-import.png)
+
+#### 4.2 数据备份
+
+默认情况下，Vaultwarden 使用 SQLite 运行，那么 SQL 数据库只是 `DATA_FOLDER` 文件夹 (默认是 `/data`) 中的一个文件。
+
+数据目录结构如下:
+
+```text
+data
+├── attachments          # 每一个附件都作为单独的文件存储在此目录下。
+│   └── <uuid>           # （如果未创建过附件，则此 attachments 目录将不存在）
+│       └── <random_id>
+├── config.json          # 存储管理页面配置；仅在之前已启用管理页面的情况下存在。
+├── db.sqlite3           # 主 SQLite 数据库文件。
+├── db.sqlite3-shm       # SQLite 共享内存文件（并非始终存在）。
+├── db.sqlite3-wal       # SQLite 预写日志文件（并非始终存在）。
+├── icon_cache           # 站点图标 (favicon) 缓存在此目录下。
+│   ├── <domain>.png
+│   ├── example.com.png
+│   ├── example.net.png
+│   └── example.org.png
+├── rsa_key.der          # ‘rsa_key.*’ 文件用于签署验证令牌。
+├── rsa_key.pem
+├── rsa_key.pub.der
+└── sends                # 每一个 Send 的附件都作为单独的文件存储在此目录下。
+    └── <uuid>           # （如果未创建过 Send 附件，则此 sends 目录将不存在）
+        └── <random_id>
+```
+
+- `db.sqlite3`: 数据库文件，是备份的重
+- `attachments`: 目录下的文件是附件，是备份的次重点。
+- `sends`: Send 文件的附件，可选。
+- `config.json`: 管理页面生成的配置，建议备份。
+- `rsa_key*`: 用于对当前已登录用户的 JWT（验证令牌）进行签名，建议备份。
+- `icon_cache`: 站点图标 (favicon) 缓存在此目录下，可选。建议不要备份，因为可以重新生成。
+
+##### (1) 备份数据
+
+使用 SQLite 命令行工具可以在线备份数据库，也可以使用 VACUUM 命令备份数据库，压缩备份文件:
+
+```bash
+# 不压缩
+sqlite3 data/db.sqlite3 ".backup '/path/to/backups/db-$(date '+%Y%m%d-%H%M').sqlite3'"
+# VACUUM 命令备份数据库，压缩备份文件
+sqlite3 data/db.sqlite3 "VACUUM INTO '/path/to/backups/db-$(date '+%Y%m%d-%H%M').sqlite3'"
+```
+
+或者使用 docker compose 命令先停止服务，确保数据一致性，然后通过 scp 复制数据到远程服务器:
+
+```bash
+#!/bin/bash
+docker-compose down
+datestamp=$(date +%m-%d-%Y)
+backup_dir="/home/<user>/vw-backups"
+zip -9 -r "${backup_dir}/${datestamp}.zip" /opt/vw-data*
+scp -i ~/.ssh/id_rsa "${backup_dir}/${datestamp}.zip" user@<REMOTE_IP>:~/vw-backups/
+docker-compose up -d
+```
+
+##### (2) 恢复备份数据
+
+确保首先删除任何已存在的 `db.sqlite3-wal` 文件，因为当 SQLite 试图使用陈旧/不匹配的 WAL 文件恢复 `db.sqlite3` 时，有可能导致数据库损坏。
+
+不需要备份或恢复 `db.sqlite3-shm` 文件。
+
+将已备份的数据替换到 `DATA_FOLDER` 文件夹中的相应数据。
