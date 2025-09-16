@@ -99,7 +99,7 @@ SCSI控制器="VirtIO SCSI Single"
 # 点击【完成】按钮
 ```
 
-### 导入文件
+### 3.1 导入文件
 
 创建完成后，登录到 PVE 的终端 (Shell)
 
@@ -112,13 +112,13 @@ qm importdisk 100 immortalwrt-23.05.4-x86-64-generic-ext4-combined-efi.qcow2 loc
 # unused0: successfully imported disk 'local-lvm: vm-100-disk-0'
 ```
 
-### 添加硬盘
+### 3.2 添加硬盘
 
 在管理页面左侧点击 "HA" 虚拟机，右侧选择硬件，会看到一个未使用的磁盘 0，大小为 32G（可根据需要调整）。
 
 双击未使用的磁盘 0，直接点击【添加】。(硬盘如果是 ssd 建议勾选 ssd 仿真。)
 
-### 安装 ImmortalWRT
+### 3.3 安装 ImmortalWRT
 
 "选项-> 引导顺序-> 编辑"，设置启动项，启用 scsi0 并设为第一位。
 
@@ -126,7 +126,7 @@ qm importdisk 100 immortalwrt-23.05.4-x86-64-generic-ext4-combined-efi.qcow2 loc
 
 ## 4. 配置
 
-### 配置网络
+### 4.1 配置网络
 
 系统启动完成后，进入控制台。
 
@@ -146,7 +146,7 @@ service network restart
 
 之后打开浏览器输入 ip 地址就可以访问 ImmortalWrt。默认用户名是 "root"，密码是空。
 
-### 配置网关、DNS
+### 4.2 配置网关、DNS
 
 进入“网络”-“接口”设置界面，编辑“lan”（默认接口）。
 
@@ -165,20 +165,20 @@ service network restart
 
 完成后可以在“网络诊断”中随意 ping 下，ping 通说明网络正常了。
 
-### 关闭 DHCP
+### 4.3 关闭 DHCP
 
 由于我们把 ImmortalWrt 当作旁路由器使用，所以关闭 DHCP 服务。
 
 编辑“网络 -> 接口 -> lan”，在“DHCP-> 常规设置”中勾选“忽略此接口”。
 
-### 关闭 IPv6
+### 4.4 关闭 IPv6
 
 在透明代理中，IPv6 会导致 DNS 污染，因此现阶段我们先关闭 IPv6，将来再处理。
 
 1. 网络-> 接口，修改 lan。在 DHCP 服务器-> IPv6 设置中，禁用所有服务并保存。
 2. 网络-> DHCP/DNS，“过滤器”页面，勾选“过滤 IPv6 AAAA 记录”，保存并应用。
 
-### (可选) 更换皮肤
+### 4.5 (可选) 更换皮肤
 
 进入“系统”-“软件包”设置界面，先点击“更新列表”，然后搜索“argon”。
 
@@ -228,7 +228,7 @@ reboot
 
 首次启动需要下载内核模块，下载完成后会自动重启。
 
-#### 配置 DNS
+#### (1) 配置 DNS
 
 OpenClash 默认提供 7874 端口用于 DNS 查询；启动后会劫持 Dnsmasq，只保留自己作为 Dnsmasq 的上游；
 
@@ -240,7 +240,7 @@ OpenClash 默认提供 7874 端口用于 DNS 查询；启动后会劫持 Dnsmasq
 
 配置完成后，DNS 的查询流程为 客户端 -> Dnsmasq -> OpenClash -> SmartDNS -> 上游 DNS 服务器
 
-#### 配置运行模式
+#### (2) 配置运行模式
 
 参考 OpenClash-常规设置，主要有 Fake-IP 和 Redir-Host 两种模式；经测试，开启了 OpenClash 使用 Redir-Host 会导致部分 UDP 流量超时，如王者荣耀/英雄联盟/吃鸡等使用 UDP 的应用超时或无法连接；使用 Fake-IP TUN 模式则可以正常使用
 
@@ -280,3 +280,7 @@ luci-i18n-passwall-zh-cn
 ### 5.6 (Optional) homeproxy
 
 luci-i18n-homeproxy-zh-cn
+
+## 6. IPv6 支持
+
+(todo)

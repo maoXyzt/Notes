@@ -17,7 +17,6 @@ Sun-panel 是一款轻量简洁的个人导航面板服务。
 
 > [Sun-panel 官方文档](https://doc.sun-panel.top/zh_cn/)
 > [Sun-panel 项目仓库](https://github.com/hslr-s/sun-panel)
-
 > 2025-09-12: 开源最新版本为 1.3.0, 闭源最新版本为 1.7.0
 
 ## 2 - 使用 Docker Compose 部署 Sun-panel
@@ -54,7 +53,7 @@ services:
 
 进入 NAS 的管理界面，打开 Docker，在 "项目" 中点击 "创建"。
 
-1. 项目名称：sun-panel
+1. 项目名称: sun-panel
 2. 存放路径(可自选): `共享文件夹/docker/sun-panel/`
 3. Compose 配置: 将上述 `docker-compose.yml` 的内容导入或复制到此目录下
 4. 启动项目: 点击 “立即部署”
