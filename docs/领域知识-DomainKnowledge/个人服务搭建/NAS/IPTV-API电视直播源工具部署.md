@@ -27,7 +27,7 @@ services:
     image: guovern/iptv-api
     container_name: iptv-api
     ports:
-      - "8755:8000"
+      - "18755:8000"
     volumes:
       - ./config:/iptv-api/config
       - ./output:/iptv-api/output
@@ -38,7 +38,7 @@ services:
 - `./config:/iptv-api/config`: 配置文件存放在 `./config` 目录下
 - `./output:/iptv-api/output`: 输出文件(数据和日志)存放在 `./output` 目录下
 
-项目的端口映射为本地的 8755 端口
+项目的端口映射为本地的 18755 端口
 
 ### 2.2 部署服务
 
@@ -63,3 +63,70 @@ services:
 ```bash
 docker-compose up -d
 ```
+
+### 3 - 服务初始化
+
+下面是不同地址对应的服务:
+
+| 接口              | 描述          |
+|:----------------|:------------|
+| /               | 默认接口        |
+| /m3u            | m3u 格式接口    |
+| /txt            | txt 格式接口    |
+| /ipv4           | ipv4 默认接口   |
+| /ipv6           | ipv6 默认接口   |
+| /ipv4/txt       | ipv4 txt接口  |
+| /ipv6/txt       | ipv6 txt接口  |
+| /ipv4/m3u       | ipv4 m3u接口  |
+| /ipv6/m3u       | ipv6 m3u接口  |
+| /content        | 接口文本内容      |
+| /log/result     | 有效结果的日志     |
+| /log/speed-test | 所有参与测速接口的日志 |
+
+#### 3.1 订阅源配置
+
+详细教程: <https://github.com/Guovin/iptv-api/blob/master/docs/tutorial.md>
+
+服务启动后，打开浏览器访问 `http://<NAS_IP>:18755`，进入 IPTV-API 的登录页面。
+
+#### 3.2 初始化源信息
+
+首次访问可能会提示 "🔍️未找到结果文件，若已启动更新，请耐心等待更新完成..."。等待更新完毕（可在等待容器日志中出现 "Update completed" 字样）。
+
+更新完毕后，再次访问 `http://<NAS_IP>:18755`，即可下载源信息。
+
+### 4 - 使用方法
+
+#### 4.1 接口地址
+
+更新完毕后，再次访问 `http://<NAS_IP>:18755`，即可下载源信息。
+
+#### 4.2 M3u 接口
+
+在浏览器输入 `http://<NAS_IP>:18755/m3u`，下载 m3u 格式的源信息。
+
+大部分 IPTV 项目都可以直接使用 m3u 地址。
+
+比如在 IOS 上下载安装 Fileball 应用，免费版本允许设置一个 IPTV 源，我们选择“添加远程订阅”，然后填入我们自己 NAS 提供的 接口 URL 地址。
+
+- Name: 自定义
+- URL: `http://<NAS_IP>:8755/m3u` 请注意：外网访问需要使用公网IP地址。
+- EPG: 一般为 `http://epg.51zmt.top:8000/e.xml`
+
+配置完成后，点击存储的 IPTV 源，即可观看直播，实现电视自由。
+
+#### 4.3 Txt 接口
+
+影视仓请使用txt接口，不然会出现很多重复并且无用的频道。
+
+在浏览器输入 `http://<NAS_IP>:18755/txt`，下载 txt 格式的源信息。
+
+#### 4.4 接口内容
+
+在浏览器输入 `http://<NAS_IP>:18755/content`，可以获取源信息。
+
+#### 4.5 测速日志
+
+在浏览器输入 `http://<NAS_IP>:18755/log`，可以获取不同频道的测速日志。
+
+更多配置见: <https://github.com/Guovin/iptv-api/blob/master/docs/config.md>
