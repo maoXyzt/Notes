@@ -7,6 +7,8 @@ modified: 2025-09-15T11:54:00.000+0800
 
 本文通过 Docker Compose 方式部署 Vaultwarden 服务到绿联的 NAS 上。同时也提供了通用的部署方法，可供在其他 Linux 服务器上部署时参考。
 
+> 参考教程: [Vaultwarden Wiki 中文版](https://rs.ppgg.in/configuration/enabling-mobile-client-push-notification)
+
 ## 1 - 项目简介
 
 [Bitwarden](https://bitwarden.com/) 是一款开源的密码管理服务，支持多平台客户端和浏览器插件，提供密码生成、存储、自动填充等功能。
@@ -89,7 +91,26 @@ docker-compose up -d
 
 注册完成后，会自动登录。
 
-#### 3.2 配置网址
+#### 3.2 关闭注册
+
+在 vaultwarden 的项目配置中，environment 中添加 `SIGNUPS_ALLOWED` 变量，值为 `false`，并重启服务。
+
+#### 3.3 启用管理页面
+
+启用管理页面前，需要先创建 ADMIN_TOKEN。他的值可以是任意字符串，建议使用随机字符串。
+
+将以下设置添加到 `docker-compose.yml`:
+
+```yaml
+    environment:
+      - ADMIN_TOKEN=some_random_token_as_per_above_explanation
+```
+
+重启服务。此后，管理页面将在 `/admin` 子路径中可用。
+
+在管理页面首次保存设置时，将自动在 DATA_FOLDER 文件夹中生成 `config.json` 文件。该文件中的值优先于环境变量值。
+
+#### 3.4 配置网址
 
 如果有公网 IP，可以结合反向代理、DDNS 等方案，将 vaultwarden 的访问地址映射到公网。
 
@@ -97,9 +118,21 @@ docker-compose up -d
 
 配置完成后，在 vaultwarden 的项目配置中，environment 中添加 `DOMAIN` 变量，值为映射后的服务域名，并重启服务。
 
-#### 3.3 关闭注册
+#### 3.5 启用推送实现自动同步
 
-在 vaultwarden 的项目配置中，environment 中添加 `SIGNUPS_ALLOWED` 变量，值为 `false`，并重启服务。
+从 Vaultwarden 1.29.0 版本开始，您可以激活移动客户端的推送通知，以在移动应用程序、网页扩展程序和网页密码库之间自动同步您的个人密码库，而无需手动同步。
+
+1. 访问 <https://bitwarden.com/host/>，输入您的电子邮箱地址，Data Region 选择 "United States"，然后您将获得一个 INSTALLATION ID 和 KEY。
+2. 将以下设置添加到 `docker-compose.yml`（并确保插入上一步获取到的正确 ID 和 KEY）：
+
+```yaml
+    environment:
+      - PUSH_ENABLED=true
+      - PUSH_INSTALLATION_ID=
+      - PUSH_INSTALLATION_KEY=
+```
+
+重启服务。
 
 ### 4 - 使用方法
 
