@@ -177,15 +177,18 @@ disable 功能可以用于实现 lazy queries。
 
 一个常见的应用场景是，在搜索的场合，当用户输入搜索条件之前，不执行查询。
 
-##### isLoading 状态
+### 2.4 `isLoading` 状态
 
-Lazy Query 的初始状态是 `status === 'pending'` (pending 意味着还没有数据)。但由于还没有满足执行条件，所以也不适合用这个条件控制 UI 上的 "loading" 元素。
+- 当没有网络连接时，Query 可能初始化为 `status === 'pending'`，但 `fetchStatus === 'paused'`
+- Lazy Query 的初始状态可能是 `status === 'pending'` (意味着还没有数据)。但由于还没有满足执行条件，所以 `fetchStatus === 'idle'`
 
-为此，可以用 `isLoading` flag 状态来控制 UI 上的 "loading" 元素。
+因此，`isPending` 不适合用来控制页面的 UI 上的 "loading" 元素。
 
-它是一个派生的属性，等价于 `isPending && isFetching`。仅当 query 正在执行首次请求时，`isLoading` 为 true。
+Query 提供了 `isLoading`，它是一个派生的属性，等价于 `isPending && isFetching`。仅当 query 正在执行首次请求时，`isLoading` 为 true。
 
-### 2.4 Query Invalidation
+用 `isLoading` flag 就可以控制 "loading" 元素在初次获取数据时显示。
+
+### 2.5 Query Invalidation
 
 > [Query Invalidation](https://tanstack.com/query/v5/docs/framework/vue/guides/query-invalidation#query-matching-with-invalidatequeries)
 

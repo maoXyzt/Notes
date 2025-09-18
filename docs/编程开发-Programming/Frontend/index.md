@@ -13,7 +13,7 @@
 
 ## 3 - 实用库
 
-- [TanStack Query](./tanstack-query库使用笔记.md)
+- [TanStack Query 使用笔记](./tanstack-query库使用笔记.md)
 
 ## 4 - 工具
 
