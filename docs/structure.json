@@ -404,6 +404,10 @@
             "link": "/编程开发-Programming/Frontend/openapi-generator 生成前端请求代码.md"
           },
           {
+            "text": "TanStack Query 使用笔记",
+            "link": "/编程开发-Programming/Frontend/tanstack-query库使用笔记.md"
+          },
+          {
             "text": "VitePress 插件",
             "link": "/编程开发-Programming/Frontend/VitePress插件.md"
           },

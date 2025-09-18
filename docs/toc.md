@@ -103,6 +103,7 @@
 * [Husky: 配置前端项目的 git hooks](./编程开发-Programming/Frontend/Husky-配置前端项目的git%20hooks.md)
 * [安装 Node.js](./编程开发-Programming/Frontend/Node.js%20安装.md)
 * [openapi-generator 生成前端请求代码](./编程开发-Programming/Frontend/openapi-generator%20生成前端请求代码.md)
+* [TanStack Query 使用笔记](./编程开发-Programming/Frontend/tanstack-query库使用笔记.md)
 * [VitePress 插件](./编程开发-Programming/Frontend/VitePress插件.md)
 * Vue3
   * [Vue3](./编程开发-Programming/Frontend/Vue3/)
