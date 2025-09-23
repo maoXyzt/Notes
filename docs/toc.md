@@ -232,6 +232,7 @@
 
 * NAS
   * [NAS](./领域知识-DomainKnowledge/个人服务搭建/NAS/)
+  * [ezBookkeeping 自托管记账服务部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/ezbookkeeping自托管记账服务部署.md)
   * [IPTV-API 电视直播源工具部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/IPTV-API电视直播源工具部署.md)
   * [Nginx Proxy Manager 服务部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/Nginx%20Proxy%20Manager部署.md)
   * [Sun-panel 个人导航面板部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/Sun-panel个人导航面板部署.md)
