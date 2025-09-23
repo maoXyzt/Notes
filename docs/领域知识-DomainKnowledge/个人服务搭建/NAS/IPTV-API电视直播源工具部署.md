@@ -110,7 +110,7 @@ docker-compose up -d
 比如在 IOS 上下载安装 Fileball 应用，免费版本允许设置一个 IPTV 源，我们选择“添加远程订阅”，然后填入我们自己 NAS 提供的 接口 URL 地址。
 
 - Name: 自定义
-- URL: `http://<NAS_IP>:8755/m3u` 请注意：外网访问需要使用公网IP地址。
+- URL: `http://<NAS_IP>:18755/m3u` 请注意：外网访问需要使用公网IP地址。
 - EPG: 一般为 `http://epg.51zmt.top:8000/e.xml`
 
 配置完成后，点击存储的 IPTV 源，即可观看直播，实现电视自由。
