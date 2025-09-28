@@ -238,6 +238,7 @@
   * [Sun-panel 个人导航面板部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/Sun-panel个人导航面板部署.md)
   * [Vaultwarden 个人密码管理服务部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/vaultwarden个人密码管理服务部署.md)
   * [Wallos: 个人订阅服务管理工具](./领域知识-DomainKnowledge/个人服务搭建/NAS/Wallos个人订阅服务管理工具.md)
+  * [开启 iSCSI 服务](./领域知识-DomainKnowledge/个人服务搭建/NAS/开启iSCSI服务.md)
 * HomeAssistant
   * [HomeAssistant](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/)
   * [Aqara 设备通过 Matter 接入 HomeAssistant](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/Aqara设备通过Matter接入HomeAssistant.md)

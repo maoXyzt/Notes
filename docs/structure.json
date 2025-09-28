@@ -875,6 +875,10 @@
               {
                 "text": "Wallos: 个人订阅服务管理工具",
                 "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/Wallos个人订阅服务管理工具.md"
+              },
+              {
+                "text": "开启 iSCSI 服务",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/开启iSCSI服务.md"
               }
             ],
             "collapsed": true
