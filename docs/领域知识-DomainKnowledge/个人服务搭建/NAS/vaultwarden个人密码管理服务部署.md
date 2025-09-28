@@ -15,7 +15,7 @@ modified: 2025-09-15T11:54:00.000+0800
 
 Vaultwarden (前称 Bitwarden_RS) 是 Bitwarden 服务端的一款轻量级开源替代品，与官方的 Bitwarden 客户端兼容。它可以自托管，支持 Docker 部署，易于安装和维护。
 
-> [Vaultwarden 项目仓库](https://github.com/dani-garcia/vaultwardeno)
+> [Vaultwarden 项目仓库](https://github.com/dani-garcia/vaultwarden)
 
 vaultwarden 服务必须通过 https 访问，建议结合内网穿透、反向代理和 SSL 证书一起使用。
 
