@@ -244,7 +244,9 @@
   * [Aqara 设备通过 Matter 接入 HomeAssistant](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/Aqara设备通过Matter接入HomeAssistant.md)
   * [Home Assistant 系统备份到 NAS](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/homeassistant系统备份到NAS.md)
 * PVE All-in-One 实践
+  * [PVE All-in-One 实践](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/)
   * [PVE 系统备份到 NAS(smb)](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20系统备份备份到NAS%28smb%29.md)
+  * [PVE 使用 iSCSI 存储](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE使用iSCSI存储.md)
 
 ### 3.2 图形学
 
