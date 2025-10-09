@@ -37,6 +37,7 @@ services:
       - "EBK_SERVER_ENABLE_GZIP=true"
       - "EBK_LOG_MODE=file"
       - "EBK_SECURITY_SECRET_KEY=its_should_be_a_random_string"
+    restart: unless-stopped
 ```
 
 项目的挂载路径:

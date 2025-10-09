@@ -869,6 +869,10 @@
                 "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/Sun-panel个人导航面板部署.md"
               },
               {
+                "text": "Syncthing 文件同步服务部署",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/Syncthing文件同步服务部署.md"
+              },
+              {
                 "text": "Vaultwarden 个人密码管理服务部署",
                 "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/vaultwarden个人密码管理服务部署.md"
               },

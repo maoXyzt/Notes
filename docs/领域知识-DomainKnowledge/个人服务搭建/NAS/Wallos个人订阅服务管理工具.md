@@ -8,7 +8,7 @@
 
 也适用于部署到其他支持运行 Docker 容器的 NAS 或个人服务器。
 
-## 1. 项目简介
+## 1 - 项目简介
 
 > [Wallos 项目仓库](https://github.com/ellite/Wallos)
 
@@ -18,7 +18,7 @@ Wallos 是一款专为管理订阅服务设计的开源工具。
 
 ![Wallos UI](./.assets/wallos-UI.png)
 
-## 2. 用 Docker Compose 部署 Wallos
+## 2 - 用 Docker Compose 部署 Wallos
 
 ### 2.1 项目配置
 
@@ -35,7 +35,7 @@ services:
       TZ: Asia/Shanghai
     ports:
       - "28282:80"
-    restart: always
+    restart: unless-stopped
 ```
 
 其中可配置的变量有：
@@ -45,7 +45,7 @@ services:
 * `TZ: Asia/Shanghai`: 时区设置为 "Asia/Shanghai"
 * `28282:80`: 端口映射为本地的 28282 端口
 
-### 2.2 启动服务
+### 2.2 部署服务
 
 进入 NAS 的管理界面，打开 Docker，在 "项目" 中点击 "创建"。
 
@@ -66,7 +66,7 @@ services:
 docker-compose up -d
 ```
 
-## 3. 初始化
+## 3 - 初始化
 
 部署完成后，可以通过 `http://<NAS-IP>:28282` 访问 Wallos 服务。
 
@@ -88,7 +88,7 @@ docker-compose up -d
 
 添加好订阅后，我们可以在首页查看到订阅的名称、支付频率和价格等基本信息。
 
-## 4. 其他功能
+## 4 - 其他功能
 
 * 订阅费用统计
 * 货币汇率自动转换 (借助 Fixer API)

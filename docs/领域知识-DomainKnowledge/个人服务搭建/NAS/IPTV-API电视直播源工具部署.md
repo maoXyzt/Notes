@@ -31,6 +31,7 @@ services:
     volumes:
       - ./config:/iptv-api/config
       - ./output:/iptv-api/output
+    restart: unless-stopped
 ```
 
 项目的挂载路径:
