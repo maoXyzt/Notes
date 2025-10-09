@@ -33,7 +33,9 @@ services:
     restart: unless-stopped
     environment:
       # DOMAIN: "https://vaultwarden.example.com"
-      SIGNUPS_ALLOWED: "true"
+      SIGNUPS_ALLOWED: true
+      INVITATIONS_ALLOWED: false
+      TZ: 'Asia/Shanghai'
     volumes:
       - './vw-data:/data'
     ports:
@@ -44,6 +46,7 @@ services:
 
 - `DOMAIN`: 当通过反向代理访问时需要设置，指定你的域名，确保 vaultwarden 知道使用 https 来正确处理附件等功能
 - `SIGNUPS_ALLOWED`: 是否允许注册新用户，建议在创建好管理员账号后设置为 `false` 并重启服务，以防止陌生人注册
+- `INVITATIONS_ALLOWED`: 是否允许邀请新用户，设置为 `false` 以防止陌生人邀请新用户
 
 项目的挂载路径:
 

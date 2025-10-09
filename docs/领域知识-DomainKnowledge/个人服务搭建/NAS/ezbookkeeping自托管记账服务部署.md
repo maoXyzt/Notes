@@ -32,7 +32,7 @@ services:
       - ./log:/ezbookkeeping/log
       - ./storage:/ezbookkeeping/storage
     environment:
-      - "EBK_GLOBAL_MODE=production"
+      - "EBK_USER_ENABLE_REGISTER=true"
       - "EBK_SERVER_DOMAIN=ezbookkeeping.yourdomain"
       - "EBK_SERVER_ENABLE_GZIP=true"
       - "EBK_LOG_MODE=file"
@@ -46,9 +46,9 @@ services:
 - `./log:/ezbookkeeping/log`: 日志文件存放在 `./log` 目录下
 - `./storage:/ezbookkeeping/storage`: 默认对象存储使用本地文件系统, 根路径为 `./storage`
 
-默认容器运行用户的 UID=1000, GID=1000, 建议检查确保挂载数据目录的权限。
+默认容器运行用户的 `UID=1000`, `GID=1000`, 建议检查确保挂载数据目录的权限。
 
-项目的端口映射为本地的 18755 端口
+项目的端口映射为本地的 38080 端口
 
 配置选项说明:
 
@@ -58,7 +58,12 @@ services:
 
 > 配置参考: [ezBookkeeping 配置文档](https://ezbookkeeping.mayswind.net/zh_Hans/configuration)。
 
-secret_key 可以用 python 命令生成: `python -c "import secrets; print(secrets.token_hex(32))"`
+- `EBK_USER_ENABLE_REGISTER`: 是否允许注册，可选值为 `true` 或 `false`。默认值为 `true`, 建议在初始化用户账户后设置为 `false`
+- `EBK_SERVER_DOMAIN`: 服务域名。默认为 `localhost`。配置域名解析或反向代理后，建议设置
+- `EBK_SERVER_ENABLE_GZIP`: 是否启用 gzip 压缩，可选值为 `true` 或 `false`。默认值为 `true`
+- `EBK_LOG_MODE`: 日志模式，可选值为 `console` 或 `file`。`console` 模式下，日志会输出到控制台。`file` 模式下，日志会输出到文件。默认值为 `console file`
+- `EBK_SECURITY_SECRET_KEY`: 安全密钥, 强烈建议配置
+  - secret_key 可以用如下 python 命令生成: `python -c "import secrets; print(secrets.token_hex(32))"`
 
 ### 2.2 部署服务
 

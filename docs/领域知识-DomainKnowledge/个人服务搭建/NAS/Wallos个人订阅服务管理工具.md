@@ -27,14 +27,15 @@ Wallos 是一款专为管理订阅服务设计的开源工具。
 ```yaml
 services:
   wallos:
+    container_name: wallos
     image: bellamy/wallos:latest
     volumes:
-      - ./db:/var/www/html/db #数据库文件
-      - ./logos:/var/www/html/images/uploads/logos #logo文件存放位置
+      - ./db:/var/www/html/db   # 数据库文件
+      - ./logos:/var/www/html/images/uploads/logos # logo 文件存放位置
     environment:
       TZ: Asia/Shanghai
     ports:
-      - "28282:80"
+      - "28282:80/tcp"
     restart: unless-stopped
 ```
 
