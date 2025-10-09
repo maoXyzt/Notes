@@ -1,7 +1,3 @@
----
-NoteStatus: draft
----
-
 # 安装 PVE 系统
 
 ## 1. 制作启动盘

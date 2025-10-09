@@ -240,14 +240,19 @@
   * [Vaultwarden 个人密码管理服务部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/vaultwarden个人密码管理服务部署.md)
   * [Wallos: 个人订阅服务管理工具](./领域知识-DomainKnowledge/个人服务搭建/NAS/Wallos个人订阅服务管理工具.md)
   * [开启 iSCSI 服务](./领域知识-DomainKnowledge/个人服务搭建/NAS/开启iSCSI服务.md)
+* PVE All-in-One 实践
+  * [PVE All-in-One 实践](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/)
+  * [PVE 安装 homeassistant](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20homeassistant.md)
+  * [PVE 安装 ikuai](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20ikuai.md)
+  * [PVE 安装 Linux 虚拟机](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20linux%20虚拟机.md)
+  * [PVE 安装 OpenWRT](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20OpenWRT.md)
+  * [PVE 系统备份到 NAS(smb)](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20系统备份备份到NAS%28smb%29.md)
+  * [PVE 使用 iSCSI 存储](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE使用iSCSI存储.md)
+  * [安装 PVE 系统](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/安装%20PVE%20系统.md)
 * HomeAssistant
   * [HomeAssistant](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/)
   * [Aqara 设备通过 Matter 接入 HomeAssistant](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/Aqara设备通过Matter接入HomeAssistant.md)
   * [Home Assistant 系统备份到 NAS](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/homeassistant系统备份到NAS.md)
-* PVE All-in-One 实践
-  * [PVE All-in-One 实践](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/)
-  * [PVE 系统备份到 NAS(smb)](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20系统备份备份到NAS%28smb%29.md)
-  * [PVE 使用 iSCSI 存储](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE使用iSCSI存储.md)
 
 ### 3.2 图形学
 

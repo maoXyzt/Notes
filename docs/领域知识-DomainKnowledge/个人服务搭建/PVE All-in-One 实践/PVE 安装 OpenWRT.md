@@ -1,7 +1,3 @@
----
-NoteStatus: draft
----
-
 # PVE 安装 OpenWRT
 
 基于 PVE 8.3.0
@@ -51,7 +47,7 @@ NoteStatus: draft
 > * 型号: Generic x86/64
 > * 平台: x86/64
 > * 版本: 23.05.4 (r28061-399f9a1db3)
-> * 文件名: immortalwrt-23.05.4-x86-64-generic-ext4-combined-efi.qcow2.gz
+> * 文件名: "immortalwrt-23.05.4-x86-64-generic-ext4-combined-efi.qcow2.gz"
 
 ## 2. 上传
 
@@ -140,7 +136,7 @@ vi /etc/config/network
 
 修改后重启网络服务
 
-```sh
+```bash
 service network restart
 ```
 
@@ -242,9 +238,11 @@ OpenClash 默认提供 7874 端口用于 DNS 查询；启动后会劫持 Dnsmasq
 
 #### (2) 配置运行模式
 
-参考 OpenClash-常规设置，主要有 Fake-IP 和 Redir-Host 两种模式；经测试，开启了 OpenClash 使用 Redir-Host 会导致部分 UDP 流量超时，如王者荣耀/英雄联盟/吃鸡等使用 UDP 的应用超时或无法连接；使用 Fake-IP TUN 模式则可以正常使用
+参考 OpenClash-常规设置，主要有 `Fake-IP` 和 `Redir-Host` 两种模式；
+据其他用户的测试经验，开启了 OpenClash 使用 `Redir-Host` 会导致部分 UDP 流量超时，如王者荣耀/英雄联盟/吃鸡等使用 UDP 的应用超时或无法连接；
+使用 `Fake-IP TUN` 模式则可以正常使用。
 
-**Fake-IP**
+##### `Fake-IP`
 
 当客户端发起请求查询 DNS 时，会先返回一个随机的保留地址，同时查询上游 DNS 服务器，如果需要代理则发送给代理服务器查询，然后再进行连接；客户端立即向 Fake-IP 发起的请求会被快速响应，节约了一次本地向 DNS 服务器查询的时间
 
@@ -252,7 +250,7 @@ OpenClash 默认提供 7874 端口用于 DNS 查询；启动后会劫持 Dnsmasq
 
 这个模式会导致客户端获取到的 DNS 查询到的结果与实际不一致，nslookup/dig 等的使用会受影响
 
-**Redir-Host**
+##### `Redir-Host`
 
 当客户端发起请求时，会并发查询 DNS，等待返回结果后再尝试进行规则判定和连接，如果需要代理，会使用 fallback 的 DNS 服务器再次查询；与不使用 OpenClash 相比，多了过滤，fallback 查询的时间，响应速度可能会变慢
 

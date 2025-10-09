@@ -1,7 +1,3 @@
----
-NoteStatus: draft
----
-
 # PVE 安装 ikuai
 
 基于 PVE 8.3.0
@@ -104,7 +100,7 @@ SCSI控制器="VirtIO SCSI Single"
 
 * 选择 1 "设置网卡绑定", 输入如下命令
 
-```
+```bash
 set wan1 eth1
 ```
 
