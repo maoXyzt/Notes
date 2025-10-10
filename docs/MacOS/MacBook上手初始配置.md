@@ -6,17 +6,19 @@ NoteStatus: draft
 
 系统版本: macOS Sequoia (15.5)
 
-## 触控
+## 1 - 系统设置
 
-设置 - 辅助功能 - 指针控制 - 触控板选项...:
+### 1.1 - 触控板
+
+设置 -> 辅助功能 -> 指针控制 -> 触控板选项...:
 
 * 开启“使用触控板进行拖移”，“拖移样式”选择“三指拖移”
 
-设置 - 触控板 - 滚动缩放
+设置 -> 触控板 -> 滚动缩放
 
 * 关闭“自然滚动”
 
-设置 - 触控板 - 更多手势
+设置 -> 触控板 -> 更多手势
 
 * 调度中心: 选择“四指向上轻扫”
 * App Exposé: 选择“四指向下轻扫”
@@ -27,7 +29,14 @@ NoteStatus: draft
 * 在 “滚动” 中，勾选“启用 Scroll Reverser”
 * 在 “软件” 中，勾选“登录时启动”
 
-## 键盘
+设置 -> 桌面与程序坞 -> 触发角
+
+* 左上角: 调度中心 (快捷键: `CTRL+↑`)
+* 左下角: 应用程序窗口 (快捷键: `CTRL+↓`)
+* 右上角: 通知中心
+* 右下角: 启动台
+
+### 1.2 - 键盘
 
 设置 - 键盘
 
@@ -39,11 +48,11 @@ NoteStatus: draft
 
 关闭“长按按键出现变音符号”功能: 终端运行 `defaults write -g ApplePressAndHoldEnabled -bool false`
 
-## 字体
+### 1.3 - 字体
 
 Maple Mono: 下载 NF CN hinted 版本（字体名: Maple Mono NF CN）
 
-## 软件
+## 2 - 软件
 
 免费或可以不购买:
 
@@ -52,7 +61,7 @@ Maple Mono: 下载 NF CN hinted 版本（字体名: Maple Mono NF CN）
 * Edge 浏览器
 
 * BitWarden: 密码管理
-* Tencent Lemon: 清理垃圾文件
+* Tencent Lemon: 清理垃圾文件, 卸载软件
 * Rime 输入法
 
 * Snipaste: 截图工具 (v2 版本免费)
@@ -81,6 +90,6 @@ App Store 软件:
 * Magnet: 窗口管理
 * One Switch: 快捷切换功能
 
-## 命令行工具
+## 3 - 命令行工具和终端配置
 
 参考: [Linux开发环境setup](../Linux/Linux开发环境setup.md)
