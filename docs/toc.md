@@ -105,6 +105,7 @@
 * [openapi-generator 生成前端请求代码](./编程开发-Programming/Frontend/openapi-generator%20生成前端请求代码.md)
 * [TanStack Query 使用笔记](./编程开发-Programming/Frontend/tanstack-query库使用笔记.md)
 * [VitePress 插件](./编程开发-Programming/Frontend/VitePress插件.md)
+* [自动生成 CHANGELOG.md](./编程开发-Programming/Frontend/自动生成changelog.md)
 * Vue3
   * [Vue3](./编程开发-Programming/Frontend/Vue3/)
   * [Vue3 PostCSS 配置](./编程开发-Programming/Frontend/Vue3/Vue3%20PostCSS配置.md)

@@ -412,6 +412,10 @@
             "link": "/编程开发-Programming/Frontend/VitePress插件.md"
           },
           {
+            "text": "自动生成 CHANGELOG.md",
+            "link": "/编程开发-Programming/Frontend/自动生成changelog.md"
+          },
+          {
             "text": "Vue3",
             "items": [
               {
