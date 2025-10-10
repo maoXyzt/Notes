@@ -839,6 +839,16 @@
           }
         ],
         "collapsed": false
+      },
+      {
+        "text": "2.5 ArchLinux",
+        "items": [
+          {
+            "text": "ArchLinux 简单安装教程",
+            "link": "/Linux/ArchLinux/archlinux简单安装教程.md"
+          }
+        ],
+        "collapsed": false
       }
     ],
     "collapsed": false

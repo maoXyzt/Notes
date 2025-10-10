@@ -227,6 +227,10 @@
 * [nginx 配置常见问题](./Linux/nginx/nginx%20配置常见问题.md)
 * [nginx 隐藏响应 headers 中的版本信息](./Linux/nginx/nginx%20隐藏响应头的版本信息.md)
 
+### 2.5 ArchLinux
+
+* [ArchLinux 简单安装教程](./Linux/ArchLinux/archlinux简单安装教程.md)
+
 ## 3 - 领域知识-DomainKnowledge
 
 ### 3.1 个人服务搭建

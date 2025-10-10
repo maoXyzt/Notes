@@ -80,3 +80,5 @@ scp archlinux-2025.10.01-x86_64.iso root@<PVE_IP>:/tmp
 完成后，点击 "Start/启动" 按钮，启动虚拟机。
 
 按照 Linux 安装镜像的引导，完成 Linux 系统的安装。
+
+可以参考 [archlinux简单安装教程](../../../Linux/ArchLinux/archlinux简单安装教程.md) 完成 Linux 系统的安装。
