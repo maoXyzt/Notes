@@ -123,7 +123,7 @@ mkfs.fat -F 32 /dev/sda1
 # /dev/swap_partition 格式化为 swap 分区
 mkswap /dev/sda2
 # /dev/root_partition 格式化为 btrfs 分区 (根据需求更改类型)
-mkfs.btrfs /dev/sda3
+mkfs.btrfs /dev/sda3  # 如果分区非空，需要加上 -f 参数
 ```
 
 ### 3.5 挂载分区
@@ -205,18 +205,34 @@ grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
-### 3.12 修改 root 密码
-
-```bash
-passwd
-# 输入新密码
-```
-
 ### 3.12 其他 (可选)
 
 ```bash
 # 新系统没有文本编辑器, 需要安装一个
 pacman -S vim
+# 设置主机名为 arch
+echo arch > /etc/hostname
+# 修改 root 密码
+passwd
+# > 输入新密码
+```
+
+安装网络管理器
+
+```bash
+pacman -S networkmanager
+cat >> /etc/hosts << EOF
+127.0.0.1 localhost
+::1 localhost
+127.0.1.1 arch
+EOF
+```
+
+SSH 服务
+
+```bash
+pacman -S openssh
+echo PermitRootLogin yes >> /etc/ssh/sshd_config
 ```
 
 ## 4 - 重新启动计算机
@@ -226,4 +242,70 @@ pacman -S vim
 exit
 # 重启计算机
 reboot
+```
+
+重启后，输入账号密码，进入系统。
+
+执行以下命令恢复网络以及开启 ssh 服务:
+
+```bash
+systemctl enable NetworkManager --now
+systemctl enable sshd --now
+```
+
+## 5 - 桌面环境配置
+
+桌面环境可选 KDE Plasma、GNOME、Xfce 等。此处我选择 GNOME。
+
+```bash
+pacman -S gnome gnome-extra   # 安装 GNOME 桌面环境
+systemctl enable gdm
+pacman -S gnome-software-packagekit-plugin  # 安装 GNOME 软件中心
+```
+
+再安装思源字体，防止中文乱码:
+
+```bash
+pacman -S adobe-source-han-serif-cn-fonts
+```
+
+由于桌面不允许 root 用户登录，需要创建一个普通用户:
+
+```bash
+useradd -m localuser -G wheel
+sed -i 's/# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL) ALL/' /etc/sudoers
+passwd localuser
+# > 输入新密码
+```
+
+之后重启电脑，即可进入桌面环境。
+
+## 6 - 安装常用软件
+
+中文输入法
+
+```bash
+pacman -S fcitx-im fcitx-configtool  # 安装输入法框架和配置程序
+pacman -S fcitx-libpinyin  # 安装拼音输入法
+# 设置环境变量
+cat >> /etc/environment << EOF
+GTK_IM_MODULE=fcitx
+QT_IM_MODULE=fcitx
+XMODIFIERS=@im=fcitx
+EOF
+```
+
+## 7 - 基本命令
+
+同步并更新系统
+
+```bash
+pacman -Syu
+```
+
+清理软件包缓存
+
+```bash
+# 删除旧版本软件包 (位于 /var/cache/pacman/pkg 目录下), 保留当前版本
+pacman -Sc
 ```
