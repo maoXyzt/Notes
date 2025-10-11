@@ -139,6 +139,9 @@ mount --mkdir /dev/sda1 /mnt/boot
 swapon /dev/sda2
 ```
 
+> 如果挂载错了，可以用如下命令取消挂载:
+> `umount /mnt/boot; umount /mnt; swapoff /dev/sda2`
+
 可以用 `lsblk -f` 命令查看当前的挂载情况
 
 ### 3.6 选择软件包的镜像站
