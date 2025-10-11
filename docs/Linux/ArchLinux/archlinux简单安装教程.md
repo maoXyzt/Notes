@@ -205,6 +205,20 @@ grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
+### 3.12 修改 root 密码
+
+```bash
+passwd
+# 输入新密码
+```
+
+### 3.12 其他 (可选)
+
+```bash
+# 新系统没有文本编辑器, 需要安装一个
+pacman -S vim
+```
+
 ## 4 - 重新启动计算机
 
 ```bash
