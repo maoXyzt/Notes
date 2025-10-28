@@ -8,7 +8,7 @@
  *
  * Each colors have exact same color scale system with 3 levels of solid
  * colors with different brightness, and 1 soft color.
- * 
+ *
  * - `XXX-1`: The most solid color used mainly for colored text. It must
  *   satisfy the contrast ratio against when used on top of `XXX-soft`.
  *
@@ -94,16 +94,24 @@
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(
     120deg,
-    #bd34fe 30%,
-    #41d1ff
+    #667eea 0%,
+    #764ba2 50%,
+    #f093fb 100%
   );
 
-  --vp-home-hero-image-background-image: linear-gradient(
-    -45deg,
-    #bd34fe 50%,
-    #47caff 50%
-  );
-  --vp-home-hero-image-filter: blur(44px);
+  --vp-home-hero-image-background-image:
+    radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.3) 0%, transparent 50%),
+    linear-gradient(
+      135deg,
+      #667eea 0%,
+      #764ba2 25%,
+      #f093fb 50%,
+      #f5576c 75%,
+      #4facfe 100%
+    );
+  --vp-home-hero-image-filter: blur(40px);
 }
 
 @media (min-width: 640px) {
@@ -137,3 +145,310 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+/**
+ * Custom Animations and Effects
+ * -------------------------------------------------------------------------- */
+
+/* 平滑滚动 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 页面加载动画 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* 主页动画效果 */
+.VPHero .name {
+  animation: fadeInUp 1s ease-out;
+}
+
+.VPHero .text {
+  animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+.VPHero .tagline {
+  animation: fadeInUp 1s ease-out 0.4s both;
+}
+
+.VPHero .actions {
+  animation: fadeInUp 1s ease-out 0.6s both;
+}
+
+.VPHero .image {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Features 卡片动画 */
+.VPFeature {
+  transition: all 0.3s ease;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.VPFeature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.VPFeature .icon {
+  transition: all 0.3s ease;
+}
+
+.VPFeature:hover .icon {
+  animation: pulse 1s ease-in-out;
+}
+
+/* 导航栏动画 */
+.VPNav {
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.VPNavBar .link {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.VPNavBar .link:hover {
+  color: var(--vp-c-brand-1);
+}
+
+.VPNavBar .link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--vp-c-brand-1);
+  transition: width 0.3s ease;
+}
+
+.VPNavBar .link:hover::after {
+  width: 100%;
+}
+
+/* 侧边栏动画 */
+.VPSidebar .link {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.VPSidebar .link:hover {
+  background: var(--vp-c-brand-soft);
+  transform: translateX(5px);
+}
+
+.VPSidebar .link.active {
+  background: var(--vp-c-brand-soft);
+  border-left: 3px solid var(--vp-c-brand-1);
+}
+
+/* 按钮动画 */
+.VPButton {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.VPButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.VPButton:hover::before {
+  left: 100%;
+}
+
+.VPButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 代码块动画 */
+.vp-doc div[class*='language-'] {
+  transition: all 0.3s ease;
+}
+
+.vp-doc div[class*='language-']:hover {
+  transform: scale(1.02);
+}
+
+/* 搜索框动画 */
+.DocSearch-Button {
+  transition: all 0.3s ease;
+}
+
+.DocSearch-Button:hover {
+  transform: scale(1.05);
+}
+
+/* 自定义容器动画 */
+.custom-block {
+  transition: all 0.3s ease;
+}
+
+.custom-block:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 响应式动画优化 */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* 深色模式优化 */
+.dark {
+  --vp-home-hero-name-background: -webkit-linear-gradient(
+    120deg,
+    #8b5cf6 0%,
+    #06b6d4 50%,
+    #10b981 100%
+  );
+
+  --vp-home-hero-image-background-image:
+    radial-gradient(circle at 20% 80%, rgba(139, 92, 246, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(6, 182, 212, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(16, 185, 129, 0.2) 0%, transparent 50%),
+    linear-gradient(
+      135deg,
+      #1e1b4b 0%,
+      #312e81 25%,
+      #1e40af 50%,
+      #0369a1 75%,
+      #0c4a6e 100%
+    );
+}
+
+/* 滚动条美化 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--vp-c-bg-soft);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--vp-c-brand-3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-c-brand-2);
+}
+
+/* 选择文本样式 */
+::selection {
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+}
+
+/* 焦点样式 */
+:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 2px;
+}
+
+/* 加载状态 */
+.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* 工具提示 */
+.tooltip {
+  position: relative;
+  cursor: help;
+}
+
+.tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--vp-c-text-1);
+  color: var(--vp-c-bg);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.tooltip:hover::after {
+  opacity: 1;
+}
