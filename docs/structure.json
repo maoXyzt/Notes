@@ -879,6 +879,10 @@
                 "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/Nginx Proxy Manager部署.md"
               },
               {
+                "text": "RustFS 部署",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/RustFS部署.md"
+              },
+              {
                 "text": "Sun-panel 个人导航面板部署",
                 "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/Sun-panel个人导航面板部署.md"
               },
