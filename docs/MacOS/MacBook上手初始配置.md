@@ -89,6 +89,7 @@ App Store 软件:
 * iStat Menus: 系统监控
 * Magnet: 窗口管理
 * One Switch: 快捷切换功能
+* BetterDisplay: 显示器配置管理。外接显示器时可自定义显示器分辨率，实现 HiDPI 效果。
 
 ## 3 - 命令行工具和终端配置
 
