@@ -9,6 +9,8 @@ Kavita 是一个自托管的媒体服务器，主要用于管理和阅读漫画�
 
 本文通过 Docker Compose 方式部署 Kavita 服务到绿联的 NAS 上。同时也提供了通用的部署方法，可供在其他 Linux 服务器上部署时参考。
 
+> 参考文档: [在绿联NAS上搭建Kavita漫画管理工具](https://support.ugnas.com/knowledgecenter/#/detail/eyJpZCI6MTY3MywidHlwZSI6InRhZzAwMiIsImxhbmd1YWdlIjoiemgtQ04iLCJjbGllbnRUeXBlIjoiUEMiLCJhcnRpY2xlSW5mb0lkIjo1NDcsImFydGljbGVWZXJzaW9uIjoiMS4wIiwicGF0aENvZGUiOiIifQ==)
+
 ## 1 - 项目简介
 
 Kavita 是一款开源的个人数字图书馆管理软件，支持多种电子书和漫画格式。
