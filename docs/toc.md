@@ -171,7 +171,80 @@
 
 * [代码整洁之道 第 2 章 有意义的命名](./编程开发-Programming/代码质量-CodeQuality/代码整洁之道-2-有意义的命名.md)
 
-## 2 - Linux
+## 2 - 领域知识-DomainKnowledge
+
+### 2.1 个人服务搭建
+
+* NAS
+  * [NAS](./领域知识-DomainKnowledge/个人服务搭建/NAS/)
+  * [ezBookkeeping 自托管记账服务部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/ezbookkeeping自托管记账服务部署.md)
+  * [IPTV-API 电视直播源工具部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/IPTV-API电视直播源工具部署.md)
+  * [Kavita 部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/kavita部署.md)
+  * [Nginx Proxy Manager 服务部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/Nginx%20Proxy%20Manager部署.md)
+  * [RustFS 部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/RustFS部署.md)
+  * [Sun-panel 个人导航面板部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/Sun-panel个人导航面板部署.md)
+  * [Syncthing 文件同步服务部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/Syncthing文件同步服务部署.md)
+  * [Vaultwarden 个人密码管理服务部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/vaultwarden个人密码管理服务部署.md)
+  * [Wallos: 个人订阅服务管理工具](./领域知识-DomainKnowledge/个人服务搭建/NAS/Wallos个人订阅服务管理工具.md)
+  * [开启 iSCSI 服务](./领域知识-DomainKnowledge/个人服务搭建/NAS/开启iSCSI服务.md)
+* PVE All-in-One 实践
+  * [PVE All-in-One 实践](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/)
+  * [PVE 安装 homeassistant](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20homeassistant.md)
+  * [PVE 安装 ikuai](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20ikuai.md)
+  * [PVE 安装 Linux 虚拟机](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20linux%20虚拟机.md)
+  * [PVE 安装 OpenWRT](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20OpenWRT.md)
+  * [PVE 系统备份到 NAS(smb)](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20系统备份备份到NAS%28smb%29.md)
+  * [PVE 使用 iSCSI 存储](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE使用iSCSI存储.md)
+  * [安装 PVE 系统](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/安装%20PVE%20系统.md)
+* HomeAssistant
+  * [HomeAssistant](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/)
+  * [Aqara 设备通过 Matter 接入 HomeAssistant](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/Aqara设备通过Matter接入HomeAssistant.md)
+  * [Home Assistant 系统备份到 NAS](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/homeassistant系统备份到NAS.md)
+
+### 2.2 图形学
+
+* [OpenGL 坐标系统](./领域知识-DomainKnowledge/图形学/OpenGL坐标系统.md)
+* [变换的分类](./领域知识-DomainKnowledge/图形学/变换的分类.md)
+* [骨骼动画原理](./领域知识-DomainKnowledge/图形学/骨骼动画原理.md)
+* [旋转的 4 种表示方式](./领域知识-DomainKnowledge/图形学/旋转的不同表示方式.md)
+* [常用软件的坐标系和旋转 Conventions](./领域知识-DomainKnowledge/图形学/坐标系%26旋转%20Conventions.md)
+* 游戏引擎技术及架构
+  * [第一章 导论](./领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/01-导论.md)
+  * [第四章 游戏所需的三维数学](./领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/04-游戏所需的三维数学.md)
+  * [第11章 动画系统](./领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/11-动画系统.md)
+
+### 2.3 Deep Learning
+
+* [GAN模型的评价指标](./领域知识-DomainKnowledge/Deep%20Learning/如何评价GAN网络的好坏%EF%BC%9AIS和FID.md)
+* 动手学深度学习-pytorch版
+  * [1. 深度学习简介](./领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/01-深度学习简介.md)
+  * [3. 深度学习基础](./领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/03-深度学习基础.md)
+  * [4. 深度学习计算](./领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/04-深度学习计算.md)
+  * [5. 卷积神经网络](./领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/05-卷积神经网络.md)
+  * [6. 循环神经网络](./领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/06-循环神经网络.md)
+
+### 2.4 Applied Social Network Analysis in Python
+
+* [Course Syllabus](./领域知识-DomainKnowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Syllabus.md)
+* Module 1 - Why Study Networks and Basics on NetworkX
+  * [01. Networks: Definition and Why We Study Them](./领域知识-DomainKnowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%201%20-%20Why%20Study%20Networks%20and%20Basics%20on%20NetworkX/Why%20Study%20Networks%20and%20Basics%20on%20NetworkX.md)
+* Module 2 - Network Connectivity
+  * [01. Clustering Coefficient](./领域知识-DomainKnowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%202%20-%20Network%20Connectivity/Network%20Connectivity.md)
+* Module 3 - Influence Measures and Network Centralization
+  * [01. Degree and Closeness Centrality](./领域知识-DomainKnowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%203%20-%20Influence%20Measures%20and%20Network%20Centralization/Influence%20Measures%20and%20Network%20Centralization.md)
+* Module 4 - Network Evolution
+  * [01. Preferential Attachment Model](./领域知识-DomainKnowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%204%20-%20Network%20Evolution/Network%20Evolution.md)
+
+### 2.5 Design Pattern
+
+* [状态模式](./领域知识-DomainKnowledge/Design%20Pattern/状态模式.md)
+
+### 2.6 数据结构
+
+* 树
+  * [树](./领域知识-DomainKnowledge/数据结构/树/树.md)
+
+## 3 - Linux
 
 * [awscli 使用指南](./Linux/awscli使用指南.md)
 * [Bash 脚本中获得脚本文件当前路径](./Linux/Bash脚本中获得脚本文件当前路径.md)
@@ -196,7 +269,7 @@
 * [运行命令时，指定 GCC 版本](./Linux/指定命令的gcc版本.md)
 * [使用 OpenSSL 生成自签名 SSL 证书](./Linux/自签名SSL证书-openssl.md)
 
-### 2.1 SSH
+### 3.1 SSH
 
 * [SSH](./Linux/SSH/)
 * [使用 `sshfs` 命令简易挂载远程目录](./Linux/SSH/sshfs命令简易挂载远程目录.md)
@@ -205,7 +278,7 @@
 * [创建 SSH 密钥对并使用密钥登录](./Linux/SSH/创建SSH密钥对并使用密钥登录.md)
 * [使用 autossh 自动重连 SSH](./Linux/SSH/使用autossh自动重连ssh.md)
 
-### 2.2 CentOS
+### 3.2 CentOS
 
 * [CentOS 7 lvm分区扩容](./Linux/CentOS/CentOS%207%20lvm分区扩容.md)
 * [CentOS 7 安装/升级 Git 版本](./Linux/CentOS/CentOS%207%20安装升级Git版本.md)
@@ -213,7 +286,7 @@
 * [CentOS 7 防火墙开放端口](./Linux/CentOS/CentOS%207%20开放端口.md)
 * [CentOS 配置国内源](./Linux/CentOS/CentOS%20配置国内源.md)
 
-### 2.3 Vim
+### 3.3 Vim
 
 * [Vim](./Linux/Vim/)
 * [Neovim 安装与配置](./Linux/Vim/Neovim安装与配置.md)
@@ -221,87 +294,15 @@
 * [VIM 的 FileType Plugins 配置](./Linux/Vim/vim的filetype%20plugins配置.md)
 * [Vim 配置](./Linux/Vim/vim配置.md)
 
-### 2.4 nginx
+### 3.4 nginx
 
 * [nginx 配置示例](./Linux/nginx/nginx%20配置%20examples.md)
 * [nginx 配置常见问题](./Linux/nginx/nginx%20配置常见问题.md)
 * [nginx 隐藏响应 headers 中的版本信息](./Linux/nginx/nginx%20隐藏响应头的版本信息.md)
 
-### 2.5 ArchLinux
+### 3.5 ArchLinux
 
 * [ArchLinux 简单安装教程](./Linux/ArchLinux/archlinux简单安装教程.md)
-
-## 3 - 领域知识-DomainKnowledge
-
-### 3.1 个人服务搭建
-
-* NAS
-  * [NAS](./领域知识-DomainKnowledge/个人服务搭建/NAS/)
-  * [ezBookkeeping 自托管记账服务部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/ezbookkeeping自托管记账服务部署.md)
-  * [IPTV-API 电视直播源工具部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/IPTV-API电视直播源工具部署.md)
-  * [Nginx Proxy Manager 服务部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/Nginx%20Proxy%20Manager部署.md)
-  * [RustFS 部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/RustFS部署.md)
-  * [Sun-panel 个人导航面板部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/Sun-panel个人导航面板部署.md)
-  * [Syncthing 文件同步服务部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/Syncthing文件同步服务部署.md)
-  * [Vaultwarden 个人密码管理服务部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/vaultwarden个人密码管理服务部署.md)
-  * [Wallos: 个人订阅服务管理工具](./领域知识-DomainKnowledge/个人服务搭建/NAS/Wallos个人订阅服务管理工具.md)
-  * [开启 iSCSI 服务](./领域知识-DomainKnowledge/个人服务搭建/NAS/开启iSCSI服务.md)
-* PVE All-in-One 实践
-  * [PVE All-in-One 实践](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/)
-  * [PVE 安装 homeassistant](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20homeassistant.md)
-  * [PVE 安装 ikuai](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20ikuai.md)
-  * [PVE 安装 Linux 虚拟机](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20linux%20虚拟机.md)
-  * [PVE 安装 OpenWRT](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20OpenWRT.md)
-  * [PVE 系统备份到 NAS(smb)](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20系统备份备份到NAS%28smb%29.md)
-  * [PVE 使用 iSCSI 存储](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE使用iSCSI存储.md)
-  * [安装 PVE 系统](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/安装%20PVE%20系统.md)
-* HomeAssistant
-  * [HomeAssistant](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/)
-  * [Aqara 设备通过 Matter 接入 HomeAssistant](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/Aqara设备通过Matter接入HomeAssistant.md)
-  * [Home Assistant 系统备份到 NAS](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/homeassistant系统备份到NAS.md)
-
-### 3.2 图形学
-
-* [OpenGL 坐标系统](./领域知识-DomainKnowledge/图形学/OpenGL坐标系统.md)
-* [变换的分类](./领域知识-DomainKnowledge/图形学/变换的分类.md)
-* [骨骼动画原理](./领域知识-DomainKnowledge/图形学/骨骼动画原理.md)
-* [旋转的 4 种表示方式](./领域知识-DomainKnowledge/图形学/旋转的不同表示方式.md)
-* [常用软件的坐标系和旋转 Conventions](./领域知识-DomainKnowledge/图形学/坐标系%26旋转%20Conventions.md)
-* 游戏引擎技术及架构
-  * [第一章 导论](./领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/01-导论.md)
-  * [第四章 游戏所需的三维数学](./领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/04-游戏所需的三维数学.md)
-  * [第11章 动画系统](./领域知识-DomainKnowledge/图形学/游戏引擎技术及架构/11-动画系统.md)
-
-### 3.3 Deep Learning
-
-* [GAN模型的评价指标](./领域知识-DomainKnowledge/Deep%20Learning/如何评价GAN网络的好坏%EF%BC%9AIS和FID.md)
-* 动手学深度学习-pytorch版
-  * [1. 深度学习简介](./领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/01-深度学习简介.md)
-  * [3. 深度学习基础](./领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/03-深度学习基础.md)
-  * [4. 深度学习计算](./领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/04-深度学习计算.md)
-  * [5. 卷积神经网络](./领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/05-卷积神经网络.md)
-  * [6. 循环神经网络](./领域知识-DomainKnowledge/Deep%20Learning/动手学深度学习-pytorch版/06-循环神经网络.md)
-
-### 3.4 Applied Social Network Analysis in Python
-
-* [Course Syllabus](./领域知识-DomainKnowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Syllabus.md)
-* Module 1 - Why Study Networks and Basics on NetworkX
-  * [01. Networks: Definition and Why We Study Them](./领域知识-DomainKnowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%201%20-%20Why%20Study%20Networks%20and%20Basics%20on%20NetworkX/Why%20Study%20Networks%20and%20Basics%20on%20NetworkX.md)
-* Module 2 - Network Connectivity
-  * [01. Clustering Coefficient](./领域知识-DomainKnowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%202%20-%20Network%20Connectivity/Network%20Connectivity.md)
-* Module 3 - Influence Measures and Network Centralization
-  * [01. Degree and Closeness Centrality](./领域知识-DomainKnowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%203%20-%20Influence%20Measures%20and%20Network%20Centralization/Influence%20Measures%20and%20Network%20Centralization.md)
-* Module 4 - Network Evolution
-  * [01. Preferential Attachment Model](./领域知识-DomainKnowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%204%20-%20Network%20Evolution/Network%20Evolution.md)
-
-### 3.5 Design Pattern
-
-* [状态模式](./领域知识-DomainKnowledge/Design%20Pattern/状态模式.md)
-
-### 3.6 数据结构
-
-* 树
-  * [树](./领域知识-DomainKnowledge/数据结构/树/树.md)
 
 ## 4 - 软件工具应用-Applications
 

@@ -650,214 +650,10 @@
     "collapsed": false
   },
   {
-    "text": "2 - Linux",
+    "text": "2 - 领域知识-DomainKnowledge",
     "items": [
       {
-        "text": "awscli 使用指南",
-        "link": "/Linux/awscli使用指南.md"
-      },
-      {
-        "text": "Bash 脚本中获得脚本文件当前路径",
-        "link": "/Linux/Bash脚本中获得脚本文件当前路径.md"
-      },
-      {
-        "text": "convmv 命令解决 GBK 中文文件名乱码",
-        "link": "/Linux/convmv命令解决GBK中文文件名乱码.md"
-      },
-      {
-        "text": "Linux Shell 输出重定向并后台执行",
-        "link": "/Linux/Linux Shell输出重定向并后台执行.md"
-      },
-      {
-        "text": "Linux 实时内存监控: top, vmstat, free",
-        "link": "/Linux/Linux 实时内存监控-top,vmstat,free.md"
-      },
-      {
-        "text": "Linux 环境变量设置：env, set, export",
-        "link": "/Linux/Linux环境变量设置-env, set, export.md"
-      },
-      {
-        "text": "Linux 开发环境 setup",
-        "link": "/Linux/Linux开发环境setup.md"
-      },
-      {
-        "text": "Linux 快速传输大文件: nc 命令",
-        "link": "/Linux/Linux快速传输大文件-nc.md"
-      },
-      {
-        "text": "Linux 批量杀死进程",
-        "link": "/Linux/Linux批量杀死进程.md"
-      },
-      {
-        "text": "Linux 使终端支持 UTF-8 中文字符",
-        "link": "/Linux/Linux使终端支持utf8中文字符.md"
-      },
-      {
-        "text": "Linux 搜索所有文件中的内容: grep, riggrep",
-        "link": "/Linux/Linux搜索所有文件中的内容-grep,riggrep.md"
-      },
-      {
-        "text": "Linux 系统访问 NAS 的 SMB 文件服务",
-        "link": "/Linux/Linux系统访问NAS的文件服务(samba).md"
-      },
-      {
-        "text": "Linux 下多线程下载工具 - Axel",
-        "link": "/Linux/Linux下多线程下载工具-Axel.md"
-      },
-      {
-        "text": "Linux 新建用户，赋予 sudo 权限，并允许 ssh 连接",
-        "link": "/Linux/Linux新建用户,sudo权限,ssh连接权限.md"
-      },
-      {
-        "text": "Linux 修改默认 shell",
-        "link": "/Linux/Linux修改默认shell.md"
-      },
-      {
-        "text": "Linux/MacOS 配置同步: Mackup",
-        "link": "/Linux/Mackup 同步linux,macos配置.md"
-      },
-      {
-        "text": "TCP & UDP 端口连通性测试",
-        "link": "/Linux/TCP&UDP端口连通性测试.md"
-      },
-      {
-        "text": "wget 下载 Google Drive 共享的文件",
-        "link": "/Linux/wget下载Google Drive共享的文件.md"
-      },
-      {
-        "text": "ZSH 常用插件",
-        "link": "/Linux/zsh常用插件.md"
-      },
-      {
-        "text": "安装 chromedriver",
-        "link": "/Linux/安装chromedriver.md"
-      },
-      {
-        "text": "运行命令时，指定 GCC 版本",
-        "link": "/Linux/指定命令的gcc版本.md"
-      },
-      {
-        "text": "使用 OpenSSL 生成自签名 SSL 证书",
-        "link": "/Linux/自签名SSL证书-openssl.md"
-      },
-      {
-        "text": "2.1 SSH",
-        "items": [
-          {
-            "text": "SSH",
-            "link": "/Linux/SSH/"
-          },
-          {
-            "text": "使用 `sshfs` 命令简易挂载远程目录",
-            "link": "/Linux/SSH/sshfs命令简易挂载远程目录.md"
-          },
-          {
-            "text": "SSH 开启隧道",
-            "link": "/Linux/SSH/ssh开启隧道.md"
-          },
-          {
-            "text": "SSH 配置心跳信号防止断开连接",
-            "link": "/Linux/SSH/SSH配置心跳信号防止断开连接.md"
-          },
-          {
-            "text": "创建 SSH 密钥对并使用密钥登录",
-            "link": "/Linux/SSH/创建SSH密钥对并使用密钥登录.md"
-          },
-          {
-            "text": "使用 autossh 自动重连 SSH",
-            "link": "/Linux/SSH/使用autossh自动重连ssh.md"
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "text": "2.2 CentOS",
-        "items": [
-          {
-            "text": "CentOS 7 lvm分区扩容",
-            "link": "/Linux/CentOS/CentOS 7 lvm分区扩容.md"
-          },
-          {
-            "text": "CentOS 7 安装/升级 Git 版本",
-            "link": "/Linux/CentOS/CentOS 7 安装升级Git版本.md"
-          },
-          {
-            "text": "CentOS 7 常用工具包安装",
-            "link": "/Linux/CentOS/CentOS 7 常用工具包安装.md"
-          },
-          {
-            "text": "CentOS 7 防火墙开放端口",
-            "link": "/Linux/CentOS/CentOS 7 开放端口.md"
-          },
-          {
-            "text": "CentOS 配置国内源",
-            "link": "/Linux/CentOS/CentOS 配置国内源.md"
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "text": "2.3 Vim",
-        "items": [
-          {
-            "text": "Vim",
-            "link": "/Linux/Vim/"
-          },
-          {
-            "text": "Neovim 安装与配置",
-            "link": "/Linux/Vim/Neovim安装与配置.md"
-          },
-          {
-            "text": "vim 插件管理: vim-plug",
-            "link": "/Linux/Vim/vim插件管理 - vim-plug.md"
-          },
-          {
-            "text": "VIM 的 FileType Plugins 配置",
-            "link": "/Linux/Vim/vim的filetype plugins配置.md"
-          },
-          {
-            "text": "Vim 配置",
-            "link": "/Linux/Vim/vim配置.md"
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "text": "2.4 nginx",
-        "items": [
-          {
-            "text": "nginx 配置示例",
-            "link": "/Linux/nginx/nginx 配置 examples.md"
-          },
-          {
-            "text": "nginx 配置常见问题",
-            "link": "/Linux/nginx/nginx 配置常见问题.md"
-          },
-          {
-            "text": "nginx 隐藏响应 headers 中的版本信息",
-            "link": "/Linux/nginx/nginx 隐藏响应头的版本信息.md"
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "text": "2.5 ArchLinux",
-        "items": [
-          {
-            "text": "ArchLinux 简单安装教程",
-            "link": "/Linux/ArchLinux/archlinux简单安装教程.md"
-          }
-        ],
-        "collapsed": false
-      }
-    ],
-    "collapsed": false
-  },
-  {
-    "text": "3 - 领域知识-DomainKnowledge",
-    "items": [
-      {
-        "text": "3.1 个人服务搭建",
+        "text": "2.1 个人服务搭建",
         "items": [
           {
             "text": "NAS",
@@ -873,6 +669,10 @@
               {
                 "text": "IPTV-API 电视直播源工具部署",
                 "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/IPTV-API电视直播源工具部署.md"
+              },
+              {
+                "text": "Kavita 部署",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/kavita部署.md"
               },
               {
                 "text": "Nginx Proxy Manager 服务部署",
@@ -965,7 +765,7 @@
         "collapsed": false
       },
       {
-        "text": "3.2 图形学",
+        "text": "2.2 图形学",
         "items": [
           {
             "text": "OpenGL 坐标系统",
@@ -1009,7 +809,7 @@
         "collapsed": false
       },
       {
-        "text": "3.3 Deep Learning",
+        "text": "2.3 Deep Learning",
         "items": [
           {
             "text": "GAN模型的评价指标",
@@ -1045,7 +845,7 @@
         "collapsed": false
       },
       {
-        "text": "3.4 Applied Social Network Analysis in Python",
+        "text": "2.4 Applied Social Network Analysis in Python",
         "items": [
           {
             "text": "Course Syllabus",
@@ -1095,7 +895,7 @@
         "collapsed": false
       },
       {
-        "text": "3.5 Design Pattern",
+        "text": "2.5 Design Pattern",
         "items": [
           {
             "text": "状态模式",
@@ -1105,7 +905,7 @@
         "collapsed": false
       },
       {
-        "text": "3.6 数据结构",
+        "text": "2.6 数据结构",
         "items": [
           {
             "text": "树",
@@ -1116,6 +916,210 @@
               }
             ],
             "collapsed": true
+          }
+        ],
+        "collapsed": false
+      }
+    ],
+    "collapsed": false
+  },
+  {
+    "text": "3 - Linux",
+    "items": [
+      {
+        "text": "awscli 使用指南",
+        "link": "/Linux/awscli使用指南.md"
+      },
+      {
+        "text": "Bash 脚本中获得脚本文件当前路径",
+        "link": "/Linux/Bash脚本中获得脚本文件当前路径.md"
+      },
+      {
+        "text": "convmv 命令解决 GBK 中文文件名乱码",
+        "link": "/Linux/convmv命令解决GBK中文文件名乱码.md"
+      },
+      {
+        "text": "Linux Shell 输出重定向并后台执行",
+        "link": "/Linux/Linux Shell输出重定向并后台执行.md"
+      },
+      {
+        "text": "Linux 实时内存监控: top, vmstat, free",
+        "link": "/Linux/Linux 实时内存监控-top,vmstat,free.md"
+      },
+      {
+        "text": "Linux 环境变量设置：env, set, export",
+        "link": "/Linux/Linux环境变量设置-env, set, export.md"
+      },
+      {
+        "text": "Linux 开发环境 setup",
+        "link": "/Linux/Linux开发环境setup.md"
+      },
+      {
+        "text": "Linux 快速传输大文件: nc 命令",
+        "link": "/Linux/Linux快速传输大文件-nc.md"
+      },
+      {
+        "text": "Linux 批量杀死进程",
+        "link": "/Linux/Linux批量杀死进程.md"
+      },
+      {
+        "text": "Linux 使终端支持 UTF-8 中文字符",
+        "link": "/Linux/Linux使终端支持utf8中文字符.md"
+      },
+      {
+        "text": "Linux 搜索所有文件中的内容: grep, riggrep",
+        "link": "/Linux/Linux搜索所有文件中的内容-grep,riggrep.md"
+      },
+      {
+        "text": "Linux 系统访问 NAS 的 SMB 文件服务",
+        "link": "/Linux/Linux系统访问NAS的文件服务(samba).md"
+      },
+      {
+        "text": "Linux 下多线程下载工具 - Axel",
+        "link": "/Linux/Linux下多线程下载工具-Axel.md"
+      },
+      {
+        "text": "Linux 新建用户，赋予 sudo 权限，并允许 ssh 连接",
+        "link": "/Linux/Linux新建用户,sudo权限,ssh连接权限.md"
+      },
+      {
+        "text": "Linux 修改默认 shell",
+        "link": "/Linux/Linux修改默认shell.md"
+      },
+      {
+        "text": "Linux/MacOS 配置同步: Mackup",
+        "link": "/Linux/Mackup 同步linux,macos配置.md"
+      },
+      {
+        "text": "TCP & UDP 端口连通性测试",
+        "link": "/Linux/TCP&UDP端口连通性测试.md"
+      },
+      {
+        "text": "wget 下载 Google Drive 共享的文件",
+        "link": "/Linux/wget下载Google Drive共享的文件.md"
+      },
+      {
+        "text": "ZSH 常用插件",
+        "link": "/Linux/zsh常用插件.md"
+      },
+      {
+        "text": "安装 chromedriver",
+        "link": "/Linux/安装chromedriver.md"
+      },
+      {
+        "text": "运行命令时，指定 GCC 版本",
+        "link": "/Linux/指定命令的gcc版本.md"
+      },
+      {
+        "text": "使用 OpenSSL 生成自签名 SSL 证书",
+        "link": "/Linux/自签名SSL证书-openssl.md"
+      },
+      {
+        "text": "3.1 SSH",
+        "items": [
+          {
+            "text": "SSH",
+            "link": "/Linux/SSH/"
+          },
+          {
+            "text": "使用 `sshfs` 命令简易挂载远程目录",
+            "link": "/Linux/SSH/sshfs命令简易挂载远程目录.md"
+          },
+          {
+            "text": "SSH 开启隧道",
+            "link": "/Linux/SSH/ssh开启隧道.md"
+          },
+          {
+            "text": "SSH 配置心跳信号防止断开连接",
+            "link": "/Linux/SSH/SSH配置心跳信号防止断开连接.md"
+          },
+          {
+            "text": "创建 SSH 密钥对并使用密钥登录",
+            "link": "/Linux/SSH/创建SSH密钥对并使用密钥登录.md"
+          },
+          {
+            "text": "使用 autossh 自动重连 SSH",
+            "link": "/Linux/SSH/使用autossh自动重连ssh.md"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "3.2 CentOS",
+        "items": [
+          {
+            "text": "CentOS 7 lvm分区扩容",
+            "link": "/Linux/CentOS/CentOS 7 lvm分区扩容.md"
+          },
+          {
+            "text": "CentOS 7 安装/升级 Git 版本",
+            "link": "/Linux/CentOS/CentOS 7 安装升级Git版本.md"
+          },
+          {
+            "text": "CentOS 7 常用工具包安装",
+            "link": "/Linux/CentOS/CentOS 7 常用工具包安装.md"
+          },
+          {
+            "text": "CentOS 7 防火墙开放端口",
+            "link": "/Linux/CentOS/CentOS 7 开放端口.md"
+          },
+          {
+            "text": "CentOS 配置国内源",
+            "link": "/Linux/CentOS/CentOS 配置国内源.md"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "3.3 Vim",
+        "items": [
+          {
+            "text": "Vim",
+            "link": "/Linux/Vim/"
+          },
+          {
+            "text": "Neovim 安装与配置",
+            "link": "/Linux/Vim/Neovim安装与配置.md"
+          },
+          {
+            "text": "vim 插件管理: vim-plug",
+            "link": "/Linux/Vim/vim插件管理 - vim-plug.md"
+          },
+          {
+            "text": "VIM 的 FileType Plugins 配置",
+            "link": "/Linux/Vim/vim的filetype plugins配置.md"
+          },
+          {
+            "text": "Vim 配置",
+            "link": "/Linux/Vim/vim配置.md"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "3.4 nginx",
+        "items": [
+          {
+            "text": "nginx 配置示例",
+            "link": "/Linux/nginx/nginx 配置 examples.md"
+          },
+          {
+            "text": "nginx 配置常见问题",
+            "link": "/Linux/nginx/nginx 配置常见问题.md"
+          },
+          {
+            "text": "nginx 隐藏响应 headers 中的版本信息",
+            "link": "/Linux/nginx/nginx 隐藏响应头的版本信息.md"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "3.5 ArchLinux",
+        "items": [
+          {
+            "text": "ArchLinux 简单安装教程",
+            "link": "/Linux/ArchLinux/archlinux简单安装教程.md"
           }
         ],
         "collapsed": false
