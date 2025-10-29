@@ -93,7 +93,7 @@ services:
 docker-compose up -d
 ```
 
-### 3 - 服务初始化
+## 3 - 服务初始化
 
 部署完成后，可通过 `http://<NAS_IP>:15000` 访问 Kavita 的 Web 界面。
 
@@ -104,3 +104,15 @@ docker-compose up -d
 3. 设置扫描选项：配置自动扫描和元数据抓取选项
 
 > 提示：建议在初始化后立即创建管理员账户，并配置好媒体库路径，以便 Kavita 能够自动扫描和索引您的文件。
+
+## 4 - 配置建议
+
+点击右上角齿轮图标，进入 "设置" 页面，可以进行以下配置：
+
+### 4.1 语言设置
+
+左侧 "Account" -> "Preferences", 右侧面板的 Global Settings 中, "Locale" 选择 "中文 (简体)"
+
+### 4.2 Base Url
+
+左侧 "服务" -> "常规", 右侧面板的 "路径" 中, 设置一个 Base Url, 以便配置到 nginx 代理的 location 中。
