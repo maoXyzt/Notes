@@ -177,6 +177,7 @@
 
 * NAS
   * [NAS](./领域知识-DomainKnowledge/个人服务搭建/NAS/)
+  * [DailyCheckin 自动签到服务部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/DailyCheckin自动签到服务部署.md)
   * [ezBookkeeping 自托管记账服务部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/ezbookkeeping自托管记账服务部署.md)
   * [IPTV-API 电视直播源工具部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/IPTV-API电视直播源工具部署.md)
   * [Kavita 部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/kavita部署.md)

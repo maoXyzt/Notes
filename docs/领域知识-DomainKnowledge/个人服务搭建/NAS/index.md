@@ -14,6 +14,7 @@
 + Syncthing 文件同步: [Syncthing 文件同步服务部署](./Syncthing文件同步服务部署.md)
 + 兼容 S3 协议的文件服务系统: [RustFS 部署](./RustFS部署.md)
 + 漫画/电子书服务: [Kavita 部署](./kavita部署.md)
++ 自动签到: [DailyCheckin 自动签到服务部署](./DailyCheckin自动签到服务部署.md)
 
 ## 3 - 用 NAS 为自建服务添加备份
 
