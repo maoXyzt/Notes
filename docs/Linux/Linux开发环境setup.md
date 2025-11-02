@@ -86,7 +86,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
   ```bash
   curl -fsSL https://fnm.vercel.app/install | bash
-  fnm install --lts && fnm default 22   # 假设 LTS 版本为 22
+  fnm install --lts && fnm default 24   # 假设 LTS 版本为 24
   ```
 
 - 利用 [NVM](https://github.com/nvm-sh/nvm#installing-and-updating) 安装
@@ -227,6 +227,9 @@ cargo install --locked zellij
 sudo add-apt-repository ppa:zhangsongcui3371/fastfetch
 sudo apt-get update
 sudo apt-get install fastfetch
+
+# 或者使用 brew 安装
+brew install fastfetch
 ```
 
 ### 3.2.4 navi: 命令行 cheatsheet 工具
