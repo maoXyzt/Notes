@@ -337,14 +337,13 @@
 * [maya 安装 numpy & scipy](./软件工具应用-Applications/Maya/maya安装numpy%26scipy.md)
 * [Maya 插件安装方法](./软件工具应用-Applications/Maya/maya插件安装方法.md)
 
-### 4.4 Rime
-
-* [Rime 输入法配置语言模型: 万象拼音模型](./软件工具应用-Applications/Rime/rime配置语言模型.md)
-* [Rime 输入法安装和配置恢复](./软件工具应用-Applications/Rime/rime输入法安装.md)
-
-### 4.5 FBX
+### 4.4 FBX
 
 * [安装 FBX Python SDK](./软件工具应用-Applications/FBX/安装FBX%20Python%20SDK.md)
+
+### 4.5 Rime
+
+* [Rime 输入法配置语言模型: 万象拼音模型](./软件工具应用-Applications/Rime/rime配置语言模型.md)
 
 ### 4.6 VSCode
 

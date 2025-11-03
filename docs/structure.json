@@ -1233,25 +1233,21 @@
         "collapsed": false
       },
       {
-        "text": "4.4 Rime",
+        "text": "4.4 FBX",
         "items": [
           {
-            "text": "Rime 输入法配置语言模型: 万象拼音模型",
-            "link": "/软件工具应用-Applications/Rime/rime配置语言模型.md"
-          },
-          {
-            "text": "Rime 输入法安装和配置恢复",
-            "link": "/软件工具应用-Applications/Rime/rime输入法安装.md"
+            "text": "安装 FBX Python SDK",
+            "link": "/软件工具应用-Applications/FBX/安装FBX Python SDK.md"
           }
         ],
         "collapsed": false
       },
       {
-        "text": "4.5 FBX",
+        "text": "4.5 Rime",
         "items": [
           {
-            "text": "安装 FBX Python SDK",
-            "link": "/软件工具应用-Applications/FBX/安装FBX Python SDK.md"
+            "text": "Rime 输入法配置语言模型: 万象拼音模型",
+            "link": "/软件工具应用-Applications/Rime/rime配置语言模型.md"
           }
         ],
         "collapsed": false
