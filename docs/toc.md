@@ -190,6 +190,7 @@
   * [开启 iSCSI 服务](./领域知识-DomainKnowledge/个人服务搭建/NAS/开启iSCSI服务.md)
 * PVE All-in-One 实践
   * [PVE All-in-One 实践](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/)
+  * [PVE 安装 Alpine LXC](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20alpine%20LXC.md)
   * [PVE 安装 homeassistant](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20homeassistant.md)
   * [PVE 安装 ikuai](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20ikuai.md)
   * [PVE 安装 Linux 虚拟机](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20linux%20虚拟机.md)
@@ -336,13 +337,14 @@
 * [maya 安装 numpy & scipy](./软件工具应用-Applications/Maya/maya安装numpy%26scipy.md)
 * [Maya 插件安装方法](./软件工具应用-Applications/Maya/maya插件安装方法.md)
 
-### 4.4 FBX
-
-* [安装 FBX Python SDK](./软件工具应用-Applications/FBX/安装FBX%20Python%20SDK.md)
-
-### 4.5 Rime
+### 4.4 Rime
 
 * [Rime 输入法配置语言模型: 万象拼音模型](./软件工具应用-Applications/Rime/rime配置语言模型.md)
+* [Rime 输入法安装和配置恢复](./软件工具应用-Applications/Rime/rime输入法安装.md)
+
+### 4.5 FBX
+
+* [安装 FBX Python SDK](./软件工具应用-Applications/FBX/安装FBX%20Python%20SDK.md)
 
 ### 4.6 VSCode
 

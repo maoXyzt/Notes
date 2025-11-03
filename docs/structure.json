@@ -717,6 +717,10 @@
                 "link": "/领域知识-DomainKnowledge/个人服务搭建/PVE All-in-One 实践/"
               },
               {
+                "text": "PVE 安装 Alpine LXC",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/PVE All-in-One 实践/PVE 安装 alpine LXC.md"
+              },
+              {
                 "text": "PVE 安装 homeassistant",
                 "link": "/领域知识-DomainKnowledge/个人服务搭建/PVE All-in-One 实践/PVE 安装 homeassistant.md"
               },
@@ -1229,21 +1233,25 @@
         "collapsed": false
       },
       {
-        "text": "4.4 FBX",
+        "text": "4.4 Rime",
         "items": [
           {
-            "text": "安装 FBX Python SDK",
-            "link": "/软件工具应用-Applications/FBX/安装FBX Python SDK.md"
+            "text": "Rime 输入法配置语言模型: 万象拼音模型",
+            "link": "/软件工具应用-Applications/Rime/rime配置语言模型.md"
+          },
+          {
+            "text": "Rime 输入法安装和配置恢复",
+            "link": "/软件工具应用-Applications/Rime/rime输入法安装.md"
           }
         ],
         "collapsed": false
       },
       {
-        "text": "4.5 Rime",
+        "text": "4.5 FBX",
         "items": [
           {
-            "text": "Rime 输入法配置语言模型: 万象拼音模型",
-            "link": "/软件工具应用-Applications/Rime/rime配置语言模型.md"
+            "text": "安装 FBX Python SDK",
+            "link": "/软件工具应用-Applications/FBX/安装FBX Python SDK.md"
           }
         ],
         "collapsed": false
