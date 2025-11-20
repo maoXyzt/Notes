@@ -12,7 +12,7 @@
     * 旁路由应用:
       * [OpenClash 安装和配置](./OpenClash%20安装和配置.md)
 3. HA 智能家居: [PVE 安装 homeassistant](./PVE%20安装%20homeassistant.md)
-4. 轻量系统容器: [PVE 安装 Alpine LXC](./PVE%20安装%20Alpine%20LXC.md)
+4. 轻量系统容器: [PVE 安装 Alpine LXC](./PVE%20安装%20alpine%20LXC.md)
 
 ## 3. 虚拟机
 

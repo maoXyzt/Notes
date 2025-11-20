@@ -1,41 +1,42 @@
-# Notes
+# 笔记
 
-Personal notes
+个人笔记
 
-Powered by [vitepress](https://vitepress.vuejs.org/).
+基于 [vitepress](https://vitepress.vuejs.org/) 框架构建。
 
-## Setup
+## 环境准备
 
 ```bash
-poetry install
+uv venv
+uv sync --dev
 pre-commit install
 ```
 
-## Development
+## 开发
 
-vitepress config: `docs/.vitepress/config.mts`
+vitepress 配置：`docs/.vitepress/config.mts`
 
 ```bash
 pnpm install
 ```
 
-### 1) Build
+### 1) 构建
 
-Manually build the site:
+手动构建站点（用于检查断链等）：
 
 ```bash
 pnpm docs:build
 ```
 
-### 2) Preview
+### 2) 预览
 
 ```bash
 pnpm docs:preview
 ```
 
-### 3) Commit 前
+### 3) 提交前
 
-更新文档目录: `docs/toc.md` 文件和 `docs/structure.json` 文件
+更新文档目录：`docs/toc.md` 文件和 `docs/structure.json` 文件
 
 ```bash
 poetry run update-toc

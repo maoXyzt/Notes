@@ -93,6 +93,7 @@
   * [Redis 基本操作](./编程开发-Programming/Database/Redis/Redis基本操作.md)
 * SQLite
   * [SQLite 命令行客户端 LiteCLI](./编程开发-Programming/Database/SQLite/SQLite命令行客户端litecli.md)
+  * [SQLite 命令行客户端使用教程](./编程开发-Programming/Database/SQLite/SQLite命令行客户端使用教程.md)
   * [SQLite 数据库文件损坏修复](./编程开发-Programming/Database/SQLite/SQLite数据库文件损坏修复.md)
 * CouchDB
   * [CouchDB 安装](./编程开发-Programming/Database/CouchDB/CouchDB安装.md)

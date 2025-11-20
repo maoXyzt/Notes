@@ -365,6 +365,10 @@
                 "link": "/编程开发-Programming/Database/SQLite/SQLite命令行客户端litecli.md"
               },
               {
+                "text": "SQLite 命令行客户端使用教程",
+                "link": "/编程开发-Programming/Database/SQLite/SQLite命令行客户端使用教程.md"
+              },
+              {
                 "text": "SQLite 数据库文件损坏修复",
                 "link": "/编程开发-Programming/Database/SQLite/SQLite数据库文件损坏修复.md"
               }
