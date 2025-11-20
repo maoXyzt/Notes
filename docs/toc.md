@@ -190,7 +190,7 @@
   * [开启 iSCSI 服务](./领域知识-DomainKnowledge/个人服务搭建/NAS/开启iSCSI服务.md)
 * PVE All-in-One 实践
   * [PVE All-in-One 实践](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/)
-  * [PVE 安装 Alpine LXC](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20alpine%20LXC.md)
+  * [PVE 安装 Alpine LXC & Debian LXC](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20alpine%20LXC.md)
   * [PVE 安装 homeassistant](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20homeassistant.md)
   * [PVE 安装 ikuai](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20ikuai.md)
   * [PVE 安装 Linux 虚拟机](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20linux%20虚拟机.md)

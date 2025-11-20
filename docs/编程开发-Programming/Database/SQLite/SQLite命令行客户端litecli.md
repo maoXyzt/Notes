@@ -2,9 +2,13 @@
 
 > <https://litecli.com/>
 
-LiteCLI 是一个 SQLite 的命令行客户端，支持自动补全和语法高亮。
+LiteCLI 是一个 SQLite 的命令行客户端，相对于原版 `sqlite3` 客户端，额外支持自动补全和语法高亮。
 
 ## 1 - 安装
+
+如果有 [uv](https://github.com/astral-sh/uv) 环境，可以用 `uvx` 命令免安装使用，可略过本节。
+
+通过 pip 安装:
 
 ```bash
 pip install litecli
@@ -22,6 +26,9 @@ brew install litecli
 启动
 
 ```bash
+# 借助 uvx 免安装使用:
+uvx litecli <db_name>
+# 安装后使用:
 litecli <db_name>
 ```
 

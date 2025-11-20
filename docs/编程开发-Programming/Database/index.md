@@ -6,6 +6,7 @@
 - [MySQL](./MySQL/index.md)
 - SQLite
   - [SQLite 数据库文件损坏修复](./SQLite/SQLite数据库文件损坏修复.md)
+  - [SQLite 命令行客户端 LiteCLI](./SQLite/SQLite命令行客户端litecli.md)
 
 ## 2. 非关系型数据库
 
