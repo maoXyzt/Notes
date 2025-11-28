@@ -37,3 +37,23 @@ npx lint-staged
   }
 }
 ```
+
+## 4. 全局初始化配置
+
+有时候在 `pre-commit` 钩子中执行命令时，会报错 `command not found`，这是因为环境变量没有正确设置。
+
+(比如在 VSCode UI 中使用 COMMIT 按钮提交代码，此时并未使用 `.bashrc` 或 `.zshrc` 加载环境变量)
+
+可以在 `~/.husky/init.sh` 文件中添加如下内容，来初始化 Node.js 环境:
+
+(按需选择一种方式)
+
+```bash
+# fnm
+FNM_PATH="$HOME/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="$FNM_PATH:$PATH"
+fi
+# nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+```
