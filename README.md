@@ -7,8 +7,7 @@
 ## 环境准备
 
 ```bash
-uv venv
-uv sync --dev
+uv sync --all-extras
 pre-commit install
 ```
 
@@ -39,5 +38,5 @@ pnpm docs:preview
 更新文档目录：`docs/toc.md` 文件和 `docs/structure.json` 文件
 
 ```bash
-poetry run update-toc
+uv run update-toc
 ```
