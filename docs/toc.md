@@ -328,6 +328,10 @@
 
 * [ArchLinux 简单安装教程](./Linux/ArchLinux/archlinux简单安装教程.md)
 
+### 3.6 shell
+
+* [Fish Shell 安装](./Linux/shell/fish%20shell安装.md)
+
 ## 4 - 软件工具应用-Applications
 
 * [Alacritty 配置](./软件工具应用-Applications/alacritty配置.md)

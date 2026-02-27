@@ -1209,6 +1209,16 @@
           }
         ],
         "collapsed": false
+      },
+      {
+        "text": "3.6 shell",
+        "items": [
+          {
+            "text": "Fish Shell 安装",
+            "link": "/Linux/shell/fish shell安装.md"
+          }
+        ],
+        "collapsed": false
       }
     ],
     "collapsed": false
