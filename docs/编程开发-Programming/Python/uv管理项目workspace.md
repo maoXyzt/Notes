@@ -1,5 +1,5 @@
 ---
-NoteStatus: draft
+NoteStatus: Draft
 ---
 
 # uv 管理项目 workspace

@@ -1,5 +1,5 @@
 ---
-NoteStatus: draft
+NoteStatus: Draft
 ---
 
 # uv 使用教程

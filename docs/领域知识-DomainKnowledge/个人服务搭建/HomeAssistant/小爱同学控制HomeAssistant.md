@@ -1,5 +1,5 @@
 ---
-NoteStatus: draft
+NoteStatus: Draft
 ---
 
 # 小爱同学控制 HomeAssistant

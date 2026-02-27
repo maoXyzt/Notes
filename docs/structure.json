@@ -46,6 +46,14 @@
             "link": "/编程开发-Programming/Python/python字符串编码.md"
           },
           {
+            "text": "uv 管理项目 workspace",
+            "link": "/编程开发-Programming/Python/uv管理项目workspace.md"
+          },
+          {
+            "text": "uv 使用教程",
+            "link": "/编程开发-Programming/Python/uv使用教程.md"
+          },
+          {
             "text": "win10 系统下安装 pycrypto 包的方法",
             "link": "/编程开发-Programming/Python/win10系统下安装pycrypto包的方法.md"
           },
@@ -111,6 +119,10 @@
               {
                 "text": "pandas 数据聚合：Grouper 与 agg",
                 "link": "/编程开发-Programming/Python/pandas/pandas数据聚合：Grouper与agg.md"
+              },
+              {
+                "text": "pandas 数据透视：pivot_table 与 melt，unstack 与 stack",
+                "link": "/编程开发-Programming/Python/pandas/pandas数据透视.md"
               }
             ],
             "collapsed": true
@@ -551,8 +563,16 @@
             "text": "Kubernetes",
             "items": [
               {
+                "text": "k8s runtime endpoints",
+                "link": "/编程开发-Programming/容器化/Kubernetes/k8s runtime endpoints.md"
+              },
+              {
                 "text": "k8s 集群搭建",
                 "link": "/编程开发-Programming/容器化/Kubernetes/k8s集群搭建.md"
+              },
+              {
+                "text": "kubectl 常用命令",
+                "link": "/编程开发-Programming/容器化/Kubernetes/kubectl常用命令.md"
               }
             ],
             "collapsed": true
@@ -590,6 +610,16 @@
           {
             "text": "Global gitignore",
             "link": "/编程开发-Programming/Git/global gitignore.md"
+          },
+          {
+            "text": "Gitlab",
+            "items": [
+              {
+                "text": "Gitlab CI 配置",
+                "link": "/编程开发-Programming/Git/Gitlab/gitlab ci 配置.md"
+              }
+            ],
+            "collapsed": true
           }
         ],
         "collapsed": false
@@ -721,6 +751,10 @@
                 "link": "/领域知识-DomainKnowledge/个人服务搭建/PVE All-in-One 实践/"
               },
               {
+                "text": "OpenClash 安装和配置",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/PVE All-in-One 实践/OpenClash 安装和配置.md"
+              },
+              {
                 "text": "PVE 安装 Alpine LXC & Debian LXC",
                 "link": "/领域知识-DomainKnowledge/个人服务搭建/PVE All-in-One 实践/PVE 安装 alpine LXC.md"
               },
@@ -745,12 +779,20 @@
                 "link": "/领域知识-DomainKnowledge/个人服务搭建/PVE All-in-One 实践/PVE 系统备份备份到NAS(smb).md"
               },
               {
+                "text": "PVE 部署 Homarr",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/PVE All-in-One 实践/PVE部署Homarr.md"
+              },
+              {
                 "text": "PVE 使用 iSCSI 存储",
                 "link": "/领域知识-DomainKnowledge/个人服务搭建/PVE All-in-One 实践/PVE使用iSCSI存储.md"
               },
               {
                 "text": "安装 PVE 系统",
                 "link": "/领域知识-DomainKnowledge/个人服务搭建/PVE All-in-One 实践/安装 PVE 系统.md"
+              },
+              {
+                "text": "制作 U 盘启动盘",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/PVE All-in-One 实践/制作U盘启动盘.md"
               }
             ],
             "collapsed": true
@@ -769,6 +811,14 @@
               {
                 "text": "Home Assistant 系统备份到 NAS",
                 "link": "/领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/homeassistant系统备份到NAS.md"
+              },
+              {
+                "text": "使用 Node-RED 配置智能设备的自动化规则",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/使用Node-Red配置规则.md"
+              },
+              {
+                "text": "小爱同学控制 HomeAssistant",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/小爱同学控制HomeAssistant.md"
               }
             ],
             "collapsed": true
@@ -907,7 +957,21 @@
         "collapsed": false
       },
       {
-        "text": "2.5 Design Pattern",
+        "text": "2.5 LLM",
+        "items": [
+          {
+            "text": "Prompting Vision Language Models",
+            "link": "/领域知识-DomainKnowledge/LLM/Prompting Vision Language Models.md"
+          },
+          {
+            "text": "Prompting Vision Language Models",
+            "link": "/领域知识-DomainKnowledge/LLM/Prompting VLM.md"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "2.6 Design Pattern",
         "items": [
           {
             "text": "状态模式",
@@ -917,7 +981,17 @@
         "collapsed": false
       },
       {
-        "text": "2.6 数据结构",
+        "text": "2.7 Linear Algebra",
+        "items": [
+          {
+            "text": "Linear Algebra",
+            "link": "/领域知识-DomainKnowledge/Linear Algebra/Linear Algebra.md"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "2.8 数据结构",
         "items": [
           {
             "text": "树",
@@ -1147,6 +1221,10 @@
         "link": "/软件工具应用-Applications/alacritty配置.md"
       },
       {
+        "text": "PyAssimp 安装",
+        "link": "/软件工具应用-Applications/pyassimp安装.md"
+      },
+      {
         "text": "virtualbox 硬盘扩容",
         "link": "/软件工具应用-Applications/virtualbox硬盘扩容.md"
       },
@@ -1369,6 +1447,20 @@
           }
         ],
         "collapsed": false
+      },
+      {
+        "text": "6.2 统计学习方法",
+        "items": [
+          {
+            "text": "k近邻法",
+            "link": "/算法-Algorithm/统计学习方法/k近邻.md"
+          },
+          {
+            "text": "感知机",
+            "link": "/算法-Algorithm/统计学习方法/感知机.md"
+          }
+        ],
+        "collapsed": false
       }
     ],
     "collapsed": false
@@ -1385,8 +1477,16 @@
         "link": "/MacOS/Homebrew的安装、换源和卸载.md"
       },
       {
+        "text": "MacBook 上手初始配置",
+        "link": "/MacOS/MacBook上手初始配置.md"
+      },
+      {
         "text": "MacOS 配置定时任务",
         "link": "/MacOS/MacOS 配置定时任务.md"
+      },
+      {
+        "text": "问题排查记录: 工作用的 MacBook 开启 VPN 后，命令行访问一些境外网站失败",
+        "link": "/MacOS/问题排查记录-开启VPN后,命令行访问境外网站失败.md"
       }
     ],
     "collapsed": false

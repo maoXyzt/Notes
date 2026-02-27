@@ -1,5 +1,5 @@
 ---
-NoteStatus: draft
+NoteStatus: Draft
 ---
 
 # k8s runtime endpoints

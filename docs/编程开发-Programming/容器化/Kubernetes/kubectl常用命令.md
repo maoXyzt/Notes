@@ -1,5 +1,5 @@
 ---
-NoteStatus: draft
+NoteStatus: Draft
 ---
 
 # kubectl 常用命令

@@ -1,5 +1,5 @@
 ---
-NoteStatus: draft
+NoteStatus: Draft
 ---
 
 # 问题排查记录: 工作用的 MacBook 开启 VPN 后，命令行访问一些境外网站失败

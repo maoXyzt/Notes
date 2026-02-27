@@ -17,6 +17,8 @@
 * [Python 脚本中获取脚本文件自身的路径](./编程开发-Programming/Python/python脚本获取自身当前路径的正确方法.md)
 * [python 通过 ssh 连接数据库](./编程开发-Programming/Python/python通过ssh连接数据库.md)
 * [python 字符串编码](./编程开发-Programming/Python/python字符串编码.md)
+* [uv 管理项目 workspace](./编程开发-Programming/Python/uv管理项目workspace.md)
+* [uv 使用教程](./编程开发-Programming/Python/uv使用教程.md)
 * [win10 系统下安装 pycrypto 包的方法](./编程开发-Programming/Python/win10系统下安装pycrypto包的方法.md)
 * [win 环境下 print 时的 UnicodeEncodingError](./编程开发-Programming/Python/win环境下print时的UnicodeEncodingError.md)
 * [Python 用 xlrd 读取 Excel 文件](./编程开发-Programming/Python/xlrd读取excel文件.md)
@@ -34,6 +36,7 @@
   * [pandas时间处理：将时间转为月末日期](./编程开发-Programming/Python/pandas/pandas时间处理之将时间转为月末日期.md)
   * [pandas 时间处理：to_datetime 和时区](./编程开发-Programming/Python/pandas/pandas时间处理%EF%BC%9Ato_datetime和时区.md)
   * [pandas 数据聚合：Grouper 与 agg](./编程开发-Programming/Python/pandas/pandas数据聚合%EF%BC%9AGrouper与agg.md)
+  * [pandas 数据透视：pivot_table 与 melt，unstack 与 stack](./编程开发-Programming/Python/pandas/pandas数据透视.md)
 * Flask
   * [Flask](./编程开发-Programming/Python/Flask/)
   * [Flask app 的实例化和初始化](./编程开发-Programming/Python/Flask/Flask%20app实例化和初始化.md)
@@ -140,7 +143,9 @@
   * [给非 root 用户运行 docker 命令的权限](./编程开发-Programming/容器化/Docker/给非root用户运行docker的权限.md)
   * [理解 Docker 的 CPU 使用率](./编程开发-Programming/容器化/Docker/理解Docker的CPU使用率.md)
 * Kubernetes
+  * [k8s runtime endpoints](./编程开发-Programming/容器化/Kubernetes/k8s%20runtime%20endpoints.md)
   * [k8s 集群搭建](./编程开发-Programming/容器化/Kubernetes/k8s集群搭建.md)
+  * [kubectl 常用命令](./编程开发-Programming/容器化/Kubernetes/kubectl常用命令.md)
 
 ### 1.5 Git
 
@@ -151,6 +156,8 @@
 * [Git 配置文件大小写写敏感](./编程开发-Programming/Git/git%20配置对文件名大小写敏感.md)
 * [Git 上传大文件 (> 25MB): Git LFS](./编程开发-Programming/Git/git上传大文件%28gt25MB%29-Git%20LFS.md)
 * [Global gitignore](./编程开发-Programming/Git/global%20gitignore.md)
+* Gitlab
+  * [Gitlab CI 配置](./编程开发-Programming/Git/Gitlab/gitlab%20ci%20配置.md)
 
 ### 1.6 Go
 
@@ -191,18 +198,23 @@
   * [开启 iSCSI 服务](./领域知识-DomainKnowledge/个人服务搭建/NAS/开启iSCSI服务.md)
 * PVE All-in-One 实践
   * [PVE All-in-One 实践](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/)
+  * [OpenClash 安装和配置](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/OpenClash%20安装和配置.md)
   * [PVE 安装 Alpine LXC & Debian LXC](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20alpine%20LXC.md)
   * [PVE 安装 homeassistant](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20homeassistant.md)
   * [PVE 安装 ikuai](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20ikuai.md)
   * [PVE 安装 Linux 虚拟机](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20linux%20虚拟机.md)
   * [PVE 安装 OpenWRT](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20OpenWRT.md)
   * [PVE 系统备份到 NAS(smb)](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20系统备份备份到NAS%28smb%29.md)
+  * [PVE 部署 Homarr](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE部署Homarr.md)
   * [PVE 使用 iSCSI 存储](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE使用iSCSI存储.md)
   * [安装 PVE 系统](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/安装%20PVE%20系统.md)
+  * [制作 U 盘启动盘](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/制作U盘启动盘.md)
 * HomeAssistant
   * [HomeAssistant](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/)
   * [Aqara 设备通过 Matter 接入 HomeAssistant](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/Aqara设备通过Matter接入HomeAssistant.md)
   * [Home Assistant 系统备份到 NAS](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/homeassistant系统备份到NAS.md)
+  * [使用 Node-RED 配置智能设备的自动化规则](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/使用Node-Red配置规则.md)
+  * [小爱同学控制 HomeAssistant](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/小爱同学控制HomeAssistant.md)
 
 ### 2.2 图形学
 
@@ -238,11 +250,20 @@
 * Module 4 - Network Evolution
   * [01. Preferential Attachment Model](./领域知识-DomainKnowledge/Applied%20Social%20Network%20Analysis%20in%20Python/Module%204%20-%20Network%20Evolution/Network%20Evolution.md)
 
-### 2.5 Design Pattern
+### 2.5 LLM
+
+* [Prompting Vision Language Models](./领域知识-DomainKnowledge/LLM/Prompting%20Vision%20Language%20Models.md)
+* [Prompting Vision Language Models](./领域知识-DomainKnowledge/LLM/Prompting%20VLM.md)
+
+### 2.6 Design Pattern
 
 * [状态模式](./领域知识-DomainKnowledge/Design%20Pattern/状态模式.md)
 
-### 2.6 数据结构
+### 2.7 Linear Algebra
+
+* [Linear Algebra](./领域知识-DomainKnowledge/Linear%20Algebra/Linear%20Algebra.md)
+
+### 2.8 数据结构
 
 * 树
   * [树](./领域知识-DomainKnowledge/数据结构/树/树.md)
@@ -310,6 +331,7 @@
 ## 4 - 软件工具应用-Applications
 
 * [Alacritty 配置](./软件工具应用-Applications/alacritty配置.md)
+* [PyAssimp 安装](./软件工具应用-Applications/pyassimp安装.md)
 * [virtualbox 硬盘扩容](./软件工具应用-Applications/virtualbox硬盘扩容.md)
 
 ### 4.1 Blender
@@ -382,9 +404,16 @@
 * [LeetCode 347.前 K 个高频元素](./算法-Algorithm/LeetCode/347.前-k-个高频元素.md)
 * [LeetCode 5. 最长回文子串](./算法-Algorithm/LeetCode/5.最长回文子串.md)
 
+### 6.2 统计学习方法
+
+* [k近邻法](./算法-Algorithm/统计学习方法/k近邻.md)
+* [感知机](./算法-Algorithm/统计学习方法/感知机.md)
+
 ## 7 - MacOS
 
 * [MacOS](./MacOS/)
 * [Homebrew 的安装、换源和卸载](./MacOS/Homebrew的安装%E3%80%81换源和卸载.md)
+* [MacBook 上手初始配置](./MacOS/MacBook上手初始配置.md)
 * [MacOS 配置定时任务](./MacOS/MacOS%20配置定时任务.md)
+* [问题排查记录: 工作用的 MacBook 开启 VPN 后，命令行访问一些境外网站失败](./MacOS/问题排查记录-开启VPN后%2C命令行访问境外网站失败.md)
 <!-- /TOC -->

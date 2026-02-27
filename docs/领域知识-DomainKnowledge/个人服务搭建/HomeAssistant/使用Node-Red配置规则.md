@@ -1,5 +1,5 @@
 ---
-NoteStatus: draft
+NoteStatus: Draft
 ---
 
 # 使用 Node-RED 配置智能设备的自动化规则
