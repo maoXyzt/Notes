@@ -35,7 +35,7 @@ jobs:
         uses: actions/checkout@v5
         with:
           fetch-depth: 0 # 如果未启用 lastUpdated，则不需要
-      - uses: pnpm/action-setup@v4 # 如果使用 pnpm，请取消注释
+      - uses: pnpm/action-setup@v5 # 如果使用 pnpm，请取消注释
       # - uses: oven-sh/setup-bun@v1 # 如果使用 Bun，请取消注释
       - name: Setup Node
         uses: actions/setup-node@v5
@@ -43,7 +43,7 @@ jobs:
           node-version: 22
           cache: pnpm # npm / pnpm / yarn
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
       - name: Install dependencies
         run: pnpm install # npm ci 或 pnpm install / yarn install / bun install
       - name: Build with VitePress
