@@ -2,7 +2,7 @@
 type: note
 aliases: []
 created: 2026-02-27T19:40:46.000+0800
-modified: 2026-02-27T19:41:08.130+0800
+modified: 2026-02-27T19:48:14.132+0800
 ---
 
 本文通过 Docker Compose 方式部署 ConvertX 文件格式转换服务到绿联的 NAS 上。同时也提供了通用的部署方法，可供在其他 Linux 服务器上部署时参考。
@@ -47,10 +47,10 @@ services:
 
 #### (1) 通过 NAS UI 部署
 
-进入 NAS 的管理界面，打开 Docker，在 "项目" 中点击 "创建"。
+进入 NAS 的管理界面，打开 Docker，在 " 项目 " 中点击 " 创建 "。
 
 1. 项目名称: convertx
-2. 存放路径(可自选): `共享文件夹/docker/convertx/`
+2. 存放路径 (可自选): `共享文件夹/docker/convertx/`
 3. Compose 配置: 将上述 `docker-compose.yml` 的内容导入或复制到此目录下
 4. 启动项目: 点击 “立即部署”
 

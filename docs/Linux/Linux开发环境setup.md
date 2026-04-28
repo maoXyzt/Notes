@@ -1,14 +1,21 @@
-# Linux 开发环境 setup
+---
+type: 
+aliases: []
+created: 2026-02-27T19:21:44.000+0800
+modified: 2026-02-28T02:06:20.391+0800
+---
+
+## Linux 开发环境 setup
 
 本文介绍配置 Linux 开发环境的流程，按照步骤配置后，可初步完成开发环境搭建。
 
 本文以 Ubuntu/Debian 系统为例，部分命令给出了 MacOS 版本。其他发行版请自行替换命令。
 
-## 1 - 推荐
+### 1 - 推荐
 
-### 1.1 配置 apt 镜像
+#### 1.1 配置 apt 镜像
 
-#### 1.1.1 全平台换源工具 `chsrc`
+##### 1.1.1 全平台换源工具 `chsrc`
 
 > [chsrc](https://github.com/RubyMetric/chsrc?tab=readme-ov-file#-%E5%AE%89%E8%A3%85)
 
@@ -18,7 +25,7 @@
 chsrc set <target> first
 ```
 
-#### 1.1.2 手动换源
+##### 1.1.2 手动换源
 
 ```bash
 sudo apt install ca-certificates
@@ -27,7 +34,7 @@ sudo cp /etc/apt/sources.list /etc/apt/sources.list.backup
 
 > [配置 apt 镜像](https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/)
 
-### 1.2 依赖库&工具
+#### 1.2 依赖库&工具
 
 ```bash
 # Ubuntu
@@ -40,31 +47,31 @@ sudo apt-get install autoconf automake build-essential \
   python3 python3-pip python3-dev python3-setuptools zip curl wget
 ```
 
-### 1.4 升级 Git 版本
+#### 1.4 升级 Git 版本
 
 - [install](https://git-scm.com/download/linux)
 - [build from source](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-### 1.5 zsh
+#### 1.5 zsh
 
 - 安装 [zsh](https://www.zsh.org/)
 - 安装和配置 [oh-my-zsh](./zsh常用插件.md)
 
-### 1.6 Mackup: 配置备份/同步
+#### 1.6 Mackup: 配置备份/同步
 
 - [Instruction](./Mackup%20同步linux,macos配置.md)
 
-### 1.7 配置全局 gitignore
+#### 1.7 配置全局 gitignore
 
 - 配置方法: [global gitignore](../编程开发-Programming/Git/global%20gitignore.md)
 
-## 2 - 可选依赖
+### 2 - 可选依赖
 
 根据个人开发需求，选择性安装。
 
-### 2.1 Python
+#### 2.1 Python
 
-#### 2.1.1 uv
+##### 2.1.1 uv
 
 > [uv](https://docs.astral.sh/uv/getting-started/installation/)
 
@@ -72,35 +79,35 @@ sudo apt-get install autoconf automake build-essential \
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-#### 2.1.2 Miniconda
+##### 2.1.2 Miniconda
 
 - [Linux Installers](https://docs.conda.io/en/latest/miniconda.html#linux-installers)
 
-### 2.2 Node.js
+#### 2.2 Node.js
 
 > [Node.js 安装](../编程开发-Programming/Frontend/Node.js%20安装.md)
 
 选择其中一种安装方式：
 
-- 利用 [FNM](https://github.com/Schniz/fnm?tab=readme-ov-file#installation) 安装(推荐)
+- 利用 [FNM](https://github.com/Schniz/fnm?tab=readme-ov-file#installation) 安装 (推荐)
 
-  ```bash
-  curl -fsSL https://fnm.vercel.app/install | bash
-  fnm install --lts && fnm default 24   # 假设 LTS 版本为 24
-  ```
+```bash
+curl -fsSL https://fnm.vercel.app/install | bash
+fnm install --lts && fnm default 24   # 假设 LTS 版本为 24
+```
 
 - 利用 [NVM](https://github.com/nvm-sh/nvm#installing-and-updating) 安装
 - 直接安装: [Node.js Download](https://nodejs.org/en/download/)
 
-### 2.3 neovim
+##### 2.3 neovim
 
 - [Installing-Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim#ubuntu)
 
-## 3 - 命令行工具
+### 3 - 命令行工具
 
-### 3.1 Rust 命令行工具
+#### 3.1 Rust 命令行工具
 
-#### 3.1.1 Linux 用户安装
+##### 3.1.1 Linux 用户安装
 
 ```bash
 if ! [[ command -v rustup &> /dev/null ]]; then
@@ -128,7 +135,7 @@ cargo install --locked bat xh zoxide
 cargo install fd-find ripgrep du-dust procs git-delta tealdeer eza bottom
 ```
 
-#### 3.1.2 MacOS 用户安装
+##### 3.1.2 MacOS 用户安装
 
 ```bash
 brew install fd
@@ -150,7 +157,7 @@ One-liner:
 brew install fd bat ripgrep dust procs git-delta tealdeer eza bottom xh zoxide fzf
 ```
 
-#### 3.1.2 工具说明
+##### 3.1.2 工具说明
 
 - [rust](https://www.rust-lang.org/tools/install): 方便编译安装其他命令行工具
 - [`fd`](https://github.com/sharkdp/fd#on-ubuntu): 替代 `find`
@@ -161,38 +168,38 @@ brew install fd bat ripgrep dust procs git-delta tealdeer eza bottom xh zoxide f
 - [`atuin`](https://github.com/ellie/atuin/blob/main/README.md#install): shell 历史记录增强
 - [`delta`](https://dandavison.github.io/delta/installation.html#installation): syntax-highlighting git diff
 - `tldr`: 查阅命令的简单用法
-  - (推荐) [`tealdeer`](https://github.com/tealdeer-rs/tealdeer?tab=readme-ov-file#docs-installing-usage-configuration)
-  - (无需编译) [`tldr`](https://github.com/tldr-pages/tldr#how-do-i-use-it)
+	- (推荐) [`tealdeer`](https://github.com/tealdeer-rs/tealdeer?tab=readme-ov-file#docs-installing-usage-configuration)
+	- (无需编译) [`tldr`](https://github.com/tldr-pages/tldr#how-do-i-use-it)
 - [`eza`](https://github.com/eza-community/eza): a modern replacement for `ls`
 
-  ```bash
-  # linux x64
-  wget -c https://github.com/eza-community/eza/releases/latest/download/eza_x86_64-unknown-linux-gnu.tar.gz -O - | tar xz
-  sudo chmod +x eza
-  sudo chown root:root eza
-  sudo mv eza /usr/local/bin/eza
-  ```
+```bash
+# linux x64
+wget -c https://github.com/eza-community/eza/releases/latest/download/eza_x86_64-unknown-linux-gnu.tar.gz -O - | tar xz
+sudo chmod +x eza
+sudo chown root:root eza
+sudo mv eza /usr/local/bin/eza
+```
 
 - [`bottom`](https://github.com/ClementTsang/bottom?ref=itsfoss.com#debianubuntu): 图形化进程、系统 monitor
 
-  ```bash
-  # via snap
-  sudo snap install bottom
-  # To allow the program to run as intended
-  sudo snap connect bottom:mount-observe
-  sudo snap connect bottom:hardware-observe
-  sudo snap connect bottom:system-observe
-  sudo snap connect bottom:process-control
-  ```
+```bash
+# via snap
+sudo snap install bottom
+# To allow the program to run as intended
+sudo snap connect bottom:mount-observe
+sudo snap connect bottom:hardware-observe
+sudo snap connect bottom:system-observe
+sudo snap connect bottom:process-control
+```
 
 - [`xh`](https://github.com/ducaale/xh): 替代 `httpie`
 - [`zoxide`](https://github.com/ajeetdsouza/zoxide): 替代 `autojump|z`, 基于目录访问频率进行智能匹配
 
 > [zsh 常用插件 | zoxide](./zsh常用插件.md#zoxide)
 
-### 3.2 其他
+#### 3.2 其他
 
-### 3.2.1 atuin: shell 历史记录增强
+#### 3.2.1 atuin: shell 历史记录增强
 
 > [atuin: shell 历史记录增强 | ZSH 常用插件](./zsh常用插件.md#atuin-shell-历史记录增强)
 
@@ -206,7 +213,7 @@ curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
 atuin import auto
 ```
 
-### 3.2.2 zellij: 终端复用
+#### 3.2.2 zellij: 终端复用
 
 > [zellij](https://github.com/zellij-org/zellij): 终端复用工具，比 tmux 好用
 
@@ -216,7 +223,24 @@ atuin import auto
 cargo install --locked zellij
 ```
 
-### 3.2.3 fastfetch: 获取并打印系统信息
+#### 3.2.3 direnv: 自动激活虚拟环境
+
+> [direnv](https://github.com/direnv/direnv)
+
+安装:
+
+```bash
+# Ubuntu
+sudo apt install direnv
+# MacOS
+brew install direnv
+```
+
+direnv 会监测当前路径下的 `.envrc` 文件 (bash 脚本格式):
+
+- 如果在当前路径下执行过 `direnv allow .` (只要执行过一次), 就会在进入目录时自动执行 `.envrc`
+
+#### 3.2.4 fastfetch: 获取并打印系统信息
 
 > [Fastfetch](https://github.com/fastfetch-cli/fastfetch): Fastfetch is a [Neofetch](https://github.com/dylanaraps/neofetch)-like tool for fetching system information and displaying it prettily.
 
@@ -232,7 +256,7 @@ sudo apt-get install fastfetch
 brew install fastfetch
 ```
 
-### 3.2.4 navi: 命令行 cheatsheet 工具
+#### 3.2.5 navi: 命令行 cheatsheet 工具
 
 > [navi](https://github.com/denisidoro/navi): 命令行 cheatsheet 工具
 
@@ -242,7 +266,7 @@ cargo install --locked navi
 brew install navi
 ```
 
-### 3.2.5 thefuck: 快速纠正输错的命令
+#### 3.2.6 thefuck: 快速纠正输错的命令
 
 > [thefuck](https://github.com/nvbn/thefuck#installation)
 
@@ -258,7 +282,7 @@ MacOS 用户:
 brew install thefuck
 ```
 
-### 3.2.6 Yazi: 命令行文件管理器
+#### 3.2.7 Yazi: 命令行文件管理器
 
 > [yazi: Blazing fast terminal file manager](https://github.com/sxyazi/yazi)
 >
@@ -284,7 +308,7 @@ MacOS 使用 brew 安装:
 brew install yazi ffmpeg sevenzip jq poppler fzf resvg imagemagick font-symbols-only-nerd-font
 ```
 
-### 3.2.7 sttr: 字符串转换工具
+### 3.2.8 sttr: 字符串转换工具
 
 > [sttr: cross-platform, cli app to perform various operations on string](https://github.com/abhimanyu003/sttr?tab=readme-ov-file#battery-installation)
 
@@ -300,7 +324,7 @@ MacOS:
 brew install abhimanyu003/sttr/sttr
 ```
 
-### 3.2.8 trzsz
+### 3.2.9 trzsz
 
 `trzsz` 与 `rz` 和 `sz` 类似，是一个跨平台的终端文件传输工具，支持在终端中快速传输文件。需要客户端与服务端都支持。
 

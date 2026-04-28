@@ -1,6 +1,11 @@
-# PVE 安装 Alpine LXC & Debian LXC
+---
+type: note
+aliases: []
+created: 2026-02-27T17:38:10.000+0800
+modified: 2026-03-03T14:59:55.285+0800
+---
 
-+ PVE 系统版本: 8.3.0
++ PVE 系统版本: `8.3.0
 
 LXC 是 Linux Container 的缩写，是 PVE 的一种轻量级的虚拟化技术。相比虚拟机，LXC 的性能更好，资源占用更少。
 
@@ -13,7 +18,7 @@ LXC 是 Linux Container 的缩写，是 PVE 的一种轻量级的虚拟化技术
 ### 1.1 安装脚本
 
 > <https://community-scripts.github.io/ProxmoxVE/scripts?id=alpine&category=Operating+Systems>
-> 当前 (2025-11-03) 脚本安装版本: alpine 3.22
+> 当前 (2026-03-03) 脚本安装版本: alpine 3.23
 
 ```bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/debian.sh)"
