@@ -21,11 +21,6 @@ update-toc = "cli.update_toc:main"
 [dependency-groups]
 dev = ["pre-commit>=4.2.0", "ruff>=0.12.8"]
 
-[[tool.uv.index]]
-name = "tsinghua"
-url = "https://pypi.tuna.tsinghua.edu.cn/simple"
-default = true
-
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
