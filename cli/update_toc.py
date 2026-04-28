@@ -11,10 +11,15 @@ The structure is saved as a JSON file and a Table of Contents (TOC) is
 generated in markdown format.
 """
 
+import fnmatch
 import json
 import math
+import re
+from dataclasses import dataclass
+from datetime import datetime
 from pathlib import Path
 
+import frontmatter
 from pydantic_settings import BaseSettings
 from rich import print
 
@@ -35,9 +40,23 @@ class Settings(BaseSettings):
     toc_title: str = 'Table of Contents'
     max_header_level: int = 3  # level higher than this will be formatted as list
     min_level: int = 0  # level less than this will be ignored in TOC
+    recent_updates_title: str = '最近更新'
+    recent_updates_count: int = 10
+    recent_updates_excerpt_lines: int = 3
+    recent_updates_excerpt_fallback_scan_lines: int = 200
+    recent_updates_excerpt_max_line_length: int = 120
 
 
 settings = Settings()
+
+
+@dataclass
+class RecentNote:
+    title: str
+    link: str
+    modified: datetime
+    modified_raw: str
+    excerpt_lines: list[str]
 
 
 def main() -> None:
@@ -76,14 +95,16 @@ def main() -> None:
     lines = ['<!-- TOC -->', *toc_lines, '<!-- /TOC -->']
     if settings.toc_md_output.exists():
         old_lines = settings.toc_md_output.read_text(encoding='utf8').splitlines()
-        start, end = None, None
-        for i, line in enumerate(old_lines):
-            if line.strip().startswith('<!-- TOC -->'):
-                start = i
-            elif line.strip().startswith('<!-- /TOC -->'):
-                end = i
-        if start is not None and end is not None:
-            lines = old_lines[: start + 1] + toc_lines + old_lines[end:]
+        lines = _replace_section_by_markers(
+            old_lines=old_lines,
+            section_lines=toc_lines,
+            start_marker='<!-- TOC -->',
+            end_marker='<!-- /TOC -->',
+        )
+
+    recent_notes = build_recent_notes(DOCS_ROOT)
+    recent_updates_section = make_recent_updates_content(recent_notes)
+    lines = _replace_recent_updates_section(lines, recent_updates_section)
     settings.toc_md_output.write_text('\n'.join(lines), encoding='utf8', newline='\n')
     print('[bold green]Done![/bold green]')
 
@@ -206,6 +227,238 @@ def _format_toc(lines: list[str]) -> list[str]:
     for idx in reversed(insert_blank_lines_idx):
         lines.insert(idx, '')
     return lines
+
+
+def _replace_section_by_markers(
+    old_lines: list[str],
+    section_lines: list[str],
+    start_marker: str,
+    end_marker: str,
+    section_header: str | None = None,
+) -> list[str]:
+    start, end = None, None
+    for i, line in enumerate(old_lines):
+        if line.strip().startswith(start_marker):
+            start = i
+        elif line.strip().startswith(end_marker):
+            end = i
+    if start is not None and end is not None and start < end:
+        return old_lines[: start + 1] + section_lines + old_lines[end:]
+
+    if not old_lines:
+        return [start_marker, *section_lines, end_marker]
+
+    append_lines = []
+    if old_lines[-1].strip():
+        append_lines.append('')
+    if section_header:
+        append_lines.extend([section_header, ''])
+    append_lines.extend([start_marker, *section_lines, end_marker])
+    return old_lines + append_lines
+
+
+def _replace_recent_updates_section(
+    old_lines: list[str],
+    section_lines: list[str],
+) -> list[str]:
+    start_marker = '<!-- RECENT_UPDATES -->'
+    end_marker = '<!-- /RECENT_UPDATES -->'
+    section_header = f'## {settings.recent_updates_title}'
+    toc_start_marker = '<!-- TOC -->'
+
+    start, end = None, None
+    for i, line in enumerate(old_lines):
+        if line.strip().startswith(start_marker):
+            start = i
+        elif line.strip().startswith(end_marker):
+            end = i
+    lines = old_lines
+    if start is not None and end is not None and start < end:
+        # Remove existing recent-updates block (and optional heading/blank lines before it),
+        # then reinsert it before TOC for stable ordering.
+        block_start = start
+        if start >= 2 and lines[start - 1] == '' and lines[start - 2] == section_header:
+            block_start = start - 2
+        elif start >= 1 and lines[start - 1] == section_header:
+            block_start = start - 1
+        block_end = end
+        if end + 1 < len(lines) and lines[end + 1] == '':
+            block_end = end + 1
+        lines = lines[:block_start] + lines[block_end + 1 :]
+
+    toc_start = None
+    for i, line in enumerate(lines):
+        if line.strip().startswith(toc_start_marker):
+            toc_start = i
+            break
+
+    block = [section_header, '', start_marker, *section_lines, end_marker, '']
+    if toc_start is not None:
+        return lines[:toc_start] + block + lines[toc_start:]
+
+    if not lines:
+        return [start_marker, *section_lines, end_marker]
+
+    append_lines: list[str] = []
+    if lines[-1].strip():
+        append_lines.append('')
+    append_lines.extend(block[:-1])
+    return lines + append_lines
+
+
+def build_recent_notes(root: Path) -> list[RecentNote]:
+    notes: list[RecentNote] = []
+    for filepath in root.rglob('*.md'):
+        rel_p = filepath.relative_to(root)
+        rel_p_str = f'./{rel_p.as_posix()}'
+        if not any(
+            fnmatch.fnmatch(rel_p_str, pattern) for pattern in settings.includes
+        ):
+            continue
+        if any(fnmatch.fnmatch(rel_p_str, pattern) for pattern in settings.excludes):
+            continue
+
+        post = frontmatter.load(filepath.as_posix())
+        if post.get('NoteStatus') == 'draft':
+            continue
+
+        modified_raw = post.get('modified')
+        if not isinstance(modified_raw, str):
+            continue
+        modified = _parse_modified_datetime(modified_raw)
+        if modified is None:
+            continue
+
+        title = filepath.stem
+
+        link = f'./{custom_quote(rel_p.as_posix(), safe="/")}'
+        excerpt_lines = _extract_excerpt_lines(post.content)
+        notes.append(
+            RecentNote(
+                title=title,
+                link=link,
+                modified=modified,
+                modified_raw=modified_raw,
+                excerpt_lines=excerpt_lines,
+            )
+        )
+
+    notes.sort(key=lambda x: x.modified, reverse=True)
+    return notes[: settings.recent_updates_count]
+
+
+def _extract_excerpt_lines(content: str) -> list[str]:
+    strict_lines: list[str] = []
+    fallback_lines: list[str] = []
+    in_code_block = False
+    for idx, raw_line in enumerate(content.splitlines()):
+        if idx >= settings.recent_updates_excerpt_fallback_scan_lines:
+            break
+        line = raw_line.strip()
+        if line.startswith('```'):
+            in_code_block = not in_code_block
+            continue
+        if in_code_block:
+            continue
+        if not line or line.startswith('#') or line.startswith('>'):
+            continue
+
+        normalized = _truncate_excerpt_line(line)
+        if _is_noisy_excerpt_line(line):
+            # Keep as fallback candidates when clean prose is insufficient.
+            fallback_lines.append(normalized)
+            continue
+
+        strict_lines.append(normalized)
+        if len(strict_lines) >= settings.recent_updates_excerpt_lines:
+            break
+
+    if len(strict_lines) >= settings.recent_updates_excerpt_lines:
+        return strict_lines[: settings.recent_updates_excerpt_lines]
+
+    remaining = settings.recent_updates_excerpt_lines - len(strict_lines)
+    return strict_lines + fallback_lines[:remaining]
+
+
+_unordered_list_re = re.compile(r'^[-*+]\s+')
+_ordered_list_re = re.compile(r'^\d+\.\s+')
+
+
+def _is_noisy_excerpt_line(line: str) -> bool:
+    # Skip list/meta heavy lines in the primary excerpt selection.
+    return (
+        bool(_unordered_list_re.match(line))
+        or bool(_ordered_list_re.match(line))
+        or line.startswith('![')
+        or line.startswith('|')
+        or line.startswith('---')
+        or line.startswith('***')
+        or line.startswith('```')
+        or line.startswith('<!--')
+    )
+
+
+def _truncate_excerpt_line(line: str) -> str:
+    max_len = settings.recent_updates_excerpt_max_line_length
+    if len(line) <= max_len:
+        return line
+    return line[: max_len - 3].rstrip() + '...'
+
+
+def make_recent_updates_content(notes: list[RecentNote]) -> list[str]:
+    if not notes:
+        return ['暂无符合条件的最近更新文档。']
+
+    lines: list[str] = []
+    for note in notes:
+        lines.append(
+            f'- [{note.title}]({note.link}) · {_format_modified_datetime(note.modified)}'
+        )
+        if note.excerpt_lines:
+            lines.extend(f'  > {excerpt}' for excerpt in note.excerpt_lines)
+            lines.append('  > ...')
+        else:
+            lines.append('  > （暂无可展示摘要）')
+    return lines
+
+
+def _format_modified_datetime(dt: datetime) -> str:
+    """Format datetime into a readable local string."""
+    return dt.strftime('%Y-%m-%d %H:%M')
+
+
+def _parse_modified_datetime(raw: str) -> datetime | None:
+    text = raw.strip()
+    if not text:
+        return None
+    if text.endswith('Z'):
+        text = text[:-1] + '+00:00'
+
+    # 1) Try fromisoformat first: handles many ISO variants.
+    try:
+        return datetime.fromisoformat(text)
+    except ValueError:
+        pass
+
+    # 2) Fallback common explicit formats.
+    formats = (
+        '%Y-%m-%dT%H:%M:%S.%f%z',
+        '%Y-%m-%dT%H:%M:%S%z',
+        '%Y-%m-%d %H:%M:%S.%f%z',
+        '%Y-%m-%d %H:%M:%S%z',
+        '%Y-%m-%dT%H:%M:%S.%f',
+        '%Y-%m-%dT%H:%M:%S',
+        '%Y-%m-%d %H:%M:%S.%f',
+        '%Y-%m-%d %H:%M:%S',
+    )
+    dt = None
+    for fmt in formats:
+        try:
+            dt = datetime.strptime(text, fmt)
+            break
+        except ValueError:
+            continue
+    return dt
 
 
 if __name__ == '__main__':

@@ -23,6 +23,7 @@ def custom_quote(url: str, safe: str = '/') -> str:
 
 
 md_h1_pattern = re.compile(r'^#\s+(.*)$')
+md_heading_pattern = re.compile(r'^#{1,6}\s+(.*)$')
 
 
 def extract_h1_titles(file_path: Path) -> list[str]:
@@ -33,3 +34,19 @@ def extract_h1_titles(file_path: Path) -> list[str]:
             if match:
                 h1_titles.append(match.group(1))
     return h1_titles
+
+
+def extract_first_heading(file_path: Path) -> str | None:
+    """Extract the first markdown heading, skipping fenced code blocks."""
+    in_code_block = False
+    with file_path.open('r', encoding='utf-8') as file:
+        for raw_line in file:
+            line = raw_line.strip()
+            if line.startswith('```'):
+                in_code_block = not in_code_block
+                continue
+            if in_code_block:
+                continue
+            if match := md_heading_pattern.match(line):
+                return match.group(1).strip()
+    return None

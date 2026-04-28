@@ -2,6 +2,61 @@
 
 [[toc]]
 
+## 最近更新
+
+<!-- RECENT_UPDATES -->
+- [HermesAgent部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/HermesAgent部署.md) · 2026-04-22 22:37
+  > 编写 `docker-compose.yaml`:
+  > 启动容器后，先进入容器的终端 (`/bin/bash`), 执行:
+  > 开始一些配置。
+  > ...
+- [PG断开所有连接](./编程开发-Programming/Database/PostgreSQL/PG断开所有连接.md) · 2026-03-22 00:33
+  > 断开所有 `DB_NAME` 数据库的连接：
+  > 终止所有运行时间超过特定阈值的查询 (推荐做法):
+  > 仅终止包含 "SELECT" 关键字的活跃查询:
+  > ...
+- [PVE部署 Tailscale](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE部署%20Tailscale.md) · 2026-03-03 18:00
+  > [Proxmox Community-Scripts](https://community-scripts.github.io/ProxmoxVE/) 提供了社区维护的安装脚本。
+  > 该脚本是一个 addon，会在已存在的 LXC 容器中添加 tailscale。我们需要先安装一个 LXC。
+  > 参考 [[PVE 安装 alpine LXC & Debian LXC]]，创建一个 Alpine LXC。
+  > ...
+- [PVE 安装 alpine LXC & Debian LXC](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20alpine%20LXC%20%26%20Debian%20LXC.md) · 2026-03-03 14:59
+  > LXC 是 Linux Container 的缩写，是 PVE 的一种轻量级的虚拟化技术。相比虚拟机，LXC 的性能更好，资源占用更少。
+  > [Proxmox Community-Scripts](https://community-scripts.github.io/ProxmoxVE/) 提供了社区维护的安装脚本。
+  > 本文安装 Alpine 和 Debian 两个操作系统的 LXC 容器。
+  > ...
+- [Fish Shell 安装](./Linux/shell/Fish%20Shell%20安装.md) · 2026-03-03 14:22
+  > 通过包管理器安装 Fish Shell:
+  > Mac 在安装之后，
+  > [Fisher](https://github.com/jorgebucaran/fisher): Fish Shell 的插件管理器
+  > ...
+- [Linux开发环境setup](./Linux/Linux开发环境setup.md) · 2026-02-28 02:06
+  > 本文介绍配置 Linux 开发环境的流程，按照步骤配置后，可初步完成开发环境搭建。
+  > 本文以 Ubuntu/Debian 系统为例，部分命令给出了 MacOS 版本。其他发行版请自行替换命令。
+  > 根据个人开发需求，选择性安装。
+  > ...
+- [ConvertX 文件格式转换服务部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/ConvertX%20文件格式转换服务部署.md) · 2026-02-27 19:48
+  > 本文通过 Docker Compose 方式部署 ConvertX 文件格式转换服务到绿联的 NAS 上。同时也提供了通用的部署方法，可供在其他 Linux 服务器上部署时参考。
+  > [ConvertX](https://github.com/C4illin/ConvertX) 是一款开源的文件格式转换工具，支持多种文件格式之间的转换。
+  > 编写 `docker-compose.yml` 的文件内容如下:
+  > ...
+- [kavita部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/kavita部署.md) · 2025-10-29 20:49
+  > Kavita 是一个自托管的媒体服务器，主要用于管理和阅读漫画、小说和电子书，支持多用户访问、跨设备同步以及多种文件格式。
+  > 本文通过 Docker Compose 方式部署 Kavita 服务到绿联的 NAS 上。同时也提供了通用的部署方法，可供在其他 Linux 服务器上部署时参考。
+  > Kavita 是一款开源的个人数字图书馆管理软件，支持多种电子书和漫画格式。
+  > ...
+- [RustFS部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/RustFS部署.md) · 2025-10-27 22:10
+  > [RustFS](https://github.com/rustfs/rustfs) 是一个基于 Rust 语言编写的 S3 兼容的文件系统。
+  > 其功能类似 MinIO，但运行时的资源占用更低，且提供了友好的 Web UI。
+  > 编写本文时，RustFS 项目目前仍处于 alpha 阶段 (最新版本 1.0.0-alpha.65)，尚未稳定，仅供参考。
+  > ...
+- [开启iSCSI服务](./领域知识-DomainKnowledge/个人服务搭建/NAS/开启iSCSI服务.md) · 2025-09-28 12:38
+  > 本文基于绿联 NAS 的 SAN Manager 应用开启 iSCSI 服务。
+  > **iSCSI (Internet Small Computer System Interface)** 是一种基于网络的块级存储协议，允许用户将 NAS 空间虚拟为一块远程硬盘 (LUN)，在客户端设备的系统中表现为本地磁盘。从而解...
+  > iSCSI 核心功能亮点：
+  > ...
+<!-- /RECENT_UPDATES -->
+
 <!-- TOC -->
 ## 1 - 编程开发-Programming
 
