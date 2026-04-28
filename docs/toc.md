@@ -75,7 +75,7 @@
   * [PG Null 值排序顺序](./编程开发-Programming/Database/PostgreSQL/PG%20Null值排序顺序.md)
   * [PostgreSQL 把多行拼接为字符串](./编程开发-Programming/Database/PostgreSQL/PG把多行拼接为字符串.md)
   * [PostgreSQL 编写触发器](./编程开发-Programming/Database/PostgreSQL/PG编写触发器.md)
-  * [PG 断开所有连接](./编程开发-Programming/Database/PostgreSQL/PG断开所有连接.md)
+  * [PG断开所有连接](./编程开发-Programming/Database/PostgreSQL/PG断开所有连接.md)
   * [PostgreSQL 服务安装](./编程开发-Programming/Database/PostgreSQL/PG服务安装.md)
   * [PG 设置自增序列值](./编程开发-Programming/Database/PostgreSQL/PG设置自增序列值.md)
   * [PostgreSQL 实现 Partial Unique Constraint](./编程开发-Programming/Database/PostgreSQL/PG实现partial%20unique%20constraint.md)
@@ -188,6 +188,7 @@
   * [ConvertX 文件格式转换服务部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/ConvertX%20文件格式转换服务部署.md)
   * [DailyCheckin 自动签到服务部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/DailyCheckin自动签到服务部署.md)
   * [ezBookkeeping 自托管记账服务部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/ezbookkeeping自托管记账服务部署.md)
+  * [HermesAgent部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/HermesAgent部署.md)
   * [IPTV-API 电视直播源工具部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/IPTV-API电视直播源工具部署.md)
   * [Kavita 部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/kavita部署.md)
   * [Nginx Proxy Manager 服务部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/Nginx%20Proxy%20Manager部署.md)
@@ -200,12 +201,13 @@
 * PVE All-in-One 实践
   * [PVE All-in-One 实践](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/)
   * [OpenClash 安装和配置](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/OpenClash%20安装和配置.md)
-  * [PVE 安装 Alpine LXC & Debian LXC](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20alpine%20LXC.md)
+  * [PVE 安装 alpine LXC & Debian LXC](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20alpine%20LXC%20%26%20Debian%20LXC.md)
   * [PVE 安装 homeassistant](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20homeassistant.md)
   * [PVE 安装 ikuai](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20ikuai.md)
   * [PVE 安装 Linux 虚拟机](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20linux%20虚拟机.md)
   * [PVE 安装 OpenWRT](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20OpenWRT.md)
   * [PVE 系统备份到 NAS(smb)](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20系统备份备份到NAS%28smb%29.md)
+  * [开启 IPv4 和 IPv6 转发](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE部署%20Tailscale.md)
   * [PVE 部署 Homarr](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE部署Homarr.md)
   * [PVE 使用 iSCSI 存储](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE使用iSCSI存储.md)
   * [安装 PVE 系统](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/安装%20PVE%20系统.md)
@@ -277,7 +279,7 @@
 * [Linux Shell 输出重定向并后台执行](./Linux/Linux%20Shell输出重定向并后台执行.md)
 * [Linux 实时内存监控: top, vmstat, free](./Linux/Linux%20实时内存监控-top%2Cvmstat%2Cfree.md)
 * [Linux 环境变量设置：env, set, export](./Linux/Linux环境变量设置-env%2C%20set%2C%20export.md)
-* [Linux 开发环境 setup](./Linux/Linux开发环境setup.md)
+* [使用维护团队测试的最快镜像站](./Linux/Linux开发环境setup.md)
 * [Linux 快速传输大文件: nc 命令](./Linux/Linux快速传输大文件-nc.md)
 * [Linux 批量杀死进程](./Linux/Linux批量杀死进程.md)
 * [Linux 使终端支持 UTF-8 中文字符](./Linux/Linux使终端支持utf8中文字符.md)
@@ -331,7 +333,7 @@
 
 ### 3.6 shell
 
-* [Fish Shell 安装](./Linux/shell/fish%20shell安装.md)
+* [Ubuntu](./Linux/shell/Fish%20Shell%20安装.md)
 
 ## 4 - 软件工具应用-Applications
 
