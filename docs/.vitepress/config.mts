@@ -15,36 +15,27 @@ function fileNameToTitle(relativePath: string): string {
 }
 
 function injectFilenameH1(md: any) {
-  md.core.ruler.push('inject_filename_h1', (state: any) => {
-    const tokens = state.tokens
-    if (tokens.some((t: any) => t.type === 'heading_open' && t.tag === 'h1')) return
-
+  md.core.ruler.before('normalize', 'inject_filename_h1', (state: any) => {
     const relPath: string | undefined = state.env?.relativePath || state.env?.path
     if (!relPath) return
 
     const filename = path.basename(relPath, path.extname(relPath))
     if (H1_INJECT_EXCLUDES.has(filename)) return
 
-    const Token = state.Token
+    const src: string = state.src
+    let injectAt = 0
 
-    const openToken = new Token('heading_open', 'h1', 1)
-    openToken.markup = '#'
-    openToken.block = true
+    if (src.startsWith('---\n') || src.startsWith('---\r\n')) {
+      const fmEnd = src.slice(4).match(/\r?\n---(\r?\n|$)/)
+      if (fmEnd && typeof fmEnd.index === 'number') {
+        injectAt = 4 + fmEnd.index + fmEnd[0].length
+      }
+    }
 
-    const inlineToken = new Token('inline', '', 0)
-    inlineToken.content = filename
-    inlineToken.block = true
-    const textToken = new Token('text', '', 0)
-    textToken.content = filename
-    inlineToken.children = [textToken]
+    const rest = src.slice(injectAt).replace(/^\s*\n/, '')
+    if (/^#\s+/.test(rest)) return
 
-    const closeToken = new Token('heading_close', 'h1', -1)
-    closeToken.markup = '#'
-    closeToken.block = true
-
-    let insertAt = 0
-    if (tokens[0]?.type === 'front_matter') insertAt = 1
-    tokens.splice(insertAt, 0, openToken, inlineToken, closeToken)
+    state.src = src.slice(0, injectAt) + `# ${filename}\n\n` + src.slice(injectAt)
   })
 }
 
