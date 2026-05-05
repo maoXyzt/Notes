@@ -2,7 +2,7 @@
 type: note
 aliases: []
 created: 2026-04-15T14:00:37.000+0800
-modified: 2026-04-22T22:37:40.449+0800
+modified: 2026-04-28T21:53:59.365+0800
 ---
 
 > 官方文档: <https://hermes-agent.nousresearch.com/docs/user-guide/docker#docker-compose-example>
@@ -69,6 +69,7 @@ networks:
 
 ```bash
 su hermes
+# 建议先 pip install qrcode 以便显示二维码
 hermes setup
 ```
 

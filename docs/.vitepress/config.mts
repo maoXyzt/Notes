@@ -1,9 +1,17 @@
 import { defineConfig } from 'vitepress'
 import mathjax3 from 'markdown-it-mathjax3'
+import path from 'node:path'
 
 import { themeConfig } from './theme/themeConfig'
 import { docsConfig } from './docs'
 import { head } from './head'
+
+const mdExtension = '.md'
+
+function fileNameToTitle(relativePath: string): string {
+  const baseName = path.basename(relativePath, mdExtension)
+  return decodeURIComponent(baseName)
+}
 
 // Ref: https://blog.csdn.net/weixin_43837483/article/details/132517579
 const customElements = [
@@ -109,6 +117,13 @@ export default defineConfig({
     config: (md) => {
       md.use(mathjax3);
     },
+  },
+  transformPageData: (pageData) => {
+    if (pageData.title?.trim()) {
+      return
+    }
+
+    pageData.title = fileNameToTitle(pageData.relativePath)
   },
   vue: {
     template: {

@@ -2,7 +2,7 @@
 type: note
 aliases: []
 created: 2026-02-27T19:37:22.000+0800
-modified: 2026-03-03T14:22:48.102+0800
+modified: 2026-05-05T22:55:26.291+0800
 ---
 
 ## 1 - 安装
@@ -18,9 +18,13 @@ sudo apt install fish
 brew install fish
 ```
 
-Mac 在安装之后，
+Mac 在安装之后，检查 `/etc/shells` 默认其中不含 `fish` 。将 `fish` 添加到其中:
 
-[Fisher](https://github.com/jorgebucaran/fisher): Fish Shell 的插件管理器
+```bash
+echo "$(which fish)" | sudo tee -a /etc/shells
+```
+
+推荐安装 [Fisher](https://github.com/jorgebucaran/fisher): Fish Shell 的插件管理器
 
 ```bash
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
@@ -28,7 +32,7 @@ curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fi
 
 ## 2 - 推荐插件安装
 
-## 2.1 bass: 兼容 bash 命令
+### 2.1 bass: 兼容 bash 命令
 
 [bash](https://github.com/edc/bass)
 
@@ -38,7 +42,7 @@ fisher install edc/bass
 
 使用时，在 bash 命令前加上 `bass` 即可
 
-## 2.2 fish-git-abbr: 类似 oh-my-zsh 的 git 命令缩写
+### 2.2 fish-git-abbr: 类似 oh-my-zsh 的 git 命令缩写
 
 [fish-git-abbr](https://github.com/lewisacidic/fish-git-abbr)
 
