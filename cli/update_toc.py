@@ -306,9 +306,14 @@ def _replace_recent_updates_section(
     return lines + append_lines
 
 
+_RECENT_UPDATES_EXCLUDED_FILENAMES = frozenset({'index.md', 'atlas.md'})
+
+
 def build_recent_notes(root: Path) -> list[RecentNote]:
     notes: list[RecentNote] = []
     for filepath in root.rglob('*.md'):
+        if filepath.name in _RECENT_UPDATES_EXCLUDED_FILENAMES:
+            continue
         rel_p = filepath.relative_to(root)
         rel_p_str = f'./{rel_p.as_posix()}'
         if not any(
@@ -363,7 +368,7 @@ def _extract_excerpt_lines(content: str) -> list[str]:
         if not line or line.startswith('#') or line.startswith('>'):
             continue
 
-        normalized = _truncate_excerpt_line(line)
+        normalized = _truncate_excerpt_line(_strip_markdown_links(line))
         if _is_noisy_excerpt_line(line):
             # Keep as fallback candidates when clean prose is insufficient.
             fallback_lines.append(normalized)
@@ -382,6 +387,9 @@ def _extract_excerpt_lines(content: str) -> list[str]:
 
 _unordered_list_re = re.compile(r'^[-*+]\s+')
 _ordered_list_re = re.compile(r'^\d+\.\s+')
+_markdown_image_re = re.compile(r'!\[([^\]]*)\]\([^)]*\)')
+_markdown_link_re = re.compile(r'\[([^\]]+)\]\([^)]*\)')
+_wikilink_re = re.compile(r'\[\[([^\]]+)\]\]')
 
 
 def _is_noisy_excerpt_line(line: str) -> bool:
@@ -396,6 +404,28 @@ def _is_noisy_excerpt_line(line: str) -> bool:
         or line.startswith('```')
         or line.startswith('<!--')
     )
+
+
+def _strip_markdown_links(line: str) -> str:
+    # Excerpts get embedded into toc.md as blockquotes; relative paths written
+    # inside source files would otherwise resolve against docs root and trip
+    # VitePress' dead-link check. Wikilinks survive linkage but read poorly in
+    # a summary. Downgrade all link/image syntax to plain display text.
+    line = _markdown_image_re.sub(r'\1', line)
+    line = _markdown_link_re.sub(r'\1', line)
+    line = _wikilink_re.sub(_wikilink_display_text, line)
+    return line
+
+
+def _wikilink_display_text(match: re.Match[str]) -> str:
+    inner = match.group(1)
+    # Obsidian alias form: [[target|display]] — prefer the display text.
+    if '|' in inner:
+        inner = inner.split('|', 1)[1]
+    # Drop heading anchor if no alias was provided: [[target#section]] -> target.
+    elif '#' in inner:
+        inner = inner.split('#', 1)[0]
+    return inner.strip()
 
 
 def _truncate_excerpt_line(line: str) -> str:

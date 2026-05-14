@@ -15,15 +15,10 @@
   > subweb: 基于 subconverter 订阅转换的前端项目,方便用户快速生成各平台的订阅链接
   > `docker-compose.yml`
   > ...
-- [index](./领域知识-DomainKnowledge/个人服务搭建/NAS/index.md) · 2026-05-07 18:21
-  > + iSCSI: [开启 iSCSI 服务](./开启iSCSI服务.md)
-  > + 个人导航: [Sun-panel: 个人导航面板服务](./Sun-panel个人导航面板部署.md)
-  > + 反向代理: [Nginx Proxy Manager 服务部署](./Nginx%20Proxy%20Manager部署.md)
-  > ...
 - [Linux开发环境setup](./Linux/Linux开发环境setup.md) · 2026-05-07 14:22
   > 本文介绍配置 Linux 开发环境的流程，按照步骤配置后，可初步完成开发环境搭建。
   > 本文以 Ubuntu/Debian 系统为例，部分命令给出了 MacOS 版本。其他发行版请自行替换命令。
-  > [[Fish Shell 安装]]
+  > Fish Shell 安装
   > ...
 - [global gitignore](./编程开发-Programming/Git/global%20gitignore.md) · 2026-05-07 14:20
   > 我们不希望一些操作系统、IDE、编辑器等的特有文件被 git 托管，但项目的 `.gitignore` 文件应该记录那些不希望保存版本信息的文件/目录，或编译过程中生成的文件。
@@ -33,7 +28,7 @@
 - [Fish Shell 安装](./Linux/shell/Fish%20Shell%20安装.md) · 2026-05-05 22:55
   > 通过包管理器安装 Fish Shell:
   > Mac 在安装之后，检查 `/etc/shells` 默认其中不含 `fish` 。将 `fish` 添加到其中:
-  > 推荐安装 [Fisher](https://github.com/jorgebucaran/fisher): Fish Shell 的插件管理器
+  > 推荐安装 Fisher: Fish Shell 的插件管理器
   > ...
 - [HermesAgent部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/HermesAgent部署.md) · 2026-04-28 21:53
   > 编写 `docker-compose.yaml`:
@@ -46,14 +41,19 @@
   > 仅终止包含 "SELECT" 关键字的活跃查询:
   > ...
 - [PVE部署 Tailscale](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE部署%20Tailscale.md) · 2026-03-03 18:00
-  > [Proxmox Community-Scripts](https://community-scripts.github.io/ProxmoxVE/) 提供了社区维护的安装脚本。
+  > Proxmox Community-Scripts 提供了社区维护的安装脚本。
   > 该脚本是一个 addon，会在已存在的 LXC 容器中添加 tailscale。我们需要先安装一个 LXC。
-  > 参考 [[PVE 安装 alpine LXC & Debian LXC]]，创建一个 Alpine LXC。
+  > 参考 PVE 安装 alpine LXC & Debian LXC，创建一个 Alpine LXC。
   > ...
 - [PVE 安装 alpine LXC & Debian LXC](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20alpine%20LXC%20%26%20Debian%20LXC.md) · 2026-03-03 14:59
   > LXC 是 Linux Container 的缩写，是 PVE 的一种轻量级的虚拟化技术。相比虚拟机，LXC 的性能更好，资源占用更少。
-  > [Proxmox Community-Scripts](https://community-scripts.github.io/ProxmoxVE/) 提供了社区维护的安装脚本。
+  > Proxmox Community-Scripts 提供了社区维护的安装脚本。
   > 本文安装 Alpine 和 Debian 两个操作系统的 LXC 容器。
+  > ...
+- [ConvertX 文件格式转换服务部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/ConvertX%20文件格式转换服务部署.md) · 2026-02-27 19:48
+  > 本文通过 Docker Compose 方式部署 ConvertX 文件格式转换服务到绿联的 NAS 上。同时也提供了通用的部署方法，可供在其他 Linux 服务器上部署时参考。
+  > ConvertX 是一款开源的文件格式转换工具，支持多种文件格式之间的转换。
+  > 编写 `docker-compose.yml` 的文件内容如下:
   > ...
 <!-- /RECENT_UPDATES -->
 
