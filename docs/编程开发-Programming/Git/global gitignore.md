@@ -1,4 +1,9 @@
-# Global gitignore
+---
+type: note
+aliases: []
+created: 2026-05-07T14:18:20.000+0800
+modified: 2026-05-07T14:20:27.416+0800
+---
 
 我们不希望一些操作系统、IDE、编辑器等的特有文件被 git 托管，但项目的 `.gitignore` 文件应该记录那些不希望保存版本信息的文件/目录，或编译过程中生成的文件。
 
@@ -11,10 +16,10 @@
 - 在自己的 home 目录中创建 `.gitignore` 文件，加入需要忽略的条目
 - 告诉 git 自己的全局 `.gitignore` 文件的位置
 
-### 1) Mac
+### 1) Mac/Linux
 
 ```bash
-git config --global core.excludesfile ~/.gitignore
+git config --global core.excludesfile ~/.config/git/ignore
 ```
 
 ### 2) Windows

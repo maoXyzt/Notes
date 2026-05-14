@@ -1,10 +1,15 @@
 import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vitepress'
 import mathjax3 from 'markdown-it-mathjax3'
 
 import { themeConfig } from './theme/themeConfig'
 import { docsConfig } from './docs'
 import { head } from './head'
+import { buildWikilinkIndex, wikilinks } from './plugins/wikilinks'
+
+const srcDir = fileURLToPath(new URL('../', import.meta.url))
+const wikilinkIndex = buildWikilinkIndex(srcDir)
 
 const mdExtension = '.md'
 const H1_INJECT_EXCLUDES = new Set(['index', 'atlas', 'toc'])
@@ -143,6 +148,7 @@ export default defineConfig({
     config: (md) => {
       md.use(mathjax3);
       md.use(injectFilenameH1);
+      md.use(wikilinks(wikilinkIndex));
     },
   },
   transformPageData: (pageData) => {

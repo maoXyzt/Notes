@@ -1,10 +1,17 @@
-# NAS
+---
+type: atlas
+aliases: []
+created: 2026-05-07T14:18:21.000+0800
+modified: 2026-05-07T18:21:24.383+0800
+---
 
-## 1 - NAS 自带服务
+## NAS
+
+### 1 - NAS 自带服务
 
 + iSCSI: [开启 iSCSI 服务](./开启iSCSI服务.md)
 
-## 2 - 在 NAS 上搭建个人服务
+### 2 - 在 NAS 上搭建个人服务
 
 + 个人导航: [Sun-panel: 个人导航面板服务](./Sun-panel个人导航面板部署.md)
 + 反向代理: [Nginx Proxy Manager 服务部署](./Nginx%20Proxy%20Manager部署.md)
@@ -15,8 +22,10 @@
 + 兼容 S3 协议的文件服务系统: [RustFS 部署](./RustFS部署.md)
 + 漫画/电子书服务: [Kavita 部署](./kavita部署.md)
 + 自动签到: [DailyCheckin 自动签到服务部署](./DailyCheckin自动签到服务部署.md)
++ subconverter 代理转换: [[subconverter服务部署]]
++ TaskTrove 任务管理: [[TaskTrove任务管理服务部署]]
 
-## 3 - 用 NAS 为自建服务添加备份
+### 3 - 用 NAS 为自建服务添加备份
 
 + [homeassistant 备份](../HomeAssistant/homeassistant系统备份到NAS.md)
 + [PVE 系统和服务备份](../PVE%20All-in-One%20实践/PVE%20系统备份备份到NAS(smb).md)
