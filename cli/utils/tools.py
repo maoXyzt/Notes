@@ -28,10 +28,15 @@ md_heading_pattern = re.compile(r'^#{1,6}\s+(.*)$')
 
 def extract_h1_titles(file_path: Path) -> list[str]:
     h1_titles = []
+    in_code_block = False
     with file_path.open('r', encoding='utf-8') as file:
-        for line in file:
-            match = md_h1_pattern.match(line)
-            if match:
+        for raw_line in file:
+            if raw_line.lstrip().startswith('```'):
+                in_code_block = not in_code_block
+                continue
+            if in_code_block:
+                continue
+            if match := md_h1_pattern.match(raw_line):
                 h1_titles.append(match.group(1))
     return h1_titles
 

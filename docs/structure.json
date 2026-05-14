@@ -608,7 +608,7 @@
             "link": "/编程开发-Programming/Git/git上传大文件(gt25MB)-Git LFS.md"
           },
           {
-            "text": "Global gitignore",
+            "text": "global gitignore",
             "link": "/编程开发-Programming/Git/global gitignore.md"
           },
           {
@@ -729,12 +729,20 @@
                 "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/RustFS部署.md"
               },
               {
+                "text": "subconverter服务部署",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/subconverter服务部署.md"
+              },
+              {
                 "text": "Sun-panel 个人导航面板部署",
                 "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/Sun-panel个人导航面板部署.md"
               },
               {
                 "text": "Syncthing 文件同步服务部署",
                 "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/Syncthing文件同步服务部署.md"
+              },
+              {
+                "text": "TaskTrove 任务管理服务部署",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/NAS/TaskTrove任务管理服务部署.md"
               },
               {
                 "text": "Vaultwarden 个人密码管理服务部署",
@@ -787,7 +795,7 @@
                 "link": "/领域知识-DomainKnowledge/个人服务搭建/PVE All-in-One 实践/PVE 系统备份备份到NAS(smb).md"
               },
               {
-                "text": "开启 IPv4 和 IPv6 转发",
+                "text": "PVE部署 Tailscale",
                 "link": "/领域知识-DomainKnowledge/个人服务搭建/PVE All-in-One 实践/PVE部署 Tailscale.md"
               },
               {
@@ -1049,7 +1057,7 @@
         "link": "/Linux/Linux环境变量设置-env, set, export.md"
       },
       {
-        "text": "使用维护团队测试的最快镜像站",
+        "text": "Linux开发环境setup",
         "link": "/Linux/Linux开发环境setup.md"
       },
       {
@@ -1226,7 +1234,7 @@
         "text": "3.6 shell",
         "items": [
           {
-            "text": "Ubuntu",
+            "text": "Fish Shell 安装",
             "link": "/Linux/shell/Fish Shell 安装.md"
           }
         ],
