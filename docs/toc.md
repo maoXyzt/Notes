@@ -5,6 +5,11 @@
 ## 最近更新
 
 <!-- RECENT_UPDATES -->
+- [ezbookkeeping自托管记账服务部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/ezbookkeeping自托管记账服务部署.md) · 2026-05-17 12:26
+  > 本文通过 Docker Compose 方式部署 ezBookkeeping 服务到绿联的 NAS 上。同时也提供了通用的部署方法，可供在其他 Linux 服务器上部署时参考。
+  > ezBookkeeping 是一款轻量级、自托管的个人财务 APP。
+  > 其前端支持桌面浏览器和移动端浏览器访问，并支持 PWA 技术，可添加到桌面使用。
+  > ...
 - [TaskTrove任务管理服务部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/TaskTrove任务管理服务部署.md) · 2026-05-09 00:00
   > TaskTrove 是一款自托管的任务管理服务，可以用来替代 Todoist、TickTick 等在线任务管理工具，将任务数据完全保留在本地。
   > 本文通过 Docker Compose 方式部署 TaskTrove 服务到绿联的 NAS 上。同时也提供了通用的部署方法，可供在其他 Linux 服务器上部署时参考。
@@ -49,11 +54,6 @@
   > LXC 是 Linux Container 的缩写，是 PVE 的一种轻量级的虚拟化技术。相比虚拟机，LXC 的性能更好，资源占用更少。
   > Proxmox Community-Scripts 提供了社区维护的安装脚本。
   > 本文安装 Alpine 和 Debian 两个操作系统的 LXC 容器。
-  > ...
-- [ConvertX 文件格式转换服务部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/ConvertX%20文件格式转换服务部署.md) · 2026-02-27 19:48
-  > 本文通过 Docker Compose 方式部署 ConvertX 文件格式转换服务到绿联的 NAS 上。同时也提供了通用的部署方法，可供在其他 Linux 服务器上部署时参考。
-  > ConvertX 是一款开源的文件格式转换工具，支持多种文件格式之间的转换。
-  > 编写 `docker-compose.yml` 的文件内容如下:
   > ...
 <!-- /RECENT_UPDATES -->
 
@@ -242,7 +242,7 @@
   * [NAS](./领域知识-DomainKnowledge/个人服务搭建/NAS/)
   * [ConvertX 文件格式转换服务部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/ConvertX%20文件格式转换服务部署.md)
   * [DailyCheckin 自动签到服务部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/DailyCheckin自动签到服务部署.md)
-  * [ezBookkeeping 自托管记账服务部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/ezbookkeeping自托管记账服务部署.md)
+  * [ezbookkeeping自托管记账服务部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/ezbookkeeping自托管记账服务部署.md)
   * [HermesAgent部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/HermesAgent部署.md)
   * [IPTV-API 电视直播源工具部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/IPTV-API电视直播源工具部署.md)
   * [Kavita 部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/kavita部署.md)

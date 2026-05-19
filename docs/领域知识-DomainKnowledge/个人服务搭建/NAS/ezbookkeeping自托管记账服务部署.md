@@ -1,21 +1,23 @@
 ---
+type: note
+aliases: []
 created: 2025-09-23T14:25:00.000+0800
-modified: 2025-09-23T14:25:00.000+0800
+modified: 2026-05-17T12:26:30.924+0800
 ---
 
-# ezBookkeeping 自托管记账服务部署
+## ezBookkeeping 自托管记账服务部署
 
 本文通过 Docker Compose 方式部署 ezBookkeeping 服务到绿联的 NAS 上。同时也提供了通用的部署方法，可供在其他 Linux 服务器上部署时参考。
 
-## 1 - 项目简介
+### 1 - 项目简介
 
-[ezBookkeeping](https://github.com/mayswind/ezbookkeeping) 是一款轻量级、自托管的个人财务APP。
+[ezBookkeeping](https://github.com/mayswind/ezbookkeeping) 是一款轻量级、自托管的个人财务 APP。
 
-其前端支持桌面浏览器和移动端浏览器访问，并支持PWA技术，可添加到桌面使用。
+其前端支持桌面浏览器和移动端浏览器访问，并支持 PWA 技术，可添加到桌面使用。
 
-## 2 - 使用 Docker Compose 部署 IPTV-API
+### 2 - 使用 Docker Compose 部署 IPTV-API
 
-### 2.1 项目配置
+#### 2.1 项目配置
 
 编写 `docker-compose.yml` 的文件内容如下:
 
@@ -63,20 +65,20 @@ services:
 - `EBK_SERVER_ENABLE_GZIP`: 是否启用 gzip 压缩，可选值为 `true` 或 `false`。默认值为 `true`
 - `EBK_LOG_MODE`: 日志模式，可选值为 `console` 或 `file`。`console` 模式下，日志会输出到控制台。`file` 模式下，日志会输出到文件。默认值为 `console file`
 - `EBK_SECURITY_SECRET_KEY`: 安全密钥, 强烈建议配置
-  - secret_key 可以用如下 python 命令生成: `python -c "import secrets; print(secrets.token_hex(32))"`
+	- secret_key 可以用如下 python 命令生成: `python -c "import secrets; print(secrets.token_hex(32))"`
 
-### 2.2 部署服务
+#### 2.2 部署服务
 
-#### (1) 通过 NAS UI 部署
+##### (1) 通过 NAS UI 部署
 
-进入 NAS 的管理界面，打开 Docker，在 "项目" 中点击 "创建"。
+进入 NAS 的管理界面，打开 Docker，在 " 项目 " 中点击 " 创建 "。
 
 1. 项目名称：ezbookkeeping
-2. 存放路径(可自选): `共享文件夹/docker/ezbookkeeping/`
+2. 存放路径 (可自选): `共享文件夹/docker/ezbookkeeping/`
 3. Compose 配置: 将上述 `docker-compose.yml` 的内容导入或复制到此目录下
 4. 启动项目: 点击 “立即部署”
 
-#### (2) 在 Linux Server 上部署
+##### (2) 在 Linux Server 上部署
 
 如果是在服务器上部署，可以通过 SSH 登录到服务器:
 
@@ -88,3 +90,52 @@ services:
 ```bash
 docker-compose up -d
 ```
+
+### 2.3 （可选）开启 MCP 服务
+
+添加如下两个环境变量，为 AI Agent 的接入开启 MCP 服务：
+
+```yaml
+services:
+  environment:
+    - "EBK_MCP_ENABLE_MCP=true"
+    - "EBK_MCP_MCP_ALLOWED_REMOTE_IPS=192.168.50.*"
+    - "EBK_SECURITY_ENABLE_API_TOKEN=true"
+    - "EBK_SECURITY_API_TOKEN_ALLOWED_REMOTE_IPS=192.168.50.*"
+```
+
+- `EBK_MCP_ENABLE_MCP`: 是否开启 MCP 服务
+- `EBK_MCP_MCP_ALLOWED_REMOTE_IPS`: 允许连接 MCP 服务的 IP 地址
+- `EBK_SECURITY_ENABLE_API_TOKEN`: 允许生成 API Token (比 MCP Token 权限更高)
+- `EBK_SECURITY_API_TOKEN_ALLOWED_REMOTE_IPS`: 允许用 API Token 访问的 IP 地址
+
+然后重启服务.
+
+在「用户设置 → 安全」页面点 " 生成 Token"，选 **MCP Token 类型**
+
+配置 agent: 以 Hermes Agent 为例，编写 `/opt/data/cofing.yaml` 文件
+
+```yaml
+mcp_servers:
+  ezbookkeeping:
+    url: "http://<ip>:<port>/mcp"
+    headers:
+      Authorization: "Bearer <mcp_token>"
+```
+
+重启 agent 后生效。
+
+然后会得到这些工具：
+
+|                                       |                      |
+| ------------------------------------- | -------------------- |
+| MCP 工具                                | 功能                   |
+| 💰 `add_transaction`                  | 新增交易（收入/支出/转账）       |
+| 📋 `query_transactions`               | 查询交易记录（可按时间/类型/分类筛选） |
+| 🏦 `query_all_accounts`               | 查询所有账户               |
+| 💵 `query_all_accounts_balance`       | 查询所有账户余额             |
+| 📂 `query_all_transaction_categories` | 查询所有交易分类             |
+| 🏷️ `query_all_transaction_tags`      | 查询所有交易标签             |
+| 🔄 `query_latest_exchange_rates`      | 查询最新汇率               |
+
+官方仓库还提供了 `ebktools.sh` 工具辅助调用 API

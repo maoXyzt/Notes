@@ -5,7 +5,8 @@ created: 2026-04-15T14:00:37.000+0800
 modified: 2026-04-28T21:53:59.365+0800
 ---
 
-> 官方文档: <https://hermes-agent.nousresearch.com/docs/user-guide/docker#docker-compose-example>
+> 官方文档: <https://
+> hermes-agent.nousresearch.com/docs/user-guide/docker#docker-compose-example>
 
 > 本文编写时, `"nousresearch/hermes-agent"` 的最新版本为 `9d39e424be33` (2026-04-16)
 
