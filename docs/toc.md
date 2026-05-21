@@ -5,6 +5,11 @@
 ## 最近更新
 
 <!-- RECENT_UPDATES -->
+- [发布Rust项目到crates.io](./编程开发-Programming/Rust/发布Rust项目到crates.io.md) · 2026-05-22 00:35
+  > crates.io 是 Rust 官方的包注册中心 (registry)，是 Rust 生态中绝大多数三方库的分发渠道。
+  > 本文记录将一个 Rust 项目 (lib crate) 发布到 crates.io 的完整流程。
+  > 发布 crate 前需要一个 crates.io 账号:
+  > ...
 - [ezbookkeeping自托管记账服务部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/ezbookkeeping自托管记账服务部署.md) · 2026-05-17 12:26
   > 本文通过 Docker Compose 方式部署 ezBookkeeping 服务到绿联的 NAS 上。同时也提供了通用的部署方法，可供在其他 Linux 服务器上部署时参考。
   > ezBookkeeping 是一款轻量级、自托管的个人财务 APP。
@@ -49,11 +54,6 @@
   > Proxmox Community-Scripts 提供了社区维护的安装脚本。
   > 该脚本是一个 addon，会在已存在的 LXC 容器中添加 tailscale。我们需要先安装一个 LXC。
   > 参考 PVE 安装 alpine LXC & Debian LXC，创建一个 Alpine LXC。
-  > ...
-- [PVE 安装 alpine LXC & Debian LXC](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20alpine%20LXC%20%26%20Debian%20LXC.md) · 2026-03-03 14:59
-  > LXC 是 Linux Container 的缩写，是 PVE 的一种轻量级的虚拟化技术。相比虚拟机，LXC 的性能更好，资源占用更少。
-  > Proxmox Community-Scripts 提供了社区维护的安装脚本。
-  > 本文安装 Alpine 和 Debian 两个操作系统的 LXC 容器。
   > ...
 <!-- /RECENT_UPDATES -->
 
@@ -214,21 +214,23 @@
 * Gitlab
   * [Gitlab CI 配置](./编程开发-Programming/Git/Gitlab/gitlab%20ci%20配置.md)
 
-### 1.6 Go
+### 1.6 Rust
+
+* [Rust](./编程开发-Programming/Rust/)
+* [Rust 工具链 & Cargo 国内源](./编程开发-Programming/Rust/Rust工具链%26Cargo国内源.md)
+* [Rust 项目结构](./编程开发-Programming/Rust/Rust项目结构.md)
+* [发布Rust项目到crates.io](./编程开发-Programming/Rust/发布Rust项目到crates.io.md)
+
+### 1.7 Go
 
 * [Go语言编译与工具](./编程开发-Programming/Go/Go语言编译与工具.md)
 * [Linux下安装Go环境](./编程开发-Programming/Go/Linux下Go环境安装.md)
 * [如何下载 golang.org 的包](./编程开发-Programming/Go/下载golang.org的包.md)
 
-### 1.7 Elixir
+### 1.8 Elixir
 
 * [asdf版本管理工具的安装和使用](./编程开发-Programming/Elixir/asdf版本管理工具的安装和使用.md)
 * [hex.pm国内镜像](./编程开发-Programming/Elixir/hex.pm国内镜像.md)
-
-### 1.8 Rust
-
-* [Rust 工具链 & Cargo 国内源](./编程开发-Programming/Rust/Rust工具链%26Cargo国内源.md)
-* [Rust 项目结构](./编程开发-Programming/Rust/Rust项目结构.md)
 
 ### 1.9 代码质量-CodeQuality
 

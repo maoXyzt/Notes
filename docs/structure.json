@@ -625,7 +625,29 @@
         "collapsed": false
       },
       {
-        "text": "1.6 Go",
+        "text": "1.6 Rust",
+        "items": [
+          {
+            "text": "Rust",
+            "link": "/编程开发-Programming/Rust/"
+          },
+          {
+            "text": "Rust 工具链 & Cargo 国内源",
+            "link": "/编程开发-Programming/Rust/Rust工具链&Cargo国内源.md"
+          },
+          {
+            "text": "Rust 项目结构",
+            "link": "/编程开发-Programming/Rust/Rust项目结构.md"
+          },
+          {
+            "text": "发布Rust项目到crates.io",
+            "link": "/编程开发-Programming/Rust/发布Rust项目到crates.io.md"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "1.7 Go",
         "items": [
           {
             "text": "Go语言编译与工具",
@@ -643,7 +665,7 @@
         "collapsed": false
       },
       {
-        "text": "1.7 Elixir",
+        "text": "1.8 Elixir",
         "items": [
           {
             "text": "asdf版本管理工具的安装和使用",
@@ -652,20 +674,6 @@
           {
             "text": "hex.pm国内镜像",
             "link": "/编程开发-Programming/Elixir/hex.pm国内镜像.md"
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "text": "1.8 Rust",
-        "items": [
-          {
-            "text": "Rust 工具链 & Cargo 国内源",
-            "link": "/编程开发-Programming/Rust/Rust工具链&Cargo国内源.md"
-          },
-          {
-            "text": "Rust 项目结构",
-            "link": "/编程开发-Programming/Rust/Rust项目结构.md"
           }
         ],
         "collapsed": false
