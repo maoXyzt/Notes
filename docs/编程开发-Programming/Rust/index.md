@@ -1,16 +1,23 @@
-# Rust
+---
+type: atlas
+aliases: []
+created: 2026-05-22T00:35:51.000+0800
+modified: 2026-05-22T09:13:34.042+0800
+---
+
+## Rust
 
 Rust 相关笔记索引。
 
-## 1 - 语言与项目组织
+### 1 - 语言与项目组织
 
 - [Rust 项目结构](./Rust项目结构.md)
 
-## 2 - 工具链与生态
+### 2 - 工具链与生态
 
 - [Rust 工具链 & Cargo 国内源](./Rust工具链&Cargo国内源.md)
 
-## 3 - 最佳实践
+### 3 - 最佳实践
 
 - [发布 Rust 项目到 crates.io](./发布Rust项目到crates.io.md)
 - [cargo-release 的使用](./cargo-release的使用.md)
