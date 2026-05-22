@@ -23,6 +23,7 @@ import frontmatter
 from pydantic_settings import BaseSettings
 from rich import print
 
+from .utils.constants import INDEX_FILENAMES
 from .utils.structure import CJSONEncoder, GroupInfo, PageInfo
 from .utils.tools import custom_quote
 
@@ -33,6 +34,12 @@ DOCS_ROOT = ROOT / 'docs'
 class Settings(BaseSettings):
     indent_size: int = 2  # indent with 2 spaces
     includes: tuple[str, ...] = ('*.md',)
+    # NOTE: `excludes` patterns are matched via fnmatch against paths of the
+    # form `./relative/path.md`. A leading `./` therefore anchors the match to
+    # the docs root — `./index.md` only excludes the root index, NOT nested
+    # `index.md` files (which are intentionally kept so that
+    # `PageInfo.build_page` can convert them into directory links). To
+    # exclude at any depth, use `*/index.md` or similar.
     excludes: tuple[str, ...] = ('./index.md', './toc.md')
     structure_json_output: Path = DOCS_ROOT / 'structure.json'
     toc_md_output: Path = DOCS_ROOT / 'toc.md'
@@ -202,8 +209,11 @@ def _make_line(item: PageInfo | GroupInfo) -> str:
     """Make a line for TOC content."""
     if isinstance(item, GroupInfo):
         return item.text
-    else:
-        return f'[{item.text}](.{custom_quote(item.link, safe="/")})'
+    # PageInfo whose link points at a directory comes from an index/atlas file.
+    # Its `text` is the parent folder name, which duplicates the enclosing
+    # group's title — show it as a generic "overview" link instead.
+    text = '📖 概览' if item.link.endswith('/') else item.text
+    return f'[{text}](.{custom_quote(item.link, safe="/")})'
 
 
 def _format_toc(lines: list[str]) -> list[str]:
@@ -306,13 +316,10 @@ def _replace_recent_updates_section(
     return lines + append_lines
 
 
-_RECENT_UPDATES_EXCLUDED_FILENAMES = frozenset({'index.md', 'atlas.md'})
-
-
 def build_recent_notes(root: Path) -> list[RecentNote]:
     notes: list[RecentNote] = []
     for filepath in root.rglob('*.md'):
-        if filepath.name in _RECENT_UPDATES_EXCLUDED_FILENAMES:
+        if filepath.name in INDEX_FILENAMES:
             continue
         rel_p = filepath.relative_to(root)
         rel_p_str = f'./{rel_p.as_posix()}'
