@@ -13,3 +13,4 @@ Rust 相关笔记索引。
 ## 3 - 最佳实践
 
 - [发布 Rust 项目到 crates.io](./发布Rust项目到crates.io.md)
+- [cargo-release 的使用](./cargo-release的使用.md)

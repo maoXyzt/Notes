@@ -632,6 +632,10 @@
             "link": "/编程开发-Programming/Rust/"
           },
           {
+            "text": "cargo-release 的使用",
+            "link": "/编程开发-Programming/Rust/cargo-release的使用.md"
+          },
+          {
             "text": "Rust 工具链 & Cargo 国内源",
             "link": "/编程开发-Programming/Rust/Rust工具链&Cargo国内源.md"
           },

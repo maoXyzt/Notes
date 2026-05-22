@@ -5,6 +5,11 @@
 ## 最近更新
 
 <!-- RECENT_UPDATES -->
+- [cargo-release的使用](./编程开发-Programming/Rust/cargo-release的使用.md) · 2026-05-22 00:56
+  > `cargo-release` 把发布一个 Rust crate 的几步动作 (改版本号 → commit → 打 tag → push → `cargo publish`) 合并成一条命令,适合需要频繁发布的项目。
+  > 手动发布流程见 发布Rust项目到crates.io。
+  > `<level>` 决定版本号怎么升:
+  > ...
 - [发布Rust项目到crates.io](./编程开发-Programming/Rust/发布Rust项目到crates.io.md) · 2026-05-22 00:35
   > crates.io 是 Rust 官方的包注册中心 (registry)，是 Rust 生态中绝大多数三方库的分发渠道。
   > 本文记录将一个 Rust 项目 (lib crate) 发布到 crates.io 的完整流程。
@@ -49,11 +54,6 @@
   > 断开所有 `DB_NAME` 数据库的连接：
   > 终止所有运行时间超过特定阈值的查询 (推荐做法):
   > 仅终止包含 "SELECT" 关键字的活跃查询:
-  > ...
-- [PVE部署 Tailscale](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE部署%20Tailscale.md) · 2026-03-03 18:00
-  > Proxmox Community-Scripts 提供了社区维护的安装脚本。
-  > 该脚本是一个 addon，会在已存在的 LXC 容器中添加 tailscale。我们需要先安装一个 LXC。
-  > 参考 PVE 安装 alpine LXC & Debian LXC，创建一个 Alpine LXC。
   > ...
 <!-- /RECENT_UPDATES -->
 
@@ -217,6 +217,7 @@
 ### 1.6 Rust
 
 * [Rust](./编程开发-Programming/Rust/)
+* [cargo-release 的使用](./编程开发-Programming/Rust/cargo-release的使用.md)
 * [Rust 工具链 & Cargo 国内源](./编程开发-Programming/Rust/Rust工具链%26Cargo国内源.md)
 * [Rust 项目结构](./编程开发-Programming/Rust/Rust项目结构.md)
 * [发布Rust项目到crates.io](./编程开发-Programming/Rust/发布Rust项目到crates.io.md)
