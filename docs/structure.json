@@ -576,6 +576,16 @@
               }
             ],
             "collapsed": true
+          },
+          {
+            "text": "Rancher",
+            "items": [
+              {
+                "text": "Rancher Desktop 配置代理",
+                "link": "/编程开发-Programming/容器化/Rancher/Rancher Desktop 配置代理.md"
+              }
+            ],
+            "collapsed": true
           }
         ],
         "collapsed": false

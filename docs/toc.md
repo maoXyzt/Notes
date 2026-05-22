@@ -5,6 +5,11 @@
 ## 最近更新
 
 <!-- RECENT_UPDATES -->
+- [Rancher Desktop 配置代理](./编程开发-Programming/容器化/Rancher/Rancher%20Desktop%20配置代理.md) · 2026-05-22 09:49
+  > 在使用 Rancher Desktop 时，执行 `docker pull` 和 `docker compose pull` 的镜像拉取动作实际上是由 **Rancher Desktop 虚拟机内部的 Docker 守护进程（dock...
+  > 以下是针对 **Windows** 和 **macOS** 系统最常用且有效的配置方法。
+  > 如果你在宿主机上使用代理软件（如 Clash、v2ray 等），其默认监听的 `127.0.0.1` 仅限宿主机本地访问。虚拟机无法通过 `127.0.0.1` 访问到它。
+  > ...
 - [cargo-release的使用](./编程开发-Programming/Rust/cargo-release的使用.md) · 2026-05-22 00:56
   > `cargo-release` 把发布一个 Rust crate 的几步动作 (改版本号 → commit → 打 tag → push → `cargo publish`) 合并成一条命令,适合需要频繁发布的项目。
   > 手动发布流程见 发布Rust项目到crates.io。
@@ -49,11 +54,6 @@
   > 编写 `docker-compose.yaml`:
   > 启动容器后，先进入容器的终端 (`/bin/bash`), 执行:
   > 开始一些配置。
-  > ...
-- [PG断开所有连接](./编程开发-Programming/Database/PostgreSQL/PG断开所有连接.md) · 2026-03-22 00:33
-  > 断开所有 `DB_NAME` 数据库的连接：
-  > 终止所有运行时间超过特定阈值的查询 (推荐做法):
-  > 仅终止包含 "SELECT" 关键字的活跃查询:
   > ...
 <!-- /RECENT_UPDATES -->
 
@@ -201,6 +201,8 @@
   * [k8s runtime endpoints](./编程开发-Programming/容器化/Kubernetes/k8s%20runtime%20endpoints.md)
   * [k8s 集群搭建](./编程开发-Programming/容器化/Kubernetes/k8s集群搭建.md)
   * [kubectl 常用命令](./编程开发-Programming/容器化/Kubernetes/kubectl常用命令.md)
+* Rancher
+  * [Rancher Desktop 配置代理](./编程开发-Programming/容器化/Rancher/Rancher%20Desktop%20配置代理.md)
 
 ### 1.5 Git
 
