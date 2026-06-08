@@ -1,10 +1,11 @@
 ---
-NoteStatus: Draft
+type: note
+aliases: []
+created: 2026-05-07T14:18:20.000+0800
+modified: 2026-06-08T15:20:51.352+0800
 ---
 
-# MacBook 上手初始配置
-
-系统版本: macOS Sequoia (15.5)
+> 系统版本: macOS Sequoia (15.5)
 
 ## 1 - 系统设置
 
@@ -25,9 +26,9 @@ NoteStatus: Draft
 
 ~~下载 “Scroll Reverser” 软件~~
 
-* 安装后，按提示给予权限
-* 在 “滚动” 中，勾选“启用 Scroll Reverser”
-* 在 “软件” 中，勾选“登录时启动”
+~~* 安装后，按提示给予权限~~
+~~* 在 “滚动” 中，勾选“启用 Scroll Reverser”~~
+~~* 在 “软件” 中，勾选“登录时启动”~~
 
 设置 -> 桌面与程序坞 -> 触发角
 
@@ -58,15 +59,18 @@ Maple Mono: 下载 NF CN hinted 版本（字体名: Maple Mono NF CN）
 
 * Homebrew: [Homebrew 的安装、换源和卸载](./Homebrew的安装、换源和卸载.md)
 * iTerm2: 终端
+
 * Edge 浏览器
+* Chrome 浏览器
 
 * BitWarden: 密码管理
+
 * Tencent Lemon: 清理垃圾文件, 卸载软件
+
 * Rime 输入法
-
 * Snipaste: 截图工具 (v2 版本免费)
-
 * Kawa: Input Method 快捷键管理 <https://github.com/hatashiro/kawa>
+* Input Source Pro: 输入法管理, 自动切换输入法
 
 * AlDente: 电池管理
 * Keka: 解压缩
@@ -79,7 +83,7 @@ Maple Mono: 下载 NF CN hinted 版本（字体名: Maple Mono NF CN）
 App Store 软件:
 
 * 超级右键 Lite: 右键菜单增强
-* AutoSwitchInput Lite: 自动切换输入法
+~~* AutoSwitchInput Lite: 自动切换输入法~~
 * NTFS Disk by Omi NTFS: NTFS 格式读写
 
 收费软件:
