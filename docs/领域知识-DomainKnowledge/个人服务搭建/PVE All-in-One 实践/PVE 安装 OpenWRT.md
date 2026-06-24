@@ -1,18 +1,25 @@
-# PVE 安装 OpenWRT
+---
+type: note
+aliases: []
+created: 2026-05-07T14:18:21.000+0800
+modified: 2026-06-24T17:03:20.489+0800
+---
+
+## PVE 安装 OpenWRT
 
 基于 PVE 8.3.0
 
-选择的固件为 ImmortalWrt 23.05.4
+选择的固件为 ImmortalWrt 24.10.6
 
 > ImmortalWrt 有 rootf.tar.gz 的版本可以安装为 lxc 容器，
 > lxc 容器直接运行在 PVE 内核上会比虚拟机少一点系统开销。
 > 安装过程参考 <https://post.smzdm.com/p/a5xvwq93/>
 
-## 0. 登录 PVE 的管理页面
+### 0. 登录 PVE 的管理页面
 
 `https://<IP>:8006`
 
-## 1. 下载镜像
+### 1. 下载镜像
 
 使用 [ImmortalWrt](https://github.com/immortalwrt/immortalwrt) 固件。
 
@@ -43,13 +50,13 @@
 
 > 编写本文时，下载的镜像为:
 >
-> * 版本: 23.05.4
+> * 版本: 24.10.6
 > * 型号: Generic x86/64
 > * 平台: x86/64
 > * 版本: 23.05.4 (r28061-399f9a1db3)
-> * 文件名: "immortalwrt-23.05.4-x86-64-generic-ext4-combined-efi.qcow2.gz"
+> * 文件名: "immortalwrt-24.10.6-x86-64-generic-ext4-combined-efi.qcow2.gz"
 
-## 2. 上传
+### 2. 上传
 
 解压下载的镜像，得到 `.qcow2` 格式的文件。
 
@@ -58,10 +65,10 @@
 这里用 `scp` 命令实现:
 
 ```bash
-scp immortalwrt-23.05.4-x86-64-generic-ext4-combined-efi.qcow2 root@<PVE_IP>:/tmp
+scp immortalwrt-24.10.6-x86-64-generic-ext4-combined-efi.qcow2 root@<PVE_IP>:/tmp
 ```
 
-## 3. 创建虚拟机
+### 3. 创建虚拟机
 
 配置要点如下：
 
@@ -95,7 +102,7 @@ SCSI控制器="VirtIO SCSI Single"
 # 点击【完成】按钮
 ```
 
-### 3.1 导入文件
+#### 3.1 导入文件
 
 创建完成后，登录到 PVE 的终端 (Shell)
 
@@ -103,26 +110,26 @@ SCSI控制器="VirtIO SCSI Single"
 
 ```sh
 cd /tmp
-qm importdisk 100 immortalwrt-23.05.4-x86-64-generic-ext4-combined-efi.qcow2 local-lvm
+qm importdisk 100 immortalwrt-24.10.6-x86-64-generic-ext4-combined-efi.qcow2 local-lvm
 # Outputs:
 # unused0: successfully imported disk 'local-lvm: vm-100-disk-0'
 ```
 
-### 3.2 添加硬盘
+#### 3.2 添加硬盘
 
 在管理页面左侧点击 "HA" 虚拟机，右侧选择硬件，会看到一个未使用的磁盘 0，大小为 32G（可根据需要调整）。
 
 双击未使用的磁盘 0，直接点击【添加】。(硬盘如果是 ssd 建议勾选 ssd 仿真。)
 
-### 3.3 安装 ImmortalWRT
+#### 3.3 安装 ImmortalWRT
 
-"选项-> 引导顺序-> 编辑"，设置启动项，启用 scsi0 并设为第一位。
+" 选项 -> 引导顺序 -> 编辑 "，设置启动项，启用 scsi0 并设为第一位。
 
 点击右上方【启动】按钮，等待系统启动完成。
 
-## 4. 配置
+### 4. 配置
 
-### 4.1 配置网络
+#### 4.1 配置网络
 
 系统启动完成后，进入控制台。
 
@@ -142,53 +149,66 @@ service network restart
 
 之后打开浏览器输入 ip 地址就可以访问 ImmortalWrt。默认用户名是 "root"，密码是空。
 
-### 4.2 配置网关、DNS
+#### 4.2 配置网关、DNS
 
-进入“网络”-“接口”设置界面，编辑“lan”（默认接口）。
+进入 " 网络 "-" 接口 " 设置界面，编辑 "lan"（默认接口）。
 
 常规设置：
 
 * 协议: 静态地址
-* IPv4 地址: 192.169.50.20
-* IPv4 子网掩码: 255.255.255.0
-* IPv4 网关: 192.168.50.1
+* IPv4 地址: `192.169.50.20`
+* IPv4 子网掩码: `255.255.255.0`
+* IPv4 网关: `192.168.50.1`
 
 高级设置 (这里以设为阿里公共 DNS 为例):
 
-* 使用自定义的 DNS 服务器: 223.5.5.5
+* 使用自定义的 DNS 服务器: `223.5.5.5`
+
+(DNS 也要配置，不然后续配置时可能无法访问任何域名)
 
 最后保存并应用，一定要保存并应用，不然不生效。
 
 完成后可以在“网络诊断”中随意 ping 下，ping 通说明网络正常了。
 
-### 4.3 关闭 DHCP
+#### 4.3 关闭 DHCP
 
 由于我们把 ImmortalWrt 当作旁路由器使用，所以关闭 DHCP 服务。
 
 编辑“网络 -> 接口 -> lan”，在“DHCP-> 常规设置”中勾选“忽略此接口”。
 
-### 4.4 关闭 IPv6
+#### 4.4 关闭 IPv6
 
 在透明代理中，IPv6 会导致 DNS 污染，因此现阶段我们先关闭 IPv6，将来再处理。
 
-1. 网络-> 接口，修改 lan。在 DHCP 服务器-> IPv6 设置中，禁用所有服务并保存。
-2. 网络-> DHCP/DNS，“过滤器”页面，勾选“过滤 IPv6 AAAA 记录”，保存并应用。
+1. 网络 -> 接口，修改 lan。在 DHCP 服务器 -> IPv6 设置中，禁用所有服务并保存。
+2. 网络 -> DHCP/DNS，“过滤器”页面，勾选“过滤 IPv6 AAAA 记录”，保存并应用。
 
-### 4.5 (可选) 更换皮肤
+#### 4.5 (推荐) 配置软件镜像源
 
-进入“系统”-“软件包”设置界面，先点击“更新列表”，然后搜索“argon”。
+通过 SSH 连接到路由器，复制并运行以下命令（以 **中国科学技术大学 (USTC) 镜像源** 为例）：
 
-安装 luci-i18n-argon-config-zh-cn。
+```bash
+# 将原版软件源批量替换为科大镜像源
+sed -e 's|https://downloads.immortalwrt.org|https://mirrors.ustc.edu.cn/immortalwrt|g' \
+    -e 's|https://mirrors.vsean.net/openwrt|https://mirrors.ustc.edu.cn/immortalwrt|g' \
+    -i.old /etc/opkg/distfeeds.conf
+```
+
+#### 4.6 (可选) 更换皮肤
+
+进入 “系统” - “软件包” 设置界面，先点击 “更新列表”，然后搜索 “argon”。
+
+安装 `luci-i18n-argon-config-zh-cn` 。
 
 安装完成后刷新下网页，全新的皮肤就生效了。
 
-## 5. 推荐插件
+### 5. 推荐插件
 
-### 5.1 SmartDNS
+#### 5.1 SmartDNS
 
 在 “系统”->“软件包”中搜索 `luci-i18n-smartdns-zh-cn` 并安装。
 
-### 5.2 OpenClash
+#### 5.2 OpenClash
 
 > [OpenWrt 安装使用 OpenClash](https://blog.hellowood.dev/posts/openwrt-%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8-openclash/)
 
@@ -196,25 +216,21 @@ OpenClash 是 Clash 的 OpenWrt 客户端。
 
 可以在 OpenClash 仓库的 [Release](https://github.com/vernesong/OpenClash/releases) 页面选择对应的版本进行下载
 
-本文编写时，安装的版本为 "v0.46.064"，需安装如下依赖:
+本文编写时，安装的版本为 [v0.47.096](https://github.com/vernesong/OpenClash/releases/tag/v0.47.096)，需安装如下依赖 (选择 nftables & ipk 版本):
+
+> ImmortalWRT 25.12.x 版本才开始支持 apk 格式)
 
 ```sh
-#iptables
+# [nftables for ipk]
 opkg update
-opkg install coreutils-nohup bash iptables dnsmasq-full curl ca-certificates ipset ip-full iptables-mod-tproxy iptables-mod-extra libcap libcap-bin ruby ruby-yaml kmod-tun kmod-inet-diag unzip luci-compat luci luci-base
+opkg install bash dnsmasq-full curl ca-bundle ip-full ruby ruby-yaml kmod-tun kmod-inet-diag unzip kmod-nft-tproxy luci-compat luci luci-base
+curl -L --retry 2 https://api.github.com/repos/vernesong/OpenClash/releases/latest -o /tmp/openclash_version
+[ -f "/tmp/openclash_version" ] && download_url=$(cat /tmp/openclash_version | jsonfilter -e '@.assets[*].browser_download_url' | grep '\.ipk$') && curl -L --retry 2 "$download_url" -o /tmp/openclash.ipk || echo "OpenClash last version get failed"
+[ -f "/tmp/openclash.ipk" ] && opkg install /tmp/openclash.ipk || echo "OpenClash download failed"
 
-#nftables
-opkg update
-opkg install coreutils-nohup bash dnsmasq-full curl ca-certificates ip-full libcap libcap-bin ruby ruby-yaml kmod-tun kmod-inet-diag unzip kmod-nft-tproxy luci-compat luci luci-base
 ```
 
-下载对应版本的 OpenClash 安装包，并安装。
-
-```sh
-wget https://github.com/vernesong/OpenClash/releases/download/v0.46.064/luci-app-openclash_0.46.064_all.ipk -O openclash.ipk
-opkg update
-opkg install openclash.ipk
-```
+下载对应版本的 OpenClash 安装包 (`.ipk`)，并安装。
 
 重启。待重启完成后重新登录控制台，可以在服务菜单中看到 OpenClash
 
@@ -224,25 +240,25 @@ reboot
 
 首次启动需要下载内核模块，下载完成后会自动重启。
 
-#### (1) 配置 DNS
+##### (1) 配置 DNS
 
 OpenClash 默认提供 7874 端口用于 DNS 查询；启动后会劫持 Dnsmasq，只保留自己作为 Dnsmasq 的上游；
 
 但是目前的版本里并没有将已配置的 DNS 转发作为 OpenClash 的上游（参考 issue [启用 DNS 劫持后未将 Dnsmasq 中添加的 DNS 转发作为上游 DNS](https://github.com/vernesong/OpenClash/issues/2720)），这样会导致无法使用 SmartDNS 或其他上游 DNS，因此需要手动修改将 SmartDNS 作为 OpenClash 的上游服务器。
 
-在 "服务"-> "OpenClash"-> "全局设置"-> "DNS 设置" 中，选择新增，设置自定义上游 DNS 服务器为 SmartDNS。
+在 " 服务 "-> "OpenClash"-> " 全局设置 "-> "DNS 设置 " 中，选择新增，设置自定义上游 DNS 服务器为 SmartDNS。
 
 新增完成后，在该页面选择启用 “自定义上游 DNS 服务器”，这样，就可以使用 SmartDNS 作为主 DNS 服务器了；如果有其他的上游，也可以同样配置。
 
 配置完成后，DNS 的查询流程为 客户端 -> Dnsmasq -> OpenClash -> SmartDNS -> 上游 DNS 服务器
 
-#### (2) 配置运行模式
+##### (2) 配置运行模式
 
-参考 OpenClash-常规设置，主要有 `Fake-IP` 和 `Redir-Host` 两种模式；
+参考 OpenClash- 常规设置，主要有 `Fake-IP` 和 `Redir-Host` 两种模式；
 据其他用户的测试经验，开启了 OpenClash 使用 `Redir-Host` 会导致部分 UDP 流量超时，如王者荣耀/英雄联盟/吃鸡等使用 UDP 的应用超时或无法连接；
 使用 `Fake-IP TUN` 模式则可以正常使用。
 
-##### `Fake-IP`
+###### `Fake-IP`
 
 当客户端发起请求查询 DNS 时，会先返回一个随机的保留地址，同时查询上游 DNS 服务器，如果需要代理则发送给代理服务器查询，然后再进行连接；客户端立即向 Fake-IP 发起的请求会被快速响应，节约了一次本地向 DNS 服务器查询的时间
 
@@ -250,13 +266,13 @@ OpenClash 默认提供 7874 端口用于 DNS 查询；启动后会劫持 Dnsmasq
 
 这个模式会导致客户端获取到的 DNS 查询到的结果与实际不一致，nslookup/dig 等的使用会受影响
 
-##### `Redir-Host`
+###### `Redir-Host`
 
 当客户端发起请求时，会并发查询 DNS，等待返回结果后再尝试进行规则判定和连接，如果需要代理，会使用 fallback 的 DNS 服务器再次查询；与不使用 OpenClash 相比，多了过滤，fallback 查询的时间，响应速度可能会变慢
 
 有兼容，TUN 和混合三种模式，区别在与 TUN 可以代理 UDP 流量
 
-### 5.3 DDNS
+#### 5.3 DDNS
 
 在 “系统”->“软件包”中搜索 luci-i18n-ddns-zh-cn 并安装。
 
@@ -267,18 +283,18 @@ DDNS 的更新由脚本执行，因此需要安装对应域名服务商的更新
 
 阿里云 DDNS 可在 <https://github.com/honwen/luci-app-aliddns/releases> 下载
 
-### 5.4 AdBlock
+#### 5.4 AdBlock
 
 luci-i18n-adblock-zh-cn
 
-### 5.5 (Optional) passwall
+#### 5.5 (Optional) passwall
 
 luci-i18n-passwall-zh-cn
 
-### 5.6 (Optional) homeproxy
+#### 5.6 (Optional) homeproxy
 
 luci-i18n-homeproxy-zh-cn
 
-## 6. IPv6 支持
+### 6. IPv6 支持
 
 (todo)

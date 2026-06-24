@@ -5,6 +5,21 @@
 ## 最近更新
 
 <!-- RECENT_UPDATES -->
+- [PVE 安装 OpenWRT](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20OpenWRT.md) · 2026-06-24 17:03
+  > 基于 PVE 8.3.0
+  > 选择的固件为 ImmortalWrt 24.10.6
+  > `https://<IP>:8006`
+  > ...
+- [PVE部署 DDNSTO](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE部署%20DDNSTO.md) · 2026-06-24 15:20
+  > DDNSTO 是 koolcenter (易有云) 出品的一款内网穿透 / 远程访问工具。在**没有公网 IP** 的情况下，只要在内网任意一台设备上运行 DDNSTO 客户端，就能通过 `xxx.ddnsto.com` 的二级域名，...
+  > 它和 Tailscale 解决的问题类似 (都是「在外面访问家里」)，但思路不同:
+  > DDNSTO 本身不依赖 PVE，可以装在内网任意一台 Linux 机器上。本文介绍在 PVE 环境中的几种部署方式。
+  > ...
+- [MacBook上手初始配置](./MacOS/MacBook上手初始配置.md) · 2026-06-08 15:20
+  > 设置 -> 辅助功能 -> 指针控制 -> 触控板选项...:
+  > 设置 -> 触控板 -> 滚动缩放
+  > 设置 -> 触控板 -> 更多手势
+  > ...
 - [Rancher Desktop 配置代理](./编程开发-Programming/容器化/Rancher/Rancher%20Desktop%20配置代理.md) · 2026-05-22 09:49
   > 在使用 Rancher Desktop 时，执行 `docker pull` 和 `docker compose pull` 的镜像拉取动作实际上是由 **Rancher Desktop 虚拟机内部的 Docker 守护进程（dock...
   > 以下是针对 **Windows** 和 **macOS** 系统最常用且有效的配置方法。
@@ -39,21 +54,6 @@
   > 本文介绍配置 Linux 开发环境的流程，按照步骤配置后，可初步完成开发环境搭建。
   > 本文以 Ubuntu/Debian 系统为例，部分命令给出了 MacOS 版本。其他发行版请自行替换命令。
   > Fish Shell 安装
-  > ...
-- [global gitignore](./编程开发-Programming/Git/global%20gitignore.md) · 2026-05-07 14:20
-  > 我们不希望一些操作系统、IDE、编辑器等的特有文件被 git 托管，但项目的 `.gitignore` 文件应该记录那些不希望保存版本信息的文件/目录，或编译过程中生成的文件。
-  > 作为 best practice，可以使这类通用的条目被全局忽略。
-  > PowerShell 用户：
-  > ...
-- [Fish Shell 安装](./Linux/shell/Fish%20Shell%20安装.md) · 2026-05-05 22:55
-  > 通过包管理器安装 Fish Shell:
-  > Mac 在安装之后，检查 `/etc/shells` 默认其中不含 `fish` 。将 `fish` 添加到其中:
-  > 推荐安装 Fisher: Fish Shell 的插件管理器
-  > ...
-- [HermesAgent部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/HermesAgent部署.md) · 2026-04-28 21:53
-  > 编写 `docker-compose.yaml`:
-  > 启动容器后，先进入容器的终端 (`/bin/bash`), 执行:
-  > 开始一些配置。
   > ...
 <!-- /RECENT_UPDATES -->
 
@@ -269,6 +269,7 @@
   * [PVE 安装 Linux 虚拟机](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20linux%20虚拟机.md)
   * [PVE 安装 OpenWRT](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20OpenWRT.md)
   * [PVE 系统备份到 NAS(smb)](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20系统备份备份到NAS%28smb%29.md)
+  * [PVE部署 DDNSTO](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE部署%20DDNSTO.md)
   * [PVE部署 Tailscale](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE部署%20Tailscale.md)
   * [PVE 部署 Homarr](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE部署Homarr.md)
   * [PVE 使用 iSCSI 存储](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE使用iSCSI存储.md)
@@ -482,7 +483,7 @@
 
 * [📖 概览](./MacOS/)
 * [Homebrew 的安装、换源和卸载](./MacOS/Homebrew的安装%E3%80%81换源和卸载.md)
-* [MacBook 上手初始配置](./MacOS/MacBook上手初始配置.md)
+* [MacBook上手初始配置](./MacOS/MacBook上手初始配置.md)
 * [MacOS 配置定时任务](./MacOS/MacOS%20配置定时任务.md)
 * [问题排查记录: 工作用的 MacBook 开启 VPN 后，命令行访问一些境外网站失败](./MacOS/问题排查记录-开启VPN后%2C命令行访问境外网站失败.md)
 <!-- /TOC -->

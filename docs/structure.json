@@ -817,6 +817,10 @@
                 "link": "/领域知识-DomainKnowledge/个人服务搭建/PVE All-in-One 实践/PVE 系统备份备份到NAS(smb).md"
               },
               {
+                "text": "PVE部署 DDNSTO",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/PVE All-in-One 实践/PVE部署 DDNSTO.md"
+              },
+              {
                 "text": "PVE部署 Tailscale",
                 "link": "/领域知识-DomainKnowledge/个人服务搭建/PVE All-in-One 实践/PVE部署 Tailscale.md"
               },
@@ -1529,7 +1533,7 @@
         "link": "/MacOS/Homebrew的安装、换源和卸载.md"
       },
       {
-        "text": "MacBook 上手初始配置",
+        "text": "MacBook上手初始配置",
         "link": "/MacOS/MacBook上手初始配置.md"
       },
       {
