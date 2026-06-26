@@ -246,7 +246,7 @@ OpenClash 默认提供 7874 端口用于 DNS 查询；启动后会劫持 Dnsmasq
 
 但是目前的版本里并没有将已配置的 DNS 转发作为 OpenClash 的上游（参考 issue [启用 DNS 劫持后未将 Dnsmasq 中添加的 DNS 转发作为上游 DNS](https://github.com/vernesong/OpenClash/issues/2720)），这样会导致无法使用 SmartDNS 或其他上游 DNS，因此需要手动修改将 SmartDNS 作为 OpenClash 的上游服务器。
 
-在 " 服务 "-> "OpenClash"-> " 全局设置 "-> "DNS 设置 " 中，选择新增，设置自定义上游 DNS 服务器为 SmartDNS。
+在 "服务" -> "OpenClash" -> "插件设置" -> "DNS 设置" 中，选择新增，设置自定义上游 DNS 服务器为 SmartDNS。
 
 新增完成后，在该页面选择启用 “自定义上游 DNS 服务器”，这样，就可以使用 SmartDNS 作为主 DNS 服务器了；如果有其他的上游，也可以同样配置。
 
