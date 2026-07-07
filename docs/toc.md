@@ -5,6 +5,11 @@
 ## 最近更新
 
 <!-- RECENT_UPDATES -->
+- [Rust & Cargo 清理无用版本与构建缓存指南](./编程开发-Programming/Rust/Rust%20%26%20Cargo%20清理无用版本与构建缓存指南.md) · 2026-07-07 19:22
+  > 在 Rust 开发过程中，随着代码的不断编译、依赖版本的升级以及 Rust 编译器的更新，硬盘上会堆积大量不再使用的旧版构建产物。通常，“清理无用版本”分为两个维度：
+  > 以下是针对这两个维度的精准清理方案。
+  > 原生的 `cargo clean` 命令默认会**暴力删除整个 `target/` 目录**。这会释放最大空间，但缺点是下次编译时需要从零开始重新编译所有依赖。如果只想“智能地清理无用或旧版文件”，推荐使用以下方法。
+  > ...
 - [PVE 安装 OpenWRT](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20OpenWRT.md) · 2026-06-24 17:03
   > 基于 PVE 8.3.0
   > 选择的固件为 ImmortalWrt 24.10.6
@@ -49,11 +54,6 @@
   > subconvert: 略
   > subweb: 基于 subconverter 订阅转换的前端项目,方便用户快速生成各平台的订阅链接
   > `docker-compose.yml`
-  > ...
-- [Linux开发环境setup](./Linux/Linux开发环境setup.md) · 2026-05-07 14:22
-  > 本文介绍配置 Linux 开发环境的流程，按照步骤配置后，可初步完成开发环境搭建。
-  > 本文以 Ubuntu/Debian 系统为例，部分命令给出了 MacOS 版本。其他发行版请自行替换命令。
-  > Fish Shell 安装
   > ...
 <!-- /RECENT_UPDATES -->
 
@@ -220,6 +220,7 @@
 
 * [📖 概览](./编程开发-Programming/Rust/)
 * [cargo-release 的使用](./编程开发-Programming/Rust/cargo-release的使用.md)
+* [Rust & Cargo 清理无用版本与构建缓存指南](./编程开发-Programming/Rust/Rust%20%26%20Cargo%20清理无用版本与构建缓存指南.md)
 * [Rust 工具链 & Cargo 国内源](./编程开发-Programming/Rust/Rust工具链%26Cargo国内源.md)
 * [Rust 项目结构](./编程开发-Programming/Rust/Rust项目结构.md)
 * [发布Rust项目到crates.io](./编程开发-Programming/Rust/发布Rust项目到crates.io.md)

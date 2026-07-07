@@ -2,7 +2,7 @@
 type: atlas
 aliases: []
 created: 2026-05-22T00:35:51.000+0800
-modified: 2026-05-22T09:13:34.042+0800
+modified: 2026-07-07T19:19:23.868+0800
 ---
 
 ## Rust
@@ -21,3 +21,4 @@ Rust 相关笔记索引。
 
 - [发布 Rust 项目到 crates.io](./发布Rust项目到crates.io.md)
 - [cargo-release 的使用](./cargo-release的使用.md)
+- [[Rust & Cargo 清理无用版本与构建缓存指南]]
