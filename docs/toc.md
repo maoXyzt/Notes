@@ -5,6 +5,16 @@
 ## 最近更新
 
 <!-- RECENT_UPDATES -->
+- [自建 Tailscale DERP 中继服务](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/自建%20Tailscale%20DERP%20中继服务.md) · 2026-07-16 03:07
+  > 当两台 Tailscale 设备无法建立直连时，DERP 会中继已经由 WireGuard 加密的流量。这里将 DERP 部署在有公网 IP 的 ECS 上，并启用 `verify-clients`，只允许当前 tailnet 的节点使用。
+  > 先在 Access controls 中声明 tag：
+  > 然后进入 Settings → Keys，生成带 `tag:derp` 的 auth key：
+  > ...
+- [PVE部署 Tailscale](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE部署%20Tailscale.md) · 2026-07-16 03:07
+  > Proxmox Community-Scripts 提供了社区维护的安装脚本。
+  > 该脚本是一个 addon，会在已存在的 LXC 容器中添加 tailscale。我们需要先安装一个 LXC。
+  > 参考 PVE 安装 alpine LXC & Debian LXC，创建一个 Alpine LXC。
+  > ...
 - [Rust & Cargo 清理无用版本与构建缓存指南](./编程开发-Programming/Rust/Rust%20%26%20Cargo%20清理无用版本与构建缓存指南.md) · 2026-07-07 19:22
   > 在 Rust 开发过程中，随着代码的不断编译、依赖版本的升级以及 Rust 编译器的更新，硬盘上会堆积大量不再使用的旧版构建产物。通常，“清理无用版本”分为两个维度：
   > 以下是针对这两个维度的精准清理方案。
@@ -44,16 +54,6 @@
   > 本文通过 Docker Compose 方式部署 ezBookkeeping 服务到绿联的 NAS 上。同时也提供了通用的部署方法，可供在其他 Linux 服务器上部署时参考。
   > ezBookkeeping 是一款轻量级、自托管的个人财务 APP。
   > 其前端支持桌面浏览器和移动端浏览器访问，并支持 PWA 技术，可添加到桌面使用。
-  > ...
-- [TaskTrove任务管理服务部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/TaskTrove任务管理服务部署.md) · 2026-05-09 00:00
-  > TaskTrove 是一款自托管的任务管理服务，可以用来替代 Todoist、TickTick 等在线任务管理工具，将任务数据完全保留在本地。
-  > 本文通过 Docker Compose 方式部署 TaskTrove 服务到绿联的 NAS 上。同时也提供了通用的部署方法，可供在其他 Linux 服务器上部署时参考。
-  > TaskTrove 是一款开源、自托管的任务管理面板服务，支持项目分组、标签、子任务、提醒等常见的任务管理功能。
-  > ...
-- [subconverter服务部署](./领域知识-DomainKnowledge/个人服务搭建/NAS/subconverter服务部署.md) · 2026-05-07 19:28
-  > subconvert: 略
-  > subweb: 基于 subconverter 订阅转换的前端项目,方便用户快速生成各平台的订阅链接
-  > `docker-compose.yml`
   > ...
 <!-- /RECENT_UPDATES -->
 
@@ -276,6 +276,7 @@
   * [PVE 使用 iSCSI 存储](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE使用iSCSI存储.md)
   * [安装 PVE 系统](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/安装%20PVE%20系统.md)
   * [制作 U 盘启动盘](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/制作U盘启动盘.md)
+  * [自建 Tailscale DERP 中继服务](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/自建%20Tailscale%20DERP%20中继服务.md)
 * HomeAssistant
   * [📖 概览](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/)
   * [Aqara 设备通过 Matter 接入 HomeAssistant](./领域知识-DomainKnowledge/个人服务搭建/HomeAssistant/Aqara设备通过Matter接入HomeAssistant.md)

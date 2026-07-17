@@ -843,6 +843,10 @@
               {
                 "text": "制作 U 盘启动盘",
                 "link": "/领域知识-DomainKnowledge/个人服务搭建/PVE All-in-One 实践/制作U盘启动盘.md"
+              },
+              {
+                "text": "自建 Tailscale DERP 中继服务",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/PVE All-in-One 实践/自建 Tailscale DERP 中继服务.md"
               }
             ],
             "collapsed": true
