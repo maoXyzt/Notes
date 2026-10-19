@@ -2,7 +2,7 @@
 type: note
 aliases: []
 created: 2025-09-11T15:39:00.000+0800
-modified: 2026-10-20T01:59:42.000+0800
+modified: 2026-10-20T02:03:58.000+0800
 tags: []
 ---
 
@@ -30,7 +30,7 @@ tags: []
 + [Linter](https://github.com/platers/obsidian-linter)
 + [Meta Bind](https://github.com/mProjectsCode/obsidian-meta-bind-plugin)
 + [Metadata Menu](https://github.com/mdelobelle/metadatamenu)
-+ [Natural Language Dates](https://github.com/argenos/nldates-obsidian)
++ [Natural Language Dates](https://github.com/community-archive/nldates)
 + [Open vault in VS Code](https://github.com/NomarCub/obsidian-open-vscode)
 + [Outliner](https://github.com/vslinko/obsidian-outliner)
 + [Paste URL into selection](https://github.com/denolehov/obsidian-url-into-selection)
@@ -71,7 +71,7 @@ tags: []
 + 👍 Outliner: 增强列表编辑功能，类似 Workflowy 和 Roam Research
 + 👍 Editing Toolbar: 提供一个编辑工具栏
 + ⭐ Linter: markdown 格式化
-+ ⭐ Natural Language Dates: 解析日期，转为 daily note 的双链链接
++ 🉑 Natural Language Dates: 适合频繁在正文中通过 `@today`、`@tomorrow` 等自然语言插入日期及日记链接的用户；仅通过 Calendar Plus 打开、创建日记，或仅用 Templater 在模板中插入日期时，可不安装
 + 🉑 Paste URL into selection: 粘贴 URL 时，自动将选中的文字转为链接
 + 🉑 Meta Bind: 在笔记中插入输入控件、显示控件、按钮等元素，可把值绑定到笔记的 frontmatter 元数据中
 + 👍 Metadata Menu: 管理 frontmatter 元数据，增强元数据的编辑功能
