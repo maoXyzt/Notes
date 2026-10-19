@@ -1,6 +1,6 @@
 ---
 created: 2025-09-11T15:39:00.000+0800
-modified: 2025-09-11T15:39:00.000+0800
+modified: 2026-10-19T18:25:00.000+0800
 ---
 
 # Obsidian 插件推荐
@@ -34,7 +34,6 @@ modified: 2025-09-11T15:39:00.000+0800
 + [QuickAdd](https://github.com/chhoumann/quickadd)
 + [Recent Files](https://github.com/tgrosinger/recent-files-obsidian)
 + [Self-hosted LiveSync](https://github.com/vrtmrz/obsidian-livesync)
-+ [Settings Search](https://github.com/javalent/settings-search)
 + [Sort & Permute lines](https://github.com/Vinzent03/obsidian-sort-and-permute-lines)
 + [Style Settings](https://github.com/mgmeyers/obsidian-style-settings)
 + [Tag Wrangler](https://github.com/pjeby/tag-wrangler)
@@ -58,7 +57,6 @@ modified: 2025-09-11T15:39:00.000+0800
 + 🉑 Copilot: 接入 LLM API，使用 AI 助手
 + 👍 Self-hosted LiveSync: 同步 Obsidian 笔记到自托管 CouchDB 服务器 (见 [Obsidian 同步 - 配置 LiveSync 与自托管 CouchDB 服务器](./Obsidian%20同步%20-%20配置%20LiveSync%20与自托管%20CouchDB%20服务器.md))
 + 👍 Commander: 配置一些快捷指令，可以放置在 TitleBar, Page Header, File Menu, Ribbons, Context Menu, Status Bar 等位置
-+ 🉑 Settings Search: 在设置中搜索设置项
 + 🉑 Export to Anki: 支持创建 Anki 卡片，并导出到 Anki
 + 🉑 Openvault in VS Code: 在 VS Code 中打开当前 vault
 + 👍 Fuzzy Chinese Pinyin: 提供中文拼音搜索的功能，支持繁体、双拼、模糊音
