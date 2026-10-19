@@ -1,6 +1,9 @@
 ---
+type: note
+aliases: []
 created: 2025-09-11T15:39:00.000+0800
-modified: 2026-10-19T18:25:00.000+0800
+modified: 2026-10-20T01:59:42.000+0800
+tags: []
 ---
 
 # Obsidian 插件推荐
@@ -9,7 +12,7 @@ modified: 2026-10-19T18:25:00.000+0800
 
 + [Advanced Tables](https://github.com/tgrosinger/advanced-tables-obsidian)
 + [Better Search Views](https://github.com/ivan-lednev/better-search-views)
-+ [Calendar](https://github.com/liamcain/obsidian-calendar-plugin)
++ [Calendar Plus](https://github.com/mattmaiorana/calendar-plus)
 + [Commander](https://github.com/phibr0/obsidian-commander)
 + [Copilot](https://github.com/logancyang/obsidian-copilot)
 + [Copy Block Link](https://github.com/mgmeyers/obsidian-copy-block-link)
@@ -51,7 +54,7 @@ modified: 2026-10-19T18:25:00.000+0800
 + ⭐ Dataview: 实现强大的数据查询和展示功能
 + ⭐ Templater: 高级模板
 + ⭐ Tasks: 任务管理
-+ ⭐ Calendar: 显示日历，点击日期可创建/打开对应日期的 daily note
++ ⭐ Calendar Plus: 显示日历，点击日期可创建/打开对应日期的日记；内置日记、周记、月记、季记和年记功能。各类周期笔记的目录、日期格式和模板需在插件内独立配置，不读取核心 Daily Notes 或 Periodic Notes 的设置；当前库仅启用日记。
 + ⭐ QuickAdd: 快速创建/插入内容，支持 Template, Capture, Macro
 + ⭐ Tag Wrangler: 在 Tags View (核心插件) 中，添加 tag 的右键菜单，实现 tag 重命名、搜索、创建 Tag Page 等功能
 + 🉑 Copilot: 接入 LLM API，使用 AI 助手
