@@ -2,13 +2,15 @@
 type: note
 aliases: []
 created: 2025-09-11T15:39:00.000+0800
-modified: 2026-10-20T02:09:17.000+0800
+modified: 2026-10-20T02:26:18.000+0800
 tags: []
 ---
 
 # Obsidian 插件推荐
 
 ## 1 - 插件一览
+
+本页按功能和使用需求推荐插件，推荐级别不代表本库当前启用状态。当前库启用 21 个插件，完整名单见主仓库 `dotfiles/README.md`。
 
 + [Advanced Tables](https://github.com/tgrosinger/advanced-tables-obsidian)
 + [Better Search Views](https://github.com/ivan-lednev/better-search-views)
@@ -30,6 +32,7 @@ tags: []
 + [Meta Bind](https://github.com/mProjectsCode/obsidian-meta-bind-plugin)
 + [Metadata Menu](https://github.com/mdelobelle/metadatamenu)
 + [Natural Language Dates](https://github.com/community-archive/nldates)
++ [Omnisearch](https://github.com/scambier/obsidian-omnisearch)
 + [Open vault in VS Code](https://github.com/NomarCub/obsidian-open-vscode)
 + [Outliner](https://github.com/vslinko/obsidian-outliner)
 + [QuickAdd](https://github.com/chhoumann/quickadd)
@@ -57,17 +60,18 @@ tags: []
 + ⭐ Tag Wrangler: 在 Tags View (核心插件) 中，添加 tag 的右键菜单，实现 tag 重命名、搜索、创建 Tag Page 等功能
 + 🉑 Copilot: 接入 LLM API，使用 AI 助手
 + 👍 Self-hosted LiveSync: 同步 Obsidian 笔记到自托管 CouchDB 服务器 (见 [Obsidian 同步 - 配置 LiveSync 与自托管 CouchDB 服务器](./Obsidian%20同步%20-%20配置%20LiveSync%20与自托管%20CouchDB%20服务器.md))
-+ 👍 Commander: 配置一些快捷指令，可以放置在 TitleBar, Page Header, File Menu, Ribbons, Context Menu, Status Bar 等位置
++ 🉑 Commander: 配置一些快捷指令，可以放置在 TitleBar, Page Header, File Menu, Ribbons, Context Menu, Status Bar 等位置
 + 🉑 Export to Anki: 支持创建 Anki 卡片，并导出到 Anki
 + 🉑 Openvault in VS Code: 在 VS Code 中打开当前 vault
++ 👍 Omnisearch: 全文搜索增强，按文件名、标题和正文的相关性排序，支持拼写容错、库内和文件内搜索，以及从结果插入双链；图片、PDF 和 Office 文档的内容索引需配合 Text Extractor
 + 👍 Fuzzy Chinese Pinyin: 提供中文拼音搜索的功能，支持繁体、双拼、模糊音
 + 🉑 Keyboard Analyzer: 分析按键和快捷指令的使用频率，帮助优化快捷指令设置
 
 ## 2.2 Markdown 编辑增强
 
 + 👍 Advanced Tables: 增强表格编辑功能
-+ 👍 Outliner: 增强列表编辑功能，类似 Workflowy 和 Roam Research
-+ 👍 Editing Toolbar: 提供一个编辑工具栏
++ 🉑 Outliner: 增强列表编辑功能，类似 Workflowy 和 Roam Research
++ 🉑 Editing Toolbar: 提供一个编辑工具栏
 + ⭐ Linter: markdown 格式化
 + 🉑 Natural Language Dates: 适合频繁在正文中通过 `@today`、`@tomorrow` 等自然语言插入日期及日记链接的用户；仅通过 Calendar Plus 打开、创建日记，或仅用 Templater 在模板中插入日期时，可不安装
 + 🉑 Meta Bind: 在笔记中插入输入控件、显示控件、按钮等元素，可把值绑定到笔记的 frontmatter 元数据中
@@ -82,6 +86,6 @@ tags: []
 + 🉑 Hider: 隐藏 Obsidian UI 的一些元素
 + 🉑 Recent Files: 显示最近打开的文件列表
 + 🉑 File Explorer Note Count: 在文件资源管理器中显示每个文件夹中的笔记数量
-+ 👍 Floating TOC: 鼠标悬停时，显示笔记的内容
++ 🉑 Floating TOC: 鼠标悬停时，显示笔记的内容
 + 👍 Better Search Views: 增强搜索结果的显示
 + 🉑 Influx: 在笔记中显示该笔记的反向链接
