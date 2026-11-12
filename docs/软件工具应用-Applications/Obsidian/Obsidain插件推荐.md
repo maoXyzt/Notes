@@ -2,7 +2,7 @@
 type: note
 aliases: []
 created: 2025-09-11T15:39:00.000+0800
-modified: 2026-10-20T02:26:18.000+0800
+modified: 2026-11-12T17:30:57.000+0800
 tags: []
 ---
 
@@ -64,7 +64,7 @@ tags: []
 + 🉑 Export to Anki: 支持创建 Anki 卡片，并导出到 Anki
 + 🉑 Openvault in VS Code: 在 VS Code 中打开当前 vault
 + 👍 Omnisearch: 全文搜索增强，按文件名、标题和正文的相关性排序，支持拼写容错、库内和文件内搜索，以及从结果插入双链；图片、PDF 和 Office 文档的内容索引需配合 Text Extractor
-+ 👍 Fuzzy Chinese Pinyin: 提供中文拼音搜索的功能，支持繁体、双拼、模糊音
++ 🉑 Fuzzy Chinese Pinyin: 提供中文拼音搜索的功能，支持繁体、双拼、模糊音
 + 🉑 Keyboard Analyzer: 分析按键和快捷指令的使用频率，帮助优化快捷指令设置
 
 ## 2.2 Markdown 编辑增强
