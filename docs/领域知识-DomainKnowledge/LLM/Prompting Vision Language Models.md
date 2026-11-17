@@ -27,7 +27,7 @@ Zero-shot prompting 是指用户仅通过 system 和 user prompt 提供对任务
 
 相比于其他范式，Zero-shot prompting 向模型提供的信息是最少的。
 
-![zero shot prompting](./.assets/vlm-zero-shot.png)
+![zero shot prompting](./assets/vlm-zero-shot.png)
 
 ### 2.1 如何进行 Zero-Shot Prompting
 
@@ -312,7 +312,7 @@ zero_shot_high_quality_captions = process_images_in_parallel(
 
 输出:
 
-![zero shot prompting outputs](./.assets/vlm-zero-shot-outputs.png)
+![zero shot prompting outputs](./assets/vlm-zero-shot-outputs.png)
 
 ## 3. Few-Shot Prompting
 
@@ -320,7 +320,7 @@ Few-shot prompting 是指用户提供了一些示例，以便模型更好地理�
 
 Few-shot prompting 的好处是为任务提供了更多的上下文信息，使模型能够更好地理解任务。
 
-![few shot prompting](./.assets/vlm-few-shot.png)
+![few shot prompting](./assets/vlm-few-shot.png)
 
 ### 3.1 如何进行 Few-Shot Prompting
 
@@ -348,11 +348,11 @@ few_shot_high_quality_captions = process_images_in_parallel(
 
 输入:
 
-![few shot prompting inputs](./.assets/vlm-few-shot-inputs.png)
+![few shot prompting inputs](./assets/vlm-few-shot-inputs.png)
 
 输出:
 
-![few shot prompting outputs](./.assets/vlm-few-shot-outputs.png)
+![few shot prompting outputs](./assets/vlm-few-shot-outputs.png)
 
 ## 4. Chain-of-Thought Prompting
 
@@ -360,7 +360,7 @@ Chain of Thought (CoT) prompting 最初用在 LLMs 中，它使得模型可以�
 
 该技术可以无需任何修改，直接用在 VLMs 中。主要区别是 VLMs 可以同时使用图像和文本信息作为输入。
 
-![chain of thought trace](./.assets/vlm-cot-trace.png)
+![chain of thought trace](./assets/vlm-cot-trace.png)
 
 ### 4.1 构造 Chain-of-Thought Trace
 
@@ -418,10 +418,10 @@ VLM 现在可以将图片拆解为中间步骤，然后生成最终的 caption�
 
 输出:
 
-![chain of thought prompting outputs](./.assets/vlm-cot-outputs.png)
+![chain of thought prompting outputs](./assets/vlm-cot-outputs.png)
 
 ## 4. Object Detection Guided Prompting
 
-![object detection guided prompting](./.assets/vlm-object-detection-guided.png)
+![object detection guided prompting](./assets/vlm-object-detection-guided.png)
 
 TODO: 待补充

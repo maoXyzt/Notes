@@ -23,7 +23,7 @@
 
 其余参数保持默认即可。
 
-![添加存储](./.assets/pve-添加nas存储.png)
+![添加存储](./assets/pve-添加nas存储.png)
 
 ## 2 - 开启备份
 
@@ -50,7 +50,7 @@
 
 > 关于保留规则可以参考文档: <https://pve.proxmox.com/pve-docs/chapter-vzdump.html#vzdump_retention>
 
-![创建备份作业](./.assets/pve-创建备份作业.png)
+![创建备份作业](./assets/pve-创建备份作业.png)
 
 ## 3 - 恢复备份
 

@@ -61,7 +61,7 @@ services:
 3. Compose 配置: 将上述 `docker-compose.yml` 的内容导入或复制到此目录下
 4. 启动项目: 点击 “立即部署”
 
-![创建项目](./.assets/nginx-proxy-manager-NAS-创建项目.png)
+![创建项目](./assets/nginx-proxy-manager-NAS-创建项目.png)
 
 #### (2) 在 Linux Server 上部署
 

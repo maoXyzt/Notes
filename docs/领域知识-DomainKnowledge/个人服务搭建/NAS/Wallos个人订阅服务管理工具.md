@@ -16,7 +16,7 @@ Wallos 是一款专为管理订阅服务设计的开源工具。
 
 借助 Wallos，用户可以清晰地查看所有订阅情况，避免重复订阅或错过付款日期，从而更有效地控制个人支出。
 
-![Wallos UI](./.assets/wallos-UI.png)
+![Wallos UI](./assets/wallos-UI.png)
 
 ## 2 - 用 Docker Compose 部署 Wallos
 
@@ -55,7 +55,7 @@ services:
 3. Compose 配置: 将上述 `docker-compose.yml` 的内容导入或复制到此处
 4. 启动项目: 点击 “立即部署”
 
-![创建项目](./.assets/wallos-NAS-创建项目.png)
+![创建项目](./assets/wallos-NAS-创建项目.png)
 
 如果是在服务器上部署，可以通过 SSH 登录到服务器:
 
@@ -77,7 +77,7 @@ docker-compose up -d
 
 接着就可以设置用户名、邮箱和密码进行注册了。
 
-![注册](./.assets/wallos-register.png)
+![注册](./assets/wallos-register.png)
 
 注册成功后，会跳到登录界面，我们用前面注册的账户进行登录。
 
@@ -85,7 +85,7 @@ docker-compose up -d
 
 登录后，可以在首页添加订阅。
 
-![添加订阅](./.assets/wallos-add-subscription.png)
+![添加订阅](./assets/wallos-add-subscription.png)
 
 添加好订阅后，我们可以在首页查看到订阅的名称、支付频率和价格等基本信息。
 

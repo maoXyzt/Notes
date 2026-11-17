@@ -88,7 +88,7 @@ docker-compose up -d
 
 点击【创建账户】按钮，进入注册页面。
 
-![vaultwarden 登录/注册页面](./.assets/vaultwarden-register.png)
+![vaultwarden 登录/注册页面](./assets/vaultwarden-register.png)
 
 依次输入邮箱、名称（可选）、新主密码、确认新主密码，点击【创建账户】按钮，完成注册。
 
@@ -145,11 +145,11 @@ docker-compose up -d
 
 在 bitwarden 的 “工具 -> 导出密码库” 中，选择文件格式（建议加密），点击【确认格式】进行导出。
 
-![bitwarden 导出数据](./.assets/bitwarden-export.png)
+![bitwarden 导出数据](./assets/bitwarden-export.png)
 
 在 vaultwarden 的 “工具 -> 导入数据” 中，选择文件格式和文件，点击【导入数据】按钮。
 
-![vaultwarden 导入数据](./.assets/vaultwarden-import.png)
+![vaultwarden 导入数据](./assets/vaultwarden-import.png)
 
 #### 4.2 数据备份
 

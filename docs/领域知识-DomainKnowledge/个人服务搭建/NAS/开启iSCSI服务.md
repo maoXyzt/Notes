@@ -44,7 +44,7 @@ iSCSI 协议支持基于 IP 网络的远程连接，但 iSCSI 默认不加密传
 
 在 SAN Manager 应用中，LUN 页面用于集中管理所有已创建的虚拟磁盘，用户可在此页面查看 LUN 的运行状态、绑定关系、容量使用情况，并进行权限管理或操作配置。
 
-![LUN 管理](./.assets/SAN-Manager_LUN.png)
+![LUN 管理](./assets/SAN-Manager_LUN.png)
 
 | 功能      | 说明              |
 |-----------|-------------------|
@@ -68,7 +68,7 @@ LUN 有两种存储方式：
 
 #### LUN 编辑页面
 
-![LUN 编辑页面](./.assets/SAN-Manager_LUN_tab01.png)
+![LUN 编辑页面](./assets/SAN-Manager_LUN_tab01.png)
 
 在【基本】标签页下，可以启用 "高级命令" 功能，开启后可能会影响性能。启用后，将支持以下 SCSI 指令：
 

@@ -8,7 +8,7 @@ ghcr (Github Container Registry) 是 GitHub 的容器镜像仓库，用于存储
 
 访问 <https://github.com/settings/tokens> 创建 Personal access token (Classic)。
 
-![Personal access tokens](.assets/github-personal-access-token.png)
+![Personal access tokens](assets/github-personal-access-token.png)
 
 Token 需要的权限有:
 

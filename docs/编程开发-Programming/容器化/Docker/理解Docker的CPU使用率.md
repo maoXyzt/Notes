@@ -8,7 +8,7 @@
 
 通过 `docker stats` 命令我们可以查看一个容器的 CPU、内存、IO 等资源使用情况。
 
-![理解 Docker 的 CPU 使用率](.assets/理解Docker的CPU使用率.png)
+![理解 Docker 的 CPU 使用率](assets/理解Docker的CPU使用率.png)
 
 其中【CPU %】这项参数的值含义与宿主机的 cpu 利用率的含义是不同的，为了避免对这个参数的误解，我们从参数的计算方法出发看它的含义。
 

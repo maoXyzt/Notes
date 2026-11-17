@@ -8,7 +8,7 @@ VSCode 从 v1.67 版本 () 开始支持支持基于文件名对相关文件进�
 
 效果如下:
 
-![vscode-file_nesting-example](./.assets/vscode-file_nesting-example.png)
+![vscode-file_nesting-example](./assets/vscode-file_nesting-example.png)
 
 > 这是一个 Vue3 项目的例子，项目是通过 `npm create vue@latest` 创建的，默认配置了项目的 fileNesting
 

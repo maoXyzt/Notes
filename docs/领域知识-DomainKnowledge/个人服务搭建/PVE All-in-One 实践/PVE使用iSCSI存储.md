@@ -6,7 +6,7 @@
 
 1. 在 PVE 管理页面，点击左侧的 "数据中心" ("Datacenter")，然后点击右侧的 "存储" ("Storage") -> "添加" ("Add") -> "iSCSI"。
 
-![添加 iSCSI 存储](./.assets/PVE-add_iSCSI-01.png)
+![添加 iSCSI 存储](./assets/PVE-add_iSCSI-01.png)
 
 2. 在弹出的窗口中，填写如下参数:
 
@@ -19,7 +19,7 @@
   * 如果未勾选，iSCSI 存储被挂载在系统上，需要创建分区，然后配置给虚拟机使用
 * 节点 (Nodes): 默认为 `所有 (无限制)` (`All (No restrictions)`)，即所有节点都可以使用该存储
 
-![添加 iSCSI 存储: 选项](./.assets/PVE-add_iSCSI-02.png)
+![添加 iSCSI 存储: 选项](./assets/PVE-add_iSCSI-02.png)
 
 3. 点击 "保存" ("Save")，等待添加完成。
 
