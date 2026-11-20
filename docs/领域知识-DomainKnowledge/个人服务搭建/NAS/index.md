@@ -21,6 +21,7 @@ modified: 2026-05-07T18:21:24.383+0800
 + Syncthing 文件同步: [Syncthing 文件同步服务部署](./Syncthing文件同步服务部署.md)
 + 兼容 S3 协议的文件服务系统: [RustFS 部署](./RustFS部署.md)
 + 漫画/电子书服务: [Kavita 部署](./kavita部署.md)
++ [Komga 漫画与电子书服务部署](./Komga部署.md)
 + 自动签到: [DailyCheckin 自动签到服务部署](./DailyCheckin自动签到服务部署.md)
 + subconverter 代理转换: [[subconverter服务部署]]
 + TaskTrove 任务管理: [[TaskTrove任务管理服务部署]]

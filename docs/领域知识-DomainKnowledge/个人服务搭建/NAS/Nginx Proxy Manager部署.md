@@ -22,9 +22,6 @@ services:
     image: 'jc21/nginx-proxy-manager:latest'
     container_name: nginx-proxy-manager
     restart: unless-stopped
-    environment:
-      INITIAL_ADMIN_EMAIL: my@example.com
-      INITIAL_ADMIN_PASSWORD: mypassword1
     ports:
       - '31080:80'
       - '31081:81'
@@ -44,11 +41,6 @@ services:
 - `31080:80`: 服务的 80 端口映射到本地的 31080 端口, 用于 http 访问
 - `31081:81`: 服务的 81 端口映射到本地的 31081 端口, 用于管理界面的访问
 - `31443:443`: 服务的 443 端口映射到本地的 31443 端口, 用于 https 访问
-
-项目的环境变量:
-
-- `INITIAL_ADMIN_EMAIL`: 初始管理员邮箱。如未提供, 默认为 `admin@example.com`
-- `INITIAL_ADMIN_PASSWORD`: 初始管理员密码。如未提供, 默认为 `changeme`
 
 ### 2.2 部署服务
 
@@ -78,15 +70,9 @@ docker-compose up -d
 
 ### 3 - 服务初始化
 
-部署完成后，打开浏览器访问 `http://<NAS-IP>:30081`，即可看到 Nginx Proxy Manager 的 Web 界面。
+首次部署时，在受信任的局域网内访问 `http://<NAS-IP>:31081`。
+从 v2.13.0 起，新实例会显示设置向导。按提示填写管理员邮箱，设置独立的强密码，完成账号创建。
 
-默认 Admin User 为:
+> [官方版本说明](https://github.com/NginxProxyManager/nginx-proxy-manager/releases/tag/v2.13.0)
 
-```plaintext
-Email:    admin@example.com
-Password: changeme
-```
-
-如果通过环境变量 `INITIAL_ADMIN_EMAIL` 和 `INITIAL_ADMIN_PASSWORD` 设置了初始管理员邮箱和密码，则使用设置的邮箱和密码登录。
-
-登录后会提示修改密码，修改密码后即可正常使用。
+已有实例使用原管理员账号登录。
