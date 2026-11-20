@@ -24,6 +24,9 @@ modified: 2026-05-07T18:21:24.383+0800
 + 自动签到: [DailyCheckin 自动签到服务部署](./DailyCheckin自动签到服务部署.md)
 + subconverter 代理转换: [[subconverter服务部署]]
 + TaskTrove 任务管理: [[TaskTrove任务管理服务部署]]
++ [ConvertX 文件格式转换](./ConvertX%20文件格式转换服务部署.md)
++ [ezBookkeeping 个人记账](./ezbookkeeping自托管记账服务部署.md)
++ [Hermes Agent 部署](./HermesAgent部署.md)
 
 ### 3 - 用 NAS 为自建服务添加备份
 

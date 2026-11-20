@@ -813,6 +813,10 @@
                 "link": "/领域知识-DomainKnowledge/个人服务搭建/PVE All-in-One 实践/PVE 安装 linux 虚拟机.md"
               },
               {
+                "text": "PVE 安装 Nginx Proxy Manager LXC",
+                "link": "/领域知识-DomainKnowledge/个人服务搭建/PVE All-in-One 实践/PVE 安装 Nginx Proxy Manager LXC.md"
+              },
+              {
                 "text": "PVE 安装 OpenWRT",
                 "link": "/领域知识-DomainKnowledge/个人服务搭建/PVE All-in-One 实践/PVE 安装 OpenWRT.md"
               },

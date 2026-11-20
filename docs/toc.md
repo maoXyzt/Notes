@@ -5,6 +5,21 @@
 ## 最近更新
 
 <!-- RECENT_UPDATES -->
+- [安装 PVE 系统](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/安装%20PVE%20系统.md) · 2026-11-18 01:14
+  > 参照 制作 U 盘启动盘
+  > 下载后放入 U 盘启动盘内。
+  > 管理页面 URL: `https://<IP>:8006/`
+  > ...
+- [PVE 安装 Nginx Proxy Manager LXC](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20Nginx%20Proxy%20Manager%20LXC.md) · 2026-11-18 00:39
+  > Nginx Proxy Manager（简称 NPM）提供 Web 管理界面，用于配置反向代理、域名转发和 HTTPS 证书，适合作为家庭自托管服务的统一入口。
+  > 本文使用 Proxmox Community Scripts 在 PVE 上创建独立的 LXC 容器并安装 NPM。操作方式参考 PVE 安装 alpine LXC & Debian LXC。
+  > 在 PVE 管理页面中，选择 pve node，进入右侧的 **Shell**，以 root 执行：
+  > ...
+- [Obsidain插件推荐](./软件工具应用-Applications/Obsidian/Obsidain插件推荐.md) · 2026-11-12 17:30
+  > 本页按功能和使用需求推荐插件，推荐级别不代表本库当前启用状态。当前库启用 21 个插件，完整名单见主仓库 `dotfiles/README.md`。
+  > ⭐: 强烈推荐安装
+  > 👍: 提升使用体验，建议安装
+  > ...
 - [Zellij Web Client 配置](./Linux/Zellij%20Web%20Client%20配置.md) · 2026-07-27 23:52
   > Zellij 0.43.0 起内置 Web Client，可以在浏览器中创建、连接和恢复 Zellij session。本文介绍如何配置登录 Token、局域网访问和 HTTPS。
   > 确认 Zellij 版本不低于 0.43.0：
@@ -39,21 +54,6 @@
   > 设置 -> 辅助功能 -> 指针控制 -> 触控板选项...:
   > 设置 -> 触控板 -> 滚动缩放
   > 设置 -> 触控板 -> 更多手势
-  > ...
-- [Rancher Desktop 配置代理](./编程开发-Programming/容器化/Rancher/Rancher%20Desktop%20配置代理.md) · 2026-05-22 09:49
-  > 在使用 Rancher Desktop 时，执行 `docker pull` 和 `docker compose pull` 的镜像拉取动作实际上是由 **Rancher Desktop 虚拟机内部的 Docker 守护进程（dock...
-  > 以下是针对 **Windows** 和 **macOS** 系统最常用且有效的配置方法。
-  > 如果你在宿主机上使用代理软件（如 Clash、v2ray 等），其默认监听的 `127.0.0.1` 仅限宿主机本地访问。虚拟机无法通过 `127.0.0.1` 访问到它。
-  > ...
-- [cargo-release的使用](./编程开发-Programming/Rust/cargo-release的使用.md) · 2026-05-22 00:56
-  > `cargo-release` 把发布一个 Rust crate 的几步动作 (改版本号 → commit → 打 tag → push → `cargo publish`) 合并成一条命令,适合需要频繁发布的项目。
-  > 手动发布流程见 发布Rust项目到crates.io。
-  > `<level>` 决定版本号怎么升:
-  > ...
-- [发布Rust项目到crates.io](./编程开发-Programming/Rust/发布Rust项目到crates.io.md) · 2026-05-22 00:35
-  > crates.io 是 Rust 官方的包注册中心 (registry)，是 Rust 生态中绝大多数三方库的分发渠道。
-  > 本文记录将一个 Rust 项目 (lib crate) 发布到 crates.io 的完整流程。
-  > 发布 crate 前需要一个 crates.io 账号:
   > ...
 <!-- /RECENT_UPDATES -->
 
@@ -268,6 +268,7 @@
   * [PVE 安装 homeassistant](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20homeassistant.md)
   * [PVE 安装 ikuai](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20ikuai.md)
   * [PVE 安装 Linux 虚拟机](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20linux%20虚拟机.md)
+  * [PVE 安装 Nginx Proxy Manager LXC](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20Nginx%20Proxy%20Manager%20LXC.md)
   * [PVE 安装 OpenWRT](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20安装%20OpenWRT.md)
   * [PVE 系统备份到 NAS(smb)](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE%20系统备份备份到NAS%28smb%29.md)
   * [PVE部署 DDNSTO](./领域知识-DomainKnowledge/个人服务搭建/PVE%20All-in-One%20实践/PVE部署%20DDNSTO.md)
